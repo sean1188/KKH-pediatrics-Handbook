@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9722E8611D0CF15C00C6D26F /* Cabin-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E8591D0CEF2C00C6D26F /* Cabin-Bold.otf */; };
+		9722E8621D0CF16300C6D26F /* Cabin-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E85A1D0CEF2C00C6D26F /* Cabin-BoldItalic.otf */; };
+		9722E8631D0CF16300C6D26F /* Cabin-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E85B1D0CEF2C00C6D26F /* Cabin-Italic.otf */; };
+		9722E8641D0CF16300C6D26F /* Cabin-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E85C1D0CEF2C00C6D26F /* Cabin-Medium.otf */; };
+		9722E8651D0CF16300C6D26F /* Cabin-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E85D1D0CEF2C00C6D26F /* Cabin-MediumItalic.otf */; };
+		9722E8661D0CF16300C6D26F /* Cabin-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E85E1D0CEF2C00C6D26F /* Cabin-Regular.otf */; };
+		9722E8671D0CF16300C6D26F /* Cabin-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E85F1D0CEF2C00C6D26F /* Cabin-SemiBold.otf */; };
+		9722E8681D0CF16300C6D26F /* Cabin-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E8601D0CEF2C00C6D26F /* Cabin-SemiBoldItalic.otf */; };
+		9722E8691D0CF16300C6D26F /* CabinCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E8551D0CEF0E00C6D26F /* CabinCondensed-Bold.ttf */; };
+		9722E86A1D0CF16300C6D26F /* CabinCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E8561D0CEF0E00C6D26F /* CabinCondensed-Medium.ttf */; };
+		9722E86B1D0CF16300C6D26F /* CabinCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E8571D0CEF0E00C6D26F /* CabinCondensed-Regular.ttf */; };
+		9722E86C1D0CF16300C6D26F /* CabinCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E8581D0CEF0E00C6D26F /* CabinCondensed-SemiBold.ttf */; };
+		9722E87F1D0EFF0100C6D26F /* FavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9722E87E1D0EFF0100C6D26F /* FavViewController.m */; };
+		973E00291D092CD600F7C94A /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E00261D092CD600F7C94A /* QCMethod.m */; };
+		973E00301D09371B00F7C94A /* animationScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E002F1D09371B00F7C94A /* animationScheme.m */; };
+		973E00331D09A30000F7C94A /* PDFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973E00321D09A30000F7C94A /* PDFManager.swift */; };
+		974C45661D0A6A2500797BF0 /* webViewPDF\.m in Sources */ = {isa = PBXBuildFile; fileRef = 974C45651D0A6A2500797BF0 /* webViewPDF\.m */; };
+		976EFB241D01C28B0048A4DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 976EFB231D01C28B0048A4DC /* main.m */; };
+		976EFB271D01C28B0048A4DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 976EFB261D01C28B0048A4DC /* AppDelegate.m */; };
+		976EFB2A1D01C28B0048A4DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 976EFB291D01C28B0048A4DC /* ViewController.m */; };
+		976EFB2D1D01C28B0048A4DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976EFB2B1D01C28B0048A4DC /* Main.storyboard */; };
+		976EFB2F1D01C28B0048A4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 976EFB2E1D01C28B0048A4DC /* Assets.xcassets */; };
+		976EFB321D01C28B0048A4DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976EFB301D01C28B0048A4DC /* LaunchScreen.storyboard */; };
+		976EFB3D1D01C28B0048A4DC /* KKH_appUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 976EFB3C1D01C28B0048A4DC /* KKH_appUITests.m */; };
+		979782DE1D1A87E800BAF670 /* 01-Intro,_Dept,_Duties.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782CD1D1A87E800BAF670 /* 01-Intro,_Dept,_Duties.pdf */; };
+		979782DF1D1A87E800BAF670 /* 02-Training_Programmes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782CE1D1A87E800BAF670 /* 02-Training_Programmes.pdf */; };
+		979782E01D1A87E800BAF670 /* 03-Guidelines_for_the_Provision_of_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782CF1D1A87E800BAF670 /* 03-Guidelines_for_the_Provision_of_Anaesthesia.pdf */; };
+		979782E11D1A87E800BAF670 /* 04-Paediatric_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D01D1A87E800BAF670 /* 04-Paediatric_Anaesthesia.pdf */; };
+		979782E21D1A87E800BAF670 /* 05-Neonatal_Anaesthesia,_NICU.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D11D1A87E800BAF670 /* 05-Neonatal_Anaesthesia,_NICU.pdf */; };
+		979782E31D1A87E800BAF670 /* 06-Satish,_Tracy_Cardiac_Cath_Guidelines.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D21D1A87E800BAF670 /* 06-Satish,_Tracy_Cardiac_Cath_Guidelines.pdf */; };
+		979782E41D1A87E800BAF670 /* 07-Diagnostic_Imaging.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D31D1A87E800BAF670 /* 07-Diagnostic_Imaging.pdf */; };
+		979782E51D1A87E800BAF670 /* 08-Sedation_for_oncology_children.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D41D1A87E800BAF670 /* 08-Sedation_for_oncology_children.pdf */; };
+		979782E61D1A87E800BAF670 /* 09-Regional_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D51D1A87E800BAF670 /* 09-Regional_Anaesthesia.pdf */; };
+		979782E71D1A87E800BAF670 /* 10-Patient_transport.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D61D1A87E800BAF670 /* 10-Patient_transport.pdf */; };
+		979782E81D1A87E800BAF670 /* 11-Drug_Dosages_in_Paediatric_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D71D1A87E800BAF670 /* 11-Drug_Dosages_in_Paediatric_Anaesthesia.pdf */; };
+		979782E91D1A87E800BAF670 /* 12-Transfusion_in_Children.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D81D1A87E800BAF670 /* 12-Transfusion_in_Children.pdf */; };
+		979782EA1D1A87E800BAF670 /* 13-Common_Lab_Investigations.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D91D1A87E800BAF670 /* 13-Common_Lab_Investigations.pdf */; };
+		979782EB1D1A87E800BAF670 /* 14-Paediatric_Medicine_Fluid_Guidelines.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782DA1D1A87E800BAF670 /* 14-Paediatric_Medicine_Fluid_Guidelines.pdf */; };
+		979782EC1D1A87E800BAF670 /* 15-Common_Crisis,_Algorithms.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782DB1D1A87E800BAF670 /* 15-Common_Crisis,_Algorithms.pdf */; };
+		979782ED1D1A87E800BAF670 /* 16-Acute_Pain_Service.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782DC1D1A87E800BAF670 /* 16-Acute_Pain_Service.pdf */; };
+		979782EE1D1A87E800BAF670 /* 17-Chronic_Pain_Service.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782DD1D1A87E800BAF670 /* 17-Chronic_Pain_Service.pdf */; };
+		97BCF2C51D13955600891F74 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BCF2C41D13955600891F74 /* SettingsViewController.m */; };
+		97FB27C11D06D69000EF2845 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB27C01D06D69000EF2845 /* Calculator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		976EFB391D01C28B0048A4DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 976EFB171D01C28B0048A4DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 976EFB1E1D01C28B0048A4DC;
+			remoteInfo = "KKH app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9722E8551D0CEF0E00C6D26F /* CabinCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		9722E8561D0CEF0E00C6D26F /* CabinCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Medium.ttf"; sourceTree = "<group>"; };
+		9722E8571D0CEF0E00C6D26F /* CabinCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		9722E8581D0CEF0E00C6D26F /* CabinCondensed-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-SemiBold.ttf"; sourceTree = "<group>"; };
+		9722E8591D0CEF2C00C6D26F /* Cabin-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Bold.otf"; sourceTree = "<group>"; };
+		9722E85A1D0CEF2C00C6D26F /* Cabin-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-BoldItalic.otf"; sourceTree = "<group>"; };
+		9722E85B1D0CEF2C00C6D26F /* Cabin-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Italic.otf"; sourceTree = "<group>"; };
+		9722E85C1D0CEF2C00C6D26F /* Cabin-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Medium.otf"; sourceTree = "<group>"; };
+		9722E85D1D0CEF2C00C6D26F /* Cabin-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-MediumItalic.otf"; sourceTree = "<group>"; };
+		9722E85E1D0CEF2C00C6D26F /* Cabin-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Regular.otf"; sourceTree = "<group>"; };
+		9722E85F1D0CEF2C00C6D26F /* Cabin-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBold.otf"; sourceTree = "<group>"; };
+		9722E8601D0CEF2C00C6D26F /* Cabin-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		9722E87D1D0EFF0100C6D26F /* FavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavViewController.h; sourceTree = "<group>"; };
+		9722E87E1D0EFF0100C6D26F /* FavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavViewController.m; sourceTree = "<group>"; };
+		973E00261D092CD600F7C94A /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
+		973E00271D092CD600F7C94A /* QCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMethod.h; sourceTree = "<group>"; };
+		973E002E1D09371B00F7C94A /* animationScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = animationScheme.h; sourceTree = "<group>"; };
+		973E002F1D09371B00F7C94A /* animationScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = animationScheme.m; sourceTree = "<group>"; };
+		973E00311D09A2FF00F7C94A /* KKH app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KKH app-Bridging-Header.h"; sourceTree = "<group>"; };
+		973E00321D09A30000F7C94A /* PDFManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFManager.swift; sourceTree = "<group>"; };
+		974C45641D0A6A2500797BF0 /* webViewPDF\.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "webViewPDF\\.h"; sourceTree = "<group>"; };
+		974C45651D0A6A2500797BF0 /* webViewPDF\.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "webViewPDF\\.m"; sourceTree = "<group>"; };
+		976EFB1F1D01C28B0048A4DC /* KKH app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KKH app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		976EFB231D01C28B0048A4DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		976EFB251D01C28B0048A4DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		976EFB261D01C28B0048A4DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		976EFB281D01C28B0048A4DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		976EFB291D01C28B0048A4DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		976EFB2C1D01C28B0048A4DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		976EFB2E1D01C28B0048A4DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		976EFB311D01C28B0048A4DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		976EFB331D01C28B0048A4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		976EFB381D01C28B0048A4DC /* KKH appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KKH appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		976EFB3C1D01C28B0048A4DC /* KKH_appUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKH_appUITests.m; sourceTree = "<group>"; };
+		976EFB3E1D01C28B0048A4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		979782CD1D1A87E800BAF670 /* 01-Intro,_Dept,_Duties.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "01-Intro,_Dept,_Duties.pdf"; sourceTree = "<group>"; };
+		979782CE1D1A87E800BAF670 /* 02-Training_Programmes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "02-Training_Programmes.pdf"; sourceTree = "<group>"; };
+		979782CF1D1A87E800BAF670 /* 03-Guidelines_for_the_Provision_of_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "03-Guidelines_for_the_Provision_of_Anaesthesia.pdf"; sourceTree = "<group>"; };
+		979782D01D1A87E800BAF670 /* 04-Paediatric_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "04-Paediatric_Anaesthesia.pdf"; sourceTree = "<group>"; };
+		979782D11D1A87E800BAF670 /* 05-Neonatal_Anaesthesia,_NICU.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "05-Neonatal_Anaesthesia,_NICU.pdf"; sourceTree = "<group>"; };
+		979782D21D1A87E800BAF670 /* 06-Satish,_Tracy_Cardiac_Cath_Guidelines.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "06-Satish,_Tracy_Cardiac_Cath_Guidelines.pdf"; sourceTree = "<group>"; };
+		979782D31D1A87E800BAF670 /* 07-Diagnostic_Imaging.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "07-Diagnostic_Imaging.pdf"; sourceTree = "<group>"; };
+		979782D41D1A87E800BAF670 /* 08-Sedation_for_oncology_children.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "08-Sedation_for_oncology_children.pdf"; sourceTree = "<group>"; };
+		979782D51D1A87E800BAF670 /* 09-Regional_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "09-Regional_Anaesthesia.pdf"; sourceTree = "<group>"; };
+		979782D61D1A87E800BAF670 /* 10-Patient_transport.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "10-Patient_transport.pdf"; sourceTree = "<group>"; };
+		979782D71D1A87E800BAF670 /* 11-Drug_Dosages_in_Paediatric_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "11-Drug_Dosages_in_Paediatric_Anaesthesia.pdf"; sourceTree = "<group>"; };
+		979782D81D1A87E800BAF670 /* 12-Transfusion_in_Children.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "12-Transfusion_in_Children.pdf"; sourceTree = "<group>"; };
+		979782D91D1A87E800BAF670 /* 13-Common_Lab_Investigations.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "13-Common_Lab_Investigations.pdf"; sourceTree = "<group>"; };
+		979782DA1D1A87E800BAF670 /* 14-Paediatric_Medicine_Fluid_Guidelines.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "14-Paediatric_Medicine_Fluid_Guidelines.pdf"; sourceTree = "<group>"; };
+		979782DB1D1A87E800BAF670 /* 15-Common_Crisis,_Algorithms.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "15-Common_Crisis,_Algorithms.pdf"; sourceTree = "<group>"; };
+		979782DC1D1A87E800BAF670 /* 16-Acute_Pain_Service.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "16-Acute_Pain_Service.pdf"; sourceTree = "<group>"; };
+		979782DD1D1A87E800BAF670 /* 17-Chronic_Pain_Service.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "17-Chronic_Pain_Service.pdf"; sourceTree = "<group>"; };
+		97BCF2C31D13955600891F74 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		97BCF2C41D13955600891F74 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		97FB27BF1D06D69000EF2845 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		97FB27C01D06D69000EF2845 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		976EFB1C1D01C28B0048A4DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		976EFB351D01C28B0048A4DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9722E8541D0CEF0300C6D26F /* font */ = {
+			isa = PBXGroup;
+			children = (
+				9722E8591D0CEF2C00C6D26F /* Cabin-Bold.otf */,
+				9722E85A1D0CEF2C00C6D26F /* Cabin-BoldItalic.otf */,
+				9722E85B1D0CEF2C00C6D26F /* Cabin-Italic.otf */,
+				9722E85C1D0CEF2C00C6D26F /* Cabin-Medium.otf */,
+				9722E85D1D0CEF2C00C6D26F /* Cabin-MediumItalic.otf */,
+				9722E85E1D0CEF2C00C6D26F /* Cabin-Regular.otf */,
+				9722E85F1D0CEF2C00C6D26F /* Cabin-SemiBold.otf */,
+				9722E8601D0CEF2C00C6D26F /* Cabin-SemiBoldItalic.otf */,
+				9722E8551D0CEF0E00C6D26F /* CabinCondensed-Bold.ttf */,
+				9722E8561D0CEF0E00C6D26F /* CabinCondensed-Medium.ttf */,
+				9722E8571D0CEF0E00C6D26F /* CabinCondensed-Regular.ttf */,
+				9722E8581D0CEF0E00C6D26F /* CabinCondensed-SemiBold.ttf */,
+			);
+			name = font;
+			sourceTree = "<group>";
+		};
+		9722E86D1D0CF8F000C6D26F /* Ref */ = {
+			isa = PBXGroup;
+			children = (
+				976EFB281D01C28B0048A4DC /* ViewController.h */,
+				976EFB291D01C28B0048A4DC /* ViewController.m */,
+				974C45641D0A6A2500797BF0 /* webViewPDF\.h */,
+				974C45651D0A6A2500797BF0 /* webViewPDF\.m */,
+			);
+			name = Ref;
+			sourceTree = "<group>";
+		};
+		9722E86E1D0CF8F700C6D26F /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				973E002E1D09371B00F7C94A /* animationScheme.h */,
+				973E002F1D09371B00F7C94A /* animationScheme.m */,
+				973E00261D092CD600F7C94A /* QCMethod.m */,
+				973E00271D092CD600F7C94A /* QCMethod.h */,
+			);
+			name = animation;
+			sourceTree = "<group>";
+		};
+		9722E86F1D0CF90F00C6D26F /* calculation */ = {
+			isa = PBXGroup;
+			children = (
+				97FB27BF1D06D69000EF2845 /* Calculator.h */,
+				97FB27C01D06D69000EF2845 /* Calculator.m */,
+			);
+			name = calculation;
+			sourceTree = "<group>";
+		};
+		976EFB161D01C28B0048A4DC = {
+			isa = PBXGroup;
+			children = (
+				976EFB211D01C28B0048A4DC /* KKH app */,
+				976EFB3B1D01C28B0048A4DC /* KKH appUITests */,
+				976EFB201D01C28B0048A4DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		976EFB201D01C28B0048A4DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				976EFB1F1D01C28B0048A4DC /* KKH app.app */,
+				976EFB381D01C28B0048A4DC /* KKH appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		976EFB211D01C28B0048A4DC /* KKH app */ = {
+			isa = PBXGroup;
+			children = (
+				976EFB251D01C28B0048A4DC /* AppDelegate.h */,
+				976EFB261D01C28B0048A4DC /* AppDelegate.m */,
+				973E00311D09A2FF00F7C94A /* KKH app-Bridging-Header.h */,
+				973E00321D09A30000F7C94A /* PDFManager.swift */,
+				9722E86E1D0CF8F700C6D26F /* animation */,
+				9722E8541D0CEF0300C6D26F /* font */,
+				976EFB2B1D01C28B0048A4DC /* Main.storyboard */,
+				976EFB2E1D01C28B0048A4DC /* Assets.xcassets */,
+				976EFB301D01C28B0048A4DC /* LaunchScreen.storyboard */,
+				976EFB331D01C28B0048A4DC /* Info.plist */,
+				979782CC1D1A87E800BAF670 /* PDFs */,
+				976EFB221D01C28B0048A4DC /* Supporting Files */,
+				9722E86D1D0CF8F000C6D26F /* Ref */,
+				9722E86F1D0CF90F00C6D26F /* calculation */,
+				9722E87D1D0EFF0100C6D26F /* FavViewController.h */,
+				9722E87E1D0EFF0100C6D26F /* FavViewController.m */,
+				97BCF2C31D13955600891F74 /* SettingsViewController.h */,
+				97BCF2C41D13955600891F74 /* SettingsViewController.m */,
+			);
+			path = "KKH app";
+			sourceTree = "<group>";
+		};
+		976EFB221D01C28B0048A4DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				976EFB231D01C28B0048A4DC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		976EFB3B1D01C28B0048A4DC /* KKH appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				976EFB3C1D01C28B0048A4DC /* KKH_appUITests.m */,
+				976EFB3E1D01C28B0048A4DC /* Info.plist */,
+			);
+			path = "KKH appUITests";
+			sourceTree = "<group>";
+		};
+		979782CC1D1A87E800BAF670 /* PDFs */ = {
+			isa = PBXGroup;
+			children = (
+				979782CD1D1A87E800BAF670 /* 01-Intro,_Dept,_Duties.pdf */,
+				979782CE1D1A87E800BAF670 /* 02-Training_Programmes.pdf */,
+				979782CF1D1A87E800BAF670 /* 03-Guidelines_for_the_Provision_of_Anaesthesia.pdf */,
+				979782D01D1A87E800BAF670 /* 04-Paediatric_Anaesthesia.pdf */,
+				979782D11D1A87E800BAF670 /* 05-Neonatal_Anaesthesia,_NICU.pdf */,
+				979782D21D1A87E800BAF670 /* 06-Satish,_Tracy_Cardiac_Cath_Guidelines.pdf */,
+				979782D31D1A87E800BAF670 /* 07-Diagnostic_Imaging.pdf */,
+				979782D41D1A87E800BAF670 /* 08-Sedation_for_oncology_children.pdf */,
+				979782D51D1A87E800BAF670 /* 09-Regional_Anaesthesia.pdf */,
+				979782D61D1A87E800BAF670 /* 10-Patient_transport.pdf */,
+				979782D71D1A87E800BAF670 /* 11-Drug_Dosages_in_Paediatric_Anaesthesia.pdf */,
+				979782D81D1A87E800BAF670 /* 12-Transfusion_in_Children.pdf */,
+				979782D91D1A87E800BAF670 /* 13-Common_Lab_Investigations.pdf */,
+				979782DA1D1A87E800BAF670 /* 14-Paediatric_Medicine_Fluid_Guidelines.pdf */,
+				979782DB1D1A87E800BAF670 /* 15-Common_Crisis,_Algorithms.pdf */,
+				979782DC1D1A87E800BAF670 /* 16-Acute_Pain_Service.pdf */,
+				979782DD1D1A87E800BAF670 /* 17-Chronic_Pain_Service.pdf */,
+			);
+			path = PDFs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		976EFB1E1D01C28B0048A4DC /* KKH app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 976EFB411D01C28B0048A4DC /* Build configuration list for PBXNativeTarget "KKH app" */;
+			buildPhases = (
+				976EFB1B1D01C28B0048A4DC /* Sources */,
+				976EFB1C1D01C28B0048A4DC /* Frameworks */,
+				976EFB1D1D01C28B0048A4DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KKH app";
+			productName = "KKH app";
+			productReference = 976EFB1F1D01C28B0048A4DC /* KKH app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		976EFB371D01C28B0048A4DC /* KKH appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 976EFB441D01C28B0048A4DC /* Build configuration list for PBXNativeTarget "KKH appUITests" */;
+			buildPhases = (
+				976EFB341D01C28B0048A4DC /* Sources */,
+				976EFB351D01C28B0048A4DC /* Frameworks */,
+				976EFB361D01C28B0048A4DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				976EFB3A1D01C28B0048A4DC /* PBXTargetDependency */,
+			);
+			name = "KKH appUITests";
+			productName = "KKH appUITests";
+			productReference = 976EFB381D01C28B0048A4DC /* KKH appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		976EFB171D01C28B0048A4DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = tangentinc.;
+				TargetAttributes = {
+					976EFB1E1D01C28B0048A4DC = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 7K6ZTDFM48;
+					};
+					976EFB371D01C28B0048A4DC = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 976EFB1E1D01C28B0048A4DC;
+					};
+				};
+			};
+			buildConfigurationList = 976EFB1A1D01C28B0048A4DC /* Build configuration list for PBXProject "KKH app" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 976EFB161D01C28B0048A4DC;
+			productRefGroup = 976EFB201D01C28B0048A4DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				976EFB1E1D01C28B0048A4DC /* KKH app */,
+				976EFB371D01C28B0048A4DC /* KKH appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		976EFB1D1D01C28B0048A4DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9722E8621D0CF16300C6D26F /* Cabin-BoldItalic.otf in Resources */,
+				9722E8631D0CF16300C6D26F /* Cabin-Italic.otf in Resources */,
+				9722E8641D0CF16300C6D26F /* Cabin-Medium.otf in Resources */,
+				979782EB1D1A87E800BAF670 /* 14-Paediatric_Medicine_Fluid_Guidelines.pdf in Resources */,
+				9722E8651D0CF16300C6D26F /* Cabin-MediumItalic.otf in Resources */,
+				979782E11D1A87E800BAF670 /* 04-Paediatric_Anaesthesia.pdf in Resources */,
+				9722E8661D0CF16300C6D26F /* Cabin-Regular.otf in Resources */,
+				9722E8671D0CF16300C6D26F /* Cabin-SemiBold.otf in Resources */,
+				979782E81D1A87E800BAF670 /* 11-Drug_Dosages_in_Paediatric_Anaesthesia.pdf in Resources */,
+				9722E8681D0CF16300C6D26F /* Cabin-SemiBoldItalic.otf in Resources */,
+				979782EC1D1A87E800BAF670 /* 15-Common_Crisis,_Algorithms.pdf in Resources */,
+				979782E21D1A87E800BAF670 /* 05-Neonatal_Anaesthesia,_NICU.pdf in Resources */,
+				9722E8691D0CF16300C6D26F /* CabinCondensed-Bold.ttf in Resources */,
+				9722E86A1D0CF16300C6D26F /* CabinCondensed-Medium.ttf in Resources */,
+				979782E31D1A87E800BAF670 /* 06-Satish,_Tracy_Cardiac_Cath_Guidelines.pdf in Resources */,
+				9722E86B1D0CF16300C6D26F /* CabinCondensed-Regular.ttf in Resources */,
+				979782E71D1A87E800BAF670 /* 10-Patient_transport.pdf in Resources */,
+				979782E01D1A87E800BAF670 /* 03-Guidelines_for_the_Provision_of_Anaesthesia.pdf in Resources */,
+				979782ED1D1A87E800BAF670 /* 16-Acute_Pain_Service.pdf in Resources */,
+				979782EA1D1A87E800BAF670 /* 13-Common_Lab_Investigations.pdf in Resources */,
+				9722E86C1D0CF16300C6D26F /* CabinCondensed-SemiBold.ttf in Resources */,
+				979782EE1D1A87E800BAF670 /* 17-Chronic_Pain_Service.pdf in Resources */,
+				979782E91D1A87E800BAF670 /* 12-Transfusion_in_Children.pdf in Resources */,
+				979782E61D1A87E800BAF670 /* 09-Regional_Anaesthesia.pdf in Resources */,
+				979782E51D1A87E800BAF670 /* 08-Sedation_for_oncology_children.pdf in Resources */,
+				9722E8611D0CF15C00C6D26F /* Cabin-Bold.otf in Resources */,
+				976EFB321D01C28B0048A4DC /* LaunchScreen.storyboard in Resources */,
+				979782DE1D1A87E800BAF670 /* 01-Intro,_Dept,_Duties.pdf in Resources */,
+				979782DF1D1A87E800BAF670 /* 02-Training_Programmes.pdf in Resources */,
+				979782E41D1A87E800BAF670 /* 07-Diagnostic_Imaging.pdf in Resources */,
+				976EFB2F1D01C28B0048A4DC /* Assets.xcassets in Resources */,
+				976EFB2D1D01C28B0048A4DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		976EFB361D01C28B0048A4DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		976EFB1B1D01C28B0048A4DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				976EFB2A1D01C28B0048A4DC /* ViewController.m in Sources */,
+				973E00331D09A30000F7C94A /* PDFManager.swift in Sources */,
+				973E00301D09371B00F7C94A /* animationScheme.m in Sources */,
+				97BCF2C51D13955600891F74 /* SettingsViewController.m in Sources */,
+				973E00291D092CD600F7C94A /* QCMethod.m in Sources */,
+				97FB27C11D06D69000EF2845 /* Calculator.m in Sources */,
+				9722E87F1D0EFF0100C6D26F /* FavViewController.m in Sources */,
+				976EFB271D01C28B0048A4DC /* AppDelegate.m in Sources */,
+				976EFB241D01C28B0048A4DC /* main.m in Sources */,
+				974C45661D0A6A2500797BF0 /* webViewPDF\.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		976EFB341D01C28B0048A4DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				976EFB3D1D01C28B0048A4DC /* KKH_appUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		976EFB3A1D01C28B0048A4DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 976EFB1E1D01C28B0048A4DC /* KKH app */;
+			targetProxy = 976EFB391D01C28B0048A4DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		976EFB2B1D01C28B0048A4DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				976EFB2C1D01C28B0048A4DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		976EFB301D01C28B0048A4DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				976EFB311D01C28B0048A4DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		976EFB3F1D01C28B0048A4DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		976EFB401D01C28B0048A4DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		976EFB421D01C28B0048A4DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "KKH app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seanlim.KKH-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "KKH app/KKH app-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		976EFB431D01C28B0048A4DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "KKH app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seanlim.KKH-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "KKH app/KKH app-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		976EFB451D01C28B0048A4DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "KKH appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seanlim.KKH-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "KKH app";
+			};
+			name = Debug;
+		};
+		976EFB461D01C28B0048A4DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "KKH appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seanlim.KKH-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "KKH app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		976EFB1A1D01C28B0048A4DC /* Build configuration list for PBXProject "KKH app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				976EFB3F1D01C28B0048A4DC /* Debug */,
+				976EFB401D01C28B0048A4DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		976EFB411D01C28B0048A4DC /* Build configuration list for PBXNativeTarget "KKH app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				976EFB421D01C28B0048A4DC /* Debug */,
+				976EFB431D01C28B0048A4DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		976EFB441D01C28B0048A4DC /* Build configuration list for PBXNativeTarget "KKH appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				976EFB451D01C28B0048A4DC /* Debug */,
+				976EFB461D01C28B0048A4DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 976EFB171D01C28B0048A4DC /* Project object */;
+}
