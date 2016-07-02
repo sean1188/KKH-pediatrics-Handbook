@@ -18,6 +18,9 @@
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
 }
+- (BOOL)shouldAutorotate {
+    return NO;
+}
 -(void) setcolors{
     for (UIView *view in _secondaryViews) {
         [view setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]]];
@@ -30,6 +33,14 @@
 int likedChptrCount = 0;
 NSMutableArray *likedObjs;
 
+-(void) viewWillAppear:(BOOL)animated{
+    [self viewDidLoad];
+    _tableView.alpha = 1;
+    _h1.alpha = 1;
+    _h2.alpha = 1; _h3.alpha =1;
+    [_tableView reloadData];
+    _cardView.translatesAutoresizingMaskIntoConstraints = NO;
+}
 -(void) viewDidLoad{
     [super viewDidLoad];
     _cardView.layer.cornerRadius = 15.0f;
@@ -56,17 +67,28 @@ NSMutableArray *likedObjs;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return likedChptrCount;
 }
+-(NSInteger)tableView:(UITableView *)tableView
+indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 4;
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"test ");
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        if ([indexPath section] == 0) {
+            UILabel *index = [[UILabel alloc] initWithFrame:CGRectMake( 6, ((cell.frame.size.height/2) - ((cell.frame.size.height -5) /2 )), cell.frame.size.height -5, cell.frame.size.height -5)];
+            index.text = [NSString stringWithFormat:@"%i", [[likedObjs objectAtIndex:indexPath.row] intValue] +1];
+            index.font = [UIFont fontWithName:@"Cabin" size:23];index.layer.cornerRadius = 6;index.textAlignment = UITextAlignmentCenter;index.textColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]];index.backgroundColor = [UIColor whiteColor];index.layer.cornerRadius = 6;index.clipsToBounds = YES;index.tag = 1;
+            [cell.contentView addSubview:index];
+        }
     }
     // Configure cell
     [cell setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults]objectForKey:@"secondaryColor"]]];
     cell.textColor = [UIColor whiteColor];
-    
+    cell.font = [UIFont fontWithName:@"CabinCondensed" size:23];
     cell.textLabel.text = [[[PDFManager alloc] init] titleForChapter:[[likedObjs objectAtIndex:indexPath.row] integerValue]];
     
     
@@ -82,9 +104,10 @@ NSMutableArray *likedObjs;
         [UIView transitionWithView:_cardView duration:0.5 options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{} completion:^(BOOL s){
             [UIView animateWithDuration:0.3 animations:^{
                 _cardView.frame = self.view.frame;
+                _cardView.translatesAutoresizingMaskIntoConstraints = YES;
             } completion:^(BOOL s ){
                 _cardView.layer.cornerRadius = 0;
-                [self.navigationController performSegueWithIdentifier:@"webView" sender:nil];
+                [self performSegueWithIdentifier:@"viewchpt" sender:nil];
             }];
         }];
 

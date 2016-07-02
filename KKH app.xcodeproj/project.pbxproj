@@ -36,7 +36,7 @@
 		979782E01D1A87E800BAF670 /* 03-Guidelines_for_the_Provision_of_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782CF1D1A87E800BAF670 /* 03-Guidelines_for_the_Provision_of_Anaesthesia.pdf */; };
 		979782E11D1A87E800BAF670 /* 04-Paediatric_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D01D1A87E800BAF670 /* 04-Paediatric_Anaesthesia.pdf */; };
 		979782E21D1A87E800BAF670 /* 05-Neonatal_Anaesthesia,_NICU.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D11D1A87E800BAF670 /* 05-Neonatal_Anaesthesia,_NICU.pdf */; };
-		979782E31D1A87E800BAF670 /* 06-Satish,_Tracy_Cardiac_Cath_Guidelines.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D21D1A87E800BAF670 /* 06-Satish,_Tracy_Cardiac_Cath_Guidelines.pdf */; };
+		979782E31D1A87E800BAF670 /* 06-Cardiac_Cath_Guidelines.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D21D1A87E800BAF670 /* 06-Cardiac_Cath_Guidelines.pdf */; };
 		979782E41D1A87E800BAF670 /* 07-Diagnostic_Imaging.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D31D1A87E800BAF670 /* 07-Diagnostic_Imaging.pdf */; };
 		979782E51D1A87E800BAF670 /* 08-Sedation_for_oncology_children.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D41D1A87E800BAF670 /* 08-Sedation_for_oncology_children.pdf */; };
 		979782E61D1A87E800BAF670 /* 09-Regional_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D51D1A87E800BAF670 /* 09-Regional_Anaesthesia.pdf */; };
@@ -48,6 +48,12 @@
 		979782EC1D1A87E800BAF670 /* 15-Common_Crisis,_Algorithms.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782DB1D1A87E800BAF670 /* 15-Common_Crisis,_Algorithms.pdf */; };
 		979782ED1D1A87E800BAF670 /* 16-Acute_Pain_Service.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782DC1D1A87E800BAF670 /* 16-Acute_Pain_Service.pdf */; };
 		979782EE1D1A87E800BAF670 /* 17-Chronic_Pain_Service.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782DD1D1A87E800BAF670 /* 17-Chronic_Pain_Service.pdf */; };
+		979782F11D1D8E7100BAF670 /* splashAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 979782F01D1D8E7100BAF670 /* splashAnimate.m */; };
+		979782F41D1D8EBC00BAF670 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 979782F31D1D8EBC00BAF670 /* SplashViewController.m */; };
+		979782F61D1D90B100BAF670 /* splash screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 979782F51D1D90B100BAF670 /* splash screen.png */; };
+		979782F91D1E1C6C00BAF670 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 979782F81D1E1C6C00BAF670 /* AboutUsViewController.m */; };
+		979782FD1D1F8DEB00BAF670 /* DrugCalculationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979782FB1D1F8DEB00BAF670 /* DrugCalculationsManager.swift */; };
+		979782FE1D1F8DEB00BAF670 /* DrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = 979782FC1D1F8DEB00BAF670 /* DrugList.csv */; };
 		97BCF2C51D13955600891F74 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BCF2C41D13955600891F74 /* SettingsViewController.m */; };
 		97FB27C11D06D69000EF2845 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB27C01D06D69000EF2845 /* Calculator.m */; };
 /* End PBXBuildFile section */
@@ -103,7 +109,7 @@
 		979782CF1D1A87E800BAF670 /* 03-Guidelines_for_the_Provision_of_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "03-Guidelines_for_the_Provision_of_Anaesthesia.pdf"; sourceTree = "<group>"; };
 		979782D01D1A87E800BAF670 /* 04-Paediatric_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "04-Paediatric_Anaesthesia.pdf"; sourceTree = "<group>"; };
 		979782D11D1A87E800BAF670 /* 05-Neonatal_Anaesthesia,_NICU.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "05-Neonatal_Anaesthesia,_NICU.pdf"; sourceTree = "<group>"; };
-		979782D21D1A87E800BAF670 /* 06-Satish,_Tracy_Cardiac_Cath_Guidelines.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "06-Satish,_Tracy_Cardiac_Cath_Guidelines.pdf"; sourceTree = "<group>"; };
+		979782D21D1A87E800BAF670 /* 06-Cardiac_Cath_Guidelines.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "06-Cardiac_Cath_Guidelines.pdf"; sourceTree = "<group>"; };
 		979782D31D1A87E800BAF670 /* 07-Diagnostic_Imaging.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "07-Diagnostic_Imaging.pdf"; sourceTree = "<group>"; };
 		979782D41D1A87E800BAF670 /* 08-Sedation_for_oncology_children.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "08-Sedation_for_oncology_children.pdf"; sourceTree = "<group>"; };
 		979782D51D1A87E800BAF670 /* 09-Regional_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "09-Regional_Anaesthesia.pdf"; sourceTree = "<group>"; };
@@ -115,6 +121,15 @@
 		979782DB1D1A87E800BAF670 /* 15-Common_Crisis,_Algorithms.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "15-Common_Crisis,_Algorithms.pdf"; sourceTree = "<group>"; };
 		979782DC1D1A87E800BAF670 /* 16-Acute_Pain_Service.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "16-Acute_Pain_Service.pdf"; sourceTree = "<group>"; };
 		979782DD1D1A87E800BAF670 /* 17-Chronic_Pain_Service.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "17-Chronic_Pain_Service.pdf"; sourceTree = "<group>"; };
+		979782EF1D1D8E7100BAF670 /* splashAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = splashAnimate.h; sourceTree = "<group>"; };
+		979782F01D1D8E7100BAF670 /* splashAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = splashAnimate.m; sourceTree = "<group>"; };
+		979782F21D1D8EBC00BAF670 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		979782F31D1D8EBC00BAF670 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		979782F51D1D90B100BAF670 /* splash screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash screen.png"; sourceTree = "<group>"; };
+		979782F71D1E1C6C00BAF670 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		979782F81D1E1C6C00BAF670 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
+		979782FB1D1F8DEB00BAF670 /* DrugCalculationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugCalculationsManager.swift; sourceTree = "<group>"; };
+		979782FC1D1F8DEB00BAF670 /* DrugList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DrugList.csv; sourceTree = "<group>"; };
 		97BCF2C31D13955600891F74 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		97BCF2C41D13955600891F74 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		97FB27BF1D06D69000EF2845 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
@@ -172,6 +187,8 @@
 		9722E86E1D0CF8F700C6D26F /* animation */ = {
 			isa = PBXGroup;
 			children = (
+				979782EF1D1D8E7100BAF670 /* splashAnimate.h */,
+				979782F01D1D8E7100BAF670 /* splashAnimate.m */,
 				973E002E1D09371B00F7C94A /* animationScheme.h */,
 				973E002F1D09371B00F7C94A /* animationScheme.m */,
 				973E00261D092CD600F7C94A /* QCMethod.m */,
@@ -183,6 +200,8 @@
 		9722E86F1D0CF90F00C6D26F /* calculation */ = {
 			isa = PBXGroup;
 			children = (
+				979782FB1D1F8DEB00BAF670 /* DrugCalculationsManager.swift */,
+				979782FC1D1F8DEB00BAF670 /* DrugList.csv */,
 				97FB27BF1D06D69000EF2845 /* Calculator.h */,
 				97FB27C01D06D69000EF2845 /* Calculator.m */,
 			);
@@ -215,6 +234,7 @@
 				973E00311D09A2FF00F7C94A /* KKH app-Bridging-Header.h */,
 				973E00321D09A30000F7C94A /* PDFManager.swift */,
 				9722E86E1D0CF8F700C6D26F /* animation */,
+				979782F51D1D90B100BAF670 /* splash screen.png */,
 				9722E8541D0CEF0300C6D26F /* font */,
 				976EFB2B1D01C28B0048A4DC /* Main.storyboard */,
 				976EFB2E1D01C28B0048A4DC /* Assets.xcassets */,
@@ -228,6 +248,10 @@
 				9722E87E1D0EFF0100C6D26F /* FavViewController.m */,
 				97BCF2C31D13955600891F74 /* SettingsViewController.h */,
 				97BCF2C41D13955600891F74 /* SettingsViewController.m */,
+				979782F21D1D8EBC00BAF670 /* SplashViewController.h */,
+				979782F31D1D8EBC00BAF670 /* SplashViewController.m */,
+				979782F71D1E1C6C00BAF670 /* AboutUsViewController.h */,
+				979782F81D1E1C6C00BAF670 /* AboutUsViewController.m */,
 			);
 			path = "KKH app";
 			sourceTree = "<group>";
@@ -257,7 +281,7 @@
 				979782CF1D1A87E800BAF670 /* 03-Guidelines_for_the_Provision_of_Anaesthesia.pdf */,
 				979782D01D1A87E800BAF670 /* 04-Paediatric_Anaesthesia.pdf */,
 				979782D11D1A87E800BAF670 /* 05-Neonatal_Anaesthesia,_NICU.pdf */,
-				979782D21D1A87E800BAF670 /* 06-Satish,_Tracy_Cardiac_Cath_Guidelines.pdf */,
+				979782D21D1A87E800BAF670 /* 06-Cardiac_Cath_Guidelines.pdf */,
 				979782D31D1A87E800BAF670 /* 07-Diagnostic_Imaging.pdf */,
 				979782D41D1A87E800BAF670 /* 08-Sedation_for_oncology_children.pdf */,
 				979782D51D1A87E800BAF670 /* 09-Regional_Anaesthesia.pdf */,
@@ -358,6 +382,7 @@
 				9722E8631D0CF16300C6D26F /* Cabin-Italic.otf in Resources */,
 				9722E8641D0CF16300C6D26F /* Cabin-Medium.otf in Resources */,
 				979782EB1D1A87E800BAF670 /* 14-Paediatric_Medicine_Fluid_Guidelines.pdf in Resources */,
+				979782FE1D1F8DEB00BAF670 /* DrugList.csv in Resources */,
 				9722E8651D0CF16300C6D26F /* Cabin-MediumItalic.otf in Resources */,
 				979782E11D1A87E800BAF670 /* 04-Paediatric_Anaesthesia.pdf in Resources */,
 				9722E8661D0CF16300C6D26F /* Cabin-Regular.otf in Resources */,
@@ -368,7 +393,8 @@
 				979782E21D1A87E800BAF670 /* 05-Neonatal_Anaesthesia,_NICU.pdf in Resources */,
 				9722E8691D0CF16300C6D26F /* CabinCondensed-Bold.ttf in Resources */,
 				9722E86A1D0CF16300C6D26F /* CabinCondensed-Medium.ttf in Resources */,
-				979782E31D1A87E800BAF670 /* 06-Satish,_Tracy_Cardiac_Cath_Guidelines.pdf in Resources */,
+				979782E31D1A87E800BAF670 /* 06-Cardiac_Cath_Guidelines.pdf in Resources */,
+				979782F61D1D90B100BAF670 /* splash screen.png in Resources */,
 				9722E86B1D0CF16300C6D26F /* CabinCondensed-Regular.ttf in Resources */,
 				979782E71D1A87E800BAF670 /* 10-Patient_transport.pdf in Resources */,
 				979782E01D1A87E800BAF670 /* 03-Guidelines_for_the_Provision_of_Anaesthesia.pdf in Resources */,
@@ -404,7 +430,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				976EFB2A1D01C28B0048A4DC /* ViewController.m in Sources */,
+				979782F91D1E1C6C00BAF670 /* AboutUsViewController.m in Sources */,
 				973E00331D09A30000F7C94A /* PDFManager.swift in Sources */,
+				979782F11D1D8E7100BAF670 /* splashAnimate.m in Sources */,
 				973E00301D09371B00F7C94A /* animationScheme.m in Sources */,
 				97BCF2C51D13955600891F74 /* SettingsViewController.m in Sources */,
 				973E00291D092CD600F7C94A /* QCMethod.m in Sources */,
@@ -413,6 +441,8 @@
 				976EFB271D01C28B0048A4DC /* AppDelegate.m in Sources */,
 				976EFB241D01C28B0048A4DC /* main.m in Sources */,
 				974C45661D0A6A2500797BF0 /* webViewPDF\.m in Sources */,
+				979782F41D1D8EBC00BAF670 /* SplashViewController.m in Sources */,
+				979782FD1D1F8DEB00BAF670 /* DrugCalculationsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +575,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "KKH app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.seanlim.KKH-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -564,6 +595,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "KKH app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.seanlim.KKH-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";

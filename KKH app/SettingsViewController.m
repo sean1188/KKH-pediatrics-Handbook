@@ -16,6 +16,9 @@
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
 }
+- (BOOL)shouldAutorotate {
+    return NO;
+}
 -(void) setcolors{
     for (UIView *view in _secondaryViews) {
         [view setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]]];
@@ -28,27 +31,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setcolors];
+    _aboutUsView.layer.shadowOpacity = 0.4;
+    _aboutUsView.layer.shadowOffset = CGSizeMake(0, 2);
+    _aboutUsView.layer.cornerRadius = 15.0f;
+    _startScreenView.layer.cornerRadius = 15.0f;
     // Do any additional setup after loading the view.
     [UIView animateWithDuration:0.3 animations:^{
         _settingsLogo.transform = CGAffineTransformMakeRotation(M_PI);
         _topSettingslogo.transform = CGAffineTransformMakeRotation(M_PI);
     }];
-    
+    //init startup selection
+    [_startUpSelection setSelectedSegmentIndex:[[NSUserDefaults standardUserDefaults] integerForKey:@"startUp"]];
     _primaryColorIndicator.layer.cornerRadius = _primaryColorIndicator.frame.size.width/2;
-    _primaryColorIndicator.layer.shadowOpacity = 0.4; _primaryColorIndicator.layer.shadowOffset = CGSizeMake(1, -2);
+    _primaryColorIndicator.layer.shadowOpacity = 0.4; _primaryColorIndicator.layer.shadowOffset = CGSizeMake(1, 2);
     _SecondaryColorIndicator.layer.cornerRadius = _SecondaryColorIndicator.frame.size.width /2 ;
     _color1Primary.layer.cornerRadius = _color1Primary.frame.size.width/2;
-    _color1Primary.layer.shadowOpacity = 0.4; _color1Primary.layer.shadowOffset = CGSizeMake(1, -2);
+    _color1Primary.layer.shadowOpacity = 0.4; _color1Primary.layer.shadowOffset = CGSizeMake(1, 1);
     _color2Primary.layer.cornerRadius = _color2Primary.frame.size.width/2;
-    _color2Primary.layer.shadowOpacity = 0.4; _color2Primary.layer.shadowOffset = CGSizeMake(1, -2);
+    _color2Primary.layer.shadowOpacity = 0.4; _color2Primary.layer.shadowOffset = CGSizeMake(1, 2);
     _color3Primary.layer.cornerRadius = _color3Primary.frame.size.width/2;
-    _color3Primary.layer.shadowOpacity = 0.4; _color3Primary.layer.shadowOffset = CGSizeMake(1, -2);
+    _color3Primary.layer.shadowOpacity = 0.4; _color3Primary.layer.shadowOffset = CGSizeMake(1, 2);
     _color1Secondary.layer.cornerRadius = _color1Secondary.frame.size.width/2;
     _color2Secondary.layer.cornerRadius = _color2Secondary.frame.size.width/2;
     _Color3Seconday.layer.cornerRadius = _Color3Seconday.frame.size.width/2;
     [self initColor];
     _colorSelectPadding.layer.cornerRadius = 15.0f;
-    _colorSelectPadding.layer.shadowOpacity = 0.4; _colorSelectPadding.layer.shadowOffset = CGSizeMake(1, -2);
+    _colorSelectPadding.layer.shadowOpacity = 0.4; _colorSelectPadding.layer.shadowOffset = CGSizeMake(1, 2);
 
     _blurView.alpha = 0; _color1Primary.alpha = 0; _color2Primary.alpha =0; _color3Primary.alpha = 0;
     
@@ -146,5 +154,19 @@
     [UIView animateWithDuration:0.3 animations:^{
         _settingsLogo.transform = CGAffineTransformMakeRotation(M_PI);
     }];
+}
+- (IBAction)aboutUsTapped:(id)sender {
+    [self performSegueWithIdentifier:@"about" sender:self];
+}
+
+- (IBAction)aboutUsbutton:(id)sender {
+    [self aboutUsTapped:nil];
+
+}
+- (IBAction)infoB:(id)sender {
+    [self aboutUsTapped:nil];
+}
+- (IBAction)didChangeStartup:(id)sender {
+    [[NSUserDefaults standardUserDefaults ] setInteger:[_startUpSelection selectedSegmentIndex] forKey:@"startUp"];
 }
 @end

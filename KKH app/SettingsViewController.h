@@ -10,6 +10,9 @@
 
 @interface SettingsViewController : UIViewController
 
+- (IBAction)infoB:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UIView *startScreenView;
 @property (strong, nonatomic) IBOutlet UIImageView *topSettingslogo;
 //color indicator
 @property (strong, nonatomic) IBOutlet UIView *SecondaryColorIndicator;
@@ -32,9 +35,14 @@
 @property (strong, nonatomic) IBOutlet UIView *Color3Seconday;
 - (IBAction)color3Tapped:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UIView *aboutUsView;
+- (IBAction)aboutUsTapped:(id)sender;
+- (IBAction)aboutUsbutton:(id)sender;
 
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *secondaryViews;
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *primaryViews;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *startUpSelection;
+- (IBAction)didChangeStartup:(id)sender;
 
 
 //bottom bar

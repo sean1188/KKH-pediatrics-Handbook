@@ -29,6 +29,7 @@
 //Bottom bar
 @property (strong, nonatomic) IBOutlet UIStackView *bottomBar;
 @property (strong, nonatomic) IBOutlet UIImageView *infoIcon;
+@property (strong, nonatomic) IBOutlet UIView *refview;
 
 //button presses
 - (IBAction)refButton:(id)sender;
@@ -38,7 +39,15 @@
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *secondaryViews;
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *primaryViews;
 
+@property (strong, nonatomic) IBOutlet UIView *animateIn;
+- (IBAction)swipedDown:(id)sender;
+@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipedDown;
 
+//disclaimer view
+@property (strong, nonatomic) IBOutlet UIView *DView;
+@property (strong, nonatomic) IBOutlet UITextView *Dview_text;
+@property (strong, nonatomic) IBOutlet UIButton *dViewAgreeButton;
+- (IBAction)dViewAgree:(id)sender;
 
 @end
 

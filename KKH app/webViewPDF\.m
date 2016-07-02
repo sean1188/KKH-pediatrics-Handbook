@@ -27,9 +27,49 @@
         [views setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]]];
     }
 }
+#pragma  mark- rotation
+- (void) orientationChanged:(NSNotification *)note
+{
+    if (i == true) {
+    UIDevice * device = note.object;
+    switch(device.orientation)
+    {
+        case UIDeviceOrientationPortrait:{
+            [UIView animateWithDuration:0.4 animations:^{
+                _webView.transform = CGAffineTransformIdentity;
+                _webView.translatesAutoresizingMaskIntoConstraints = NO;
+                [_webView.scrollView setZoomScale: 1 animated: YES];
+            }];
+        }break;
+        case UIDeviceOrientationLandscapeLeft:{
+            [UIView animateWithDuration:0.4 animations:^{
+                _webView.transform = CGAffineTransformMakeRotation((M_PI * 90) / 180);
+                _webView.frame = self.view.frame; _webView.translatesAutoresizingMaskIntoConstraints = YES;
+                
+            }];
+        }break;
+        case UIDeviceOrientationLandscapeRight:{
+            [UIView animateWithDuration:0.3 animations:^{
+                _webView.transform = CGAffineTransformMakeRotation((M_PI * -90) / 180);
+                _webView.frame = self.view.frame; _webView.translatesAutoresizingMaskIntoConstraints = YES;
+
+            }];
+        }break;
+            
+        default:{
+        }break;
+    };
+    }
+}
+#pragma  mark-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setcolors];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self selector:@selector(orientationChanged:)
+     name:UIDeviceOrientationDidChangeNotification
+     object:[UIDevice currentDevice]];
     //
     int likedChpts = 0;
     for (int i = 0; i < [[[PDFManager alloc] init]numberOfChapters]; i ++) {
@@ -86,6 +126,12 @@ bool i;
         }completion:^(BOOL s ){
             i = true;
             [self prefersStatusBarHidden];
+            if ([[NSUserDefaults standardUserDefaults] boolForKey:@"Vpdf"] != TRUE) {
+                [[NSUserDefaults standardUserDefaults] setBool:TRUE forKey:@"Vpdf"];
+                UIAlertController * a  = [UIAlertController alertControllerWithTitle:@"Useful Tip" message:@"Rotate screen for full screen mode!" preferredStyle:UIAlertControllerStyleAlert];
+                [a addAction:[UIAlertAction actionWithTitle:@"Got it" style:UIAlertActionStyleCancel handler:nil]];
+                [self presentViewController:a animated:YES completion:nil];
+            }
             _buttonPadding.layer.cornerRadius = 0;
             [UIView animateWithDuration:0.3 animations:^{
                 _webView.alpha =1; _Ptz.alpha = 1;
@@ -100,11 +146,11 @@ bool i;
     }
     else{
         if([[NSUserDefaults standardUserDefaults] boolForKey:@"fromFavs"] == YES){
-            [self.navigationController performSegueWithIdentifier:@"list" sender:nil];
+            [self dismissViewControllerAnimated:YES completion:nil];
             [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"fromFavs"];
             
         }else{
-            [self.navigationController performSegueWithIdentifier:@"ref" sender:nil];}    }
+            [self dismissViewControllerAnimated:YES completion:nil];}    }
   
     
 }
@@ -136,10 +182,10 @@ bool i;
 }
 - (IBAction)backButton:(id)sender {
     if([[NSUserDefaults standardUserDefaults] boolForKey:@"fromFavs"] == YES){
-        [self.navigationController performSegueWithIdentifier:@"list" sender:nil];
+        [self dismissViewControllerAnimated:YES completion:nil];
         [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"fromFavs"];
 
     }else{
-        [self.navigationController performSegueWithIdentifier:@"ref" sender:nil];}
+        [self dismissViewControllerAnimated:YES completion:nil];}
 }
 @end
