@@ -112,6 +112,7 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
         [[NSUserDefaults standardUserDefaults] setObject:color3Primary forKey:@"primaryColor3"];
         NSData *color3Secondary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.0 green:0.5843 blue:0.5294 alpha:1.0]];
         [[NSUserDefaults standardUserDefaults] setObject:color3Secondary forKey:@"secondaryColor3"];
+            [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"6969"] forKey:@"secure"];
         
         //
             [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"startUp"];

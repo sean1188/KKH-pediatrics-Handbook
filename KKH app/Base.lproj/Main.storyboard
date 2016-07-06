@@ -22,6 +22,20 @@
             <string>Cabin-SemiBold</string>
             <string>Cabin-SemiBold</string>
             <string>Cabin-SemiBold</string>
+            <string>Cabin-SemiBold</string>
+            <string>Cabin-SemiBold</string>
+            <string>Cabin-SemiBold</string>
+            <string>Cabin-SemiBold</string>
+            <string>Cabin-SemiBold</string>
+            <string>Cabin-SemiBold</string>
+            <string>Cabin-SemiBold</string>
+            <string>Cabin-SemiBold</string>
+            <string>Cabin-SemiBold</string>
+            <string>Cabin-SemiBold</string>
+            <string>Cabin-SemiBold</string>
+        </mutableArray>
+        <mutableArray key="CabinCondensed-Medium.ttf">
+            <string>CabinCondensed-Medium</string>
         </mutableArray>
         <mutableArray key="CabinCondensed-Regular.ttf">
             <string>CabinCondensed</string>
@@ -1479,6 +1493,9 @@
                                     <constraint firstItem="Xa4-FK-y3e" firstAttribute="centerY" secondItem="dYQ-Fc-1iw" secondAttribute="centerY" id="8mY-1W-7fT"/>
                                     <constraint firstItem="Xa4-FK-y3e" firstAttribute="centerX" secondItem="dYQ-Fc-1iw" secondAttribute="centerX" id="f4K-Sa-CWT"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="EPc-DL-y13" appends="YES" id="fxu-yT-0Xg"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0g-Ri-zI5" userLabel="start screen">
                                 <rect key="frame" x="20" y="406" width="560" height="100"/>
@@ -1685,6 +1702,8 @@
                         <outlet property="Color3Seconday" destination="3pr-cU-f0l" id="p1e-4H-01O"/>
                         <outlet property="SecondaryColorIndicator" destination="rsk-Lu-eCf" id="s4V-JW-2fZ"/>
                         <outlet property="aboutUsView" destination="dYQ-Fc-1iw" id="sf2-LH-OdS"/>
+                        <outlet property="authTapped" destination="EPc-DL-y13" id="Y2I-fW-5Ct"/>
+                        <outlet property="authView" destination="ilz-Fp-cOT" id="Byt-F1-8Gi"/>
                         <outlet property="blurView" destination="KQk-zV-Zhc" id="PRu-hE-ijX"/>
                         <outlet property="color1Primary" destination="nbK-3b-vef" id="IlR-8S-KGI"/>
                         <outlet property="color1Secondary" destination="lsC-4I-Pqx" id="NhK-Xq-7Cu"/>
@@ -1692,6 +1711,8 @@
                         <outlet property="color2Secondary" destination="P52-Yc-5kB" id="XIa-Px-Haq"/>
                         <outlet property="color3Primary" destination="OLM-VY-es2" id="Msa-1r-EnG"/>
                         <outlet property="colorSelectPadding" destination="bvv-FA-SW7" id="OUd-18-6g1"/>
+                        <outlet property="colorTapgesture" destination="2u7-7a-lpH" id="QK9-jl-24U"/>
+                        <outlet property="pinDisp" destination="TUt-ed-BSw" id="y5H-2L-iM9"/>
                         <outlet property="primaryColorIndicator" destination="Cf9-PC-wuP" id="3Lp-sG-gEc"/>
                         <outlet property="settingsLogo" destination="AKt-jN-pNt" id="3zX-uo-fwU"/>
                         <outlet property="startScreenView" destination="Z0g-Ri-zI5" id="fVR-fG-g2Q"/>
@@ -1706,7 +1727,20 @@
                         <outletCollection property="secondaryViews" destination="dYQ-Fc-1iw" id="0R4-hL-ON6"/>
                         <outletCollection property="secondaryViews" destination="Z0g-Ri-zI5" id="XqZ-cf-WYZ"/>
                         <outletCollection property="secondaryViews" destination="xdf-E4-eoH" id="5fK-y3-Q2s"/>
+                        <outletCollection property="secondaryViews" destination="ilz-Fp-cOT" id="BpB-sl-7Er"/>
+                        <outletCollection property="secondaryViews" destination="r1e-M9-yB4" id="Ebd-7j-ons"/>
+                        <outletCollection property="pinButtons" destination="NU1-Be-gGj" id="Qab-sL-cTr"/>
+                        <outletCollection property="pinButtons" destination="xhJ-RR-5rM" id="lgH-57-N33"/>
+                        <outletCollection property="pinButtons" destination="r1e-M9-yB4" id="mCq-63-q3W"/>
+                        <outletCollection property="pinButtons" destination="oRR-IM-MsS" id="wpu-8a-NYy"/>
+                        <outletCollection property="pinButtons" destination="vFI-0Q-h4f" id="uSo-gW-fhr"/>
+                        <outletCollection property="pinButtons" destination="rXM-QW-MqG" id="jXm-lK-Umz"/>
+                        <outletCollection property="pinButtons" destination="h6X-cu-td0" id="Luk-T8-zTs"/>
+                        <outletCollection property="pinButtons" destination="p2w-7K-1Mh" id="pgr-XQ-iNG"/>
+                        <outletCollection property="pinButtons" destination="ZSs-xQ-HtS" id="ici-pQ-tp0"/>
+                        <outletCollection property="pinButtons" destination="UKg-Le-hMr" id="9Ui-SH-79o"/>
                         <segue destination="vV6-5c-V2t" kind="presentation" identifier="about" modalTransitionStyle="coverVertical" id="yxu-i2-3py"/>
+                        <segue destination="dIi-Se-bnY" kind="presentation" identifier="auth" id="5zy-bG-uJE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1MO-fm-YRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1725,6 +1759,172 @@
                         <action selector="color1Tapped:" destination="y57-F7-K6a" id="rzk-sa-EZc"/>
                     </connections>
                 </tapGestureRecognizer>
+                <view contentMode="scaleToFill" id="ilz-Fp-cOT" userLabel="PIN">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFI-0Q-h4f">
+                            <rect key="frame" x="100" y="129" width="50" height="50"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="2W8-ud-fb3"/>
+                                <constraint firstAttribute="height" constant="50" id="IjG-y8-L3E"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
+                            <state key="normal" title="5">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="five:" destination="y57-F7-K6a" eventType="touchUpInside" id="9Z4-J5-QU9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRR-IM-MsS">
+                            <rect key="frame" x="38" y="129" width="50" height="50"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
+                            <state key="normal" title="4">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="four:" destination="y57-F7-K6a" eventType="touchUpInside" id="zjv-4a-qDr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXM-QW-MqG">
+                            <rect key="frame" x="162" y="129" width="50" height="50"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
+                            <state key="normal" title="6">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="six:" destination="y57-F7-K6a" eventType="touchUpInside" id="J8H-Qk-Vla"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2w-7K-1Mh">
+                            <rect key="frame" x="100" y="187" width="50" height="50"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Yhz-5s-aFf"/>
+                                <constraint firstAttribute="height" constant="50" id="qAn-Ai-asY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
+                            <state key="normal" title="8">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="eight:" destination="y57-F7-K6a" eventType="touchUpInside" id="Adz-ff-gED"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6X-cu-td0">
+                            <rect key="frame" x="38" y="187" width="50" height="50"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
+                            <state key="normal" title="7">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="seven:" destination="y57-F7-K6a" eventType="touchUpInside" id="GPH-8n-WT7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSs-xQ-HtS">
+                            <rect key="frame" x="162" y="187" width="50" height="50"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
+                            <state key="normal" title="9">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="nine:" destination="y57-F7-K6a" eventType="touchUpInside" id="Pne-Gr-eo4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhJ-RR-5rM">
+                            <rect key="frame" x="100" y="71" width="50" height="50"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="3bs-ml-wYD"/>
+                                <constraint firstAttribute="height" constant="50" id="Qpv-bV-D0Z"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
+                            <state key="normal" title="2">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="two:" destination="y57-F7-K6a" eventType="touchUpInside" id="WXo-sr-C9p"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NU1-Be-gGj">
+                            <rect key="frame" x="38" y="71" width="50" height="50"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
+                            <state key="normal" title="1">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="one:" destination="y57-F7-K6a" eventType="touchUpInside" id="4wu-bE-z9X"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1e-M9-yB4">
+                            <rect key="frame" x="162" y="71" width="50" height="50"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
+                            <state key="normal" title="3">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="three:" destination="y57-F7-K6a" eventType="touchUpInside" id="rge-PK-0Yo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKg-Le-hMr">
+                            <rect key="frame" x="100" y="245" width="50" height="50"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="4bL-Es-FDJ"/>
+                                <constraint firstAttribute="height" constant="50" id="d1z-Wh-kH9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
+                            <state key="normal" title="0">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="zero:" destination="y57-F7-K6a" eventType="touchUpInside" id="VCO-Po-Hsj"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="- - - -" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TUt-ed-BSw">
+                            <rect key="frame" x="38" y="33" width="174" height="30"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="34"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Enter PIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbb-QF-H39">
+                            <rect key="frame" x="89" y="8" width="72" height="21"/>
+                            <fontDescription key="fontDescription" name="CabinCondensed-Medium" family="Cabin Condensed" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="r1e-M9-yB4" firstAttribute="centerY" secondItem="xhJ-RR-5rM" secondAttribute="centerY" id="1Yy-3Y-54Q"/>
+                        <constraint firstItem="UKg-Le-hMr" firstAttribute="centerX" secondItem="ilz-Fp-cOT" secondAttribute="centerX" id="DQb-cj-dU8"/>
+                        <constraint firstItem="p2w-7K-1Mh" firstAttribute="top" secondItem="vFI-0Q-h4f" secondAttribute="bottom" constant="8" id="Dpf-eE-TZb"/>
+                        <constraint firstItem="TUt-ed-BSw" firstAttribute="top" secondItem="kbb-QF-H39" secondAttribute="bottom" constant="4" id="MnY-NX-ebC"/>
+                        <constraint firstItem="xhJ-RR-5rM" firstAttribute="top" secondItem="TUt-ed-BSw" secondAttribute="bottom" constant="8" id="Ntr-FQ-Cdd"/>
+                        <constraint firstItem="oRR-IM-MsS" firstAttribute="centerY" secondItem="vFI-0Q-h4f" secondAttribute="centerY" id="OH1-9d-ptP"/>
+                        <constraint firstItem="ZSs-xQ-HtS" firstAttribute="centerY" secondItem="p2w-7K-1Mh" secondAttribute="centerY" id="UDu-iw-cU0"/>
+                        <constraint firstItem="kbb-QF-H39" firstAttribute="centerX" secondItem="ilz-Fp-cOT" secondAttribute="centerX" id="VgP-xH-G7i"/>
+                        <constraint firstItem="vFI-0Q-h4f" firstAttribute="top" secondItem="xhJ-RR-5rM" secondAttribute="bottom" constant="8" id="VlC-fC-Ztz"/>
+                        <constraint firstItem="TUt-ed-BSw" firstAttribute="centerX" secondItem="ilz-Fp-cOT" secondAttribute="centerX" id="f96-I1-0UC"/>
+                        <constraint firstItem="p2w-7K-1Mh" firstAttribute="centerX" secondItem="ilz-Fp-cOT" secondAttribute="centerX" id="gA0-u0-TkL"/>
+                        <constraint firstItem="vFI-0Q-h4f" firstAttribute="centerY" secondItem="ilz-Fp-cOT" secondAttribute="centerY" id="l05-QY-dCr"/>
+                        <constraint firstItem="kbb-QF-H39" firstAttribute="top" secondItem="ilz-Fp-cOT" secondAttribute="top" constant="8" id="muw-Fl-DKl"/>
+                        <constraint firstItem="NU1-Be-gGj" firstAttribute="centerY" secondItem="xhJ-RR-5rM" secondAttribute="centerY" id="oLu-Ej-aUh"/>
+                        <constraint firstItem="UKg-Le-hMr" firstAttribute="top" secondItem="p2w-7K-1Mh" secondAttribute="bottom" constant="8" id="oUD-lf-z2l"/>
+                        <constraint firstItem="vFI-0Q-h4f" firstAttribute="centerX" secondItem="ilz-Fp-cOT" secondAttribute="centerX" id="pTP-mo-YvS"/>
+                        <constraint firstItem="h6X-cu-td0" firstAttribute="centerY" secondItem="p2w-7K-1Mh" secondAttribute="centerY" id="q4w-GU-aLs"/>
+                        <constraint firstItem="xhJ-RR-5rM" firstAttribute="centerX" secondItem="ilz-Fp-cOT" secondAttribute="centerX" id="wbq-PV-qkD"/>
+                        <constraint firstItem="rXM-QW-MqG" firstAttribute="centerY" secondItem="vFI-0Q-h4f" secondAttribute="centerY" id="y11-zP-WqP"/>
+                    </constraints>
+                </view>
                 <tapGestureRecognizer id="JwW-Pc-fAU" userLabel="color2Tap">
                     <connections>
                         <action selector="color2Tapped:" destination="y57-F7-K6a" id="ZeB-oU-Qk2"/>
@@ -1740,8 +1940,31 @@
                         <action selector="aboutUsTapped:" destination="y57-F7-K6a" id="V4I-ZW-HIT"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="EPc-DL-y13" userLabel="Auxth">
+                    <connections>
+                        <action selector="auth:" destination="y57-F7-K6a" id="pxt-pe-Zih"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2112" y="171"/>
+        </scene>
+        <!--Secure-->
+        <scene sceneID="pwx-qE-pql">
+            <objects>
+                <viewController id="dIi-Se-bnY" customClass="Secure_" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0vc-VL-4FW"/>
+                        <viewControllerLayoutGuide type="bottom" id="QmS-hs-9Ze"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4XW-8A-oJo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MAw-qc-mLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2857" y="612"/>
         </scene>
         <!--aboutUs View-->
         <scene sceneID="ape-Bv-Mcg">

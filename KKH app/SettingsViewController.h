@@ -44,6 +44,9 @@
 @property (strong, nonatomic) IBOutlet UISegmentedControl *startUpSelection;
 - (IBAction)didChangeStartup:(id)sender;
 
+- (IBAction)auth:(id)sender;
+@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *colorTapgesture;
+@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *authTapped;
 
 //bottom bar
 - (IBAction)ref:(id)sender;
@@ -51,6 +54,22 @@
 - (IBAction)fav:(id)sender;
 - (IBAction)settings:(id)sender;
 @property (strong, nonatomic) IBOutlet UIImageView *settingsLogo;
+
+//auth view
+@property (strong, nonatomic) IBOutlet UIView *authView;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *pinButtons;
+@property (strong, nonatomic) IBOutlet UITextField *pinDisp;
+
+- (IBAction)one:(id)sender;
+- (IBAction)two:(id)sender;
+- (IBAction)three:(id)sender;
+- (IBAction)four:(id)sender;
+- (IBAction)five:(id)sender;
+- (IBAction)six:(id)sender;
+- (IBAction)seven:(id)sender;
+- (IBAction)eight:(id)sender;
+- (IBAction)nine:(id)sender;
+- (IBAction)zero:(id)sender;
 
 
 @end

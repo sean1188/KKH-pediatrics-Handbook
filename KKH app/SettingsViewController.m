@@ -7,7 +7,6 @@
 //
 
 #import "SettingsViewController.h"
-
 @interface SettingsViewController ()
 
 @end
@@ -28,9 +27,16 @@
         [views setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]]];
     }
 }
+UIButton *transparencyButton ;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setcolors];
+    transparencyButton = [[UIButton alloc] initWithFrame:self.view.bounds];
+    transparencyButton.backgroundColor = [UIColor clearColor];
+    [self.view insertSubview:transparencyButton belowSubview:_authView];
+    [transparencyButton addTarget:self action:@selector(dissmissAuth) forControlEvents:UIControlEventTouchUpInside];
+    transparencyButton.alpha = 0;
     _aboutUsView.layer.shadowOpacity = 0.4;
     _aboutUsView.layer.shadowOffset = CGSizeMake(0, 2);
     _aboutUsView.layer.cornerRadius = 15.0f;
@@ -168,5 +174,133 @@
 }
 - (IBAction)didChangeStartup:(id)sender {
     [[NSUserDefaults standardUserDefaults ] setInteger:[_startUpSelection selectedSegmentIndex] forKey:@"startUp"];
+}
+
+NSString *keyInput = @"";
+- (IBAction)auth:(id)sender {
+    transparencyButton.alpha = 1;
+    [self.view addSubview:_authView];
+    _authView.alpha = 0;
+    [UIView animateWithDuration:0.3 animations:^{
+        _authView.alpha = 1;
+    }];
+    for (UIButton *button  in _pinButtons) {
+        button.layer.cornerRadius = button.frame.size.width/2;
+        button.layer.shadowOpacity = 0.4;
+        button.layer.shadowOffset = CGSizeMake(0 , 2);
+        button.enabled=YES;
+    }
+    _authView.frame =CGRectMake((self.view.frame.size.width/2 ) - (self.authView.frame.size.width /2), (self.view.frame.size.height/2) - (self.authView.frame.size.height/2 ), _authView.frame.size.width, _authView.frame.size.height);
+    _authView.layer.cornerRadius = 16.0f;
+    _authView.layer.shadowOpacity = 0.4; _authView.layer.shadowOffset = CGSizeMake(0, 2);
+    
+}
+-(void)dissmissAuth{
+    keyInput = @"";
+    transparencyButton.alpha = 0;
+    inputCount = 0;
+    _pinDisp.text = @"";
+    [UIView animateWithDuration:0.3 animations:^{
+        _authView.alpha = 0;
+    }];
+}
+int inputCount = 0;
+- (IBAction)one:(id)sender {
+    keyInput = [keyInput stringByAppendingString:@"1"];
+    _pinDisp.text = keyInput;
+    [self foo];
+}
+
+- (IBAction)two:(id)sender {
+    keyInput = [keyInput stringByAppendingString:@"2"];
+    _pinDisp.text = keyInput;
+    [self foo];
+
+
+}
+
+- (IBAction)three:(id)sender {
+    keyInput = [keyInput stringByAppendingString:@"3"];
+    _pinDisp.text = keyInput;
+    [self foo];
+
+}
+
+- (IBAction)four:(id)sender {
+    keyInput = [keyInput stringByAppendingString:@"4"];
+    _pinDisp.text = keyInput;
+    [self foo];
+}
+
+- (IBAction)five:(id)sender {
+    keyInput = [keyInput stringByAppendingString:@"5"];
+    _pinDisp.text = keyInput;
+    [self foo];
+
+}
+
+- (IBAction)six:(id)sender {
+    keyInput = [keyInput stringByAppendingString:@"6"];
+    _pinDisp.text = keyInput;
+    [self foo];
+
+}
+
+- (IBAction)seven:(id)sender {
+    keyInput = [keyInput stringByAppendingString:@"7"];
+    _pinDisp.text = keyInput;
+    [self foo];
+
+}
+
+- (IBAction)eight:(id)sender {
+    keyInput = [keyInput stringByAppendingString:@"8"];
+    _pinDisp.text = keyInput;
+    [self foo];
+
+}
+
+- (IBAction)nine:(id)sender {
+    keyInput = [keyInput stringByAppendingString:@"9"];
+    _pinDisp.text = keyInput;
+    [self foo];
+}
+
+- (IBAction)zero:(id)sender {
+    keyInput = [keyInput stringByAppendingString:@"0"];
+    _pinDisp.text = keyInput;
+    [self foo];
+}
+-(void) foo{
+    inputCount ++;
+    if(inputCount == 3 | inputCount == 6 ){
+        keyInput = [keyInput stringByAppendingString:@"-"];
+        _pinDisp.text = keyInput;
+    }
+    if (inputCount == 9) {
+        for (UIButton *button in _pinButtons) {
+            button.enabled = NO;
+        }
+        if ([keyInput isEqualToString:@"217-019-893"]) {
+            [self dissmissAuth];
+
+        }
+        else{
+            CABasicAnimation *animation =
+            [CABasicAnimation animationWithKeyPath:@"position"];
+            [animation setDuration:0.05];
+            [animation setRepeatCount:4];
+            [animation setAutoreverses:YES];
+            [animation setFromValue:[NSValue valueWithCGPoint:
+                                     CGPointMake([_authView center].x - 8.0f, [_authView center].y)]];
+            [animation setToValue:[NSValue valueWithCGPoint:
+                                   CGPointMake([_authView center].x + 8.0f, [_authView center].y)]];
+            [[_authView layer] addAnimation:animation forKey:@"position"];
+            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.9 * NSEC_PER_SEC); dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                [self dissmissAuth];
+            });
+            
+        }
+    }
 }
 @end

@@ -10,6 +10,7 @@
 		9703E6841D28D0F800C72EF3 /* WECodeScannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E6831D28D0F800C72EF3 /* WECodeScannerView.m */; };
 		9703E68A1D28D11500C72EF3 /* WECodeScannerMatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E6881D28D11500C72EF3 /* WECodeScannerMatchView.m */; };
 		9703E68B1D28D11500C72EF3 /* WESoundHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E6891D28D11500C72EF3 /* WESoundHelper.m */; };
+		9703E68E1D29367A00C72EF3 /* Secure_.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E68D1D29367A00C72EF3 /* Secure_.m */; };
 		9722E8611D0CF15C00C6D26F /* Cabin-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E8591D0CEF2C00C6D26F /* Cabin-Bold.otf */; };
 		9722E8621D0CF16300C6D26F /* Cabin-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E85A1D0CEF2C00C6D26F /* Cabin-BoldItalic.otf */; };
 		9722E8631D0CF16300C6D26F /* Cabin-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E85B1D0CEF2C00C6D26F /* Cabin-Italic.otf */; };
@@ -78,6 +79,8 @@
 		9703E6871D28D10B00C72EF3 /* WESoundHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WESoundHelper.h; sourceTree = "<group>"; };
 		9703E6881D28D11500C72EF3 /* WECodeScannerMatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WECodeScannerMatchView.m; sourceTree = "<group>"; };
 		9703E6891D28D11500C72EF3 /* WESoundHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESoundHelper.m; sourceTree = "<group>"; };
+		9703E68C1D29367A00C72EF3 /* Secure_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Secure_.h; sourceTree = "<group>"; };
+		9703E68D1D29367A00C72EF3 /* Secure_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Secure_.m; sourceTree = "<group>"; };
 		9722E8551D0CEF0E00C6D26F /* CabinCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Bold.ttf"; sourceTree = "<group>"; };
 		9722E8561D0CEF0E00C6D26F /* CabinCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Medium.ttf"; sourceTree = "<group>"; };
 		9722E8571D0CEF0E00C6D26F /* CabinCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Regular.ttf"; sourceTree = "<group>"; };
@@ -275,6 +278,8 @@
 				979782F31D1D8EBC00BAF670 /* SplashViewController.m */,
 				979782F71D1E1C6C00BAF670 /* AboutUsViewController.h */,
 				979782F81D1E1C6C00BAF670 /* AboutUsViewController.m */,
+				9703E68C1D29367A00C72EF3 /* Secure_.h */,
+				9703E68D1D29367A00C72EF3 /* Secure_.m */,
 			);
 			path = "KKH app";
 			sourceTree = "<group>";
@@ -460,6 +465,7 @@
 				97BCF2C51D13955600891F74 /* SettingsViewController.m in Sources */,
 				973E00291D092CD600F7C94A /* QCMethod.m in Sources */,
 				97FB27C11D06D69000EF2845 /* Calculator.m in Sources */,
+				9703E68E1D29367A00C72EF3 /* Secure_.m in Sources */,
 				9722E87F1D0EFF0100C6D26F /* FavViewController.m in Sources */,
 				976EFB271D01C28B0048A4DC /* AppDelegate.m in Sources */,
 				976EFB241D01C28B0048A4DC /* main.m in Sources */,
