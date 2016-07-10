@@ -23,6 +23,7 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *sarchSegue;
 - (IBAction)searchTrigger:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *chapterTitle;
 
 
 
@@ -41,6 +42,7 @@
 
 @property (strong, nonatomic) IBOutlet UIView *animateIn;
 - (IBAction)swipedDown:(id)sender;
+@property (strong, nonatomic) IBOutlet UIView *utilityView;
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipedDown;
 
 //disclaimer view

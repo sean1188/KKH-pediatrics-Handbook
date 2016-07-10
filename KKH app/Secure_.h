@@ -10,4 +10,5 @@
 
 @interface Secure_ : UIViewController
 
+- (IBAction)back:(id)sender;
 @end

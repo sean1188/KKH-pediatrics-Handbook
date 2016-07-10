@@ -59,6 +59,7 @@
 @property (strong, nonatomic) IBOutlet UIView *authView;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *pinButtons;
 @property (strong, nonatomic) IBOutlet UITextField *pinDisp;
+@property (strong, nonatomic) IBOutlet UILabel *authTextField;
 
 - (IBAction)one:(id)sender;
 - (IBAction)two:(id)sender;

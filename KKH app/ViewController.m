@@ -15,7 +15,6 @@
 @end
 
 @implementation ViewController
-
 bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
 -(UIStatusBarStyle) preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
@@ -51,7 +50,11 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
     }
 }
 - (void)viewDidLoad {
+
+    
+    //
     [super viewDidLoad];
+    _chapterTitle.alpha = 0;
     didsearch = NO;
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"splashed"] == YES) {
         _animateIn.alpha = 1;
@@ -170,6 +173,7 @@ indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath
     }];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
@@ -236,7 +240,6 @@ bool didsearch;
 
 }
 - (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
-    NSLog(@"%li", (long)indexPath.row);
     if(tableView == self.tableView){
         _tableView.alpha = 0;
         _sarchSegue.alpha = 0;
@@ -252,6 +255,7 @@ bool didsearch;
                 [self performSegueWithIdentifier:@"viewChpter" sender:nil];
             }];
         }];
+        
     }
     else{
         NSUInteger index = [objectsArray indexOfObject:[tableView cellForRowAtIndexPath:indexPath].textLabel.text];

@@ -18,6 +18,12 @@
 - (BOOL)shouldAutorotate {
     return NO;
 }
+-(void) viewDidAppear:(BOOL)animated{
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"auth"] == YES) {
+        _aboutUsView.alpha = 0.7;
+        [_authTextField setText:@"Authorised"];
+    }
+}
 -(void) setcolors{
     for (UIView *view in _secondaryViews) {
         [view setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]]];
@@ -178,6 +184,10 @@ UIButton *transparencyButton ;
 
 NSString *keyInput = @"";
 - (IBAction)auth:(id)sender {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"auth"] == YES) {
+        
+    }
+    else if([[NSUserDefaults standardUserDefaults] boolForKey:@"auth"] != YES){
     transparencyButton.alpha = 1;
     [self.view addSubview:_authView];
     _authView.alpha = 0;
@@ -193,6 +203,7 @@ NSString *keyInput = @"";
     _authView.frame =CGRectMake((self.view.frame.size.width/2 ) - (self.authView.frame.size.width /2), (self.view.frame.size.height/2) - (self.authView.frame.size.height/2 ), _authView.frame.size.width, _authView.frame.size.height);
     _authView.layer.cornerRadius = 16.0f;
     _authView.layer.shadowOpacity = 0.4; _authView.layer.shadowOffset = CGSizeMake(0, 2);
+    }
     
 }
 -(void)dissmissAuth{
@@ -282,7 +293,9 @@ int inputCount = 0;
             button.enabled = NO;
         }
         if ([keyInput isEqualToString:@"217-019-893"]) {
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"auth"];
             [self dissmissAuth];
+            [self performSegueWithIdentifier:@"auth" sender:self];
 
         }
         else{
