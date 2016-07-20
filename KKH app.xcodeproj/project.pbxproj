@@ -28,6 +28,7 @@
 		973E00301D09371B00F7C94A /* animationScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E002F1D09371B00F7C94A /* animationScheme.m */; };
 		973E00331D09A30000F7C94A /* PDFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973E00321D09A30000F7C94A /* PDFManager.swift */; };
 		974C45661D0A6A2500797BF0 /* webViewPDF\.m in Sources */ = {isa = PBXBuildFile; fileRef = 974C45651D0A6A2500797BF0 /* webViewPDF\.m */; };
+		97612B3F1D3F9D9E004900BE /* DrugCalculationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97612B3E1D3F9D9E004900BE /* DrugCalculationViewController.m */; };
 		976EFB241D01C28B0048A4DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 976EFB231D01C28B0048A4DC /* main.m */; };
 		976EFB271D01C28B0048A4DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 976EFB261D01C28B0048A4DC /* AppDelegate.m */; };
 		976EFB2A1D01C28B0048A4DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 976EFB291D01C28B0048A4DC /* ViewController.m */; };
@@ -103,6 +104,8 @@
 		973E00321D09A30000F7C94A /* PDFManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFManager.swift; sourceTree = "<group>"; };
 		974C45641D0A6A2500797BF0 /* webViewPDF\.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "webViewPDF\\.h"; sourceTree = "<group>"; };
 		974C45651D0A6A2500797BF0 /* webViewPDF\.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "webViewPDF\\.m"; sourceTree = "<group>"; };
+		97612B3D1D3F9D9E004900BE /* DrugCalculationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugCalculationViewController.h; sourceTree = "<group>"; };
+		97612B3E1D3F9D9E004900BE /* DrugCalculationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrugCalculationViewController.m; sourceTree = "<group>"; };
 		976EFB1F1D01C28B0048A4DC /* KKH app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KKH app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		976EFB231D01C28B0048A4DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		976EFB251D01C28B0048A4DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -229,6 +232,8 @@
 				979782FC1D1F8DEB00BAF670 /* DrugList.csv */,
 				97FB27BF1D06D69000EF2845 /* Calculator.h */,
 				97FB27C01D06D69000EF2845 /* Calculator.m */,
+				97612B3D1D3F9D9E004900BE /* DrugCalculationViewController.h */,
+				97612B3E1D3F9D9E004900BE /* DrugCalculationViewController.m */,
 			);
 			name = calculation;
 			sourceTree = "<group>";
@@ -467,6 +472,7 @@
 				97FB27C11D06D69000EF2845 /* Calculator.m in Sources */,
 				9703E68E1D29367A00C72EF3 /* Secure_.m in Sources */,
 				9722E87F1D0EFF0100C6D26F /* FavViewController.m in Sources */,
+				97612B3F1D3F9D9E004900BE /* DrugCalculationViewController.m in Sources */,
 				976EFB271D01C28B0048A4DC /* AppDelegate.m in Sources */,
 				976EFB241D01C28B0048A4DC /* main.m in Sources */,
 				974C45661D0A6A2500797BF0 /* webViewPDF\.m in Sources */,

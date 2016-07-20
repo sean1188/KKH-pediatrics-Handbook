@@ -23,6 +23,25 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
 - (BOOL)shouldAutorotate {
     return NO;
 }
+-(void) viewDidAppear:(BOOL)animated{
+    [UIView animateWithDuration:0.6  animations:^{
+        _infoIcon.transform = CGAffineTransformMakeScale(1.4, 1.4);
+        _infoIcon.transform = CGAffineTransformMakeRotation(45.0f);
+    }completion:^(BOOL s) {
+        [UIView animateWithDuration:0.4  animations:^{
+            _infoIcon.transform = CGAffineTransformMakeRotation(-90.0f);
+            _infoIcon.transform = CGAffineTransformMakeScale(1.2, 1.2);
+        } completion:^(BOOL s) {
+            [UIView animateWithDuration:0.3 animations:^{
+                _infoIcon.transform = CGAffineTransformMakeRotation(90.0f);
+                _infoIcon.transform = CGAffineTransformMakeScale(1, 1);
+            }];
+            
+            
+        }];
+    }];
+
+}
 -(void) setcolors{
     for (UIView *view in _secondaryViews) {
         [view setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]]];
@@ -50,8 +69,10 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
     }
 }
 - (void)viewDidLoad {
-
-    
+    _cardView.frame = CGRectMake(_cardView.frame.origin.x, - _cardView.frame.size.height -10, _cardView.frame.size.width, _cardView.frame.size.height);
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        _cardView.frame = CGRectMake(_cardView.frame.origin.x, _cardView.frame.origin.y + _cardView.frame.size.height +10, _cardView.frame.size.width, _cardView.frame.size.height);
+    } completion:nil];
     //
     [super viewDidLoad];
     _chapterTitle.alpha = 0;
@@ -84,7 +105,7 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
         [[NSUserDefaults standardUserDefaults]setBool:FALSE forKey:@"launchFav"];
 
     }
-    _sarchSegue.layer.cornerRadius = 8;
+    _sarchSegue.layer.cornerRadius = 10.0f;
     _sarchSegue.layer.shadowOpacity = 0.3; _sarchSegue.layer.shadowOffset = CGSizeMake(0, 3);
     _sarchSegue.backgroundColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]];
     _serach.delegate = self;
@@ -167,10 +188,6 @@ indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(nonnull UITableViewCell *)cell forRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    cell.alpha = 0;
-    [UIView animateWithDuration:0.3 animations:^{
-        cell.alpha = 1;
-    }];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -303,15 +320,35 @@ bool didsearch;
 }
 
 - (IBAction)calcButton:(id)sender {
-    [self.navigationController performSegueWithIdentifier:@"calc" sender:self];
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        _cardView.frame = CGRectMake(_cardView.frame.origin.x, - _cardView.frame.size.height - 10, _cardView.frame.size.width, _cardView.frame.size.height);
+        _cardView.alpha = 0;
+    } completion:^(BOOL s ){
+        [self.navigationController performSegueWithIdentifier:@"calc" sender:self];
+
+    }];
 }
 
 - (IBAction)listButton:(id)sender {
-    [self.navigationController performSegueWithIdentifier:@"list" sender:self];
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        _cardView.frame = CGRectMake(_cardView.frame.origin.x, - _cardView.frame.size.height - 10, _cardView.frame.size.width, _cardView.frame.size.height);
+        _cardView.alpha = 0;
+
+    } completion:^(BOOL s ){
+        [self.navigationController performSegueWithIdentifier:@"list" sender:self];
+
+    }];
 }
 
 - (IBAction)settingsButton:(id)sender {
-    [self.navigationController performSegueWithIdentifier:@"settings" sender:self];
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        _cardView.frame = CGRectMake(_cardView.frame.origin.x, - _cardView.frame.size.height - 10, _cardView.frame.size.width, _cardView.frame.size.height);
+        _cardView.alpha = 0;
+
+    } completion:^(BOOL s ){
+        [self.navigationController performSegueWithIdentifier:@"settings" sender:self];
+
+    }];
 
 }
 

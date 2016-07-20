@@ -19,7 +19,7 @@
 -(UIStatusBarStyle) preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
 }
-
+UIView *firstBar, *secondBar, *thirdBar;
 -(void) setcolors{
     for (UIView *view in _secondaryViews) {
         [view setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]]];
@@ -29,10 +29,7 @@
         [views setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]]];
     }
 }
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self setcolors];
-    // Do any additional setup after loading the view.
+-(void) viewDidAppear:(BOOL)animated{
     [UIView animateWithDuration:0.6  animations:^{
         _calclogo.transform = CGAffineTransformMakeScale(1.4, 1.4);
         _calclogo.transform = CGAffineTransformMakeRotation(45.0f);
@@ -47,33 +44,115 @@
             }];
         }];
     }];
-    _mainCardView.layer.cornerRadius = 15.0f;
 }
+-(void) viewWillAppear:(BOOL)animated{
+    [self viewDidLoad];
 
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self setcolors];
+    _drugCALButton.layer.cornerRadius = _drugCALButton.frame.size.width/2;
+    _blur.alpha = 0; _VIEW.alpha = 0; _send.alpha = 0;
+    _mainCardView.layer.cornerRadius = 15.0f;
+    _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, - _mainCardView.frame.size.height - 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+       _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, _mainCardView.frame.origin.y + _mainCardView.frame.size.height + 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
+    } completion:nil];
+}
 
 #pragma mark - bottom bar
 - (IBAction)refButton:(id)sender {
-    [self.navigationController performSegueWithIdentifier:@"ref" sender:self];
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, - _mainCardView.frame.size.height - 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
+        _mainCardView.alpha = 0;
+    }completion:^(BOOL s ){
+        [self.navigationController performSegueWithIdentifier:@"ref" sender:self];
+
+    }];
 }
 
 - (IBAction)listButton:(id)sender {
-    [self.navigationController performSegueWithIdentifier:@"list" sender:self];
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, - _mainCardView.frame.size.height - 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
+        _mainCardView.alpha = 0;
+
+    }completion:^(BOOL s ){
+        [self.navigationController performSegueWithIdentifier:@"list" sender:self];
+        
+    }];
     
 }
 
 - (IBAction)settingsButton:(id)sender {
-    [self.navigationController performSegueWithIdentifier:@"settings" sender:nil];
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, - _mainCardView.frame.size.height - 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
+        _mainCardView.alpha = 0;
+
+    }completion:^(BOOL s ){
+        [self.navigationController performSegueWithIdentifier:@"settings" sender:nil];
+}];
+    
     
 }
 
-#pragma mark - data processing
-//variable to pass to backend
-bool isMale;
-int age;
-float height;
-float weight;
 
-//
+- (IBAction)didTap1:(id)sender {
+    [self performSegueWithIdentifier:@"DC" sender:self];
+}
 
+- (IBAction)didTap2:(id)sender {
+    for (UILabel *labels in _labels) {
+        labels.alpha = 0;
+    }[UIView animateWithDuration:0.2 animations:^{
+        firstBar.translatesAutoresizingMaskIntoConstraints =YES;
+        firstBar.frame = _mainCardView.frame;
+        secondBar.translatesAutoresizingMaskIntoConstraints = YES;
+        thirdBar.translatesAutoresizingMaskIntoConstraints = YES;
+        secondBar.frame = _mainCardView.frame;
+        thirdBar.frame = _mainCardView.frame;
+        
+    }completion:^(BOOL s    ){
+        _mainCardView.alpha = 1;
+        
+    }];
+}
+
+- (IBAction)didTap3:(id)sender {
+    for (UILabel *labels in _labels) {
+        labels.alpha = 0;
+    }[UIView animateWithDuration:0.2 animations:^{
+        firstBar.translatesAutoresizingMaskIntoConstraints =YES;
+        firstBar.frame = _mainCardView.frame;
+        secondBar.translatesAutoresizingMaskIntoConstraints = YES;
+        thirdBar.translatesAutoresizingMaskIntoConstraints = YES;
+        secondBar.frame = _mainCardView.frame;
+        thirdBar.frame = _mainCardView.frame;
+    }completion:^(BOOL s    ){
+        _mainCardView.alpha = 1;
+        
+    }];
+}
+- (IBAction)view:(id)sender {
+    [UIView animateWithDuration:0.3 animations:^{
+       //  webView.frame = CGRectMake(0, 25, self.view.frame.size.width, self.view.frame.size.height - 100);
+        _blur.alpha = 1;
+
+    }];
+   
+}
+
+- (IBAction)send:(id)sender {
+    _mannager = [DrugCalculationsManager alloc];
+   // [[_mannager initWithWeight:(int)weight] sendEmail:self];
+}
+- (IBAction)doneButtonViewer:(id)sender {
+    [UIView animateWithDuration:0.3 animations:^{
+        _blur.alpha = 0;
+       //webView.frame =  CGRectMake((self.view.frame.size.width/2)-(self.mainCardView.frame.size.width /4 ),_mainCardView.frame.origin.y, _mainCardView.frame.size.width/2, _mainCardView.frame.size.height/2);
+    }];
+    
+    
+}
 
 @end
