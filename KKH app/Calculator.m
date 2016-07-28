@@ -19,6 +19,7 @@
 -(UIStatusBarStyle) preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
 }
+CGRect mainView;
 UIView *firstBar, *secondBar, *thirdBar;
 -(void) setcolors{
     for (UIView *view in _secondaryViews) {
@@ -30,6 +31,13 @@ UIView *firstBar, *secondBar, *thirdBar;
     }
 }
 -(void) viewDidAppear:(BOOL)animated{
+    mainView = _mainCardView.frame;
+    _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, - _mainCardView.frame.size.height - 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
+    _mainCardView.alpha = 0;
+    [UIView animateWithDuration:0.3 animations:^{
+        _mainCardView.frame = mainView;
+        _mainCardView.alpha = 1;
+    }];
     [UIView animateWithDuration:0.6  animations:^{
         _calclogo.transform = CGAffineTransformMakeScale(1.4, 1.4);
         _calclogo.transform = CGAffineTransformMakeRotation(45.0f);
@@ -47,18 +55,16 @@ UIView *firstBar, *secondBar, *thirdBar;
 }
 -(void) viewWillAppear:(BOOL)animated{
     [self viewDidLoad];
-
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setcolors];
     _drugCALButton.layer.cornerRadius = _drugCALButton.frame.size.width/2;
+    _BMIButton.layer.cornerRadius = _BMIButton.frame.size.width/2;
+    _drugCALButton.layer.shadowOpacity = 0.4;   _drugCALButton.layer.shadowOffset = CGSizeMake(1, 1); _BMIButton.layer.shadowOpacity = 0.4;   _BMIButton.layer.shadowOffset = CGSizeMake(1, 1);
     _blur.alpha = 0; _VIEW.alpha = 0; _send.alpha = 0;
     _mainCardView.layer.cornerRadius = 15.0f;
-    _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, - _mainCardView.frame.size.height - 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-       _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, _mainCardView.frame.origin.y + _mainCardView.frame.size.height + 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
-    } completion:nil];
+
 }
 
 #pragma mark - bottom bar
@@ -98,23 +104,28 @@ UIView *firstBar, *secondBar, *thirdBar;
 
 
 - (IBAction)didTap1:(id)sender {
-    [self performSegueWithIdentifier:@"DC" sender:self];
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, - _mainCardView.frame.size.height - 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
+        _mainCardView.alpha = 0;
+        
+    }completion:^(BOOL s ){
+        _mainCardView.frame = mainView;
+        //_mainCardView.alpha = 1;
+        [self performSegueWithIdentifier:@"DC" sender:self];
+
+    }];
 }
 
 - (IBAction)didTap2:(id)sender {
-    for (UILabel *labels in _labels) {
-        labels.alpha = 0;
-    }[UIView animateWithDuration:0.2 animations:^{
-        firstBar.translatesAutoresizingMaskIntoConstraints =YES;
-        firstBar.frame = _mainCardView.frame;
-        secondBar.translatesAutoresizingMaskIntoConstraints = YES;
-        thirdBar.translatesAutoresizingMaskIntoConstraints = YES;
-        secondBar.frame = _mainCardView.frame;
-        thirdBar.frame = _mainCardView.frame;
+    //BMI memes
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, - _mainCardView.frame.size.height - 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
+        _mainCardView.alpha = 0;
         
-    }completion:^(BOOL s    ){
-        _mainCardView.alpha = 1;
-        
+    }completion:^(BOOL s ){
+        _mainCardView.frame = mainView;
+        //_mainCardView.alpha = 1;
+        [self performSegueWithIdentifier:@"BMI" sender:self];
     }];
 }
 

@@ -8,6 +8,7 @@
 
 #import "SplashViewController.h"
 
+
 @interface SplashViewController ()
 
 @end
@@ -29,7 +30,13 @@
     [UIView animateWithDuration:0.4 delay:0.8 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         _bearImg.transform = CGAffineTransformMakeScale(0.7, 0.7);
     }completion:^(BOOL s){
-        [UIView animateWithDuration:0.2 animations:^{
+        NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                             pathForResource:@"soundE"
+                                             ofType:@"mp3"]];
+        NSError *error;
+        audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+        [audioPlayer play];        [UIView animateWithDuration:0.2 animations:^{
+           
             _bearImg.transform = CGAffineTransformMakeScale(9, 9);
             _bearImg.alpha = 0;
             [self.view setBackgroundColor:[UIColor whiteColor]];

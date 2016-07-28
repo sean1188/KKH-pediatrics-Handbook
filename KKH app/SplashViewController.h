@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AVFoundation/AVAudioPlayer.h"
 
-@interface SplashViewController : UIViewController
+
+@interface SplashViewController : UIViewController{
+    
+    AVAudioPlayer *audioPlayer;
+    
+}
+@property (nonatomic, retain) AVAudioPlayer *audioPlayer;
+
 
 @property (strong, nonatomic) IBOutlet UIImageView *bearImg;
 

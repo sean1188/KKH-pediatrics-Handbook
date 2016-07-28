@@ -53,6 +53,7 @@
 
 //NEW VARS
 @property (strong, nonatomic) IBOutlet UIView *drugCALButton;
+@property (strong, nonatomic) IBOutlet UIView *BMIButton;
 
 
 @end

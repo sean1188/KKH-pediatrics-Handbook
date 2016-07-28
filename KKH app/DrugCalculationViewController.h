@@ -14,5 +14,10 @@
 - (IBAction)next:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField *textField;
 @property (strong, nonatomic) IBOutlet animationScheme *nextB;
+@property (strong, nonatomic) IBOutlet UIImageView *drugimg;
+
+- (IBAction)viewB:(id)sender;
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
+- (IBAction)sendB:(id)sender;
 
 @end
