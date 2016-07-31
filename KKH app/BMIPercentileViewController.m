@@ -24,10 +24,11 @@ int state;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    isMale = NULL;
+    didSelectGender = NO;
     editing = NO;
     state = 0;
     _GenderView.alpha = 0;
+    _bmiManager = [BMIGraphManager alloc];
     // Do any additional setup after loading the view.
     primarycolor =[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]]; secondaryColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]];
     [self.view setBackgroundColor:primarycolor];
@@ -71,6 +72,7 @@ bool editing;
 float BMIValue;
 int Age;
 bool isMale;
+bool didSelectGender;
 - (IBAction)next:(id)sender {
     if (state == 0) {
         if (editing == YES & ![_weight.text isEqualToString:@""] & ![_height.text isEqualToString:@""]) {
@@ -115,14 +117,113 @@ bool isMale;
         }];
     }
     }
+    /*
+     case Nil = 0;
+     case SeverelyUnderweight = 1;
+     case Underweight = 2;
+     case Acceptable = 3;
+     case Overweight = 4;
+     case SeverelyOverweight = 5;
+     */
     else if (state ==1 ){
         [self didTap:nil];
-        if (![_ageField.text isEqualToString:@""] & isMale != NULL) {
+        if (didSelectGender == YES & ![_ageField.text isEqualToString:@""] ) {
             //send data
             Age = _ageField.text.integerValue;
-            NSLog(@" age : %i bmi: %0.01f",Age, BMIValue);
-            [_bmiManager rangee];
-        }
+            if (Age > 18){
+                UIAlertController *a = [UIAlertController alertControllerWithTitle:@"Error" message:@"Please enter a valid age" preferredStyle:UIAlertControllerStyleAlert];
+                [a addAction:[UIAlertAction actionWithTitle:@"Okay" style:UIAlertActionStyleCancel handler:nil]];
+                [self presentViewController:a  animated:YES completion:nil];
+            }
+            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] rangee] == 0) {
+                NSLog(@"nil");
+                UIAlertController *a = [UIAlertController alertControllerWithTitle:@"Nil" message:@"An Error has occurred" preferredStyle:UIAlertControllerStyleAlert];
+                [self presentViewController:a  animated:YES completion:^{
+                    double delayInSeconds = 1.0;
+                    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+                    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                        [a dismissViewControllerAnimated:YES completion:^{
+                            [self dismissViewControllerAnimated:YES completion:nil];
+                        }];
+                    });
+                }];
+            }
+            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] rangee] == 1){
+                NSLog(@"severe Underweight");
+                UIAlertController *a = [UIAlertController alertControllerWithTitle:@"Severely Underweight" message:[NSString stringWithFormat:@"BMI : %0.1f",BMIValue ] preferredStyle:UIAlertControllerStyleAlert];
+                [self presentViewController:a  animated:YES completion:^{
+                    double delayInSeconds = 3.0;
+                    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+                    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                        [a dismissViewControllerAnimated:YES completion:^{
+                            [self dismissViewControllerAnimated:YES completion:nil];
+                        }];
+                    });
+                }];
+
+            }
+            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] rangee] == 2){
+                NSLog(@"underweight");
+                UIAlertController *a = [UIAlertController alertControllerWithTitle:@"Underweight" message:[NSString stringWithFormat:@"BMI : %0.1f",BMIValue ] preferredStyle:UIAlertControllerStyleAlert];
+                [self presentViewController:a  animated:YES completion:^{
+                    double delayInSeconds = 3.0;
+                    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+                    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                        [a dismissViewControllerAnimated:YES completion:^{
+                            [self dismissViewControllerAnimated:YES completion:nil];
+                        }];
+                    });
+                }];
+
+
+            }
+            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] rangee] == 3){
+                NSLog(@"acceptable");
+                UIAlertController *a = [UIAlertController alertControllerWithTitle:@"Acceptable" message:[NSString stringWithFormat:@"BMI : %0.1f",BMIValue ] preferredStyle:UIAlertControllerStyleAlert];
+                [self presentViewController:a  animated:YES completion:^{
+                    double delayInSeconds = 3.0;
+                    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+                    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                        [a dismissViewControllerAnimated:YES completion:^{
+                            [self dismissViewControllerAnimated:YES completion:nil];
+                        }];
+                    });
+                }];
+
+
+            }
+            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] rangee] == 4){
+                NSLog(@"overweight");
+                UIAlertController *a = [UIAlertController alertControllerWithTitle:@"Overweight" message:[NSString stringWithFormat:@"BMI : %0.1f",BMIValue ] preferredStyle:UIAlertControllerStyleAlert];
+                [self presentViewController:a  animated:YES completion:^{
+                    double delayInSeconds = 3.0;
+                    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+                    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                        [a dismissViewControllerAnimated:YES completion:^{
+                            [self dismissViewControllerAnimated:YES completion:nil];
+                        }];
+                    });
+                }];
+
+
+            }
+            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] rangee] == 5){
+                NSLog(@"severely overweight");
+                UIAlertController *a = [UIAlertController alertControllerWithTitle:@"Severely Overweight" message:[NSString stringWithFormat:@"BMI : %0.1f",BMIValue ] preferredStyle:UIAlertControllerStyleAlert];
+                [self presentViewController:a  animated:YES completion:^{
+                    double delayInSeconds = 3.0;
+                    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+                    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                        [a dismissViewControllerAnimated:YES completion:^{
+                            [self dismissViewControllerAnimated:YES completion:nil];
+                        }];
+                    });
+                }];
+
+
+            }
+
+}
     }
 
 }
@@ -152,6 +253,7 @@ bool isMale;
 
 }
 - (IBAction)genderSegment:(id)sender {
+    didSelectGender = YES;
     if ([_genderSegment selectedSegmentIndex] == 0) {
         NSLog(@"male");
         isMale = YES;

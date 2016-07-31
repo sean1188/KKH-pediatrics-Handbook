@@ -117,24 +117,24 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
     // Do any additional setup after loading the view, typically from a nib.
 #pragma  mark - first launch
         if ([[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"] != TRUE) {
-        NSData *defcolorPrimary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithCGColor:self.view.backgroundColor.CGColor ]];
+        NSData *defcolorPrimary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.1373 green:0.4431 blue:0.7373 alpha:1.0]];
         [[NSUserDefaults standardUserDefaults] setObject:defcolorPrimary forKey:@"primaryColor"];
-        NSData *defcolorSecondary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.2314 green:0.4588 blue:0.7373 alpha:1.0]];
+        NSData *defcolorSecondary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.1569 green:0.5176 blue:0.7961 alpha:1.0]];
         [[NSUserDefaults standardUserDefaults] setObject:defcolorSecondary forKey:@"secondaryColor" ];
         
-        NSData *color1Primary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.1882 green:0.1882 blue:0.1882 alpha:1.0]];
+        NSData *color1Primary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.9294 green:0.4706 blue:0.0667 alpha:1.0]];
         [[NSUserDefaults standardUserDefaults] setObject:color1Primary forKey:@"primaryColor1"];
-        NSData *color1Secondary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.2588 green:0.2588 blue:0.2588 alpha:1.0]];
+        NSData *color1Secondary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.9412 green:0.5176 blue:0.0824 alpha:1.0]];
         [[NSUserDefaults standardUserDefaults] setObject:color1Secondary forKey:@"secondaryColor1"];
         
-        NSData *color2Primary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.8948 green:0.1441 blue:0.4038 alpha:1.0]];
+        NSData *color2Primary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.5569 green:0.5569 blue:0.5569 alpha:1.0]];
         [[NSUserDefaults standardUserDefaults] setObject:color2Primary forKey:@"primaryColor2"];
-        NSData *color2Secondary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.9843 green:0.3922 blue:0.6353 alpha:1.0]];
+        NSData *color2Secondary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.6902 green:0.6902 blue:0.6863 alpha:1.0]];
         [[NSUserDefaults standardUserDefaults] setObject:color2Secondary forKey:@"secondaryColor2"];
         
-        NSData *color3Primary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.0 green:0.4706 blue:0.4157 alpha:1.0]];
+        NSData *color3Primary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.3412 green:0.6824 blue:0.3451 alpha:1.0]];
         [[NSUserDefaults standardUserDefaults] setObject:color3Primary forKey:@"primaryColor3"];
-        NSData *color3Secondary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.0 green:0.5843 blue:0.5294 alpha:1.0]];
+        NSData *color3Secondary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.451 green:0.7255 blue:0.4431 alpha:1.0]];
         [[NSUserDefaults standardUserDefaults] setObject:color3Secondary forKey:@"secondaryColor3"];
             [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"6969"] forKey:@"secure"];
         

@@ -11,6 +11,7 @@
 		9703E68A1D28D11500C72EF3 /* WECodeScannerMatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E6881D28D11500C72EF3 /* WECodeScannerMatchView.m */; };
 		9703E68B1D28D11500C72EF3 /* WESoundHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E6891D28D11500C72EF3 /* WESoundHelper.m */; };
 		9703E68E1D29367A00C72EF3 /* Secure_.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E68D1D29367A00C72EF3 /* Secure_.m */; };
+		9706EBA11D4CFC3A00801B77 /* splash screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9706EBA01D4CFC3A00801B77 /* splash screen.png */; };
 		9722E8611D0CF15C00C6D26F /* Cabin-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E8591D0CEF2C00C6D26F /* Cabin-Bold.otf */; };
 		9722E8621D0CF16300C6D26F /* Cabin-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E85A1D0CEF2C00C6D26F /* Cabin-BoldItalic.otf */; };
 		9722E8631D0CF16300C6D26F /* Cabin-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E85B1D0CEF2C00C6D26F /* Cabin-Italic.otf */; };
@@ -58,7 +59,6 @@
 		979782EE1D1A87E800BAF670 /* 17-Chronic_Pain_Service.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782DD1D1A87E800BAF670 /* 17-Chronic_Pain_Service.pdf */; };
 		979782F11D1D8E7100BAF670 /* splashAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 979782F01D1D8E7100BAF670 /* splashAnimate.m */; };
 		979782F41D1D8EBC00BAF670 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 979782F31D1D8EBC00BAF670 /* SplashViewController.m */; };
-		979782F61D1D90B100BAF670 /* splash screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 979782F51D1D90B100BAF670 /* splash screen.png */; };
 		979782F91D1E1C6C00BAF670 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 979782F81D1E1C6C00BAF670 /* AboutUsViewController.m */; };
 		979782FD1D1F8DEB00BAF670 /* DrugCalculationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979782FB1D1F8DEB00BAF670 /* DrugCalculationsManager.swift */; };
 		979782FE1D1F8DEB00BAF670 /* DrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = 979782FC1D1F8DEB00BAF670 /* DrugList.csv */; };
@@ -85,6 +85,7 @@
 		9703E6891D28D11500C72EF3 /* WESoundHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESoundHelper.m; sourceTree = "<group>"; };
 		9703E68C1D29367A00C72EF3 /* Secure_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Secure_.h; sourceTree = "<group>"; };
 		9703E68D1D29367A00C72EF3 /* Secure_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Secure_.m; sourceTree = "<group>"; };
+		9706EBA01D4CFC3A00801B77 /* splash screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash screen.png"; sourceTree = "<group>"; };
 		9722E8551D0CEF0E00C6D26F /* CabinCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Bold.ttf"; sourceTree = "<group>"; };
 		9722E8561D0CEF0E00C6D26F /* CabinCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Medium.ttf"; sourceTree = "<group>"; };
 		9722E8571D0CEF0E00C6D26F /* CabinCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Regular.ttf"; sourceTree = "<group>"; };
@@ -147,7 +148,6 @@
 		979782F01D1D8E7100BAF670 /* splashAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = splashAnimate.m; sourceTree = "<group>"; };
 		979782F21D1D8EBC00BAF670 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		979782F31D1D8EBC00BAF670 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
-		979782F51D1D90B100BAF670 /* splash screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash screen.png"; sourceTree = "<group>"; };
 		979782F71D1E1C6C00BAF670 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
 		979782F81D1E1C6C00BAF670 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
 		979782FB1D1F8DEB00BAF670 /* DrugCalculationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugCalculationsManager.swift; sourceTree = "<group>"; };
@@ -275,8 +275,8 @@
 				973E00311D09A2FF00F7C94A /* KKH app-Bridging-Header.h */,
 				973E00321D09A30000F7C94A /* PDFManager.swift */,
 				9722E86E1D0CF8F700C6D26F /* animation */,
-				979782F51D1D90B100BAF670 /* splash screen.png */,
 				9722E8541D0CEF0300C6D26F /* font */,
+				9706EBA01D4CFC3A00801B77 /* splash screen.png */,
 				976EFB2B1D01C28B0048A4DC /* Main.storyboard */,
 				976EFB2E1D01C28B0048A4DC /* Assets.xcassets */,
 				976EFB301D01C28B0048A4DC /* LaunchScreen.storyboard */,
@@ -426,6 +426,7 @@
 				9722E8631D0CF16300C6D26F /* Cabin-Italic.otf in Resources */,
 				9722E8641D0CF16300C6D26F /* Cabin-Medium.otf in Resources */,
 				979782EB1D1A87E800BAF670 /* 14-Paediatric_Medicine_Fluid_Guidelines.pdf in Resources */,
+				9706EBA11D4CFC3A00801B77 /* splash screen.png in Resources */,
 				979782FE1D1F8DEB00BAF670 /* DrugList.csv in Resources */,
 				9722E8651D0CF16300C6D26F /* Cabin-MediumItalic.otf in Resources */,
 				979782E11D1A87E800BAF670 /* 04-Paediatric_Anaesthesia.pdf in Resources */,
@@ -438,7 +439,6 @@
 				9722E8691D0CF16300C6D26F /* CabinCondensed-Bold.ttf in Resources */,
 				9722E86A1D0CF16300C6D26F /* CabinCondensed-Medium.ttf in Resources */,
 				979782E31D1A87E800BAF670 /* 06-Cardiac_Cath_Guidelines.pdf in Resources */,
-				979782F61D1D90B100BAF670 /* splash screen.png in Resources */,
 				9722E86B1D0CF16300C6D26F /* CabinCondensed-Regular.ttf in Resources */,
 				9777BF711D433C8200F82DA4 /* soundE.mp3 in Resources */,
 				979782E71D1A87E800BAF670 /* 10-Patient_transport.pdf in Resources */,

@@ -47,6 +47,8 @@ UIButton *transparencyButton ;
     _aboutUsView.layer.shadowOffset = CGSizeMake(0, 2);
     _aboutUsView.layer.cornerRadius = 15.0f;
     _startScreenView.layer.cornerRadius = 15.0f;
+    _startScreenView.layer.shadowOpacity = 0.4;
+    _startScreenView.layer.shadowOffset = CGSizeMake(0, 2);
     // Do any additional setup after loading the view.
     [UIView animateWithDuration:0.3 animations:^{
         _settingsLogo.transform = CGAffineTransformMakeRotation(M_PI);
@@ -70,6 +72,7 @@ UIButton *transparencyButton ;
     _colorSelectPadding.layer.cornerRadius = 15.0f;
     _colorSelectPadding.layer.shadowOpacity = 0.4; _colorSelectPadding.layer.shadowOffset = CGSizeMake(1, 2);
 
+    
     _blurView.alpha = 0; _color1Primary.alpha = 0; _color2Primary.alpha =0; _color3Primary.alpha = 0;
     
 }
