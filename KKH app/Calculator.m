@@ -59,8 +59,8 @@ UIView *firstBar, *secondBar, *thirdBar;
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setcolors];
-    _drugCALButton.layer.cornerRadius = _drugCALButton.frame.size.width/2;
-    _BMIButton.layer.cornerRadius = _BMIButton.frame.size.width/2;
+    _drugCALButton.layer.cornerRadius = 20.0f;
+    _BMIButton.layer.cornerRadius = 20.0f;
     _drugCALButton.layer.shadowOpacity = 0.4;   _drugCALButton.layer.shadowOffset = CGSizeMake(1, 1); _BMIButton.layer.shadowOpacity = 0.4;   _BMIButton.layer.shadowOffset = CGSizeMake(1, 1);
     _blur.alpha = 0; _VIEW.alpha = 0; _send.alpha = 0;
     _mainCardView.layer.cornerRadius = 15.0f;

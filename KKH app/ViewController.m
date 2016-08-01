@@ -69,6 +69,7 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
     }
 }
 - (void)viewDidLoad {
+    
     _cardView.frame = CGRectMake(_cardView.frame.origin.x, - _cardView.frame.size.height -10, _cardView.frame.size.width, _cardView.frame.size.height);
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         _cardView.frame = CGRectMake(_cardView.frame.origin.x, _cardView.frame.origin.y + _cardView.frame.size.height +10, _cardView.frame.size.width, _cardView.frame.size.height);
@@ -106,7 +107,7 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
 
     }
     _sarchSegue.layer.cornerRadius = 10.0f;
-    _sarchSegue.layer.shadowOpacity = 0.3; _sarchSegue.layer.shadowOffset = CGSizeMake(0, 3);
+   // _sarchSegue.layer.shadowOpacity = 0.3; _sarchSegue.layer.shadowOffset = CGSizeMake(0, 3);
     _sarchSegue.backgroundColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]];
     _serach.delegate = self;
     _cardView.layer.cornerRadius = 15.0f;

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9701E0571D4F2C95008219B9 /* 02-Training_Programmes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9701E0561D4F2C95008219B9 /* 02-Training_Programmes.pdf */; };
+		9701E0591D4F2D75008219B9 /* 03-Guidelines_for_the Provision_of_Anaesthesia_for_Paediatric_patients.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9701E0581D4F2D75008219B9 /* 03-Guidelines_for_the Provision_of_Anaesthesia_for_Paediatric_patients.pdf */; };
+		9701E05C1D4F2E73008219B9 /* 04-Paediatric_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9701E05A1D4F2E73008219B9 /* 04-Paediatric_Anaesthesia.pdf */; };
+		9701E05D1D4F2E73008219B9 /* 05-Paediatric_Anaesthesia_Equipment.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9701E05B1D4F2E73008219B9 /* 05-Paediatric_Anaesthesia_Equipment.pdf */; };
 		9703E6841D28D0F800C72EF3 /* WECodeScannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E6831D28D0F800C72EF3 /* WECodeScannerView.m */; };
 		9703E68A1D28D11500C72EF3 /* WECodeScannerMatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E6881D28D11500C72EF3 /* WECodeScannerMatchView.m */; };
 		9703E68B1D28D11500C72EF3 /* WESoundHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E6891D28D11500C72EF3 /* WESoundHelper.m */; };
@@ -25,6 +29,12 @@
 		9722E86B1D0CF16300C6D26F /* CabinCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E8571D0CEF0E00C6D26F /* CabinCondensed-Regular.ttf */; };
 		9722E86C1D0CF16300C6D26F /* CabinCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E8581D0CEF0E00C6D26F /* CabinCondensed-SemiBold.ttf */; };
 		9722E87F1D0EFF0100C6D26F /* FavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9722E87E1D0EFF0100C6D26F /* FavViewController.m */; };
+		972491581D4F32A900A9CD91 /* 21-Laboratory_Data.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 972491571D4F32A900A9CD91 /* 21-Laboratory_Data.pdf */; };
+		9724915A1D4F32CC00A9CD91 /* 22-Fluid_Recommendations.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 972491591D4F32CC00A9CD91 /* 22-Fluid_Recommendations.pdf */; };
+		9724915D1D4F333800A9CD91 /* 23-Algorithms.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9724915B1D4F333800A9CD91 /* 23-Algorithms.pdf */; };
+		9724915E1D4F333800A9CD91 /* 24-Common_Crisis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9724915C1D4F333800A9CD91 /* 24-Common_Crisis.pdf */; };
+		972491601D4F335500A9CD91 /* 25-Acute_Pain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9724915F1D4F335500A9CD91 /* 25-Acute_Pain.pdf */; };
+		972491621D4F338600A9CD91 /* 26-Chronic_Pain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 972491611D4F338600A9CD91 /* 26-Chronic_Pain.pdf */; };
 		973E00291D092CD600F7C94A /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E00261D092CD600F7C94A /* QCMethod.m */; };
 		973E00301D09371B00F7C94A /* animationScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E002F1D09371B00F7C94A /* animationScheme.m */; };
 		973E00331D09A30000F7C94A /* PDFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973E00321D09A30000F7C94A /* PDFManager.swift */; };
@@ -40,23 +50,22 @@
 		9777BF711D433C8200F82DA4 /* soundE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9777BF701D433C8200F82DA4 /* soundE.mp3 */; };
 		9777BF751D435B9200F82DA4 /* BMIGraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9777BF741D435B9200F82DA4 /* BMIGraphManager.swift */; };
 		9777BF781D435C6F00F82DA4 /* BMIPercentileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9777BF771D435C6F00F82DA4 /* BMIPercentileViewController.m */; };
+		9781BF7D1D4F2EF4009CF058 /* 06-Neonatal_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF7C1D4F2EF4009CF058 /* 06-Neonatal_Anaesthesia.pdf */; };
+		9781BF7F1D4F2FB6009CF058 /* 07-Cardiac_Guidelines.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF7E1D4F2FB6009CF058 /* 07-Cardiac_Guidelines.pdf */; };
+		9781BF831D4F3034009CF058 /* 08-Cardiac_Checklist.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF801D4F3034009CF058 /* 08-Cardiac_Checklist.pdf */; };
+		9781BF841D4F3034009CF058 /* 09-Cardiac_Calculator.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF811D4F3034009CF058 /* 09-Cardiac_Calculator.pdf */; };
+		9781BF851D4F3034009CF058 /* 10-Antibiotic_Prophylaxis_for_the_Prevention_of_Infective_Endocarditis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF821D4F3034009CF058 /* 10-Antibiotic_Prophylaxis_for_the_Prevention_of_Infective_Endocarditis.pdf */; };
+		9781BF871D4F308D009CF058 /* 11-Diagnostic_Imaging.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF861D4F308D009CF058 /* 11-Diagnostic_Imaging.pdf */; };
+		9781BF891D4F30C7009CF058 /* 12-Sedation_For_Oncology_Children.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF881D4F30C7009CF058 /* 12-Sedation_For_Oncology_Children.pdf */; };
+		9781BF8B1D4F30E5009CF058 /* 13-Regional_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF8A1D4F30E5009CF058 /* 13-Regional_Anaesthesia.pdf */; };
+		9781BF8D1D4F3119009CF058 /* 14-Patient_Transport.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF8C1D4F3119009CF058 /* 14-Patient_Transport.pdf */; };
+		9781BF921D4F3191009CF058 /* 15-Drug_Dosages_in_Paediatric_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF8E1D4F3191009CF058 /* 15-Drug_Dosages_in_Paediatric_Anaesthesia.pdf */; };
+		9781BF931D4F3191009CF058 /* 16-Antibiotics_Dosages.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF8F1D4F3191009CF058 /* 16-Antibiotics_Dosages.pdf */; };
+		9781BF941D4F3191009CF058 /* 17-Paediatric_Surgical_Prophylaxis_Guidelines.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF901D4F3191009CF058 /* 17-Paediatric_Surgical_Prophylaxis_Guidelines.pdf */; };
+		9781BF951D4F3191009CF058 /* 18-Neonatal_Antimicrobial_Dosing.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF911D4F3191009CF058 /* 18-Neonatal_Antimicrobial_Dosing.pdf */; };
+		9781BF981D4F31D1009CF058 /* 19-Transfusion_in_Children.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF961D4F31D1009CF058 /* 19-Transfusion_in_Children.pdf */; };
+		9781BF991D4F31D1009CF058 /* 20-Paediatric_Massive_Transfusion_Protocol.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF971D4F31D1009CF058 /* 20-Paediatric_Massive_Transfusion_Protocol.pdf */; };
 		979782DE1D1A87E800BAF670 /* 01-Intro,_Dept,_Duties.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782CD1D1A87E800BAF670 /* 01-Intro,_Dept,_Duties.pdf */; };
-		979782DF1D1A87E800BAF670 /* 02-Training_Programmes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782CE1D1A87E800BAF670 /* 02-Training_Programmes.pdf */; };
-		979782E01D1A87E800BAF670 /* 03-Guidelines_for_the_Provision_of_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782CF1D1A87E800BAF670 /* 03-Guidelines_for_the_Provision_of_Anaesthesia.pdf */; };
-		979782E11D1A87E800BAF670 /* 04-Paediatric_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D01D1A87E800BAF670 /* 04-Paediatric_Anaesthesia.pdf */; };
-		979782E21D1A87E800BAF670 /* 05-Neonatal_Anaesthesia,_NICU.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D11D1A87E800BAF670 /* 05-Neonatal_Anaesthesia,_NICU.pdf */; };
-		979782E31D1A87E800BAF670 /* 06-Cardiac_Cath_Guidelines.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D21D1A87E800BAF670 /* 06-Cardiac_Cath_Guidelines.pdf */; };
-		979782E41D1A87E800BAF670 /* 07-Diagnostic_Imaging.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D31D1A87E800BAF670 /* 07-Diagnostic_Imaging.pdf */; };
-		979782E51D1A87E800BAF670 /* 08-Sedation_for_oncology_children.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D41D1A87E800BAF670 /* 08-Sedation_for_oncology_children.pdf */; };
-		979782E61D1A87E800BAF670 /* 09-Regional_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D51D1A87E800BAF670 /* 09-Regional_Anaesthesia.pdf */; };
-		979782E71D1A87E800BAF670 /* 10-Patient_transport.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D61D1A87E800BAF670 /* 10-Patient_transport.pdf */; };
-		979782E81D1A87E800BAF670 /* 11-Drug_Dosages_in_Paediatric_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D71D1A87E800BAF670 /* 11-Drug_Dosages_in_Paediatric_Anaesthesia.pdf */; };
-		979782E91D1A87E800BAF670 /* 12-Transfusion_in_Children.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D81D1A87E800BAF670 /* 12-Transfusion_in_Children.pdf */; };
-		979782EA1D1A87E800BAF670 /* 13-Common_Lab_Investigations.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782D91D1A87E800BAF670 /* 13-Common_Lab_Investigations.pdf */; };
-		979782EB1D1A87E800BAF670 /* 14-Paediatric_Medicine_Fluid_Guidelines.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782DA1D1A87E800BAF670 /* 14-Paediatric_Medicine_Fluid_Guidelines.pdf */; };
-		979782EC1D1A87E800BAF670 /* 15-Common_Crisis,_Algorithms.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782DB1D1A87E800BAF670 /* 15-Common_Crisis,_Algorithms.pdf */; };
-		979782ED1D1A87E800BAF670 /* 16-Acute_Pain_Service.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782DC1D1A87E800BAF670 /* 16-Acute_Pain_Service.pdf */; };
-		979782EE1D1A87E800BAF670 /* 17-Chronic_Pain_Service.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 979782DD1D1A87E800BAF670 /* 17-Chronic_Pain_Service.pdf */; };
 		979782F11D1D8E7100BAF670 /* splashAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 979782F01D1D8E7100BAF670 /* splashAnimate.m */; };
 		979782F41D1D8EBC00BAF670 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 979782F31D1D8EBC00BAF670 /* SplashViewController.m */; };
 		979782F91D1E1C6C00BAF670 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 979782F81D1E1C6C00BAF670 /* AboutUsViewController.m */; };
@@ -77,6 +86,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9701E0561D4F2C95008219B9 /* 02-Training_Programmes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "02-Training_Programmes.pdf"; sourceTree = "<group>"; };
+		9701E0581D4F2D75008219B9 /* 03-Guidelines_for_the Provision_of_Anaesthesia_for_Paediatric_patients.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "03-Guidelines_for_the Provision_of_Anaesthesia_for_Paediatric_patients.pdf"; sourceTree = "<group>"; };
+		9701E05A1D4F2E73008219B9 /* 04-Paediatric_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "04-Paediatric_Anaesthesia.pdf"; sourceTree = "<group>"; };
+		9701E05B1D4F2E73008219B9 /* 05-Paediatric_Anaesthesia_Equipment.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "05-Paediatric_Anaesthesia_Equipment.pdf"; sourceTree = "<group>"; };
 		9703E6831D28D0F800C72EF3 /* WECodeScannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WECodeScannerView.m; sourceTree = "<group>"; };
 		9703E6851D28D10B00C72EF3 /* WECodeScannerMatchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WECodeScannerMatchView.h; sourceTree = "<group>"; };
 		9703E6861D28D10B00C72EF3 /* WECodeScannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WECodeScannerView.h; sourceTree = "<group>"; };
@@ -100,6 +113,12 @@
 		9722E8601D0CEF2C00C6D26F /* Cabin-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBoldItalic.otf"; sourceTree = "<group>"; };
 		9722E87D1D0EFF0100C6D26F /* FavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavViewController.h; sourceTree = "<group>"; };
 		9722E87E1D0EFF0100C6D26F /* FavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavViewController.m; sourceTree = "<group>"; };
+		972491571D4F32A900A9CD91 /* 21-Laboratory_Data.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "21-Laboratory_Data.pdf"; sourceTree = "<group>"; };
+		972491591D4F32CC00A9CD91 /* 22-Fluid_Recommendations.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "22-Fluid_Recommendations.pdf"; sourceTree = "<group>"; };
+		9724915B1D4F333800A9CD91 /* 23-Algorithms.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "23-Algorithms.pdf"; sourceTree = "<group>"; };
+		9724915C1D4F333800A9CD91 /* 24-Common_Crisis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "24-Common_Crisis.pdf"; sourceTree = "<group>"; };
+		9724915F1D4F335500A9CD91 /* 25-Acute_Pain.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "25-Acute_Pain.pdf"; sourceTree = "<group>"; };
+		972491611D4F338600A9CD91 /* 26-Chronic_Pain.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "26-Chronic_Pain.pdf"; sourceTree = "<group>"; };
 		973E00261D092CD600F7C94A /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
 		973E00271D092CD600F7C94A /* QCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMethod.h; sourceTree = "<group>"; };
 		973E002E1D09371B00F7C94A /* animationScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = animationScheme.h; sourceTree = "<group>"; };
@@ -127,23 +146,22 @@
 		9777BF741D435B9200F82DA4 /* BMIGraphManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIGraphManager.swift; sourceTree = "<group>"; };
 		9777BF761D435C6F00F82DA4 /* BMIPercentileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMIPercentileViewController.h; sourceTree = "<group>"; };
 		9777BF771D435C6F00F82DA4 /* BMIPercentileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMIPercentileViewController.m; sourceTree = "<group>"; };
+		9781BF7C1D4F2EF4009CF058 /* 06-Neonatal_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "06-Neonatal_Anaesthesia.pdf"; sourceTree = "<group>"; };
+		9781BF7E1D4F2FB6009CF058 /* 07-Cardiac_Guidelines.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "07-Cardiac_Guidelines.pdf"; sourceTree = "<group>"; };
+		9781BF801D4F3034009CF058 /* 08-Cardiac_Checklist.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "08-Cardiac_Checklist.pdf"; sourceTree = "<group>"; };
+		9781BF811D4F3034009CF058 /* 09-Cardiac_Calculator.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "09-Cardiac_Calculator.pdf"; sourceTree = "<group>"; };
+		9781BF821D4F3034009CF058 /* 10-Antibiotic_Prophylaxis_for_the_Prevention_of_Infective_Endocarditis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "10-Antibiotic_Prophylaxis_for_the_Prevention_of_Infective_Endocarditis.pdf"; sourceTree = "<group>"; };
+		9781BF861D4F308D009CF058 /* 11-Diagnostic_Imaging.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "11-Diagnostic_Imaging.pdf"; sourceTree = "<group>"; };
+		9781BF881D4F30C7009CF058 /* 12-Sedation_For_Oncology_Children.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "12-Sedation_For_Oncology_Children.pdf"; sourceTree = "<group>"; };
+		9781BF8A1D4F30E5009CF058 /* 13-Regional_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "13-Regional_Anaesthesia.pdf"; sourceTree = "<group>"; };
+		9781BF8C1D4F3119009CF058 /* 14-Patient_Transport.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "14-Patient_Transport.pdf"; sourceTree = "<group>"; };
+		9781BF8E1D4F3191009CF058 /* 15-Drug_Dosages_in_Paediatric_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "15-Drug_Dosages_in_Paediatric_Anaesthesia.pdf"; sourceTree = "<group>"; };
+		9781BF8F1D4F3191009CF058 /* 16-Antibiotics_Dosages.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "16-Antibiotics_Dosages.pdf"; sourceTree = "<group>"; };
+		9781BF901D4F3191009CF058 /* 17-Paediatric_Surgical_Prophylaxis_Guidelines.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "17-Paediatric_Surgical_Prophylaxis_Guidelines.pdf"; sourceTree = "<group>"; };
+		9781BF911D4F3191009CF058 /* 18-Neonatal_Antimicrobial_Dosing.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "18-Neonatal_Antimicrobial_Dosing.pdf"; sourceTree = "<group>"; };
+		9781BF961D4F31D1009CF058 /* 19-Transfusion_in_Children.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "19-Transfusion_in_Children.pdf"; sourceTree = "<group>"; };
+		9781BF971D4F31D1009CF058 /* 20-Paediatric_Massive_Transfusion_Protocol.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "20-Paediatric_Massive_Transfusion_Protocol.pdf"; sourceTree = "<group>"; };
 		979782CD1D1A87E800BAF670 /* 01-Intro,_Dept,_Duties.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "01-Intro,_Dept,_Duties.pdf"; sourceTree = "<group>"; };
-		979782CE1D1A87E800BAF670 /* 02-Training_Programmes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "02-Training_Programmes.pdf"; sourceTree = "<group>"; };
-		979782CF1D1A87E800BAF670 /* 03-Guidelines_for_the_Provision_of_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "03-Guidelines_for_the_Provision_of_Anaesthesia.pdf"; sourceTree = "<group>"; };
-		979782D01D1A87E800BAF670 /* 04-Paediatric_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "04-Paediatric_Anaesthesia.pdf"; sourceTree = "<group>"; };
-		979782D11D1A87E800BAF670 /* 05-Neonatal_Anaesthesia,_NICU.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "05-Neonatal_Anaesthesia,_NICU.pdf"; sourceTree = "<group>"; };
-		979782D21D1A87E800BAF670 /* 06-Cardiac_Cath_Guidelines.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "06-Cardiac_Cath_Guidelines.pdf"; sourceTree = "<group>"; };
-		979782D31D1A87E800BAF670 /* 07-Diagnostic_Imaging.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "07-Diagnostic_Imaging.pdf"; sourceTree = "<group>"; };
-		979782D41D1A87E800BAF670 /* 08-Sedation_for_oncology_children.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "08-Sedation_for_oncology_children.pdf"; sourceTree = "<group>"; };
-		979782D51D1A87E800BAF670 /* 09-Regional_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "09-Regional_Anaesthesia.pdf"; sourceTree = "<group>"; };
-		979782D61D1A87E800BAF670 /* 10-Patient_transport.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "10-Patient_transport.pdf"; sourceTree = "<group>"; };
-		979782D71D1A87E800BAF670 /* 11-Drug_Dosages_in_Paediatric_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "11-Drug_Dosages_in_Paediatric_Anaesthesia.pdf"; sourceTree = "<group>"; };
-		979782D81D1A87E800BAF670 /* 12-Transfusion_in_Children.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "12-Transfusion_in_Children.pdf"; sourceTree = "<group>"; };
-		979782D91D1A87E800BAF670 /* 13-Common_Lab_Investigations.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "13-Common_Lab_Investigations.pdf"; sourceTree = "<group>"; };
-		979782DA1D1A87E800BAF670 /* 14-Paediatric_Medicine_Fluid_Guidelines.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "14-Paediatric_Medicine_Fluid_Guidelines.pdf"; sourceTree = "<group>"; };
-		979782DB1D1A87E800BAF670 /* 15-Common_Crisis,_Algorithms.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "15-Common_Crisis,_Algorithms.pdf"; sourceTree = "<group>"; };
-		979782DC1D1A87E800BAF670 /* 16-Acute_Pain_Service.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "16-Acute_Pain_Service.pdf"; sourceTree = "<group>"; };
-		979782DD1D1A87E800BAF670 /* 17-Chronic_Pain_Service.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "17-Chronic_Pain_Service.pdf"; sourceTree = "<group>"; };
 		979782EF1D1D8E7100BAF670 /* splashAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = splashAnimate.h; sourceTree = "<group>"; };
 		979782F01D1D8E7100BAF670 /* splashAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = splashAnimate.m; sourceTree = "<group>"; };
 		979782F21D1D8EBC00BAF670 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
@@ -321,22 +339,31 @@
 			isa = PBXGroup;
 			children = (
 				979782CD1D1A87E800BAF670 /* 01-Intro,_Dept,_Duties.pdf */,
-				979782CE1D1A87E800BAF670 /* 02-Training_Programmes.pdf */,
-				979782CF1D1A87E800BAF670 /* 03-Guidelines_for_the_Provision_of_Anaesthesia.pdf */,
-				979782D01D1A87E800BAF670 /* 04-Paediatric_Anaesthesia.pdf */,
-				979782D11D1A87E800BAF670 /* 05-Neonatal_Anaesthesia,_NICU.pdf */,
-				979782D21D1A87E800BAF670 /* 06-Cardiac_Cath_Guidelines.pdf */,
-				979782D31D1A87E800BAF670 /* 07-Diagnostic_Imaging.pdf */,
-				979782D41D1A87E800BAF670 /* 08-Sedation_for_oncology_children.pdf */,
-				979782D51D1A87E800BAF670 /* 09-Regional_Anaesthesia.pdf */,
-				979782D61D1A87E800BAF670 /* 10-Patient_transport.pdf */,
-				979782D71D1A87E800BAF670 /* 11-Drug_Dosages_in_Paediatric_Anaesthesia.pdf */,
-				979782D81D1A87E800BAF670 /* 12-Transfusion_in_Children.pdf */,
-				979782D91D1A87E800BAF670 /* 13-Common_Lab_Investigations.pdf */,
-				979782DA1D1A87E800BAF670 /* 14-Paediatric_Medicine_Fluid_Guidelines.pdf */,
-				979782DB1D1A87E800BAF670 /* 15-Common_Crisis,_Algorithms.pdf */,
-				979782DC1D1A87E800BAF670 /* 16-Acute_Pain_Service.pdf */,
-				979782DD1D1A87E800BAF670 /* 17-Chronic_Pain_Service.pdf */,
+				9701E0561D4F2C95008219B9 /* 02-Training_Programmes.pdf */,
+				9701E0581D4F2D75008219B9 /* 03-Guidelines_for_the Provision_of_Anaesthesia_for_Paediatric_patients.pdf */,
+				9701E05A1D4F2E73008219B9 /* 04-Paediatric_Anaesthesia.pdf */,
+				9701E05B1D4F2E73008219B9 /* 05-Paediatric_Anaesthesia_Equipment.pdf */,
+				9781BF7C1D4F2EF4009CF058 /* 06-Neonatal_Anaesthesia.pdf */,
+				9781BF7E1D4F2FB6009CF058 /* 07-Cardiac_Guidelines.pdf */,
+				9781BF801D4F3034009CF058 /* 08-Cardiac_Checklist.pdf */,
+				9781BF811D4F3034009CF058 /* 09-Cardiac_Calculator.pdf */,
+				9781BF821D4F3034009CF058 /* 10-Antibiotic_Prophylaxis_for_the_Prevention_of_Infective_Endocarditis.pdf */,
+				9781BF861D4F308D009CF058 /* 11-Diagnostic_Imaging.pdf */,
+				9781BF881D4F30C7009CF058 /* 12-Sedation_For_Oncology_Children.pdf */,
+				9781BF8A1D4F30E5009CF058 /* 13-Regional_Anaesthesia.pdf */,
+				9781BF8C1D4F3119009CF058 /* 14-Patient_Transport.pdf */,
+				9781BF8E1D4F3191009CF058 /* 15-Drug_Dosages_in_Paediatric_Anaesthesia.pdf */,
+				9781BF8F1D4F3191009CF058 /* 16-Antibiotics_Dosages.pdf */,
+				9781BF901D4F3191009CF058 /* 17-Paediatric_Surgical_Prophylaxis_Guidelines.pdf */,
+				9781BF911D4F3191009CF058 /* 18-Neonatal_Antimicrobial_Dosing.pdf */,
+				9781BF961D4F31D1009CF058 /* 19-Transfusion_in_Children.pdf */,
+				9781BF971D4F31D1009CF058 /* 20-Paediatric_Massive_Transfusion_Protocol.pdf */,
+				972491571D4F32A900A9CD91 /* 21-Laboratory_Data.pdf */,
+				972491591D4F32CC00A9CD91 /* 22-Fluid_Recommendations.pdf */,
+				9724915B1D4F333800A9CD91 /* 23-Algorithms.pdf */,
+				9724915C1D4F333800A9CD91 /* 24-Common_Crisis.pdf */,
+				9724915F1D4F335500A9CD91 /* 25-Acute_Pain.pdf */,
+				972491611D4F338600A9CD91 /* 26-Chronic_Pain.pdf */,
 			);
 			path = PDFs;
 			sourceTree = "<group>";
@@ -422,41 +449,50 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9724915A1D4F32CC00A9CD91 /* 22-Fluid_Recommendations.pdf in Resources */,
 				9722E8621D0CF16300C6D26F /* Cabin-BoldItalic.otf in Resources */,
+				9781BF891D4F30C7009CF058 /* 12-Sedation_For_Oncology_Children.pdf in Resources */,
+				9781BF931D4F3191009CF058 /* 16-Antibiotics_Dosages.pdf in Resources */,
 				9722E8631D0CF16300C6D26F /* Cabin-Italic.otf in Resources */,
 				9722E8641D0CF16300C6D26F /* Cabin-Medium.otf in Resources */,
-				979782EB1D1A87E800BAF670 /* 14-Paediatric_Medicine_Fluid_Guidelines.pdf in Resources */,
 				9706EBA11D4CFC3A00801B77 /* splash screen.png in Resources */,
+				9701E0591D4F2D75008219B9 /* 03-Guidelines_for_the Provision_of_Anaesthesia_for_Paediatric_patients.pdf in Resources */,
 				979782FE1D1F8DEB00BAF670 /* DrugList.csv in Resources */,
 				9722E8651D0CF16300C6D26F /* Cabin-MediumItalic.otf in Resources */,
-				979782E11D1A87E800BAF670 /* 04-Paediatric_Anaesthesia.pdf in Resources */,
+				9781BF851D4F3034009CF058 /* 10-Antibiotic_Prophylaxis_for_the_Prevention_of_Infective_Endocarditis.pdf in Resources */,
+				9781BF981D4F31D1009CF058 /* 19-Transfusion_in_Children.pdf in Resources */,
 				9722E8661D0CF16300C6D26F /* Cabin-Regular.otf in Resources */,
 				9722E8671D0CF16300C6D26F /* Cabin-SemiBold.otf in Resources */,
-				979782E81D1A87E800BAF670 /* 11-Drug_Dosages_in_Paediatric_Anaesthesia.pdf in Resources */,
+				9701E0571D4F2C95008219B9 /* 02-Training_Programmes.pdf in Resources */,
+				9781BF991D4F31D1009CF058 /* 20-Paediatric_Massive_Transfusion_Protocol.pdf in Resources */,
+				9781BF7D1D4F2EF4009CF058 /* 06-Neonatal_Anaesthesia.pdf in Resources */,
+				9781BF871D4F308D009CF058 /* 11-Diagnostic_Imaging.pdf in Resources */,
+				9781BF8B1D4F30E5009CF058 /* 13-Regional_Anaesthesia.pdf in Resources */,
+				9781BF951D4F3191009CF058 /* 18-Neonatal_Antimicrobial_Dosing.pdf in Resources */,
 				9722E8681D0CF16300C6D26F /* Cabin-SemiBoldItalic.otf in Resources */,
-				979782EC1D1A87E800BAF670 /* 15-Common_Crisis,_Algorithms.pdf in Resources */,
-				979782E21D1A87E800BAF670 /* 05-Neonatal_Anaesthesia,_NICU.pdf in Resources */,
+				9781BF921D4F3191009CF058 /* 15-Drug_Dosages_in_Paediatric_Anaesthesia.pdf in Resources */,
+				9781BF7F1D4F2FB6009CF058 /* 07-Cardiac_Guidelines.pdf in Resources */,
+				972491601D4F335500A9CD91 /* 25-Acute_Pain.pdf in Resources */,
 				9722E8691D0CF16300C6D26F /* CabinCondensed-Bold.ttf in Resources */,
+				9781BF941D4F3191009CF058 /* 17-Paediatric_Surgical_Prophylaxis_Guidelines.pdf in Resources */,
 				9722E86A1D0CF16300C6D26F /* CabinCondensed-Medium.ttf in Resources */,
-				979782E31D1A87E800BAF670 /* 06-Cardiac_Cath_Guidelines.pdf in Resources */,
+				9781BF8D1D4F3119009CF058 /* 14-Patient_Transport.pdf in Resources */,
 				9722E86B1D0CF16300C6D26F /* CabinCondensed-Regular.ttf in Resources */,
 				9777BF711D433C8200F82DA4 /* soundE.mp3 in Resources */,
-				979782E71D1A87E800BAF670 /* 10-Patient_transport.pdf in Resources */,
-				979782E01D1A87E800BAF670 /* 03-Guidelines_for_the_Provision_of_Anaesthesia.pdf in Resources */,
-				979782ED1D1A87E800BAF670 /* 16-Acute_Pain_Service.pdf in Resources */,
-				979782EA1D1A87E800BAF670 /* 13-Common_Lab_Investigations.pdf in Resources */,
 				9722E86C1D0CF16300C6D26F /* CabinCondensed-SemiBold.ttf in Resources */,
-				979782EE1D1A87E800BAF670 /* 17-Chronic_Pain_Service.pdf in Resources */,
-				979782E91D1A87E800BAF670 /* 12-Transfusion_in_Children.pdf in Resources */,
-				979782E61D1A87E800BAF670 /* 09-Regional_Anaesthesia.pdf in Resources */,
-				979782E51D1A87E800BAF670 /* 08-Sedation_for_oncology_children.pdf in Resources */,
 				9722E8611D0CF15C00C6D26F /* Cabin-Bold.otf in Resources */,
+				9781BF831D4F3034009CF058 /* 08-Cardiac_Checklist.pdf in Resources */,
+				972491621D4F338600A9CD91 /* 26-Chronic_Pain.pdf in Resources */,
+				9724915E1D4F333800A9CD91 /* 24-Common_Crisis.pdf in Resources */,
+				9781BF841D4F3034009CF058 /* 09-Cardiac_Calculator.pdf in Resources */,
 				976EFB321D01C28B0048A4DC /* LaunchScreen.storyboard in Resources */,
 				979782DE1D1A87E800BAF670 /* 01-Intro,_Dept,_Duties.pdf in Resources */,
-				979782DF1D1A87E800BAF670 /* 02-Training_Programmes.pdf in Resources */,
-				979782E41D1A87E800BAF670 /* 07-Diagnostic_Imaging.pdf in Resources */,
+				9724915D1D4F333800A9CD91 /* 23-Algorithms.pdf in Resources */,
+				9701E05D1D4F2E73008219B9 /* 05-Paediatric_Anaesthesia_Equipment.pdf in Resources */,
 				976EFB2F1D01C28B0048A4DC /* Assets.xcassets in Resources */,
 				976EFB2D1D01C28B0048A4DC /* Main.storyboard in Resources */,
+				9701E05C1D4F2E73008219B9 /* 04-Paediatric_Anaesthesia.pdf in Resources */,
+				972491581D4F32A900A9CD91 /* 21-Laboratory_Data.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
