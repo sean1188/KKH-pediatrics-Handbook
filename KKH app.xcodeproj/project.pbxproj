@@ -35,6 +35,14 @@
 		9724915E1D4F333800A9CD91 /* 24-Common_Crisis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9724915C1D4F333800A9CD91 /* 24-Common_Crisis.pdf */; };
 		972491601D4F335500A9CD91 /* 25-Acute_Pain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9724915F1D4F335500A9CD91 /* 25-Acute_Pain.pdf */; };
 		972491621D4F338600A9CD91 /* 26-Chronic_Pain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 972491611D4F338600A9CD91 /* 26-Chronic_Pain.pdf */; };
+		9724916B1D4F395000A9CD91 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 972491641D4F395000A9CD91 /* 1.png */; };
+		9724916C1D4F395000A9CD91 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 972491651D4F395000A9CD91 /* 2.png */; };
+		9724916D1D4F395000A9CD91 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 972491661D4F395000A9CD91 /* 3.png */; };
+		9724916E1D4F395000A9CD91 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 972491671D4F395000A9CD91 /* 4.png */; };
+		9724916F1D4F395000A9CD91 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 972491681D4F395000A9CD91 /* 5.png */; };
+		972491701D4F395000A9CD91 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 972491691D4F395000A9CD91 /* 6.png */; };
+		972491711D4F395000A9CD91 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9724916A1D4F395000A9CD91 /* 7.png */; };
+		972491741D4F3A3600A9CD91 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 972491731D4F3A3600A9CD91 /* TutorialViewController.m */; };
 		973E00291D092CD600F7C94A /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E00261D092CD600F7C94A /* QCMethod.m */; };
 		973E00301D09371B00F7C94A /* animationScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E002F1D09371B00F7C94A /* animationScheme.m */; };
 		973E00331D09A30000F7C94A /* PDFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973E00321D09A30000F7C94A /* PDFManager.swift */; };
@@ -57,7 +65,6 @@
 		9781BF851D4F3034009CF058 /* 10-Antibiotic_Prophylaxis_for_the_Prevention_of_Infective_Endocarditis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF821D4F3034009CF058 /* 10-Antibiotic_Prophylaxis_for_the_Prevention_of_Infective_Endocarditis.pdf */; };
 		9781BF871D4F308D009CF058 /* 11-Diagnostic_Imaging.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF861D4F308D009CF058 /* 11-Diagnostic_Imaging.pdf */; };
 		9781BF891D4F30C7009CF058 /* 12-Sedation_For_Oncology_Children.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF881D4F30C7009CF058 /* 12-Sedation_For_Oncology_Children.pdf */; };
-		9781BF8B1D4F30E5009CF058 /* 13-Regional_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF8A1D4F30E5009CF058 /* 13-Regional_Anaesthesia.pdf */; };
 		9781BF8D1D4F3119009CF058 /* 14-Patient_Transport.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF8C1D4F3119009CF058 /* 14-Patient_Transport.pdf */; };
 		9781BF921D4F3191009CF058 /* 15-Drug_Dosages_in_Paediatric_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF8E1D4F3191009CF058 /* 15-Drug_Dosages_in_Paediatric_Anaesthesia.pdf */; };
 		9781BF931D4F3191009CF058 /* 16-Antibiotics_Dosages.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF8F1D4F3191009CF058 /* 16-Antibiotics_Dosages.pdf */; };
@@ -73,6 +80,8 @@
 		979782FE1D1F8DEB00BAF670 /* DrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = 979782FC1D1F8DEB00BAF670 /* DrugList.csv */; };
 		97BCF2C51D13955600891F74 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BCF2C41D13955600891F74 /* SettingsViewController.m */; };
 		97FB27C11D06D69000EF2845 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB27C01D06D69000EF2845 /* Calculator.m */; };
+		97FED1591D509153000B7703 /* 13-Regional_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 97FED1581D509153000B7703 /* 13-Regional_Anaesthesia.pdf */; };
+		97FED15B1D5095B8000B7703 /* inc_hq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97FED15A1D5095B8000B7703 /* inc_hq.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +128,15 @@
 		9724915C1D4F333800A9CD91 /* 24-Common_Crisis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "24-Common_Crisis.pdf"; sourceTree = "<group>"; };
 		9724915F1D4F335500A9CD91 /* 25-Acute_Pain.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "25-Acute_Pain.pdf"; sourceTree = "<group>"; };
 		972491611D4F338600A9CD91 /* 26-Chronic_Pain.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "26-Chronic_Pain.pdf"; sourceTree = "<group>"; };
+		972491641D4F395000A9CD91 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		972491651D4F395000A9CD91 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		972491661D4F395000A9CD91 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		972491671D4F395000A9CD91 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		972491681D4F395000A9CD91 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		972491691D4F395000A9CD91 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		9724916A1D4F395000A9CD91 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		972491721D4F3A3600A9CD91 /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialViewController.h; sourceTree = "<group>"; };
+		972491731D4F3A3600A9CD91 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
 		973E00261D092CD600F7C94A /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
 		973E00271D092CD600F7C94A /* QCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMethod.h; sourceTree = "<group>"; };
 		973E002E1D09371B00F7C94A /* animationScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = animationScheme.h; sourceTree = "<group>"; };
@@ -153,7 +171,6 @@
 		9781BF821D4F3034009CF058 /* 10-Antibiotic_Prophylaxis_for_the_Prevention_of_Infective_Endocarditis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "10-Antibiotic_Prophylaxis_for_the_Prevention_of_Infective_Endocarditis.pdf"; sourceTree = "<group>"; };
 		9781BF861D4F308D009CF058 /* 11-Diagnostic_Imaging.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "11-Diagnostic_Imaging.pdf"; sourceTree = "<group>"; };
 		9781BF881D4F30C7009CF058 /* 12-Sedation_For_Oncology_Children.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "12-Sedation_For_Oncology_Children.pdf"; sourceTree = "<group>"; };
-		9781BF8A1D4F30E5009CF058 /* 13-Regional_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "13-Regional_Anaesthesia.pdf"; sourceTree = "<group>"; };
 		9781BF8C1D4F3119009CF058 /* 14-Patient_Transport.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "14-Patient_Transport.pdf"; sourceTree = "<group>"; };
 		9781BF8E1D4F3191009CF058 /* 15-Drug_Dosages_in_Paediatric_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "15-Drug_Dosages_in_Paediatric_Anaesthesia.pdf"; sourceTree = "<group>"; };
 		9781BF8F1D4F3191009CF058 /* 16-Antibiotics_Dosages.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "16-Antibiotics_Dosages.pdf"; sourceTree = "<group>"; };
@@ -174,6 +191,8 @@
 		97BCF2C41D13955600891F74 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		97FB27BF1D06D69000EF2845 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		97FB27C01D06D69000EF2845 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		97FED1581D509153000B7703 /* 13-Regional_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "13-Regional_Anaesthesia.pdf"; sourceTree = "<group>"; };
+		97FED15A1D5095B8000B7703 /* inc_hq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inc_hq.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +285,20 @@
 			name = calculation;
 			sourceTree = "<group>";
 		};
+		972491631D4F395000A9CD91 /* TutorialImgs */ = {
+			isa = PBXGroup;
+			children = (
+				972491641D4F395000A9CD91 /* 1.png */,
+				972491651D4F395000A9CD91 /* 2.png */,
+				972491661D4F395000A9CD91 /* 3.png */,
+				972491671D4F395000A9CD91 /* 4.png */,
+				972491681D4F395000A9CD91 /* 5.png */,
+				972491691D4F395000A9CD91 /* 6.png */,
+				9724916A1D4F395000A9CD91 /* 7.png */,
+			);
+			path = TutorialImgs;
+			sourceTree = "<group>";
+		};
 		976EFB161D01C28B0048A4DC = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +325,7 @@
 				976EFB261D01C28B0048A4DC /* AppDelegate.m */,
 				973E00311D09A2FF00F7C94A /* KKH app-Bridging-Header.h */,
 				973E00321D09A30000F7C94A /* PDFManager.swift */,
+				97FED15A1D5095B8000B7703 /* inc_hq.jpg */,
 				9722E86E1D0CF8F700C6D26F /* animation */,
 				9722E8541D0CEF0300C6D26F /* font */,
 				9706EBA01D4CFC3A00801B77 /* splash screen.png */,
@@ -299,6 +333,7 @@
 				976EFB2E1D01C28B0048A4DC /* Assets.xcassets */,
 				976EFB301D01C28B0048A4DC /* LaunchScreen.storyboard */,
 				976EFB331D01C28B0048A4DC /* Info.plist */,
+				972491631D4F395000A9CD91 /* TutorialImgs */,
 				979782CC1D1A87E800BAF670 /* PDFs */,
 				976EFB221D01C28B0048A4DC /* Supporting Files */,
 				9722E86D1D0CF8F000C6D26F /* Ref */,
@@ -314,6 +349,8 @@
 				9703E68C1D29367A00C72EF3 /* Secure_.h */,
 				9703E68D1D29367A00C72EF3 /* Secure_.m */,
 				9777BF701D433C8200F82DA4 /* soundE.mp3 */,
+				972491721D4F3A3600A9CD91 /* TutorialViewController.h */,
+				972491731D4F3A3600A9CD91 /* TutorialViewController.m */,
 			);
 			path = "KKH app";
 			sourceTree = "<group>";
@@ -350,7 +387,7 @@
 				9781BF821D4F3034009CF058 /* 10-Antibiotic_Prophylaxis_for_the_Prevention_of_Infective_Endocarditis.pdf */,
 				9781BF861D4F308D009CF058 /* 11-Diagnostic_Imaging.pdf */,
 				9781BF881D4F30C7009CF058 /* 12-Sedation_For_Oncology_Children.pdf */,
-				9781BF8A1D4F30E5009CF058 /* 13-Regional_Anaesthesia.pdf */,
+				97FED1581D509153000B7703 /* 13-Regional_Anaesthesia.pdf */,
 				9781BF8C1D4F3119009CF058 /* 14-Patient_Transport.pdf */,
 				9781BF8E1D4F3191009CF058 /* 15-Drug_Dosages_in_Paediatric_Anaesthesia.pdf */,
 				9781BF8F1D4F3191009CF058 /* 16-Antibiotics_Dosages.pdf */,
@@ -451,9 +488,11 @@
 			files = (
 				9724915A1D4F32CC00A9CD91 /* 22-Fluid_Recommendations.pdf in Resources */,
 				9722E8621D0CF16300C6D26F /* Cabin-BoldItalic.otf in Resources */,
+				9724916D1D4F395000A9CD91 /* 3.png in Resources */,
 				9781BF891D4F30C7009CF058 /* 12-Sedation_For_Oncology_Children.pdf in Resources */,
 				9781BF931D4F3191009CF058 /* 16-Antibiotics_Dosages.pdf in Resources */,
 				9722E8631D0CF16300C6D26F /* Cabin-Italic.otf in Resources */,
+				972491701D4F395000A9CD91 /* 6.png in Resources */,
 				9722E8641D0CF16300C6D26F /* Cabin-Medium.otf in Resources */,
 				9706EBA11D4CFC3A00801B77 /* splash screen.png in Resources */,
 				9701E0591D4F2D75008219B9 /* 03-Guidelines_for_the Provision_of_Anaesthesia_for_Paediatric_patients.pdf in Resources */,
@@ -465,11 +504,12 @@
 				9722E8671D0CF16300C6D26F /* Cabin-SemiBold.otf in Resources */,
 				9701E0571D4F2C95008219B9 /* 02-Training_Programmes.pdf in Resources */,
 				9781BF991D4F31D1009CF058 /* 20-Paediatric_Massive_Transfusion_Protocol.pdf in Resources */,
+				9724916B1D4F395000A9CD91 /* 1.png in Resources */,
 				9781BF7D1D4F2EF4009CF058 /* 06-Neonatal_Anaesthesia.pdf in Resources */,
 				9781BF871D4F308D009CF058 /* 11-Diagnostic_Imaging.pdf in Resources */,
-				9781BF8B1D4F30E5009CF058 /* 13-Regional_Anaesthesia.pdf in Resources */,
 				9781BF951D4F3191009CF058 /* 18-Neonatal_Antimicrobial_Dosing.pdf in Resources */,
 				9722E8681D0CF16300C6D26F /* Cabin-SemiBoldItalic.otf in Resources */,
+				9724916C1D4F395000A9CD91 /* 2.png in Resources */,
 				9781BF921D4F3191009CF058 /* 15-Drug_Dosages_in_Paediatric_Anaesthesia.pdf in Resources */,
 				9781BF7F1D4F2FB6009CF058 /* 07-Cardiac_Guidelines.pdf in Resources */,
 				972491601D4F335500A9CD91 /* 25-Acute_Pain.pdf in Resources */,
@@ -485,14 +525,19 @@
 				972491621D4F338600A9CD91 /* 26-Chronic_Pain.pdf in Resources */,
 				9724915E1D4F333800A9CD91 /* 24-Common_Crisis.pdf in Resources */,
 				9781BF841D4F3034009CF058 /* 09-Cardiac_Calculator.pdf in Resources */,
+				972491711D4F395000A9CD91 /* 7.png in Resources */,
 				976EFB321D01C28B0048A4DC /* LaunchScreen.storyboard in Resources */,
+				9724916E1D4F395000A9CD91 /* 4.png in Resources */,
 				979782DE1D1A87E800BAF670 /* 01-Intro,_Dept,_Duties.pdf in Resources */,
+				97FED15B1D5095B8000B7703 /* inc_hq.jpg in Resources */,
 				9724915D1D4F333800A9CD91 /* 23-Algorithms.pdf in Resources */,
 				9701E05D1D4F2E73008219B9 /* 05-Paediatric_Anaesthesia_Equipment.pdf in Resources */,
 				976EFB2F1D01C28B0048A4DC /* Assets.xcassets in Resources */,
+				9724916F1D4F395000A9CD91 /* 5.png in Resources */,
 				976EFB2D1D01C28B0048A4DC /* Main.storyboard in Resources */,
 				9701E05C1D4F2E73008219B9 /* 04-Paediatric_Anaesthesia.pdf in Resources */,
 				972491581D4F32A900A9CD91 /* 21-Laboratory_Data.pdf in Resources */,
+				97FED1591D509153000B7703 /* 13-Regional_Anaesthesia.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +565,7 @@
 				97FB27C11D06D69000EF2845 /* Calculator.m in Sources */,
 				9703E68E1D29367A00C72EF3 /* Secure_.m in Sources */,
 				9722E87F1D0EFF0100C6D26F /* FavViewController.m in Sources */,
+				972491741D4F3A3600A9CD91 /* TutorialViewController.m in Sources */,
 				97612B3F1D3F9D9E004900BE /* DrugCalculationViewController.m in Sources */,
 				9777BF781D435C6F00F82DA4 /* BMIPercentileViewController.m in Sources */,
 				976EFB271D01C28B0048A4DC /* AppDelegate.m in Sources */,

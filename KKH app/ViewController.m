@@ -117,6 +117,10 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
     objectsArray = [[NSMutableArray alloc] init];
     // Do any additional setup after loading the view, typically from a nib.
 #pragma  mark - first launch
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"tut"] != YES) {
+        [self performSegueWithIdentifier:@"tutView" sender:self];
+
+    }
         if ([[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"] != TRUE) {
         NSData *defcolorPrimary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.1373 green:0.4431 blue:0.7373 alpha:1.0]];
         [[NSUserDefaults standardUserDefaults] setObject:defcolorPrimary forKey:@"primaryColor"];
