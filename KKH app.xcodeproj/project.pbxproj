@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9701E0571D4F2C95008219B9 /* 02-Training_Programmes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9701E0561D4F2C95008219B9 /* 02-Training_Programmes.pdf */; };
-		9701E0591D4F2D75008219B9 /* 03-Guidelines_for_the Provision_of_Anaesthesia_for_Paediatric_patients.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9701E0581D4F2D75008219B9 /* 03-Guidelines_for_the Provision_of_Anaesthesia_for_Paediatric_patients.pdf */; };
+		9701E0591D4F2D75008219B9 /* 03-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9701E0581D4F2D75008219B9 /* 03-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf */; };
 		9701E05C1D4F2E73008219B9 /* 04-Paediatric_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9701E05A1D4F2E73008219B9 /* 04-Paediatric_Anaesthesia.pdf */; };
 		9701E05D1D4F2E73008219B9 /* 05-Paediatric_Anaesthesia_Equipment.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9701E05B1D4F2E73008219B9 /* 05-Paediatric_Anaesthesia_Equipment.pdf */; };
 		9703E6841D28D0F800C72EF3 /* WECodeScannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E6831D28D0F800C72EF3 /* WECodeScannerView.m */; };
@@ -16,6 +16,8 @@
 		9703E68B1D28D11500C72EF3 /* WESoundHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E6891D28D11500C72EF3 /* WESoundHelper.m */; };
 		9703E68E1D29367A00C72EF3 /* Secure_.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E68D1D29367A00C72EF3 /* Secure_.m */; };
 		9706EBA11D4CFC3A00801B77 /* splash screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9706EBA01D4CFC3A00801B77 /* splash screen.png */; };
+		97087CCF1D5435FE007182EA /* BMIGraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97087CCE1D5435FE007182EA /* BMIGraphManager.swift */; };
+		97092DE21D52CFBC007EA57E /* kkh memes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97092DE11D52CFBC007EA57E /* kkh memes.jpg */; };
 		9722E8611D0CF15C00C6D26F /* Cabin-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E8591D0CEF2C00C6D26F /* Cabin-Bold.otf */; };
 		9722E8621D0CF16300C6D26F /* Cabin-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E85A1D0CEF2C00C6D26F /* Cabin-BoldItalic.otf */; };
 		9722E8631D0CF16300C6D26F /* Cabin-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E85B1D0CEF2C00C6D26F /* Cabin-Italic.otf */; };
@@ -56,7 +58,6 @@
 		976EFB321D01C28B0048A4DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976EFB301D01C28B0048A4DC /* LaunchScreen.storyboard */; };
 		976EFB3D1D01C28B0048A4DC /* KKH_appUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 976EFB3C1D01C28B0048A4DC /* KKH_appUITests.m */; };
 		9777BF711D433C8200F82DA4 /* soundE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9777BF701D433C8200F82DA4 /* soundE.mp3 */; };
-		9777BF751D435B9200F82DA4 /* BMIGraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9777BF741D435B9200F82DA4 /* BMIGraphManager.swift */; };
 		9777BF781D435C6F00F82DA4 /* BMIPercentileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9777BF771D435C6F00F82DA4 /* BMIPercentileViewController.m */; };
 		9781BF7D1D4F2EF4009CF058 /* 06-Neonatal_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF7C1D4F2EF4009CF058 /* 06-Neonatal_Anaesthesia.pdf */; };
 		9781BF7F1D4F2FB6009CF058 /* 07-Cardiac_Guidelines.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9781BF7E1D4F2FB6009CF058 /* 07-Cardiac_Guidelines.pdf */; };
@@ -96,7 +97,7 @@
 
 /* Begin PBXFileReference section */
 		9701E0561D4F2C95008219B9 /* 02-Training_Programmes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "02-Training_Programmes.pdf"; sourceTree = "<group>"; };
-		9701E0581D4F2D75008219B9 /* 03-Guidelines_for_the Provision_of_Anaesthesia_for_Paediatric_patients.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "03-Guidelines_for_the Provision_of_Anaesthesia_for_Paediatric_patients.pdf"; sourceTree = "<group>"; };
+		9701E0581D4F2D75008219B9 /* 03-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "03-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf"; sourceTree = "<group>"; };
 		9701E05A1D4F2E73008219B9 /* 04-Paediatric_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "04-Paediatric_Anaesthesia.pdf"; sourceTree = "<group>"; };
 		9701E05B1D4F2E73008219B9 /* 05-Paediatric_Anaesthesia_Equipment.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "05-Paediatric_Anaesthesia_Equipment.pdf"; sourceTree = "<group>"; };
 		9703E6831D28D0F800C72EF3 /* WECodeScannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WECodeScannerView.m; sourceTree = "<group>"; };
@@ -108,6 +109,8 @@
 		9703E68C1D29367A00C72EF3 /* Secure_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Secure_.h; sourceTree = "<group>"; };
 		9703E68D1D29367A00C72EF3 /* Secure_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Secure_.m; sourceTree = "<group>"; };
 		9706EBA01D4CFC3A00801B77 /* splash screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash screen.png"; sourceTree = "<group>"; };
+		97087CCE1D5435FE007182EA /* BMIGraphManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIGraphManager.swift; sourceTree = "<group>"; };
+		97092DE11D52CFBC007EA57E /* kkh memes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kkh memes.jpg"; sourceTree = "<group>"; };
 		9722E8551D0CEF0E00C6D26F /* CabinCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Bold.ttf"; sourceTree = "<group>"; };
 		9722E8561D0CEF0E00C6D26F /* CabinCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Medium.ttf"; sourceTree = "<group>"; };
 		9722E8571D0CEF0E00C6D26F /* CabinCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Regular.ttf"; sourceTree = "<group>"; };
@@ -161,7 +164,6 @@
 		976EFB3C1D01C28B0048A4DC /* KKH_appUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKH_appUITests.m; sourceTree = "<group>"; };
 		976EFB3E1D01C28B0048A4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9777BF701D433C8200F82DA4 /* soundE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundE.mp3; sourceTree = "<group>"; };
-		9777BF741D435B9200F82DA4 /* BMIGraphManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIGraphManager.swift; sourceTree = "<group>"; };
 		9777BF761D435C6F00F82DA4 /* BMIPercentileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMIPercentileViewController.h; sourceTree = "<group>"; };
 		9777BF771D435C6F00F82DA4 /* BMIPercentileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMIPercentileViewController.m; sourceTree = "<group>"; };
 		9781BF7C1D4F2EF4009CF058 /* 06-Neonatal_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "06-Neonatal_Anaesthesia.pdf"; sourceTree = "<group>"; };
@@ -272,7 +274,7 @@
 		9722E86F1D0CF90F00C6D26F /* calculation */ = {
 			isa = PBXGroup;
 			children = (
-				9777BF741D435B9200F82DA4 /* BMIGraphManager.swift */,
+				97087CCE1D5435FE007182EA /* BMIGraphManager.swift */,
 				979782FB1D1F8DEB00BAF670 /* DrugCalculationsManager.swift */,
 				979782FC1D1F8DEB00BAF670 /* DrugList.csv */,
 				97FB27BF1D06D69000EF2845 /* Calculator.h */,
@@ -351,6 +353,7 @@
 				9777BF701D433C8200F82DA4 /* soundE.mp3 */,
 				972491721D4F3A3600A9CD91 /* TutorialViewController.h */,
 				972491731D4F3A3600A9CD91 /* TutorialViewController.m */,
+				97092DE11D52CFBC007EA57E /* kkh memes.jpg */,
 			);
 			path = "KKH app";
 			sourceTree = "<group>";
@@ -377,7 +380,7 @@
 			children = (
 				979782CD1D1A87E800BAF670 /* 01-Intro,_Dept,_Duties.pdf */,
 				9701E0561D4F2C95008219B9 /* 02-Training_Programmes.pdf */,
-				9701E0581D4F2D75008219B9 /* 03-Guidelines_for_the Provision_of_Anaesthesia_for_Paediatric_patients.pdf */,
+				9701E0581D4F2D75008219B9 /* 03-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf */,
 				9701E05A1D4F2E73008219B9 /* 04-Paediatric_Anaesthesia.pdf */,
 				9701E05B1D4F2E73008219B9 /* 05-Paediatric_Anaesthesia_Equipment.pdf */,
 				9781BF7C1D4F2EF4009CF058 /* 06-Neonatal_Anaesthesia.pdf */,
@@ -491,11 +494,12 @@
 				9724916D1D4F395000A9CD91 /* 3.png in Resources */,
 				9781BF891D4F30C7009CF058 /* 12-Sedation_For_Oncology_Children.pdf in Resources */,
 				9781BF931D4F3191009CF058 /* 16-Antibiotics_Dosages.pdf in Resources */,
+				97092DE21D52CFBC007EA57E /* kkh memes.jpg in Resources */,
 				9722E8631D0CF16300C6D26F /* Cabin-Italic.otf in Resources */,
 				972491701D4F395000A9CD91 /* 6.png in Resources */,
 				9722E8641D0CF16300C6D26F /* Cabin-Medium.otf in Resources */,
 				9706EBA11D4CFC3A00801B77 /* splash screen.png in Resources */,
-				9701E0591D4F2D75008219B9 /* 03-Guidelines_for_the Provision_of_Anaesthesia_for_Paediatric_patients.pdf in Resources */,
+				9701E0591D4F2D75008219B9 /* 03-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf in Resources */,
 				979782FE1D1F8DEB00BAF670 /* DrugList.csv in Resources */,
 				9722E8651D0CF16300C6D26F /* Cabin-MediumItalic.otf in Resources */,
 				9781BF851D4F3034009CF058 /* 10-Antibiotic_Prophylaxis_for_the_Prevention_of_Infective_Endocarditis.pdf in Resources */,
@@ -574,7 +578,7 @@
 				9703E68A1D28D11500C72EF3 /* WECodeScannerMatchView.m in Sources */,
 				979782F41D1D8EBC00BAF670 /* SplashViewController.m in Sources */,
 				9703E6841D28D0F800C72EF3 /* WECodeScannerView.m in Sources */,
-				9777BF751D435B9200F82DA4 /* BMIGraphManager.swift in Sources */,
+				97087CCF1D5435FE007182EA /* BMIGraphManager.swift in Sources */,
 				979782FD1D1F8DEB00BAF670 /* DrugCalculationsManager.swift in Sources */,
 				9703E68B1D28D11500C72EF3 /* WESoundHelper.m in Sources */,
 			);
@@ -716,7 +720,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KKH app/KKH app-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -735,7 +739,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KKH app/KKH app-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

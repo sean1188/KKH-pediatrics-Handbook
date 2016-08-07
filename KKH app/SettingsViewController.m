@@ -7,6 +7,7 @@
 //
 
 #import "SettingsViewController.h"
+#import <MessageUI/MFMailComposeViewController.h>
 @interface SettingsViewController ()
 
 @end
@@ -175,9 +176,31 @@ UIButton *transparencyButton ;
 }
 
 - (IBAction)aboutUsbutton:(id)sender {
-    [self aboutUsTapped:nil];
+   // [self aboutUsTapped:nil];
+    //feedback
+    if ([MFMailComposeViewController canSendMail]) {
+        // Show the composer
+        MFMailComposeViewController* controller = [[MFMailComposeViewController alloc] init];
+        controller.mailComposeDelegate = self;
+        [controller setSubject:@"Feedback on Paediatrics Handbook app"];
+        [controller setToRecipients:[NSArray arrayWithObject:[NSString stringWithFormat:@"siti.nur.diyanah@kkh.com.sg"]]];
+        [self presentViewController:controller animated:YES completion:nil];
+    } else {
+        // Handle the error
+        NSLog(@"unable to send mail");
+    }
 
 }
+- (void)mailComposeController:(MFMailComposeViewController*)controller
+          didFinishWithResult:(MFMailComposeResult)result
+                        error:(NSError*)error;
+{
+    if (result == MFMailComposeResultSent) {
+        NSLog(@"It's away!");
+    }
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (IBAction)infoB:(id)sender {
     [self aboutUsTapped:nil];
 }

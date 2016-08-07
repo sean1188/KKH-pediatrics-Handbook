@@ -43,12 +43,14 @@ int state;
 CGRect bmiViewI, NextBI, GenderViewI;
 bool editing;
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
-    if (editing!= YES) {
+    if (editing != YES) {
+        
         editing = YES;
-    bmiViewI = _bmiView.frame;
+        
     NextBI = _NextButton.frame;
-        GenderViewI = _GenderView.frame;
+        
     [UIView animateWithDuration:0.3 animations:^{
+        bmiViewI = _bmiView.frame;
         _header.alpha = 0;
         _NextButton.translatesAutoresizingMaskIntoConstraints = YES;
         if (state == 0) {
@@ -57,14 +59,16 @@ bool editing;
              _NextButton.frame = CGRectMake(_NextButton.frame.origin.x, _bmiView.frame.origin.y + 200, _NextButton.frame.size.width, _NextButton.frame.size.height);
         }
         else{
+            GenderViewI = _GenderView.frame;
             _GenderView.translatesAutoresizingMaskIntoConstraints = YES;
-             _GenderView.frame = CGRectMake(_GenderView.frame.origin.x, _GenderView.frame.origin.y - 110, _GenderView.frame.size.width, _GenderView.frame.size.height);
-             _NextButton.frame = CGRectMake(_NextButton.frame.origin.x, _GenderView.frame.origin.y + 200, _NextButton.frame.size.width, _NextButton.frame.size.height);
+             _GenderView.frame = CGRectMake(_GenderView.frame.origin.x, _GenderView.frame.origin.y - 180, _GenderView.frame.size.width, _GenderView.frame.size.height);
+             _NextButton.frame = CGRectMake(_NextButton.frame.origin.x, _GenderView.frame.origin.y + 300, _NextButton.frame.size.width, _NextButton.frame.size.height);
         }
        
        
     }];
     }
+    
     
 }
 
@@ -74,6 +78,7 @@ int Age;
 bool isMale;
 bool didSelectGender;
 - (IBAction)next:(id)sender {
+    [self resignFirstResponder];
     if (state == 0) {
         if (editing == YES & ![_weight.text isEqualToString:@""] & ![_height.text isEqualToString:@""]) {
             BMIValue = _weight.text.floatValue / ((_height.text.floatValue/ 100) * (_height.text.floatValue/100));
@@ -94,7 +99,8 @@ bool didSelectGender;
         }completion:^(BOOL s   ){
             [UIView animateWithDuration:0.5 animations:^{
                 _GenderView.alpha =1;
-                
+                [_ageField becomeFirstResponder];
+                GenderViewI = _GenderView.frame;
             }];
         }];
     }];
@@ -110,9 +116,10 @@ bool didSelectGender;
             _bmiView.translatesAutoresizingMaskIntoConstraints = YES;
             _bmiView.frame = CGRectMake(-_bmiView.frame.size.width, _bmiView.frame.origin.y, _bmiView.frame.size.width, _bmiView.frame.size.height);
         } completion:^(BOOL s   ){
+            state = 1;
             [UIView animateWithDuration:0.5 animations:^{
                 _GenderView.alpha =1;
-
+                [_ageField becomeFirstResponder];
             }];
         }];
     }
@@ -135,7 +142,7 @@ bool didSelectGender;
                 [a addAction:[UIAlertAction actionWithTitle:@"Okay" style:UIAlertActionStyleCancel handler:nil]];
                 [self presentViewController:a  animated:YES completion:nil];
             }
-            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] rangee] == 0) {
+            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] range] == 0) {
                 NSLog(@"nil");
                 UIAlertController *a = [UIAlertController alertControllerWithTitle:@"Nil" message:@"An Error has occurred" preferredStyle:UIAlertControllerStyleAlert];
                 [self presentViewController:a  animated:YES completion:^{
@@ -148,7 +155,7 @@ bool didSelectGender;
                     });
                 }];
             }
-            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] rangee] == 1){
+            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] range] == 1){
                 NSLog(@"severe Underweight");
                 UIAlertController *a = [UIAlertController alertControllerWithTitle:@"Severely Underweight" message:[NSString stringWithFormat:@"BMI : %0.1f",BMIValue ] preferredStyle:UIAlertControllerStyleAlert];
                 [self presentViewController:a  animated:YES completion:^{
@@ -162,7 +169,7 @@ bool didSelectGender;
                 }];
 
             }
-            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] rangee] == 2){
+            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] range] == 2){
                 NSLog(@"underweight");
                 UIAlertController *a = [UIAlertController alertControllerWithTitle:@"Underweight" message:[NSString stringWithFormat:@"BMI : %0.1f",BMIValue ] preferredStyle:UIAlertControllerStyleAlert];
                 [self presentViewController:a  animated:YES completion:^{
@@ -177,7 +184,7 @@ bool didSelectGender;
 
 
             }
-            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] rangee] == 3){
+            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] range] == 3){
                 NSLog(@"acceptable");
                 UIAlertController *a = [UIAlertController alertControllerWithTitle:@"Acceptable" message:[NSString stringWithFormat:@"BMI : %0.1f",BMIValue ] preferredStyle:UIAlertControllerStyleAlert];
                 [self presentViewController:a  animated:YES completion:^{
@@ -192,7 +199,7 @@ bool didSelectGender;
 
 
             }
-            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] rangee] == 4){
+            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] range] == 4){
                 NSLog(@"overweight");
                 UIAlertController *a = [UIAlertController alertControllerWithTitle:@"Overweight" message:[NSString stringWithFormat:@"BMI : %0.1f",BMIValue ] preferredStyle:UIAlertControllerStyleAlert];
                 [self presentViewController:a  animated:YES completion:^{
@@ -207,7 +214,7 @@ bool didSelectGender;
 
 
             }
-            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] rangee] == 5){
+            else if ([[_bmiManager initWithAge:Age bmi:BMIValue isMale:isMale] range] == 5){
                 NSLog(@"severely overweight");
                 UIAlertController *a = [UIAlertController alertControllerWithTitle:@"Severely Overweight" message:[NSString stringWithFormat:@"BMI : %0.1f",BMIValue ] preferredStyle:UIAlertControllerStyleAlert];
                 [self presentViewController:a  animated:YES completion:^{
@@ -229,7 +236,7 @@ bool didSelectGender;
 }
 - (IBAction)didTap:(id)sender {
     if (editing == YES) {
-
+        [self.view endEditing:YES];
     [UIView animateWithDuration:0.2 animations:^{
         if (state == 0) {
             _bmiView.frame    = bmiViewI;
@@ -237,6 +244,7 @@ bool didSelectGender;
 
         }
         else{
+            NSLog(@"memed");
             _GenderView.frame = GenderViewI;
             _GenderView.translatesAutoresizingMaskIntoConstraints = NO;
         }
@@ -249,7 +257,7 @@ bool didSelectGender;
 
     }];
 
-        [_weight endEditing:YES]; [_height endEditing:YES];[_ageField endEditing:YES];}
+        }
 
 }
 - (IBAction)genderSegment:(id)sender {

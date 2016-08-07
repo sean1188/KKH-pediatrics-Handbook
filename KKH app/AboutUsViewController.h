@@ -16,5 +16,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *backDrop;
 @property (strong, nonatomic) IBOutlet UIView *cardView;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIView *credView;
+@property (strong, nonatomic) IBOutlet UILabel *thxView;
 
 @end

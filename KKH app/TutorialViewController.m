@@ -41,12 +41,14 @@ int count;
             [UIView animateWithDuration:0.3 animations:^{
                 _imgView.frame = initFrame;
  
+            } completion:^(BOOL s ){
+                if (count == 7) {
+                    _doneButton.alpha = 1;
+                }
             }];
         }];
     }
-    if (count == 7) {
-        _doneButton.alpha = 1;
-    }
+
 }
 
 - (IBAction)back:(id)sender {
