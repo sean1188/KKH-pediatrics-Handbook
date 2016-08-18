@@ -18,6 +18,7 @@
 @property (nonatomic, retain) AVAudioPlayer *audioPlayer;
 
 
+@property (strong, nonatomic) IBOutlet UILabel *inc;
 @property (strong, nonatomic) IBOutlet UIImageView *bearImg;
 
 

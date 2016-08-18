@@ -7,8 +7,6 @@
 //
 
 #import "Secure_.h"
-#import "WECodeScannerView.h"
-#import "WESoundHelper.h"
 
 @interface Secure_ ()
 

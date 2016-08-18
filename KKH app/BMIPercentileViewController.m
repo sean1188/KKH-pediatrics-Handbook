@@ -80,6 +80,9 @@ bool didSelectGender;
 - (IBAction)next:(id)sender {
     [self resignFirstResponder];
     if (state == 0) {
+        [UIView animateWithDuration:0.3 animations:^{
+            _backB.alpha = 0;
+        }];
         if (editing == YES & ![_weight.text isEqualToString:@""] & ![_height.text isEqualToString:@""]) {
             BMIValue = _weight.text.floatValue / ((_height.text.floatValue/ 100) * (_height.text.floatValue/100));
             NSLog(@"BMI is %0.1f",BMIValue);
@@ -271,5 +274,8 @@ bool didSelectGender;
         NSLog(@"female");
         isMale = NO;
     }
+}
+- (IBAction)back:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

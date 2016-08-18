@@ -11,9 +11,6 @@
 		9701E0591D4F2D75008219B9 /* 03-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9701E0581D4F2D75008219B9 /* 03-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf */; };
 		9701E05C1D4F2E73008219B9 /* 04-Paediatric_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9701E05A1D4F2E73008219B9 /* 04-Paediatric_Anaesthesia.pdf */; };
 		9701E05D1D4F2E73008219B9 /* 05-Paediatric_Anaesthesia_Equipment.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9701E05B1D4F2E73008219B9 /* 05-Paediatric_Anaesthesia_Equipment.pdf */; };
-		9703E6841D28D0F800C72EF3 /* WECodeScannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E6831D28D0F800C72EF3 /* WECodeScannerView.m */; };
-		9703E68A1D28D11500C72EF3 /* WECodeScannerMatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E6881D28D11500C72EF3 /* WECodeScannerMatchView.m */; };
-		9703E68B1D28D11500C72EF3 /* WESoundHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E6891D28D11500C72EF3 /* WESoundHelper.m */; };
 		9703E68E1D29367A00C72EF3 /* Secure_.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E68D1D29367A00C72EF3 /* Secure_.m */; };
 		9706EBA11D4CFC3A00801B77 /* splash screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9706EBA01D4CFC3A00801B77 /* splash screen.png */; };
 		97087CCF1D5435FE007182EA /* BMIGraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97087CCE1D5435FE007182EA /* BMIGraphManager.swift */; };
@@ -100,12 +97,6 @@
 		9701E0581D4F2D75008219B9 /* 03-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "03-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf"; sourceTree = "<group>"; };
 		9701E05A1D4F2E73008219B9 /* 04-Paediatric_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "04-Paediatric_Anaesthesia.pdf"; sourceTree = "<group>"; };
 		9701E05B1D4F2E73008219B9 /* 05-Paediatric_Anaesthesia_Equipment.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "05-Paediatric_Anaesthesia_Equipment.pdf"; sourceTree = "<group>"; };
-		9703E6831D28D0F800C72EF3 /* WECodeScannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WECodeScannerView.m; sourceTree = "<group>"; };
-		9703E6851D28D10B00C72EF3 /* WECodeScannerMatchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WECodeScannerMatchView.h; sourceTree = "<group>"; };
-		9703E6861D28D10B00C72EF3 /* WECodeScannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WECodeScannerView.h; sourceTree = "<group>"; };
-		9703E6871D28D10B00C72EF3 /* WESoundHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WESoundHelper.h; sourceTree = "<group>"; };
-		9703E6881D28D11500C72EF3 /* WECodeScannerMatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WECodeScannerMatchView.m; sourceTree = "<group>"; };
-		9703E6891D28D11500C72EF3 /* WESoundHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WESoundHelper.m; sourceTree = "<group>"; };
 		9703E68C1D29367A00C72EF3 /* Secure_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Secure_.h; sourceTree = "<group>"; };
 		9703E68D1D29367A00C72EF3 /* Secure_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Secure_.m; sourceTree = "<group>"; };
 		9706EBA01D4CFC3A00801B77 /* splash screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash screen.png"; sourceTree = "<group>"; };
@@ -215,19 +206,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9703E6821D28D0C200C72EF3 /* QRscanner */ = {
-			isa = PBXGroup;
-			children = (
-				9703E6851D28D10B00C72EF3 /* WECodeScannerMatchView.h */,
-				9703E6861D28D10B00C72EF3 /* WECodeScannerView.h */,
-				9703E6871D28D10B00C72EF3 /* WESoundHelper.h */,
-				9703E6881D28D11500C72EF3 /* WECodeScannerMatchView.m */,
-				9703E6891D28D11500C72EF3 /* WESoundHelper.m */,
-				9703E6831D28D0F800C72EF3 /* WECodeScannerView.m */,
-			);
-			name = QRscanner;
-			sourceTree = "<group>";
-		};
 		9722E8541D0CEF0300C6D26F /* font */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,7 +300,6 @@
 		976EFB211D01C28B0048A4DC /* KKH app */ = {
 			isa = PBXGroup;
 			children = (
-				9703E6821D28D0C200C72EF3 /* QRscanner */,
 				976EFB251D01C28B0048A4DC /* AppDelegate.h */,
 				976EFB261D01C28B0048A4DC /* AppDelegate.m */,
 				973E00311D09A2FF00F7C94A /* KKH app-Bridging-Header.h */,
@@ -575,12 +552,9 @@
 				976EFB271D01C28B0048A4DC /* AppDelegate.m in Sources */,
 				976EFB241D01C28B0048A4DC /* main.m in Sources */,
 				974C45661D0A6A2500797BF0 /* webViewPDF\.m in Sources */,
-				9703E68A1D28D11500C72EF3 /* WECodeScannerMatchView.m in Sources */,
 				979782F41D1D8EBC00BAF670 /* SplashViewController.m in Sources */,
-				9703E6841D28D0F800C72EF3 /* WECodeScannerView.m in Sources */,
 				97087CCF1D5435FE007182EA /* BMIGraphManager.swift in Sources */,
 				979782FD1D1F8DEB00BAF670 /* DrugCalculationsManager.swift in Sources */,
-				9703E68B1D28D11500C72EF3 /* WESoundHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

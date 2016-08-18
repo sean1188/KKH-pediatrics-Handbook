@@ -34,7 +34,7 @@ int count;
         _guideLabel.alpha = 0;
         CGRect initFrame = _imgView.frame;
         [UIView animateWithDuration:0.3 animations:^{
-            _imgView.frame = CGRectMake(- 200, 0, _imgView.frame.size.width, _imgView.frame.size.height);
+            _imgView.frame = CGRectMake(-_imgView.frame.size.width - 200, 0, _imgView.frame.size.width, _imgView.frame.size.height);
         }completion:^(BOOL s ){
             [_imgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%i", count]]];
             _imgView.frame = CGRectMake(self.view.frame.size.width + 200, 0, _imgView.frame.size.width, _imgView.frame.size.height);

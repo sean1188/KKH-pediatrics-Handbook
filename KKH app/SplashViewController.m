@@ -29,6 +29,7 @@
     //
     [UIView animateWithDuration:0.4 delay:0.8 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         _bearImg.transform = CGAffineTransformMakeScale(0.7, 0.7);
+        _inc.alpha = 0;
     }completion:^(BOOL s){
         NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
                                              pathForResource:@"soundE"

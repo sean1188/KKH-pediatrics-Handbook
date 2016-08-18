@@ -11,6 +11,8 @@
 
 @interface BMIPercentileViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *header;
+@property (strong, nonatomic) IBOutlet UIButton *backB;
+- (IBAction)back:(id)sender;
 
 //BMI calculations
 @property (strong, nonatomic) IBOutlet UIView *bmiView;

@@ -20,6 +20,9 @@ bool didNext;
 -(UIStatusBarStyle )preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
+-(BOOL)prefersStatusBarHidden{
+    return YES;
+}
 bool firstE;
 -(void)viewWillAppear:(BOOL)animated{
     if (firstE == YES) {
@@ -38,8 +41,58 @@ bool firstE;
         _nextB.alpha = 1;
     }
 }
+bool iu;
+CGRect webViewInit;
+- (void) orientationChanged:(NSNotification *)note
+{
+    if (didViewPdf == YES) {
+        UIDevice * device = note.object;
+        switch(device.orientation)
+        {
+            case UIDeviceOrientationPortrait:{
+                [UIView animateWithDuration:0.4 animations:^{
+                    _nextB.alpha = 1;
+
+                    _webView.transform = CGAffineTransformIdentity;
+                    _webView.translatesAutoresizingMaskIntoConstraints = YES;
+                    _webView.frame = webViewInit;
+                    [_webView.scrollView setZoomScale: 1 animated: YES];
+                }];
+            }break;
+            case UIDeviceOrientationLandscapeLeft:{
+
+                [UIView animateWithDuration:0.4 animations:^{
+                    _nextB.alpha = 0;
+
+                    _webView.transform = CGAffineTransformMakeRotation((M_PI * 90) / 180);
+                    _webView.frame = self.view.frame; _webView.translatesAutoresizingMaskIntoConstraints = YES;
+                    
+                }];
+            }break;
+            case UIDeviceOrientationLandscapeRight:{
+                [UIView animateWithDuration:0.3 animations:^{
+                    _nextB.alpha = 0;
+
+                    _webView.transform = CGAffineTransformMakeRotation((M_PI * -90) / 180);
+                    _webView.frame = self.view.frame; _webView.translatesAutoresizingMaskIntoConstraints = YES;
+                    
+                }];
+            }break;
+                
+            default:{
+            }break;
+        };
+    }
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self selector:@selector(orientationChanged:)
+     name:UIDeviceOrientationDidChangeNotification
+     object:[UIDevice currentDevice]];
+    //
     [_nextB addArrToTickAnimation];
     _resView.alpha = 0;
     firstE = YES; didViewPdf = NO; didNext = NO;
@@ -118,6 +171,7 @@ _drugimg.frame = CGRectMake(_drugimg.frame.origin.x, _drugimg.frame.origin.y - 5
             _webView.frame = initFrameWeb;
             _webView.layer.cornerRadius = self.webView.frame.size.width/2;
             _resView.alpha = 1;
+            _drugimg.alpha = 1;
         }completion:^(BOOL s ){
         }];
     }
@@ -130,10 +184,13 @@ CGRect initFrameWeb;
 bool didViewPdf;
 - (IBAction)viewB:(id)sender {
     didViewPdf = YES;
+    [self prefersStatusBarHidden];
     [UIView animateWithDuration:0.2  animations:^{
         initFrameWeb =  _webView.frame;
+        _drugimg.alpha = 0;
         _webView.translatesAutoresizingMaskIntoConstraints = YES;
         _webView.frame = CGRectMake(0, 20, self.view.frame.size.width, self.view.frame.size.height - 110);
+        webViewInit = _webView.frame;
         _resView.alpha = 0;
     } completion:^(BOOL s){
         _webView.layer.cornerRadius = 0;

@@ -47,7 +47,7 @@ NSMutableArray *likedObjs;
     _cardView.layer.shadowOpacity = 1.0;
     _cardView.layer.shadowOffset = CGSizeMake(1, 2);
     _cardView.frame = CGRectMake(_cardView.frame.origin.x, -_cardView.frame.size.height - 10 , _cardView.frame.size.width, _cardView.frame.size.height);
-    [UIView animateWithDuration:0.3 animations:^{
+    [UIView animateWithDuration:0.4 animations:^{
         _cardView.frame = CGRectMake(_cardView.frame.origin.x, _cardView.frame.origin.y +_cardView.frame.size.height + 10 , _cardView.frame.size.width, _cardView.frame.size.height);
     }];
     [self setcolors];

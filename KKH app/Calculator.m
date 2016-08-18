@@ -34,7 +34,7 @@ UIView *firstBar, *secondBar, *thirdBar;
     mainView = _mainCardView.frame;
     _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, - _mainCardView.frame.size.height - 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
     _mainCardView.alpha = 0;
-    [UIView animateWithDuration:0.3 animations:^{
+    [UIView animateWithDuration:0.4 animations:^{
         _mainCardView.frame = mainView;
         _mainCardView.alpha = 1;
     }];
