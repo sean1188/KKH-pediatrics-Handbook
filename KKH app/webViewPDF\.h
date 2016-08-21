@@ -16,6 +16,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *h2;
 @property (strong, nonatomic) IBOutlet UIView *buttonPadding;
 @property (strong, nonatomic) IBOutlet animationScheme *animView;
+
+@property (strong, nonatomic) IBOutlet UILabel *chotNameDisp;
 - (IBAction)tappedButton:(id)sender;
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapGest;
 - (IBAction)backButton:(id)sender;

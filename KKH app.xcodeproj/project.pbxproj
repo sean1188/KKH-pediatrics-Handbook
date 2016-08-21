@@ -45,7 +45,7 @@
 		976EFB321D01C28B0048A4DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976EFB301D01C28B0048A4DC /* LaunchScreen.storyboard */; };
 		976EFB3D1D01C28B0048A4DC /* KKH_appUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 976EFB3C1D01C28B0048A4DC /* KKH_appUITests.m */; };
 		97728A2B1D6719F7002E4D0C /* 01-Training_Programmes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 97728A131D6719F7002E4D0C /* 01-Training_Programmes.pdf */; };
-		97728A2C1D6719F7002E4D0C /* 02-Guidelines_for_the_Provision_of Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 97728A141D6719F7002E4D0C /* 02-Guidelines_for_the_Provision_of Anaesthesia.pdf */; };
+		97728A2C1D6719F7002E4D0C /* 02-Guidelines_for_the_Provision_of_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 97728A141D6719F7002E4D0C /* 02-Guidelines_for_the_Provision_of_Anaesthesia.pdf */; };
 		97728A2D1D6719F7002E4D0C /* 03-Paediatric_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 97728A151D6719F7002E4D0C /* 03-Paediatric_Anaesthesia.pdf */; };
 		97728A2E1D6719F7002E4D0C /* 04-Equipment_for_Paediatric_Anaestheisa.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 97728A161D6719F7002E4D0C /* 04-Equipment_for_Paediatric_Anaestheisa.pdf */; };
 		97728A2F1D6719F7002E4D0C /* 05-Neonatal_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 97728A171D6719F7002E4D0C /* 05-Neonatal_Anaesthesia.pdf */; };
@@ -143,7 +143,7 @@
 		976EFB3C1D01C28B0048A4DC /* KKH_appUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKH_appUITests.m; sourceTree = "<group>"; };
 		976EFB3E1D01C28B0048A4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97728A131D6719F7002E4D0C /* 01-Training_Programmes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "01-Training_Programmes.pdf"; sourceTree = "<group>"; };
-		97728A141D6719F7002E4D0C /* 02-Guidelines_for_the_Provision_of Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "02-Guidelines_for_the_Provision_of Anaesthesia.pdf"; sourceTree = "<group>"; };
+		97728A141D6719F7002E4D0C /* 02-Guidelines_for_the_Provision_of_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "02-Guidelines_for_the_Provision_of_Anaesthesia.pdf"; sourceTree = "<group>"; };
 		97728A151D6719F7002E4D0C /* 03-Paediatric_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "03-Paediatric_Anaesthesia.pdf"; sourceTree = "<group>"; };
 		97728A161D6719F7002E4D0C /* 04-Equipment_for_Paediatric_Anaestheisa.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "04-Equipment_for_Paediatric_Anaestheisa.pdf"; sourceTree = "<group>"; };
 		97728A171D6719F7002E4D0C /* 05-Neonatal_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "05-Neonatal_Anaesthesia.pdf"; sourceTree = "<group>"; };
@@ -352,7 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				97728A131D6719F7002E4D0C /* 01-Training_Programmes.pdf */,
-				97728A141D6719F7002E4D0C /* 02-Guidelines_for_the_Provision_of Anaesthesia.pdf */,
+				97728A141D6719F7002E4D0C /* 02-Guidelines_for_the_Provision_of_Anaesthesia.pdf */,
 				97728A151D6719F7002E4D0C /* 03-Paediatric_Anaesthesia.pdf */,
 				97728A161D6719F7002E4D0C /* 04-Equipment_for_Paediatric_Anaestheisa.pdf */,
 				97728A171D6719F7002E4D0C /* 05-Neonatal_Anaesthesia.pdf */,
@@ -477,7 +477,7 @@
 				9722E8671D0CF16300C6D26F /* Cabin-SemiBold.otf in Resources */,
 				97728A2F1D6719F7002E4D0C /* 05-Neonatal_Anaesthesia.pdf in Resources */,
 				97728A341D6719F7002E4D0C /* 10-Antibiotic_Prophylaxis_for_the_Prevention_of_Infective_Endocarditis.pdf in Resources */,
-				97728A2C1D6719F7002E4D0C /* 02-Guidelines_for_the_Provision_of Anaesthesia.pdf in Resources */,
+				97728A2C1D6719F7002E4D0C /* 02-Guidelines_for_the_Provision_of_Anaesthesia.pdf in Resources */,
 				9724916B1D4F395000A9CD91 /* 1.png in Resources */,
 				9722E8681D0CF16300C6D26F /* Cabin-SemiBoldItalic.otf in Resources */,
 				97728A381D6719F7002E4D0C /* 14-Patient_Transport.pdf in Resources */,

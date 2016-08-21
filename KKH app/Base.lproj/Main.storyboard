@@ -18,10 +18,8 @@
             <string>Cabin-Regular</string>
             <string>Cabin-Regular</string>
             <string>Cabin-Regular</string>
-            <string>Cabin-Regular</string>
         </mutableArray>
         <mutableArray key="Cabin-SemiBold.otf">
-            <string>Cabin-SemiBold</string>
             <string>Cabin-SemiBold</string>
             <string>Cabin-SemiBold</string>
             <string>Cabin-SemiBold</string>
@@ -48,7 +46,6 @@
             <string>CabinCondensed-Medium</string>
         </mutableArray>
         <mutableArray key="CabinCondensed-Regular.ttf">
-            <string>CabinCondensed</string>
             <string>CabinCondensed</string>
             <string>CabinCondensed</string>
             <string>CabinCondensed</string>
@@ -598,23 +595,22 @@ The authors of each chapter have ensured that the information is current and cor
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Chapter name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="K0f-kv-Rgw">
-                                <rect key="frame" x="133" y="234" width="334" height="50"/>
-                                <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="29"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFG-B4-mVe" userLabel="number">
-                                <rect key="frame" x="244" y="123" width="113" height="124"/>
-                                <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="82"/>
+                            <webView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ewi-9F-ZN0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="482"/>
+                                <color key="backgroundColor" red="0.049900170420000001" green="0.38217961789999999" blue="0.68605518340000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoR-BY-SQc">
+                                <rect key="frame" x="126" y="552" width="349" height="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE9-NR-PAD">
-                                <rect key="frame" x="1" y="-3" width="96" height="96"/>
+                                <rect key="frame" x="252" y="448" width="96" height="96"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="2Xh-16-QPQ"/>
-                                    <constraint firstAttribute="width" constant="30" id="Qbd-g8-lgo"/>
+                                    <constraint firstAttribute="height" constant="40" id="2Xh-16-QPQ"/>
+                                    <constraint firstAttribute="width" constant="40" id="Qbd-g8-lgo"/>
                                 </constraints>
                                 <state key="normal" image="ic_highlight_off_white_24dp">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -623,90 +619,26 @@ The authors of each chapter have ensured that the information is current and cor
                                     <action selector="backButton:" destination="Aje-zz-Qdv" eventType="touchUpInside" id="fcd-qf-eJV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81h-Mw-DYU">
-                                <rect key="frame" x="227" y="284" width="146" height="57"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="DwG-gy-lG7"/>
-                                    <constraint firstAttribute="height" constant="57" id="VmX-wg-jbm"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
-                                <state key="normal" title="ADD AS FAVOURITE" image="ic_favorite_border_white"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="DwG-gy-lG7"/>
-                                        <exclude reference="VmX-wg-jbm"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="favButton:" destination="Aje-zz-Qdv" eventType="touchUpInside" id="EsZ-YU-lFj"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VgF-uX-DRQ" userLabel="button padding">
-                                <rect key="frame" x="246" y="481" width="109" height="109"/>
-                                <color key="backgroundColor" red="0.049900170420000001" green="0.38217961789999999" blue="0.68605518340000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="109" id="etd-OA-1el"/>
-                                    <constraint firstAttribute="width" constant="109" id="zI2-jD-40J"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2u-TQ-OwY" customClass="animationScheme">
-                                <rect key="frame" x="257" y="492" width="86" height="86"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="86" id="P3M-P9-bWM"/>
-                                    <constraint firstAttribute="width" constant="86" id="nMM-82-Qgb"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="6iT-lo-O3A" appends="YES" id="r65-md-0gp"/>
-                                </connections>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pinch to zoom info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xF-q7-eBS">
-                                <rect key="frame" x="200" y="571" width="200" height="21"/>
-                                <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="17"/>
-                                <color key="textColor" red="0.84939259290000002" green="0.84936714170000005" blue="0.84938156600000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <webView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ewi-9F-ZN0">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="482"/>
-                                <color key="backgroundColor" red="0.049900170420000001" green="0.38217961789999999" blue="0.68605518340000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <gestureRecognizers/>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.2122483999" green="0.57065624000000004" blue="0.94941872360000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="VgF-uX-DRQ" firstAttribute="centerX" secondItem="8cm-h3-039" secondAttribute="centerX" id="2cn-Qm-Zqv"/>
-                            <constraint firstItem="F2u-TQ-OwY" firstAttribute="centerX" secondItem="8cm-h3-039" secondAttribute="centerX" id="31S-ze-nzP"/>
+                            <constraint firstItem="uoR-BY-SQc" firstAttribute="centerX" secondItem="8cm-h3-039" secondAttribute="centerX" id="26T-Bp-NAW"/>
                             <constraint firstItem="Ewi-9F-ZN0" firstAttribute="centerX" secondItem="8cm-h3-039" secondAttribute="centerX" id="3hI-wD-psG"/>
-                            <constraint firstItem="K0f-kv-Rgw" firstAttribute="centerX" secondItem="8cm-h3-039" secondAttribute="centerX" id="8Mu-dO-bXf"/>
-                            <constraint firstItem="VFG-B4-mVe" firstAttribute="centerX" secondItem="8cm-h3-039" secondAttribute="centerX" id="Aaw-Kl-NhO"/>
-                            <constraint firstItem="F2u-TQ-OwY" firstAttribute="top" secondItem="Ewi-9F-ZN0" secondAttribute="bottom" constant="10" id="Fle-r4-8kd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uoR-BY-SQc" secondAttribute="trailing" constant="10" id="FQY-DV-q3X"/>
+                            <constraint firstItem="uE9-NR-PAD" firstAttribute="top" secondItem="Ewi-9F-ZN0" secondAttribute="bottom" constant="3" id="IwY-X0-eae"/>
                             <constraint firstItem="Ewi-9F-ZN0" firstAttribute="leading" secondItem="8cm-h3-039" secondAttribute="leadingMargin" constant="-20" id="JCh-Xj-hJt"/>
-                            <constraint firstItem="8xF-q7-eBS" firstAttribute="centerX" secondItem="8cm-h3-039" secondAttribute="centerX" id="Kxb-Cc-wcH"/>
                             <constraint firstItem="Ewi-9F-ZN0" firstAttribute="top" secondItem="8cm-h3-039" secondAttribute="topMargin" id="Ozh-gK-ydE"/>
-                            <constraint firstItem="EAW-sG-dCz" firstAttribute="top" secondItem="F2u-TQ-OwY" secondAttribute="bottom" constant="22" id="SKw-Op-JgX"/>
-                            <constraint firstItem="81h-Mw-DYU" firstAttribute="centerX" secondItem="8cm-h3-039" secondAttribute="centerX" id="VN0-eI-UoE"/>
-                            <constraint firstItem="81h-Mw-DYU" firstAttribute="top" secondItem="K0f-kv-Rgw" secondAttribute="bottom" constant="20" id="WZn-sp-fz9"/>
-                            <constraint firstItem="uE9-NR-PAD" firstAttribute="top" secondItem="NgP-4c-4Qn" secondAttribute="bottom" constant="20" id="Wpb-vk-lVz"/>
-                            <constraint firstItem="K0f-kv-Rgw" firstAttribute="centerY" secondItem="8cm-h3-039" secondAttribute="centerY" id="YDD-MQ-C8n"/>
-                            <constraint firstItem="K0f-kv-Rgw" firstAttribute="leading" secondItem="8cm-h3-039" secondAttribute="leadingMargin" id="asW-Y4-OFb"/>
-                            <constraint firstItem="uE9-NR-PAD" firstAttribute="leading" secondItem="8cm-h3-039" secondAttribute="leadingMargin" id="bIh-0k-OOT"/>
+                            <constraint firstItem="EAW-sG-dCz" firstAttribute="top" secondItem="uoR-BY-SQc" secondAttribute="bottom" constant="8" id="YOO-lp-ubL"/>
+                            <constraint firstItem="uoR-BY-SQc" firstAttribute="top" secondItem="uE9-NR-PAD" secondAttribute="bottom" constant="8" id="cQh-tR-ysL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ewi-9F-ZN0" secondAttribute="trailing" constant="-20" id="eVS-UP-3ql"/>
-                            <constraint firstItem="EAW-sG-dCz" firstAttribute="top" secondItem="VgF-uX-DRQ" secondAttribute="bottom" constant="10" id="krw-6v-tlT"/>
-                            <constraint firstItem="EAW-sG-dCz" firstAttribute="top" secondItem="8xF-q7-eBS" secondAttribute="bottom" constant="8" id="lje-y6-8xt"/>
-                            <constraint firstItem="K0f-kv-Rgw" firstAttribute="top" secondItem="VFG-B4-mVe" secondAttribute="bottom" constant="10" id="m25-Fz-95x"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="K0f-kv-Rgw" secondAttribute="trailing" id="prh-ce-GYy"/>
+                            <constraint firstItem="uoR-BY-SQc" firstAttribute="leading" secondItem="8cm-h3-039" secondAttribute="leadingMargin" constant="10" id="nkI-D3-tFi"/>
+                            <constraint firstItem="uE9-NR-PAD" firstAttribute="centerX" secondItem="8cm-h3-039" secondAttribute="centerX" id="url-xs-3FA"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="Ptz" destination="8xF-q7-eBS" id="oXr-ZS-bi8"/>
-                        <outlet property="animView" destination="F2u-TQ-OwY" id="wvN-Q1-uRK"/>
-                        <outlet property="buttonPadding" destination="VgF-uX-DRQ" id="NaV-N4-LYz"/>
-                        <outlet property="favButton" destination="81h-Mw-DYU" id="HKf-67-MDI"/>
-                        <outlet property="h1" destination="VFG-B4-mVe" id="Usf-Pa-tOP"/>
-                        <outlet property="h2" destination="K0f-kv-Rgw" id="SSl-Bh-jdy"/>
+                        <outlet property="chotNameDisp" destination="uoR-BY-SQc" id="rVm-5N-RSN"/>
                         <outlet property="tapGest" destination="6iT-lo-O3A" id="7IJ-fF-Y8l"/>
                         <outlet property="webView" destination="Ewi-9F-ZN0" id="dIy-8x-j9P"/>
-                        <outletCollection property="primaryViews" destination="VgF-uX-DRQ" id="2Dh-AR-jP0"/>
                         <outletCollection property="primaryViews" destination="Ewi-9F-ZN0" id="wLJ-tE-idm"/>
                     </connections>
                 </viewController>
@@ -2611,7 +2543,6 @@ The authors of each chapter have ensured that the information is current and cor
         <image name="gender-male" width="48" height="48"/>
         <image name="ic_developer_mode_3x" width="72" height="72"/>
         <image name="ic_email_white" width="24" height="24"/>
-        <image name="ic_favorite_border_white" width="24" height="24"/>
         <image name="ic_favorite_white" width="24" height="24"/>
         <image name="ic_fiber_smart_record_3x" width="72" height="72"/>
         <image name="ic_highlight_off_white_24dp" width="96" height="96"/>
