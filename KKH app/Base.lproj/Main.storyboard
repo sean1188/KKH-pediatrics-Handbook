@@ -600,6 +600,35 @@ The authors of each chapter have ensured that the information is current and cor
                                 <color key="backgroundColor" red="0.049900170420000001" green="0.38217961789999999" blue="0.68605518340000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                             </webView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NS2-Cz-iO4" userLabel="LikedView">
+                                <rect key="frame" x="530" y="35" width="50" height="50"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pow-jo-QGn">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_favorite_white" translatesAutoresizingMaskIntoConstraints="NO" id="vVt-s2-3jr">
+                                            <rect key="frame" x="5" y="5" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="KnA-mh-VlZ"/>
+                                                <constraint firstAttribute="height" constant="40" id="pKx-LW-gZm"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="vVt-s2-3jr" firstAttribute="centerX" secondItem="pow-jo-QGn" secondAttribute="centerX" id="7GA-Zt-iEP"/>
+                                        <constraint firstItem="vVt-s2-3jr" firstAttribute="centerY" secondItem="pow-jo-QGn" secondAttribute="centerY" id="9NT-Ch-23k"/>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="63J-gu-92J" appends="YES" id="a0k-cU-nun"/>
+                                    </connections>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="27C-Z7-3s3"/>
+                                    <constraint firstAttribute="width" constant="50" id="oKG-uc-Tfb"/>
+                                </constraints>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoR-BY-SQc">
                                 <rect key="frame" x="126" y="552" width="349" height="40"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -628,15 +657,19 @@ The authors of each chapter have ensured that the information is current and cor
                             <constraint firstItem="uE9-NR-PAD" firstAttribute="top" secondItem="Ewi-9F-ZN0" secondAttribute="bottom" constant="3" id="IwY-X0-eae"/>
                             <constraint firstItem="Ewi-9F-ZN0" firstAttribute="leading" secondItem="8cm-h3-039" secondAttribute="leadingMargin" constant="-20" id="JCh-Xj-hJt"/>
                             <constraint firstItem="Ewi-9F-ZN0" firstAttribute="top" secondItem="8cm-h3-039" secondAttribute="topMargin" id="Ozh-gK-ydE"/>
+                            <constraint firstItem="NS2-Cz-iO4" firstAttribute="top" secondItem="NgP-4c-4Qn" secondAttribute="bottom" constant="15" id="TO5-In-1v7"/>
                             <constraint firstItem="EAW-sG-dCz" firstAttribute="top" secondItem="uoR-BY-SQc" secondAttribute="bottom" constant="8" id="YOO-lp-ubL"/>
                             <constraint firstItem="uoR-BY-SQc" firstAttribute="top" secondItem="uE9-NR-PAD" secondAttribute="bottom" constant="8" id="cQh-tR-ysL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ewi-9F-ZN0" secondAttribute="trailing" constant="-20" id="eVS-UP-3ql"/>
                             <constraint firstItem="uoR-BY-SQc" firstAttribute="leading" secondItem="8cm-h3-039" secondAttribute="leadingMargin" constant="10" id="nkI-D3-tFi"/>
+                            <constraint firstItem="NS2-Cz-iO4" firstAttribute="trailing" secondItem="8cm-h3-039" secondAttribute="trailingMargin" id="qWC-5P-uPg"/>
                             <constraint firstItem="uE9-NR-PAD" firstAttribute="centerX" secondItem="8cm-h3-039" secondAttribute="centerX" id="url-xs-3FA"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="chotNameDisp" destination="uoR-BY-SQc" id="rVm-5N-RSN"/>
+                        <outlet property="favImg" destination="vVt-s2-3jr" id="DqI-eW-VoU"/>
+                        <outlet property="likedView" destination="NS2-Cz-iO4" id="jPz-tJ-Oiy"/>
                         <outlet property="tapGest" destination="6iT-lo-O3A" id="7IJ-fF-Y8l"/>
                         <outlet property="webView" destination="Ewi-9F-ZN0" id="dIy-8x-j9P"/>
                         <outletCollection property="primaryViews" destination="Ewi-9F-ZN0" id="wLJ-tE-idm"/>
@@ -646,6 +679,11 @@ The authors of each chapter have ensured that the information is current and cor
                 <tapGestureRecognizer id="6iT-lo-O3A" userLabel="tapButton">
                     <connections>
                         <action selector="tappedButton:" destination="Aje-zz-Qdv" id="9Es-9G-yeE"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="63J-gu-92J" userLabel="Fav">
+                    <connections>
+                        <action selector="favorite:" destination="Aje-zz-Qdv" id="x7F-LE-cC5"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -1693,7 +1731,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                     <constraint firstAttribute="width" constant="30" id="Ih3-sa-MDV"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ob-rI-EuQ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ob-rI-EuQ">
                                                 <rect key="frame" x="35" y="0.0" width="91" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="nz0-8u-OiM"/>
@@ -1742,7 +1780,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                     <constraint firstAttribute="height" constant="40" id="4tt-Mc-xIB"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Authorisation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJt-zD-OeA">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authorisation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJt-zD-OeA">
                                                 <rect key="frame" x="40" y="0.0" width="151" height="40"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="26"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1768,13 +1806,13 @@ The authors of each chapter have ensured that the information is current and cor
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rAM-sA-LIp">
                                         <rect key="frame" x="194" y="17" width="137" height="65"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Start-up tab" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKI-Kh-dEu">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Start-up tab" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKI-Kh-dEu">
                                                 <rect key="frame" x="0.0" y="0.0" width="137" height="32"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="26"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9Wb-7g-Wez">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9Wb-7g-Wez">
                                                 <rect key="frame" x="0.0" y="37" width="137" height="29"/>
                                                 <segments>
                                                     <segment title="" image="ic_info_white"/>

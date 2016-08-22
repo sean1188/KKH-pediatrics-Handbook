@@ -35,6 +35,7 @@
     {
         case UIDeviceOrientationPortrait:{
             [UIView animateWithDuration:0.4 animations:^{
+                _likedView.alpha = 1;
                 _webView.transform = CGAffineTransformIdentity;
                 _webView.translatesAutoresizingMaskIntoConstraints = NO;
                 [_webView.scrollView setZoomScale: 1 animated: YES];
@@ -42,6 +43,7 @@
         }break;
         case UIDeviceOrientationLandscapeLeft:{
             [UIView animateWithDuration:0.4 animations:^{
+                _likedView.alpha = 0;
                 _webView.transform = CGAffineTransformMakeRotation((M_PI * 90) / 180);
                 _webView.frame = self.view.frame; _webView.translatesAutoresizingMaskIntoConstraints = YES;
                 
@@ -49,6 +51,7 @@
         }break;
         case UIDeviceOrientationLandscapeRight:{
             [UIView animateWithDuration:0.3 animations:^{
+                _likedView.alpha = 0;
                 _webView.transform = CGAffineTransformMakeRotation((M_PI * -90) / 180);
                 _webView.frame = self.view.frame; _webView.translatesAutoresizingMaskIntoConstraints = YES;
 
@@ -64,14 +67,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setcolors];
+    i = true;
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter]
      addObserver:self selector:@selector(orientationChanged:)
      name:UIDeviceOrientationDidChangeNotification
      object:[UIDevice currentDevice]];
     
+    _likedView.layer.cornerRadius = self.likedView.frame.size.width/2;
+    _likedView.clipsToBounds = YES;
+    if([[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:[[NSUserDefaults standardUserDefaults] integerForKey:@"viewChpter"]-1]] == YES){
+        [_favImg setImage:[UIImage imageNamed:@"ic_favorite_white"]];
+
+    }
+    else{
+        [_favImg setImage:[UIImage imageNamed:@"ic_favorite_border_white"]];
+    }
     _webView.alpha = 1; _Ptz.alpha = 0;
-    _webView.delegate = self;
+    _webView.delegate = self;   _webView.scrollView.delegate = self;
     NSString *inde = [NSString stringWithFormat:@"%li ",(long)[[NSUserDefaults standardUserDefaults ] integerForKey:@"viewChpter"]];
     int chpti = [[NSUserDefaults standardUserDefaults] integerForKey:@"viewChpter"]-1;
     NSLog(@"%i", chpti);
@@ -98,14 +111,37 @@
     //
     
 }
-- (void)webViewDidFinishLoad:(UIWebView *)a_WebView {
-    NSLog(@"memes");
-    if([[NSUserDefaults standardUserDefaults] boolForKey:@"fromFavs"] == YES & [[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:[[NSUserDefaults standardUserDefaults] integerForKey:@"viewChpter"]-1]] == YES){
-        NSLog(@"faved");
-        //_webView.scrollView.contentOffset = CGPointMake(0, 300);
-        [_webView.scrollView setContentOffset:CGPointMake(0, 300) animated:YES];
+bool i;
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (i == false) {
+        
+    }
+    else{
+    [UIView animateWithDuration:0.3 animations:^{
+        _likedView.alpha = 1;
+    } completion:^(BOOL s ){
+        //prevent creation of other instances
+        i = false;
+        double delayInSeconds = 2.0;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            [UIView animateWithDuration:0.3 animations:^{
+                _likedView.alpha = 0;
+
+            }completion:^(BOOL s ){
+                i = true;
+            }];
+        });
+    }];
+      
     }
 }
+- (void)webViewDidFinishLoad:(UIWebView *)a_WebView {
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"fromFavs"] == YES & [[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:[[NSUserDefaults standardUserDefaults] integerForKey:@"viewChpter"]-1]] == YES){
+        [_webView.scrollView setContentOffset:CGPointMake(0, 300) animated:YES];
+    }
+    
+}
+
 - (IBAction)backButton:(id)sender {
     if([[NSUserDefaults standardUserDefaults] boolForKey:@"fromFavs"] == YES){
         [self dismissViewControllerAnimated:YES completion:nil];
@@ -113,5 +149,21 @@
 
     }else{
         [self dismissViewControllerAnimated:YES completion:nil];}
+}
+- (IBAction)favorite:(id)sender {
+    if ( [[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:[[NSUserDefaults standardUserDefaults] integerForKey:@"viewChpter"]-1]] != YES) {
+        //like
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:[[[PDFManager alloc] init] titleForChapter:[[NSUserDefaults standardUserDefaults] integerForKey:@"viewChpter"]-1]];
+        [[NSUserDefaults standardUserDefaults]setInteger:_webView.scrollView.contentOffset.y forKey:[[[PDFManager alloc] init] titleForChapter:[[NSUserDefaults standardUserDefaults] integerForKey:@"viewChpter"]-1]];
+        [_favImg setImage:[UIImage imageNamed:@"ic_favorite_white"]];
+    }
+    else if ( [[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:[[NSUserDefaults standardUserDefaults] integerForKey:@"viewChpter"]-1]] == YES){
+        //unlike
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:[[[PDFManager alloc] init] titleForChapter:[[NSUserDefaults standardUserDefaults] integerForKey:@"viewChpter"]-1]];
+        [[NSUserDefaults standardUserDefaults]setInteger:0 forKey:[[[PDFManager alloc] init] titleForChapter:[[NSUserDefaults standardUserDefaults] integerForKey:@"viewChpter"]-1]];
+        [_favImg setImage:[UIImage imageNamed:@"ic_favorite_border_white"]];
+        
+    }
+    
 }
 @end

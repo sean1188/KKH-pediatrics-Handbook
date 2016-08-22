@@ -27,4 +27,8 @@
 
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *primaryViews;
 
+@property (strong, nonatomic) IBOutlet UIVisualEffectView *likedView;
+@property (strong, nonatomic) IBOutlet UIImageView *favImg;
+- (IBAction)favorite:(id)sender;
+
 @end
