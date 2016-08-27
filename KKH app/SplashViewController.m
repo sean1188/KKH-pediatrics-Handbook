@@ -26,6 +26,11 @@
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"] == TRUE ) {
         [self.view setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]]];
     }
+    //VER 1.3 clear
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"VER13"] != YES) {
+        [[NSUserDefaults standardUserDefaults] setPersistentDomain:[NSDictionary dictionary] forName:[[NSBundle mainBundle] bundleIdentifier]];
+        [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"VER13"];
+    }
     //
     [UIView animateWithDuration:0.4 delay:0.8 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         _bearImg.transform = CGAffineTransformMakeScale(0.7, 0.7);

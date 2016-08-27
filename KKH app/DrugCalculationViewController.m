@@ -87,6 +87,7 @@ CGRect webViewInit;
 - (void)viewDidLoad {
     [super viewDidLoad];
     //
+    _backB.alpha = 1;
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter]
      addObserver:self selector:@selector(orientationChanged:)
@@ -156,7 +157,7 @@ _drugimg.frame = CGRectMake(_drugimg.frame.origin.x, _drugimg.frame.origin.y - 5
         } completion:^(BOOL s  ){
             [UIView animateWithDuration:0.3 animations:^{
                 _webView.alpha =1;
-
+                _backB.alpha = 0;
             }];
 
         }];
@@ -208,5 +209,8 @@ bool didViewPdf;
 
         
     }];
+}
+- (IBAction)back:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

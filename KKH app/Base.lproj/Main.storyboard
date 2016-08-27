@@ -550,7 +550,7 @@ The authors of each chapter have ensured that the information is current and cor
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="ic_info_white" translatesAutoresizingMaskIntoConstraints="NO" id="rOp-s8-3BO">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="ic_info_outline_white" translatesAutoresizingMaskIntoConstraints="NO" id="rOp-s8-3BO">
                             <rect key="frame" x="8" y="5" width="30" height="30"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xta-Se-YNh">
@@ -1297,7 +1297,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tbC-Zp-uPk" userLabel="Res_view">
-                                <rect key="frame" x="0.0" y="28" width="531" height="468"/>
+                                <rect key="frame" x="35" y="78" width="531" height="468"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdi-qP-LOq">
                                         <rect key="frame" x="195" y="205" width="141" height="48"/>
@@ -1332,6 +1332,18 @@ The authors of each chapter have ensured that the information is current and cor
                                 <rect key="frame" x="250" y="60" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0d-vk-NVu">
+                                <rect key="frame" x="20" y="41" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="fDd-sV-xqn"/>
+                                    <constraint firstAttribute="height" constant="30" id="yIV-nC-pNy"/>
+                                </constraints>
+                                <state key="normal" image="ic_highlight_off_white_24dp"/>
+                                <connections>
+                                    <action selector="back:" destination="JO7-qn-ehO" eventType="touchUpInside" id="8kD-34-hCE"/>
+                                    <action selector="back:" destination="fsS-ZA-8qs" eventType="touchUpInside" id="wi3-yw-264"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.057992704210000003" green="0.45015302299999999" blue="0.77763044830000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1340,6 +1352,7 @@ The authors of each chapter have ensured that the information is current and cor
                             <constraint firstItem="0xj-b7-tk7" firstAttribute="centerX" secondItem="zde-K4-BtB" secondAttribute="centerX" id="AS6-qA-EK0"/>
                             <constraint firstItem="FIj-tb-arU" firstAttribute="centerX" secondItem="zde-K4-BtB" secondAttribute="centerX" id="Hhd-Qy-nbC"/>
                             <constraint firstItem="tbC-Zp-uPk" firstAttribute="leading" secondItem="zde-K4-BtB" secondAttribute="leadingMargin" constant="15" id="OTN-S1-BzD"/>
+                            <constraint firstItem="E0d-vk-NVu" firstAttribute="leading" secondItem="zde-K4-BtB" secondAttribute="leadingMargin" id="RM3-Vj-1Ex"/>
                             <constraint firstItem="VZb-4I-Uly" firstAttribute="centerX" secondItem="zde-K4-BtB" secondAttribute="centerX" id="STw-Ca-PnC"/>
                             <constraint firstItem="VZb-4I-Uly" firstAttribute="top" secondItem="qgw-N7-Bd2" secondAttribute="bottom" constant="100" id="ani-CD-eV6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tbC-Zp-uPk" secondAttribute="trailing" constant="15" id="bsd-x2-sKa"/>
@@ -1347,12 +1360,14 @@ The authors of each chapter have ensured that the information is current and cor
                             <constraint firstItem="tbC-Zp-uPk" firstAttribute="centerX" secondItem="zde-K4-BtB" secondAttribute="centerX" id="g0t-sC-7V0"/>
                             <constraint firstItem="tbC-Zp-uPk" firstAttribute="top" secondItem="qgw-N7-Bd2" secondAttribute="bottom" constant="75" id="mxJ-q3-W0g"/>
                             <constraint firstItem="VBf-fI-g6f" firstAttribute="top" secondItem="tbC-Zp-uPk" secondAttribute="bottom" constant="80" id="p6o-ff-0B7"/>
+                            <constraint firstItem="E0d-vk-NVu" firstAttribute="top" secondItem="qgw-N7-Bd2" secondAttribute="bottom" constant="21" id="ql7-2k-tWU"/>
                             <constraint firstItem="QIM-zk-e6F" firstAttribute="centerX" secondItem="zde-K4-BtB" secondAttribute="centerX" id="rhc-LN-j0S"/>
                             <constraint firstItem="VBf-fI-g6f" firstAttribute="top" secondItem="FIj-tb-arU" secondAttribute="bottom" constant="8" id="ukr-bt-cET"/>
                             <constraint firstItem="tbC-Zp-uPk" firstAttribute="leading" secondItem="QIM-zk-e6F" secondAttribute="trailing" constant="50" id="xmZ-fM-6QK"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backB" destination="E0d-vk-NVu" id="umL-pq-JAp"/>
                         <outlet property="drugimg" destination="0xj-b7-tk7" id="1Qr-q3-5Is"/>
                         <outlet property="nextB" destination="FIj-tb-arU" id="UfQ-Gw-Zzl"/>
                         <outlet property="resView" destination="tbC-Zp-uPk" id="CeY-2h-iAB"/>
@@ -1752,7 +1767,7 @@ The authors of each chapter have ensured that the information is current and cor
                                             <constraint firstAttribute="width" constant="30" id="pYq-IM-QZp"/>
                                         </constraints>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <state key="normal" backgroundImage="ic_info_white"/>
+                                        <state key="normal" backgroundImage="ic_info_outline_white"/>
                                         <connections>
                                             <action selector="infoB:" destination="y57-F7-K6a" eventType="touchUpInside" id="ph1-bH-Q2h"/>
                                         </connections>
@@ -2584,6 +2599,7 @@ The authors of each chapter have ensured that the information is current and cor
         <image name="ic_favorite_white" width="24" height="24"/>
         <image name="ic_fiber_smart_record_3x" width="72" height="72"/>
         <image name="ic_highlight_off_white_24dp" width="96" height="96"/>
+        <image name="ic_info_outline_white" width="24" height="24"/>
         <image name="ic_info_white" width="24" height="24"/>
         <image name="ic_list_white" width="24" height="24"/>
         <image name="ic_poll_white" width="24" height="24"/>

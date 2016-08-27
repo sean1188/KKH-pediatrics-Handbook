@@ -19,5 +19,8 @@
 - (IBAction)viewB:(id)sender;
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 - (IBAction)sendB:(id)sender;
+@property (strong, nonatomic) IBOutlet UIButton *backB;
+
+- (IBAction)back:(id)sender;
 
 @end
