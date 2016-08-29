@@ -20,10 +20,10 @@
     return NO;
 }
 -(void) viewDidAppear:(BOOL)animated{
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"auth"] == YES) {
+    //TEMP disabl auth view for future integration of feature
         _aboutUsView.alpha = 0.7;
-        [_authTextField setText:@"Authorised"];
-    }
+    _authTapped.enabled = NO;
+    
 }
 -(void) setcolors{
     for (UIView *view in _secondaryViews) {
@@ -73,7 +73,6 @@ UIButton *transparencyButton ;
     _colorSelectPadding.layer.cornerRadius = 15.0f;
     _colorSelectPadding.layer.shadowOpacity = 0.4; _colorSelectPadding.layer.shadowOffset = CGSizeMake(1, 2);
 
-    
     _blurView.alpha = 0; _color1Primary.alpha = 0; _color2Primary.alpha =0; _color3Primary.alpha = 0;
     
 }

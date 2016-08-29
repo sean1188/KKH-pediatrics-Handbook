@@ -1853,7 +1853,7 @@ The authors of each chapter have ensured that the information is current and cor
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhl-eW-leH">
                                 <rect key="frame" x="231" y="514" width="138" height="31"/>
                                 <fontDescription key="fontDescription" name="Cabin-MediumItalic" family="Cabin" pointSize="21"/>
-                                <state key="normal" title="FEEDBACK" image="ic_info_white">
+                                <state key="normal" title="FEEDBACK" image="ic_info_outline_white">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -2410,8 +2410,8 @@ The authors of each chapter have ensured that the information is current and cor
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="inc" translatesAutoresizingMaskIntoConstraints="NO" id="yUU-3l-Fs8">
                                                 <rect key="frame" x="214" y="190" width="172" height="92"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="152" id="eri-hj-2ta"/>
-                                                    <constraint firstAttribute="height" constant="72" id="mhN-z6-r0F"/>
+                                                    <constraint firstAttribute="width" constant="132" id="eri-hj-2ta"/>
+                                                    <constraint firstAttribute="height" constant="52" id="mhN-z6-r0F"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="kkh memes.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZiV-4O-Omv">
