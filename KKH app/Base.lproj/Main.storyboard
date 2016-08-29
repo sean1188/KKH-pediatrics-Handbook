@@ -1772,10 +1772,23 @@ The authors of each chapter have ensured that the information is current and cor
                                             <action selector="infoB:" destination="y57-F7-K6a" eventType="touchUpInside" id="ph1-bH-Q2h"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jU-fV-F6Q">
+                                        <rect key="frame" x="8" y="38" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="2c5-bn-dLD"/>
+                                            <constraint firstAttribute="height" constant="30" id="DsH-by-AO8"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_highlight_off_white_24dp"/>
+                                        <connections>
+                                            <action selector="webViewBack:" destination="y57-F7-K6a" eventType="touchUpInside" id="sD0-O9-RFF"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.2122483999" green="0.57065624000000004" blue="0.94941872360000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="DSq-kW-OCe"/>
+                                    <constraint firstItem="1jU-fV-F6Q" firstAttribute="centerY" secondItem="zeg-OV-17E" secondAttribute="centerY" id="M4L-aQ-cCZ"/>
+                                    <constraint firstItem="1jU-fV-F6Q" firstAttribute="leading" secondItem="zeg-OV-17E" secondAttribute="leading" constant="20" id="Sxx-fO-F6v"/>
                                     <constraint firstAttribute="trailing" secondItem="yMV-x1-G1b" secondAttribute="trailing" constant="20" id="kce-Ej-g35"/>
                                     <constraint firstItem="yMV-x1-G1b" firstAttribute="centerY" secondItem="zeg-OV-17E" secondAttribute="centerY" id="peY-Am-d6V"/>
                                     <constraint firstItem="XOw-tl-2H5" firstAttribute="centerY" secondItem="zeg-OV-17E" secondAttribute="centerY" id="qcg-1T-0Ra"/>
@@ -2044,7 +2057,9 @@ The authors of each chapter have ensured that the information is current and cor
                         <outlet property="settingsLogo" destination="AKt-jN-pNt" id="3zX-uo-fwU"/>
                         <outlet property="startScreenView" destination="Z0g-Ri-zI5" id="fVR-fG-g2Q"/>
                         <outlet property="startUpSelection" destination="9Wb-7g-Wez" id="nIe-dl-UDj"/>
+                        <outlet property="topBar" destination="zeg-OV-17E" id="6Vy-xG-f4c"/>
                         <outlet property="topSettingslogo" destination="1q8-N3-nMK" id="UXi-im-orV"/>
+                        <outlet property="webViewBackB" destination="1jU-fV-F6Q" id="eiQ-i2-PEx"/>
                         <outletCollection property="secondaryViews" destination="2za-Ee-6he" id="Mju-sS-d95"/>
                         <outletCollection property="secondaryViews" destination="6b3-yC-7C5" id="J1c-n4-SbZ"/>
                         <outletCollection property="secondaryViews" destination="Tkr-0e-h9y" id="kMi-Oo-HfW"/>

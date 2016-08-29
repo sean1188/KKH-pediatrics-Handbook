@@ -11,6 +11,9 @@
 @interface SettingsViewController : UIViewController
 
 - (IBAction)infoB:(id)sender;
+@property (strong, nonatomic) IBOutlet UIView *topBar;
+@property (strong, nonatomic) IBOutlet UIButton *webViewBackB;
+- (IBAction)webViewBack:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UIView *startScreenView;
 @property (strong, nonatomic) IBOutlet UIImageView *topSettingslogo;

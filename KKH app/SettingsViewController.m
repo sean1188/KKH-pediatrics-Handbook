@@ -39,6 +39,7 @@ UIButton *transparencyButton ;
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setcolors];
+    _webViewBackB.alpha = 0;
     transparencyButton = [[UIButton alloc] initWithFrame:self.view.bounds];
     transparencyButton.backgroundColor = [UIColor clearColor];
     [self.view insertSubview:transparencyButton belowSubview:_authView];
@@ -173,32 +174,22 @@ UIButton *transparencyButton ;
 - (IBAction)aboutUsTapped:(id)sender {
     [self performSegueWithIdentifier:@"about" sender:self];
 }
-
+UIWebView *webView;
 - (IBAction)aboutUsbutton:(id)sender {
-   // [self aboutUsTapped:nil];
-    //feedback
-    if ([MFMailComposeViewController canSendMail]) {
-        // Show the composer
-        MFMailComposeViewController* controller = [[MFMailComposeViewController alloc] init];
-        controller.mailComposeDelegate = self;
-        [controller setSubject:@"Feedback on Paediatrics Handbook app"];
-        [controller setToRecipients:[NSArray arrayWithObject:[NSString stringWithFormat:@"siti.nur.diyanah@kkh.com.sg"]]];
-        [self presentViewController:controller animated:YES completion:nil];
-    } else {
-        // Handle the error
-        NSLog(@"unable to send mail");
-    }
+        //Feedback
+    _webViewBackB.alpha = 1;
+    webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height + self.view.frame.size.height - _topBar.frame.size.height - 20, self.view.frame.size.width, self.view.frame.size.height - _topBar.frame.size.height - 20)];
+    NSString *urlString = @"http://www.facebook.com";
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:urlRequest];
+    [self.view addSubview:webView];
+    [UIView animateWithDuration:0.4 animations:^{
+        webView.frame = CGRectMake(0, _topBar.frame.size.height + 20, self.view.frame.size.width, self.view.frame.size.height - _topBar.frame.size.height - 20);
+    }];
+    
+}
 
-}
-- (void)mailComposeController:(MFMailComposeViewController*)controller
-          didFinishWithResult:(MFMailComposeResult)result
-                        error:(NSError*)error;
-{
-    if (result == MFMailComposeResultSent) {
-        NSLog(@"It's away!");
-    }
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
 
 - (IBAction)infoB:(id)sender {
     [self aboutUsTapped:nil];
@@ -340,5 +331,11 @@ int inputCount = 0;
             
         }
     }
+}
+- (IBAction)webViewBack:(id)sender {
+    [UIView animateWithDuration:0.3 animations:^{
+        _webViewBackB.alpha = 0;
+        webView.frame = CGRectMake(0, self.view.frame.size.height + webView.frame.size.height, webView.frame.size.width, webView.frame.size.height);
+    }];
 }
 @end
