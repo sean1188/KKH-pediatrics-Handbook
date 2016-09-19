@@ -186,10 +186,10 @@ indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath
         return 0;
     }
     else if (didsearch == NO){
-        return 4;}
+        return 5;}
     else{
         return 0;
-    }// but is like '\t', not points
+    }
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(nonnull UITableViewCell *)cell forRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
@@ -247,9 +247,9 @@ indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath
         //search
         didsearch = YES;
         indexx.alpha = 0;
+        cell.accessoryType = UITableViewCellAccessoryNone;
         cell.textLabel.text = [results objectAtIndex:indexPath.row];
         [self tableView:_tableView indentationLevelForRowAtIndexPath:nil];
-        [cell setAccessoryType:UITableViewCellAccessoryNone];
     }
 
     //

@@ -176,6 +176,7 @@ UIButton *transparencyButton ;
 }
 UIWebView *webView;
 - (IBAction)aboutUsbutton:(id)sender {
+    _FeedbackButton.enabled = NO;
         //Feedback
     _webViewBackB.alpha = 1;
     webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height + self.view.frame.size.height - _topBar.frame.size.height - 20, self.view.frame.size.width, self.view.frame.size.height - _topBar.frame.size.height - 20)];
@@ -186,6 +187,7 @@ UIWebView *webView;
     [self.view addSubview:webView];
     [UIView animateWithDuration:0.4 animations:^{
         webView.frame = CGRectMake(0, _topBar.frame.size.height + 20, self.view.frame.size.width, self.view.frame.size.height - _topBar.frame.size.height - 20);
+    } completion:^(BOOL s ){
     }];
     
 }
@@ -336,6 +338,8 @@ int inputCount = 0;
     [UIView animateWithDuration:0.3 animations:^{
         _webViewBackB.alpha = 0;
         webView.frame = CGRectMake(0, self.view.frame.size.height + webView.frame.size.height, webView.frame.size.width, webView.frame.size.height);
+    }completion:^(BOOL s ){
+        _FeedbackButton.enabled = YES;
     }];
 }
 @end

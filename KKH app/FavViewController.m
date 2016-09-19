@@ -71,11 +71,13 @@ NSMutableArray *likedObjs;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return likedChptrCount;
 }
+
 -(NSInteger)tableView:(UITableView *)tableView
 indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 4;
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"test ");
     static NSString *CellIdentifier = @"Cell";

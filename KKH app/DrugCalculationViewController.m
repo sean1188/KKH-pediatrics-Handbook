@@ -36,7 +36,7 @@ bool firstE;
     else{
         _resView.translatesAutoresizingMaskIntoConstraints =YES;
         _resView.frame = CGRectMake(_resView.frame.origin.x, _resView.frame.origin.y + 1000 , _resView.frame.size.width, _resView.frame.size.height);
-        _webView.alpha = 1;
+        _webView.alpha = 0;
         _drugimg.alpha = 1;
         _nextB.alpha = 1;
     }
@@ -145,8 +145,8 @@ _drugimg.frame = CGRectMake(_drugimg.frame.origin.x, _drugimg.frame.origin.y - 5
         didNext = YES;
         _mannager = [DrugCalculationsManager alloc];
         [_webView loadData:[[_mannager initWithWeight:_textField.text.intValue] getData] MIMEType:@"text/csv" textEncodingName:@"utf-8" baseURL:nil];
-        
-        _webView.layer.cornerRadius = _webView.frame.size.width/2;
+        _webView.translatesAutoresizingMaskIntoConstraints = YES;
+        _webView.layer.cornerRadius = self.webView.frame.size.height/2;
         _webView.scalesPageToFit = YES;
         _webView.clipsToBounds =YES;
         [_nextB addTickToCrossAnimation];
@@ -156,7 +156,7 @@ _drugimg.frame = CGRectMake(_drugimg.frame.origin.x, _drugimg.frame.origin.y - 5
             _resView.translatesAutoresizingMaskIntoConstraints = NO;
         } completion:^(BOOL s  ){
             [UIView animateWithDuration:0.3 animations:^{
-                _webView.alpha =1;
+                _webView.alpha= 1;
                 _backB.alpha = 0;
             }];
 
@@ -168,7 +168,8 @@ _drugimg.frame = CGRectMake(_drugimg.frame.origin.x, _drugimg.frame.origin.y - 5
     else if (didViewPdf == YES) {
         didViewPdf = NO;
         [UIView animateWithDuration:0.2 animations:^{
-            _webView.translatesAutoresizingMaskIntoConstraints = NO;
+            //
+            _webView.translatesAutoresizingMaskIntoConstraints = YES;
             _webView.frame = initFrameWeb;
             _webView.layer.cornerRadius = self.webView.frame.size.width/2;
             _resView.alpha = 1;

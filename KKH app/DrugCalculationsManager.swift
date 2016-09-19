@@ -178,20 +178,20 @@ class DrugCalculationsManager: NSObject, MFMailComposeViewControllerDelegate {
         
         self.weight = weight
         
-        if let path = NSBundle.mainBundle().pathForResource("DrugList", ofType: "csv") {
+        if let path = Bundle.main.path(forResource: "DrugList", ofType: "csv") {
             do {
-                let data = try String(contentsOfFile: path, encoding: NSUTF8StringEncoding)
-                var dataLines = data.componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet())
-                dataLines[1] = dataLines[1].stringByReplacingOccurrencesOfString("XX", withString: "\(weight)")
+                let data = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
+                var dataLines = data.components(separatedBy: CharacterSet.newlines)
+                dataLines[1] = dataLines[1].replacingOccurrences(of: "XX", with: "\(weight)")
                 for i in 3 ..< dataLines.count {
                     if multipliers[i] != nil {
-                        dataLines[i] = dataLines[i].stringByReplacingOccurrencesOfString("XX", withString: "\(Double(weight) * multipliers[i]!)")
+                        dataLines[i] = dataLines[i].replacingOccurrences(of: "XX", with: "\(Double(weight) * multipliers[i]!)")
                     }
                 }
                 
                 printLines(dataLines)
                 for i in 0 ..< dataLines.count {
-                    emailData = emailData.stringByAppendingString("\(dataLines[i])\n")
+                    emailData = emailData + "\(dataLines[i])\n"
                 }
             } catch {
                 
@@ -199,29 +199,29 @@ class DrugCalculationsManager: NSObject, MFMailComposeViewControllerDelegate {
         }
     }
     
-    func sendEmail(sender: UIViewController) {
+    func sendEmail(_ sender: UIViewController) {
         let vc = MFMailComposeViewController()
         vc.mailComposeDelegate = self
         vc.setSubject("Drug Table")
         vc.setMessageBody("Attached is the list of drugs for patient of \(weight)kg weight.", isHTML: false)
-        vc.addAttachmentData(emailData.dataUsingEncoding(NSUTF8StringEncoding)!, mimeType: "text/csv", fileName: "Drug_table.csv")
+        vc.addAttachmentData(emailData.data(using: String.Encoding.utf8)!, mimeType: "text/csv", fileName: "Drug_table.csv")
         
-        sender.presentViewController(vc, animated: true) {
+        sender.present(vc, animated: true) {
             
         }
     }
     
-    func getData() -> NSData? {
-        return emailData.dataUsingEncoding(NSUTF8StringEncoding)!
+    func getData() -> Data? {
+        return emailData.data(using: String.Encoding.utf8)!
     }
     
-    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
-        controller.dismissViewControllerAnimated(true, completion: {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: {
             
         })
     }
     
-    func printLines(array: [String]) {
+    func printLines(_ array: [String]) {
         for i in 0 ..< array.count {
             print(array[i])
         }

@@ -14,10 +14,10 @@ class PDFManager: NSObject {
     
     override init() {
         super.init()
-        let bundleRoot = NSBundle.mainBundle().bundlePath
-        let fileManager = NSFileManager.defaultManager()
+        let bundleRoot = Bundle.main.bundlePath
+        let fileManager = FileManager.default
         var contents: [String]!
-        do { contents = try fileManager.contentsOfDirectoryAtPath(bundleRoot) } catch { }
+        do { contents = try fileManager.contentsOfDirectory(atPath: bundleRoot) } catch { }
         chapterPaths = contents.filter { (string) -> Bool in
             if string.hasSuffix(".pdf") { return true }
             return false
@@ -29,20 +29,20 @@ class PDFManager: NSObject {
     }
     
     
-    func chapter(index: Int) -> UIView {
+    func chapter(_ index: Int) -> UIView {
         let pathh = (chapterPaths[index] as NSString?)!
-        let path = NSURL(fileURLWithPath:NSBundle.mainBundle().pathForResource(pathh.substringToIndex(pathh.length - 4), ofType:"pdf")!)
-        let request = NSURLRequest(URL: path);
+        let path = URL(fileURLWithPath:Bundle.main.path(forResource: pathh.substring(to: pathh.length - 4), ofType:"pdf")!)
+        let request = URLRequest(url: path);
         let webView = UIWebView()
         webView.loadRequest(request);
         return webView
     }
     
-    func titleForChapter(index: Int) -> String {
+    func titleForChapter(_ index: Int) -> String {
         var pathh = (chapterPaths[index] as NSString?)!
-        pathh = pathh.substringToIndex(pathh.length - 4)
-       pathh = pathh.substringFromIndex(3)
-        pathh = pathh.stringByReplacingOccurrencesOfString("_", withString: " ")
+        pathh = pathh.substring(to: pathh.length - 4) as NSString
+       pathh = pathh.substring(from: 3) as NSString
+        pathh = pathh.replacingOccurrences(of: "_", with: " ") as NSString
         return pathh as String
     }
 }

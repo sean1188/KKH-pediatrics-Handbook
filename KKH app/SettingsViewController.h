@@ -41,6 +41,7 @@
 @property (strong, nonatomic) IBOutlet UIView *aboutUsView;
 - (IBAction)aboutUsTapped:(id)sender;
 - (IBAction)aboutUsbutton:(id)sender;
+@property (strong, nonatomic) IBOutlet UIButton *FeedbackButton;
 
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *secondaryViews;
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *primaryViews;

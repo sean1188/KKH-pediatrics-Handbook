@@ -15,12 +15,12 @@ class BMIGraphManager: NSObject {
     var bmi: Float = 0
     
     enum Status: Int {
-        case Nil = 0;
-        case SeverelyUnderweight = 1;
-        case Underweight = 2;
-        case Acceptable = 3;
-        case Overweight = 4;
-        case SeverelyOverweight = 5;
+        case `nil` = 0;
+        case severelyUnderweight = 1;
+        case underweight = 2;
+        case acceptable = 3;
+        case overweight = 4;
+        case severelyOverweight = 5;
     }
     
     //data
@@ -56,7 +56,7 @@ class BMIGraphManager: NSObject {
             }
             
             var status: Status! = nil
-            let index = ages1.indexOf(age)!
+            let index = ages1.index(of: age)!
             for i in 0 ..< data.count {
                 if Double(bmi) < data[i][index] {
                     status = Status(rawValue: i + 1)
@@ -64,7 +64,7 @@ class BMIGraphManager: NSObject {
                 }
             }
             if status == nil {
-                status = .SeverelyOverweight
+                status = .severelyOverweight
             }
             
             return status.rawValue
