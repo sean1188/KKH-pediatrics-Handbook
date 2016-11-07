@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E7W-Qo-Nmj">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E7W-Qo-Nmj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -40,13 +44,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SST INC. 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vq-u8-JV7">
-                                <frame key="frameInset" minX="173" minY="571" width="255" height="21"/>
+                                <rect key="frame" x="173" y="571" width="255" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <color key="textColor" red="0.84939259290000002" green="0.84936714170000005" blue="0.84938156600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="splash screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="P59-6o-BJ1">
-                                <frame key="frameInset" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.074509803920000006" green="0.29411764709999999" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -106,16 +110,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iD1-QI-5t7">
-                                <frame key="frameInset" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Swipe left and right to explore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ub-i4-sHN">
-                                <frame key="frameInset" minX="230" minY="571" width="254" height="21"/>
+                                <rect key="frame" x="230" y="571" width="254" height="21"/>
                                 <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkN-fP-jSp">
-                                <frame key="frameInset" minX="245" minY="520" width="110" height="72"/>
+                                <rect key="frame" x="245" y="520" width="110" height="72"/>
                                 <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="23"/>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -146,6 +150,8 @@
                     </view>
                     <connections>
                         <outlet property="doneButton" destination="VkN-fP-jSp" id="D3s-d5-QVv"/>
+                        <outlet property="gestB" destination="apw-ZF-NbG" id="dPt-pm-vwn"/>
+                        <outlet property="gestN" destination="XJe-Ff-Odm" id="N2q-Do-AT0"/>
                         <outlet property="guideLabel" destination="6Ub-i4-sHN" id="kzP-E6-PHn"/>
                         <outlet property="imgView" destination="iD1-QI-5t7" id="z3i-dW-VZO"/>
                     </connections>
@@ -177,25 +183,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uTf-30-g8h" userLabel="searchPadding">
-                                <frame key="frameInset" width="600" height="20"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
                                 <color key="backgroundColor" red="0.70588235294117652" green="0.70980392156862748" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="gER-oI-OTB" userLabel="bottom bar">
-                                <frame key="frameInset" minY="559" width="383" height="41"/>
+                                <rect key="frame" x="0.0" y="559" width="383" height="41"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BwC-Ke-Gvz" userLabel="ref">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="41"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_info_white" translatesAutoresizingMaskIntoConstraints="NO" id="DgY-Zc-Vh1">
-                                                <frame key="frameInset" minX="61" minY="2" width="26" height="26"/>
+                                                <rect key="frame" x="61" y="2" width="26" height="26"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="REF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzI-Ab-wWr">
-                                                <frame key="frameInset" minX="60" minY="26" width="28" height="13"/>
+                                                <rect key="frame" x="60" y="26" width="28" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlH-aW-aMh">
-                                                <frame key="frameInset" width="149" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="41"/>
                                                 <connections>
                                                     <action selector="refButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zcl-to-Fcd"/>
                                                 </connections>
@@ -216,18 +223,19 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nch-W8-Ghl" userLabel="calc">
+                                        <rect key="frame" x="96" y="0.0" width="95" height="41"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_poll_white" translatesAutoresizingMaskIntoConstraints="NO" id="pAV-cy-cgf">
-                                                <frame key="frameInset" minX="61" minY="2" width="26" height="26"/>
+                                                <rect key="frame" x="61" y="2" width="26" height="26"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CALC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7T-md-HHY">
-                                                <frame key="frameInset" minX="57" minY="26" width="34" height="13"/>
+                                                <rect key="frame" x="57" y="26" width="34" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNo-fW-A6E">
-                                                <frame key="frameInset" minX="1" width="149" height="41"/>
+                                                <rect key="frame" x="1" y="0.0" width="149" height="41"/>
                                                 <connections>
                                                     <action selector="calcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ant-RB-Dyl"/>
                                                 </connections>
@@ -248,18 +256,19 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOp-l7-kD1" userLabel="list">
+                                        <rect key="frame" x="192" y="0.0" width="95" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FAV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4p-kc-dHa">
-                                                <frame key="frameInset" minX="56" minY="26" width="34" height="13"/>
+                                                <rect key="frame" x="56" y="26" width="34" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_favorite_white" translatesAutoresizingMaskIntoConstraints="NO" id="nDG-6p-n6U">
-                                                <frame key="frameInset" minX="60" minY="2" width="26" height="26"/>
+                                                <rect key="frame" x="60" y="2" width="26" height="26"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3M-iK-JDe">
-                                                <frame key="frameInset" width="149" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="41"/>
                                                 <connections>
                                                     <action selector="listButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfN-HJ-BhM"/>
                                                 </connections>
@@ -280,22 +289,23 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCP-cZ-IgF" userLabel="settings">
+                                        <rect key="frame" x="288" y="0.0" width="95" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMT-84-wtC">
-                                                <frame key="frameInset" minX="56" minY="26" width="34" height="13"/>
+                                                <rect key="frame" x="56" y="26" width="34" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_settings_white" translatesAutoresizingMaskIntoConstraints="NO" id="3YW-Be-e7v">
-                                                <frame key="frameInset" minX="60" minY="2" width="26" height="26"/>
+                                                <rect key="frame" x="60" y="2" width="26" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="26" id="WKa-9h-wvg"/>
                                                     <constraint firstAttribute="width" constant="26" id="kaW-a6-Vtq"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLW-wM-Xjh">
-                                                <frame key="frameInset" width="149" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="41"/>
                                                 <connections>
                                                     <action selector="settingsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="byj-UR-rrF"/>
                                                 </connections>
@@ -321,24 +331,24 @@
                                 </constraints>
                             </stackView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LmX-0V-n2R" userLabel="cardView">
-                                <frame key="frameInset" minY="118" width="494" height="423"/>
+                                <rect key="frame" x="0.0" y="118" width="494" height="423"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PGG-9L-azE">
-                                        <frame key="frameInset" minX="8" minY="53" width="478" height="362"/>
+                                        <rect key="frame" x="8" y="53" width="478" height="362"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="separatorColor" red="0.68708586692810059" green="0.68706530332565308" blue="0.68707698583602905" alpha="0.68670673076923072" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="ic_info_white" translatesAutoresizingMaskIntoConstraints="NO" id="gAG-mF-WKI">
-                                        <frame key="frameInset" minX="9" minY="9" width="40" height="40"/>
+                                        <rect key="frame" x="9" y="9" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Yzv-rS-gwC"/>
                                             <constraint firstAttribute="width" constant="40" id="eId-bH-eJS"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyv-Vg-eeX" userLabel="search">
-                                        <frame key="frameInset" minX="432" minY="6" width="50" height="50"/>
+                                        <rect key="frame" x="432" y="6" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="G6v-Ce-zgI"/>
                                             <constraint firstAttribute="width" constant="40" id="fHD-lJ-44V"/>
@@ -349,13 +359,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="REFERENCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fa9-c7-3XE">
-                                        <frame key="frameInset" minX="57" minY="10" width="152" height="22"/>
+                                        <rect key="frame" x="57" y="10" width="152" height="22"/>
                                         <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="25"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Collection of chapters from the handbook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nE-zu-kgI" userLabel="h3">
-                                        <frame key="frameInset" minX="57" minY="32" width="192" height="16"/>
+                                        <rect key="frame" x="57" y="32" width="192" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="IFc-9r-RBC"/>
                                         </constraints>
@@ -383,7 +393,7 @@
                                 </constraints>
                             </view>
                             <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" prompt="Quick Search" placeholder="Enter name of file/Chapter name..." translatesAutoresizingMaskIntoConstraints="NO" id="Ugo-lZ-wDK">
-                                <frame key="frameInset" minY="20" width="600" height="75"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="Zh4-HB-T0x"/>
                                 </constraints>
@@ -393,7 +403,7 @@
                                 </connections>
                             </searchBar>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LDA-Rh-HbX" userLabel="enterpadding">
-                                <frame key="frameInset" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -481,7 +491,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="369-xZ-vqT">
-                            <frame key="frameInset" minX="8" minY="38" width="264" height="269"/>
+                            <rect key="frame" x="8" y="38" width="264" height="269"/>
                             <string key="text">This app is a resource for doctors working in the Department of Paediatric Anaesthesia KKH. The guidelines presented are based on department and international practice guidelines. They are meant to be comprehensive but may not be all inclusive. The use of these guidelines must be individualized to the patient’s needs.
 The authors of each chapter have ensured that the information is current and correct at the time of writing. KK Hospital and the Department of Paediatric Anaesthesia do not assume responsibility for the correctness, sufficiency or completeness of such information or recommendations. The user is advised to check drug dosages and protocols carefully and refer to latest updates posted by the relevant anaesthesia bodies.</string>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -489,7 +499,7 @@ The authors of each chapter have ensured that the information is current and cor
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DISCLAIMER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMd-fC-jIW">
-                            <frame key="frameInset" minX="46" minY="5" width="230" height="30"/>
+                            <rect key="frame" x="46" y="5" width="230" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="tQZ-2n-X58"/>
                             </constraints>
@@ -498,13 +508,13 @@ The authors of each chapter have ensured that the information is current and cor
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_info_outline_white" translatesAutoresizingMaskIntoConstraints="NO" id="rOp-s8-3BO">
-                            <frame key="frameInset" minX="8" minY="5" width="30" height="30"/>
+                            <rect key="frame" x="8" y="5" width="30" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="rOp-s8-3BO" secondAttribute="height" multiplier="1:1" id="3lc-Xw-Hbi"/>
                             </constraints>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xta-Se-YNh">
-                            <frame key="frameInset" minX="64" minY="268" width="137" height="31"/>
+                            <rect key="frame" x="64" y="268" width="137" height="31"/>
                             <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="15"/>
                             <state key="normal" title="AGREE">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -546,17 +556,18 @@ The authors of each chapter have ensured that the information is current and cor
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ewi-9F-ZN0">
-                                <frame key="frameInset" width="600" height="482"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="482"/>
                                 <color key="backgroundColor" red="0.049900170420000001" green="0.38217961789999999" blue="0.68605518340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                             </webView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NS2-Cz-iO4" userLabel="LikedView">
-                                <frame key="frameInset" minX="530" minY="35" width="50" height="50"/>
+                                <rect key="frame" x="530" y="35" width="50" height="50"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pow-jo-QGn">
-                                    <frame key="frameInset"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_favorite_white" translatesAutoresizingMaskIntoConstraints="NO" id="vVt-s2-3jr">
+                                            <rect key="frame" x="5" y="5" width="40" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="40" id="KnA-mh-VlZ"/>
                                                 <constraint firstAttribute="height" constant="40" id="pKx-LW-gZm"/>
@@ -579,13 +590,13 @@ The authors of each chapter have ensured that the information is current and cor
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoR-BY-SQc">
-                                <frame key="frameInset" minX="126" minY="552" width="349" height="40"/>
+                                <rect key="frame" x="126" y="552" width="349" height="40"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE9-NR-PAD">
-                                <frame key="frameInset" minX="252" minY="448" width="96" height="96"/>
+                                <rect key="frame" x="252" y="448" width="96" height="96"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="2Xh-16-QPQ"/>
                                     <constraint firstAttribute="width" constant="40" id="Qbd-g8-lgo"/>
@@ -651,21 +662,22 @@ The authors of each chapter have ensured that the information is current and cor
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fua-vA-k1d" userLabel="bottom bar">
-                                <frame key="frameInset" minX="-1" minY="559" width="386" height="41"/>
+                                <rect key="frame" x="-1" y="559" width="386" height="41"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pon-VB-TY5" userLabel="ref">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="41"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_info_white" translatesAutoresizingMaskIntoConstraints="NO" id="tcN-3z-Y8j">
-                                                <frame key="frameInset" minX="61" minY="2" width="26" height="26"/>
+                                                <rect key="frame" x="61" y="2" width="26" height="26"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="REF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEl-EG-Fhe">
-                                                <frame key="frameInset" minX="60" minY="26" width="28" height="13"/>
+                                                <rect key="frame" x="60" y="26" width="28" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czN-at-98t">
-                                                <frame key="frameInset" width="149" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="41"/>
                                                 <connections>
                                                     <action selector="ref:" destination="88y-7D-yXE" eventType="touchUpInside" id="3wc-XF-Uxb"/>
                                                     <action selector="refButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZG0-aj-Sj9"/>
@@ -688,18 +700,19 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HA1-z2-Ki1" userLabel="calc">
+                                        <rect key="frame" x="97" y="0.0" width="95.5" height="41"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_poll_white" translatesAutoresizingMaskIntoConstraints="NO" id="adf-Yh-ues">
-                                                <frame key="frameInset" minX="61" minY="2" width="26" height="26"/>
+                                                <rect key="frame" x="61" y="2" width="26" height="26"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CALC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zu1-MM-0zT">
-                                                <frame key="frameInset" minX="57" minY="26" width="34" height="13"/>
+                                                <rect key="frame" x="57" y="26" width="34" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqw-eV-daj">
-                                                <frame key="frameInset" minX="1" width="149" height="41"/>
+                                                <rect key="frame" x="1" y="0.0" width="149" height="41"/>
                                                 <state key="normal">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -723,18 +736,19 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOH-8g-FLO" userLabel="fav">
+                                        <rect key="frame" x="193.5" y="0.0" width="96" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FAV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvA-6Y-Dcf">
-                                                <frame key="frameInset" minX="56" minY="26" width="34" height="13"/>
+                                                <rect key="frame" x="56" y="26" width="34" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_favorite_white" translatesAutoresizingMaskIntoConstraints="NO" id="53Y-9o-ZHI">
-                                                <frame key="frameInset" minX="60" minY="2" width="26" height="26"/>
+                                                <rect key="frame" x="60" y="2" width="26" height="26"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmp-xO-dWR">
-                                                <frame key="frameInset" width="149" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="41"/>
                                                 <connections>
                                                     <action selector="Fav:" destination="88y-7D-yXE" eventType="touchUpInside" id="Pcx-dH-yKo"/>
                                                     <action selector="listButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mCx-6e-l6p"/>
@@ -757,22 +771,23 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBR-Da-Vd0" userLabel="settings">
+                                        <rect key="frame" x="290.5" y="0.0" width="95.5" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qel-Zq-VRd">
-                                                <frame key="frameInset" minX="56" minY="26" width="34" height="13"/>
+                                                <rect key="frame" x="56" y="26" width="34" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_settings_white" translatesAutoresizingMaskIntoConstraints="NO" id="Xeg-zJ-7vn">
-                                                <frame key="frameInset" minX="60" minY="2" width="26" height="26"/>
+                                                <rect key="frame" x="60" y="2" width="26" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="26" id="Uq6-eH-U8v"/>
                                                     <constraint firstAttribute="height" constant="26" id="qLF-9R-5Kz"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vu7-TL-RbR">
-                                                <frame key="frameInset" width="149" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="41"/>
                                                 <connections>
                                                     <action selector="settings:" destination="88y-7D-yXE" eventType="touchUpInside" id="3t8-mb-Y7l"/>
                                                     <action selector="settingsButton:" destination="cI6-5L-qIS" eventType="touchUpInside" id="5Lz-fS-M7f"/>
@@ -800,25 +815,26 @@ The authors of each chapter have ensured that the information is current and cor
                                 </constraints>
                             </stackView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zlH-yk-gH0">
-                                <frame key="frameInset" minX="15" minY="20" width="570" height="521"/>
+                                <rect key="frame" x="15" y="20" width="570" height="521"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f4P-Yx-gLa">
-                                        <frame key="frameInset" minX="8" minY="49" width="544" height="466"/>
+                                        <rect key="frame" x="8" y="49" width="544" height="466"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FAVOURITES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXd-91-YHr">
-                                        <frame key="frameInset" minX="51" minY="6" width="152" height="24"/>
+                                        <rect key="frame" x="51" y="6" width="152" height="24"/>
                                         <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="23"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Chapters that you have favourited appear here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdS-1a-AZJ">
-                                        <frame key="frameInset" minX="51" minY="31" width="192" height="16"/>
+                                        <rect key="frame" x="51" y="31" width="192" height="16"/>
                                         <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="11"/>
                                         <color key="textColor" red="0.84939259290000002" green="0.84936714170000005" blue="0.84938156600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_favorite_white" translatesAutoresizingMaskIntoConstraints="NO" id="zZJ-RI-sNh">
+                                        <rect key="frame" x="8" y="8" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="37t-Ua-LBp"/>
                                             <constraint firstAttribute="width" constant="35" id="xdP-p3-lIK"/>
@@ -896,21 +912,22 @@ The authors of each chapter have ensured that the information is current and cor
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="gLj-c9-f6w" userLabel="bottom bar">
-                                <frame key="frameInset" minY="559" width="387" height="41"/>
+                                <rect key="frame" x="0.0" y="559" width="387" height="41"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PhC-30-EnH" userLabel="ref">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="41"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_info_white" translatesAutoresizingMaskIntoConstraints="NO" id="zXI-PS-OAe">
-                                                <frame key="frameInset" minX="61" minY="2" width="26" height="26"/>
+                                                <rect key="frame" x="61" y="2" width="26" height="26"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="REF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B92-rw-Lx2">
-                                                <frame key="frameInset" minX="60" minY="26" width="28" height="13"/>
+                                                <rect key="frame" x="60" y="26" width="28" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hW4-AI-y7t">
-                                                <frame key="frameInset" width="149" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="41"/>
                                                 <connections>
                                                     <action selector="refButton:" destination="cI6-5L-qIS" eventType="touchUpInside" id="3SR-2h-a0X"/>
                                                     <action selector="refButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rBV-OJ-QMn"/>
@@ -933,18 +950,19 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neS-09-Ac9" userLabel="calc">
+                                        <rect key="frame" x="97" y="0.0" width="96" height="41"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_poll_white" translatesAutoresizingMaskIntoConstraints="NO" id="EcM-gb-Pmm">
-                                                <frame key="frameInset" minX="61" minY="2" width="26" height="26"/>
+                                                <rect key="frame" x="61" y="2" width="26" height="26"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CALC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30S-jO-fty">
-                                                <frame key="frameInset" minX="57" minY="26" width="34" height="13"/>
+                                                <rect key="frame" x="57" y="26" width="34" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LH5-Zs-MSi">
-                                                <frame key="frameInset" minX="1" width="149" height="41"/>
+                                                <rect key="frame" x="1" y="0.0" width="149" height="41"/>
                                                 <state key="normal">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -966,18 +984,19 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KUK-73-eLz" userLabel="list">
+                                        <rect key="frame" x="194" y="0.0" width="96" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FAV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLk-K0-2Da">
-                                                <frame key="frameInset" minX="56" minY="26" width="34" height="13"/>
+                                                <rect key="frame" x="56" y="26" width="34" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_favorite_white" translatesAutoresizingMaskIntoConstraints="NO" id="JQb-aF-4in">
-                                                <frame key="frameInset" minX="60" minY="2" width="26" height="26"/>
+                                                <rect key="frame" x="60" y="2" width="26" height="26"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00N-Kl-yLN">
-                                                <frame key="frameInset" width="149" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="41"/>
                                                 <connections>
                                                     <action selector="listButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YWs-zU-lGz"/>
                                                     <action selector="listButton:" destination="cI6-5L-qIS" eventType="touchUpInside" id="dpF-Fa-18S"/>
@@ -1000,22 +1019,23 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOf-rF-vMx" userLabel="settings">
+                                        <rect key="frame" x="291" y="0.0" width="96" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TQ-Of-5KJ">
-                                                <frame key="frameInset" minX="56" minY="26" width="34" height="13"/>
+                                                <rect key="frame" x="56" y="26" width="34" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_settings_white" translatesAutoresizingMaskIntoConstraints="NO" id="6l2-kV-1Ez">
-                                                <frame key="frameInset" minX="60" minY="2" width="26" height="26"/>
+                                                <rect key="frame" x="60" y="2" width="26" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="26" id="INZ-75-cgc"/>
                                                     <constraint firstAttribute="height" constant="26" id="cTh-tU-ig4"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvU-fJ-im4">
-                                                <frame key="frameInset" width="149" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="41"/>
                                                 <connections>
                                                     <action selector="settingsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G2b-4V-C0u"/>
                                                     <action selector="settingsButton:" destination="cI6-5L-qIS" eventType="touchUpInside" id="xqQ-pd-oEx"/>
@@ -1043,31 +1063,32 @@ The authors of each chapter have ensured that the information is current and cor
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y5r-Dd-Z9W">
-                                <frame key="frameInset" minX="15" minY="20" width="570" height="521"/>
+                                <rect key="frame" x="15" y="20" width="570" height="521"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CALCULATIONS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUH-BP-xjJ">
-                                        <frame key="frameInset" minX="41" minY="8" width="162" height="28"/>
+                                        <rect key="frame" x="41" y="8" width="162" height="28"/>
                                         <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="23"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Number Crunching and Data Processing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ip8-92-X6M">
-                                        <frame key="frameInset" minX="51" minY="33" width="192" height="16"/>
+                                        <rect key="frame" x="51" y="33" width="192" height="16"/>
                                         <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="11"/>
                                         <color key="textColor" red="0.84939259290000002" green="0.84936714170000005" blue="0.84938156600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_poll_white" translatesAutoresizingMaskIntoConstraints="NO" id="TFq-es-HgS">
+                                        <rect key="frame" x="8" y="10" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="VTH-TN-zL5"/>
                                             <constraint firstAttribute="width" constant="35" id="ksk-G3-UBc"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rOl-qS-2rr" userLabel="Drug Cal Button">
-                                        <frame key="frameInset" minX="235" minY="135" width="100" height="100"/>
+                                        <rect key="frame" x="235" y="135" width="100" height="100"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="inj" translatesAutoresizingMaskIntoConstraints="NO" id="YaD-Qg-pGB">
-                                                <frame key="frameInset" minX="25" minY="25" width="50" height="50"/>
+                                                <rect key="frame" x="25" y="25" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="0jo-Pt-Ph8"/>
                                                     <constraint firstAttribute="height" constant="40" id="rdT-vd-1fE"/>
@@ -1087,16 +1108,16 @@ The authors of each chapter have ensured that the information is current and cor
                                         </connections>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Drug Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQj-70-fdz">
-                                        <frame key="frameInset" minX="225" minY="243" width="120" height="21"/>
+                                        <rect key="frame" x="225" y="243" width="120" height="21"/>
                                         <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iLg-CZ-8O4" userLabel="BMI">
-                                        <frame key="frameInset" minX="235" minY="283" width="100" height="100"/>
+                                        <rect key="frame" x="235" y="283" width="100" height="100"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="weight-kilogram" translatesAutoresizingMaskIntoConstraints="NO" id="FWF-eT-0T3">
-                                                <frame key="frameInset" minX="25" minY="25" width="50" height="50"/>
+                                                <rect key="frame" x="25" y="25" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="BqW-OZ-qLs"/>
                                                     <constraint firstAttribute="height" constant="40" id="b15-5S-uRI"/>
@@ -1116,7 +1137,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </connections>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BMI Percentile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pF-8V-lfZ">
-                                        <frame key="frameInset" minX="225" minY="391" width="120" height="21"/>
+                                        <rect key="frame" x="225" y="391" width="120" height="21"/>
                                         <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1208,7 +1229,7 @@ The authors of each chapter have ensured that the information is current and cor
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FIj-tb-arU" customClass="animationScheme">
-                                <frame key="frameInset" minX="262" minY="515" width="77" height="77"/>
+                                <rect key="frame" x="262" y="515" width="77" height="77"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -1220,7 +1241,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="KG" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QIM-zk-e6F">
-                                <frame key="frameInset" minX="200" minY="104" width="200" height="60"/>
+                                <rect key="frame" x="200" y="104" width="200" height="60"/>
                                 <color key="backgroundColor" red="0.2122483999" green="0.57065624000000004" blue="0.94941872360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="BR1-OV-6vv"/>
@@ -1230,17 +1251,17 @@ The authors of each chapter have ensured that the information is current and cor
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="inj" translatesAutoresizingMaskIntoConstraints="NO" id="0xj-b7-tk7">
-                                <frame key="frameInset" minX="288" minY="45" width="25" height="25"/>
+                                <rect key="frame" x="288" y="45" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="kDf-cV-kAa"/>
                                     <constraint firstAttribute="height" constant="25" id="z6m-vY-9vh"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tbC-Zp-uPk" userLabel="Res_view">
-                                <frame key="frameInset" minX="35" minY="78" width="531" height="468"/>
+                                <rect key="frame" x="35" y="78" width="531" height="468"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdi-qP-LOq">
-                                        <frame key="frameInset" minX="195" minY="205" width="141" height="48"/>
+                                        <rect key="frame" x="195" y="205" width="141" height="48"/>
                                         <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="28"/>
                                         <state key="normal" title="View" image="ic_list_white">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1250,7 +1271,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hup-hy-t6J">
-                                        <frame key="frameInset" minX="195" minY="268" width="141" height="48"/>
+                                        <rect key="frame" x="195" y="268" width="141" height="48"/>
                                         <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="28"/>
                                         <state key="normal" title="Send" image="ic_email_white">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1269,13 +1290,14 @@ The authors of each chapter have ensured that the information is current and cor
                                 </constraints>
                             </view>
                             <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VZb-4I-Uly">
-                                <frame key="frameInset" minX="250" minY="60" width="100" height="100"/>
+                                <rect key="frame" x="250" y="60" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="VZb-4I-Uly" secondAttribute="height" multiplier="1:1" id="Hea-EK-y74"/>
                                 </constraints>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0d-vk-NVu">
+                                <rect key="frame" x="16" y="41" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="fDd-sV-xqn"/>
                                     <constraint firstAttribute="height" constant="30" id="yIV-nC-pNy"/>
@@ -1339,128 +1361,8 @@ The authors of each chapter have ensured that the information is current and cor
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KUb-IV-CTK" userLabel="BMI">
-                                <frame key="frameInset" minX="142" minY="205" width="316" height="190"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gtZ-SQ-UhB">
-                                        <frame key="frameInset" minX="38" minY="90" width="240" height="10"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="10" id="TCV-9v-i7x"/>
-                                        </constraints>
-                                    </view>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="KG" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="g6g-cr-N8R">
-                                        <frame key="frameInset" minX="103" minY="15" width="110" height="70"/>
-                                        <color key="backgroundColor" red="0.2122483999" green="0.57065624000000004" blue="0.94941872360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="ZgL-gl-onC"/>
-                                            <constraint firstAttribute="width" constant="100" id="bLC-kL-nea"/>
-                                        </constraints>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="40"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CM" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="JYH-Mq-PcP">
-                                        <frame key="frameInset" minX="103" minY="108" width="110" height="70"/>
-                                        <color key="backgroundColor" red="0.2122483999" green="0.57065624000000004" blue="0.94941872360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="KDy-w3-aTM"/>
-                                            <constraint firstAttribute="width" constant="100" id="KJG-d2-dcX"/>
-                                        </constraints>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="40"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Tv-f4-77a">
-                                        <frame key="frameInset" minX="221" minY="106" width="22" height="29"/>
-                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="20"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="weight-kilogram" translatesAutoresizingMaskIntoConstraints="NO" id="HuG-rL-cJ3">
-                                        <frame key="frameInset" minX="59" minY="49" width="36" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="A42-jL-BwZ"/>
-                                            <constraint firstAttribute="width" constant="36" id="G5q-gf-GkU"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ruler" translatesAutoresizingMaskIntoConstraints="NO" id="ZiG-3n-dIq">
-                                        <frame key="frameInset" minX="59" minY="105" width="36" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="Kov-Dy-Rsx"/>
-                                            <constraint firstAttribute="width" constant="36" id="tae-Dl-1Ng"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="JYH-Mq-PcP" firstAttribute="top" secondItem="gtZ-SQ-UhB" secondAttribute="bottom" constant="8" id="Gdm-0i-JDd"/>
-                                    <constraint firstItem="2Tv-f4-77a" firstAttribute="leading" secondItem="JYH-Mq-PcP" secondAttribute="trailing" constant="8" id="NLs-fK-xB5"/>
-                                    <constraint firstItem="gtZ-SQ-UhB" firstAttribute="centerY" secondItem="KUb-IV-CTK" secondAttribute="centerY" id="RU2-CZ-WRz"/>
-                                    <constraint firstItem="ZiG-3n-dIq" firstAttribute="centerY" secondItem="JYH-Mq-PcP" secondAttribute="centerY" id="Ve6-PH-2Lg"/>
-                                    <constraint firstItem="gtZ-SQ-UhB" firstAttribute="centerX" secondItem="KUb-IV-CTK" secondAttribute="centerX" id="ZEU-dn-BZn"/>
-                                    <constraint firstItem="JYH-Mq-PcP" firstAttribute="leading" secondItem="ZiG-3n-dIq" secondAttribute="trailing" constant="8" id="b9U-pG-YWk"/>
-                                    <constraint firstItem="JYH-Mq-PcP" firstAttribute="centerX" secondItem="gtZ-SQ-UhB" secondAttribute="centerX" id="dXQ-Tf-4ez"/>
-                                    <constraint firstItem="g6g-cr-N8R" firstAttribute="centerX" secondItem="gtZ-SQ-UhB" secondAttribute="centerX" id="hCF-Tz-EXf"/>
-                                    <constraint firstItem="2Tv-f4-77a" firstAttribute="top" secondItem="gtZ-SQ-UhB" secondAttribute="bottom" constant="6" id="laG-rA-Q7X"/>
-                                    <constraint firstItem="HuG-rL-cJ3" firstAttribute="centerY" secondItem="g6g-cr-N8R" secondAttribute="centerY" id="s0d-P7-8vH"/>
-                                    <constraint firstItem="gtZ-SQ-UhB" firstAttribute="top" secondItem="g6g-cr-N8R" secondAttribute="bottom" constant="8" id="xDd-aW-ahT"/>
-                                    <constraint firstItem="g6g-cr-N8R" firstAttribute="leading" secondItem="HuG-rL-cJ3" secondAttribute="trailing" constant="8" id="ytH-z7-CoX"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZrG-5P-uvy" customClass="animationScheme">
-                                <frame key="frameInset" minX="262" minY="503" width="77" height="77"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="77" id="Abe-vs-col"/>
-                                    <constraint firstAttribute="height" constant="77" id="L7F-cv-KjJ"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="hHE-bo-zy1" appends="YES" id="8hd-o6-e3T"/>
-                                </connections>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKU-BQ-67q">
-                                <frame key="frameInset" minX="186" minY="28" width="229" height="39"/>
-                                <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="23"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n1Z-kd-mMh" userLabel="2">
-                                <frame key="frameInset" minX="180" minY="210" width="358" height="302"/>
-                                <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="L4r-63-DJU">
-                                        <frame key="frameInset" minX="100" minY="90" width="158" height="101"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="c1t-3S-Bb4"/>
-                                        </constraints>
-                                        <segments>
-                                            <segment title="" image="gender-male"/>
-                                            <segment title="" image="gender-female"/>
-                                        </segments>
-                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <action selector="genderSegment:" destination="JO7-qn-ehO" eventType="valueChanged" id="BjP-r9-9I2"/>
-                                        </connections>
-                                    </segmentedControl>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="NQ1-rp-zPC">
-                                        <frame key="frameInset" minX="124" minY="217" width="110" height="70"/>
-                                        <color key="backgroundColor" red="0.2122483999" green="0.57065624000000004" blue="0.94941872360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="Kdy-q8-DCA"/>
-                                            <constraint firstAttribute="height" constant="70" id="z9i-4l-efr"/>
-                                        </constraints>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="40"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="NQ1-rp-zPC" firstAttribute="top" secondItem="L4r-63-DJU" secondAttribute="bottom" constant="50" id="1SP-BI-oWb"/>
-                                    <constraint firstItem="NQ1-rp-zPC" firstAttribute="centerX" secondItem="n1Z-kd-mMh" secondAttribute="centerX" id="Fga-ma-rda"/>
-                                    <constraint firstItem="L4r-63-DJU" firstAttribute="centerX" secondItem="n1Z-kd-mMh" secondAttribute="centerX" id="vPb-cA-vjN"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEh-Vq-kAW">
+                                <rect key="frame" x="16" y="34" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="TXU-oF-JS5"/>
                                     <constraint firstAttribute="height" constant="30" id="lhA-Sp-TGp"/>
@@ -1470,35 +1372,54 @@ The authors of each chapter have ensured that the information is current and cor
                                     <action selector="back:" destination="JO7-qn-ehO" eventType="touchUpInside" id="Uvt-DR-HfH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKU-BQ-67q">
+                                <rect key="frame" x="73" y="34" width="229" height="39"/>
+                                <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0nQ-mS-Phb">
+                                <rect key="frame" x="139" y="318" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="5tR-DG-agv"/>
+                                    <constraint firstAttribute="width" constant="150" id="edN-I7-Igb"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="36"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ya0-VJ-Ukn">
+                                <rect key="frame" x="136" y="583" width="102" height="48"/>
+                                <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="23"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="done:" destination="JO7-qn-ehO" eventType="touchUpInside" id="PGk-hl-7rx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.057992704210000003" green="0.45015302299999999" blue="0.77763044830000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="XEh-Vq-kAW" firstAttribute="leading" secondItem="FcD-0Y-O41" secondAttribute="leadingMargin" id="2Cw-3H-1vV"/>
-                            <constraint firstItem="kd3-ZY-wVz" firstAttribute="top" secondItem="ZrG-5P-uvy" secondAttribute="bottom" constant="20" id="EWi-fW-tLe"/>
-                            <constraint firstItem="n1Z-kd-mMh" firstAttribute="centerY" secondItem="FcD-0Y-O41" secondAttribute="centerY" id="Ifv-CB-iBd"/>
-                            <constraint firstItem="ZrG-5P-uvy" firstAttribute="centerX" secondItem="FcD-0Y-O41" secondAttribute="centerX" id="Lls-Fi-wmB"/>
-                            <constraint firstItem="KUb-IV-CTK" firstAttribute="centerY" secondItem="FcD-0Y-O41" secondAttribute="centerY" id="NhY-z4-jzQ"/>
-                            <constraint firstItem="kKU-BQ-67q" firstAttribute="centerX" secondItem="FcD-0Y-O41" secondAttribute="centerX" id="Vde-jo-8x8"/>
-                            <constraint firstItem="KUb-IV-CTK" firstAttribute="centerX" secondItem="FcD-0Y-O41" secondAttribute="centerX" id="X6w-vA-1Sh"/>
-                            <constraint firstItem="n1Z-kd-mMh" firstAttribute="centerX" secondItem="FcD-0Y-O41" secondAttribute="centerX" id="hVi-o1-bg7"/>
-                            <constraint firstItem="kKU-BQ-67q" firstAttribute="top" secondItem="sDb-dT-hnW" secondAttribute="bottom" constant="20" id="wjp-eJ-gyv"/>
-                            <constraint firstItem="XEh-Vq-kAW" firstAttribute="top" secondItem="sDb-dT-hnW" secondAttribute="bottom" constant="14" id="zDl-CC-vIn"/>
+                            <constraint firstItem="kKU-BQ-67q" firstAttribute="top" secondItem="sDb-dT-hnW" secondAttribute="bottom" constant="14" id="7WD-3G-ZAW"/>
+                            <constraint firstItem="kKU-BQ-67q" firstAttribute="centerX" secondItem="FcD-0Y-O41" secondAttribute="centerX" id="8Z0-id-oBJ"/>
+                            <constraint firstItem="ya0-VJ-Ukn" firstAttribute="centerX" secondItem="FcD-0Y-O41" secondAttribute="centerX" id="BZn-LM-svu"/>
+                            <constraint firstItem="XEh-Vq-kAW" firstAttribute="leading" secondItem="FcD-0Y-O41" secondAttribute="leadingMargin" id="HtI-zN-ucE"/>
+                            <constraint firstItem="0nQ-mS-Phb" firstAttribute="centerY" secondItem="FcD-0Y-O41" secondAttribute="centerY" id="J2b-Ze-sp5"/>
+                            <constraint firstItem="XEh-Vq-kAW" firstAttribute="top" secondItem="sDb-dT-hnW" secondAttribute="bottom" constant="14" id="OlZ-3E-FF6"/>
+                            <constraint firstItem="0nQ-mS-Phb" firstAttribute="centerX" secondItem="FcD-0Y-O41" secondAttribute="centerX" id="anr-zB-864"/>
+                            <constraint firstItem="kd3-ZY-wVz" firstAttribute="top" secondItem="ya0-VJ-Ukn" secondAttribute="bottom" constant="36" id="dLQ-eu-cgP"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="ORx-FW-Rf7" appends="YES" id="d08-M5-C05"/>
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="GenderView" destination="n1Z-kd-mMh" id="NMC-7S-0sX"/>
-                        <outlet property="NextButton" destination="ZrG-5P-uvy" id="2OB-cd-y9A"/>
-                        <outlet property="ageField" destination="NQ1-rp-zPC" id="lPv-Sc-Sub"/>
                         <outlet property="backB" destination="XEh-Vq-kAW" id="3mZ-w9-oHr"/>
-                        <outlet property="bmiView" destination="KUb-IV-CTK" id="acB-uj-1i3"/>
-                        <outlet property="genderSegment" destination="L4r-63-DJU" id="wFO-Qb-th4"/>
+                        <outlet property="doneB" destination="ya0-VJ-Ukn" id="WIe-X3-vMG"/>
                         <outlet property="header" destination="kKU-BQ-67q" id="vK1-EO-PlE"/>
-                        <outlet property="height" destination="JYH-Mq-PcP" id="ytK-GF-jft"/>
-                        <outlet property="weight" destination="g6g-cr-N8R" id="8vg-Tb-nRS"/>
+                        <outlet property="textField" destination="0nQ-mS-Phb" id="Q3m-J8-KWe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UF7-U2-Ioj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1513,7 +1434,7 @@ The authors of each chapter have ensured that the information is current and cor
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1842" y="1027"/>
+            <point key="canvasLocation" x="1840.8" y="1026.8365817091455"/>
         </scene>
         <!--Settings-->
         <scene sceneID="dLh-Bu-yoe">
@@ -1528,21 +1449,22 @@ The authors of each chapter have ensured that the information is current and cor
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ACf-1R-5Fs" userLabel="bottom bar">
-                                <frame key="frameInset" minY="559" width="383" height="41"/>
+                                <rect key="frame" x="0.0" y="559" width="383" height="41"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2za-Ee-6he" userLabel="ref">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="41"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_info_white" translatesAutoresizingMaskIntoConstraints="NO" id="Qq9-lZ-uiV">
-                                                <frame key="frameInset" minX="61" minY="2" width="26" height="26"/>
+                                                <rect key="frame" x="61" y="2" width="26" height="26"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="REF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnr-dg-Exn">
-                                                <frame key="frameInset" minX="60" minY="26" width="28" height="13"/>
+                                                <rect key="frame" x="60" y="26" width="28" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8q-oj-PbR">
-                                                <frame key="frameInset" width="149" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="41"/>
                                                 <connections>
                                                     <action selector="ref:" destination="y57-F7-K6a" eventType="touchUpInside" id="YfV-q9-Ujx"/>
                                                     <action selector="refButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IVj-z8-NSJ"/>
@@ -1564,18 +1486,19 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6b3-yC-7C5" userLabel="calc">
+                                        <rect key="frame" x="96" y="0.0" width="95" height="41"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_poll_white" translatesAutoresizingMaskIntoConstraints="NO" id="smw-sV-dkk">
-                                                <frame key="frameInset" minX="61" minY="2" width="26" height="26"/>
+                                                <rect key="frame" x="61" y="2" width="26" height="26"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CALC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nd-kV-QrS">
-                                                <frame key="frameInset" minX="57" minY="26" width="34" height="13"/>
+                                                <rect key="frame" x="57" y="26" width="34" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdK-Vc-6AP">
-                                                <frame key="frameInset" minX="1" width="149" height="41"/>
+                                                <rect key="frame" x="1" y="0.0" width="149" height="41"/>
                                                 <connections>
                                                     <action selector="calc:" destination="y57-F7-K6a" eventType="touchUpInside" id="x6Y-dO-zin"/>
                                                     <action selector="calcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cor-3y-vhV"/>
@@ -1597,18 +1520,19 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tkr-0e-h9y" userLabel="list">
+                                        <rect key="frame" x="192" y="0.0" width="95" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FAV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efd-Yl-N5E">
-                                                <frame key="frameInset" minX="56" minY="26" width="34" height="13"/>
+                                                <rect key="frame" x="56" y="26" width="34" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_favorite_white" translatesAutoresizingMaskIntoConstraints="NO" id="JlV-mb-g1u">
-                                                <frame key="frameInset" minX="60" minY="2" width="26" height="26"/>
+                                                <rect key="frame" x="60" y="2" width="26" height="26"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GI-ae-ucA">
-                                                <frame key="frameInset" width="149" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="41"/>
                                                 <connections>
                                                     <action selector="fav:" destination="y57-F7-K6a" eventType="touchUpInside" id="7p7-IA-Li6"/>
                                                     <action selector="listButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="55g-X2-U7k"/>
@@ -1630,22 +1554,23 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XO0-Xn-vPt" userLabel="settings">
+                                        <rect key="frame" x="288" y="0.0" width="95" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zA0-Jo-zWC">
-                                                <frame key="frameInset" minX="56" minY="26" width="34" height="13"/>
+                                                <rect key="frame" x="56" y="26" width="34" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_settings_white" translatesAutoresizingMaskIntoConstraints="NO" id="AKt-jN-pNt">
-                                                <frame key="frameInset" minX="60" minY="2" width="26" height="26"/>
+                                                <rect key="frame" x="60" y="2" width="26" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="26" id="YDh-hO-hBA"/>
                                                     <constraint firstAttribute="height" constant="26" id="m4Z-Bk-2a2"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fa4-fm-gth">
-                                                <frame key="frameInset" width="149" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="41"/>
                                                 <connections>
                                                     <action selector="settings:" destination="y57-F7-K6a" eventType="touchUpInside" id="wSv-I9-mEk"/>
                                                     <action selector="settingsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z6V-Ke-580"/>
@@ -1672,18 +1597,20 @@ The authors of each chapter have ensured that the information is current and cor
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zeg-OV-17E" userLabel="topBar">
-                                <frame key="frameInset" minY="20" width="600" height="105"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="105"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XOw-tl-2H5">
-                                        <frame key="frameInset" minX="230" minY="38" width="126" height="50"/>
+                                        <rect key="frame" x="230" y="38" width="126" height="50"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_settings_white" translatesAutoresizingMaskIntoConstraints="NO" id="1q8-N3-nMK">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="3E7-5p-pxk"/>
                                                     <constraint firstAttribute="width" constant="30" id="Ih3-sa-MDV"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ob-rI-EuQ">
+                                                <rect key="frame" x="35" y="0.0" width="91" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="nz0-8u-OiM"/>
                                                 </constraints>
@@ -1697,7 +1624,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMV-x1-G1b">
-                                        <frame key="frameInset" minX="550" minY="51" width="24" height="24"/>
+                                        <rect key="frame" x="550" y="51" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="YpQ-sA-p2o"/>
                                             <constraint firstAttribute="width" constant="30" id="pYq-IM-QZp"/>
@@ -1709,7 +1636,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jU-fV-F6Q">
-                                        <frame key="frameInset" minX="8" minY="38" width="50" height="50"/>
+                                        <rect key="frame" x="8" y="38" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="2c5-bn-dLD"/>
                                             <constraint firstAttribute="height" constant="30" id="DsH-by-AO8"/>
@@ -1732,18 +1659,20 @@ The authors of each chapter have ensured that the information is current and cor
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dYQ-Fc-1iw" userLabel="secuirtyView">
-                                <frame key="frameInset" minX="20" minY="284" width="560" height="100"/>
+                                <rect key="frame" x="20" y="284" width="560" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xa4-FK-y3e">
-                                        <frame key="frameInset" minX="185" minY="70" width="191" height="40"/>
+                                        <rect key="frame" x="185" y="70" width="191" height="40"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_security_white" translatesAutoresizingMaskIntoConstraints="NO" id="TrS-7x-QvY">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="2rL-AQ-YeG"/>
                                                     <constraint firstAttribute="height" constant="40" id="4tt-Mc-xIB"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authorisation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJt-zD-OeA">
+                                                <rect key="frame" x="40" y="0.0" width="151" height="40"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="26"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1763,17 +1692,19 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0g-Ri-zI5" userLabel="start screen">
-                                <frame key="frameInset" minX="20" minY="406" width="560" height="100"/>
+                                <rect key="frame" x="20" y="406" width="560" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rAM-sA-LIp">
-                                        <frame key="frameInset" minX="194" minY="17" width="137" height="65"/>
+                                        <rect key="frame" x="194" y="17" width="137" height="65"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start-up tab" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKI-Kh-dEu">
+                                                <rect key="frame" x="0.0" y="0.0" width="137" height="32"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="26"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9Wb-7g-Wez">
+                                                <rect key="frame" x="0.0" y="37" width="137" height="29"/>
                                                 <segments>
                                                     <segment title="" image="ic_info_white"/>
                                                     <segment title="" image="ic_poll_white"/>
@@ -1796,7 +1727,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhl-eW-leH">
-                                <frame key="frameInset" minX="231" minY="514" width="138" height="31"/>
+                                <rect key="frame" x="231" y="514" width="138" height="31"/>
                                 <fontDescription key="fontDescription" name="Cabin-MediumItalic" family="Cabin" pointSize="21"/>
                                 <state key="normal" title="FEEDBACK" image="ic_info_outline_white">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1806,16 +1737,16 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xdf-E4-eoH" userLabel="topPadding">
-                                <frame key="frameInset" width="600" height="20"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="hZ8-pk-ui3"/>
                                 </constraints>
                             </view>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KQk-zV-Zhc" userLabel="blur">
-                                <frame key="frameInset" minX="-600" width="600" height="600"/>
+                                <rect key="frame" x="-600" y="0.0" width="600" height="600"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uJM-e6-dss">
-                                    <frame key="frameInset"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="dark"/>
@@ -1824,15 +1755,16 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </visualEffectView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bvv-FA-SW7" userLabel="colorSelected">
-                                <frame key="frameInset" minX="20" minY="178" width="560" height="82"/>
+                                <rect key="frame" x="20" y="178" width="560" height="82"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NYg-rk-P8x" userLabel="COLOROption">
-                                        <frame key="frameInset" minX="157" minY="16" width="1210" height="50"/>
+                                        <rect key="frame" x="157" y="16" width="1227" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cf9-PC-wuP" userLabel="PrimaryColor">
+                                                <rect key="frame" x="0.0" y="0.0" width="1025" height="50"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsk-Lu-eCf" userLabel="SecondaryColor">
-                                                        <frame key="frameInset" minX="14" minY="13" width="23" height="23"/>
+                                                        <rect key="frame" x="14" y="13" width="23" height="23"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" red="0.2122483999" green="0.57065624000000004" blue="0.94941872360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
@@ -1844,6 +1776,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Color Accent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3b-Qx-Okr">
+                                                <rect key="frame" x="1035" y="0.0" width="192" height="50"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="23"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1866,10 +1799,10 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbK-3b-vef" userLabel="color1">
-                                <frame key="frameInset" minX="210" minY="268" width="50" height="50"/>
+                                <rect key="frame" x="210" y="268" width="50" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsC-4I-Pqx" userLabel="SecondaryColor">
-                                        <frame key="frameInset" minX="14" minY="13" width="23" height="23"/>
+                                        <rect key="frame" x="14" y="13" width="23" height="23"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.2122483999" green="0.57065624000000004" blue="0.94941872360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
@@ -1885,10 +1818,10 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EhU-zq-GqQ" userLabel="color2">
-                                <frame key="frameInset" minX="276" minY="268" width="50" height="50"/>
+                                <rect key="frame" x="276" y="268" width="50" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P52-Yc-5kB" userLabel="SecondaryColor">
-                                        <frame key="frameInset" minX="14" minY="13" width="23" height="23"/>
+                                        <rect key="frame" x="14" y="13" width="23" height="23"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.2122483999" green="0.57065624000000004" blue="0.94941872360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
@@ -1904,10 +1837,10 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OLM-VY-es2" userLabel="color3">
-                                <frame key="frameInset" minX="346" minY="268" width="50" height="50"/>
+                                <rect key="frame" x="346" y="268" width="50" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pr-cU-f0l" userLabel="SecondaryColor">
-                                        <frame key="frameInset" minX="14" minY="13" width="23" height="23"/>
+                                        <rect key="frame" x="14" y="13" width="23" height="23"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.2122483999" green="0.57065624000000004" blue="0.94941872360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
@@ -1923,7 +1856,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="VER 1.4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaQ-cN-VgG">
-                                <frame key="frameInset" minX="501" minY="542" width="91" height="18"/>
+                                <rect key="frame" x="501" y="542" width="91" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2044,7 +1977,7 @@ The authors of each chapter have ensured that the information is current and cor
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFI-0Q-h4f">
-                            <frame key="frameInset" minX="100" minY="129" width="50" height="50"/>
+                            <rect key="frame" x="100" y="129" width="50" height="50"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="2W8-ud-fb3"/>
@@ -2059,7 +1992,7 @@ The authors of each chapter have ensured that the information is current and cor
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRR-IM-MsS">
-                            <frame key="frameInset" minX="38" minY="129" width="50" height="50"/>
+                            <rect key="frame" x="38" y="129" width="50" height="50"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
                             <state key="normal" title="4">
@@ -2070,7 +2003,7 @@ The authors of each chapter have ensured that the information is current and cor
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXM-QW-MqG">
-                            <frame key="frameInset" minX="162" minY="129" width="50" height="50"/>
+                            <rect key="frame" x="162" y="129" width="50" height="50"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
                             <state key="normal" title="6">
@@ -2081,7 +2014,7 @@ The authors of each chapter have ensured that the information is current and cor
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2w-7K-1Mh">
-                            <frame key="frameInset" minX="100" minY="187" width="50" height="50"/>
+                            <rect key="frame" x="100" y="187" width="50" height="50"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="Yhz-5s-aFf"/>
@@ -2096,7 +2029,7 @@ The authors of each chapter have ensured that the information is current and cor
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6X-cu-td0">
-                            <frame key="frameInset" minX="38" minY="187" width="50" height="50"/>
+                            <rect key="frame" x="38" y="187" width="50" height="50"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
                             <state key="normal" title="7">
@@ -2107,7 +2040,7 @@ The authors of each chapter have ensured that the information is current and cor
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSs-xQ-HtS">
-                            <frame key="frameInset" minX="162" minY="187" width="50" height="50"/>
+                            <rect key="frame" x="162" y="187" width="50" height="50"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
                             <state key="normal" title="9">
@@ -2118,7 +2051,7 @@ The authors of each chapter have ensured that the information is current and cor
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhJ-RR-5rM">
-                            <frame key="frameInset" minX="100" minY="71" width="50" height="50"/>
+                            <rect key="frame" x="100" y="71" width="50" height="50"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="3bs-ml-wYD"/>
@@ -2133,7 +2066,7 @@ The authors of each chapter have ensured that the information is current and cor
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NU1-Be-gGj">
-                            <frame key="frameInset" minX="38" minY="71" width="50" height="50"/>
+                            <rect key="frame" x="38" y="71" width="50" height="50"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
                             <state key="normal" title="1">
@@ -2144,7 +2077,7 @@ The authors of each chapter have ensured that the information is current and cor
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1e-M9-yB4">
-                            <frame key="frameInset" minX="162" minY="71" width="50" height="50"/>
+                            <rect key="frame" x="162" y="71" width="50" height="50"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
                             <state key="normal" title="3">
@@ -2155,7 +2088,7 @@ The authors of each chapter have ensured that the information is current and cor
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKg-Le-hMr">
-                            <frame key="frameInset" minX="100" minY="245" width="50" height="50"/>
+                            <rect key="frame" x="100" y="245" width="50" height="50"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="4bL-Es-FDJ"/>
@@ -2170,13 +2103,13 @@ The authors of each chapter have ensured that the information is current and cor
                             </connections>
                         </button>
                         <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="- - - -" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TUt-ed-BSw">
-                            <frame key="frameInset" minX="38" minY="33" width="174" height="30"/>
+                            <rect key="frame" x="38" y="33" width="174" height="30"/>
                             <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="34"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Enter PIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbb-QF-H39">
-                            <frame key="frameInset" minX="89" minY="8" width="72" height="21"/>
+                            <rect key="frame" x="89" y="8" width="72" height="21"/>
                             <fontDescription key="fontDescription" name="CabinCondensed-Medium" family="Cabin Condensed" pointSize="16"/>
                             <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
@@ -2241,20 +2174,20 @@ The authors of each chapter have ensured that the information is current and cor
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="AUTHORISED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fl1-Bl-8Hl">
-                                <frame key="frameInset" minX="214" minY="281" width="172" height="38"/>
+                                <rect key="frame" x="214" y="281" width="172" height="38"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="unlockPng" translatesAutoresizingMaskIntoConstraints="NO" id="buZ-mu-tl3">
-                                <frame key="frameInset" minX="260" minY="184" width="80" height="80"/>
+                                <rect key="frame" x="260" y="184" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="hom-Xe-EH2"/>
                                     <constraint firstAttribute="height" constant="80" id="mfZ-u1-9bD"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aT-Cb-KPd">
-                                <frame key="frameInset" minX="275" minY="530" width="50" height="50"/>
+                                <rect key="frame" x="275" y="530" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="JHj-Qi-Pkm"/>
                                     <constraint firstAttribute="height" constant="30" id="h6g-o2-zBp"/>
@@ -2296,10 +2229,10 @@ The authors of each chapter have ensured that the information is current and cor
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RSZ-o5-qRf" userLabel="topBar">
-                                <frame key="frameInset" width="375" height="105"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKP-9t-qR2">
-                                        <frame key="frameInset" minX="19" minY="28" width="50" height="50"/>
+                                        <rect key="frame" x="19" y="28" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="7K0-cB-clV"/>
                                             <constraint firstAttribute="width" constant="30" id="92m-7x-RwB"/>
@@ -2312,7 +2245,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFx-5w-MgV">
-                                        <frame key="frameInset" minX="113" minY="28" width="149" height="50"/>
+                                        <rect key="frame" x="113" y="28" width="149" height="50"/>
                                         <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="30"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2328,20 +2261,21 @@ The authors of each chapter have ensured that the information is current and cor
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="KKH" translatesAutoresizingMaskIntoConstraints="NO" id="m9b-Dz-Ec4">
-                                <frame key="frameInset" minX="84" minY="131" width="206" height="109"/>
+                                <rect key="frame" x="84" y="131" width="206" height="109"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="206" id="Pzm-vx-5AP"/>
                                     <constraint firstAttribute="height" constant="109" id="mto-zm-pzD"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inc" translatesAutoresizingMaskIntoConstraints="NO" id="fO7-le-nUn">
+                                <rect key="frame" x="163" y="620" width="50" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="byH-R7-Cxu"/>
                                     <constraint firstAttribute="width" constant="50" id="wON-n8-wxn"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6Z-2w-paz">
-                                <frame key="frameInset" minX="42" minY="270" maxX="42" maxY="80"/>
+                                <rect key="frame" x="42" y="270" width="0.0" height="0.0"/>
                                 <string key="text">SPECIAL THANKS TO THE FOLLOWING FOR THE SUCCESSFUL CREATION OF THIS APP
  
 IT SUPPORT 
@@ -2390,8 +2324,6 @@ Ms Siti Nur Diyanah (Associate Executive, KKH Department of Paediatric Anaesthes
     </scenes>
     <resources>
         <image name="KKH" width="1920" height="1080"/>
-        <image name="gender-female" width="48" height="48"/>
-        <image name="gender-male" width="48" height="48"/>
         <image name="ic_email_white" width="24" height="24"/>
         <image name="ic_favorite_white" width="24" height="24"/>
         <image name="ic_highlight_off_white_24dp" width="96" height="96"/>
@@ -2404,13 +2336,12 @@ Ms Siti Nur Diyanah (Associate Executive, KKH Department of Paediatric Anaesthes
         <image name="ic_settings_white" width="24" height="24"/>
         <image name="inc" width="297" height="170"/>
         <image name="inj" width="512" height="512"/>
-        <image name="ruler" width="48" height="48"/>
         <image name="splash screen.png" width="750" height="1334"/>
         <image name="unlockPng" width="600" height="579"/>
         <image name="weight-kilogram" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="DjC-hh-1nd"/>
-        <segue reference="O8f-Ln-J6K"/>
+        <segue reference="iq2-wk-elH"/>
     </inferredMetricsTieBreakers>
 </document>

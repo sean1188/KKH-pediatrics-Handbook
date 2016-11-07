@@ -18,4 +18,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *doneButton;
 - (IBAction)done:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *gestN;
+@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *gestB;
+
+
 @end

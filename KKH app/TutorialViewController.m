@@ -20,6 +20,7 @@
 int count;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _gestB.enabled = YES; _gestN.enabled = YES;
     _doneButton.alpha = 0;
     count = 1;
     _imgView.layer.shadowOpacity = 0.4;
@@ -30,6 +31,7 @@ int count;
 
 - (IBAction)next:(id)sender {
     if (count < 7) {
+        _gestB.enabled = NO; _gestN.enabled = NO;
         count ++;
         _guideLabel.alpha = 0;
         CGRect initFrame = _imgView.frame;
@@ -42,6 +44,7 @@ int count;
                 _imgView.frame = initFrame;
  
             } completion:^(BOOL s ){
+                _gestB.enabled = YES; _gestN.enabled = YES;
                 if (count == 7) {
                     _doneButton.alpha = 1;
                 }
@@ -53,6 +56,7 @@ int count;
 
 - (IBAction)back:(id)sender {
     if (count > 1) {
+        _gestB.enabled = NO; _gestN.enabled = NO;
         _doneButton.alpha = 0;
         count = count - 1;
         CGRect initFrame = _imgView.frame;
@@ -63,6 +67,8 @@ int count;
             _imgView.frame = CGRectMake( -_imgView.frame.size.width - 200, 0, _imgView.frame.size.width, _imgView.frame.size.height);
             [UIView animateWithDuration:0.3 animations:^{
                 _imgView.frame = initFrame;
+            }completion:^(BOOL lmao){
+                _gestB.enabled = YES; _gestN.enabled = YES;
             }];
         }];
     }
