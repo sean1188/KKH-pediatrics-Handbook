@@ -23,4 +23,12 @@
 @property (strong, nonatomic) IBOutlet UIButton *doneB;
 - (IBAction)done:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UISegmentedControl *genderSegment;
+
+@property (strong, nonatomic) IBOutlet UILabel *bmiLabel;
+//disp result
+@property (strong, nonatomic) IBOutlet UILabel *res;
+//header
+@property (strong, nonatomic) IBOutlet UILabel *resH;
+
 @end

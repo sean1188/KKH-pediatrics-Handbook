@@ -1194,7 +1194,7 @@ The authors of each chapter have ensured that the information is current and cor
                         <outletCollection property="primaryViews" destination="rOl-qS-2rr" id="dxh-Li-s9G"/>
                         <outletCollection property="primaryViews" destination="iLg-CZ-8O4" id="feW-yU-lHR"/>
                         <segue destination="fsS-ZA-8qs" kind="presentation" identifier="DC" modalTransitionStyle="crossDissolve" id="xBr-Pj-P14"/>
-                        <segue destination="JO7-qn-ehO" kind="presentation" identifier="BMI" id="hUY-fb-4GZ"/>
+                        <segue destination="JO7-qn-ehO" kind="presentation" identifier="BMI" modalTransitionStyle="crossDissolve" id="hUY-fb-4GZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lxf-dp-X3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1378,6 +1378,12 @@ The authors of each chapter have ensured that the information is current and cor
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BMI is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgN-Gw-t6m">
+                                <rect key="frame" x="121" y="159" width="132" height="39"/>
+                                <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0nQ-mS-Phb">
                                 <rect key="frame" x="139" y="318" width="97" height="30"/>
                                 <constraints>
@@ -1398,6 +1404,29 @@ The authors of each chapter have ensured that the information is current and cor
                                     <action selector="done:" destination="JO7-qn-ehO" eventType="touchUpInside" id="PGk-hl-7rx"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wxp-rg-bQS">
+                                <rect key="frame" x="125" y="308" width="125" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="oT0-1S-cnW"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="" image="gender-male"/>
+                                    <segment title="" image="gender-female"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX2-24-0he">
+                                <rect key="frame" x="119" y="206" width="136" height="68"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUN-KN-CCT">
+                                <rect key="frame" x="69" y="299" width="236" height="69"/>
+                                <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="32"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.057992704210000003" green="0.45015302299999999" blue="0.77763044830000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -1405,11 +1434,19 @@ The authors of each chapter have ensured that the information is current and cor
                             <constraint firstItem="kKU-BQ-67q" firstAttribute="top" secondItem="sDb-dT-hnW" secondAttribute="bottom" constant="14" id="7WD-3G-ZAW"/>
                             <constraint firstItem="kKU-BQ-67q" firstAttribute="centerX" secondItem="FcD-0Y-O41" secondAttribute="centerX" id="8Z0-id-oBJ"/>
                             <constraint firstItem="ya0-VJ-Ukn" firstAttribute="centerX" secondItem="FcD-0Y-O41" secondAttribute="centerX" id="BZn-LM-svu"/>
+                            <constraint firstItem="eX2-24-0he" firstAttribute="top" secondItem="cgN-Gw-t6m" secondAttribute="bottom" constant="8" id="CfF-ow-9In"/>
+                            <constraint firstItem="cUN-KN-CCT" firstAttribute="centerY" secondItem="FcD-0Y-O41" secondAttribute="centerY" id="F1Q-e6-pDT"/>
+                            <constraint firstItem="wxp-rg-bQS" firstAttribute="top" secondItem="eX2-24-0he" secondAttribute="bottom" constant="34" id="H6M-GZ-qPp"/>
                             <constraint firstItem="XEh-Vq-kAW" firstAttribute="leading" secondItem="FcD-0Y-O41" secondAttribute="leadingMargin" id="HtI-zN-ucE"/>
                             <constraint firstItem="0nQ-mS-Phb" firstAttribute="centerY" secondItem="FcD-0Y-O41" secondAttribute="centerY" id="J2b-Ze-sp5"/>
                             <constraint firstItem="XEh-Vq-kAW" firstAttribute="top" secondItem="sDb-dT-hnW" secondAttribute="bottom" constant="14" id="OlZ-3E-FF6"/>
+                            <constraint firstItem="cgN-Gw-t6m" firstAttribute="centerX" secondItem="FcD-0Y-O41" secondAttribute="centerX" id="PXu-4d-Np0"/>
+                            <constraint firstItem="eX2-24-0he" firstAttribute="centerX" secondItem="FcD-0Y-O41" secondAttribute="centerX" id="VJg-xr-H0e"/>
+                            <constraint firstItem="wxp-rg-bQS" firstAttribute="centerX" secondItem="FcD-0Y-O41" secondAttribute="centerX" id="Vyp-dG-Abl"/>
+                            <constraint firstItem="cUN-KN-CCT" firstAttribute="centerX" secondItem="FcD-0Y-O41" secondAttribute="centerX" id="Xyk-YK-x6H"/>
                             <constraint firstItem="0nQ-mS-Phb" firstAttribute="centerX" secondItem="FcD-0Y-O41" secondAttribute="centerX" id="anr-zB-864"/>
                             <constraint firstItem="kd3-ZY-wVz" firstAttribute="top" secondItem="ya0-VJ-Ukn" secondAttribute="bottom" constant="36" id="dLQ-eu-cgP"/>
+                            <constraint firstItem="wxp-rg-bQS" firstAttribute="centerY" secondItem="FcD-0Y-O41" secondAttribute="centerY" id="ow0-GH-i98"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="ORx-FW-Rf7" appends="YES" id="d08-M5-C05"/>
@@ -1417,8 +1454,12 @@ The authors of each chapter have ensured that the information is current and cor
                     </view>
                     <connections>
                         <outlet property="backB" destination="XEh-Vq-kAW" id="3mZ-w9-oHr"/>
+                        <outlet property="bmiLabel" destination="eX2-24-0he" id="4qY-If-OUG"/>
                         <outlet property="doneB" destination="ya0-VJ-Ukn" id="WIe-X3-vMG"/>
+                        <outlet property="genderSegment" destination="wxp-rg-bQS" id="SGK-by-BpG"/>
                         <outlet property="header" destination="kKU-BQ-67q" id="vK1-EO-PlE"/>
+                        <outlet property="res" destination="cUN-KN-CCT" id="hoL-y8-gmQ"/>
+                        <outlet property="resH" destination="cgN-Gw-t6m" id="gKf-GL-Zdx"/>
                         <outlet property="textField" destination="0nQ-mS-Phb" id="Q3m-J8-KWe"/>
                     </connections>
                 </viewController>
@@ -1758,10 +1799,10 @@ The authors of each chapter have ensured that the information is current and cor
                                 <rect key="frame" x="20" y="178" width="560" height="82"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NYg-rk-P8x" userLabel="COLOROption">
-                                        <rect key="frame" x="157" y="16" width="1227" height="50"/>
+                                        <rect key="frame" x="157" y="16" width="1243" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cf9-PC-wuP" userLabel="PrimaryColor">
-                                                <rect key="frame" x="0.0" y="0.0" width="1025" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1041" height="50"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsk-Lu-eCf" userLabel="SecondaryColor">
                                                         <rect key="frame" x="14" y="13" width="23" height="23"/>
@@ -1776,7 +1817,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Color Accent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3b-Qx-Okr">
-                                                <rect key="frame" x="1035" y="0.0" width="192" height="50"/>
+                                                <rect key="frame" x="1051" y="0.0" width="192" height="50"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="23"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2324,6 +2365,8 @@ Ms Siti Nur Diyanah (Associate Executive, KKH Department of Paediatric Anaesthes
     </scenes>
     <resources>
         <image name="KKH" width="1920" height="1080"/>
+        <image name="gender-female" width="48" height="48"/>
+        <image name="gender-male" width="48" height="48"/>
         <image name="ic_email_white" width="24" height="24"/>
         <image name="ic_favorite_white" width="24" height="24"/>
         <image name="ic_highlight_off_white_24dp" width="96" height="96"/>

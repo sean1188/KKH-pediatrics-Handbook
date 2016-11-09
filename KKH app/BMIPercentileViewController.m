@@ -17,13 +17,14 @@
 
 UIColor *primarycolor ;
 UIColor *secondaryColor;
-int state;
-int h, w;
+int state, age_;
+float h, w;
 -(UIStatusBarStyle ) preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _genderSegment.alpha = 0; _resH.alpha = 0;
     //init color
     primarycolor =[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]]; secondaryColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]];
     [self.view setBackgroundColor:primarycolor];
@@ -68,21 +69,116 @@ CGRect initButton;
 
 }
 
-- (IBAction)back:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+
 - (IBAction)done:(id)sender {
     if (state == 0){
-        state = 1;
-        h = _textField.text.intValue;
+        //init height
+        if (_textField.text.intValue > 250) {
+            [self error:@"Please enter valid height."];
+        }
+        else{
+            state = 1;
+        h = _textField.text.floatValue;
         [_textField setText:@""];
         [_header setText:@"Enter Weight"];
         _header.adjustsFontSizeToFitWidth = YES;
-        [_textField setPlaceholder:@"KG"];
+            [_textField setPlaceholder:@"kg"];
+        }
         
     }
     else if (state == 1){
-        //send res
+        if (_textField.text.intValue > 150) {
+            [self error:@"Please enter valid weight."];
+        }
+        else{
+        //init weight
+        state = 2;
+        w = _textField.text.floatValue;
+        [_textField setText:@""];
+        [_header setText:@"Enter Age"];
+        _header.adjustsFontSizeToFitWidth = YES;
+        [_textField setPlaceholder:@"Years"];
+        }
     }
+    else if (state == 2){
+        if (_textField.text.intValue > 18) {
+            [self error:@"Please enter valid age below 18."];
+
+        }
+        else{
+            state = 3;
+            //init age
+            age_ = _textField.text.intValue;
+            NSLog(@"%@", [NSString stringWithFormat:@"%i", age_]);
+            //initwith Gender
+            [self.view endEditing:YES];
+            [_header setText:@"Select Gender"];
+            [UIView animateWithDuration:0.3 animations:^{
+                _textField.alpha = 0;
+                _genderSegment.alpha = 1;
+            } completion:^(BOOL s){
+            }];
+        }
+
+        
+    }
+    else if (state == 3 ){
+        //send result
+        state = 4;
+        bool isPMale;
+        if (_genderSegment.selectedSegmentIndex == 0) {
+            isPMale = YES;
+        }
+        else if (_genderSegment.selectedSegmentIndex == 1  ){
+            isPMale = NO;
+        }
+        float bmi = w / ((h/100)*(h/100));
+        NSLog(@"%@", [NSString stringWithFormat:@"%0.2f", bmi]);
+        [UIView animateWithDuration:0.3  animations:^{
+            _resH.alpha = 1; _genderSegment.alpha = 0;
+            [_bmiLabel setText:[NSString stringWithFormat:@"%0.2f", bmi]];
+        }];
+        if( [[_bmiManager initWithAge:age_ bmi:bmi isMale:isPMale ] range] == 1){
+            NSLog(@"Severely Underweight!");
+            [_res setText:@"Severely Underweight"];
+        }
+        else if ([[_bmiManager initWithAge:age_ bmi:bmi isMale:isPMale ] range] == 2){
+            NSLog(@"Underweight");
+            [_res setText:@"Underweight"];
+
+        }
+        else if ([[_bmiManager initWithAge:age_ bmi:bmi isMale:isPMale ] range] == 3){
+            NSLog(@"Acceptable");
+            [_res setText:@"Acceptable"];
+
+        }
+        else if ([[_bmiManager initWithAge:age_ bmi:bmi isMale:isPMale ] range] == 4){
+            NSLog(@"Overweight");
+            [_res setText:@"Overweight"];
+
+        }
+        else if ([[_bmiManager initWithAge:age_ bmi:bmi isMale:isPMale ] range] == 5){
+            NSLog(@"Severely overweight!");
+            [_res setText:@"Severely Overweight"];
+
+        }
+        else if ([[_bmiManager initWithAge:age_ bmi:bmi isMale:isPMale ] range] == 0){
+            NSLog(@"Null error");
+
+        }
+    }
+    else if (state == 4){
+        [self dismissViewControllerAnimated:YES completion:nil];
+
+    }
+}
+
+-(void)error:(NSString*)sentErr{
+    UIAlertController *a = [UIAlertController alertControllerWithTitle:@"Error" message:sentErr preferredStyle:UIAlertControllerStyleAlert];
+    [a addAction:[UIAlertAction actionWithTitle:@"okay" style:UIAlertActionStyleDefault handler:nil]];
+    [self presentViewController:a animated:YES completion:nil];
+}
+- (IBAction)back:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end
