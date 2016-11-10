@@ -133,7 +133,7 @@ bool i;
     } completion:^(BOOL s ){
         //prevent creation of other instances
         i = false;
-        double delayInSeconds = 2.0;
+        double delayInSeconds = 4.0;
         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
             [UIView animateWithDuration:0.3 animations:^{
                 _likedView.alpha = 0;

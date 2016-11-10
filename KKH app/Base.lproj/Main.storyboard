@@ -81,7 +81,7 @@
         <scene sceneID="rGG-dz-FXk">
             <objects>
                 <navigationController navigationBarHidden="YES" id="9NB-GJ-4p4" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XbE-mz-pOI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XbE-mz-pOI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -700,7 +700,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HA1-z2-Ki1" userLabel="calc">
-                                        <rect key="frame" x="97" y="0.0" width="95.5" height="41"/>
+                                        <rect key="frame" x="97" y="0.0" width="96" height="41"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_poll_white" translatesAutoresizingMaskIntoConstraints="NO" id="adf-Yh-ues">
                                                 <rect key="frame" x="61" y="2" width="26" height="26"/>
@@ -736,7 +736,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOH-8g-FLO" userLabel="fav">
-                                        <rect key="frame" x="193.5" y="0.0" width="96" height="41"/>
+                                        <rect key="frame" x="194" y="0.0" width="95" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FAV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvA-6Y-Dcf">
                                                 <rect key="frame" x="56" y="26" width="34" height="13"/>
@@ -771,7 +771,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBR-Da-Vd0" userLabel="settings">
-                                        <rect key="frame" x="290.5" y="0.0" width="95.5" height="41"/>
+                                        <rect key="frame" x="290" y="0.0" width="96" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qel-Zq-VRd">
                                                 <rect key="frame" x="56" y="26" width="34" height="13"/>
@@ -1417,7 +1417,7 @@ The authors of each chapter have ensured that the information is current and cor
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX2-24-0he">
                                 <rect key="frame" x="119" y="206" width="136" height="68"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="39"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
