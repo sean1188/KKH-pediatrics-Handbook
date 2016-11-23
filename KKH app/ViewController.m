@@ -73,6 +73,7 @@ NSMutableArray *likedObjects;
 NSMutableArray *chaptersCount;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"%@",[[[PDFManager alloc] init] chapterPaths]);
     //
     ////init number of chapters
     chaptersCount = [[NSMutableArray alloc] init];
@@ -346,7 +347,15 @@ bool didsearch;
         _tableView.alpha = 0;
         _sarchSegue.alpha = 0;
         _h1.alpha = 0; _h2.alpha = 0; _h3.alpha = 0;
-    [[NSUserDefaults standardUserDefaults] setInteger:indexPath.row +1 forKey:@"viewChpter"];
+            UITableViewCell *a = [_tableView cellForRowAtIndexPath:indexPath];
+            int c =-1;
+            for (NSString *stirng in objectsArray) {
+                c ++; if([stirng isEqualToString:a.textLabel.text]){
+                    break;
+                }
+            }
+            [[NSUserDefaults standardUserDefaults] setObject:[[[[PDFManager alloc] init] chapterPaths] objectAtIndex:c] forKey:@"viewChapter"];
+
         [UIView transitionWithView:_cardView duration:0.4 options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{} completion:^(BOOL s){
             [UIView animateWithDuration:0.2 animations:^{
                 _cardView.frame = self.view.frame;
@@ -361,7 +370,7 @@ bool didsearch;
     }
     else{
         NSUInteger index = [objectsArray indexOfObject:[tableView cellForRowAtIndexPath:indexPath].textLabel.text];
-        NSLog(@"searched index is %li", index);
+        NSLog(@"searched index is %li", (unsigned long)index);
         [[NSUserDefaults standardUserDefaults] setInteger:index +1 forKey:@"viewChpter"];
         didSendSearch = YES;
         [self performSegueWithIdentifier:@"viewChpter" sender:nil];

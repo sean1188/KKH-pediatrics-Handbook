@@ -89,32 +89,24 @@ CGRect likedViewInit;
    
     _webView.alpha = 1; _Ptz.alpha = 0;
     _webView.delegate = self;   _webView.scrollView.delegate = self;
-    NSString *inde = [NSString stringWithFormat:@"%li ",(long)[[NSUserDefaults standardUserDefaults ] integerForKey:@"viewChpter"]];
-    chpti = [[NSUserDefaults standardUserDefaults] integerForKey:@"viewChpter"]-1;
+    
+    NSString *file = [[NSUserDefaults standardUserDefaults] objectForKey:@"viewChapter"];
+    chpti = [[[file substringToIndex:4] substringFromIndex:2] intValue];
     NSLog(@"%i", chpti);
-    if([[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:chpti]] == TRUE){
+    
+    if([[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:chpti- 1]] == TRUE){
         [_favImg setImage:[UIImage imageNamed:@"ic_favorite_white"]];
         
     }
     else{
         [_favImg setImage:[UIImage imageNamed:@"ic_favorite_border_white"]];
     }
-    NSString *title = [[[PDFManager alloc] init] titleForChapter:chpti];
-    [_chotNameDisp setText:[inde stringByAppendingString:title]];
+    [_chotNameDisp setText: [[[PDFManager alloc] init] titleForChapter:chpti -1]];
 
-    NSString *fileName;
-    if ([[NSUserDefaults standardUserDefaults] integerForKey:@"viewChpter"] < 10) {
-        fileName = [NSString stringWithFormat:@"0%li-%@",(long)[[NSUserDefaults standardUserDefaults] integerForKey:@"viewChpter"],[[[PDFManager alloc] init] titleForChapter:[[NSUserDefaults standardUserDefaults] integerForKey:@"viewChpter"]- 1]];
-        NSLog(fileName);
-    }
-    else{
-        fileName = [NSString stringWithFormat:@"%li-%@",(long)[[NSUserDefaults standardUserDefaults] integerForKey:@"viewChpter"],[[[PDFManager alloc] init] titleForChapter:[[NSUserDefaults standardUserDefaults] integerForKey:@"viewChpter"] -1 ]];
-        NSLog(fileName);
-
-    }
+    NSString *fileName = [[NSUserDefaults standardUserDefaults]objectForKey:@"viewChapter" ];
     _h2.adjustsFontSizeToFitWidth = YES;
-    fileName = [fileName stringByReplacingOccurrencesOfString:@" " withString:@"_"];
-    NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:@"pdf"];
+
+    NSString *path = [[NSBundle mainBundle] pathForResource:[fileName stringByDeletingPathExtension] ofType:@"pdf"];
     NSURL *targetURL = [NSURL fileURLWithPath:path];
     NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];
     [_webView loadRequest:request];
@@ -162,16 +154,16 @@ bool i;
         [self dismissViewControllerAnimated:YES completion:nil];}
 }
 - (IBAction)favorite:(id)sender {
-    if ( [[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:chpti]] != TRUE) {
+    if ( [[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:chpti -1]] != TRUE) {
         //like
-        [[NSUserDefaults standardUserDefaults] setBool:TRUE forKey:[[[PDFManager alloc] init] titleForChapter:chpti]];
+        [[NSUserDefaults standardUserDefaults] setBool:TRUE forKey:[[[PDFManager alloc] init] titleForChapter:chpti -1]];
         [[NSUserDefaults standardUserDefaults]setInteger:_webView.scrollView.contentOffset.y forKey:[NSString stringWithFormat:@"%@ Scroll",[[[PDFManager alloc] init] titleForChapter:chpti]]];
         [_favImg setImage:[UIImage imageNamed:@"ic_favorite_white"]];
     }
-    else if ( [[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:chpti]] == TRUE){
+    else if ( [[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:chpti -1]] == TRUE){
         //unlike
-        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:[[[PDFManager alloc] init] titleForChapter:chpti]];
-        [[NSUserDefaults standardUserDefaults]setInteger:0 forKey:[[[PDFManager alloc] init] titleForChapter:chpti]];
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:[[[PDFManager alloc] init] titleForChapter:chpti-1]];
+        [[NSUserDefaults standardUserDefaults]setInteger:0 forKey:[[[PDFManager alloc] init] titleForChapter:chpti -1]];
         [_favImg setImage:[UIImage imageNamed:@"ic_favorite_border_white"]];
         
     }
