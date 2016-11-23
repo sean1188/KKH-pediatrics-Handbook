@@ -68,14 +68,34 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
     [_tableView reloadData];
     }
 }
+int likedChapterCount = 0;
+NSMutableArray *likedObjects;
+NSMutableArray *chaptersCount;
 - (void)viewDidLoad {
-    
+    [super viewDidLoad];
+    //
+    ////init number of chapters
+    chaptersCount = [[NSMutableArray alloc] init];
+    for (int i = 0; i < [[[[PDFManager alloc] init] chapterPaths]count ]; i ++) {
+        NSString *chapChar = [[[[PDFManager alloc] init]chapterPaths] objectAtIndex:i];
+        if (![chaptersCount containsObject:[chapChar substringToIndex:1]]) {
+            [chaptersCount addObject:[chapChar substringToIndex:1]];
+        }
+    }
+    //
+    likedChapterCount = 0; likedObjects = [NSMutableArray array];
+    for (int i = 0 ; i < [[[PDFManager alloc] init] numberOfChapters]; i ++) {
+        if([[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init]titleForChapter:i]] == TRUE){
+            likedChapterCount ++;
+            [likedObjects addObject:[NSNumber numberWithInt:i]];
+        }
+    }
+
     _cardView.frame = CGRectMake(_cardView.frame.origin.x, - _cardView.frame.size.height -10, _cardView.frame.size.width, _cardView.frame.size.height);
     [UIView animateWithDuration:0.4 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         _cardView.frame = CGRectMake(_cardView.frame.origin.x, _cardView.frame.origin.y + _cardView.frame.size.height +10, _cardView.frame.size.width, _cardView.frame.size.height);
     } completion:nil];
     //
-    [super viewDidLoad];
     _chapterTitle.alpha = 0;
     didsearch = NO;
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"splashed"] == YES) {
@@ -161,12 +181,11 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
         NSLog(@"%@", objectsArray);
     }
     //
-    _tableView.dataSource = self;
-    _tableView.delegate = self;
+
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return [chaptersCount count] + 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -174,9 +193,18 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
     {
         return results.count;
     }
-    else{
-    return [[[PDFManager alloc] init] numberOfChapters];
+    else if (section == 0){
+        return [likedObjects count];
+
     }
+    else{
+        int c = 0;
+        for (int i = 0; i < [[[PDFManager alloc] init] numberOfChapters]; i ++) {
+            if ([[[[[[PDFManager alloc] init] chapterPaths] objectAtIndex:i] substringToIndex:1] isEqualToString:[chaptersCount objectAtIndex:section - 1]]) {
+                c++;
+            }        }
+        return c;
+        }
 }
 
 -(NSInteger)tableView:(UITableView *)tableView
@@ -191,75 +219,127 @@ indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath
         return 0;
     }
 }
-
-- (void)tableView:(UITableView *)tableView willDisplayCell:(nonnull UITableViewCell *)cell forRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-}
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] ;
-        if ([indexPath section]==0) {
-            UILabel *index = [[UILabel alloc] initWithFrame:CGRectMake( 6, ((cell.frame.size.height/2) - ((cell.frame.size.height -5) /2 )), cell.frame.size.height -5, cell.frame.size.height -5)];
-            
-            index.font = [UIFont fontWithName:@"Cabin" size:23];index.layer.cornerRadius = 6;index.textAlignment = UITextAlignmentCenter;index.textColor = [UIColor whiteColor];index.backgroundColor = [UIColor whiteColor];index.layer.cornerRadius = 6;index.clipsToBounds = YES;index.tag = 1;
-            [cell.contentView addSubview:index];
-        }
-    }
-    UILabel *indexx = (id)[cell.contentView viewWithTag:1];
-    //1
-    indexx.text = [NSString stringWithFormat:@"%@  ", [NSString stringWithFormat:@"%li", indexPath.row +1 ]];
-    [cell setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults]objectForKey:@"secondaryColor"]]];
-    cell.textColor = [UIColor whiteColor];
-    cell.font = [UIFont fontWithName:@"CabinCondensed" size:22];
-    if (!tableView) {
-        //search viewing
-        cell.accessoryType = UITableViewCellAccessoryNone;
-    }else{
-        //normal viewing
-    //liked or not
-        if([[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:indexPath.row]] == TRUE){
-            UIButton *accessoryButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-            [accessoryButton setImage:[UIImage imageNamed:@"ic_favorite_white"] forState: UIControlStateNormal];
-            indexx.backgroundColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]];
-            indexx.textColor = [UIColor whiteColor];
-            [cell setAccessoryView:accessoryButton];
-        }
-        else{
-            UIButton *accessoryButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-            indexx.backgroundColor = [UIColor whiteColor];
-            indexx.textColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]];
-            [cell setAccessoryView:accessoryButton];
-        }
-   
-    }
-    if (tableView  == self.tableView){
-        //normal viewing
-        didsearch = NO;
-        cell.textLabel.text = [[[PDFManager alloc] init] titleForChapter:indexPath.row];
-        cell.textLabel.frame = CGRectMake(50, 0, cell.textLabel.frame.size.width, cell.textLabel.frame.size.height);
-        indexx.alpha = 1;
-        [self tableView:_tableView indentationLevelForRowAtIndexPath:nil];
-
-        }
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"txt"];
+    NSString *indexContent = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSArray *indexTitles = [indexContent componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+    if(section == 0){ return @"  Bookmarked Chapters"; }
     else{
-        //search
-        didsearch = YES;
-        indexx.alpha = 0;
-        cell.accessoryType = UITableViewCellAccessoryNone;
-        cell.textLabel.text = [results objectAtIndex:indexPath.row];
-        [self tableView:_tableView indentationLevelForRowAtIndexPath:nil];
+        return [NSString stringWithFormat:@"  %@", [indexTitles objectAtIndex:section -1]];
+        
     }
-
-    //
-    return cell;
-    
 }
+int h0;
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    if (indexPath.section == 0) {
+        //
+        ///
+        ////Favorites
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:nil];
+            if (cell == nil) {
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+                    UILabel *index = [[UILabel alloc] initWithFrame:CGRectMake( 6, ((cell.frame.size.height/2) - ((cell.frame.size.height -5) /2 )), cell.frame.size.height -5, cell.frame.size.height -5)];
+                    index.text = [NSString stringWithFormat:@"%i", [[likedObjects objectAtIndex:indexPath.row] intValue] +1];
+                index.font = [UIFont fontWithName:@"Cabin" size:23];index.layer.cornerRadius = 6;index.textAlignment = UITextAlignmentCenter;index.textColor =[UIColor whiteColor]; index.backgroundColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]];index.layer.cornerRadius = 6;index.clipsToBounds = YES;index.tag = 1;
+                    [cell.contentView addSubview:index];
+                [cell setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults]objectForKey:@"secondaryColor"]]];
+                cell.textColor = [UIColor whiteColor];
+                cell.font = [UIFont fontWithName:@"CabinCondensed" size:23];
+                cell.textLabel.text = [[[PDFManager alloc] init] titleForChapter:[[likedObjects objectAtIndex:indexPath.row] integerValue]];
+                            }
+            return cell;
+        }
+    
+        else{
+            //
+            ///
+            ////
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:nil];
+            if (cell == nil) {
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil] ;
+                    UILabel *index = [[UILabel alloc] initWithFrame:CGRectMake( 6, ((cell.frame.size.height/2) - ((cell.frame.size.height -5) /2 )), cell.frame.size.height -5, cell.frame.size.height -5)];
+                NSMutableArray *subs = [[NSMutableArray alloc] init];
+                for (NSString *fileName in [[[PDFManager alloc] init] chapterPaths]) {
+                    if([[fileName substringToIndex:1] isEqualToString:[chaptersCount objectAtIndex:indexPath.section - 1]]){
+                        [subs addObject:[[fileName substringFromIndex:2] stringByDeletingPathExtension]];
+                    }
+                }
+                NSString *indexRes = [subs objectAtIndex:indexPath.row];
+                index.text = [NSString stringWithFormat:@"%i", [[indexRes substringToIndex:2] intValue]];
+                        index.font = [UIFont fontWithName:@"Cabin" size:23];index.layer.cornerRadius = 6;index.textAlignment = UITextAlignmentCenter;index.textColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]];index.backgroundColor = [UIColor whiteColor];index.layer.cornerRadius = 6;index.clipsToBounds = YES;index.tag = 1;
+                    [cell.contentView addSubview:index];
+                //1
+                [cell setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults]objectForKey:@"secondaryColor"]]];
+                cell.textColor = [UIColor whiteColor];
+                cell.font = [UIFont fontWithName:@"CabinCondensed" size:22];
+
+            }
+
+            
+            if (!tableView) {
+                //search viewing
+                cell.accessoryType = UITableViewCellAccessoryNone;
+            }else{
+                //normal viewing
+                
+            }
+            if (tableView  == self.tableView){
+                //normal viewing
+                didsearch = NO;
+                NSMutableArray *subs = [[NSMutableArray alloc] init];
+                for (NSString *fileName in [[[PDFManager alloc] init] chapterPaths]) {
+                    if([[fileName substringToIndex:1] isEqualToString:[chaptersCount objectAtIndex:indexPath.section - 1]]){
+                        [subs addObject:[[[fileName substringFromIndex:5] stringByDeletingPathExtension] stringByReplacingOccurrencesOfString:@"_" withString:@" "]];
+                    }
+                }
+                cell.textLabel.text = [subs objectAtIndex:indexPath.row];
+                cell.textLabel.frame = CGRectMake(50, 0, cell.textLabel.frame.size.width, cell.textLabel.frame.size.height);
+                [self tableView:_tableView indentationLevelForRowAtIndexPath:nil];
+                
+            }
+            else{
+                //search
+                didsearch = YES;
+                cell.accessoryType = UITableViewCellAccessoryNone;
+                cell.textLabel.text = [results objectAtIndex:indexPath.row];
+                [self tableView:_tableView indentationLevelForRowAtIndexPath:nil];
+            }
+            
+            //
+            return cell;
+        }
+
+
+    }
+    
+ 
+
+    
+
 bool didsearch;
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
 
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *tempView=[[UIView alloc]initWithFrame:CGRectMake(0,200,300,244)];
+    tempView.backgroundColor=[UIColor clearColor];
+    
+    UILabel *tempLabel=[[UILabel alloc]initWithFrame:CGRectMake(0,1,self.tableView.frame.size.width,29)];
+    tempLabel.backgroundColor=[UIColor whiteColor];
+    tempLabel.textColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]];
+    tempLabel.font = [UIFont boldSystemFontOfSize:18];
+    tempLabel.clipsToBounds = YES;
+    tempLabel.layer.cornerRadius = 10;
+    
+    tempLabel.text= [self tableView:_tableView titleForHeaderInSection:section];
+    
+    [tempView addSubview:tempLabel];
+    
+    return tempView;
 }
 - (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
     if(tableView == self.tableView){
@@ -289,7 +369,7 @@ bool didsearch;
     }
 
 }
-
+#pragma mark-
 
 -(void) searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
     results = nil;

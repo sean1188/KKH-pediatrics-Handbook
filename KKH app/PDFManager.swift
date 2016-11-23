@@ -41,7 +41,7 @@ class PDFManager: NSObject {
     func titleForChapter(_ index: Int) -> String {
         var pathh = (chapterPaths[index] as NSString?)!
         pathh = pathh.substring(to: pathh.length - 4) as NSString
-       pathh = pathh.substring(from: 3) as NSString
+       pathh = pathh.substring(from: 5) as NSString
         pathh = pathh.replacingOccurrences(of: "_", with: " ") as NSString
         return pathh as String
     }

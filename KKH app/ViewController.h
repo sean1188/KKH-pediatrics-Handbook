@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UISearchBarDelegate>
+@interface ViewController : UIViewController <UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource>
 
 
 @property (strong, nonatomic) IBOutlet UILabel *h1;
