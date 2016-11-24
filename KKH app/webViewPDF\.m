@@ -139,8 +139,8 @@ bool i;
     }
 }
 - (void)webViewDidFinishLoad:(UIWebView *)a_WebView {
-    if([[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:chpti]] == TRUE){
-        [_webView.scrollView setContentOffset:CGPointMake(0, [[NSUserDefaults standardUserDefaults] integerForKey:[NSString stringWithFormat:@"%@ Scroll",[[[PDFManager alloc] init] titleForChapter:chpti]]]) animated:YES];
+    if([[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:chpti -1]] == TRUE){
+        [_webView.scrollView setContentOffset:CGPointMake(0, [[NSUserDefaults standardUserDefaults] integerForKey:[NSString stringWithFormat:@"%@ Scroll",[[[PDFManager alloc] init] titleForChapter:chpti-1]]]) animated:YES];
     }
     
 }
@@ -157,7 +157,7 @@ bool i;
     if ( [[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:chpti -1]] != TRUE) {
         //like
         [[NSUserDefaults standardUserDefaults] setBool:TRUE forKey:[[[PDFManager alloc] init] titleForChapter:chpti -1]];
-        [[NSUserDefaults standardUserDefaults]setInteger:_webView.scrollView.contentOffset.y forKey:[NSString stringWithFormat:@"%@ Scroll",[[[PDFManager alloc] init] titleForChapter:chpti]]];
+        [[NSUserDefaults standardUserDefaults]setInteger:_webView.scrollView.contentOffset.y forKey:[NSString stringWithFormat:@"%@ Scroll",[[[PDFManager alloc] init] titleForChapter:chpti -1]]];
         [_favImg setImage:[UIImage imageNamed:@"ic_favorite_white"]];
     }
     else if ( [[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:chpti -1]] == TRUE){

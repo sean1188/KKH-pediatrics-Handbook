@@ -186,7 +186,10 @@ NSMutableArray *chaptersCount;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [chaptersCount count] + 1;
+    if (didsearch == YES) {
+        return 1;
+    }else{
+        return [chaptersCount count] + 1;}
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -196,7 +199,6 @@ NSMutableArray *chaptersCount;
     }
     else if (section == 0){
         return [likedObjects count];
-
     }
     else{
         int c = 0;
@@ -232,7 +234,14 @@ indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath
 }
 int h0;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    if (didsearch == YES) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:nil];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+        cell.textLabel.text = [results objectAtIndex:indexPath.row];
+        [self tableView:_tableView indentationLevelForRowAtIndexPath:nil];
+        return cell;
+    }
+    else{
     if (indexPath.section == 0) {
         //
         ///
@@ -303,14 +312,12 @@ int h0;
                 //search
                 didsearch = YES;
                 cell.accessoryType = UITableViewCellAccessoryNone;
-                cell.textLabel.text = [results objectAtIndex:indexPath.row];
-                [self tableView:_tableView indentationLevelForRowAtIndexPath:nil];
             }
             
             //
             return cell;
         }
-
+    }
 
     }
     
@@ -447,6 +454,7 @@ bool didsearch;
 }
 
 - (IBAction)searchTrigger:(id)sender {
+    [_tableView reloadData];
     heightInit = _cardView.frame.size.height;
     [UIView animateWithDuration:0.2 animations:^{
         _serach.translatesAutoresizingMaskIntoConstraints = YES;
