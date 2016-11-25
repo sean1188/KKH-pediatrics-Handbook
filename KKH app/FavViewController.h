@@ -9,15 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface FavViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UILabel *h1;
-@property (strong, nonatomic) IBOutlet UIView *cardView;
-@property (strong, nonatomic) IBOutlet UITableView *tableView;
-
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *secondaryViews;
 
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *primaryViews;
-@property (strong, nonatomic) IBOutlet UILabel *h2;
-@property (strong, nonatomic) IBOutlet UIImageView *h3;
+
 
 
 //Bottom bar

@@ -199,17 +199,7 @@ bool didViewPdf;
     }];
 }
 - (IBAction)sendB:(id)sender {
-    _webView.alpha = 0;
-    [UIView animateWithDuration:0.5 animations:^{
-        _resView.translatesAutoresizingMaskIntoConstraints =YES;
-        _resView.frame = CGRectMake(_resView.frame.origin.x, _resView.frame.origin.y - 1000, _resView.frame.size.width, _resView.frame.size.height);
-        _drugimg.alpha = 0;
-        _nextB.alpha = 0;
-    } completion:^(BOOL s ){
-        [[_mannager initWithWeight:_textField.text.intValue] sendEmail:self];
-
-        
-    }];
+    [[_mannager initWithWeight:_textField.text.intValue] sendEmail:[[DrugCalculationViewController alloc] init]];
 }
 - (IBAction)back:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];

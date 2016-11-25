@@ -195,6 +195,7 @@ NSMutableArray *chaptersCount;
         return [likedObjects count];
     }
     else{
+    
         int c = 0;
         for (int i = 0; i < [[[PDFManager alloc] init] numberOfChapters]; i ++) {
             if ([[[[[[PDFManager alloc] init] chapterPaths] objectAtIndex:i] substringToIndex:1] isEqualToString:[chaptersCount objectAtIndex:section - 1]]) {

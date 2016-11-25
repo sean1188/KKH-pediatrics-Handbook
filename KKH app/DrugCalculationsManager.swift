@@ -205,9 +205,12 @@ class DrugCalculationsManager: NSObject, MFMailComposeViewControllerDelegate {
         vc.setSubject("Drug Table")
         vc.setMessageBody("Attached is the list of drugs for patient of \(weight)kg weight.", isHTML: false)
         vc.addAttachmentData(emailData.data(using: String.Encoding.utf8)!, mimeType: "text/csv", fileName: "Drug_table.csv")
-        
+        if !MFMailComposeViewController.canSendMail() {
+            
+        }else{
         sender.present(vc, animated: true) {
             
+        }
         }
     }
     

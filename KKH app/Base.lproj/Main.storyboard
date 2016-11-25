@@ -583,10 +583,10 @@ The authors of each chapter have ensured that the information is current and cor
             </objects>
             <point key="canvasLocation" x="468" y="1008"/>
         </scene>
-        <!--Fav View-->
+        <!--Crisis -->
         <scene sceneID="mPL-Oe-owG">
             <objects>
-                <viewController title="Fav View" id="88y-7D-yXE" customClass="FavViewController" sceneMemberID="viewController">
+                <viewController title="Crisis " id="88y-7D-yXE" customClass="FavViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lcl-Tz-GyU"/>
                         <viewControllerLayoutGuide type="bottom" id="ObL-Uy-2yx"/>
@@ -752,84 +752,22 @@ The authors of each chapter have ensured that the information is current and cor
                                     <constraint firstAttribute="height" constant="41" id="eop-R1-iOe"/>
                                 </constraints>
                             </stackView>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zlH-yk-gH0">
-                                <rect key="frame" x="15" y="20" width="570" height="521"/>
-                                <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f4P-Yx-gLa">
-                                        <rect key="frame" x="8" y="49" width="544" height="466"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </tableView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FAVOURITES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXd-91-YHr">
-                                        <rect key="frame" x="51" y="6" width="152" height="24"/>
-                                        <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="23"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Chapters that you have favourited appear here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdS-1a-AZJ">
-                                        <rect key="frame" x="51" y="31" width="192" height="16"/>
-                                        <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="11"/>
-                                        <color key="textColor" red="0.84939259290000002" green="0.84936714170000005" blue="0.84938156600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_favorite_white" translatesAutoresizingMaskIntoConstraints="NO" id="zZJ-RI-sNh">
-                                        <rect key="frame" x="8" y="8" width="35" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="37t-Ua-LBp"/>
-                                            <constraint firstAttribute="width" constant="35" id="xdP-p3-lIK"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.2122483999" green="0.57065624000000004" blue="0.94941872360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="QdS-1a-AZJ" firstAttribute="leading" secondItem="zZJ-RI-sNh" secondAttribute="trailing" constant="8" id="7fi-Hd-IN6"/>
-                                    <constraint firstItem="QdS-1a-AZJ" firstAttribute="top" secondItem="wXd-91-YHr" secondAttribute="bottom" id="AUu-Bz-e13"/>
-                                    <constraint firstItem="zZJ-RI-sNh" firstAttribute="centerY" secondItem="wXd-91-YHr" secondAttribute="centerY" id="AjH-MP-Iow"/>
-                                    <constraint firstAttribute="bottom" secondItem="f4P-Yx-gLa" secondAttribute="bottom" constant="5" id="EB8-fy-MRR"/>
-                                    <constraint firstItem="f4P-Yx-gLa" firstAttribute="top" secondItem="wXd-91-YHr" secondAttribute="bottom" constant="4" id="FfV-9e-KLP"/>
-                                    <constraint firstItem="zZJ-RI-sNh" firstAttribute="top" secondItem="zlH-yk-gH0" secondAttribute="top" constant="8" id="GuT-J7-rTh"/>
-                                    <constraint firstItem="zZJ-RI-sNh" firstAttribute="leading" secondItem="zlH-yk-gH0" secondAttribute="leading" constant="8" id="JKB-mk-RmX"/>
-                                    <constraint firstAttribute="trailing" secondItem="f4P-Yx-gLa" secondAttribute="trailing" id="L2q-J1-mef"/>
-                                    <constraint firstItem="f4P-Yx-gLa" firstAttribute="leading" secondItem="zlH-yk-gH0" secondAttribute="leading" id="LuM-9Q-NsY"/>
-                                    <constraint firstItem="wXd-91-YHr" firstAttribute="leading" secondItem="zZJ-RI-sNh" secondAttribute="trailing" constant="8" id="doV-1y-RzH"/>
-                                    <constraint firstItem="wXd-91-YHr" firstAttribute="top" secondItem="zlH-yk-gH0" secondAttribute="top" constant="6" id="mK0-qJ-Bbm"/>
-                                    <constraint firstItem="f4P-Yx-gLa" firstAttribute="centerX" secondItem="zlH-yk-gH0" secondAttribute="centerX" id="pUJ-cW-Jd5"/>
-                                    <constraint firstItem="f4P-Yx-gLa" firstAttribute="top" secondItem="QdS-1a-AZJ" secondAttribute="bottom" constant="3" id="thx-tB-oyr"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="AjH-MP-Iow"/>
-                                        <exclude reference="FfV-9e-KLP"/>
-                                    </mask>
-                                </variation>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.057992704210000003" green="0.45015302299999999" blue="0.77763044830000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zlH-yk-gH0" firstAttribute="centerX" secondItem="tfM-1W-rEF" secondAttribute="centerX" id="0HG-Fb-M9B"/>
-                            <constraint firstItem="zlH-yk-gH0" firstAttribute="leading" secondItem="tfM-1W-rEF" secondAttribute="leadingMargin" constant="-5" id="86j-Ok-A5U"/>
                             <constraint firstItem="Fua-vA-k1d" firstAttribute="centerX" secondItem="tfM-1W-rEF" secondAttribute="centerX" id="9PY-f1-45x"/>
-                            <constraint firstItem="Fua-vA-k1d" firstAttribute="top" secondItem="zlH-yk-gH0" secondAttribute="bottom" constant="18" id="Bt2-Cy-K5J"/>
-                            <constraint firstItem="zlH-yk-gH0" firstAttribute="trailing" secondItem="tfM-1W-rEF" secondAttribute="trailingMargin" constant="5" id="Jxy-ij-ezL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fua-vA-k1d" secondAttribute="trailing" constant="-22" id="KJ2-FP-EwO"/>
                             <constraint firstItem="Fua-vA-k1d" firstAttribute="leading" secondItem="tfM-1W-rEF" secondAttribute="leadingMargin" constant="-21" id="UtZ-Qq-eyt"/>
-                            <constraint firstItem="zlH-yk-gH0" firstAttribute="top" secondItem="lcl-Tz-GyU" secondAttribute="bottom" id="b9h-BG-BNW"/>
                             <constraint firstItem="ObL-Uy-2yx" firstAttribute="top" secondItem="Fua-vA-k1d" secondAttribute="bottom" id="dif-gj-zog"/>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
-                        <outlet property="cardView" destination="zlH-yk-gH0" id="Kng-Hl-CZe"/>
                         <outlet property="favIcon" destination="53Y-9o-ZHI" id="Z7y-tZ-i5d"/>
-                        <outlet property="h1" destination="wXd-91-YHr" id="9yk-jw-L53"/>
-                        <outlet property="h2" destination="QdS-1a-AZJ" id="0eb-PT-2aw"/>
-                        <outlet property="h3" destination="zZJ-RI-sNh" id="l2H-Fc-ai5"/>
-                        <outlet property="tableView" destination="f4P-Yx-gLa" id="esb-NG-BS1"/>
                         <outletCollection property="secondaryViews" destination="pon-VB-TY5" id="Ysc-xG-Mg2"/>
                         <outletCollection property="secondaryViews" destination="HA1-z2-Ki1" id="M9V-6E-yT5"/>
                         <outletCollection property="primaryViews" destination="iOH-8g-FLO" id="isB-O2-P47"/>
                         <outletCollection property="secondaryViews" destination="TBR-Da-Vd0" id="UMk-Nh-mcA"/>
-                        <outletCollection property="secondaryViews" destination="zlH-yk-gH0" id="EQo-tk-7v0"/>
-                        <outletCollection property="secondaryViews" destination="f4P-Yx-gLa" id="kE8-IA-rKw"/>
                         <segue destination="Aje-zz-Qdv" kind="presentation" identifier="viewchpt" modalTransitionStyle="crossDissolve" id="iq2-wk-elH"/>
                     </connections>
                 </viewController>
@@ -1745,10 +1683,10 @@ The authors of each chapter have ensured that the information is current and cor
                                 <rect key="frame" x="20" y="178" width="560" height="82"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NYg-rk-P8x" userLabel="COLOROption">
-                                        <rect key="frame" x="157" y="16" width="1271" height="50"/>
+                                        <rect key="frame" x="157" y="16" width="1273" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cf9-PC-wuP" userLabel="PrimaryColor">
-                                                <rect key="frame" x="0.0" y="0.0" width="1069" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1071" height="50"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsk-Lu-eCf" userLabel="SecondaryColor">
                                                         <rect key="frame" x="14" y="13" width="23" height="23"/>
@@ -1763,7 +1701,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Color Accent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3b-Qx-Okr">
-                                                <rect key="frame" x="1079" y="0.0" width="192" height="50"/>
+                                                <rect key="frame" x="1081" y="0.0" width="192" height="50"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="23"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2331,6 +2269,6 @@ Ms Siti Nur Diyanah (Associate Executive, KKH Department of Paediatric Anaesthes
         <image name="weight-kilogram" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="O8f-Ln-J6K"/>
+        <segue reference="iq2-wk-elH"/>
     </inferredMetricsTieBreakers>
 </document>
