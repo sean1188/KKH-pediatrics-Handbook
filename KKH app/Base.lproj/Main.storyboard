@@ -88,7 +88,6 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="10a-G1-kei"/>
                         <segue destination="cI6-5L-qIS" kind="show" identifier="calc" animates="NO" id="4sH-NZ-fYY"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="ref" animates="NO" id="DjC-hh-1nd"/>
                         <segue destination="88y-7D-yXE" kind="show" identifier="list" animates="NO" id="Hh2-1c-7fe"/>
                         <segue destination="y57-F7-K6a" kind="show" identifier="settings" animates="NO" id="ad3-lf-YzL"/>
                     </connections>
@@ -96,79 +95,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4l-8w-Qte" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-547" y="146"/>
-        </scene>
-        <!--Tutorial View-->
-        <scene sceneID="lZt-2m-ELf">
-            <objects>
-                <viewController title="Tutorial View" id="aMY-5X-MGv" customClass="TutorialViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bpY-wy-b0E"/>
-                        <viewControllerLayoutGuide type="bottom" id="Sh6-G7-VVX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mAk-3O-GBT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iD1-QI-5t7">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Swipe left and right to explore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ub-i4-sHN">
-                                <rect key="frame" x="230" y="571" width="254" height="21"/>
-                                <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkN-fP-jSp">
-                                <rect key="frame" x="245" y="520" width="110" height="72"/>
-                                <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="23"/>
-                                <state key="normal" title="Done">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="done:" destination="aMY-5X-MGv" eventType="touchUpInside" id="U0v-U3-PY8"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.12941176470588237" green="0.33333333333333331" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="iD1-QI-5t7" firstAttribute="centerX" secondItem="mAk-3O-GBT" secondAttribute="centerX" id="0iN-oO-XB0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iD1-QI-5t7" secondAttribute="trailing" constant="-20" id="2gd-9W-2kv"/>
-                            <constraint firstItem="Sh6-G7-VVX" firstAttribute="top" secondItem="iD1-QI-5t7" secondAttribute="bottom" id="N8f-DV-zZy"/>
-                            <constraint firstItem="iD1-QI-5t7" firstAttribute="leading" secondItem="mAk-3O-GBT" secondAttribute="leadingMargin" constant="-20" id="OS4-Ww-Bd7"/>
-                            <constraint firstItem="iD1-QI-5t7" firstAttribute="centerY" secondItem="mAk-3O-GBT" secondAttribute="centerY" id="OtH-Yh-U8C"/>
-                            <constraint firstItem="Sh6-G7-VVX" firstAttribute="top" secondItem="VkN-fP-jSp" secondAttribute="bottom" constant="8" id="av8-Ev-1xL"/>
-                            <constraint firstItem="VkN-fP-jSp" firstAttribute="centerX" secondItem="mAk-3O-GBT" secondAttribute="centerX" id="bgK-qA-G5W"/>
-                            <constraint firstItem="Sh6-G7-VVX" firstAttribute="top" secondItem="6Ub-i4-sHN" secondAttribute="bottom" constant="8" id="gzh-KQ-2Y4"/>
-                            <constraint firstItem="6Ub-i4-sHN" firstAttribute="centerX" secondItem="mAk-3O-GBT" secondAttribute="centerX" id="yfs-8D-puY"/>
-                            <constraint firstItem="iD1-QI-5t7" firstAttribute="top" secondItem="mAk-3O-GBT" secondAttribute="topMargin" id="ymO-6Q-JYY"/>
-                        </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="XJe-Ff-Odm" appends="YES" id="IQm-uN-RFx"/>
-                            <outletCollection property="gestureRecognizers" destination="apw-ZF-NbG" appends="YES" id="3yG-hk-ycm"/>
-                        </connections>
-                    </view>
-                    <connections>
-                        <outlet property="doneButton" destination="VkN-fP-jSp" id="D3s-d5-QVv"/>
-                        <outlet property="gestB" destination="apw-ZF-NbG" id="dPt-pm-vwn"/>
-                        <outlet property="gestN" destination="XJe-Ff-Odm" id="N2q-Do-AT0"/>
-                        <outlet property="guideLabel" destination="6Ub-i4-sHN" id="kzP-E6-PHn"/>
-                        <outlet property="imgView" destination="iD1-QI-5t7" id="z3i-dW-VZO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sth-fO-i92" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="XJe-Ff-Odm" userLabel="Next">
-                    <connections>
-                        <action selector="next:" destination="aMY-5X-MGv" id="flK-TC-ugR"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="apw-ZF-NbG" userLabel="back">
-                    <connections>
-                        <action selector="back:" destination="aMY-5X-MGv" id="SYu-kI-GPS"/>
-                    </connections>
-                </swipeGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="-182" y="955"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -258,14 +184,18 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOp-l7-kD1" userLabel="list">
                                         <rect key="frame" x="192" y="0.0" width="95" height="41"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FAV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4p-kc-dHa">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CRISIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4p-kc-dHa">
                                                 <rect key="frame" x="56" y="26" width="34" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_favorite_white" translatesAutoresizingMaskIntoConstraints="NO" id="nDG-6p-n6U">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sirenicon-1" translatesAutoresizingMaskIntoConstraints="NO" id="nDG-6p-n6U">
                                                 <rect key="frame" x="60" y="2" width="26" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="R2H-nS-352"/>
+                                                    <constraint firstAttribute="width" constant="26" id="Xiu-oX-RJj"/>
+                                                </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3M-iK-JDe">
                                                 <rect key="frame" x="0.0" y="0.0" width="149" height="41"/>
@@ -473,7 +403,6 @@
                         <outletCollection property="secondaryViews" destination="PGG-9L-azE" id="IuW-CU-NJt"/>
                         <outletCollection property="secondaryViews" destination="voZ-Kx-hmP" id="yNy-SV-kh8"/>
                         <segue destination="Aje-zz-Qdv" kind="presentation" identifier="viewChpter" modalTransitionStyle="crossDissolve" id="O8f-Ln-J6K"/>
-                        <segue destination="aMY-5X-MGv" kind="presentation" identifier="tutView" id="tmC-kJ-QAD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -546,7 +475,7 @@ The authors of each chapter have ensured that the information is current and cor
                     </constraints>
                 </view>
             </objects>
-            <point key="canvasLocation" x="190" y="159"/>
+            <point key="canvasLocation" x="214" y="145"/>
         </scene>
         <!--Web ViewPDF-->
         <scene sceneID="pm6-UM-NEY">
@@ -743,14 +672,18 @@ The authors of each chapter have ensured that the information is current and cor
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOH-8g-FLO" userLabel="fav">
                                         <rect key="frame" x="193.5" y="0.0" width="96" height="41"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FAV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvA-6Y-Dcf">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CRISIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvA-6Y-Dcf">
                                                 <rect key="frame" x="56" y="26" width="34" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_favorite_white" translatesAutoresizingMaskIntoConstraints="NO" id="53Y-9o-ZHI">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sirenicon-1" translatesAutoresizingMaskIntoConstraints="NO" id="53Y-9o-ZHI">
                                                 <rect key="frame" x="60" y="2" width="26" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="63e-Xs-7jK"/>
+                                                    <constraint firstAttribute="width" constant="26" id="dch-b4-csm"/>
+                                                </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmp-xO-dWR">
                                                 <rect key="frame" x="0.0" y="0.0" width="149" height="41"/>
@@ -991,14 +924,18 @@ The authors of each chapter have ensured that the information is current and cor
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KUK-73-eLz" userLabel="list">
                                         <rect key="frame" x="194" y="0.0" width="96" height="41"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FAV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLk-K0-2Da">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CRISIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLk-K0-2Da">
                                                 <rect key="frame" x="56" y="26" width="34" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_favorite_white" translatesAutoresizingMaskIntoConstraints="NO" id="JQb-aF-4in">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sirenicon-1" translatesAutoresizingMaskIntoConstraints="NO" id="JQb-aF-4in">
                                                 <rect key="frame" x="60" y="2" width="26" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26" id="N9X-4j-Oq7"/>
+                                                    <constraint firstAttribute="height" constant="26" id="O1u-dn-yGP"/>
+                                                </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00N-Kl-yLN">
                                                 <rect key="frame" x="0.0" y="0.0" width="149" height="41"/>
@@ -1568,14 +1505,18 @@ The authors of each chapter have ensured that the information is current and cor
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tkr-0e-h9y" userLabel="list">
                                         <rect key="frame" x="192" y="0.0" width="95" height="41"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FAV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efd-Yl-N5E">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CRISIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efd-Yl-N5E">
                                                 <rect key="frame" x="56" y="26" width="34" height="13"/>
                                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_favorite_white" translatesAutoresizingMaskIntoConstraints="NO" id="JlV-mb-g1u">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sirenicon-1" translatesAutoresizingMaskIntoConstraints="NO" id="JlV-mb-g1u">
                                                 <rect key="frame" x="60" y="2" width="26" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="FLn-rY-2jt"/>
+                                                    <constraint firstAttribute="width" constant="26" id="pG5-a3-Nvn"/>
+                                                </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GI-ae-ucA">
                                                 <rect key="frame" x="0.0" y="0.0" width="149" height="41"/>
@@ -1804,10 +1745,10 @@ The authors of each chapter have ensured that the information is current and cor
                                 <rect key="frame" x="20" y="178" width="560" height="82"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NYg-rk-P8x" userLabel="COLOROption">
-                                        <rect key="frame" x="157" y="16" width="1247" height="50"/>
+                                        <rect key="frame" x="157" y="16" width="1271" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cf9-PC-wuP" userLabel="PrimaryColor">
-                                                <rect key="frame" x="0.0" y="0.0" width="1045" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1069" height="50"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsk-Lu-eCf" userLabel="SecondaryColor">
                                                         <rect key="frame" x="14" y="13" width="23" height="23"/>
@@ -1822,7 +1763,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Color Accent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3b-Qx-Okr">
-                                                <rect key="frame" x="1055" y="0.0" width="192" height="50"/>
+                                                <rect key="frame" x="1079" y="0.0" width="192" height="50"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="23"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2384,12 +2325,12 @@ Ms Siti Nur Diyanah (Associate Executive, KKH Department of Paediatric Anaesthes
         <image name="ic_settings_white" width="24" height="24"/>
         <image name="inc" width="297" height="170"/>
         <image name="inj" width="512" height="512"/>
+        <image name="sirenicon-1" width="500" height="500"/>
         <image name="splash screen.png" width="750" height="1334"/>
         <image name="unlockPng" width="600" height="579"/>
         <image name="weight-kilogram" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DjC-hh-1nd"/>
         <segue reference="O8f-Ln-J6K"/>
     </inferredMetricsTieBreakers>
 </document>

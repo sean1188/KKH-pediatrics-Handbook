@@ -31,13 +31,6 @@ UIView *firstBar, *secondBar, *thirdBar;
     }
 }
 -(void) viewDidAppear:(BOOL)animated{
-    mainView = _mainCardView.frame;
-    _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, - _mainCardView.frame.size.height - 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
-    _mainCardView.alpha = 0;
-    [UIView animateWithDuration:0.4 animations:^{
-        _mainCardView.frame = mainView;
-        _mainCardView.alpha = 1;
-    }];
     [UIView animateWithDuration:0.6  animations:^{
         _calclogo.transform = CGAffineTransformMakeScale(1.4, 1.4);
         _calclogo.transform = CGAffineTransformMakeRotation(45.0f);
@@ -69,64 +62,38 @@ UIView *firstBar, *secondBar, *thirdBar;
 
 #pragma mark - bottom bar
 - (IBAction)refButton:(id)sender {
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, - _mainCardView.frame.size.height - 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
-        _mainCardView.alpha = 0;
-    }completion:^(BOOL s ){
-        [self.navigationController performSegueWithIdentifier:@"ref" sender:self];
 
-    }];
+        [self.navigationController popToRootViewControllerAnimated:NO];
+
+
 }
 
 - (IBAction)listButton:(id)sender {
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, - _mainCardView.frame.size.height - 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
-        _mainCardView.alpha = 0;
-
-    }completion:^(BOOL s ){
+ 
         [self.navigationController performSegueWithIdentifier:@"list" sender:self];
-        
-    }];
+    
     
 }
 
 - (IBAction)settingsButton:(id)sender {
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, - _mainCardView.frame.size.height - 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
-        _mainCardView.alpha = 0;
 
-    }completion:^(BOOL s ){
         [self.navigationController performSegueWithIdentifier:@"settings" sender:nil];
-}];
     
     
 }
 
 
 - (IBAction)didTap1:(id)sender {
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, - _mainCardView.frame.size.height - 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
-        _mainCardView.alpha = 0;
-        
-    }completion:^(BOOL s ){
-        _mainCardView.frame = mainView;
-        //_mainCardView.alpha = 1;
+
         [self performSegueWithIdentifier:@"DC" sender:self];
 
-    }];
+
 }
 
 - (IBAction)didTap2:(id)sender {
-    //BMI memes
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        _mainCardView.frame = CGRectMake(_mainCardView.frame.origin.x, - _mainCardView.frame.size.height - 10, _mainCardView.frame.size.width, _mainCardView.frame.size.height);
-        _mainCardView.alpha = 0;
-        
-    }completion:^(BOOL s ){
-        _mainCardView.frame = mainView;
-        //_mainCardView.alpha = 1;
+
         [self performSegueWithIdentifier:@"BMI" sender:self];
-    }];
+
 }
 
 - (IBAction)didTap3:(id)sender {

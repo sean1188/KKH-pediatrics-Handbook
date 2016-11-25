@@ -155,7 +155,7 @@ UIButton *transparencyButton ;
 
 #pragma  mark - bottom bar
 - (IBAction)ref:(id)sender {
-    [self.navigationController performSegueWithIdentifier:@"ref" sender:nil];
+    [self.navigationController popToRootViewControllerAnimated:NO];
 }
 
 - (IBAction)calc:(id)sender {
