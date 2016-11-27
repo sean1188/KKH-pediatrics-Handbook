@@ -18,6 +18,10 @@
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
 }
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+    
+}
 - (BOOL)shouldAutorotate {
     return NO;
 }
@@ -34,6 +38,7 @@
 
 -(void) viewDidLoad{
     [super viewDidLoad];
+    [self setcolors];
     
 }
 #pragma mark -
@@ -47,5 +52,11 @@
 
 - (IBAction)ref:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:NO];
+}
+- (IBAction)doneButton:(id)sender {
+    if (![_weightTextField.text isEqualToString:@""]) {
+        [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:[_weightTextField.text intValue]] forKey:@"Cweight"];
+        [self performSegueWithIdentifier:@"nextC" sender:self];
+    }
 }
 @end

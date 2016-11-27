@@ -43,6 +43,7 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
 
 }
 -(void) setcolors{
+    _sarchSegue.backgroundColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]];
     for (UIView *view in _secondaryViews) {
         [view setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]]];
     }
@@ -128,7 +129,6 @@ NSMutableArray *chaptersCount;
     }
     _sarchSegue.layer.cornerRadius = 10.0f;
    // _sarchSegue.layer.shadowOpacity = 0.3; _sarchSegue.layer.shadowOffset = CGSizeMake(0, 3);
-    _sarchSegue.backgroundColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]];
     _serach.delegate = self;
     _cardView.layer.cornerRadius = 15.0f;
     _blurView.alpha = 1;
@@ -195,7 +195,6 @@ NSMutableArray *chaptersCount;
         return [likedObjects count];
     }
     else{
-    
         int c = 0;
         for (int i = 0; i < [[[PDFManager alloc] init] numberOfChapters]; i ++) {
             if ([[[[[[PDFManager alloc] init] chapterPaths] objectAtIndex:i] substringToIndex:1] isEqualToString:[chaptersCount objectAtIndex:section - 1]]) {

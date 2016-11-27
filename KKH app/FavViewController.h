@@ -13,6 +13,8 @@
 
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *primaryViews;
 
+@property (strong, nonatomic) IBOutlet UITextField *weightTextField;
+- (IBAction)doneButton:(id)sender;
 
 
 //Bottom bar

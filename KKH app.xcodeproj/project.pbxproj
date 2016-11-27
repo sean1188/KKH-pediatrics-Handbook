@@ -25,10 +25,14 @@
 		9722E86C1D0CF16300C6D26F /* CabinCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E8581D0CEF0E00C6D26F /* CabinCondensed-SemiBold.ttf */; };
 		9722E87F1D0EFF0100C6D26F /* FavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9722E87E1D0EFF0100C6D26F /* FavViewController.m */; };
 		972491741D4F3A3600A9CD91 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 972491731D4F3A3600A9CD91 /* TutorialViewController.m */; };
+		9727C7FB1DEA8A0B004334E9 /* BLSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9727C7FA1DEA8A0B004334E9 /* BLSController.m */; };
+		9727C7FE1DEADD08004334E9 /* CardiacArrestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9727C7FD1DEADD08004334E9 /* CardiacArrestVC.m */; };
+		973C91E81DE8531E00FCF62C /* crisisVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 973C91E71DE8531E00FCF62C /* crisisVC.m */; };
 		973E00291D092CD600F7C94A /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E00261D092CD600F7C94A /* QCMethod.m */; };
 		973E00301D09371B00F7C94A /* animationScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E002F1D09371B00F7C94A /* animationScheme.m */; };
 		973E00331D09A30000F7C94A /* PDFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973E00321D09A30000F7C94A /* PDFManager.swift */; };
 		974C45661D0A6A2500797BF0 /* webViewPDF\.m in Sources */ = {isa = PBXBuildFile; fileRef = 974C45651D0A6A2500797BF0 /* webViewPDF\.m */; };
+		974D56301DE96D7300E74173 /* CrisisCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 974D562F1DE96D7300E74173 /* CrisisCell.m */; };
 		97612B3F1D3F9D9E004900BE /* DrugCalculationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97612B3E1D3F9D9E004900BE /* DrugCalculationViewController.m */; };
 		976EFB241D01C28B0048A4DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 976EFB231D01C28B0048A4DC /* main.m */; };
 		976EFB271D01C28B0048A4DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 976EFB261D01C28B0048A4DC /* AppDelegate.m */; };
@@ -106,6 +110,12 @@
 		9722E87E1D0EFF0100C6D26F /* FavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavViewController.m; sourceTree = "<group>"; };
 		972491721D4F3A3600A9CD91 /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialViewController.h; sourceTree = "<group>"; };
 		972491731D4F3A3600A9CD91 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
+		9727C7F91DEA8A0B004334E9 /* BLSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLSController.h; sourceTree = "<group>"; };
+		9727C7FA1DEA8A0B004334E9 /* BLSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSController.m; sourceTree = "<group>"; };
+		9727C7FC1DEADD08004334E9 /* CardiacArrestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardiacArrestVC.h; sourceTree = "<group>"; };
+		9727C7FD1DEADD08004334E9 /* CardiacArrestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardiacArrestVC.m; sourceTree = "<group>"; };
+		973C91E61DE8531E00FCF62C /* crisisVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crisisVC.h; sourceTree = "<group>"; };
+		973C91E71DE8531E00FCF62C /* crisisVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = crisisVC.m; sourceTree = "<group>"; };
 		973E00261D092CD600F7C94A /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
 		973E00271D092CD600F7C94A /* QCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMethod.h; sourceTree = "<group>"; };
 		973E002E1D09371B00F7C94A /* animationScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = animationScheme.h; sourceTree = "<group>"; };
@@ -114,6 +124,8 @@
 		973E00321D09A30000F7C94A /* PDFManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFManager.swift; sourceTree = "<group>"; };
 		974C45641D0A6A2500797BF0 /* webViewPDF\.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "webViewPDF\\.h"; sourceTree = "<group>"; };
 		974C45651D0A6A2500797BF0 /* webViewPDF\.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "webViewPDF\\.m"; sourceTree = "<group>"; };
+		974D562E1DE96D7300E74173 /* CrisisCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrisisCell.h; sourceTree = "<group>"; };
+		974D562F1DE96D7300E74173 /* CrisisCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrisisCell.m; sourceTree = "<group>"; };
 		97612B3D1D3F9D9E004900BE /* DrugCalculationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugCalculationViewController.h; sourceTree = "<group>"; };
 		97612B3E1D3F9D9E004900BE /* DrugCalculationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrugCalculationViewController.m; sourceTree = "<group>"; };
 		976EFB1F1D01C28B0048A4DC /* KKH app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KKH app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -249,6 +261,31 @@
 			name = calculation;
 			sourceTree = "<group>";
 		};
+		9727C7F81DEA89D7004334E9 /* Specific Case VC */ = {
+			isa = PBXGroup;
+			children = (
+				9727C7F91DEA8A0B004334E9 /* BLSController.h */,
+				9727C7FA1DEA8A0B004334E9 /* BLSController.m */,
+				9727C7FC1DEADD08004334E9 /* CardiacArrestVC.h */,
+				9727C7FD1DEADD08004334E9 /* CardiacArrestVC.m */,
+			);
+			name = "Specific Case VC";
+			sourceTree = "<group>";
+		};
+		973C91E51DE852FC00FCF62C /* CRISIS */ = {
+			isa = PBXGroup;
+			children = (
+				9727C7F81DEA89D7004334E9 /* Specific Case VC */,
+				9722E87D1D0EFF0100C6D26F /* FavViewController.h */,
+				9722E87E1D0EFF0100C6D26F /* FavViewController.m */,
+				973C91E61DE8531E00FCF62C /* crisisVC.h */,
+				973C91E71DE8531E00FCF62C /* crisisVC.m */,
+				974D562E1DE96D7300E74173 /* CrisisCell.h */,
+				974D562F1DE96D7300E74173 /* CrisisCell.m */,
+			);
+			name = CRISIS;
+			sourceTree = "<group>";
+		};
 		976EFB161D01C28B0048A4DC = {
 			isa = PBXGroup;
 			children = (
@@ -286,8 +323,7 @@
 				976EFB221D01C28B0048A4DC /* Supporting Files */,
 				9722E86D1D0CF8F000C6D26F /* Ref */,
 				9722E86F1D0CF90F00C6D26F /* calculation */,
-				9722E87D1D0EFF0100C6D26F /* FavViewController.h */,
-				9722E87E1D0EFF0100C6D26F /* FavViewController.m */,
+				973C91E51DE852FC00FCF62C /* CRISIS */,
 				97BCF2C31D13955600891F74 /* SettingsViewController.h */,
 				97BCF2C41D13955600891F74 /* SettingsViewController.m */,
 				979782F21D1D8EBC00BAF670 /* SplashViewController.h */,
@@ -506,8 +542,11 @@
 				973E00291D092CD600F7C94A /* QCMethod.m in Sources */,
 				97FB27C11D06D69000EF2845 /* Calculator.m in Sources */,
 				9703E68E1D29367A00C72EF3 /* Secure_.m in Sources */,
+				9727C7FB1DEA8A0B004334E9 /* BLSController.m in Sources */,
 				9722E87F1D0EFF0100C6D26F /* FavViewController.m in Sources */,
 				972491741D4F3A3600A9CD91 /* TutorialViewController.m in Sources */,
+				973C91E81DE8531E00FCF62C /* crisisVC.m in Sources */,
+				974D56301DE96D7300E74173 /* CrisisCell.m in Sources */,
 				97612B3F1D3F9D9E004900BE /* DrugCalculationViewController.m in Sources */,
 				9777BF781D435C6F00F82DA4 /* BMIPercentileViewController.m in Sources */,
 				976EFB271D01C28B0048A4DC /* AppDelegate.m in Sources */,
@@ -515,6 +554,7 @@
 				974C45661D0A6A2500797BF0 /* webViewPDF\.m in Sources */,
 				979782F41D1D8EBC00BAF670 /* SplashViewController.m in Sources */,
 				97087CCF1D5435FE007182EA /* BMIGraphManager.swift in Sources */,
+				9727C7FE1DEADD08004334E9 /* CardiacArrestVC.m in Sources */,
 				979782FD1D1F8DEB00BAF670 /* DrugCalculationsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
