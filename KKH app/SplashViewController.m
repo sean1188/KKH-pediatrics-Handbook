@@ -27,9 +27,9 @@
         [self.view setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]]];
     }
     //VER 1.3 clear
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"VER13"] != YES) {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"VER14"] != YES) {
         [[NSUserDefaults standardUserDefaults] setPersistentDomain:[NSDictionary dictionary] forName:[[NSBundle mainBundle] bundleIdentifier]];
-        [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"VER13"];
+        [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"VER14"];
     }
     //
     [UIView animateWithDuration:0.4 delay:0.8 options:UIViewAnimationOptionCurveEaseInOut animations:^{
