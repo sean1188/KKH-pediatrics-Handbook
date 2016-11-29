@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import "KKH_app-Swift.h"
+#include "MBProgressHUD.h"
+#import "MBProgressHUD.h"
+#import "CHAPTERCollectionViewCell.h"
 
 @interface ViewController ()
 
@@ -23,7 +26,34 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
 - (BOOL)shouldAutorotate {
     return NO;
 }
+-(void) viewWillAppear:(BOOL)animated{
+    _cardView.clipsToBounds = YES;
+    _cardView.layer.cornerRadius = 15.0f;
+
+}
 -(void) viewDidAppear:(BOOL)animated{
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"splashed"] != YES) {
+    [self setcolors];
+    likedChapterCount = 0; likedObjects = [NSMutableArray array];
+    for (int i = 0 ; i < [[[PDFManager alloc] init] numberOfChapters]; i ++) {
+        if([[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init]titleForChapter:i]] == TRUE){
+            likedChapterCount ++;
+            [likedObjects addObject:[NSNumber numberWithInt:i]];
+        }
+    }
+    [_tableView reloadData];
+    _sarchSegue.alpha = 1;
+    if ( didSendSearch == YES) {
+        [_serach becomeFirstResponder];
+    }
+    else if (didSendSearch == NO){
+        _tableView.alpha = 1;
+        _h1.alpha = 1;
+        _h2.alpha = 1;
+        _h3.alpha = 1;
+        _cardView.translatesAutoresizingMaskIntoConstraints = NO;
+    }
+
     [UIView animateWithDuration:0.6  animations:^{
         _infoIcon.transform = CGAffineTransformMakeScale(1.4, 1.4);
         _infoIcon.transform = CGAffineTransformMakeRotation(45.0f);
@@ -40,7 +70,7 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
             
         }];
     }];
-
+    }
 }
 -(void) setcolors{
     _sarchSegue.backgroundColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]];
@@ -52,37 +82,14 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
         [views setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]]];
     }
 }
--(void) viewWillAppear:(BOOL)animated{
-    //
-    //
-    [self setcolors];
-    likedChapterCount = 0; likedObjects = [NSMutableArray array];
-    for (int i = 0 ; i < [[[PDFManager alloc] init] numberOfChapters]; i ++) {
-        if([[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init]titleForChapter:i]] == TRUE){
-            likedChapterCount ++;
-            [likedObjects addObject:[NSNumber numberWithInt:i]];
-        }
-    }
-    [_tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
-    _sarchSegue.alpha = 1;
-    if ( didSendSearch == YES) {
-        [_tableView reloadData];
-        [_serach becomeFirstResponder];
-    }
-    else if (didSendSearch == NO){
-    _tableView.alpha = 1;
-    _h1.alpha = 1;
-    _h2.alpha = 1;
-    _h3.alpha = 1;
-    _cardView.translatesAutoresizingMaskIntoConstraints = NO;
-    [_tableView reloadData];
-    }
-}
 int likedChapterCount = 0;
 NSMutableArray *likedObjects;
 NSMutableArray *chaptersCount;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _chapterView.alpha = 0;
+    _chapterBlurView.alpha = 0;
+    _tableView.clipsToBounds = YES;
     self.searchDisplayController.searchBar.delegate = self;
     results = nil;
     //
@@ -130,13 +137,13 @@ NSMutableArray *chaptersCount;
     _sarchSegue.layer.cornerRadius = 10.0f;
    // _sarchSegue.layer.shadowOpacity = 0.3; _sarchSegue.layer.shadowOffset = CGSizeMake(0, 3);
     _serach.delegate = self;
+    _cardView.clipsToBounds = YES;
     _cardView.layer.cornerRadius = 15.0f;
     _blurView.alpha = 1;
     _cardView.layer.shadowOpacity = 0.5;
     _cardView.layer.shadowOffset = CGSizeMake(0, - 2);
     objectsArray = [[NSMutableArray alloc] init];
     // Do any additional setup after loading the view, typically from a nib.
-#pragma  mark - first launch
         if ([[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"] != TRUE) {
         NSData *defcolorPrimary = [NSKeyedArchiver archivedDataWithRootObject: [UIColor colorWithRed:0.1373 green:0.4431 blue:0.7373 alpha:1.0]];
         [[NSUserDefaults standardUserDefaults] setObject:defcolorPrimary forKey:@"primaryColor"];
@@ -178,12 +185,12 @@ NSMutableArray *chaptersCount;
     //
 
 }
-
+#pragma mark- TableView
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     if (didsearch == YES) {
         return 1;
     }else{
-        return [chaptersCount count] + 1;}
+        return 2;}
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -195,12 +202,7 @@ NSMutableArray *chaptersCount;
         return [likedObjects count];
     }
     else{
-        int c = 0;
-        for (int i = 0; i < [[[PDFManager alloc] init] numberOfChapters]; i ++) {
-            if ([[[[[[PDFManager alloc] init] chapterPaths] objectAtIndex:i] substringToIndex:1] isEqualToString:[chaptersCount objectAtIndex:section - 1]]) {
-                c++;
-            }        }
-        return c;
+        return chaptersCount.count;
         }
 }
 
@@ -220,15 +222,11 @@ indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath
     if (didsearch == YES) {
         return@"  Search results";
     }
-    else{
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"txt"];
-    NSString *indexContent = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    NSArray *indexTitles = [indexContent componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
-    if(section == 0){ return @"  Bookmarked Chapters"; }
-    else{
-        return [NSString stringWithFormat:@"  %@", [indexTitles objectAtIndex:section -1]];
-        
+    else if(section == 0){
+        return @"   Bookmarked Subchapters";
     }
+        {
+    return @"   Chapters";
     }
 }
 int h0;
@@ -268,14 +266,7 @@ int h0;
             if (cell == nil) {
                 cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil] ;
                     UILabel *index = [[UILabel alloc] initWithFrame:CGRectMake( 6, ((cell.frame.size.height/2) - ((cell.frame.size.height -5) /2 )), cell.frame.size.height -5, cell.frame.size.height -5)];
-                NSMutableArray *subs = [[NSMutableArray alloc] init];
-                for (NSString *fileName in [[[PDFManager alloc] init] chapterPaths]) {
-                    if([[fileName substringToIndex:1] isEqualToString:[chaptersCount objectAtIndex:indexPath.section - 1]]){
-                        [subs addObject:[[fileName substringFromIndex:2] stringByDeletingPathExtension]];
-                    }
-                }
-                NSString *indexRes = [subs objectAtIndex:indexPath.row];
-                index.text = [NSString stringWithFormat:@"%i", [[indexRes substringToIndex:2] intValue]];
+                index.text = [NSString stringWithFormat:@"%li", indexPath.row +1 ];
                         index.font = [UIFont fontWithName:@"Cabin" size:23];index.layer.cornerRadius = 6;index.textAlignment = UITextAlignmentCenter;index.textColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]];index.backgroundColor = [UIColor whiteColor];index.layer.cornerRadius = 6;index.clipsToBounds = YES;index.tag = 1;
                     [cell.contentView addSubview:index];
                 //1
@@ -296,17 +287,13 @@ int h0;
             if (tableView  == self.tableView){
                 //normal viewing
                 didsearch = NO;
-                NSMutableArray *subs = [[NSMutableArray alloc] init];
-                for (NSString *fileName in [[[PDFManager alloc] init] chapterPaths]) {
-                    if([[fileName substringToIndex:1] isEqualToString:[chaptersCount objectAtIndex:indexPath.section - 1]]){
-                        [subs addObject:[[[fileName substringFromIndex:5] stringByDeletingPathExtension] stringByReplacingOccurrencesOfString:@"_" withString:@" "]];
-                    }
-                }
-                cell.textLabel.text = [subs objectAtIndex:indexPath.row];
+                NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"txt"];
+                NSString *indexContent = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+                NSArray *indexTitles = [indexContent componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+                cell.textLabel.text = [indexTitles objectAtIndex:indexPath.row];
                 cell.textLabel.frame = CGRectMake(50, 0, cell.textLabel.frame.size.width, cell.textLabel.frame.size.height);
                 [self tableView:_tableView indentationLevelForRowAtIndexPath:nil];
-                
-            }
+                            }
             else{
                 //search
                 didsearch = YES;
@@ -322,7 +309,7 @@ int h0;
     
  
 
-    
+
 
 bool didsearch;
 
@@ -346,29 +333,35 @@ bool didsearch;
 }
 - (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
     if(tableView == self.tableView){
-        _tableView.alpha = 0;
-        _sarchSegue.alpha = 0;
-        _h1.alpha = 0; _h2.alpha = 0; _h3.alpha = 0;
-            UITableViewCell *a = [_tableView cellForRowAtIndexPath:indexPath];
-            int c =-1;
-            for (NSString *stirng in objectsArray) {
-                c ++; if([stirng isEqualToString:a.textLabel.text]){
-                    break;
-                }
-            }
-            [[NSUserDefaults standardUserDefaults] setObject:[[[[PDFManager alloc] init] chapterPaths] objectAtIndex:c] forKey:@"viewChapter"];
+        if (indexPath.section == 0) {
+           int c = -1;
+                    for (NSString *string in objectsArray) {
+                        c ++;
+                        if ([string isEqualToString:[_tableView cellForRowAtIndexPath:indexPath].textLabel.text]) {
+                            break;
+                        }
+                    }
+                    [[NSUserDefaults standardUserDefaults] setObject:[[[[PDFManager alloc] init] chapterPaths] objectAtIndex:c] forKey:@"viewChapter"];
+                    _cardView.layer.cornerRadius = 0;
+                    didSendSearch = NO;
+                    [self performSegueWithIdentifier:@"viewChpter" sender:nil];
 
-        [UIView transitionWithView:_cardView duration:0.4 options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{} completion:^(BOOL s){
-            [UIView animateWithDuration:0.2 animations:^{
-                _cardView.frame = self.view.frame;
-                _cardView.translatesAutoresizingMaskIntoConstraints = YES;
-            } completion:^(BOOL s ){
-                _cardView.layer.cornerRadius = 0;
-                didSendSearch = NO;
-                [self performSegueWithIdentifier:@"viewChpter" sender:nil];
-            }];
+        }
+        else{
+            _swipedDown.enabled = NO;
+            _chapterCollectionView.backgroundColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]];
+            calledChapter = [chaptersCount objectAtIndex:indexPath.row];
+            [_collectionChapName setText:[NSString stringWithFormat:@"%@",[_tableView cellForRowAtIndexPath:indexPath].textLabel.text]] ;
+        [UIView animateWithDuration:0.2 animations:^{
+            _chapterBlurView.alpha =1;
+            [_chapterCollectionView reloadData];
+        }completion:^(BOOL s){
+            _chapterView.transform = CGAffineTransformMakeScale(0.3, 0.3);
+            [UIView animateWithDuration:0.1 animations:^{
+                _chapterView.alpha = 1; _chapterView.transform = CGAffineTransformMakeScale(1.1, 1.1);
+            }completion:^(BOOL s){[UIView animateWithDuration:0.1 animations:^{_chapterView.transform = CGAffineTransformMakeScale(1, 1);}];}];
         }];
-        
+        }
     }
     else{
         UITableViewCell *a = [_tableView cellForRowAtIndexPath:indexPath];
@@ -384,16 +377,29 @@ bool didsearch;
         [self performSegueWithIdentifier:@"viewChpter" sender:nil];
 
     }
+    [_tableView deselectRowAtIndexPath:indexPath animated:YES];
 
 }
 #pragma mark-
-
+- (IBAction)searchTrigger:(id)sender {
+    heightInit = _cardView.frame.size.height;
+    [UIView animateWithDuration:0.2 animations:^{
+        _serach.translatesAutoresizingMaskIntoConstraints = YES;
+        _serach.frame = CGRectMake(0, 20, self.view.frame.size.width ,_serach.frame.size.height);
+        //_cardView.frame = CGRectMake(_cardView.frame.origin.x, _serach.frame.origin.y + _serach.frame.size.height + 15, _cardView.frame.size.width , _cardView.frame.size.height);
+        //_cardView.translatesAutoresizingMaskIntoConstraints = YES;
+        _cardView.alpha = 0;
+    } completion:^(BOOL s ){
+        [self.serach becomeFirstResponder];
+        didsearch = YES;
+    }];
+}
 -(void) searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
     results = nil;
     NSPredicate *pedicate = [NSPredicate predicateWithFormat:@"SELF contains [search] %@", searchText];
     results = [[objectsArray filteredArrayUsingPredicate:pedicate] mutableCopy];
     didsearch = YES;
-    [_tableView reloadData];
+    [self.tableView performSelectorInBackground:@selector(reloadData) withObject:nil];
 }
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
     [UIView animateWithDuration:0.2 animations:^{
@@ -406,15 +412,95 @@ bool didsearch;
     didsearch = NO;
     [_tableView reloadData];
 }
+-(void) searchBarTextDidEndEditing:(UISearchBar *)searchBar{
+    if ([searchBar.text isEqualToString:@""]) {
+        [UIView animateWithDuration:0.2 animations:^{
+            //_cardView.frame = CGRectMake(_cardView.frame.origin.x, _serach.frame.origin.y + 3, _cardView.frame.size.width, heightInit);
+            _blurView.alpha = 1;
+            //_cardView.translatesAutoresizingMaskIntoConstraints = NO;
+            _cardView.alpha =1 ;
+            _serach.frame = CGRectMake(0, -_serach.frame.size.height, self.view.frame.size.width, _serach.frame.size.height);
+        }];
+        didsearch = NO;
+        [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:YES];
+    }
+    else{
+    }
+    
+}
+
+
+#pragma  mark - collectionView
+NSString *calledChapter;
+NSMutableArray *Csubs;
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 1;
+}
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    Csubs = [[NSMutableArray alloc] init];
+    for (NSString *fileName in [[[PDFManager alloc] init] chapterPaths]) {
+        if([[fileName substringToIndex:1] isEqualToString:calledChapter]){
+            [Csubs addObject:[[fileName substringFromIndex:2] stringByDeletingPathExtension]];
+        }
+    }
+    return Csubs.count;
+}
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    CHAPTERCollectionViewCell *cell = [_chapterCollectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
+    //
+    NSLog(@"%@",Csubs);
+    _chapterView.layer.cornerRadius = 10.0f;
+    [cell.index setText:[NSString stringWithFormat:@"%li", indexPath.row+1]];
+    [cell.chapterName setText:[[[Csubs objectAtIndex:indexPath.row] substringFromIndex:3] stringByReplacingOccurrencesOfString:@"_" withString:@" "]];
+    UIColor *sec = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]];
+    cell.index.textColor = sec;
+    cell.chapterName.textColor = sec;
+    cell.layer.cornerRadius = 15.0f;
+    return cell;
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    [UIView animateWithDuration:0.1 animations:^{
+        _chapterView.transform = CGAffineTransformMakeScale(0.4, 0.4); _chapterView.alpha = 0;
+    }completion:^(BOOL  s){
+        [UIView animateWithDuration:0.2 animations:^{
+            _chapterBlurView.alpha = 0;
+        }completion:^(BOOL s ){
+            int c = -1;
+            for (NSString *string in objectsArray) {
+                c ++;
+                if ([string isEqualToString:[[[Csubs objectAtIndex:indexPath.row] substringFromIndex:3] stringByReplacingOccurrencesOfString:@"_" withString:@" "]]) {
+                    break;
+                }
+            }
+            [[NSUserDefaults standardUserDefaults] setObject:[[[[PDFManager alloc] init] chapterPaths] objectAtIndex:c] forKey:@"viewChapter"];
+            _cardView.layer.cornerRadius = 0;
+            didSendSearch = NO;
+            [self performSegueWithIdentifier:@"viewChpter" sender:nil];
+        }];
+    }];   
+}
+- (IBAction)collectionBack:(id)sender {
+    [self collAnimateout];
+}
+-(void)collAnimateout{
+    [UIView animateWithDuration:0.1 animations:^{
+        _chapterView.transform = CGAffineTransformMakeScale(0.4, 0.4); _chapterView.alpha = 0;
+    }completion:^(BOOL  s){
+        _swipedDown.enabled = YES;
+        [UIView animateWithDuration:0.2 animations:^{
+            _chapterBlurView.alpha = 0;
+        }];
+    }];
+}
+
+#pragma mark-
 
 - (void)scrollViewDidScroll:(UIScrollView *)sender{
     if (sender.contentOffset.y < -120) {
         [self searchTrigger:nil];
     }
 }
-
-
-#pragma  mark -
 - (IBAction)refButton:(id)sender {
     [UIView animateWithDuration:0.6  animations:^{
         _infoIcon.transform = CGAffineTransformMakeScale(1.4, 1.4);
@@ -449,37 +535,9 @@ bool didsearch;
 
 }
 
-- (IBAction)searchTrigger:(id)sender {
-    heightInit = _cardView.frame.size.height;
-    [UIView animateWithDuration:0.2 animations:^{
-        _serach.translatesAutoresizingMaskIntoConstraints = YES;
-        _serach.frame = CGRectMake(0, 20, self.view.frame.size.width ,_serach.frame.size.height);
-        _cardView.frame = CGRectMake(_cardView.frame.origin.x, _serach.frame.origin.y + _serach.frame.size.height + 15, _cardView.frame.size.width , _cardView.frame.size.height);
-        _cardView.translatesAutoresizingMaskIntoConstraints = YES;
 
-    } completion:^(BOOL s ){
-        [self.serach becomeFirstResponder];
-        didsearch = YES;
-    }];
-}
 int heightInit;
--(void) searchBarTextDidEndEditing:(UISearchBar *)searchBar{
-    if ([searchBar.text isEqualToString:@""]) {
-       
-        [UIView animateWithDuration:0.2 animations:^{
-            _cardView.frame = CGRectMake(_cardView.frame.origin.x, _serach.frame.origin.y + 3, _cardView.frame.size.width, heightInit);
-            _blurView.alpha = 1;
-            _cardView.translatesAutoresizingMaskIntoConstraints = NO;
-            _cardView.alpha =1 ;
-            _serach.frame = CGRectMake(0, -_serach.frame.size.height, self.view.frame.size.width, _serach.frame.size.height);
-        }];
-        didsearch = NO;
-        [_tableView reloadData];
-    }
-    else{
-    }
-    
-}
+
 - (IBAction)dViewAgree:(id)sender {
     [[NSUserDefaults standardUserDefaults] setBool:TRUE forKey:@"firstLaunch"];
     _bottomBar.userInteractionEnabled = YES;
@@ -492,4 +550,5 @@ int heightInit;
 - (IBAction)swipedDown:(id)sender {
     [self searchTrigger:nil];
 }
+
 @end

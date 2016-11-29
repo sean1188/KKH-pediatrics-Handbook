@@ -7,7 +7,8 @@
 //
 
 #import "SplashViewController.h"
-
+#import "MBProgressHUD.h"
+#include "MBProgressHUD.h"
 
 @interface SplashViewController ()
 

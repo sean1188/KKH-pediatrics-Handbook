@@ -8,6 +8,8 @@
 
 #import "SettingsViewController.h"
 #import <MessageUI/MFMailComposeViewController.h>
+#include "MBProgressHUD.h"
+#import "MBProgressHUD.h"
 @interface SettingsViewController ()
 
 @end

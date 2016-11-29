@@ -25,6 +25,7 @@
 		9722E86C1D0CF16300C6D26F /* CabinCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9722E8581D0CEF0E00C6D26F /* CabinCondensed-SemiBold.ttf */; };
 		9722E87F1D0EFF0100C6D26F /* FavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9722E87E1D0EFF0100C6D26F /* FavViewController.m */; };
 		972491741D4F3A3600A9CD91 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 972491731D4F3A3600A9CD91 /* TutorialViewController.m */; };
+		9727485D1DEDB1BF00014E32 /* CHAPTERCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9727485C1DEDB1BF00014E32 /* CHAPTERCollectionViewCell.m */; };
 		9727C7FB1DEA8A0B004334E9 /* BLSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9727C7FA1DEA8A0B004334E9 /* BLSController.m */; };
 		9727C7FE1DEADD08004334E9 /* CardiacArrestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9727C7FD1DEADD08004334E9 /* CardiacArrestVC.m */; };
 		9729DBAA1DED459E00F2475A /* LaToxicity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9729DBA91DED459E00F2475A /* LaToxicity.m */; };
@@ -74,6 +75,7 @@
 		9729DC021DED4AAF00F2475A /* O-42-Alternative_Modes_of_Analgesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBFD1DED4AAF00F2475A /* O-42-Alternative_Modes_of_Analgesia.pdf */; };
 		9729DC041DED4AFB00F2475A /* P-43-Chronic_Pain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DC031DED4AFB00F2475A /* P-43-Chronic_Pain.pdf */; };
 		9729DC061DED4B2D00F2475A /* Q-44-NORMAL_LABORATORY_DATA.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DC051DED4B2D00F2475A /* Q-44-NORMAL_LABORATORY_DATA.pdf */; };
+		9729DC091DED4E8A00F2475A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9729DC081DED4E8A00F2475A /* MBProgressHUD.m */; };
 		973C91E81DE8531E00FCF62C /* crisisVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 973C91E71DE8531E00FCF62C /* crisisVC.m */; };
 		973E00291D092CD600F7C94A /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E00261D092CD600F7C94A /* QCMethod.m */; };
 		973E00301D09371B00F7C94A /* animationScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E002F1D09371B00F7C94A /* animationScheme.m */; };
@@ -133,6 +135,8 @@
 		9722E87E1D0EFF0100C6D26F /* FavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavViewController.m; sourceTree = "<group>"; };
 		972491721D4F3A3600A9CD91 /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialViewController.h; sourceTree = "<group>"; };
 		972491731D4F3A3600A9CD91 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
+		9727485B1DEDB1BF00014E32 /* CHAPTERCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHAPTERCollectionViewCell.h; sourceTree = "<group>"; };
+		9727485C1DEDB1BF00014E32 /* CHAPTERCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHAPTERCollectionViewCell.m; sourceTree = "<group>"; };
 		9727C7F91DEA8A0B004334E9 /* BLSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLSController.h; sourceTree = "<group>"; };
 		9727C7FA1DEA8A0B004334E9 /* BLSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSController.m; sourceTree = "<group>"; };
 		9727C7FC1DEADD08004334E9 /* CardiacArrestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardiacArrestVC.h; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 		9729DBFD1DED4AAF00F2475A /* O-42-Alternative_Modes_of_Analgesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "O-42-Alternative_Modes_of_Analgesia.pdf"; sourceTree = "<group>"; };
 		9729DC031DED4AFB00F2475A /* P-43-Chronic_Pain.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "P-43-Chronic_Pain.pdf"; sourceTree = "<group>"; };
 		9729DC051DED4B2D00F2475A /* Q-44-NORMAL_LABORATORY_DATA.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Q-44-NORMAL_LABORATORY_DATA.pdf"; sourceTree = "<group>"; };
+		9729DC071DED4E8A00F2475A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		9729DC081DED4E8A00F2475A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		973C91E61DE8531E00FCF62C /* crisisVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crisisVC.h; sourceTree = "<group>"; };
 		973C91E71DE8531E00FCF62C /* crisisVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = crisisVC.m; sourceTree = "<group>"; };
 		973E00261D092CD600F7C94A /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
@@ -275,6 +281,8 @@
 				976EFB291D01C28B0048A4DC /* ViewController.m */,
 				974C45641D0A6A2500797BF0 /* webViewPDF\.h */,
 				974C45651D0A6A2500797BF0 /* webViewPDF\.m */,
+				9727485B1DEDB1BF00014E32 /* CHAPTERCollectionViewCell.h */,
+				9727485C1DEDB1BF00014E32 /* CHAPTERCollectionViewCell.m */,
 			);
 			name = Ref;
 			sourceTree = "<group>";
@@ -392,6 +400,8 @@
 		976EFB221D01C28B0048A4DC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9729DC071DED4E8A00F2475A /* MBProgressHUD.h */,
+				9729DC081DED4E8A00F2475A /* MBProgressHUD.m */,
 				976EFB231D01C28B0048A4DC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -642,7 +652,9 @@
 				974D56301DE96D7300E74173 /* CrisisCell.m in Sources */,
 				97612B3F1D3F9D9E004900BE /* DrugCalculationViewController.m in Sources */,
 				9777BF781D435C6F00F82DA4 /* BMIPercentileViewController.m in Sources */,
+				9727485D1DEDB1BF00014E32 /* CHAPTERCollectionViewCell.m in Sources */,
 				976EFB271D01C28B0048A4DC /* AppDelegate.m in Sources */,
+				9729DC091DED4E8A00F2475A /* MBProgressHUD.m in Sources */,
 				9729DBAA1DED459E00F2475A /* LaToxicity.m in Sources */,
 				976EFB241D01C28B0048A4DC /* main.m in Sources */,
 				974C45661D0A6A2500797BF0 /* webViewPDF\.m in Sources */,

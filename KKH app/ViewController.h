@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface ViewController : UIViewController <UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource>
 
 
 @property (strong, nonatomic) IBOutlet UILabel *h1;
@@ -20,17 +20,19 @@
 @property (strong, nonatomic) IBOutlet UIView *cardView;
 @property (strong, nonatomic) IBOutlet UIView *cardViewSearchSub;
 @property (strong, nonatomic) IBOutlet UIVisualEffectView *blurView;
-
 @property (strong, nonatomic) IBOutlet UIButton *sarchSegue;
 - (IBAction)searchTrigger:(id)sender;
+
+
+
+//collectionView for chapterView
+@property (strong, nonatomic) IBOutlet UIView *chapterView;
+@property (strong, nonatomic) IBOutlet UIVisualEffectView *chapterBlurView;
+@property (strong, nonatomic) IBOutlet UICollectionView *chapterCollectionView;
+- (IBAction)collectionBack:(id)sender;
 @property (strong, nonatomic) IBOutlet UILabel *chapterTitle;
+@property (strong, nonatomic) IBOutlet UILabel *collectionChapName;
 
-
-
-//Bottom bar
-@property (strong, nonatomic) IBOutlet UIStackView *bottomBar;
-@property (strong, nonatomic) IBOutlet UIImageView *infoIcon;
-@property (strong, nonatomic) IBOutlet UIView *refview;
 
 //button presses
 - (IBAction)refButton:(id)sender;
@@ -39,12 +41,17 @@
 - (IBAction)settingsButton:(id)sender;
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *secondaryViews;
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *primaryViews;
-
 @property (strong, nonatomic) IBOutlet UIView *animateIn;
 - (IBAction)swipedDown:(id)sender;
 @property (strong, nonatomic) IBOutlet UIView *utilityView;
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipedDown;
 
+
+
+//Bottom bar
+@property (strong, nonatomic) IBOutlet UIStackView *bottomBar;
+@property (strong, nonatomic) IBOutlet UIImageView *infoIcon;
+@property (strong, nonatomic) IBOutlet UIView *refview;
 //disclaimer view
 @property (strong, nonatomic) IBOutlet UIView *DView;
 @property (strong, nonatomic) IBOutlet UITextView *Dview_text;

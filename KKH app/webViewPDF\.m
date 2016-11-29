@@ -8,6 +8,8 @@
 
 #import "webViewPDF\.h"
 #import "KKH_app-Swift.h"
+#include "MBProgressHUD.h"
+#import "MBProgressHUD.h"
 
 @interface webViewPDF_ ()
 
@@ -146,12 +148,7 @@ bool i;
 }
 
 - (IBAction)backButton:(id)sender {
-    if([[NSUserDefaults standardUserDefaults] boolForKey:@"fromFavs"] == YES){
         [self dismissViewControllerAnimated:YES completion:nil];
-        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"fromFavs"];
-
-    }else{
-        [self dismissViewControllerAnimated:YES completion:nil];}
 }
 - (IBAction)favorite:(id)sender {
     if ( [[NSUserDefaults standardUserDefaults] boolForKey:[[[PDFManager alloc] init] titleForChapter:chpti -1]] != TRUE) {
