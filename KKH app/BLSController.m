@@ -59,7 +59,7 @@
     [self clearWorkspace];
     if (isBreathing == NO | hasPulse == NO) {
         //CPR algorithm
-        [_resText setText:@"  Cardiopulmonary Resuscitation \n \nSINGLE RESCUER: \n  30 Compressions : 2 Breaths \n \nHEALTHCARE PROVIDER, TEAM RESUSCITATION: \n  - No advanced airway- 15 compressions : 2 breaths \n  - Advanced airway (LMA/ ETT)-  provide 100 compressions & 10 ventilations per minute \n  - Push Hard Push Fast \n  - Minimise interruptions to compressions \n  - Rotate roles to avoid fatigue \n  - Recheck pulse every 2 minutes"];
+        [_resText setText:@"  Cardiopulmonary Resuscitation \n \nSINGLE RESCUER: \n  30 Compressions : 2 Breaths \n \nHEALTHCARE PROVIDER, TEAM RESUSCITATION: \n  - No advanced airway- 15 compressions : 2 breaths \n\n  - Advanced airway (LMA/ ETT)-  provide 100 compressions & 10 ventilations per minute \n\n  - Push Hard Push Fast \n\n  - Minimise interruptions to compressions \n\n  - Rotate roles to avoid fatigue \n\n  - Recheck pulse every 2 minutes"];
     }
     else{
         //Rescue Breathing

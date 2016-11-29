@@ -27,6 +27,7 @@
 		972491741D4F3A3600A9CD91 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 972491731D4F3A3600A9CD91 /* TutorialViewController.m */; };
 		9727C7FB1DEA8A0B004334E9 /* BLSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9727C7FA1DEA8A0B004334E9 /* BLSController.m */; };
 		9727C7FE1DEADD08004334E9 /* CardiacArrestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9727C7FD1DEADD08004334E9 /* CardiacArrestVC.m */; };
+		9729DBAA1DED459E00F2475A /* LaToxicity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9729DBA91DED459E00F2475A /* LaToxicity.m */; };
 		973C91E81DE8531E00FCF62C /* crisisVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 973C91E71DE8531E00FCF62C /* crisisVC.m */; };
 		973E00291D092CD600F7C94A /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E00261D092CD600F7C94A /* QCMethod.m */; };
 		973E00301D09371B00F7C94A /* animationScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E002F1D09371B00F7C94A /* animationScheme.m */; };
@@ -114,6 +115,8 @@
 		9727C7FA1DEA8A0B004334E9 /* BLSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSController.m; sourceTree = "<group>"; };
 		9727C7FC1DEADD08004334E9 /* CardiacArrestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardiacArrestVC.h; sourceTree = "<group>"; };
 		9727C7FD1DEADD08004334E9 /* CardiacArrestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardiacArrestVC.m; sourceTree = "<group>"; };
+		9729DBA81DED459E00F2475A /* LaToxicity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaToxicity.h; sourceTree = "<group>"; };
+		9729DBA91DED459E00F2475A /* LaToxicity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaToxicity.m; sourceTree = "<group>"; };
 		973C91E61DE8531E00FCF62C /* crisisVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crisisVC.h; sourceTree = "<group>"; };
 		973C91E71DE8531E00FCF62C /* crisisVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = crisisVC.m; sourceTree = "<group>"; };
 		973E00261D092CD600F7C94A /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
@@ -268,6 +271,8 @@
 				9727C7FA1DEA8A0B004334E9 /* BLSController.m */,
 				9727C7FC1DEADD08004334E9 /* CardiacArrestVC.h */,
 				9727C7FD1DEADD08004334E9 /* CardiacArrestVC.m */,
+				9729DBA81DED459E00F2475A /* LaToxicity.h */,
+				9729DBA91DED459E00F2475A /* LaToxicity.m */,
 			);
 			name = "Specific Case VC";
 			sourceTree = "<group>";
@@ -550,6 +555,7 @@
 				97612B3F1D3F9D9E004900BE /* DrugCalculationViewController.m in Sources */,
 				9777BF781D435C6F00F82DA4 /* BMIPercentileViewController.m in Sources */,
 				976EFB271D01C28B0048A4DC /* AppDelegate.m in Sources */,
+				9729DBAA1DED459E00F2475A /* LaToxicity.m in Sources */,
 				976EFB241D01C28B0048A4DC /* main.m in Sources */,
 				974C45661D0A6A2500797BF0 /* webViewPDF\.m in Sources */,
 				979782F41D1D8EBC00BAF670 /* SplashViewController.m in Sources */,

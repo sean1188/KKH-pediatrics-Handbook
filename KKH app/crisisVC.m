@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setcolor];
-    [_weight setTitle:[NSString stringWithFormat:@"Weight : %@",[[NSUserDefaults standardUserDefaults] objectForKey:@"Cweight"]] forState:UIControlStateNormal];
+    [_weight setTitle:[NSString stringWithFormat:@"Weight : %@KG",[[NSUserDefaults standardUserDefaults] objectForKey:@"Cweight"]] forState:UIControlStateNormal];
     
 }
 -(void) setcolor{
