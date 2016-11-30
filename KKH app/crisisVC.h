@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import <AVFoundation/AVFoundation.h>
+
 
 @interface crisisVC : ViewController <UICollectionViewDelegate, UICollectionViewDataSource>
+@property (strong, nonatomic) IBOutlet AVAudioPlayer *audioPlayer;
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *secondaryViewws;

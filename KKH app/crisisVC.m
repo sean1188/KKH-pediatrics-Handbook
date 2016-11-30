@@ -8,6 +8,7 @@
 
 #import "crisisVC.h"
 #import "CrisisCell.h"
+
 @interface crisisVC ()
 
 @end
@@ -79,6 +80,9 @@
     }
     else if (indexPath.row == 1){
         [self performSegueWithIdentifier:@"CA" sender:self];
+    }
+    else if (indexPath.row == 2){
+        [self performSegueWithIdentifier:@"LA" sender:self];
     }
     
 }

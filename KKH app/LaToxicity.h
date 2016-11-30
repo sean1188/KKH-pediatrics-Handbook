@@ -10,4 +10,35 @@
 
 @interface LaToxicity : ViewController
 
+@property (strong, nonatomic) IBOutletCollection(UIView) NSArray *secondaryLAviews;
+
+
+@property (strong, nonatomic) IBOutlet UILabel *weightLabel;
+
+@property (strong, nonatomic) IBOutlet UIButton *immediateManB;
+- (IBAction)immediateManagement:(id)sender;
+@property (strong, nonatomic) IBOutlet UIView *checkListView_forImmediateManagement;
+- (IBAction)IMdone:(id)sender;
+
+- (IBAction)IM1:(id)sender;
+- (IBAction)IM2:(id)sender;
+- (IBAction)IM3:(id)sender;
+- (IBAction)IM4:(id)sender;
+- (IBAction)IM5:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UIButton *IM1;
+@property (strong, nonatomic) IBOutlet UIButton *IM2;
+@property (strong, nonatomic) IBOutlet UIButton *IM3;
+@property (strong, nonatomic) IBOutlet UIButton *IM4;
+@property (strong, nonatomic) IBOutlet UIButton *IM5;
+
+
+@property (strong, nonatomic) IBOutlet UIButton *neuroTb;
+- (IBAction)neuroToxicity:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UIButton *cardioTb;
+- (IBAction)cardioToxicityPressed:(id)sender;
+
+- (IBAction)back:(id)sender;
+
 @end
