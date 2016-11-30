@@ -41,7 +41,7 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
             [likedObjects addObject:[NSNumber numberWithInt:i]];
         }
     }
-    [_tableView reloadData];
+        [_tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationNone];
     _sarchSegue.alpha = 1;
     if ( didSendSearch == YES) {
         [_serach becomeFirstResponder];

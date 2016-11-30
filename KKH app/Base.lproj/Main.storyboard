@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E7W-Qo-Nmj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C53a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E7W-Qo-Nmj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -2292,6 +2292,55 @@ The authors of each chapter have ensured that the information is current and cor
                                     <constraint firstItem="0Lr-ed-ua8" firstAttribute="top" secondItem="GZr-eI-6Lc" secondAttribute="topMargin" id="umi-Ud-YlB"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XmK-OI-JsK">
+                                <rect key="frame" x="0.0" y="83" width="375" height="584"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juO-lR-RjV">
+                                        <rect key="frame" x="24" y="200" width="327" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="23"/>
+                                        <state key="normal" title="With Circulatory Arrest">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hasCirculatoryArrest:" destination="0fN-vt-zs2" eventType="touchUpInside" id="Ao8-lB-Pdw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7Q-fD-U3Y">
+                                        <rect key="frame" x="24" y="266" width="327" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="23"/>
+                                        <state key="normal" title="Without Circulatory Arrest">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="NoCirculatoryArrest:" destination="0fN-vt-zs2" eventType="touchUpInside" id="5kK-dK-ZXx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C1m-G9-CoO">
+                                <rect key="frame" x="0.0" y="83" width="375" height="584"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIL-hl-qKs">
+                                        <rect key="frame" x="17" y="15" width="340" height="561"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="23"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.33333333329999998" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="OIL-hl-qKs" firstAttribute="bottom" secondItem="C1m-G9-CoO" secondAttribute="bottomMargin" id="EqX-T3-Xaw"/>
+                                    <constraint firstItem="OIL-hl-qKs" firstAttribute="leading" secondItem="C1m-G9-CoO" secondAttribute="leading" constant="17" id="ZnQ-tC-GBT"/>
+                                    <constraint firstItem="OIL-hl-qKs" firstAttribute="centerX" secondItem="C1m-G9-CoO" secondAttribute="centerX" id="gyb-zR-N00"/>
+                                    <constraint firstItem="OIL-hl-qKs" firstAttribute="top" secondItem="C1m-G9-CoO" secondAttribute="top" constant="15" id="yhO-aN-IC5"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.12941176469999999" green="0.33333333329999998" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -2301,14 +2350,19 @@ The authors of each chapter have ensured that the information is current and cor
                             <constraint firstItem="GZr-eI-6Lc" firstAttribute="centerY" secondItem="BIe-R6-8SF" secondAttribute="centerY" id="1mt-6u-bHO"/>
                             <constraint firstItem="ehl-Qt-s9H" firstAttribute="centerY" secondItem="nmu-JV-Nrh" secondAttribute="centerY" id="2rZ-YJ-JSJ"/>
                             <constraint firstItem="ehl-Qt-s9H" firstAttribute="top" secondItem="fb3-rq-SGJ" secondAttribute="bottom" constant="8" symbolic="YES" id="6FJ-wR-fwK"/>
+                            <constraint firstItem="XmK-OI-JsK" firstAttribute="bottom" secondItem="Pm4-0h-YK8" secondAttribute="top" id="8KL-Zx-Rex"/>
+                            <constraint firstItem="C1m-G9-CoO" firstAttribute="top" secondItem="w7H-fs-UQl" secondAttribute="bottom" id="A7v-UI-dXR"/>
                             <constraint firstItem="NUh-yX-Zeb" firstAttribute="trailing" secondItem="Py9-4A-gX0" secondAttribute="trailing" id="AlK-QK-QVh"/>
                             <constraint firstItem="J0y-gY-EBA" firstAttribute="leading" secondItem="BIe-R6-8SF" secondAttribute="leadingMargin" id="BjV-B7-3v1"/>
+                            <constraint firstItem="C1m-G9-CoO" firstAttribute="leading" secondItem="w7H-fs-UQl" secondAttribute="leading" id="Eaa-vP-TcC"/>
                             <constraint firstItem="NUh-yX-Zeb" firstAttribute="top" secondItem="w7H-fs-UQl" secondAttribute="bottom" constant="16" id="FGF-vk-KV8"/>
                             <constraint firstItem="Py9-4A-gX0" firstAttribute="top" secondItem="u4g-MQ-yk7" secondAttribute="bottom" constant="40" id="FTw-y8-3gM"/>
+                            <constraint firstItem="XmK-OI-JsK" firstAttribute="leading" secondItem="C1m-G9-CoO" secondAttribute="leading" id="FXQ-dV-Px6"/>
                             <constraint firstItem="u4g-MQ-yk7" firstAttribute="leading" secondItem="BSb-S1-Hah" secondAttribute="leading" id="MjJ-7X-yee"/>
                             <constraint firstItem="NUh-yX-Zeb" firstAttribute="centerX" secondItem="J0y-gY-EBA" secondAttribute="centerX" id="Ovp-In-LZq"/>
                             <constraint firstItem="u4g-MQ-yk7" firstAttribute="trailing" secondItem="BSb-S1-Hah" secondAttribute="trailing" id="QWO-ta-i2a"/>
                             <constraint firstItem="NUh-yX-Zeb" firstAttribute="leading" secondItem="Py9-4A-gX0" secondAttribute="leading" id="Quj-zR-OdY"/>
+                            <constraint firstItem="C1m-G9-CoO" firstAttribute="trailing" secondItem="w7H-fs-UQl" secondAttribute="trailing" id="Wc2-dK-Yzb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="J0y-gY-EBA" secondAttribute="trailing" id="Xz3-4Y-AU0"/>
                             <constraint firstItem="GZr-eI-6Lc" firstAttribute="top" secondItem="NUh-yX-Zeb" secondAttribute="bottom" constant="2" id="YfR-EJ-rb5"/>
                             <constraint firstItem="GZr-eI-6Lc" firstAttribute="trailing" secondItem="J0y-gY-EBA" secondAttribute="trailing" id="Z8O-tz-pSB"/>
@@ -2318,11 +2372,14 @@ The authors of each chapter have ensured that the information is current and cor
                             <constraint firstItem="NUh-yX-Zeb" firstAttribute="top" secondItem="nmu-JV-Nrh" secondAttribute="bottom" constant="32" id="fJi-k9-TTh"/>
                             <constraint firstItem="nmu-JV-Nrh" firstAttribute="leading" secondItem="BIe-R6-8SF" secondAttribute="leadingMargin" constant="17" id="fSu-oD-zuY"/>
                             <constraint firstItem="GZr-eI-6Lc" firstAttribute="leading" secondItem="J0y-gY-EBA" secondAttribute="leading" id="feu-Sg-iYT"/>
+                            <constraint firstItem="XmK-OI-JsK" firstAttribute="trailing" secondItem="C1m-G9-CoO" secondAttribute="trailing" id="fqv-v8-ryY"/>
                             <constraint firstItem="w7H-fs-UQl" firstAttribute="centerX" secondItem="nmu-JV-Nrh" secondAttribute="centerX" id="gEX-RE-2qj"/>
                             <constraint firstAttribute="trailing" secondItem="w7H-fs-UQl" secondAttribute="trailing" id="iXi-ya-sj1"/>
                             <constraint firstItem="BSb-S1-Hah" firstAttribute="top" secondItem="Py9-4A-gX0" secondAttribute="bottom" constant="19" id="jYa-ke-H2V"/>
                             <constraint firstItem="NUh-yX-Zeb" firstAttribute="leading" secondItem="BIe-R6-8SF" secondAttribute="leadingMargin" constant="68" id="kwo-hS-rM8"/>
                             <constraint firstItem="w7H-fs-UQl" firstAttribute="leading" secondItem="BIe-R6-8SF" secondAttribute="leading" id="ofE-bh-ZD4"/>
+                            <constraint firstItem="C1m-G9-CoO" firstAttribute="bottom" secondItem="Pm4-0h-YK8" secondAttribute="top" id="qCb-eI-2mN"/>
+                            <constraint firstItem="XmK-OI-JsK" firstAttribute="top" secondItem="C1m-G9-CoO" secondAttribute="top" id="qfu-Bf-Rg4"/>
                             <constraint firstItem="Py9-4A-gX0" firstAttribute="centerX" secondItem="BSb-S1-Hah" secondAttribute="centerX" id="rg6-Q0-iTg"/>
                             <constraint firstItem="ehl-Qt-s9H" firstAttribute="top" secondItem="nmu-JV-Nrh" secondAttribute="top" id="tjG-Vu-av0"/>
                             <constraint firstItem="ehl-Qt-s9H" firstAttribute="leading" secondItem="BIe-R6-8SF" secondAttribute="leadingMargin" id="uVa-gk-U0q"/>
@@ -2331,14 +2388,19 @@ The authors of each chapter have ensured that the information is current and cor
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Carrest" destination="juO-lR-RjV" id="duZ-i5-8oi"/>
+                        <outlet property="Carrest2" destination="M7Q-fD-U3Y" id="phF-zH-ahW"/>
                         <outlet property="IM1" destination="meT-MR-yJh" id="6YT-h7-ljk"/>
                         <outlet property="IM2" destination="HnR-8V-Ie5" id="0HG-gi-TFN"/>
                         <outlet property="IM3" destination="hWL-uL-x71" id="fY8-N3-HUh"/>
                         <outlet property="IM4" destination="mWi-Bc-dn4" id="4eJ-g0-hF9"/>
                         <outlet property="IM5" destination="VnP-U6-5as" id="XUy-VB-hTS"/>
+                        <outlet property="InstructionView" destination="C1m-G9-CoO" id="i9U-cY-aei"/>
                         <outlet property="cardioTb" destination="lO4-rl-6Ru" id="hpI-f2-KDo"/>
                         <outlet property="checkListView_forImmediateManagement" destination="GZr-eI-6Lc" id="bYz-e5-6ZD"/>
+                        <outlet property="circulatoryArrest" destination="XmK-OI-JsK" id="P31-6U-cuF"/>
                         <outlet property="immediateManB" destination="u4g-MQ-yk7" id="h78-bl-jXj"/>
+                        <outlet property="instructionTextView" destination="OIL-hl-qKs" id="2FD-lc-wE5"/>
                         <outlet property="neuroTb" destination="BSb-S1-Hah" id="LNd-FH-e22"/>
                         <outlet property="weightLabel" destination="DkZ-mQ-XkU" id="Kdl-f1-i40"/>
                         <outletCollection property="secondaryLAviews" destination="w7H-fs-UQl" id="apD-rG-QZ0"/>
@@ -2346,6 +2408,8 @@ The authors of each chapter have ensured that the information is current and cor
                         <outletCollection property="secondaryLAviews" destination="BSb-S1-Hah" id="2mT-8x-kHH"/>
                         <outletCollection property="secondaryLAviews" destination="lO4-rl-6Ru" id="O5I-sX-18c"/>
                         <outletCollection property="secondaryLAviews" destination="GZr-eI-6Lc" id="jJX-H7-lEo"/>
+                        <outletCollection property="secondaryLAviews" destination="juO-lR-RjV" id="5M5-Lg-1eO"/>
+                        <outletCollection property="secondaryLAviews" destination="M7Q-fD-U3Y" id="YSi-a3-uoa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jtl-qt-1PM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2939,10 +3003,10 @@ The authors of each chapter have ensured that the information is current and cor
                                 <rect key="frame" x="20" y="178" width="560" height="82"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NYg-rk-P8x" userLabel="COLOROption">
-                                        <rect key="frame" x="157" y="16" width="1443" height="50"/>
+                                        <rect key="frame" x="157" y="16" width="1455" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cf9-PC-wuP" userLabel="PrimaryColor">
-                                                <rect key="frame" x="0.0" y="0.0" width="1241" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1253" height="50"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsk-Lu-eCf" userLabel="SecondaryColor">
                                                         <rect key="frame" x="14" y="13" width="23" height="23"/>
@@ -2957,7 +3021,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Color Accent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3b-Qx-Okr">
-                                                <rect key="frame" x="1251" y="0.0" width="192" height="50"/>
+                                                <rect key="frame" x="1263" y="0.0" width="192" height="50"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="23"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>

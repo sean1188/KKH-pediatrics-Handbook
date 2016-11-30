@@ -38,6 +38,18 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *cardioTb;
 - (IBAction)cardioToxicityPressed:(id)sender;
+@property (strong, nonatomic) IBOutlet UIView *circulatoryArrest;
+- (IBAction)hasCirculatoryArrest:(id)sender;
+- (IBAction)NoCirculatoryArrest:(id)sender;
+@property (strong, nonatomic) IBOutlet UIButton *Carrest;
+@property (strong, nonatomic) IBOutlet UIButton *Carrest2;
+
+
+
+
+@property (strong, nonatomic) IBOutlet UIView *InstructionView;
+@property (strong, nonatomic) IBOutlet UITextView *instructionTextView;
+
 
 - (IBAction)back:(id)sender;
 
