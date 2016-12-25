@@ -138,13 +138,26 @@ int weightLA;
     float infusion = weightLA * 15;
     float infusionDoubleRate = weightLA * 30;
     float limit = weightLA * 12;
-    [_instructionTextView setText:[NSString stringWithFormat:@"   Use conventional therapies to treat Hypotension, Bradycardia, Tachyarrhythmias. \n\n   HYPOTENSION: \n    Epinephrine IV %0.1f MICROgrams OR %0.1f ML\n\n   ARRHYTHMIA: \n   * Lignocaine should NOT be used as as antiarrhythmic therapy !\n   Avoid Calcium Channel Blockers and Beta Blockers. \n\n  Consider : INTRALIPID THERAPY\n (20 percent LIPID EMULSION) \n ** LAST treatment box (BLACK) located in MOT recovery & outside DSOT 2 \n\n\n   Immediate: \n\n   Bolus  (1.5ML/KG) IV  %0.1f ML Over 1 Minute \n\n  Infusion (15 ML/KG/H) IV %0.1f ML Over 1 Hour \n\n\n  After 5 Minutes, if cardiovascular stabilty is NOT restored : \n\n  1. Repeat bolus up to maximum of 2X (same dose) 5 minutes apart \n\n  2. Double rate of INFUSION: %0.1f ML Over 1 Hour \n\n  DO NOT EXCEED MAXIMUM CUMMULATIVE DOSE (12 ML/KG) = %0.1f ML",epinephrineMICRO, epinephrineML, bolus, infusion, infusionDoubleRate, limit]];
+    [_instructionTextView setText:[NSString stringWithFormat:@"   Use conventional therapies to treat Hypotension, Bradycardia, Tachyarrhythmias. \n\n   HYPOTENSION: \n    Epinephrine IV %0.1f MICROgrams OR %0.1f ML\n\n   ARRHYTHMIA: \n   * Lignocaine should NOT be used as as antiarrhythmic therapy !\n   Avoid Calcium Channel Blockers and Beta Blockers. \n\n  Consider: \n  INTRALIPID THERAPY\n (20 percent LIPID EMULSION) \n ** LAST treatment box (BLACK) located in MOT recovery & outside DSOT 2 \n\n\n   Immediate: \n\n   Bolus  (1.5ML/KG) IV  %0.1f ML Over 1 Minute \n\n  Infusion (15 ML/KG/H) IV %0.1f ML Over 1 Hour \n\n\n  After 5 Minutes, if cardiovascular stabilty is NOT restored : \n\n  1. Repeat bolus up to maximum of 2X (same dose) 5 minutes apart \n\n  2. Double rate of INFUSION: %0.1f ML Over 1 Hour \n\n  DO NOT EXCEED MAXIMUM CUMMULATIVE DOSE (12 ML/KG) = %0.1f ML",epinephrineMICRO, epinephrineML, bolus, infusion, infusionDoubleRate, limit]];
     [UIView animateWithDuration:0.3 animations:^{
         _InstructionView.alpha = 1;
     }];
 }
 - (IBAction)back:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    if (_circulatoryArrest.alpha ==1) {
+        [UIView animateWithDuration:0.3 animations:^{
+            _circulatoryArrest.alpha = 0;
+            _InstructionView.alpha = 0;
+        }];
+    }
+    else if (_InstructionView.alpha ==1) {
+        [UIView animateWithDuration:0.3 animations:^{
+            _circulatoryArrest.alpha = 0;
+            _InstructionView.alpha = 0;
+        }];
+    }
+    else{
+        [self dismissViewControllerAnimated:YES completion:nil];}
     
 }
 

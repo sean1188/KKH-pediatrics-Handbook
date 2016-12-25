@@ -11,12 +11,12 @@
 
 @interface DrugCalculationViewController ()
 @property (strong, nonatomic) DrugCalculationsManager *mannager;
+@property (strong, nonatomic) CardiacDrugCalculationsManager *Cardiacmannager;
 
 
 @end
 
 @implementation DrugCalculationViewController
-bool didNext;
 -(UIStatusBarStyle )preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
@@ -87,17 +87,17 @@ CGRect webViewInit;
 - (void)viewDidLoad {
     [super viewDidLoad];
     //
+    counttt = 0;
     _backB.alpha = 1;
+    _pickerDrug.alpha = 0;
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter]
      addObserver:self selector:@selector(orientationChanged:)
      name:UIDeviceOrientationDidChangeNotification
      object:[UIDevice currentDevice]];
     //
-    [_nextB addArrToTickAnimation];
     _resView.alpha = 0;
-    firstE = YES; didViewPdf = NO; didNext = NO;
-    _textField.delegate = self;
+    firstE = YES; didViewPdf = NO;                                              _textField.delegate = self;
     _webView.alpha = 0;
     // Do any additional setup after loading the view.
     [self.view setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]]];
@@ -134,34 +134,99 @@ _drugimg.frame = CGRectMake(_drugimg.frame.origin.x, _drugimg.frame.origin.y - 5
 
 }
 
+- (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+- (int)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return 2;
+}
+- (NSAttributedString *)pickerView:(UIPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    switch (row) {
+        case 0:
+            return [[NSAttributedString alloc] initWithString:@"Anaesthesia Drug Calculator" attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+            break;
+        case 1:
+            return [[NSAttributedString alloc] initWithString:@"Cardiac Drug Calculator" attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+            break;
+        default:
+            return nil;
+            break;
+    }
+}
+
 #pragma mark - data processing
 
 //
-
+int counttt;
 - (IBAction)next:(id)sender {
     _resView.alpha = 1;
     [_textField resignFirstResponder];
-    if (didNext == NO & ![_textField.text isEqualToString:@""]) {
-        didNext = YES;
-        _mannager = [DrugCalculationsManager alloc];
-        [_webView loadData:[[_mannager initWithWeight:_textField.text.intValue] getData] MIMEType:@"text/csv" textEncodingName:@"utf-8" baseURL:nil];
-        _webView.translatesAutoresizingMaskIntoConstraints = YES;
-        _webView.layer.cornerRadius = self.webView.frame.size.height/2;
-        _webView.scalesPageToFit = YES;
-        _webView.clipsToBounds =YES;
-        [_nextB addTickToCrossAnimation];
+    [_nextB addArrToTickAnimation];
+    if ((counttt == 0) & ![_textField.text isEqualToString:@""]) {
+        counttt ++;
         [UIView animateWithDuration:0.3 animations:^{
-            _resView.frame =  CGRectMake(_resView.frame.origin.x - _resView.frame.size.width - 10, _resView.frame.origin.y, _resView.frame.size.width, _resView.frame.size.height);
             _textField.alpha = 0;
-            _resView.translatesAutoresizingMaskIntoConstraints = NO;
-        } completion:^(BOOL s  ){
+            //init drug type selector
+            _pickerDrug.alpha = 1;
+        }];
+        [[NSUserDefaults standardUserDefaults] setObject:_textField.text forKey:@"DCweight"];
+        
+    }
+    else if (counttt == 1){
+        counttt ++;
+        //init resView
+        if ([_pickerDrug selectedRowInComponent:0] == 0) {
+            [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"drugListType"];
+            //drug cal
+            _mannager = [DrugCalculationsManager alloc];
+            [_webView loadData:[[_mannager initWithWeight:_textField.text.intValue] getData] MIMEType:@"text/csv" textEncodingName:@"utf-8" baseURL:nil];
+            _webView.translatesAutoresizingMaskIntoConstraints = YES;
+            _webView.layer.cornerRadius = self.webView.frame.size.height/2;
+            _webView.scalesPageToFit = YES;
+            _webView.clipsToBounds =YES;
+            [_nextB addTickToCrossAnimation];
             [UIView animateWithDuration:0.3 animations:^{
-                _webView.alpha= 1;
-                _backB.alpha = 0;
+                _resView.frame =  CGRectMake(_resView.frame.origin.x - _resView.frame.size.width - 10, _resView.frame.origin.y, _resView.frame.size.width, _resView.frame.size.height);
+                _pickerDrug.alpha = 0;
+                _textField.alpha = 0;
+                _resView.translatesAutoresizingMaskIntoConstraints = NO;
+            } completion:^(BOOL s  ){
+                [UIView animateWithDuration:0.3 animations:^{
+                    _webView.alpha= 1;
+                    _backB.alpha = 0;
+                }];
+                
             }];
 
-        }];
-    }
+        }
+        else if ([_pickerDrug selectedRowInComponent:0] == 1){
+            [[NSUserDefaults standardUserDefaults] setInteger:1 forKey:@"drugListType"];
+            //cardiac
+            _Cardiacmannager = [CardiacDrugCalculationsManager alloc];
+            [_webView loadData:[[_Cardiacmannager initWithWeight:_textField.text.intValue] getData] MIMEType:@"text/csv" textEncodingName:@"utf-8" baseURL:nil];
+            _webView.translatesAutoresizingMaskIntoConstraints = YES;
+            _webView.layer.cornerRadius = self.webView.frame.size.height/2;
+            _webView.scalesPageToFit = YES;
+            _webView.clipsToBounds =YES;
+            [_nextB addTickToCrossAnimation];
+            [UIView animateWithDuration:0.3 animations:^{
+                _resView.frame =  CGRectMake(_resView.frame.origin.x - _resView.frame.size.width - 10, _resView.frame.origin.y, _resView.frame.size.width, _resView.frame.size.height);
+                _pickerDrug.alpha = 0;
+                _textField.alpha = 0;
+                _resView.translatesAutoresizingMaskIntoConstraints = NO;
+            } completion:^(BOOL s  ){
+                [UIView animateWithDuration:0.3 animations:^{
+                    _webView.alpha= 1;
+                    _backB.alpha = 0;
+                }];
+                
+            }];
+
+        }
+            }
     else if ([_textField.text isEqualToString:@""]){
         
     }
@@ -199,8 +264,12 @@ bool didViewPdf;
     }];
 }
 - (IBAction)sendB:(id)sender {
-    [[_mannager initWithWeight:_textField.text.intValue] sendEmail:[[DrugCalculationViewController alloc] init]];
+    [[_mannager initWithWeight:_textField.text.intValue] sendEmail:self];
 }
+- (IBAction)specificDrugB:(id)sender {
+    [self performSegueWithIdentifier:@"specific" sender:self];
+}
+
 - (IBAction)back:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

@@ -20,7 +20,9 @@
     // Do any additional setup after loading the view.
     [self setcolor];
     [_weight setTitle:[NSString stringWithFormat:@"Weight : %@KG",[[NSUserDefaults standardUserDefaults] objectForKey:@"Cweight"]] forState:UIControlStateNormal];
-    
+    _weightEditView.translatesAutoresizingMaskIntoConstraints = YES;
+    _weightEditView.frame = CGRectMake(_weightEditView.frame.origin.x, self.view.frame.size.height, self.weightEditView.frame.size.width, self.weightEditView.frame.size.height);
+    _weightEditView.layer.cornerRadius = 15.0f;
 }
 -(void) setcolor{
     for (UIView *view in _secondaryViewws) {
@@ -84,11 +86,36 @@
     else if (indexPath.row == 2){
         [self performSegueWithIdentifier:@"LA" sender:self];
     }
+    else if (indexPath.row == 3){
+        [self performSegueWithIdentifier:@"hyperK" sender:self];
+    }
+    else if (indexPath.row == 4){
+        [self performSegueWithIdentifier:@"MH" sender:self];
+    }
+    else if (indexPath.row == 5){
+        [self performSegueWithIdentifier:@"ANA" sender:self];
+    }
+    
     
 }
 
 
 - (IBAction)editWeight:(id)sender {
+    [_weightEditTextfield setText:[NSString stringWithFormat:@"%i",[[[NSUserDefaults standardUserDefaults] objectForKey:@"Cweight"] intValue]]];
+    [_weightEditTextfield becomeFirstResponder];
+    [UIView animateWithDuration:0.3 animations:^{
+       _weightEditView.frame = CGRectMake(_weightEditView.frame.origin.x, 36, self.weightEditView.frame.size.width, self.weightEditView.frame.size.height);
+    }];
+}
+
+- (IBAction)weightSave:(id)sender {
+    [self.view endEditing: YES];
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:_weightEditTextfield.text.intValue] forKey:@"Cweight"];
+    [_weight setTitle:[NSString stringWithFormat:@"Weight : %@KG",[[NSUserDefaults standardUserDefaults] objectForKey:@"Cweight"]] forState:UIControlStateNormal];
+    _weightEditView.translatesAutoresizingMaskIntoConstraints = YES;
+    [UIView animateWithDuration:0.6 animations:^{
+        _weightEditView.frame = CGRectMake(_weightEditView.frame.origin.x, self.view.frame.size.height, self.weightEditView.frame.size.width, self.weightEditView.frame.size.height);
+    }];
 }
 
 - (IBAction)back:(id)sender {

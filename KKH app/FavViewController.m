@@ -57,6 +57,7 @@
     if (![_weightTextField.text isEqualToString:@""]) {
         [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:[_weightTextField.text intValue]] forKey:@"Cweight"];
         [self performSegueWithIdentifier:@"nextC" sender:self];
+        [_weightTextField setText:@""];
     }
 }
 @end

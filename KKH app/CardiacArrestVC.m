@@ -153,6 +153,12 @@
 }
 
 - (IBAction)back:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    if (_proceedView.alpha == 1 | _checkListView.alpha == 1 ) {
+        [UIView animateWithDuration:0.3 animations:^{
+            _proceedView.alpha = 0;_checkListView.alpha=0;
+        }];
+    
+    }else{
+        [self dismissViewControllerAnimated:YES completion:nil];}
 }
 @end

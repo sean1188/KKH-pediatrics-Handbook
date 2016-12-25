@@ -96,12 +96,18 @@
 		979782F11D1D8E7100BAF670 /* splashAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 979782F01D1D8E7100BAF670 /* splashAnimate.m */; };
 		979782F41D1D8EBC00BAF670 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 979782F31D1D8EBC00BAF670 /* SplashViewController.m */; };
 		979782F91D1E1C6C00BAF670 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 979782F81D1E1C6C00BAF670 /* AboutUsViewController.m */; };
-		979782FD1D1F8DEB00BAF670 /* DrugCalculationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979782FB1D1F8DEB00BAF670 /* DrugCalculationsManager.swift */; };
-		979782FE1D1F8DEB00BAF670 /* DrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = 979782FC1D1F8DEB00BAF670 /* DrugList.csv */; };
 		97BCF2C51D13955600891F74 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BCF2C41D13955600891F74 /* SettingsViewController.m */; };
 		97E551F01DE57281008CBB1A /* index.txt in Resources */ = {isa = PBXBuildFile; fileRef = 97E551EF1DE57281008CBB1A /* index.txt */; };
 		97FB27C11D06D69000EF2845 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB27C01D06D69000EF2845 /* Calculator.m */; };
 		97FED15B1D5095B8000B7703 /* inc_hq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97FED15A1D5095B8000B7703 /* inc_hq.jpg */; };
+		AC3CD9771DF14E9700FDD84E /* MalignantHyperthermia.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3CD9761DF14E9700FDD84E /* MalignantHyperthermia.m */; };
+		AC3CD97B1DF165DA00FDD84E /* Anaphylaxis.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3CD97A1DF165DA00FDD84E /* Anaphylaxis.m */; };
+		AC4B48A01DF5320A00C4E9B8 /* CardiacDrugCalculationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B489C1DF5320A00C4E9B8 /* CardiacDrugCalculationsManager.swift */; };
+		AC4B48A11DF5320A00C4E9B8 /* CardiacDrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = AC4B489D1DF5320A00C4E9B8 /* CardiacDrugList.csv */; };
+		AC4B48A21DF5320A00C4E9B8 /* DrugCalculationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B489E1DF5320A00C4E9B8 /* DrugCalculationsManager.swift */; };
+		AC4B48A31DF5320A00C4E9B8 /* DrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = AC4B489F1DF5320A00C4E9B8 /* DrugList.csv */; };
+		AC4B48A91DF53F0000C4E9B8 /* SpecificDrugselector.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4B48A81DF53F0000C4E9B8 /* SpecificDrugselector.m */; };
+		ACE924041DF1269D0020DF16 /* HyperK.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE924031DF1269D0020DF16 /* HyperK.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,14 +235,24 @@
 		979782F31D1D8EBC00BAF670 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		979782F71D1E1C6C00BAF670 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
 		979782F81D1E1C6C00BAF670 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
-		979782FB1D1F8DEB00BAF670 /* DrugCalculationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugCalculationsManager.swift; sourceTree = "<group>"; };
-		979782FC1D1F8DEB00BAF670 /* DrugList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DrugList.csv; sourceTree = "<group>"; };
 		97BCF2C31D13955600891F74 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		97BCF2C41D13955600891F74 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		97E551EF1DE57281008CBB1A /* index.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.txt; sourceTree = "<group>"; };
 		97FB27BF1D06D69000EF2845 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		97FB27C01D06D69000EF2845 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		97FED15A1D5095B8000B7703 /* inc_hq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inc_hq.jpg; sourceTree = "<group>"; };
+		AC3CD9751DF14E9700FDD84E /* MalignantHyperthermia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MalignantHyperthermia.h; sourceTree = "<group>"; };
+		AC3CD9761DF14E9700FDD84E /* MalignantHyperthermia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MalignantHyperthermia.m; sourceTree = "<group>"; };
+		AC3CD9791DF165DA00FDD84E /* Anaphylaxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Anaphylaxis.h; sourceTree = "<group>"; };
+		AC3CD97A1DF165DA00FDD84E /* Anaphylaxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Anaphylaxis.m; sourceTree = "<group>"; };
+		AC4B489C1DF5320A00C4E9B8 /* CardiacDrugCalculationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardiacDrugCalculationsManager.swift; sourceTree = "<group>"; };
+		AC4B489D1DF5320A00C4E9B8 /* CardiacDrugList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CardiacDrugList.csv; sourceTree = "<group>"; };
+		AC4B489E1DF5320A00C4E9B8 /* DrugCalculationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugCalculationsManager.swift; sourceTree = "<group>"; };
+		AC4B489F1DF5320A00C4E9B8 /* DrugList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DrugList.csv; sourceTree = "<group>"; };
+		AC4B48A71DF53F0000C4E9B8 /* SpecificDrugselector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecificDrugselector.h; sourceTree = "<group>"; };
+		AC4B48A81DF53F0000C4E9B8 /* SpecificDrugselector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecificDrugselector.m; sourceTree = "<group>"; };
+		ACE924021DF1269D0020DF16 /* HyperK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyperK.h; sourceTree = "<group>"; };
+		ACE924031DF1269D0020DF16 /* HyperK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyperK.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,15 +321,12 @@
 		9722E86F1D0CF90F00C6D26F /* calculation */ = {
 			isa = PBXGroup;
 			children = (
-				97087CCE1D5435FE007182EA /* BMIGraphManager.swift */,
-				979782FB1D1F8DEB00BAF670 /* DrugCalculationsManager.swift */,
-				979782FC1D1F8DEB00BAF670 /* DrugList.csv */,
 				97FB27BF1D06D69000EF2845 /* Calculator.h */,
 				97FB27C01D06D69000EF2845 /* Calculator.m */,
-				97612B3D1D3F9D9E004900BE /* DrugCalculationViewController.h */,
-				97612B3E1D3F9D9E004900BE /* DrugCalculationViewController.m */,
-				9777BF761D435C6F00F82DA4 /* BMIPercentileViewController.h */,
-				9777BF771D435C6F00F82DA4 /* BMIPercentileViewController.m */,
+				AC4B48A51DF5340F00C4E9B8 /* Drug calculators */,
+				AC4B48A41DF533FA00C4E9B8 /* BMI PERCENTILE */,
+				AC4B48A71DF53F0000C4E9B8 /* SpecificDrugselector.h */,
+				AC4B48A81DF53F0000C4E9B8 /* SpecificDrugselector.m */,
 			);
 			name = calculation;
 			sourceTree = "<group>";
@@ -327,6 +340,12 @@
 				9727C7FD1DEADD08004334E9 /* CardiacArrestVC.m */,
 				9729DBA81DED459E00F2475A /* LaToxicity.h */,
 				9729DBA91DED459E00F2475A /* LaToxicity.m */,
+				ACE924021DF1269D0020DF16 /* HyperK.h */,
+				ACE924031DF1269D0020DF16 /* HyperK.m */,
+				AC3CD9751DF14E9700FDD84E /* MalignantHyperthermia.h */,
+				AC3CD9761DF14E9700FDD84E /* MalignantHyperthermia.m */,
+				AC3CD9791DF165DA00FDD84E /* Anaphylaxis.h */,
+				AC3CD97A1DF165DA00FDD84E /* Anaphylaxis.m */,
 			);
 			name = "Specific Case VC";
 			sourceTree = "<group>";
@@ -473,6 +492,37 @@
 			path = PDFs;
 			sourceTree = "<group>";
 		};
+		AC4B48A41DF533FA00C4E9B8 /* BMI PERCENTILE */ = {
+			isa = PBXGroup;
+			children = (
+				9777BF761D435C6F00F82DA4 /* BMIPercentileViewController.h */,
+				9777BF771D435C6F00F82DA4 /* BMIPercentileViewController.m */,
+				97087CCE1D5435FE007182EA /* BMIGraphManager.swift */,
+			);
+			name = "BMI PERCENTILE";
+			sourceTree = "<group>";
+		};
+		AC4B48A51DF5340F00C4E9B8 /* Drug calculators */ = {
+			isa = PBXGroup;
+			children = (
+				AC4B48A61DF5342200C4E9B8 /* Backend */,
+				97612B3D1D3F9D9E004900BE /* DrugCalculationViewController.h */,
+				97612B3E1D3F9D9E004900BE /* DrugCalculationViewController.m */,
+			);
+			name = "Drug calculators";
+			sourceTree = "<group>";
+		};
+		AC4B48A61DF5342200C4E9B8 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				AC4B489C1DF5320A00C4E9B8 /* CardiacDrugCalculationsManager.swift */,
+				AC4B489D1DF5320A00C4E9B8 /* CardiacDrugList.csv */,
+				AC4B489E1DF5320A00C4E9B8 /* DrugCalculationsManager.swift */,
+				AC4B489F1DF5320A00C4E9B8 /* DrugList.csv */,
+			);
+			name = Backend;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -571,9 +621,9 @@
 				9706EBA11D4CFC3A00801B77 /* splash screen.png in Resources */,
 				9729DBF11DED4A0A00F2475A /* M-33-Post_Adenotonsillectomy_Bleeding.pdf in Resources */,
 				9729DBD01DED491100F2475A /* H-19-Sedation_for_Oncology_Children.pdf in Resources */,
-				979782FE1D1F8DEB00BAF670 /* DrugList.csv in Resources */,
 				977047D91DEE8F0B002F5066 /* click.mp3 in Resources */,
 				9729DBBB1DED47E700F2475A /* C-07-Nausea_Vomitting.pdf in Resources */,
+				AC4B48A31DF5320A00C4E9B8 /* DrugList.csv in Resources */,
 				9729DC041DED4AFB00F2475A /* P-43-Chronic_Pain.pdf in Resources */,
 				9729DBBE1DED47E700F2475A /* C-10-Equipment.pdf in Resources */,
 				9729DBC81DED489600F2475A /* F-13-Common_Cardiac_Conditions.pdf in Resources */,
@@ -590,6 +640,7 @@
 				9722E8691D0CF16300C6D26F /* CabinCondensed-Bold.ttf in Resources */,
 				9729DBCB1DED489600F2475A /* F-16-ROTEM_Algorithm.pdf in Resources */,
 				9729DBF31DED4A0A00F2475A /* M-35-Suspected_Anaphylaxis.pdf in Resources */,
+				AC4B48A11DF5320A00C4E9B8 /* CardiacDrugList.csv in Resources */,
 				9722E86A1D0CF16300C6D26F /* CabinCondensed-Medium.ttf in Resources */,
 				9729DBBD1DED47E700F2475A /* C-09-Dental_Injury.pdf in Resources */,
 				9729DBD81DED493000F2475A /* I-21-Local_Anaesthetic_Toxicity.pdf in Resources */,
@@ -657,15 +708,20 @@
 				97612B3F1D3F9D9E004900BE /* DrugCalculationViewController.m in Sources */,
 				9777BF781D435C6F00F82DA4 /* BMIPercentileViewController.m in Sources */,
 				9727485D1DEDB1BF00014E32 /* CHAPTERCollectionViewCell.m in Sources */,
+				AC4B48A91DF53F0000C4E9B8 /* SpecificDrugselector.m in Sources */,
+				ACE924041DF1269D0020DF16 /* HyperK.m in Sources */,
 				976EFB271D01C28B0048A4DC /* AppDelegate.m in Sources */,
 				9729DC091DED4E8A00F2475A /* MBProgressHUD.m in Sources */,
 				9729DBAA1DED459E00F2475A /* LaToxicity.m in Sources */,
 				976EFB241D01C28B0048A4DC /* main.m in Sources */,
 				974C45661D0A6A2500797BF0 /* webViewPDF\.m in Sources */,
 				979782F41D1D8EBC00BAF670 /* SplashViewController.m in Sources */,
+				AC4B48A01DF5320A00C4E9B8 /* CardiacDrugCalculationsManager.swift in Sources */,
 				97087CCF1D5435FE007182EA /* BMIGraphManager.swift in Sources */,
+				AC3CD97B1DF165DA00FDD84E /* Anaphylaxis.m in Sources */,
+				AC4B48A21DF5320A00C4E9B8 /* DrugCalculationsManager.swift in Sources */,
 				9727C7FE1DEADD08004334E9 /* CardiacArrestVC.m in Sources */,
-				979782FD1D1F8DEB00BAF670 /* DrugCalculationsManager.swift in Sources */,
+				AC3CD9771DF14E9700FDD84E /* MalignantHyperthermia.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

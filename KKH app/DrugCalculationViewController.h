@@ -20,6 +20,10 @@
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 - (IBAction)sendB:(id)sender;
 @property (strong, nonatomic) IBOutlet UIButton *backB;
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerDrug;
+- (IBAction)specificDrugB:(id)sender;
+
+
 
 - (IBAction)back:(id)sender;
 

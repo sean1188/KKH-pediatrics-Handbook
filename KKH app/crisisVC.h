@@ -19,6 +19,11 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *weight;
 - (IBAction)editWeight:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *weightEditView;
+@property (weak, nonatomic) IBOutlet UITextField *weightEditTextfield;
+- (IBAction)weightSave:(id)sender;
+
+
 - (IBAction)back:(id)sender;
 
 @end
