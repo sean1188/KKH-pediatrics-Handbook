@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E7W-Qo-Nmj">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E7W-Qo-Nmj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -2660,7 +2660,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTA-pk-brs">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="55.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="hWm-hR-lHV"/>
                                                                     </constraints>
@@ -2720,7 +2720,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jo-Pg-wLd">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="56"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="55"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="ueW-Wg-4hH"/>
                                                                     </constraints>
@@ -2780,7 +2780,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3m-v2-CYr">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="55.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="LjH-Xh-nfF"/>
                                                                     </constraints>
@@ -2810,7 +2810,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F3-IX-oCd">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="56"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="54"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="Wq1-TJ-u0x"/>
                                                                     </constraints>
@@ -2883,7 +2883,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BI5-LW-4iH">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="55.5"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="KRQ-hP-QKE"/>
                                                                     </constraints>
@@ -2913,7 +2913,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J44-0y-kLu">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="55.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="hDo-Wn-g7c"/>
                                                                     </constraints>
@@ -2943,7 +2943,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUl-qv-txf">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="57.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="Wqx-MH-BeV"/>
                                                                     </constraints>
@@ -3003,7 +3003,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sww-ID-R5c">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="55.5"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="rPd-Uj-H2g"/>
                                                                     </constraints>
@@ -3504,7 +3504,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inclusion/Exclusion Criteria:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLB-MK-Dtq">
-                                <rect key="frame" x="77.5" y="108" width="219" height="31"/>
+                                <rect key="frame" x="78" y="108" width="219" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="DNk-vu-Guv"/>
                                 </constraints>
@@ -3513,13 +3513,13 @@ The authors of each chapter have ensured that the information is current and cor
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Term NEONATE (&lt; 1 month age): serum K+ &gt; 6 mmol/L,  Children &gt; 1 month age: serum K+ &gt;5.5 mmol/L. EXCLUDE Premature Neonates." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ca-wu-IHu">
-                                <rect key="frame" x="22" y="135" width="329" height="100"/>
+                                <rect key="frame" x="22" y="135" width="331" height="100"/>
                                 <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pye-rb-XCd">
-                                <rect key="frame" x="50" y="243" width="272" height="65"/>
+                                <rect key="frame" x="50" y="243" width="274" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="k4V-Mo-jCC"/>
                                 </constraints>
@@ -3532,7 +3532,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysI-qJ-iwS">
-                                <rect key="frame" x="50" y="406" width="272" height="65"/>
+                                <rect key="frame" x="50" y="406" width="274" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="wGC-BE-Wce"/>
                                 </constraints>
@@ -3545,7 +3545,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvb-Un-VVd">
-                                <rect key="frame" x="20" y="318" width="332" height="50"/>
+                                <rect key="frame" x="20" y="318" width="334" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4l7-mP-GH9"/>
                                 </constraints>
@@ -3990,7 +3990,7 @@ The authors of each chapter have ensured that the information is current and cor
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lnG-PL-rHz">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lnG-PL-rHz">
                                 <rect key="frame" x="0.0" y="195" width="375" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Fr4-1G-loY" id="8xs-Uv-2GP"/>
@@ -4003,20 +4003,66 @@ The authors of each chapter have ensured that the information is current and cor
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWF-hF-lBI">
+                                <rect key="frame" x="24" y="28" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="XVl-QK-gCd"/>
+                                    <constraint firstAttribute="height" constant="40" id="mBo-dR-NzT"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" backgroundImage="ic_highlight_off_white_24dp"/>
+                                <connections>
+                                    <action selector="backb:" destination="Fr4-1G-loY" eventType="touchUpInside" id="mdT-Xh-78Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPi-1k-jUH">
+                                <rect key="frame" x="152" y="538" width="70" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="SLb-Uo-hpv"/>
+                                    <constraint firstAttribute="height" constant="55" id="YJB-AY-pR8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="26"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextB:" destination="Fr4-1G-loY" eventType="touchUpInside" id="MOs-tX-QkG"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bCZ-sq-GOE">
+                                <rect key="frame" x="16" y="226" width="343" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="k6M-jX-xZn"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.12941176470588237" green="0.33333333333333331" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="cDy-wW-wCP" firstAttribute="centerX" secondItem="vsm-S9-rRi" secondAttribute="centerX" id="1Xe-Xz-XdH"/>
                             <constraint firstAttribute="trailing" secondItem="lnG-PL-rHz" secondAttribute="trailing" id="6qU-1k-WMv"/>
+                            <constraint firstItem="JOv-Sj-GQL" firstAttribute="top" secondItem="PPi-1k-jUH" secondAttribute="bottom" constant="74" id="7pG-LI-4re"/>
+                            <constraint firstItem="bCZ-sq-GOE" firstAttribute="top" secondItem="cDy-wW-wCP" secondAttribute="bottom" constant="58" id="G1f-mW-gD0"/>
+                            <constraint firstItem="XWF-hF-lBI" firstAttribute="leading" secondItem="vsm-S9-rRi" secondAttribute="leadingMargin" constant="8" id="Jr1-uZ-qGr"/>
                             <constraint firstItem="lnG-PL-rHz" firstAttribute="leading" secondItem="vsm-S9-rRi" secondAttribute="leading" id="aVR-09-han"/>
                             <constraint firstItem="lnG-PL-rHz" firstAttribute="centerX" secondItem="vsm-S9-rRi" secondAttribute="centerX" id="czQ-MG-RZq"/>
-                            <constraint firstItem="lnG-PL-rHz" firstAttribute="top" secondItem="cDy-wW-wCP" secondAttribute="bottom" constant="40" id="grr-Wd-VgB"/>
-                            <constraint firstItem="lnG-PL-rHz" firstAttribute="centerY" secondItem="vsm-S9-rRi" secondAttribute="centerY" id="oMr-wx-nBK"/>
+                            <constraint firstItem="bCZ-sq-GOE" firstAttribute="leading" secondItem="vsm-S9-rRi" secondAttribute="leadingMargin" id="dY1-GH-vxL"/>
+                            <constraint firstItem="PPi-1k-jUH" firstAttribute="centerX" secondItem="lnG-PL-rHz" secondAttribute="centerX" id="fJW-j1-Yrc"/>
+                            <constraint firstItem="lnG-PL-rHz" firstAttribute="top" secondItem="cDy-wW-wCP" secondAttribute="bottom" constant="27" id="grr-Wd-VgB"/>
+                            <constraint firstItem="XWF-hF-lBI" firstAttribute="top" secondItem="pAW-Ym-FMy" secondAttribute="bottom" constant="8" id="mqr-o5-lCp"/>
+                            <constraint firstItem="lnG-PL-rHz" firstAttribute="centerY" secondItem="vsm-S9-rRi" secondAttribute="centerY" constant="-30.5" id="oMr-wx-nBK"/>
+                            <constraint firstItem="bCZ-sq-GOE" firstAttribute="centerX" secondItem="lnG-PL-rHz" secondAttribute="centerX" id="zHG-ot-gFP"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="Drugpicker" destination="lnG-PL-rHz" id="zJR-9V-dXN"/>
+                        <outlet property="backB" destination="XWF-hF-lBI" id="SLR-sm-tnc"/>
                         <outlet property="header1" destination="cDy-wW-wCP" id="Ga0-ac-hpR"/>
+                        <outlet property="nextB" destination="PPi-1k-jUH" id="XK9-jz-O4s"/>
+                        <outlet property="resView" destination="bCZ-sq-GOE" id="MVc-pu-YEv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LVM-BQ-oqQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4550,7 +4596,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authorisation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJt-zD-OeA">
-                                                <rect key="frame" x="40" y="0.0" width="151" height="40"/>
+                                                <rect key="frame" x="40" y="0.0" width="150.5" height="40"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="26"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -4576,13 +4622,13 @@ The authors of each chapter have ensured that the information is current and cor
                                         <rect key="frame" x="194" y="17" width="137" height="65"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start-up tab" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKI-Kh-dEu">
-                                                <rect key="frame" x="0.0" y="0.0" width="137" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="136.5" height="32"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="26"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9Wb-7g-Wez">
-                                                <rect key="frame" x="0.0" y="37" width="137" height="29"/>
+                                                <rect key="frame" x="0.0" y="37" width="136.5" height="29"/>
                                                 <segments>
                                                     <segment title="" image="ic_info_white"/>
                                                     <segment title="" image="ic_poll_white"/>
@@ -4636,10 +4682,10 @@ The authors of each chapter have ensured that the information is current and cor
                                 <rect key="frame" x="20" y="178" width="560" height="82"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NYg-rk-P8x" userLabel="COLOROption">
-                                        <rect key="frame" x="157" y="16" width="1551" height="50"/>
+                                        <rect key="frame" x="157" y="16" width="1564" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cf9-PC-wuP" userLabel="PrimaryColor">
-                                                <rect key="frame" x="0.0" y="0.0" width="1349" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1362.5" height="50"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsk-Lu-eCf" userLabel="SecondaryColor">
                                                         <rect key="frame" x="14" y="13" width="23" height="23"/>
@@ -4654,7 +4700,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Color Accent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3b-Qx-Okr">
-                                                <rect key="frame" x="1359" y="0.0" width="192" height="50"/>
+                                                <rect key="frame" x="1372.5" y="0.0" width="191.5" height="50"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="23"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>

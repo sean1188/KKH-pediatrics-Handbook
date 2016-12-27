@@ -186,6 +186,7 @@ class DrugCalculationsManager: NSObject, MFMailComposeViewControllerDelegate {
                     nameList[lineComponents[0]]?[lineComponents[2]]?["DOSE/KG"] = lineComponents[3]
                     nameList[lineComponents[0]]?[lineComponents[2]]?["AMOUNT"] = "\(((lineComponents[3] as NSString).integerValue * weight))"
                     nameList[lineComponents[0]]?[lineComponents[2]]?["UNIT"] = lineComponents[5]
+
                 }
             }
         }

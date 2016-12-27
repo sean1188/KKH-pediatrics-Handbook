@@ -132,16 +132,19 @@ class CardiacDrugCalculationsManager: NSObject, MFMailComposeViewControllerDeleg
             if !dataLine.hasPrefix(",") {
                 
                 let lineComponents = dataLine.components(separatedBy: ",")
-                if lineComponents[3].isNumber() {
-                    // is drug
-                    if nameList[lineComponents[0]] == nil {
-                        nameList[lineComponents[0]] = [:]
+                if lineComponents.count > 3 {
+                    if lineComponents[3].isNumber() {
+                        // is drug
+                        if nameList[lineComponents[0]] == nil {
+                            nameList[lineComponents[0]] = [:]
+                        }
+                        nameList[lineComponents[0]]?[lineComponents[2]] = [:]
+                        nameList[lineComponents[0]]?[lineComponents[2]]?["DOSE/KG"] = lineComponents[3]
+                        nameList[lineComponents[0]]?[lineComponents[2]]?["AMOUNT"] = "\(((lineComponents[3] as NSString).integerValue * weight))"
+                        nameList[lineComponents[0]]?[lineComponents[2]]?["UNIT"] = lineComponents[5]
                     }
-                    nameList[lineComponents[0]]?[lineComponents[2]] = [:]
-                    nameList[lineComponents[0]]?[lineComponents[2]]?["DOSE/KG"] = lineComponents[3]
-                    nameList[lineComponents[0]]?[lineComponents[2]]?["AMOUNT"] = "\(((lineComponents[3] as NSString).integerValue * weight))"
-                    nameList[lineComponents[0]]?[lineComponents[2]]?["UNIT"] = lineComponents[5]
                 }
+                
             }
         }
         
@@ -154,3 +157,4 @@ class CardiacDrugCalculationsManager: NSObject, MFMailComposeViewControllerDeleg
         }
     }
 }
+

@@ -16,4 +16,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *header1;
 @property (weak, nonatomic) IBOutlet UIPickerView *Drugpicker;
 
+- (IBAction)backb:(id)sender;
+- (IBAction)nextB:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *backB;
+@property (weak, nonatomic) IBOutlet UIButton *nextB;
+@property (weak, nonatomic) IBOutlet UITextView *resView;
+
+
+
 @end
