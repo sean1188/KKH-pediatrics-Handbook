@@ -103,7 +103,7 @@ CGRect likedViewInit;
     else{
         [_favImg setImage:[UIImage imageNamed:@"ic_favorite_border_white"]];
     }
-    [_chotNameDisp setText: [[[PDFManager alloc] init] titleForChapter:chpti -1]];
+    [_chotNameDisp setText: @"Pinch to Zoom, Rotate for landscape"];
 
     NSString *fileName = [[NSUserDefaults standardUserDefaults]objectForKey:@"viewChapter" ];
     _h2.adjustsFontSizeToFitWidth = YES;
