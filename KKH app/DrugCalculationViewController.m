@@ -25,6 +25,7 @@
 }
 bool firstE;
 -(void)viewWillAppear:(BOOL)animated{
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"willSeeSpecificDrugs"] != YES) {
     if (firstE == YES) {
         _resView.layer.cornerRadius = 15.0f;
         [_resView setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]]];
@@ -39,6 +40,9 @@ bool firstE;
         _webView.alpha = 0;
         _drugimg.alpha = 1;
         _nextB.alpha = 1;
+    }
+    }else{
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"willSeeSpecificDrugs"];
     }
 }
 bool iu;
@@ -267,6 +271,7 @@ bool didViewPdf;
     [[_mannager initWithWeight:_textField.text.intValue] sendEmail:self];
 }
 - (IBAction)specificDrugB:(id)sender {
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"willSeeSpecificDrugs"];
     [self performSegueWithIdentifier:@"specific" sender:self];
 }
 

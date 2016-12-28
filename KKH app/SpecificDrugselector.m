@@ -87,19 +87,20 @@ int datalayer;
             //straight to info
             NSLog(@"only one route, proceed to tertiary data display");
             [UIView animateWithDuration:0.3 animations:^{_nextB.alpha = 0; _Drugpicker.alpha = 0; _resView.alpha = 1;}];
-            [_header1 setText:[NSString stringWithFormat:@"%@",[[routes allKeys] objectAtIndex:0]]];
+            [_header1 setText:[NSString stringWithFormat:@"Path : %@",[[routes allKeys] objectAtIndex:0]]];
             [_resView setText:[[[NSString stringWithFormat:@"%@",[routes allValues]] substringFromIndex:11] substringToIndex:[[[NSString stringWithFormat:@"%@", [routes allValues]] substringFromIndex:11] length]-3]];
         }
         else{
             dispArray = [routes allKeys];
             [_Drugpicker reloadAllComponents];
+            [_header1 setText:@"Select Path"];
             datalayer = 2;
         }
     }
     else{
         //datalayer 2
         [UIView animateWithDuration:0.3 animations:^{_nextB.alpha = 0; _Drugpicker.alpha = 0; _resView.alpha =1 ;}];
-        [_header1 setText:[NSString stringWithFormat:@"%@",[[routes allKeys] objectAtIndex:[_Drugpicker selectedRowInComponent:0]]]];
+        [_header1 setText:[NSString stringWithFormat:@"Path : %@",[[routes allKeys] objectAtIndex:[_Drugpicker selectedRowInComponent:0]]]];
         [_resView setText:[[[NSString stringWithFormat:@"%@",[routes valueForKey:[[routes allKeys] objectAtIndex:[_Drugpicker selectedRowInComponent:0]]]] substringFromIndex:3] substringToIndex:[[[NSString stringWithFormat:@"%@",[routes valueForKey:[[routes allKeys] objectAtIndex:[_Drugpicker selectedRowInComponent:0]]]] substringFromIndex:3] length] -3]];
     }
 }
