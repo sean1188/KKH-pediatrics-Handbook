@@ -66,15 +66,15 @@
 		9729DBF31DED4A0A00F2475A /* M-35-Suspected_Anaphylaxis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBEB1DED4A0A00F2475A /* M-35-Suspected_Anaphylaxis.pdf */; };
 		9729DBF41DED4A0A00F2475A /* M-36-Latex_Allergy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBEC1DED4A0A00F2475A /* M-36-Latex_Allergy.pdf */; };
 		9729DBF51DED4A0A00F2475A /* M-37-Malignant_Hyperthermia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBED1DED4A0A00F2475A /* M-37-Malignant_Hyperthermia.pdf */; };
-		9729DBF61DED4A0A00F2475A /* M-36-Local_Anaesthetic_Toxicity.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBEE1DED4A0A00F2475A /* M-36-Local_Anaesthetic_Toxicity.pdf */; };
-		9729DBF81DED4A8C00F2475A /* N-37-Advanced_Paediatric_Life_Support.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBF71DED4A8C00F2475A /* N-37-Advanced_Paediatric_Life_Support.pdf */; };
-		9729DBFE1DED4AAF00F2475A /* O-38-Pain_in_Children.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBF91DED4AAF00F2475A /* O-38-Pain_in_Children.pdf */; };
-		9729DBFF1DED4AAF00F2475A /* O-39-Children's_Pain_Service.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBFA1DED4AAF00F2475A /* O-39-Children's_Pain_Service.pdf */; };
-		9729DC001DED4AAF00F2475A /* O-40-Patient_Controlled_Analgesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBFB1DED4AAF00F2475A /* O-40-Patient_Controlled_Analgesia.pdf */; };
-		9729DC011DED4AAF00F2475A /* O-41-Epidurals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBFC1DED4AAF00F2475A /* O-41-Epidurals.pdf */; };
-		9729DC021DED4AAF00F2475A /* O-42-Alternative_Modes_of_Analgesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBFD1DED4AAF00F2475A /* O-42-Alternative_Modes_of_Analgesia.pdf */; };
-		9729DC041DED4AFB00F2475A /* P-43-Chronic_Pain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DC031DED4AFB00F2475A /* P-43-Chronic_Pain.pdf */; };
-		9729DC061DED4B2D00F2475A /* Q-44-NORMAL_LABORATORY_DATA.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DC051DED4B2D00F2475A /* Q-44-NORMAL_LABORATORY_DATA.pdf */; };
+		9729DBF61DED4A0A00F2475A /* M-38-Local_Anaesthetic_Toxicity.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBEE1DED4A0A00F2475A /* M-38-Local_Anaesthetic_Toxicity.pdf */; };
+		9729DBF81DED4A8C00F2475A /* N-39-Advanced_Paediatric_Life_Support.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBF71DED4A8C00F2475A /* N-39-Advanced_Paediatric_Life_Support.pdf */; };
+		9729DBFE1DED4AAF00F2475A /* O-40-Pain_in_Children.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBF91DED4AAF00F2475A /* O-40-Pain_in_Children.pdf */; };
+		9729DBFF1DED4AAF00F2475A /* O-41-Children's_Pain_Service.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBFA1DED4AAF00F2475A /* O-41-Children's_Pain_Service.pdf */; };
+		9729DC001DED4AAF00F2475A /* O-42-Patient_Controlled_Analgesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBFB1DED4AAF00F2475A /* O-42-Patient_Controlled_Analgesia.pdf */; };
+		9729DC011DED4AAF00F2475A /* O-43-Epidurals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBFC1DED4AAF00F2475A /* O-43-Epidurals.pdf */; };
+		9729DC021DED4AAF00F2475A /* O-44-Alternative_Modes_of_Analgesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DBFD1DED4AAF00F2475A /* O-44-Alternative_Modes_of_Analgesia.pdf */; };
+		9729DC041DED4AFB00F2475A /* P-45-Chronic_Pain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DC031DED4AFB00F2475A /* P-45-Chronic_Pain.pdf */; };
+		9729DC061DED4B2D00F2475A /* Q-46-NORMAL_LABORATORY_DATA.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9729DC051DED4B2D00F2475A /* Q-46-NORMAL_LABORATORY_DATA.pdf */; };
 		9729DC091DED4E8A00F2475A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9729DC081DED4E8A00F2475A /* MBProgressHUD.m */; };
 		973C91E81DE8531E00FCF62C /* crisisVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 973C91E71DE8531E00FCF62C /* crisisVC.m */; };
 		973E00291D092CD600F7C94A /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E00261D092CD600F7C94A /* QCMethod.m */; };
@@ -187,15 +187,15 @@
 		9729DBEB1DED4A0A00F2475A /* M-35-Suspected_Anaphylaxis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "M-35-Suspected_Anaphylaxis.pdf"; sourceTree = "<group>"; };
 		9729DBEC1DED4A0A00F2475A /* M-36-Latex_Allergy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "M-36-Latex_Allergy.pdf"; sourceTree = "<group>"; };
 		9729DBED1DED4A0A00F2475A /* M-37-Malignant_Hyperthermia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "M-37-Malignant_Hyperthermia.pdf"; sourceTree = "<group>"; };
-		9729DBEE1DED4A0A00F2475A /* M-36-Local_Anaesthetic_Toxicity.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "M-36-Local_Anaesthetic_Toxicity.pdf"; sourceTree = "<group>"; };
-		9729DBF71DED4A8C00F2475A /* N-37-Advanced_Paediatric_Life_Support.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "N-37-Advanced_Paediatric_Life_Support.pdf"; sourceTree = "<group>"; };
-		9729DBF91DED4AAF00F2475A /* O-38-Pain_in_Children.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "O-38-Pain_in_Children.pdf"; sourceTree = "<group>"; };
-		9729DBFA1DED4AAF00F2475A /* O-39-Children's_Pain_Service.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "O-39-Children's_Pain_Service.pdf"; sourceTree = "<group>"; };
-		9729DBFB1DED4AAF00F2475A /* O-40-Patient_Controlled_Analgesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "O-40-Patient_Controlled_Analgesia.pdf"; sourceTree = "<group>"; };
-		9729DBFC1DED4AAF00F2475A /* O-41-Epidurals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "O-41-Epidurals.pdf"; sourceTree = "<group>"; };
-		9729DBFD1DED4AAF00F2475A /* O-42-Alternative_Modes_of_Analgesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "O-42-Alternative_Modes_of_Analgesia.pdf"; sourceTree = "<group>"; };
-		9729DC031DED4AFB00F2475A /* P-43-Chronic_Pain.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "P-43-Chronic_Pain.pdf"; sourceTree = "<group>"; };
-		9729DC051DED4B2D00F2475A /* Q-44-NORMAL_LABORATORY_DATA.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Q-44-NORMAL_LABORATORY_DATA.pdf"; sourceTree = "<group>"; };
+		9729DBEE1DED4A0A00F2475A /* M-38-Local_Anaesthetic_Toxicity.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "M-38-Local_Anaesthetic_Toxicity.pdf"; sourceTree = "<group>"; };
+		9729DBF71DED4A8C00F2475A /* N-39-Advanced_Paediatric_Life_Support.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "N-39-Advanced_Paediatric_Life_Support.pdf"; sourceTree = "<group>"; };
+		9729DBF91DED4AAF00F2475A /* O-40-Pain_in_Children.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "O-40-Pain_in_Children.pdf"; sourceTree = "<group>"; };
+		9729DBFA1DED4AAF00F2475A /* O-41-Children's_Pain_Service.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "O-41-Children's_Pain_Service.pdf"; sourceTree = "<group>"; };
+		9729DBFB1DED4AAF00F2475A /* O-42-Patient_Controlled_Analgesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "O-42-Patient_Controlled_Analgesia.pdf"; sourceTree = "<group>"; };
+		9729DBFC1DED4AAF00F2475A /* O-43-Epidurals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "O-43-Epidurals.pdf"; sourceTree = "<group>"; };
+		9729DBFD1DED4AAF00F2475A /* O-44-Alternative_Modes_of_Analgesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "O-44-Alternative_Modes_of_Analgesia.pdf"; sourceTree = "<group>"; };
+		9729DC031DED4AFB00F2475A /* P-45-Chronic_Pain.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "P-45-Chronic_Pain.pdf"; sourceTree = "<group>"; };
+		9729DC051DED4B2D00F2475A /* Q-46-NORMAL_LABORATORY_DATA.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Q-46-NORMAL_LABORATORY_DATA.pdf"; sourceTree = "<group>"; };
 		9729DC071DED4E8A00F2475A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		9729DC081DED4E8A00F2475A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		973C91E61DE8531E00FCF62C /* crisisVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crisisVC.h; sourceTree = "<group>"; };
@@ -478,15 +478,15 @@
 				9729DBEB1DED4A0A00F2475A /* M-35-Suspected_Anaphylaxis.pdf */,
 				9729DBEC1DED4A0A00F2475A /* M-36-Latex_Allergy.pdf */,
 				9729DBED1DED4A0A00F2475A /* M-37-Malignant_Hyperthermia.pdf */,
-				9729DBEE1DED4A0A00F2475A /* M-36-Local_Anaesthetic_Toxicity.pdf */,
-				9729DBF71DED4A8C00F2475A /* N-37-Advanced_Paediatric_Life_Support.pdf */,
-				9729DBF91DED4AAF00F2475A /* O-38-Pain_in_Children.pdf */,
-				9729DBFA1DED4AAF00F2475A /* O-39-Children's_Pain_Service.pdf */,
-				9729DBFB1DED4AAF00F2475A /* O-40-Patient_Controlled_Analgesia.pdf */,
-				9729DBFC1DED4AAF00F2475A /* O-41-Epidurals.pdf */,
-				9729DBFD1DED4AAF00F2475A /* O-42-Alternative_Modes_of_Analgesia.pdf */,
-				9729DC031DED4AFB00F2475A /* P-43-Chronic_Pain.pdf */,
-				9729DC051DED4B2D00F2475A /* Q-44-NORMAL_LABORATORY_DATA.pdf */,
+				9729DBEE1DED4A0A00F2475A /* M-38-Local_Anaesthetic_Toxicity.pdf */,
+				9729DBF71DED4A8C00F2475A /* N-39-Advanced_Paediatric_Life_Support.pdf */,
+				9729DBF91DED4AAF00F2475A /* O-40-Pain_in_Children.pdf */,
+				9729DBFA1DED4AAF00F2475A /* O-41-Children's_Pain_Service.pdf */,
+				9729DBFB1DED4AAF00F2475A /* O-42-Patient_Controlled_Analgesia.pdf */,
+				9729DBFC1DED4AAF00F2475A /* O-43-Epidurals.pdf */,
+				9729DBFD1DED4AAF00F2475A /* O-44-Alternative_Modes_of_Analgesia.pdf */,
+				9729DC031DED4AFB00F2475A /* P-45-Chronic_Pain.pdf */,
+				9729DC051DED4B2D00F2475A /* Q-46-NORMAL_LABORATORY_DATA.pdf */,
 				97E551EF1DE57281008CBB1A /* index.txt */,
 			);
 			path = PDFs;
@@ -574,9 +574,11 @@
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 7K6ZTDFM48;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					976EFB371D01C28B0048A4DC = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 7K6ZTDFM48;
 						TestTargetID = 976EFB1E1D01C28B0048A4DC;
 					};
 				};
@@ -608,7 +610,7 @@
 				9729DBDE1DED49A100F2475A /* J-26-Patient_Transport.pdf in Resources */,
 				9729DBC91DED489600F2475A /* F-14-Paediatric_Cardiac_Anaesthesia.pdf in Resources */,
 				9729DBE21DED49B600F2475A /* K-28-Miscellaneous_Drugs.pdf in Resources */,
-				9729DC001DED4AAF00F2475A /* O-40-Patient_Controlled_Analgesia.pdf in Resources */,
+				9729DC001DED4AAF00F2475A /* O-42-Patient_Controlled_Analgesia.pdf in Resources */,
 				9729DBB91DED47E700F2475A /* C-05-Premedication.pdf in Resources */,
 				9729DBF21DED4A0A00F2475A /* M-34-Acute_Epiglottitis.pdf in Resources */,
 				9729DBF41DED4A0A00F2475A /* M-36-Latex_Allergy.pdf in Resources */,
@@ -624,7 +626,7 @@
 				977047D91DEE8F0B002F5066 /* click.mp3 in Resources */,
 				9729DBBB1DED47E700F2475A /* C-07-Nausea_Vomitting.pdf in Resources */,
 				AC4B48A31DF5320A00C4E9B8 /* DrugList.csv in Resources */,
-				9729DC041DED4AFB00F2475A /* P-43-Chronic_Pain.pdf in Resources */,
+				9729DC041DED4AFB00F2475A /* P-45-Chronic_Pain.pdf in Resources */,
 				9729DBBE1DED47E700F2475A /* C-10-Equipment.pdf in Resources */,
 				9729DBC81DED489600F2475A /* F-13-Common_Cardiac_Conditions.pdf in Resources */,
 				97E551F01DE57281008CBB1A /* index.txt in Resources */,
@@ -648,7 +650,7 @@
 				9722E86B1D0CF16300C6D26F /* CabinCondensed-Regular.ttf in Resources */,
 				9729DBCA1DED489600F2475A /* F-15-Cardiac_Catheterization.pdf in Resources */,
 				9729DBCC1DED489600F2475A /* F-17-Prophylaxis_for_Infective_Endocarditis.pdf in Resources */,
-				9729DC021DED4AAF00F2475A /* O-42-Alternative_Modes_of_Analgesia.pdf in Resources */,
+				9729DC021DED4AAF00F2475A /* O-44-Alternative_Modes_of_Analgesia.pdf in Resources */,
 				9729DBCE1DED48FD00F2475A /* G-18-Diagnostic_Imaging.pdf in Resources */,
 				9729DBAC1DED476F00F2475A /* A-01-Training_Programmes.pdf in Resources */,
 				9729DBE51DED49D600F2475A /* L-29-Transfusion_Guidelines.pdf in Resources */,
@@ -659,19 +661,19 @@
 				9729DBE61DED49D600F2475A /* L-30-Paediatric_Massive_Transfusion_Protocol.pdf in Resources */,
 				9729DBE11DED49B600F2475A /* K-27-Antibiotics.pdf in Resources */,
 				9729DBB81DED47E700F2475A /* C-04-Preoperative_Evaluation.pdf in Resources */,
-				9729DBF61DED4A0A00F2475A /* M-36-Local_Anaesthetic_Toxicity.pdf in Resources */,
-				9729DBFF1DED4AAF00F2475A /* O-39-Children's_Pain_Service.pdf in Resources */,
+				9729DBF61DED4A0A00F2475A /* M-38-Local_Anaesthetic_Toxicity.pdf in Resources */,
+				9729DBFF1DED4AAF00F2475A /* O-41-Children's_Pain_Service.pdf in Resources */,
 				9729DBDA1DED493000F2475A /* I-23-Central_Neuraxial_Block.pdf in Resources */,
 				9722E8611D0CF15C00C6D26F /* Cabin-Bold.otf in Resources */,
-				9729DC061DED4B2D00F2475A /* Q-44-NORMAL_LABORATORY_DATA.pdf in Resources */,
+				9729DC061DED4B2D00F2475A /* Q-46-NORMAL_LABORATORY_DATA.pdf in Resources */,
 				9729DBBC1DED47E700F2475A /* C-08-Emergence_delirium.pdf in Resources */,
-				9729DC011DED4AAF00F2475A /* O-41-Epidurals.pdf in Resources */,
+				9729DC011DED4AAF00F2475A /* O-43-Epidurals.pdf in Resources */,
 				9729DBDB1DED493000F2475A /* I-24-Ultrasound_Guided_Blocks.pdf in Resources */,
 				976EFB321D01C28B0048A4DC /* LaunchScreen.storyboard in Resources */,
-				9729DBFE1DED4AAF00F2475A /* O-38-Pain_in_Children.pdf in Resources */,
+				9729DBFE1DED4AAF00F2475A /* O-40-Pain_in_Children.pdf in Resources */,
 				9729DBF01DED4A0A00F2475A /* M-32-Hypercyanotic_Tet_Spells.pdf in Resources */,
 				97FED15B1D5095B8000B7703 /* inc_hq.jpg in Resources */,
-				9729DBF81DED4A8C00F2475A /* N-37-Advanced_Paediatric_Life_Support.pdf in Resources */,
+				9729DBF81DED4A8C00F2475A /* N-39-Advanced_Paediatric_Life_Support.pdf in Resources */,
 				976EFB2F1D01C28B0048A4DC /* Assets.xcassets in Resources */,
 				976EFB2D1D01C28B0048A4DC /* Main.storyboard in Resources */,
 			);
@@ -781,9 +783,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: School of Science and Technology Singapore (7K6ZTDFM48)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -825,9 +829,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: School of Science and Technology Singapore (7K6ZTDFM48)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -857,9 +863,10 @@
 				INFOPLIST_FILE = "KKH app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.seanlim.KKH-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "KKH-APP-16";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KKH app/KKH app-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -879,9 +886,10 @@
 				INFOPLIST_FILE = "KKH app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.seanlim.KKH-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "KKH-APP-16";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KKH app/KKH app-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

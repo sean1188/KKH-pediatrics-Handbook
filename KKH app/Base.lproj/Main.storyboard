@@ -1773,7 +1773,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         <rect key="frame" x="13" y="8" width="325" height="338"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L7Y-oY-ek1">
-                                                <rect key="frame" x="0.0" y="0.0" width="325" height="56"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="325" height="56.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqd-f2-pSD">
                                                         <rect key="frame" x="277" y="8" width="40" height="40"/>
@@ -1803,7 +1803,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SBa-Yx-VTa">
-                                                <rect key="frame" x="0.0" y="56" width="325" height="57"/>
+                                                <rect key="frame" x="0.0" y="56.5" width="325" height="56"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVI-pM-bk2">
                                                         <rect key="frame" x="277" y="8" width="40" height="40"/>
@@ -1833,10 +1833,10 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULR-Q2-uPa">
-                                                <rect key="frame" x="0.0" y="113" width="325" height="56"/>
+                                                <rect key="frame" x="0.0" y="112.5" width="325" height="56.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eK-T9-FeU">
-                                                        <rect key="frame" x="277" y="8" width="40" height="39"/>
+                                                        <rect key="frame" x="277" y="8" width="40" height="39.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="G0p-2Q-ryT"/>
                                                         </constraints>
@@ -1846,7 +1846,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push FAST: at least 100/ minute; allow FULL RECOIL" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ty2-Ya-MDL">
-                                                        <rect key="frame" x="8" y="8" width="261" height="40"/>
+                                                        <rect key="frame" x="8" y="8" width="261" height="40.5"/>
                                                         <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="16"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -1863,10 +1863,10 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOk-vr-uDA">
-                                                <rect key="frame" x="0.0" y="169" width="325" height="56"/>
+                                                <rect key="frame" x="0.0" y="169" width="325" height="56.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxA-E9-FHG">
-                                                        <rect key="frame" x="277" y="8" width="40" height="39"/>
+                                                        <rect key="frame" x="277" y="8" width="40" height="39.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="7K5-Xh-7Nl"/>
                                                         </constraints>
@@ -1876,7 +1876,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push HARD: 1/3 AP diameter" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Doi-RV-nvP">
-                                                        <rect key="frame" x="8" y="8" width="261" height="40"/>
+                                                        <rect key="frame" x="8" y="8" width="261" height="40.5"/>
                                                         <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -1893,10 +1893,10 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNJ-kj-eWj">
-                                                <rect key="frame" x="0.0" y="225" width="325" height="57"/>
+                                                <rect key="frame" x="0.0" y="225.5" width="325" height="56"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcl-cQ-tCO">
-                                                        <rect key="frame" x="277" y="8" width="40" height="41"/>
+                                                        <rect key="frame" x="277" y="8" width="40" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="Ovt-Kh-aNx"/>
                                                         </constraints>
@@ -1906,7 +1906,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zp2-gc-Um6">
-                                                        <rect key="frame" x="8" y="8" width="261" height="42"/>
+                                                        <rect key="frame" x="8" y="8" width="261" height="41"/>
                                                         <string key="text">Recheck pulse every 2 minutes			</string>
                                                         <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1924,10 +1924,10 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="207-4Z-91P">
-                                                <rect key="frame" x="0.0" y="282" width="325" height="56"/>
+                                                <rect key="frame" x="0.0" y="281.5" width="325" height="56.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozr-Cf-637">
-                                                        <rect key="frame" x="277" y="8" width="40" height="39"/>
+                                                        <rect key="frame" x="277" y="8" width="40" height="39.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="wbM-kU-clp"/>
                                                         </constraints>
@@ -1937,7 +1937,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimise interruptions to chest compressions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbo-We-e6U">
-                                                        <rect key="frame" x="8" y="8" width="261" height="40"/>
+                                                        <rect key="frame" x="8" y="8" width="261" height="40.5"/>
                                                         <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="16"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -2630,7 +2630,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6E-v1-64P">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="54"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="55.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="bqU-VU-fak"/>
                                                                     </constraints>
@@ -2651,16 +2651,16 @@ The authors of each chapter have ensured that the information is current and cor
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEH-ME-JHr">
-                                                            <rect key="frame" x="0.0" y="60" width="335" height="60"/>
+                                                            <rect key="frame" x="0.0" y="60" width="335" height="60.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start CPR if neccessarry" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6F-KA-qzg">
-                                                                    <rect key="frame" x="8" y="8" width="274" height="44"/>
+                                                                    <rect key="frame" x="8" y="8" width="274" height="44.5"/>
                                                                     <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTA-pk-brs">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="53"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="hWm-hR-lHV"/>
                                                                     </constraints>
@@ -2681,7 +2681,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="npz-pL-LIp">
-                                                            <rect key="frame" x="0.0" y="120" width="335" height="60"/>
+                                                            <rect key="frame" x="0.0" y="120.5" width="335" height="60"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Latex" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nc4-PV-Eqx">
                                                                     <rect key="frame" x="8" y="8" width="274" height="44"/>
@@ -2711,16 +2711,16 @@ The authors of each chapter have ensured that the information is current and cor
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pym-cj-toH">
-                                                            <rect key="frame" x="0.0" y="180" width="335" height="61"/>
+                                                            <rect key="frame" x="0.0" y="180.5" width="335" height="60"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove NMB" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BlP-of-HQQ">
-                                                                    <rect key="frame" x="8" y="8" width="274" height="45"/>
+                                                                    <rect key="frame" x="8" y="8" width="274" height="44"/>
                                                                     <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jo-Pg-wLd">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="55"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="56"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="ueW-Wg-4hH"/>
                                                                     </constraints>
@@ -2741,7 +2741,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80E-N8-2s3">
-                                                            <rect key="frame" x="0.0" y="241" width="335" height="60"/>
+                                                            <rect key="frame" x="0.0" y="240.5" width="335" height="60"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Chlorhexidine" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNA-vf-lVl">
                                                                     <rect key="frame" x="8" y="8" width="274" height="44"/>
@@ -2750,7 +2750,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxq-et-huc">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="54"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="55.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="57z-PC-Ct7"/>
                                                                     </constraints>
@@ -2771,16 +2771,16 @@ The authors of each chapter have ensured that the information is current and cor
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlf-0q-Der">
-                                                            <rect key="frame" x="0.0" y="301" width="335" height="60"/>
+                                                            <rect key="frame" x="0.0" y="300.5" width="335" height="60.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove IV Colloids" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCE-Qr-zw5">
-                                                                    <rect key="frame" x="8" y="8" width="274" height="44"/>
+                                                                    <rect key="frame" x="8" y="8" width="274" height="44.5"/>
                                                                     <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3m-v2-CYr">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="53"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="LjH-Xh-nfF"/>
                                                                     </constraints>
@@ -2810,7 +2810,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F3-IX-oCd">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="54"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="56"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="Wq1-TJ-u0x"/>
                                                                     </constraints>
@@ -2845,16 +2845,16 @@ The authors of each chapter have ensured that the information is current and cor
                                                     <rect key="frame" x="8" y="7" width="335" height="422"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lsv-Os-Arw">
-                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="60.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Declare an emergency" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2s-WK-Z4n">
-                                                                    <rect key="frame" x="8" y="8" width="140" height="44"/>
+                                                                    <rect key="frame" x="8" y="8" width="140" height="44.5"/>
                                                                     <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKb-d4-pEa">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="56"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="iBq-DG-gbP"/>
                                                                     </constraints>
@@ -2874,16 +2874,16 @@ The authors of each chapter have ensured that the information is current and cor
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOA-hr-wxV">
-                                                            <rect key="frame" x="0.0" y="60" width="335" height="61"/>
+                                                            <rect key="frame" x="0.0" y="60.5" width="335" height="60"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call for help" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAG-1p-fPC">
-                                                                    <rect key="frame" x="8" y="8" width="274" height="45"/>
+                                                                    <rect key="frame" x="8" y="8" width="274" height="44"/>
                                                                     <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BI5-LW-4iH">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="55"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="55.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="KRQ-hP-QKE"/>
                                                                     </constraints>
@@ -2904,16 +2904,16 @@ The authors of each chapter have ensured that the information is current and cor
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2y-se-DLD">
-                                                            <rect key="frame" x="0.0" y="121" width="335" height="60"/>
+                                                            <rect key="frame" x="0.0" y="120.5" width="335" height="60.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Increase FiO2 to 100%" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKN-Dr-ygk">
-                                                                    <rect key="frame" x="8" y="8" width="274" height="44"/>
+                                                                    <rect key="frame" x="8" y="8" width="274" height="44.5"/>
                                                                     <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J44-0y-kLu">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="53"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="hDo-Wn-g7c"/>
                                                                     </constraints>
@@ -2943,7 +2943,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUl-qv-txf">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="54"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="Wqx-MH-BeV"/>
                                                                     </constraints>
@@ -2964,16 +2964,16 @@ The authors of each chapter have ensured that the information is current and cor
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Wa-IM-1m8">
-                                                            <rect key="frame" x="0.0" y="241" width="335" height="60"/>
+                                                            <rect key="frame" x="0.0" y="241" width="335" height="60.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intubate if necessary" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gH5-W5-baB">
-                                                                    <rect key="frame" x="8" y="8" width="274" height="44"/>
+                                                                    <rect key="frame" x="8" y="8" width="274" height="44.5"/>
                                                                     <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjB-Xm-50N">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="56"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="uGI-ZJ-tLd"/>
                                                                     </constraints>
@@ -2994,16 +2994,16 @@ The authors of each chapter have ensured that the information is current and cor
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSO-EU-p3h">
-                                                            <rect key="frame" x="0.0" y="301" width="335" height="61"/>
+                                                            <rect key="frame" x="0.0" y="301.5" width="335" height="60"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obtain IV/IO access" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYL-hX-PDr">
-                                                                    <rect key="frame" x="8" y="8" width="274" height="45"/>
+                                                                    <rect key="frame" x="8" y="8" width="274" height="44"/>
                                                                     <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sww-ID-R5c">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="55"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="55.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="rPd-Uj-H2g"/>
                                                                     </constraints>
@@ -3024,16 +3024,16 @@ The authors of each chapter have ensured that the information is current and cor
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQm-OU-6de">
-                                                            <rect key="frame" x="0.0" y="362" width="335" height="60"/>
+                                                            <rect key="frame" x="0.0" y="361.5" width="335" height="60.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn OFF anaesthetic agents" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMa-QC-MnS">
-                                                                    <rect key="frame" x="8" y="8" width="274" height="44"/>
+                                                                    <rect key="frame" x="8" y="8" width="274" height="44.5"/>
                                                                     <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bU6-kf-LSU">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="55"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="56"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="vMt-fK-xlj"/>
                                                                     </constraints>
@@ -4524,7 +4524,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 <rect key="frame" x="0.0" y="20" width="600" height="105"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XOw-tl-2H5">
-                                        <rect key="frame" x="230" y="38" width="146" height="50"/>
+                                        <rect key="frame" x="230" y="38" width="126" height="50"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_settings_white" translatesAutoresizingMaskIntoConstraints="NO" id="1q8-N3-nMK">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
@@ -4534,7 +4534,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ob-rI-EuQ">
-                                                <rect key="frame" x="35" y="0.0" width="111" height="50"/>
+                                                <rect key="frame" x="35" y="0.0" width="91" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="nz0-8u-OiM"/>
                                                 </constraints>
@@ -4586,7 +4586,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 <rect key="frame" x="20" y="284" width="560" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xa4-FK-y3e">
-                                        <rect key="frame" x="185" y="70" width="194" height="40"/>
+                                        <rect key="frame" x="185" y="70" width="191" height="40"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_security_white" translatesAutoresizingMaskIntoConstraints="NO" id="TrS-7x-QvY">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -4596,7 +4596,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authorisation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJt-zD-OeA">
-                                                <rect key="frame" x="40" y="0.0" width="154" height="40"/>
+                                                <rect key="frame" x="40" y="0.0" width="151" height="40"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="26"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -4619,16 +4619,16 @@ The authors of each chapter have ensured that the information is current and cor
                                 <rect key="frame" x="20" y="406" width="560" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rAM-sA-LIp">
-                                        <rect key="frame" x="194" y="17" width="141" height="64"/>
+                                        <rect key="frame" x="194" y="17" width="137" height="65"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start-up tab" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKI-Kh-dEu">
-                                                <rect key="frame" x="0.0" y="0.0" width="141" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="137" height="32"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="26"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9Wb-7g-Wez">
-                                                <rect key="frame" x="0.0" y="36" width="141" height="29"/>
+                                                <rect key="frame" x="0.0" y="37" width="137" height="29"/>
                                                 <segments>
                                                     <segment title="" image="ic_info_white"/>
                                                     <segment title="" image="ic_poll_white"/>
@@ -4682,10 +4682,10 @@ The authors of each chapter have ensured that the information is current and cor
                                 <rect key="frame" x="20" y="178" width="560" height="82"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NYg-rk-P8x" userLabel="COLOROption">
-                                        <rect key="frame" x="157" y="16" width="1579" height="50"/>
+                                        <rect key="frame" x="157" y="16" width="1573" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cf9-PC-wuP" userLabel="PrimaryColor">
-                                                <rect key="frame" x="0.0" y="0.0" width="1364" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1371" height="50"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsk-Lu-eCf" userLabel="SecondaryColor">
                                                         <rect key="frame" x="14" y="13" width="23" height="23"/>
@@ -4700,7 +4700,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Color Accent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3b-Qx-Okr">
-                                                <rect key="frame" x="1374" y="0.0" width="205" height="50"/>
+                                                <rect key="frame" x="1381" y="0.0" width="192" height="50"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="23"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>

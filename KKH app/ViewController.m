@@ -29,7 +29,6 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
 -(void) viewWillAppear:(BOOL)animated{
     _cardView.clipsToBounds = YES;
     _cardView.layer.cornerRadius = 15.0f;
-
 }
 -(void) viewDidAppear:(BOOL)animated{
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"splashed"] != YES) {
@@ -41,12 +40,9 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
             [likedObjects addObject:[NSNumber numberWithInt:i]];
         }
     }
-        [_tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationNone];
+        [_tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
     _sarchSegue.alpha = 1;
-    if ( didSendSearch == YES) {
-        [_serach becomeFirstResponder];
-    }
-    else if (didSendSearch == NO){
+    if (didSendSearch == NO){
         _tableView.alpha = 1;
         _h1.alpha = 1;
         _h2.alpha = 1;
@@ -187,14 +183,14 @@ NSMutableArray *chaptersCount;
 }
 #pragma mark- TableView
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    if (didsearch == YES) {
+    if (_cardView.alpha == 0) {
         return 1;
     }else{
         return 2;}
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if(didsearch == YES)
+    if(_cardView.alpha == 0)
     {
         return results.count;
     }
@@ -209,17 +205,17 @@ NSMutableArray *chaptersCount;
 -(NSInteger)tableView:(UITableView *)tableView
 indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (didsearch == YES) {
+    if (_cardView.alpha == 0) {
         return 0;
     }
-    else if (didsearch == NO){
+    else if (_cardView.alpha != 0){
         return 5;}
     else{
         return 0;
     }
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    if (didsearch == YES) {
+    if (_cardView.alpha == 0) {
         return@"  Search results";
     }
     else if(section == 0){
@@ -231,7 +227,7 @@ indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath
 }
 int h0;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (didsearch == YES) {
+    if (_cardView.alpha == 0) {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:nil];
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
         cell.textLabel.text = [results objectAtIndex:indexPath.row];
@@ -284,7 +280,7 @@ int h0;
                 //normal viewing
                 
             }
-            if (tableView  == self.tableView){
+            if (_cardView.alpha != 0){
                 //normal viewing
                 didsearch = NO;
                 NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"txt"];
@@ -332,7 +328,8 @@ bool didsearch;
     return tempView;
 }
 - (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
-    if(tableView == self.tableView){
+    if(_cardView.alpha != 0){
+        NSLog(@"NORMAL TABLE VIEW");
         if (indexPath.section == 0) {
            int c = -1;
                     for (NSString *string in objectsArray) {
@@ -366,6 +363,7 @@ bool didsearch;
     else{
         UITableViewCell *a = [_tableView cellForRowAtIndexPath:indexPath];
         int c =-1;
+        NSLog(a.textLabel.text);
         for (NSString *stirng in objectsArray) {
             c ++; if([stirng isEqualToString:a.textLabel.text]){
                 break;
@@ -399,18 +397,20 @@ bool didsearch;
     NSPredicate *pedicate = [NSPredicate predicateWithFormat:@"SELF contains [search] %@", searchText];
     results = [[objectsArray filteredArrayUsingPredicate:pedicate] mutableCopy];
     didsearch = YES;
-    [self.tableView performSelectorInBackground:@selector(reloadData) withObject:nil];
+    [_tableView reloadData];
 }
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    didsearch = NO;
     [UIView animateWithDuration:0.2 animations:^{
         _cardView.frame = CGRectMake(_cardView.frame.origin.x, _serach.frame.origin.y + 3, _cardView.frame.size.width, heightInit);
         _blurView.alpha = 1;
         _cardView.translatesAutoresizingMaskIntoConstraints = NO;
         _cardView.alpha =1 ;
         _serach.frame = CGRectMake(0, -_serach.frame.size.height, self.view.frame.size.width, _serach.frame.size.height);
+    }completion:^(BOOL finished) {
+        [_tableView reloadData];
     }];
-    didsearch = NO;
-    [_tableView reloadData];
+  
 }
 -(void) searchBarTextDidEndEditing:(UISearchBar *)searchBar{
     if ([searchBar.text isEqualToString:@""]) {
@@ -421,8 +421,6 @@ bool didsearch;
             _cardView.alpha =1 ;
             _serach.frame = CGRectMake(0, -_serach.frame.size.height, self.view.frame.size.width, _serach.frame.size.height);
         }];
-        didsearch = NO;
-        [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:YES];
     }
     else{
     }

@@ -269,6 +269,7 @@ bool didViewPdf;
 }
 - (IBAction)sendB:(id)sender {
     [[_mannager initWithWeight:_textField.text.intValue] sendEmail:self];
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"willSeeSpecificDrugs"];
 }
 - (IBAction)specificDrugB:(id)sender {
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"willSeeSpecificDrugs"];
