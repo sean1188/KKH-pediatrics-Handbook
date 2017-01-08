@@ -90,8 +90,6 @@
 		976EFB2F1D01C28B0048A4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 976EFB2E1D01C28B0048A4DC /* Assets.xcassets */; };
 		976EFB321D01C28B0048A4DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976EFB301D01C28B0048A4DC /* LaunchScreen.storyboard */; };
 		976EFB3D1D01C28B0048A4DC /* KKH_appUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 976EFB3C1D01C28B0048A4DC /* KKH_appUITests.m */; };
-		977047D91DEE8F0B002F5066 /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 977047D81DEE8F0B002F5066 /* click.mp3 */; };
-		977047DB1DEE9256002F5066 /* soundE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 977047DA1DEE9256002F5066 /* soundE.mp3 */; };
 		9777BF781D435C6F00F82DA4 /* BMIPercentileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9777BF771D435C6F00F82DA4 /* BMIPercentileViewController.m */; };
 		979782F11D1D8E7100BAF670 /* splashAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 979782F01D1D8E7100BAF670 /* splashAnimate.m */; };
 		979782F41D1D8EBC00BAF670 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 979782F31D1D8EBC00BAF670 /* SplashViewController.m */; };
@@ -225,8 +223,6 @@
 		976EFB381D01C28B0048A4DC /* KKH appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KKH appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		976EFB3C1D01C28B0048A4DC /* KKH_appUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKH_appUITests.m; sourceTree = "<group>"; };
 		976EFB3E1D01C28B0048A4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		977047D81DEE8F0B002F5066 /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
-		977047DA1DEE9256002F5066 /* soundE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundE.mp3; sourceTree = "<group>"; };
 		9777BF761D435C6F00F82DA4 /* BMIPercentileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMIPercentileViewController.h; sourceTree = "<group>"; };
 		9777BF771D435C6F00F82DA4 /* BMIPercentileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMIPercentileViewController.m; sourceTree = "<group>"; };
 		979782EF1D1D8E7100BAF670 /* splashAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = splashAnimate.h; sourceTree = "<group>"; };
@@ -410,8 +406,6 @@
 				979782F81D1E1C6C00BAF670 /* AboutUsViewController.m */,
 				9703E68C1D29367A00C72EF3 /* Secure_.h */,
 				9703E68D1D29367A00C72EF3 /* Secure_.m */,
-				977047DA1DEE9256002F5066 /* soundE.mp3 */,
-				977047D81DEE8F0B002F5066 /* click.mp3 */,
 				972491721D4F3A3600A9CD91 /* TutorialViewController.h */,
 				972491731D4F3A3600A9CD91 /* TutorialViewController.m */,
 				97092DE11D52CFBC007EA57E /* kkh memes.jpg */,
@@ -623,7 +617,6 @@
 				9706EBA11D4CFC3A00801B77 /* splash screen.png in Resources */,
 				9729DBF11DED4A0A00F2475A /* M-33-Post_Adenotonsillectomy_Bleeding.pdf in Resources */,
 				9729DBD01DED491100F2475A /* H-19-Sedation_for_Oncology_Children.pdf in Resources */,
-				977047D91DEE8F0B002F5066 /* click.mp3 in Resources */,
 				9729DBBB1DED47E700F2475A /* C-07-Nausea_Vomitting.pdf in Resources */,
 				AC4B48A31DF5320A00C4E9B8 /* DrugList.csv in Resources */,
 				9729DC041DED4AFB00F2475A /* P-45-Chronic_Pain.pdf in Resources */,
@@ -654,7 +647,6 @@
 				9729DBCE1DED48FD00F2475A /* G-18-Diagnostic_Imaging.pdf in Resources */,
 				9729DBAC1DED476F00F2475A /* A-01-Training_Programmes.pdf in Resources */,
 				9729DBE51DED49D600F2475A /* L-29-Transfusion_Guidelines.pdf in Resources */,
-				977047DB1DEE9256002F5066 /* soundE.mp3 in Resources */,
 				9722E86C1D0CF16300C6D26F /* CabinCondensed-SemiBold.ttf in Resources */,
 				9729DBD91DED493000F2475A /* I-22-Peripheral_Nerve_Block.pdf in Resources */,
 				9729DBBA1DED47E700F2475A /* C-06-Common_Medical_Conditions.pdf in Resources */,

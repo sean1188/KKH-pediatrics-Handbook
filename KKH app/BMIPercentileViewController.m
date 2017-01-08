@@ -73,7 +73,7 @@ CGRect initButton;
 - (IBAction)done:(id)sender {
     if (state == 0){
         //init height
-        if (_textField.text.intValue > 250) {
+        if ((_textField.text.intValue > 250) & ![_textField.text isEqualToString:@""]) {
             [self error:@"Please enter valid height."];
         }
         else{
@@ -87,7 +87,7 @@ CGRect initButton;
         
     }
     else if (state == 1){
-        if (_textField.text.intValue > 150) {
+        if ((_textField.text.intValue > 150) & ![_textField.text isEqualToString:@""]) {
             [self error:@"Please enter valid weight."];
         }
         else{
@@ -101,7 +101,7 @@ CGRect initButton;
         }
     }
     else if (state == 2){
-        if (_textField.text.intValue > 18) {
+        if ((_textField.text.intValue > 18) & ![_textField.text isEqualToString:@""]) {
             [self error:@"Please enter valid age below 18."];
 
         }

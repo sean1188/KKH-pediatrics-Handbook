@@ -27,23 +27,17 @@
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"] == TRUE ) {
         [self.view setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]]];
     }
-    //VER 1.3 clear
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"VER14"] != YES) {
+    //VER 1.45 clear
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"VER145"] != YES) {
         [[NSUserDefaults standardUserDefaults] setPersistentDomain:[NSDictionary dictionary] forName:[[NSBundle mainBundle] bundleIdentifier]];
-        [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"VER14"];
+        [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"VER145"];
     }
     //
     [UIView animateWithDuration:0.4 delay:0.8 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         _bearImg.transform = CGAffineTransformMakeScale(0.7, 0.7);
         _inc.alpha = 0;
     }completion:^(BOOL s){
-        NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
-                                             pathForResource:@"soundE"
-                                             ofType:@"mp3"]];
-        NSError *error;
-        audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
-        [audioPlayer play];        [UIView animateWithDuration:0.2 animations:^{
-           
+           [UIView animateWithDuration:0.2 animations:^{
             _bearImg.transform = CGAffineTransformMakeScale(9, 9);
             _bearImg.alpha = 0;
             [self.view setBackgroundColor:[UIColor whiteColor]];

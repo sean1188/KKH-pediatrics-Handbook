@@ -29,6 +29,7 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
 -(void) viewWillAppear:(BOOL)animated{
     _cardView.clipsToBounds = YES;
     _cardView.layer.cornerRadius = 15.0f;
+    [_tableView reloadData];
 }
 -(void) viewDidAppear:(BOOL)animated{
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"splashed"] != YES) {
@@ -543,6 +544,8 @@ int heightInit;
     [UIView animateWithDuration:0.3 animations:^{
         _DView.alpha = 0;
         _cardView.alpha =1;
+    }completion:^(BOOL finished) {
+        [_tableView reloadData];
     }];
 }
 - (IBAction)swipedDown:(id)sender {
