@@ -7,12 +7,71 @@
 //
 
 #import "HyperK.h"
+#import "HyperKCollectionViewCell.h"
 
 @interface HyperK ()
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
 @implementation HyperK
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 1;
+}
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return 6;
+}
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    HyperKCollectionViewCell *cell = [_collectionView dequeueReusableCellWithReuseIdentifier:@"cellxd" forIndexPath:indexPath];
+    int weight = [[[NSUserDefaults standardUserDefaults] objectForKey:@"Cweight"] intValue];
+    float Insulin = 0.1 *weight;
+    float dextrose10 = 5 *weight;
+    float dextrose50 = 1 *weight;
+    float CG = 0.5 *weight;
+    float Cacl = 0.2 *weight;
+    float NAHCO3 = 1 *weight;
+    //
+    switch (indexPath.row) {
+        case 0:
+            [cell.title setText:@"Regular Insulin (Actrapid)"];
+            [cell.amount setText:[NSString stringWithFormat:@"IV, %0.1f IU",Insulin]];
+            [cell.message setText:@"Onset 15-20 min for 4-6 h, administer together with DEXTROSE, 1 IU to every 5 g glucose, administer in 1 IU/ML dilution, MAX: 10 IU per dose, check H/C; may cause hypoglycaemia, may be repeated."];
+            break;
+        case 1:
+            [cell.title setText:@"Dextrose 10-Percent"];
+            [cell.amount setText:[NSString stringWithFormat:@"IV, %0.1f ML",dextrose10]];
+            [cell.message setText:@"Administer together with INSULIN."];
+            break;
+        case 2:
+            [cell.title setText:@"Dextrose 50-Percent"];
+            [cell.amount setText:[NSString stringWithFormat:@"IV, %0.1f ML",dextrose50]];
+            [cell.message setText:@"Administer via large bore peripheral IV or central venous access, administer together with insulin "];
+            break;
+        case 3:
+            [cell.title setText:@"10-Percent Calcium Gluconate"];
+            [cell.amount setText:[NSString stringWithFormat:@"IV, %0.1f ML",CG]];
+            [cell.message setText:@"Onset 5-10 min for 30-60 min, may cause hypercalcaemia & tissue necrosis may be repeated."];
+            break;
+        case 4:
+            [cell.title setText:@"10-Percent Calcium Chloride"];
+            [cell.amount setText:[NSString stringWithFormat:@"IV, %0.1f ML",Cacl]];
+            [cell.message setText:@"-"];
+            break;
+        case 5:
+            [cell.title setText:@"4-percent NaHCO3"];
+            [cell.amount setText:[NSString stringWithFormat:@"IV, %0.1f ML",NAHCO3]];
+            [cell.message setText:@"Onset 15 mins for 1-2 Hr, give over 10 min. DO NOT mix with Calcium, Max: 50 mmol/dose."];
+            break;
+            
+        default:
+            break;
+    }
+    //
+    cell.backgroundColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]];
+    cell.layer.cornerRadius = 10;
+    return cell;
+}
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
@@ -34,6 +93,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setcolor];
+    [_collectionView setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]]];
     [_weightLabel setText:[NSString stringWithFormat:@"%@ KG", [[NSUserDefaults standardUserDefaults] objectForKey:@"Cweight"]]];
     _treatmentB.layer.cornerRadius = 15.0f;
     _managementAlgorithm_Button.layer.cornerRadius = 15.0f;
@@ -69,15 +129,6 @@
     [UIView animateWithDuration:0.3 animations:^{
         _checkListView.alpha = 0;
     }completion:^(BOOL s ){
-        //init instructions
-        int weight = [[[NSUserDefaults standardUserDefaults] objectForKey:@"Cweight"] intValue];
-        float Insulin = 0.1 *weight;
-        float dextrose10 = 5 *weight;
-        float dextrose50 = 1 *weight;
-        float CG = 0.5 *weight;
-        float Cacl = 0.2 *weight;
-        float NAHCO3 = 1 *weight;
-        [_instructTextview setText:[NSString stringWithFormat:@"  Initiate Treatment: \n\n   Salbutamol 0.5-percent solution: Nebulise with 8 L oxygen , \n  < 25 KG: 2.5 MG in 4 ML of NS Q1-2H\n  > 25 KG: 5 MG in 4 ML of NS Q1-2H		\n\n   Regular Insulin (Actrapid): IV,   %0.1f IU \nOnset 15-20 min for 4-6 h, administer together with DEXTROSE, 1 IU to every 5 g glucose, administer in 1 IU/ML dilution, MAX: 10 IU per dose, check H/C; may cause hypoglycaemia, may be repeated.\n\n   Dextrose 10-Percent: IV,   %0.1f ML \nAdminister together with INSULIN\n\n   Dextrose 50-Percent: IV,   %0.1f ML \nAdminister via large bore peripheral IV or central venous access, administer together with insulin \n\n   10-Percent Calcium Gluconate: IV,   %0.1f ML \nOnset 5-10 min for 30-60 min, may cause hypercalcaemia & tissue necrosis may be repeated.\n   10-Percent Calcium Chloride: IV,   %0.1f ML \n\n   8.4-percent NaHCO3: IV,   %0.1f ML \nOnset 15 mins for 1-2 Hr, give over 10 min. DO NOT mix with Calcium, Max: 50 mmol/dose.",Insulin, dextrose10, dextrose50, CG, Cacl, NAHCO3]];
         [UIView animateWithDuration:0.3 animations:^{
             _AlgorithmBlur.alpha = 0;
             _instructView.alpha = 1;

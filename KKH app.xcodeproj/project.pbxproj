@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5466B46F1E499931004E3248 /* HyperKCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5466B46E1E499931004E3248 /* HyperKCollectionViewCell.m */; };
 		9703E68E1D29367A00C72EF3 /* Secure_.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E68D1D29367A00C72EF3 /* Secure_.m */; };
 		9706EBA11D4CFC3A00801B77 /* splash screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9706EBA01D4CFC3A00801B77 /* splash screen.png */; };
 		97087CCF1D5435FE007182EA /* BMIGraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97087CCE1D5435FE007182EA /* BMIGraphManager.swift */; };
@@ -119,6 +120,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5466B46D1E499931004E3248 /* HyperKCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyperKCollectionViewCell.h; sourceTree = "<group>"; };
+		5466B46E1E499931004E3248 /* HyperKCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyperKCollectionViewCell.m; sourceTree = "<group>"; };
 		9703E68C1D29367A00C72EF3 /* Secure_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Secure_.h; sourceTree = "<group>"; };
 		9703E68D1D29367A00C72EF3 /* Secure_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Secure_.m; sourceTree = "<group>"; };
 		9706EBA01D4CFC3A00801B77 /* splash screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash screen.png"; sourceTree = "<group>"; };
@@ -342,6 +345,8 @@
 				AC3CD9761DF14E9700FDD84E /* MalignantHyperthermia.m */,
 				AC3CD9791DF165DA00FDD84E /* Anaphylaxis.h */,
 				AC3CD97A1DF165DA00FDD84E /* Anaphylaxis.m */,
+				5466B46D1E499931004E3248 /* HyperKCollectionViewCell.h */,
+				5466B46E1E499931004E3248 /* HyperKCollectionViewCell.m */,
 			);
 			name = "Specific Case VC";
 			sourceTree = "<group>";
@@ -700,6 +705,7 @@
 				973C91E81DE8531E00FCF62C /* crisisVC.m in Sources */,
 				974D56301DE96D7300E74173 /* CrisisCell.m in Sources */,
 				97612B3F1D3F9D9E004900BE /* DrugCalculationViewController.m in Sources */,
+				5466B46F1E499931004E3248 /* HyperKCollectionViewCell.m in Sources */,
 				9777BF781D435C6F00F82DA4 /* BMIPercentileViewController.m in Sources */,
 				9727485D1DEDB1BF00014E32 /* CHAPTERCollectionViewCell.m in Sources */,
 				AC4B48A91DF53F0000C4E9B8 /* SpecificDrugselector.m in Sources */,
@@ -853,7 +859,7 @@
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "KKH app/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KKH-APP-16";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -876,7 +882,7 @@
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "KKH app/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KKH-APP-16";
 				PRODUCT_NAME = "$(TARGET_NAME)";

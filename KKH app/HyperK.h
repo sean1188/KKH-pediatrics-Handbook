@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface HyperK : ViewController
+@interface HyperK : ViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *secondaryViewHK;
 
@@ -25,6 +25,8 @@
 - (IBAction)treatment:(id)sender;
 @property (weak, nonatomic) IBOutlet UIView *checkListView;
 - (IBAction)checkListNext_Pressed:(id)sender;
+
+//instructive view
 @property (weak, nonatomic) IBOutlet UIView *instructView;
 @property (weak, nonatomic) IBOutlet UITextView *instructTextview;
 
@@ -37,7 +39,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *c6;
 @property (weak, nonatomic) IBOutlet UIButton *c7;
 @property (weak, nonatomic) IBOutlet UIButton *c8;
-
 - (IBAction)check1a:(id)sender;
 - (IBAction)check2:(id)sender;
 - (IBAction)check3:(id)sender;
