@@ -20,7 +20,7 @@
     return 1;
 }
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 6;
+    return 7;
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     HyperKCollectionViewCell *cell = [_collectionView dequeueReusableCellWithReuseIdentifier:@"cellxd" forIndexPath:indexPath];
@@ -34,31 +34,36 @@
     //
     switch (indexPath.row) {
         case 0:
+            [cell.title setText:@"Salbutamol 0.5-percent solution"];
+            [cell.amount setText:@"Nebulise with 8 L oxygen"];
+            [cell.message setText:@"< 25 KG: 2.5 MG in 4 ML of NS Q1-2H  > 25 KG: 5 MG in 4 ML of NS Q1-2H.	"];
+            break;
+        case 1:
             [cell.title setText:@"Regular Insulin (Actrapid)"];
             [cell.amount setText:[NSString stringWithFormat:@"IV, %0.1f IU",Insulin]];
             [cell.message setText:@"Onset 15-20 min for 4-6 h, administer together with DEXTROSE, 1 IU to every 5 g glucose, administer in 1 IU/ML dilution, MAX: 10 IU per dose, check H/C; may cause hypoglycaemia, may be repeated."];
             break;
-        case 1:
+        case 2:
             [cell.title setText:@"Dextrose 10-Percent"];
             [cell.amount setText:[NSString stringWithFormat:@"IV, %0.1f ML",dextrose10]];
             [cell.message setText:@"Administer together with INSULIN."];
             break;
-        case 2:
+        case 3:
             [cell.title setText:@"Dextrose 50-Percent"];
             [cell.amount setText:[NSString stringWithFormat:@"IV, %0.1f ML",dextrose50]];
             [cell.message setText:@"Administer via large bore peripheral IV or central venous access, administer together with insulin "];
             break;
-        case 3:
+        case 4:
             [cell.title setText:@"10-Percent Calcium Gluconate"];
             [cell.amount setText:[NSString stringWithFormat:@"IV, %0.1f ML",CG]];
             [cell.message setText:@"Onset 5-10 min for 30-60 min, may cause hypercalcaemia & tissue necrosis may be repeated."];
             break;
-        case 4:
+        case 5:
             [cell.title setText:@"10-Percent Calcium Chloride"];
             [cell.amount setText:[NSString stringWithFormat:@"IV, %0.1f ML",Cacl]];
             [cell.message setText:@"-"];
             break;
-        case 5:
+        case 6:
             [cell.title setText:@"4-percent NaHCO3"];
             [cell.amount setText:[NSString stringWithFormat:@"IV, %0.1f ML",NAHCO3]];
             [cell.message setText:@"Onset 15 mins for 1-2 Hr, give over 10 min. DO NOT mix with Calcium, Max: 50 mmol/dose."];

@@ -83,7 +83,7 @@
         <scene sceneID="rGG-dz-FXk">
             <objects>
                 <navigationController navigationBarHidden="YES" id="9NB-GJ-4p4" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XbE-mz-pOI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XbE-mz-pOI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -754,7 +754,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HA1-z2-Ki1" userLabel="calc">
-                                        <rect key="frame" x="97" y="0.0" width="95.5" height="41"/>
+                                        <rect key="frame" x="97" y="0.0" width="96" height="41"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_poll_white" translatesAutoresizingMaskIntoConstraints="NO" id="adf-Yh-ues">
                                                 <rect key="frame" x="61" y="2" width="26" height="26"/>
@@ -790,7 +790,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOH-8g-FLO" userLabel="fav">
-                                        <rect key="frame" x="193.5" y="0.0" width="96" height="41"/>
+                                        <rect key="frame" x="194" y="0.0" width="95" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CRISIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvA-6Y-Dcf">
                                                 <rect key="frame" x="56" y="26" width="34" height="13"/>
@@ -824,7 +824,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBR-Da-Vd0" userLabel="settings">
-                                        <rect key="frame" x="290.5" y="0.0" width="95.5" height="41"/>
+                                        <rect key="frame" x="290" y="0.0" width="96" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qel-Zq-VRd">
                                                 <rect key="frame" x="56" y="26" width="34" height="13"/>
@@ -2205,7 +2205,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELJ-Lk-GZ8">
-                                                <rect key="frame" x="0.0" y="68" width="343" height="67.5"/>
+                                                <rect key="frame" x="0.0" y="68" width="343" height="68"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HnR-8V-Ie5">
                                                         <rect key="frame" x="277" y="8" width="40" height="40"/>
@@ -2236,7 +2236,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ph8-ZF-ujA">
-                                                <rect key="frame" x="0.0" y="135.5" width="343" height="68"/>
+                                                <rect key="frame" x="0.0" y="136" width="343" height="67"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWL-uL-x71">
                                                         <rect key="frame" x="277" y="8" width="40" height="40"/>
@@ -2267,7 +2267,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2o-6L-A8N">
-                                                <rect key="frame" x="0.0" y="203.5" width="343" height="67.5"/>
+                                                <rect key="frame" x="0.0" y="203" width="343" height="68"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWi-Bc-dn4">
                                                         <rect key="frame" x="277" y="8" width="40" height="40"/>
@@ -3459,8 +3459,8 @@ The authors of each chapter have ensured that the information is current and cor
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Fw-3Z-pBd" userLabel="topbar">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="83"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fw-3Z-pBd" userLabel="topbar">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50KG" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGD-KJ-r25">
                                         <rect key="frame" x="300" y="31" width="58" height="34"/>
@@ -3472,38 +3472,40 @@ The authors of each chapter have ensured that the information is current and cor
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HYPERKALAEMIA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brj-Se-PCA">
-                                <rect key="frame" x="33" y="28" width="308" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inclusion/Exclusion Criteria:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLB-MK-Dtq">
+                                <rect key="frame" x="78" y="101" width="219" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Bpa-Os-NfE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qla-KZ-8fD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qla-KZ-8fD">
                                 <rect key="frame" x="16" y="28" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7p4-9b-JSZ"/>
+                                    <constraint firstAttribute="width" constant="40" id="q8a-UM-Wbu"/>
+                                </constraints>
                                 <state key="normal" image="ic_highlight_off_white_24dp"/>
                                 <connections>
                                     <action selector="back:" destination="BRy-0v-KBy" eventType="touchUpInside" id="8N7-J5-RnS"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inclusion/Exclusion Criteria:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLB-MK-Dtq">
-                                <rect key="frame" x="78" y="108" width="219" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="21"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Term NEONATE (&lt; 1 month age): serum K+ &gt; 6 mmol/L,  Children &gt; 1 month age: serum K+ &gt;5.5 mmol/L. EXCLUDE Premature Neonates." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ca-wu-IHu">
-                                <rect key="frame" x="22" y="135" width="329" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Term NEONATE (&lt; 1 month age): serum K+ &gt; 6 mmol/L,  Children &gt; 1 month age: serum K+ &gt;5.5 mmol/L. EXCLUDE Premature Neonates." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ca-wu-IHu">
+                                <rect key="frame" x="22" y="128" width="329" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Egd-gD-2by"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pye-rb-XCd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pye-rb-XCd">
                                 <rect key="frame" x="50" y="243" width="272" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="BkM-ia-vFA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="21"/>
                                 <state key="normal" title="Management Algorithm">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3512,9 +3514,11 @@ The authors of each chapter have ensured that the information is current and cor
                                     <action selector="managementAlgorithm_Pressed:" destination="BRy-0v-KBy" eventType="touchUpInside" id="1wq-bf-LR1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysI-qJ-iwS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysI-qJ-iwS">
                                 <rect key="frame" x="50" y="406" width="272" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="NTB-wP-Twa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="CabinCondensed-SemiBold" family="Cabin Condensed" pointSize="23"/>
                                 <state key="normal" title="Treatment">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3523,31 +3527,36 @@ The authors of each chapter have ensured that the information is current and cor
                                     <action selector="treatment:" destination="BRy-0v-KBy" eventType="touchUpInside" id="7j3-Ww-kt4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvb-Un-VVd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvb-Un-VVd">
                                 <rect key="frame" x="20" y="318" width="332" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cEk-BD-WDx"/>
+                                </constraints>
                                 <string key="text">Perform ECG immediately when possible. Review all medications/infusions.Exclude Burn or Crush injury, Rhabdomyolysis, Succinylchholine, Malignant Hyperthermia, Renal Failure.	</string>
                                 <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="13"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <visualEffectView opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0yb-gM-clj" userLabel="AlgorithmBlur">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HYPERKALAEMIA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brj-Se-PCA">
+                                <rect key="frame" x="33" y="28" width="308" height="39"/>
+                                <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <visualEffectView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yb-gM-clj" userLabel="AlgorithmBlur">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="rst-bC-DDs">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rst-bC-DDs">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQ4-7t-039">
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQ4-7t-039">
                                             <rect key="frame" x="24" y="53" width="327" height="536"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Qsn-He-zdf">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="478"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Qsn-He-zdf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="322" height="503"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6D8-Nx-YjS">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="58"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6D8-Nx-YjS">
+                                                            <rect key="frame" x="0.0" y="0.0" width="322" height="61"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Declare Emergency" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcg-0n-6bf">
                                                                     <rect key="frame" x="8" y="8" width="263" height="42"/>
@@ -3566,8 +3575,8 @@ The authors of each chapter have ensured that the information is current and cor
                                                                 </button>
                                                             </subviews>
                                                         </view>
-                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sji-wC-26y">
-                                                            <rect key="frame" x="0.0" y="60" width="50" height="58"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sji-wC-26y">
+                                                            <rect key="frame" x="0.0" y="63" width="322" height="61.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Call for Help" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4J-gH-PNI">
                                                                     <rect key="frame" x="8" y="8" width="263" height="42"/>
@@ -3586,8 +3595,8 @@ The authors of each chapter have ensured that the information is current and cor
                                                                 </button>
                                                             </subviews>
                                                         </view>
-                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5qf-AT-Vol">
-                                                            <rect key="frame" x="0.0" y="120" width="50" height="58"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5qf-AT-Vol">
+                                                            <rect key="frame" x="0.0" y="126.5" width="322" height="61"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discontinue ALL k + containing infusions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mw-as-IrX">
                                                                     <rect key="frame" x="8" y="8" width="263" height="42"/>
@@ -3606,8 +3615,8 @@ The authors of each chapter have ensured that the information is current and cor
                                                                 </button>
                                                             </subviews>
                                                         </view>
-                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rlc-k1-tyf">
-                                                            <rect key="frame" x="0.0" y="180" width="50" height="58"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rlc-k1-tyf">
+                                                            <rect key="frame" x="0.0" y="189.5" width="322" height="61"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discontinue blood products" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqE-E1-eAa">
                                                                     <rect key="frame" x="8" y="8" width="263" height="42"/>
@@ -3626,8 +3635,8 @@ The authors of each chapter have ensured that the information is current and cor
                                                                 </button>
                                                             </subviews>
                                                         </view>
-                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7iN-Tm-peG">
-                                                            <rect key="frame" x="0.0" y="240" width="50" height="58"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7iN-Tm-peG">
+                                                            <rect key="frame" x="0.0" y="252.5" width="322" height="61"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hyperventilate with 100% oxygen" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcN-Cx-ltI">
                                                                     <rect key="frame" x="8" y="8" width="263" height="42"/>
@@ -3646,8 +3655,8 @@ The authors of each chapter have ensured that the information is current and cor
                                                                 </button>
                                                             </subviews>
                                                         </view>
-                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BYf-bb-6HM">
-                                                            <rect key="frame" x="0.0" y="300" width="50" height="58"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYf-bb-6HM">
+                                                            <rect key="frame" x="0.0" y="315.5" width="322" height="61.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send rpt K+ to lab" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sju-WJ-xWl">
                                                                     <rect key="frame" x="8" y="8" width="263" height="42"/>
@@ -3666,8 +3675,8 @@ The authors of each chapter have ensured that the information is current and cor
                                                                 </button>
                                                             </subviews>
                                                         </view>
-                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lvc-Kj-8gZ">
-                                                            <rect key="frame" x="0.0" y="360" width="50" height="58"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvc-Kj-8gZ">
+                                                            <rect key="frame" x="0.0" y="379" width="322" height="61"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Obtain ECG" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWb-4N-PgR">
                                                                     <rect key="frame" x="8" y="8" width="263" height="42"/>
@@ -3686,8 +3695,8 @@ The authors of each chapter have ensured that the information is current and cor
                                                                 </button>
                                                             </subviews>
                                                         </view>
-                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1zc-38-ekg">
-                                                            <rect key="frame" x="0.0" y="420" width="50" height="58"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zc-38-ekg">
+                                                            <rect key="frame" x="0.0" y="442" width="322" height="61"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start CPR if haemodynamically unstable" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4x-Hh-709">
                                                                     <rect key="frame" x="8" y="8" width="263" height="42"/>
@@ -3707,10 +3716,23 @@ The authors of each chapter have ensured that the information is current and cor
                                                             </subviews>
                                                         </view>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="7iN-Tm-peG" firstAttribute="leading" secondItem="BYf-bb-6HM" secondAttribute="leading" id="08M-Rq-Mtr"/>
+                                                        <constraint firstItem="6D8-Nx-YjS" firstAttribute="leading" secondItem="Qsn-He-zdf" secondAttribute="leading" id="64r-tH-Fv4"/>
+                                                        <constraint firstItem="5qf-AT-Vol" firstAttribute="leading" secondItem="Rlc-k1-tyf" secondAttribute="leading" id="DiH-hp-IzM"/>
+                                                        <constraint firstItem="Sji-wC-26y" firstAttribute="leading" secondItem="5qf-AT-Vol" secondAttribute="leading" id="K6c-FD-71f"/>
+                                                        <constraint firstItem="6D8-Nx-YjS" firstAttribute="leading" secondItem="Sji-wC-26y" secondAttribute="leading" id="UZ8-Py-KRm"/>
+                                                        <constraint firstItem="Rlc-k1-tyf" firstAttribute="leading" secondItem="7iN-Tm-peG" secondAttribute="leading" id="X9t-cJ-NS7"/>
+                                                        <constraint firstItem="lvc-Kj-8gZ" firstAttribute="leading" secondItem="1zc-38-ekg" secondAttribute="leading" id="dk6-qV-Mg6"/>
+                                                        <constraint firstItem="BYf-bb-6HM" firstAttribute="leading" secondItem="lvc-Kj-8gZ" secondAttribute="leading" id="rOe-uM-aJl"/>
+                                                    </constraints>
                                                 </stackView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecf-sn-hgp">
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecf-sn-hgp">
                                                     <rect key="frame" x="116" y="488" width="94" height="40"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="94" id="8lv-TP-KK8"/>
+                                                        <constraint firstAttribute="height" constant="40" id="uMQ-mu-OiR"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Cabin-Bold" family="Cabin" pointSize="19"/>
                                                     <state key="normal" title="Next">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3721,10 +3743,21 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.058823529411764705" green="0.47843137254901963" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="ecf-sn-hgp" firstAttribute="bottom" secondItem="TQ4-7t-039" secondAttribute="bottomMargin" id="VHP-LY-Q64"/>
+                                                <constraint firstItem="Qsn-He-zdf" firstAttribute="top" secondItem="TQ4-7t-039" secondAttribute="top" id="cql-pg-nu5"/>
+                                                <constraint firstItem="ecf-sn-hgp" firstAttribute="centerX" secondItem="TQ4-7t-039" secondAttribute="centerX" id="d2q-zK-GB9"/>
+                                                <constraint firstAttribute="bottom" secondItem="Qsn-He-zdf" secondAttribute="bottom" constant="58" id="gdi-ch-lDF"/>
+                                                <constraint firstItem="Qsn-He-zdf" firstAttribute="leading" secondItem="TQ4-7t-039" secondAttribute="leading" constant="5" id="hN6-sQ-OL0"/>
+                                                <constraint firstAttribute="trailing" secondItem="Qsn-He-zdf" secondAttribute="trailing" id="jgl-9r-4y0"/>
+                                            </constraints>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEP-XM-MpG">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEP-XM-MpG">
                                             <rect key="frame" x="163" y="597" width="48" height="48"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="tO5-Xd-xgY"/>
+                                                <constraint firstAttribute="width" constant="48" id="xK0-cq-7H4"/>
+                                            </constraints>
                                             <state key="normal" image="ic_highlight_off_white_24dp"/>
                                             <connections>
                                                 <action selector="blurViewBack:" destination="BRy-0v-KBy" eventType="touchUpInside" id="J3i-t2-HKU"/>
@@ -3741,24 +3774,23 @@ The authors of each chapter have ensured that the information is current and cor
                                             </subviews>
                                         </scrollView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="TQ4-7t-039" firstAttribute="centerX" secondItem="rst-bC-DDs" secondAttribute="centerX" id="9Ki-oj-Nm3"/>
+                                        <constraint firstItem="TQ4-7t-039" firstAttribute="top" secondItem="rst-bC-DDs" secondAttribute="top" constant="53" id="F95-jM-Zow"/>
+                                        <constraint firstItem="eEP-XM-MpG" firstAttribute="top" secondItem="TQ4-7t-039" secondAttribute="bottom" constant="8" id="T2E-pR-0wn"/>
+                                        <constraint firstItem="TQ4-7t-039" firstAttribute="centerY" secondItem="rst-bC-DDs" secondAttribute="centerY" id="UCB-lt-BAL"/>
+                                        <constraint firstItem="eEP-XM-MpG" firstAttribute="centerX" secondItem="rst-bC-DDs" secondAttribute="centerX" id="j2T-8Z-FhN"/>
+                                        <constraint firstItem="TQ4-7t-039" firstAttribute="leading" secondItem="rst-bC-DDs" secondAttribute="leading" constant="24" id="lci-II-iEc"/>
+                                        <constraint firstAttribute="trailing" secondItem="TQ4-7t-039" secondAttribute="trailing" constant="24" id="vp5-LZ-SFq"/>
+                                    </constraints>
                                 </view>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dsm-w0-8ue" userLabel="InsttuctvIEW">
-                                <rect key="frame" x="0.0" y="83" width="375" height="584"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dsm-w0-8ue" userLabel="InsttuctvIEW">
+                                <rect key="frame" x="0.0" y="76" width="375" height="591"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="764-fi-gzQ">
-                                        <rect key="frame" x="16" y="8" width="343" height="90"/>
-                                        <string key="text">Salbutamol 0.5-percent solution: Nebulise with 8 L oxygen , &lt; 25 KG: 2.5 MG in 4 ML of NS Q1-2H  &gt; 25 KG: 5 MG in 4 ML of NS Q1-2H.		</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="T48-Yn-QoO">
-                                        <rect key="frame" x="0.0" y="118" width="375" height="458"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="458" id="tWy-hM-8Le"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="576"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ar0-W8-FwP">
                                             <size key="itemSize" width="345" height="167"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -3825,13 +3857,9 @@ The authors of each chapter have ensured that the information is current and cor
                                 </subviews>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.33333333329999998" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="764-fi-gzQ" secondAttribute="trailing" constant="16" id="1fp-VT-6Eh"/>
-                                    <constraint firstItem="T48-Yn-QoO" firstAttribute="top" secondItem="764-fi-gzQ" secondAttribute="bottom" constant="20" id="4fm-No-ZuO"/>
-                                    <constraint firstItem="764-fi-gzQ" firstAttribute="leading" secondItem="Dsm-w0-8ue" secondAttribute="leading" constant="16" id="9Gb-70-X92"/>
                                     <constraint firstItem="T48-Yn-QoO" firstAttribute="bottom" secondItem="Dsm-w0-8ue" secondAttribute="bottomMargin" id="HUJ-bH-2Na"/>
-                                    <constraint firstItem="764-fi-gzQ" firstAttribute="top" secondItem="Dsm-w0-8ue" secondAttribute="top" constant="8" id="NhH-Cl-JX7"/>
                                     <constraint firstItem="T48-Yn-QoO" firstAttribute="leading" secondItem="Dsm-w0-8ue" secondAttribute="leading" id="THA-3S-uHI"/>
-                                    <constraint firstItem="T48-Yn-QoO" firstAttribute="centerX" secondItem="764-fi-gzQ" secondAttribute="centerX" id="Tqu-wt-BeX"/>
+                                    <constraint firstItem="T48-Yn-QoO" firstAttribute="top" secondItem="Dsm-w0-8ue" secondAttribute="top" constant="2" id="j9q-7O-Dvc"/>
                                     <constraint firstAttribute="trailing" secondItem="T48-Yn-QoO" secondAttribute="trailing" id="pzx-bN-hPi"/>
                                 </constraints>
                             </view>
@@ -3839,13 +3867,41 @@ The authors of each chapter have ensured that the information is current and cor
                         <color key="backgroundColor" red="0.12941176470588237" green="0.33333333333333331" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="9Fw-3Z-pBd" firstAttribute="leading" secondItem="BUm-OZ-38I" secondAttribute="leading" id="0Fa-Oj-omP"/>
+                            <constraint firstItem="iLB-MK-Dtq" firstAttribute="centerX" secondItem="9Fw-3Z-pBd" secondAttribute="centerX" id="25g-sf-aPz"/>
+                            <constraint firstItem="Dsm-w0-8ue" firstAttribute="top" secondItem="9Fw-3Z-pBd" secondAttribute="bottom" id="2F6-v9-Bh6"/>
+                            <constraint firstItem="Pye-rb-XCd" firstAttribute="trailing" secondItem="ysI-qJ-iwS" secondAttribute="trailing" id="2Hc-k3-VDu"/>
+                            <constraint firstAttribute="trailing" secondItem="0yb-gM-clj" secondAttribute="trailing" id="2fL-9n-o8E"/>
+                            <constraint firstItem="Dsm-w0-8ue" firstAttribute="top" secondItem="qla-KZ-8fD" secondAttribute="bottom" constant="8" symbolic="YES" id="3d4-Dl-PlZ"/>
+                            <constraint firstItem="qla-KZ-8fD" firstAttribute="leading" secondItem="BUm-OZ-38I" secondAttribute="leadingMargin" id="3to-EE-tYk"/>
+                            <constraint firstItem="0yb-gM-clj" firstAttribute="centerY" secondItem="BUm-OZ-38I" secondAttribute="centerY" id="43p-4p-TkK"/>
+                            <constraint firstItem="VRI-Cs-X0r" firstAttribute="top" secondItem="0yb-gM-clj" secondAttribute="bottom" id="4N9-0v-m6x"/>
+                            <constraint firstItem="Pye-rb-XCd" firstAttribute="top" secondItem="0Ca-wu-IHu" secondAttribute="bottom" constant="8" symbolic="YES" id="4sm-Wi-5Rl"/>
+                            <constraint firstItem="Pye-rb-XCd" firstAttribute="leading" secondItem="BUm-OZ-38I" secondAttribute="leadingMargin" constant="34" id="4wf-Cf-rdr"/>
+                            <constraint firstItem="0yb-gM-clj" firstAttribute="top" secondItem="BUm-OZ-38I" secondAttribute="top" id="8GQ-u3-V64"/>
+                            <constraint firstItem="Uvb-Un-VVd" firstAttribute="leading" secondItem="BUm-OZ-38I" secondAttribute="leadingMargin" constant="4" id="EtV-0F-kUH"/>
+                            <constraint firstItem="0Ca-wu-IHu" firstAttribute="centerX" secondItem="Pye-rb-XCd" secondAttribute="centerX" id="FYF-hY-Khh"/>
+                            <constraint firstItem="ysI-qJ-iwS" firstAttribute="top" secondItem="Uvb-Un-VVd" secondAttribute="bottom" constant="38" id="GAY-US-W3H"/>
+                            <constraint firstItem="VRI-Cs-X0r" firstAttribute="top" secondItem="ysI-qJ-iwS" secondAttribute="bottom" constant="196" id="JP4-Zf-UWW"/>
                             <constraint firstAttribute="trailing" secondItem="Dsm-w0-8ue" secondAttribute="trailing" id="JXI-C9-Y83"/>
                             <constraint firstItem="9Fw-3Z-pBd" firstAttribute="centerX" secondItem="BUm-OZ-38I" secondAttribute="centerX" id="K8u-kL-VBh"/>
+                            <constraint firstItem="qla-KZ-8fD" firstAttribute="top" secondItem="brj-Se-PCA" secondAttribute="top" id="KPw-QI-895"/>
+                            <constraint firstItem="iLB-MK-Dtq" firstAttribute="centerX" secondItem="0yb-gM-clj" secondAttribute="centerX" id="MNV-xT-h7a"/>
                             <constraint firstAttribute="trailing" secondItem="9Fw-3Z-pBd" secondAttribute="trailing" id="NZQ-Z6-MBQ"/>
+                            <constraint firstItem="Pye-rb-XCd" firstAttribute="centerX" secondItem="Uvb-Un-VVd" secondAttribute="centerX" id="NbV-I2-VBA"/>
                             <constraint firstItem="VRI-Cs-X0r" firstAttribute="top" secondItem="Dsm-w0-8ue" secondAttribute="bottom" id="Neg-xO-Bb8"/>
+                            <constraint firstItem="Pye-rb-XCd" firstAttribute="leading" secondItem="ysI-qJ-iwS" secondAttribute="leading" id="OdG-em-LMt"/>
+                            <constraint firstItem="0Ca-wu-IHu" firstAttribute="centerX" secondItem="brj-Se-PCA" secondAttribute="centerX" id="Rny-i7-4Ve"/>
+                            <constraint firstItem="iLB-MK-Dtq" firstAttribute="centerX" secondItem="brj-Se-PCA" secondAttribute="centerX" id="Snj-lK-64o"/>
+                            <constraint firstItem="Uvb-Un-VVd" firstAttribute="top" secondItem="Pye-rb-XCd" secondAttribute="bottom" constant="10" id="VSf-Op-hTe"/>
+                            <constraint firstItem="0yb-gM-clj" firstAttribute="centerX" secondItem="BUm-OZ-38I" secondAttribute="centerX" id="cc9-ap-Erd"/>
+                            <constraint firstItem="iLB-MK-Dtq" firstAttribute="top" secondItem="9Fw-3Z-pBd" secondAttribute="bottom" constant="25" id="ivk-mH-vEX"/>
                             <constraint firstItem="9Fw-3Z-pBd" firstAttribute="top" secondItem="BUm-OZ-38I" secondAttribute="top" id="l4q-lW-ZLP"/>
+                            <constraint firstItem="0yb-gM-clj" firstAttribute="leading" secondItem="BUm-OZ-38I" secondAttribute="leading" id="qaR-wT-gp0"/>
                             <constraint firstItem="Dsm-w0-8ue" firstAttribute="leading" secondItem="BUm-OZ-38I" secondAttribute="leading" id="t8W-z8-hNe"/>
-                            <constraint firstItem="Dsm-w0-8ue" firstAttribute="top" secondItem="9Fw-3Z-pBd" secondAttribute="bottom" id="wpa-dA-dYG"/>
+                            <constraint firstItem="qla-KZ-8fD" firstAttribute="top" secondItem="Ctl-jR-o2G" secondAttribute="bottom" constant="8" symbolic="YES" id="v67-0F-pB7"/>
+                            <constraint firstItem="0Ca-wu-IHu" firstAttribute="top" secondItem="9Fw-3Z-pBd" secondAttribute="bottom" constant="52" id="wOt-5c-Avr"/>
+                            <constraint firstItem="0Ca-wu-IHu" firstAttribute="leading" secondItem="BUm-OZ-38I" secondAttribute="leadingMargin" constant="6" id="zZX-54-AlY"/>
+                            <constraint firstItem="qla-KZ-8fD" firstAttribute="centerY" secondItem="brj-Se-PCA" secondAttribute="centerY" id="zvk-0N-48s"/>
                         </constraints>
                     </view>
                     <connections>

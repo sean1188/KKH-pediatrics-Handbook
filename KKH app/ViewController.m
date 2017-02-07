@@ -32,6 +32,10 @@ bool didSendSearch; NSMutableArray *results; NSMutableArray *objectsArray;
     [_tableView reloadData];
 }
 -(void) viewDidAppear:(BOOL)animated{
+    //
+    results = NULL;
+    
+    //
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"splashed"] != YES) {
     [self setcolors];
     likedChapterCount = 0; likedObjects = [NSMutableArray array];
