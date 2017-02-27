@@ -105,7 +105,6 @@
 		AC4B48A11DF5320A00C4E9B8 /* CardiacDrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = AC4B489D1DF5320A00C4E9B8 /* CardiacDrugList.csv */; };
 		AC4B48A21DF5320A00C4E9B8 /* DrugCalculationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B489E1DF5320A00C4E9B8 /* DrugCalculationsManager.swift */; };
 		AC4B48A31DF5320A00C4E9B8 /* DrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = AC4B489F1DF5320A00C4E9B8 /* DrugList.csv */; };
-		AC4B48A91DF53F0000C4E9B8 /* SpecificDrugselector.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4B48A81DF53F0000C4E9B8 /* SpecificDrugselector.m */; };
 		ACE924041DF1269D0020DF16 /* HyperK.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE924031DF1269D0020DF16 /* HyperK.m */; };
 /* End PBXBuildFile section */
 
@@ -248,8 +247,6 @@
 		AC4B489D1DF5320A00C4E9B8 /* CardiacDrugList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CardiacDrugList.csv; sourceTree = "<group>"; };
 		AC4B489E1DF5320A00C4E9B8 /* DrugCalculationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugCalculationsManager.swift; sourceTree = "<group>"; };
 		AC4B489F1DF5320A00C4E9B8 /* DrugList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DrugList.csv; sourceTree = "<group>"; };
-		AC4B48A71DF53F0000C4E9B8 /* SpecificDrugselector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecificDrugselector.h; sourceTree = "<group>"; };
-		AC4B48A81DF53F0000C4E9B8 /* SpecificDrugselector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecificDrugselector.m; sourceTree = "<group>"; };
 		ACE924021DF1269D0020DF16 /* HyperK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyperK.h; sourceTree = "<group>"; };
 		ACE924031DF1269D0020DF16 /* HyperK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyperK.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -324,8 +321,6 @@
 				97FB27C01D06D69000EF2845 /* Calculator.m */,
 				AC4B48A51DF5340F00C4E9B8 /* Drug calculators */,
 				AC4B48A41DF533FA00C4E9B8 /* BMI PERCENTILE */,
-				AC4B48A71DF53F0000C4E9B8 /* SpecificDrugselector.h */,
-				AC4B48A81DF53F0000C4E9B8 /* SpecificDrugselector.m */,
 			);
 			name = calculation;
 			sourceTree = "<group>";
@@ -708,7 +703,6 @@
 				5466B46F1E499931004E3248 /* HyperKCollectionViewCell.m in Sources */,
 				9777BF781D435C6F00F82DA4 /* BMIPercentileViewController.m in Sources */,
 				9727485D1DEDB1BF00014E32 /* CHAPTERCollectionViewCell.m in Sources */,
-				AC4B48A91DF53F0000C4E9B8 /* SpecificDrugselector.m in Sources */,
 				ACE924041DF1269D0020DF16 /* HyperK.m in Sources */,
 				976EFB271D01C28B0048A4DC /* AppDelegate.m in Sources */,
 				9729DC091DED4E8A00F2475A /* MBProgressHUD.m in Sources */,

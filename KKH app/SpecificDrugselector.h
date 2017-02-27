@@ -20,7 +20,6 @@
 - (IBAction)nextB:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *backB;
 @property (weak, nonatomic) IBOutlet UIButton *nextB;
-@property (weak, nonatomic) IBOutlet UITextView *resView;
 
 
 

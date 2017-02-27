@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E7W-Qo-Nmj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E7W-Qo-Nmj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -83,7 +83,7 @@
         <scene sceneID="rGG-dz-FXk">
             <objects>
                 <navigationController navigationBarHidden="YES" id="9NB-GJ-4p4" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XbE-mz-pOI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XbE-mz-pOI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -754,7 +754,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HA1-z2-Ki1" userLabel="calc">
-                                        <rect key="frame" x="97" y="0.0" width="96" height="41"/>
+                                        <rect key="frame" x="97" y="0.0" width="95.5" height="41"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_poll_white" translatesAutoresizingMaskIntoConstraints="NO" id="adf-Yh-ues">
                                                 <rect key="frame" x="61" y="2" width="26" height="26"/>
@@ -790,7 +790,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOH-8g-FLO" userLabel="fav">
-                                        <rect key="frame" x="194" y="0.0" width="95" height="41"/>
+                                        <rect key="frame" x="193.5" y="0.0" width="96" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CRISIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvA-6Y-Dcf">
                                                 <rect key="frame" x="56" y="26" width="34" height="13"/>
@@ -824,7 +824,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBR-Da-Vd0" userLabel="settings">
-                                        <rect key="frame" x="290" y="0.0" width="96" height="41"/>
+                                        <rect key="frame" x="290.5" y="0.0" width="95.5" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qel-Zq-VRd">
                                                 <rect key="frame" x="56" y="26" width="34" height="13"/>
@@ -2205,7 +2205,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELJ-Lk-GZ8">
-                                                <rect key="frame" x="0.0" y="68" width="343" height="68"/>
+                                                <rect key="frame" x="0.0" y="68" width="343" height="67.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HnR-8V-Ie5">
                                                         <rect key="frame" x="277" y="8" width="40" height="40"/>
@@ -2236,7 +2236,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ph8-ZF-ujA">
-                                                <rect key="frame" x="0.0" y="136" width="343" height="67"/>
+                                                <rect key="frame" x="0.0" y="135.5" width="343" height="68"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWL-uL-x71">
                                                         <rect key="frame" x="277" y="8" width="40" height="40"/>
@@ -2267,7 +2267,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2o-6L-A8N">
-                                                <rect key="frame" x="0.0" y="203" width="343" height="68"/>
+                                                <rect key="frame" x="0.0" y="203.5" width="343" height="67.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWi-Bc-dn4">
                                                         <rect key="frame" x="277" y="8" width="40" height="40"/>
@@ -2624,7 +2624,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6E-v1-64P">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="55.5"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="54.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="bqU-VU-fak"/>
                                                                     </constraints>
@@ -2744,7 +2744,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxq-et-huc">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="55.5"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="54.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="57z-PC-Ct7"/>
                                                                     </constraints>
@@ -2804,7 +2804,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F3-IX-oCd">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="56"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="54"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="Wq1-TJ-u0x"/>
                                                                     </constraints>
@@ -3933,97 +3933,6 @@ The authors of each chapter have ensured that the information is current and cor
             </objects>
             <point key="canvasLocation" x="2020" y="1684.4077961019491"/>
         </scene>
-        <!--Specific drug selecotr-->
-        <scene sceneID="QN6-zz-O0U">
-            <objects>
-                <viewController title="Specific drug selecotr" id="Fr4-1G-loY" customClass="SpecificDrugselector" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pAW-Ym-FMy"/>
-                        <viewControllerLayoutGuide type="bottom" id="JOv-Sj-GQL"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vsm-S9-rRi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lnG-PL-rHz">
-                                <rect key="frame" x="0.0" y="195" width="375" height="216"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="Fr4-1G-loY" id="8xs-Uv-2GP"/>
-                                    <outlet property="delegate" destination="Fr4-1G-loY" id="Ji3-t9-C95"/>
-                                </connections>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Select Drug" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDy-wW-wCP">
-                                <rect key="frame" x="111" y="125" width="153" height="43"/>
-                                <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="23"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWF-hF-lBI">
-                                <rect key="frame" x="24" y="28" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="XVl-QK-gCd"/>
-                                    <constraint firstAttribute="height" constant="40" id="mBo-dR-NzT"/>
-                                </constraints>
-                                <inset key="contentEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" backgroundImage="ic_highlight_off_white_24dp"/>
-                                <connections>
-                                    <action selector="backb:" destination="Fr4-1G-loY" eventType="touchUpInside" id="mdT-Xh-78Q"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPi-1k-jUH">
-                                <rect key="frame" x="152" y="538" width="70" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="SLb-Uo-hpv"/>
-                                    <constraint firstAttribute="height" constant="55" id="YJB-AY-pR8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="26"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="nextB:" destination="Fr4-1G-loY" eventType="touchUpInside" id="MOs-tX-QkG"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCZ-sq-GOE">
-                                <rect key="frame" x="16" y="226" width="343" height="165"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="165" id="k6M-jX-xZn"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="27"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.12941176470588237" green="0.33333333333333331" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="cDy-wW-wCP" firstAttribute="centerX" secondItem="vsm-S9-rRi" secondAttribute="centerX" id="1Xe-Xz-XdH"/>
-                            <constraint firstAttribute="trailing" secondItem="lnG-PL-rHz" secondAttribute="trailing" id="6qU-1k-WMv"/>
-                            <constraint firstItem="JOv-Sj-GQL" firstAttribute="top" secondItem="PPi-1k-jUH" secondAttribute="bottom" constant="74" id="7pG-LI-4re"/>
-                            <constraint firstItem="bCZ-sq-GOE" firstAttribute="top" secondItem="cDy-wW-wCP" secondAttribute="bottom" constant="58" id="G1f-mW-gD0"/>
-                            <constraint firstItem="XWF-hF-lBI" firstAttribute="leading" secondItem="vsm-S9-rRi" secondAttribute="leadingMargin" constant="8" id="Jr1-uZ-qGr"/>
-                            <constraint firstItem="lnG-PL-rHz" firstAttribute="leading" secondItem="vsm-S9-rRi" secondAttribute="leading" id="aVR-09-han"/>
-                            <constraint firstItem="lnG-PL-rHz" firstAttribute="centerX" secondItem="vsm-S9-rRi" secondAttribute="centerX" id="czQ-MG-RZq"/>
-                            <constraint firstItem="bCZ-sq-GOE" firstAttribute="leading" secondItem="vsm-S9-rRi" secondAttribute="leadingMargin" id="dY1-GH-vxL"/>
-                            <constraint firstItem="PPi-1k-jUH" firstAttribute="centerX" secondItem="lnG-PL-rHz" secondAttribute="centerX" id="fJW-j1-Yrc"/>
-                            <constraint firstItem="lnG-PL-rHz" firstAttribute="top" secondItem="cDy-wW-wCP" secondAttribute="bottom" constant="27" id="grr-Wd-VgB"/>
-                            <constraint firstItem="XWF-hF-lBI" firstAttribute="top" secondItem="pAW-Ym-FMy" secondAttribute="bottom" constant="8" id="mqr-o5-lCp"/>
-                            <constraint firstItem="lnG-PL-rHz" firstAttribute="centerY" secondItem="vsm-S9-rRi" secondAttribute="centerY" constant="-30.5" id="oMr-wx-nBK"/>
-                            <constraint firstItem="bCZ-sq-GOE" firstAttribute="centerX" secondItem="lnG-PL-rHz" secondAttribute="centerX" id="zHG-ot-gFP"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="Drugpicker" destination="lnG-PL-rHz" id="zJR-9V-dXN"/>
-                        <outlet property="backB" destination="XWF-hF-lBI" id="SLR-sm-tnc"/>
-                        <outlet property="header1" destination="cDy-wW-wCP" id="Ga0-ac-hpR"/>
-                        <outlet property="nextB" destination="PPi-1k-jUH" id="XK9-jz-O4s"/>
-                        <outlet property="resView" destination="bCZ-sq-GOE" id="MVc-pu-YEv"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LVM-BQ-oqQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3000.8000000000002" y="1495.5022488755624"/>
-        </scene>
         <!--Drug Calculations-->
         <scene sceneID="Bzj-ox-DRZ">
             <objects>
@@ -4085,13 +3994,21 @@ The authors of each chapter have ensured that the information is current and cor
                                     <outlet property="delegate" destination="fsS-ZA-8qs" id="7j5-mt-rNx"/>
                                 </connections>
                             </pickerView>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VZb-4I-Uly">
+                                <rect key="frame" x="137" y="60" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VZb-4I-Uly" secondAttribute="height" multiplier="1:1" id="Hea-EK-y74"/>
+                                </constraints>
+                            </webView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tbC-Zp-uPk" userLabel="Res_view">
-                                <rect key="frame" x="-78" y="78" width="531" height="468"/>
+                                <rect key="frame" x="23" y="112" width="336" height="442"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdi-qP-LOq">
-                                        <rect key="frame" x="195" y="169" width="141" height="48"/>
+                                        <rect key="frame" x="98" y="166" width="141" height="48"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="iLc-ZZ-hTk"/>
+                                            <constraint firstAttribute="width" constant="141" id="1C8-Zs-Zp5"/>
+                                            <constraint firstAttribute="height" constant="48" id="xm7-DJ-2hl"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="28"/>
                                         <state key="normal" title="View List">
@@ -4101,23 +4018,10 @@ The authors of each chapter have ensured that the information is current and cor
                                             <action selector="viewB:" destination="fsS-ZA-8qs" eventType="touchUpInside" id="vSn-bY-Cou"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOl-Ga-cnp">
-                                        <rect key="frame" x="187" y="225" width="157" height="48"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="yRQ-cP-x9p"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="28"/>
-                                        <state key="normal" title="Specific Drug">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="specificDrugB:" destination="fsS-ZA-8qs" eventType="touchUpInside" id="Wua-Wh-8sL"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hup-hy-t6J">
-                                        <rect key="frame" x="195" y="281" width="141" height="48"/>
+                                        <rect key="frame" x="98" y="222" width="141" height="48"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="6CZ-XY-Rcu"/>
+                                            <constraint firstAttribute="height" constant="48" id="lCa-b6-Cqb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="28"/>
                                         <state key="normal" title="Send" image="ic_email_white">
@@ -4130,45 +4034,35 @@ The authors of each chapter have ensured that the information is current and cor
                                 </subviews>
                                 <color key="backgroundColor" red="0.2122483999" green="0.57065624000000004" blue="0.94941872360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="rdi-qP-LOq" firstAttribute="centerX" secondItem="tbC-Zp-uPk" secondAttribute="centerX" id="7fi-gb-wlE"/>
-                                    <constraint firstItem="fOl-Ga-cnp" firstAttribute="centerX" secondItem="tbC-Zp-uPk" secondAttribute="centerX" id="B2l-kD-TU9"/>
-                                    <constraint firstItem="hup-hy-t6J" firstAttribute="centerX" secondItem="tbC-Zp-uPk" secondAttribute="centerX" id="E6s-Or-fYW"/>
-                                    <constraint firstItem="rdi-qP-LOq" firstAttribute="centerY" secondItem="tbC-Zp-uPk" secondAttribute="centerY" id="FxD-7Q-rN5"/>
-                                    <constraint firstItem="fOl-Ga-cnp" firstAttribute="top" secondItem="rdi-qP-LOq" secondAttribute="bottom" constant="20" id="ayr-JB-fI1"/>
-                                    <constraint firstItem="hup-hy-t6J" firstAttribute="top" secondItem="fOl-Ga-cnp" secondAttribute="bottom" constant="20" id="jcF-9U-yjD"/>
+                                    <constraint firstItem="rdi-qP-LOq" firstAttribute="centerX" secondItem="tbC-Zp-uPk" secondAttribute="centerX" id="8MT-ak-jDj"/>
+                                    <constraint firstItem="rdi-qP-LOq" firstAttribute="top" secondItem="tbC-Zp-uPk" secondAttribute="top" constant="166" id="GAZ-07-3lD"/>
+                                    <constraint firstItem="rdi-qP-LOq" firstAttribute="trailing" secondItem="hup-hy-t6J" secondAttribute="trailing" id="P8G-eh-oJj"/>
+                                    <constraint firstItem="rdi-qP-LOq" firstAttribute="leading" secondItem="hup-hy-t6J" secondAttribute="leading" id="f4P-hm-TL6"/>
+                                    <constraint firstItem="hup-hy-t6J" firstAttribute="top" secondItem="rdi-qP-LOq" secondAttribute="bottom" constant="8" symbolic="YES" id="tOp-ze-97x"/>
                                 </constraints>
                             </view>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VZb-4I-Uly">
-                                <rect key="frame" x="137" y="60" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="VZb-4I-Uly" secondAttribute="height" multiplier="1:1" id="Hea-EK-y74"/>
-                                </constraints>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.057992704210000003" green="0.45015302299999999" blue="0.77763044830000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="tbC-Zp-uPk" firstAttribute="centerY" secondItem="QUt-Rn-kyA" secondAttribute="centerY" id="1bR-fc-zgu"/>
                             <constraint firstItem="0xj-b7-tk7" firstAttribute="top" secondItem="qgw-N7-Bd2" secondAttribute="bottom" constant="25" id="4Fs-oB-SwK"/>
                             <constraint firstItem="QIM-zk-e6F" firstAttribute="centerY" secondItem="zde-K4-BtB" secondAttribute="centerY" id="7oF-wb-OxG"/>
+                            <constraint firstItem="tbC-Zp-uPk" firstAttribute="trailing" secondItem="zde-K4-BtB" secondAttribute="trailingMargin" id="8vq-gM-wFx"/>
                             <constraint firstItem="0xj-b7-tk7" firstAttribute="centerX" secondItem="zde-K4-BtB" secondAttribute="centerX" id="AS6-qA-EK0"/>
-                            <constraint firstItem="rdi-qP-LOq" firstAttribute="top" secondItem="VZb-4I-Uly" secondAttribute="bottom" constant="90" id="FWF-d5-Ara"/>
+                            <constraint firstItem="tbC-Zp-uPk" firstAttribute="centerY" secondItem="zde-K4-BtB" secondAttribute="centerY" id="Gtf-lx-SSc"/>
                             <constraint firstItem="FIj-tb-arU" firstAttribute="centerX" secondItem="zde-K4-BtB" secondAttribute="centerX" id="Hhd-Qy-nbC"/>
                             <constraint firstItem="QUt-Rn-kyA" firstAttribute="centerX" secondItem="zde-K4-BtB" secondAttribute="centerX" id="OAU-cI-Wqq"/>
-                            <constraint firstItem="tbC-Zp-uPk" firstAttribute="leading" secondItem="zde-K4-BtB" secondAttribute="leadingMargin" constant="15" id="OTN-S1-BzD"/>
+                            <constraint firstItem="tbC-Zp-uPk" firstAttribute="centerX" secondItem="zde-K4-BtB" secondAttribute="centerX" id="P1X-JC-t9b"/>
                             <constraint firstItem="E0d-vk-NVu" firstAttribute="leading" secondItem="zde-K4-BtB" secondAttribute="leadingMargin" id="RM3-Vj-1Ex"/>
                             <constraint firstItem="VZb-4I-Uly" firstAttribute="centerX" secondItem="zde-K4-BtB" secondAttribute="centerX" id="STw-Ca-PnC"/>
                             <constraint firstAttribute="trailing" secondItem="QUt-Rn-kyA" secondAttribute="trailing" id="Tzk-fJ-zBn"/>
                             <constraint firstItem="QUt-Rn-kyA" firstAttribute="centerY" secondItem="zde-K4-BtB" secondAttribute="centerY" id="aXr-lC-G2p"/>
                             <constraint firstItem="VZb-4I-Uly" firstAttribute="top" secondItem="qgw-N7-Bd2" secondAttribute="bottom" constant="100" id="ani-CD-eV6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="tbC-Zp-uPk" secondAttribute="trailing" constant="15" id="bsd-x2-sKa"/>
+                            <constraint firstItem="tbC-Zp-uPk" firstAttribute="top" secondItem="E0d-vk-NVu" secondAttribute="bottom" constant="41" id="dru-LB-fSW"/>
                             <constraint firstItem="QIM-zk-e6F" firstAttribute="leading" secondItem="zde-K4-BtB" secondAttribute="leadingMargin" constant="50" id="fQy-rM-7uP"/>
-                            <constraint firstItem="tbC-Zp-uPk" firstAttribute="centerX" secondItem="zde-K4-BtB" secondAttribute="centerX" id="g0t-sC-7V0"/>
-                            <constraint firstItem="tbC-Zp-uPk" firstAttribute="top" secondItem="qgw-N7-Bd2" secondAttribute="bottom" constant="75" id="mxJ-q3-W0g"/>
-                            <constraint firstItem="VBf-fI-g6f" firstAttribute="top" secondItem="tbC-Zp-uPk" secondAttribute="bottom" constant="80" id="p6o-ff-0B7"/>
                             <constraint firstItem="E0d-vk-NVu" firstAttribute="top" secondItem="qgw-N7-Bd2" secondAttribute="bottom" constant="21" id="ql7-2k-tWU"/>
                             <constraint firstItem="QIM-zk-e6F" firstAttribute="centerX" secondItem="zde-K4-BtB" secondAttribute="centerX" id="rhc-LN-j0S"/>
                             <constraint firstItem="VBf-fI-g6f" firstAttribute="top" secondItem="FIj-tb-arU" secondAttribute="bottom" constant="8" id="ukr-bt-cET"/>
-                            <constraint firstItem="tbC-Zp-uPk" firstAttribute="leading" secondItem="QIM-zk-e6F" secondAttribute="trailing" constant="50" id="xmZ-fM-6QK"/>
                             <constraint firstItem="QUt-Rn-kyA" firstAttribute="leading" secondItem="zde-K4-BtB" secondAttribute="leading" id="z2K-4h-iON"/>
                         </constraints>
                     </view>
@@ -4180,7 +4074,6 @@ The authors of each chapter have ensured that the information is current and cor
                         <outlet property="resView" destination="tbC-Zp-uPk" id="CeY-2h-iAB"/>
                         <outlet property="textField" destination="QIM-zk-e6F" id="eDi-RR-Oab"/>
                         <outlet property="webView" destination="VZb-4I-Uly" id="Saw-Je-JgL"/>
-                        <segue destination="Fr4-1G-loY" kind="presentation" identifier="specific" id="ej1-yJ-Ak3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yla-9W-fRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4190,7 +4083,7 @@ The authors of each chapter have ensured that the information is current and cor
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1537" y="904"/>
+            <point key="canvasLocation" x="1536.8" y="903.59820089955031"/>
         </scene>
         <!--Percentile View Controller-->
         <scene sceneID="QwV-aa-nA4">
@@ -4560,7 +4453,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authorisation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJt-zD-OeA">
-                                                <rect key="frame" x="40" y="0.0" width="151" height="40"/>
+                                                <rect key="frame" x="40" y="0.0" width="150.5" height="40"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="26"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -4646,10 +4539,10 @@ The authors of each chapter have ensured that the information is current and cor
                                 <rect key="frame" x="20" y="178" width="560" height="82"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NYg-rk-P8x" userLabel="COLOROption">
-                                        <rect key="frame" x="157" y="16" width="1595" height="50"/>
+                                        <rect key="frame" x="157" y="16" width="1602" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cf9-PC-wuP" userLabel="PrimaryColor">
-                                                <rect key="frame" x="0.0" y="0.0" width="1393" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1400.5" height="50"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsk-Lu-eCf" userLabel="SecondaryColor">
                                                         <rect key="frame" x="14" y="13" width="23" height="23"/>
@@ -4664,7 +4557,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Color Accent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3b-Qx-Okr">
-                                                <rect key="frame" x="1403" y="0.0" width="192" height="50"/>
+                                                <rect key="frame" x="1410.5" y="0.0" width="191.5" height="50"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="23"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>

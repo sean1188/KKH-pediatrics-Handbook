@@ -144,7 +144,7 @@ _drugimg.frame = CGRectMake(_drugimg.frame.origin.x, _drugimg.frame.origin.y - 5
 }
 - (int)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return 2;
+    return 4;
 }
 - (NSAttributedString *)pickerView:(UIPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
@@ -154,6 +154,12 @@ _drugimg.frame = CGRectMake(_drugimg.frame.origin.x, _drugimg.frame.origin.y - 5
             break;
         case 1:
             return [[NSAttributedString alloc] initWithString:@"Cardiac Drug Calculator" attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+            break;
+        case 2:
+            return [[NSAttributedString alloc] initWithString:@"Scoliosis Drug Calculator" attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+            break;
+        case 3:
+            return [[NSAttributedString alloc] initWithString:@"Common Drugs" attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
             break;
         default:
             return nil;
@@ -230,6 +236,15 @@ int counttt;
             }];
 
         }
+        else if ([_pickerDrug selectedRowInComponent:0] == 3){
+            //common drugs
+            [self performSegueWithIdentifier:@"commonDrug" sender:self];
+        }
+        
+        
+        
+        
+        
             }
     else if ([_textField.text isEqualToString:@""]){
         
