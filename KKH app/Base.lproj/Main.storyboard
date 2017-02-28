@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E7W-Qo-Nmj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QC0-ry-Azx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -2624,7 +2624,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6E-v1-64P">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="54.5"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="bqU-VU-fak"/>
                                                                     </constraints>
@@ -2744,7 +2744,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxq-et-huc">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="54.5"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="57z-PC-Ct7"/>
                                                                     </constraints>
@@ -3473,7 +3473,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inclusion/Exclusion Criteria:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLB-MK-Dtq">
-                                <rect key="frame" x="78" y="101" width="219" height="31"/>
+                                <rect key="frame" x="78.5" y="101" width="219" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="Bpa-Os-NfE"/>
                                 </constraints>
@@ -3493,7 +3493,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Term NEONATE (&lt; 1 month age): serum K+ &gt; 6 mmol/L,  Children &gt; 1 month age: serum K+ &gt;5.5 mmol/L. EXCLUDE Premature Neonates." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ca-wu-IHu">
-                                <rect key="frame" x="22" y="128" width="329" height="107"/>
+                                <rect key="frame" x="22" y="128" width="332" height="107"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Egd-gD-2by"/>
                                 </constraints>
@@ -3502,7 +3502,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pye-rb-XCd">
-                                <rect key="frame" x="50" y="243" width="272" height="65"/>
+                                <rect key="frame" x="50" y="243" width="275" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="BkM-ia-vFA"/>
                                 </constraints>
@@ -3515,7 +3515,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysI-qJ-iwS">
-                                <rect key="frame" x="50" y="406" width="272" height="65"/>
+                                <rect key="frame" x="50" y="406" width="275" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="NTB-wP-Twa"/>
                                 </constraints>
@@ -3528,7 +3528,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvb-Un-VVd">
-                                <rect key="frame" x="20" y="318" width="332" height="50"/>
+                                <rect key="frame" x="20" y="318" width="335" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="cEk-BD-WDx"/>
                                 </constraints>
@@ -3933,6 +3933,24 @@ The authors of each chapter have ensured that the information is current and cor
             </objects>
             <point key="canvasLocation" x="2020" y="1684.4077961019491"/>
         </scene>
+        <!--CommonDrugs-->
+        <scene sceneID="cNy-Ap-fIw">
+            <objects>
+                <viewController title="CommonDrugs" id="QC0-ry-Azx" customClass="commmonDrugsVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xKf-Ob-raL"/>
+                        <viewControllerLayoutGuide type="bottom" id="j7h-bx-YUn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pSd-TF-GTW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.057992704210000003" green="0.45015302299999999" blue="0.77763044830000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8VU-wm-MRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2893" y="1527"/>
+        </scene>
         <!--Drug Calculations-->
         <scene sceneID="Bzj-ox-DRZ">
             <objects>
@@ -3994,13 +4012,6 @@ The authors of each chapter have ensured that the information is current and cor
                                     <outlet property="delegate" destination="fsS-ZA-8qs" id="7j5-mt-rNx"/>
                                 </connections>
                             </pickerView>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VZb-4I-Uly">
-                                <rect key="frame" x="137" y="60" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="VZb-4I-Uly" secondAttribute="height" multiplier="1:1" id="Hea-EK-y74"/>
-                                </constraints>
-                            </webView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tbC-Zp-uPk" userLabel="Res_view">
                                 <rect key="frame" x="23" y="112" width="336" height="442"/>
                                 <subviews>
@@ -4041,6 +4052,13 @@ The authors of each chapter have ensured that the information is current and cor
                                     <constraint firstItem="hup-hy-t6J" firstAttribute="top" secondItem="rdi-qP-LOq" secondAttribute="bottom" constant="8" symbolic="YES" id="tOp-ze-97x"/>
                                 </constraints>
                             </view>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VZb-4I-Uly">
+                                <rect key="frame" x="137" y="60" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VZb-4I-Uly" secondAttribute="height" multiplier="1:1" id="Hea-EK-y74"/>
+                                </constraints>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.057992704210000003" green="0.45015302299999999" blue="0.77763044830000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -4058,6 +4076,7 @@ The authors of each chapter have ensured that the information is current and cor
                             <constraint firstAttribute="trailing" secondItem="QUt-Rn-kyA" secondAttribute="trailing" id="Tzk-fJ-zBn"/>
                             <constraint firstItem="QUt-Rn-kyA" firstAttribute="centerY" secondItem="zde-K4-BtB" secondAttribute="centerY" id="aXr-lC-G2p"/>
                             <constraint firstItem="VZb-4I-Uly" firstAttribute="top" secondItem="qgw-N7-Bd2" secondAttribute="bottom" constant="100" id="ani-CD-eV6"/>
+                            <constraint firstItem="rdi-qP-LOq" firstAttribute="top" secondItem="VZb-4I-Uly" secondAttribute="bottom" constant="60" id="dBY-sX-pgW"/>
                             <constraint firstItem="tbC-Zp-uPk" firstAttribute="top" secondItem="E0d-vk-NVu" secondAttribute="bottom" constant="41" id="dru-LB-fSW"/>
                             <constraint firstItem="QIM-zk-e6F" firstAttribute="leading" secondItem="zde-K4-BtB" secondAttribute="leadingMargin" constant="50" id="fQy-rM-7uP"/>
                             <constraint firstItem="E0d-vk-NVu" firstAttribute="top" secondItem="qgw-N7-Bd2" secondAttribute="bottom" constant="21" id="ql7-2k-tWU"/>
@@ -4453,7 +4472,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authorisation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJt-zD-OeA">
-                                                <rect key="frame" x="40" y="0.0" width="150.5" height="40"/>
+                                                <rect key="frame" x="40" y="0.0" width="151" height="40"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="26"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -4539,10 +4558,10 @@ The authors of each chapter have ensured that the information is current and cor
                                 <rect key="frame" x="20" y="178" width="560" height="82"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NYg-rk-P8x" userLabel="COLOROption">
-                                        <rect key="frame" x="157" y="16" width="1602" height="50"/>
+                                        <rect key="frame" x="157" y="16" width="1609" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cf9-PC-wuP" userLabel="PrimaryColor">
-                                                <rect key="frame" x="0.0" y="0.0" width="1400.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1407" height="50"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsk-Lu-eCf" userLabel="SecondaryColor">
                                                         <rect key="frame" x="14" y="13" width="23" height="23"/>
@@ -4557,7 +4576,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Color Accent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3b-Qx-Okr">
-                                                <rect key="frame" x="1410.5" y="0.0" width="191.5" height="50"/>
+                                                <rect key="frame" x="1417" y="0.0" width="192" height="50"/>
                                                 <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="23"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>

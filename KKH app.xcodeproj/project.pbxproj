@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5466B46F1E499931004E3248 /* HyperKCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5466B46E1E499931004E3248 /* HyperKCollectionViewCell.m */; };
+		54CEA9DB1E6504C400A10206 /* commmonDrugsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CEA9DA1E6504C400A10206 /* commmonDrugsVC.m */; };
 		9703E68E1D29367A00C72EF3 /* Secure_.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E68D1D29367A00C72EF3 /* Secure_.m */; };
 		9706EBA11D4CFC3A00801B77 /* splash screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9706EBA01D4CFC3A00801B77 /* splash screen.png */; };
 		97087CCF1D5435FE007182EA /* BMIGraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97087CCE1D5435FE007182EA /* BMIGraphManager.swift */; };
@@ -121,6 +122,8 @@
 /* Begin PBXFileReference section */
 		5466B46D1E499931004E3248 /* HyperKCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyperKCollectionViewCell.h; sourceTree = "<group>"; };
 		5466B46E1E499931004E3248 /* HyperKCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyperKCollectionViewCell.m; sourceTree = "<group>"; };
+		54CEA9D91E6504C400A10206 /* commmonDrugsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commmonDrugsVC.h; sourceTree = "<group>"; };
+		54CEA9DA1E6504C400A10206 /* commmonDrugsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = commmonDrugsVC.m; sourceTree = "<group>"; };
 		9703E68C1D29367A00C72EF3 /* Secure_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Secure_.h; sourceTree = "<group>"; };
 		9703E68D1D29367A00C72EF3 /* Secure_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Secure_.m; sourceTree = "<group>"; };
 		9706EBA01D4CFC3A00801B77 /* splash screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash screen.png"; sourceTree = "<group>"; };
@@ -502,6 +505,8 @@
 				AC4B48A61DF5342200C4E9B8 /* Backend */,
 				97612B3D1D3F9D9E004900BE /* DrugCalculationViewController.h */,
 				97612B3E1D3F9D9E004900BE /* DrugCalculationViewController.m */,
+				54CEA9D91E6504C400A10206 /* commmonDrugsVC.h */,
+				54CEA9DA1E6504C400A10206 /* commmonDrugsVC.m */,
 			);
 			name = "Drug calculators";
 			sourceTree = "<group>";
@@ -716,6 +721,7 @@
 				AC4B48A21DF5320A00C4E9B8 /* DrugCalculationsManager.swift in Sources */,
 				9727C7FE1DEADD08004334E9 /* CardiacArrestVC.m in Sources */,
 				AC3CD9771DF14E9700FDD84E /* MalignantHyperthermia.m in Sources */,
+				54CEA9DB1E6504C400A10206 /* commmonDrugsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

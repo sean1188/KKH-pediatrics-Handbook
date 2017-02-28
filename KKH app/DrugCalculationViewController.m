@@ -239,6 +239,8 @@ int counttt;
         else if ([_pickerDrug selectedRowInComponent:0] == 3){
             //common drugs
             [self performSegueWithIdentifier:@"commonDrug" sender:self];
+            
+            
         }
         
         
