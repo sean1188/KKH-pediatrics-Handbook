@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		037FC541180FB2494E910C9D /* Pods_KKH_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8279DA1A7F4F587702359E /* Pods_KKH_app.framework */; };
+		540CB13C1E6C51DC0000E470 /* RADataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 540CB13B1E6C51DC0000E470 /* RADataObject.m */; };
+		540CB1431E6C56250000E470 /* RATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 540CB1411E6C56250000E470 /* RATableViewCell.m */; };
+		540CB1441E6C56250000E470 /* RATableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540CB1421E6C56250000E470 /* RATableViewCell.xib */; };
 		5466B46F1E499931004E3248 /* HyperKCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5466B46E1E499931004E3248 /* HyperKCollectionViewCell.m */; };
 		54CEA9DB1E6504C400A10206 /* commmonDrugsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CEA9DA1E6504C400A10206 /* commmonDrugsVC.m */; };
 		9703E68E1D29367A00C72EF3 /* Secure_.m in Sources */ = {isa = PBXBuildFile; fileRef = 9703E68D1D29367A00C72EF3 /* Secure_.m */; };
@@ -107,6 +111,7 @@
 		AC4B48A21DF5320A00C4E9B8 /* DrugCalculationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B489E1DF5320A00C4E9B8 /* DrugCalculationsManager.swift */; };
 		AC4B48A31DF5320A00C4E9B8 /* DrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = AC4B489F1DF5320A00C4E9B8 /* DrugList.csv */; };
 		ACE924041DF1269D0020DF16 /* HyperK.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE924031DF1269D0020DF16 /* HyperK.m */; };
+		DA132D6879BCAE1DE97A0EA3 /* Pods_KKH_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667620E7F7287A54546E0886 /* Pods_KKH_appUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,10 +125,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		444573F3E4AA60655E877E7E /* Pods-KKH app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKH app.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKH app/Pods-KKH app.release.xcconfig"; sourceTree = "<group>"; };
+		4EF01E5443A567F4B29999ED /* Pods-KKH appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKH appUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKH appUITests/Pods-KKH appUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		540CB13A1E6C51DC0000E470 /* RADataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADataObject.h; sourceTree = "<group>"; };
+		540CB13B1E6C51DC0000E470 /* RADataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADataObject.m; sourceTree = "<group>"; };
+		540CB1401E6C56250000E470 /* RATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATableViewCell.h; sourceTree = "<group>"; };
+		540CB1411E6C56250000E470 /* RATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATableViewCell.m; sourceTree = "<group>"; };
+		540CB1421E6C56250000E470 /* RATableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RATableViewCell.xib; sourceTree = "<group>"; };
 		5466B46D1E499931004E3248 /* HyperKCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyperKCollectionViewCell.h; sourceTree = "<group>"; };
 		5466B46E1E499931004E3248 /* HyperKCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyperKCollectionViewCell.m; sourceTree = "<group>"; };
 		54CEA9D91E6504C400A10206 /* commmonDrugsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commmonDrugsVC.h; sourceTree = "<group>"; };
 		54CEA9DA1E6504C400A10206 /* commmonDrugsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = commmonDrugsVC.m; sourceTree = "<group>"; };
+		667620E7F7287A54546E0886 /* Pods_KKH_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKH_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9703E68C1D29367A00C72EF3 /* Secure_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Secure_.h; sourceTree = "<group>"; };
 		9703E68D1D29367A00C72EF3 /* Secure_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Secure_.m; sourceTree = "<group>"; };
 		9706EBA01D4CFC3A00801B77 /* splash screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash screen.png"; sourceTree = "<group>"; };
@@ -252,6 +265,9 @@
 		AC4B489F1DF5320A00C4E9B8 /* DrugList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DrugList.csv; sourceTree = "<group>"; };
 		ACE924021DF1269D0020DF16 /* HyperK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyperK.h; sourceTree = "<group>"; };
 		ACE924031DF1269D0020DF16 /* HyperK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyperK.m; sourceTree = "<group>"; };
+		B8E0BE05D5922F726E0C663B /* Pods-KKH app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKH app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKH app/Pods-KKH app.debug.xcconfig"; sourceTree = "<group>"; };
+		BA88E8F13D5987A70248FE2A /* Pods-KKH appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKH appUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKH appUITests/Pods-KKH appUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DE8279DA1A7F4F587702359E /* Pods_KKH_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKH_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +275,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037FC541180FB2494E910C9D /* Pods_KKH_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,12 +283,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA132D6879BCAE1DE97A0EA3 /* Pods_KKH_appUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		540CB1451E6C56340000E470 /* common drugs */ = {
+			isa = PBXGroup;
+			children = (
+				540CB13A1E6C51DC0000E470 /* RADataObject.h */,
+				540CB13B1E6C51DC0000E470 /* RADataObject.m */,
+				54CEA9D91E6504C400A10206 /* commmonDrugsVC.h */,
+				54CEA9DA1E6504C400A10206 /* commmonDrugsVC.m */,
+				540CB1401E6C56250000E470 /* RATableViewCell.h */,
+				540CB1411E6C56250000E470 /* RATableViewCell.m */,
+				540CB1421E6C56250000E470 /* RATableViewCell.xib */,
+			);
+			name = "common drugs";
+			sourceTree = "<group>";
+		};
+		584EE5157221E9C6B661444D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8E0BE05D5922F726E0C663B /* Pods-KKH app.debug.xcconfig */,
+				444573F3E4AA60655E877E7E /* Pods-KKH app.release.xcconfig */,
+				4EF01E5443A567F4B29999ED /* Pods-KKH appUITests.debug.xcconfig */,
+				BA88E8F13D5987A70248FE2A /* Pods-KKH appUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9722E8541D0CEF0300C6D26F /* font */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +412,8 @@
 				976EFB211D01C28B0048A4DC /* KKH app */,
 				976EFB3B1D01C28B0048A4DC /* KKH appUITests */,
 				976EFB201D01C28B0048A4DC /* Products */,
+				584EE5157221E9C6B661444D /* Pods */,
+				B714DC5CD420A2AC633C8F2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -505,8 +550,7 @@
 				AC4B48A61DF5342200C4E9B8 /* Backend */,
 				97612B3D1D3F9D9E004900BE /* DrugCalculationViewController.h */,
 				97612B3E1D3F9D9E004900BE /* DrugCalculationViewController.m */,
-				54CEA9D91E6504C400A10206 /* commmonDrugsVC.h */,
-				54CEA9DA1E6504C400A10206 /* commmonDrugsVC.m */,
+				540CB1451E6C56340000E470 /* common drugs */,
 			);
 			name = "Drug calculators";
 			sourceTree = "<group>";
@@ -522,6 +566,15 @@
 			name = Backend;
 			sourceTree = "<group>";
 		};
+		B714DC5CD420A2AC633C8F2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE8279DA1A7F4F587702359E /* Pods_KKH_app.framework */,
+				667620E7F7287A54546E0886 /* Pods_KKH_appUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -529,9 +582,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 976EFB411D01C28B0048A4DC /* Build configuration list for PBXNativeTarget "KKH app" */;
 			buildPhases = (
+				8A748766F86AD78D6D040727 /* [CP] Check Pods Manifest.lock */,
 				976EFB1B1D01C28B0048A4DC /* Sources */,
 				976EFB1C1D01C28B0048A4DC /* Frameworks */,
 				976EFB1D1D01C28B0048A4DC /* Resources */,
+				6F7CE7FF4EEE2D48A596A907 /* [CP] Embed Pods Frameworks */,
+				9A077FA41EBC865AFA9BB935 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -546,9 +602,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 976EFB441D01C28B0048A4DC /* Build configuration list for PBXNativeTarget "KKH appUITests" */;
 			buildPhases = (
+				CF9212438050834022958F4A /* [CP] Check Pods Manifest.lock */,
 				976EFB341D01C28B0048A4DC /* Sources */,
 				976EFB351D01C28B0048A4DC /* Frameworks */,
 				976EFB361D01C28B0048A4DC /* Resources */,
+				D5910160140D4B00EBBB7C45 /* [CP] Embed Pods Frameworks */,
+				C1ADB7B38A4E5C120C7BC28D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -624,6 +683,7 @@
 				9729DBD01DED491100F2475A /* H-19-Sedation_for_Oncology_Children.pdf in Resources */,
 				9729DBBB1DED47E700F2475A /* C-07-Nausea_Vomitting.pdf in Resources */,
 				AC4B48A31DF5320A00C4E9B8 /* DrugList.csv in Resources */,
+				540CB1441E6C56250000E470 /* RATableViewCell.xib in Resources */,
 				9729DC041DED4AFB00F2475A /* P-45-Chronic_Pain.pdf in Resources */,
 				9729DBBE1DED47E700F2475A /* C-10-Equipment.pdf in Resources */,
 				9729DBC81DED489600F2475A /* F-13-Common_Cardiac_Conditions.pdf in Resources */,
@@ -685,6 +745,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6F7CE7FF4EEE2D48A596A907 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKH app/Pods-KKH app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A748766F86AD78D6D040727 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A077FA41EBC865AFA9BB935 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKH app/Pods-KKH app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1ADB7B38A4E5C120C7BC28D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKH appUITests/Pods-KKH appUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF9212438050834022958F4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D5910160140D4B00EBBB7C45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKH appUITests/Pods-KKH appUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		976EFB1B1D01C28B0048A4DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -710,9 +863,11 @@
 				9727485D1DEDB1BF00014E32 /* CHAPTERCollectionViewCell.m in Sources */,
 				ACE924041DF1269D0020DF16 /* HyperK.m in Sources */,
 				976EFB271D01C28B0048A4DC /* AppDelegate.m in Sources */,
+				540CB13C1E6C51DC0000E470 /* RADataObject.m in Sources */,
 				9729DC091DED4E8A00F2475A /* MBProgressHUD.m in Sources */,
 				9729DBAA1DED459E00F2475A /* LaToxicity.m in Sources */,
 				976EFB241D01C28B0048A4DC /* main.m in Sources */,
+				540CB1431E6C56250000E470 /* RATableViewCell.m in Sources */,
 				974C45661D0A6A2500797BF0 /* webViewPDF\.m in Sources */,
 				979782F41D1D8EBC00BAF670 /* SplashViewController.m in Sources */,
 				AC4B48A01DF5320A00C4E9B8 /* CardiacDrugCalculationsManager.swift in Sources */,
@@ -851,6 +1006,7 @@
 		};
 		976EFB421D01C28B0048A4DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E0BE05D5922F726E0C663B /* Pods-KKH app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -874,6 +1030,7 @@
 		};
 		976EFB431D01C28B0048A4DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 444573F3E4AA60655E877E7E /* Pods-KKH app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -896,6 +1053,7 @@
 		};
 		976EFB451D01C28B0048A4DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF01E5443A567F4B29999ED /* Pods-KKH appUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "KKH appUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -907,6 +1065,7 @@
 		};
 		976EFB461D01C28B0048A4DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA88E8F13D5987A70248FE2A /* Pods-KKH appUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "KKH appUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
