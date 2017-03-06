@@ -17,6 +17,7 @@
     DrugCalculationsManager *manager;
 }
 
+@property (weak, nonatomic) IBOutlet UIView *placeholder;
 
 
 @end
@@ -34,8 +35,8 @@ RATreeView *treeView;
     [super viewDidLoad];
     NSMutableDictionary *drugArray = [[NSMutableDictionary alloc] init];
 
-    int weight = [[NSUserDefaults standardUserDefaults] integerForKey:@""];
-    drugArray = [[[DrugCalculationsManager alloc] initWithWeight:69] getDrugList];
+    int weight = [[NSUserDefaults standardUserDefaults] integerForKey:@"DCweight"];
+    drugArray = [[[DrugCalculationsManager alloc] initWithWeight:weight] getDrugList];
     NSLog(@"%@", drugArray);
     
 
@@ -45,9 +46,10 @@ RATreeView *treeView;
     for (NSString *drug in drugArray) {
         NSMutableArray *paths = [[NSMutableArray alloc] init];
         for (NSString *path  in [drugArray objectForKey:drug]) {
-            RADataObject *amount = [RADataObject dataObjectWithName:[[[drugArray objectForKey:drug] objectForKey:path] objectForKey:@"AMOUNT"]  children:nil];
-            RADataObject *Dosekg = [RADataObject dataObjectWithName:[[[drugArray objectForKey:drug] objectForKey:path] objectForKey:@"DOSE/KG"] children:nil];
-            RADataObject *unit = [RADataObject dataObjectWithName:  [[[drugArray objectForKey:drug] objectForKey:path] objectForKey:@"UNIT"] children:nil];
+            
+            RADataObject *amount = [RADataObject dataObjectWithName:[NSString stringWithFormat:@"Amount: %@",[[[drugArray objectForKey:drug] objectForKey:path] objectForKey:@"AMOUNT"]]  children:nil];
+            RADataObject *Dosekg = [RADataObject dataObjectWithName:[NSString stringWithFormat:@"Dose/KG: %@",[[[drugArray objectForKey:drug] objectForKey:path] objectForKey:@"DOSE/KG"]] children:nil];
+            RADataObject *unit = [RADataObject dataObjectWithName: [NSString stringWithFormat:@"Unit: %@", [[[drugArray objectForKey:drug] objectForKey:path] objectForKey:@"UNIT"] ]children:nil];
             NSLog(@"%@, %@, %@",[[[drugArray objectForKey:drug] objectForKey:path] objectForKey:@"AMOUNT"],[[[drugArray objectForKey:drug] objectForKey:path] objectForKey:@"DOSE/KG"], [[[drugArray objectForKey:drug] objectForKey:path] objectForKey:@"UNIT"]);
             RADataObject *pathOBJ = [RADataObject dataObjectWithName:path children:@[amount,Dosekg,unit]];
             [paths addObject:pathOBJ];
@@ -61,10 +63,12 @@ RATreeView *treeView;
     dataTree = Drugs;
     
     
-    treeView = [[RATreeView alloc] initWithFrame:self.view.bounds];
+    treeView = [[RATreeView alloc] initWithFrame:_placeholder.bounds];
     treeView.delegate = self;
     treeView.dataSource = self;
-    [self.view addSubview:treeView];
+    treeView.separatorColor = [UIColor clearColor];
+    [treeView registerNib:[UINib nibWithNibName:NSStringFromClass([RATableViewCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([RATableViewCell class])];
+    [_placeholder addSubview:treeView];
     [treeView reloadData];
     
 }
@@ -81,9 +85,44 @@ RATreeView *treeView;
     return [data.children count];
 }
 
+-(CGFloat)treeView:(RATreeView *)treeView heightForRowForItem:(id)item{
+    return 60;
+}
 - (UITableViewCell *)treeView:(RATreeView *)treeView cellForItem:(id)item {
+    RADataObject *data = item;
     RATableViewCell *cell = [treeView dequeueReusableCellWithIdentifier:NSStringFromClass([RATableViewCell class])];
+    [cell.title setText:data.name];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.backgroundColor = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"primaryColor"]];
+    switch ([treeView levelForCellForItem:item]) {
+        case 0:
+            cell.leftMargin.constant = 5;
+            [cell.morelabel setText:@"+"];
+            [cell.morelabel setFont:[UIFont fontWithName:cell.morelabel.font.fontName size:23]];
+             [cell.title setFont:[UIFont fontWithName:cell.title.font.fontName size:23]];
+            
+            break;
+        case 1:
+            cell.leftMargin.constant = 20;
+            [cell.morelabel setText:@"Tap for details"];
+            [cell.morelabel setFont:[UIFont fontWithName:cell.morelabel.font.fontName size:14]];
+            [cell.title setFont:[UIFont fontWithName:cell.title.font.fontName size:19]];
+            break;
+        case 2:
+            cell.leftMargin.constant = 30;
+            [cell.morelabel setText:@""];
+            [cell.title setFont:[UIFont fontWithName:cell.title.font.fontName size:17]];
+
+            break;
+
+        default:
+            break;
+    }
     
+    cell.alpha = 0;
+    [UIView animateWithDuration:0.5 animations:^{
+        cell.alpha = 1;
+    }];
     return cell;
 }
 
@@ -97,5 +136,8 @@ RATreeView *treeView;
     return data.children[index];
 }
 
+- (IBAction)back:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

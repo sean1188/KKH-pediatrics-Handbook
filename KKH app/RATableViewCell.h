@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface RATableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *title;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftMargin;
+@property (weak, nonatomic) IBOutlet UILabel *morelabel;
 
 @end
