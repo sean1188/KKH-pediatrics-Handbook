@@ -12,6 +12,7 @@
 @interface DrugCalculationViewController ()
 @property (strong, nonatomic) DrugCalculationsManager *mannager;
 @property (strong, nonatomic) CardiacDrugCalculationsManager *Cardiacmannager;
+@property (strong, nonatomic) ScoliosisDrugCalculationsManager *scoliosismanager;
 
 
 @end
@@ -236,10 +237,34 @@ int counttt;
             }];
 
         }
+        else if ([_pickerDrug selectedRowInComponent:0] == 2){
+            [[NSUserDefaults standardUserDefaults] setInteger:2 forKey:@"drugListType"];
+            //cardiac
+            _scoliosismanager = [ScoliosisDrugCalculationsManager alloc];
+            [_webView loadData:[[_scoliosismanager initWithWeight:_textField.text.intValue] getData] MIMEType:@"text/csv" textEncodingName:@"utf-8" baseURL:nil];
+            _webView.translatesAutoresizingMaskIntoConstraints = YES;
+            _webView.layer.cornerRadius = self.webView.frame.size.height/2;
+            _webView.scalesPageToFit = YES;
+            _webView.clipsToBounds =YES;
+            [_nextB addTickToCrossAnimation];
+            [UIView animateWithDuration:0.3 animations:^{
+                _resView.frame =  CGRectMake(_resView.frame.origin.x - _resView.frame.size.width - 10, _resView.frame.origin.y, _resView.frame.size.width, _resView.frame.size.height);
+                _pickerDrug.alpha = 0;
+                _textField.alpha = 0;
+                _resView.translatesAutoresizingMaskIntoConstraints = NO;
+            } completion:^(BOOL s  ){
+                [UIView animateWithDuration:0.3 animations:^{
+                    _webView.alpha= 1;
+                    _backB.alpha = 0;
+                }];
+                
+            }];
+            
+        }
+
         else if ([_pickerDrug selectedRowInComponent:0] == 3){
             //common drugs
             [self performSegueWithIdentifier:@"commonDrug" sender:self];
-            
             
         }
         
@@ -285,7 +310,22 @@ bool didViewPdf;
     }];
 }
 - (IBAction)sendB:(id)sender {
-    [[_mannager initWithWeight:_textField.text.intValue] sendEmail:self];
+    switch ([[NSUserDefaults standardUserDefaults] integerForKey:@"drugListType"]) {
+        case 0:
+            [[_mannager initWithWeight:_textField.text.intValue] sendEmail:self];
+            break;
+        case 1:
+            [[_Cardiacmannager initWithWeight:_textField.text.intValue] sendEmail:self];
+
+            break;
+        case 2:
+            [[_scoliosismanager initWithWeight:_textField.text.intValue] sendEmail:self];
+
+            break;
+            
+        default:
+            break;
+    }
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"willSeeSpecificDrugs"];
 }
 - (IBAction)specificDrugB:(id)sender {

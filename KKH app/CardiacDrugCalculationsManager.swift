@@ -85,7 +85,6 @@ class CardiacDrugCalculationsManager: NSObject, MFMailComposeViewControllerDeleg
                     }
                 }
                 
-                printLines(dataLines)
                 for i in 0 ..< dataLines.count {
                     emailData = emailData + "\(dataLines[i])\n"
                 }
@@ -98,13 +97,15 @@ class CardiacDrugCalculationsManager: NSObject, MFMailComposeViewControllerDeleg
     func sendEmail(_ sender: UIViewController) {
         let vc = MFMailComposeViewController()
         vc.mailComposeDelegate = self
-        vc.setSubject("Drug Table")
-        vc.setMessageBody("Attached is the list of drugs for patient of \(weight)kg weight.", isHTML: false)
+        vc.setSubject("Cardiac Drug Table")
+        vc.setMessageBody("Attached is the list of cardiac drugs for patient of \(weight)kg weight.", isHTML: false)
         vc.addAttachmentData(emailData.data(using: String.Encoding.utf8)!, mimeType: "text/csv", fileName: "Cardiac_drug_table.csv")
         
-        sender.present(vc, animated: true) { 
-            
-        }
+        if !MFMailComposeViewController.canSendMail(){}
+        else{
+            sender.present(vc, animated: true) {
+                
+            }}
     }
     
     func getData() -> Data? {
@@ -118,33 +119,25 @@ class CardiacDrugCalculationsManager: NSObject, MFMailComposeViewControllerDeleg
     }
     
     typealias Route = [String : String]
-    
     typealias Drug = [String : Route]
     
     func getDrugList() -> [String : Drug]! {
-        
         var nameList: [String : Drug]! = [:]
-        
+        print(dataLines.count)
         for i in firstIndex ..< dataLines.count {
-            
             let dataLine = dataLines[i]
-            
             if !dataLine.hasPrefix(",") {
-                
                 let lineComponents = dataLine.components(separatedBy: ",")
-                if lineComponents.count > 3 {
-                    if lineComponents[3].isNumber() {
-                        // is drug
-                        if nameList[lineComponents[0]] == nil {
-                            nameList[lineComponents[0]] = [:]
-                        }
-                        nameList[lineComponents[0]]?[lineComponents[2]] = [:]
-                        nameList[lineComponents[0]]?[lineComponents[2]]?["DOSE/KG"] = lineComponents[3]
-                        nameList[lineComponents[0]]?[lineComponents[2]]?["AMOUNT"] = "\(((lineComponents[3] as NSString).integerValue * weight))"
-                        nameList[lineComponents[0]]?[lineComponents[2]]?["UNIT"] = lineComponents[5]
+                if lineComponents.count > 2 && lineComponents[2].isNumber() {
+                    // is drug
+                    if nameList[lineComponents[0]] == nil {
+                        nameList[lineComponents[0]] = [:]
                     }
+                    nameList[lineComponents[0]]?[lineComponents[2]] = [:]
+                    nameList[lineComponents[0]]?[lineComponents[2]]?["DOSE/KG"] = lineComponents[3]
+                    nameList[lineComponents[0]]?[lineComponents[2]]?["AMOUNT"] = "\(((lineComponents[3] as NSString).integerValue * weight))"
+                    nameList[lineComponents[0]]?[lineComponents[2]]?["UNIT"] = lineComponents[5]
                 }
-                
             }
         }
         
@@ -157,4 +150,3 @@ class CardiacDrugCalculationsManager: NSObject, MFMailComposeViewControllerDeleg
         }
     }
 }
-

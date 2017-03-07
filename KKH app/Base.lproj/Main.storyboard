@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E7W-Qo-Nmj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E7W-Qo-Nmj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -83,7 +83,7 @@
         <scene sceneID="rGG-dz-FXk">
             <objects>
                 <navigationController navigationBarHidden="YES" id="9NB-GJ-4p4" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XbE-mz-pOI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XbE-mz-pOI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -754,7 +754,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HA1-z2-Ki1" userLabel="calc">
-                                        <rect key="frame" x="97" y="0.0" width="95.5" height="41"/>
+                                        <rect key="frame" x="97" y="0.0" width="96" height="41"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_poll_white" translatesAutoresizingMaskIntoConstraints="NO" id="adf-Yh-ues">
                                                 <rect key="frame" x="61" y="2" width="26" height="26"/>
@@ -790,7 +790,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOH-8g-FLO" userLabel="fav">
-                                        <rect key="frame" x="193.5" y="0.0" width="96" height="41"/>
+                                        <rect key="frame" x="194" y="0.0" width="95" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CRISIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvA-6Y-Dcf">
                                                 <rect key="frame" x="56" y="26" width="34" height="13"/>
@@ -824,7 +824,7 @@ The authors of each chapter have ensured that the information is current and cor
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBR-Da-Vd0" userLabel="settings">
-                                        <rect key="frame" x="290.5" y="0.0" width="95.5" height="41"/>
+                                        <rect key="frame" x="290" y="0.0" width="96" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qel-Zq-VRd">
                                                 <rect key="frame" x="56" y="26" width="34" height="13"/>
@@ -2205,7 +2205,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELJ-Lk-GZ8">
-                                                <rect key="frame" x="0.0" y="68" width="343" height="67.5"/>
+                                                <rect key="frame" x="0.0" y="68" width="343" height="68"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HnR-8V-Ie5">
                                                         <rect key="frame" x="277" y="8" width="40" height="40"/>
@@ -2236,7 +2236,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ph8-ZF-ujA">
-                                                <rect key="frame" x="0.0" y="135.5" width="343" height="68"/>
+                                                <rect key="frame" x="0.0" y="136" width="343" height="67"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWL-uL-x71">
                                                         <rect key="frame" x="277" y="8" width="40" height="40"/>
@@ -2267,7 +2267,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2o-6L-A8N">
-                                                <rect key="frame" x="0.0" y="203.5" width="343" height="67.5"/>
+                                                <rect key="frame" x="0.0" y="203" width="343" height="68"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWi-Bc-dn4">
                                                         <rect key="frame" x="277" y="8" width="40" height="40"/>
@@ -2804,7 +2804,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F3-IX-oCd">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="54"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="56"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="Wq1-TJ-u0x"/>
                                                                     </constraints>
@@ -2877,7 +2877,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BI5-LW-4iH">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="55.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="KRQ-hP-QKE"/>
                                                                     </constraints>
@@ -2937,7 +2937,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUl-qv-txf">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="57.5"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="Wqx-MH-BeV"/>
                                                                     </constraints>
@@ -2997,7 +2997,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sww-ID-R5c">
-                                                                    <rect key="frame" x="290" y="8" width="37" height="56.5"/>
+                                                                    <rect key="frame" x="290" y="8" width="37" height="55.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="37" id="rPd-Uj-H2g"/>
                                                                     </constraints>
@@ -3473,7 +3473,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inclusion/Exclusion Criteria:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLB-MK-Dtq">
-                                <rect key="frame" x="78" y="101" width="219" height="31"/>
+                                <rect key="frame" x="79" y="101" width="219" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="Bpa-Os-NfE"/>
                                 </constraints>
@@ -3493,7 +3493,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Term NEONATE (&lt; 1 month age): serum K+ &gt; 6 mmol/L,  Children &gt; 1 month age: serum K+ &gt;5.5 mmol/L. EXCLUDE Premature Neonates." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ca-wu-IHu">
-                                <rect key="frame" x="22" y="128" width="331" height="107"/>
+                                <rect key="frame" x="22" y="128" width="333" height="107"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Egd-gD-2by"/>
                                 </constraints>
@@ -3502,7 +3502,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pye-rb-XCd">
-                                <rect key="frame" x="50" y="243" width="274" height="65"/>
+                                <rect key="frame" x="50" y="243" width="276" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="BkM-ia-vFA"/>
                                 </constraints>
@@ -3515,7 +3515,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysI-qJ-iwS">
-                                <rect key="frame" x="50" y="406" width="274" height="65"/>
+                                <rect key="frame" x="50" y="406" width="276" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="NTB-wP-Twa"/>
                                 </constraints>
@@ -3528,7 +3528,7 @@ The authors of each chapter have ensured that the information is current and cor
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvb-Un-VVd">
-                                <rect key="frame" x="20" y="318" width="334" height="50"/>
+                                <rect key="frame" x="20" y="318" width="336" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="cEk-BD-WDx"/>
                                 </constraints>
@@ -3576,7 +3576,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                             </subviews>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sji-wC-26y">
-                                                            <rect key="frame" x="0.0" y="63" width="322" height="61.5"/>
+                                                            <rect key="frame" x="0.0" y="63" width="322" height="61"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Call for Help" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4J-gH-PNI">
                                                                     <rect key="frame" x="8" y="8" width="263" height="42"/>
@@ -3596,7 +3596,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                             </subviews>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5qf-AT-Vol">
-                                                            <rect key="frame" x="0.0" y="126.5" width="322" height="61"/>
+                                                            <rect key="frame" x="0.0" y="126" width="322" height="61"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discontinue ALL k + containing infusions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mw-as-IrX">
                                                                     <rect key="frame" x="8" y="8" width="263" height="42"/>
@@ -3616,7 +3616,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                             </subviews>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rlc-k1-tyf">
-                                                            <rect key="frame" x="0.0" y="189.5" width="322" height="61"/>
+                                                            <rect key="frame" x="0.0" y="189" width="322" height="62"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discontinue blood products" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqE-E1-eAa">
                                                                     <rect key="frame" x="8" y="8" width="263" height="42"/>
@@ -3636,7 +3636,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                             </subviews>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7iN-Tm-peG">
-                                                            <rect key="frame" x="0.0" y="252.5" width="322" height="61"/>
+                                                            <rect key="frame" x="0.0" y="253" width="322" height="61"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hyperventilate with 100% oxygen" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcN-Cx-ltI">
                                                                     <rect key="frame" x="8" y="8" width="263" height="42"/>
@@ -3656,7 +3656,7 @@ The authors of each chapter have ensured that the information is current and cor
                                                             </subviews>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYf-bb-6HM">
-                                                            <rect key="frame" x="0.0" y="315.5" width="322" height="61.5"/>
+                                                            <rect key="frame" x="0.0" y="316" width="322" height="61"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send rpt K+ to lab" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sju-WJ-xWl">
                                                                     <rect key="frame" x="8" y="8" width="263" height="42"/>
@@ -3950,12 +3950,13 @@ The authors of each chapter have ensured that the information is current and cor
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Common Drugs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnM-ka-sQi">
                                         <rect key="frame" x="113" y="28" width="149" height="39"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Cabin-SemiBold" family="Cabin" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4I-Hb-rwc">
-                                        <rect key="frame" x="14" y="32" width="34" height="30"/>
+                                        <rect key="frame" x="14" y="32" width="30" height="33"/>
+                                        <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="17"/>
                                         <state key="normal" title="Back">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>

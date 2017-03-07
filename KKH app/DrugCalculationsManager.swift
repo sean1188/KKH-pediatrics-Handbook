@@ -151,10 +151,11 @@ class DrugCalculationsManager: NSObject, MFMailComposeViewControllerDelegate {
         vc.setSubject("Drug Table")
         vc.setMessageBody("Attached is the list of drugs for patient of \(weight)kg weight.", isHTML: false)
         vc.addAttachmentData(emailData.data(using: String.Encoding.utf8)!, mimeType: "text/csv", fileName: "Drug_table.csv")
+        
         if !MFMailComposeViewController.canSendMail(){}
         else{
-        sender.present(vc, animated: true) { 
-            
+            sender.present(vc, animated: true) {
+                
             }}
     }
     
@@ -186,7 +187,6 @@ class DrugCalculationsManager: NSObject, MFMailComposeViewControllerDelegate {
                     nameList[lineComponents[0]]?[lineComponents[2]]?["DOSE/KG"] = lineComponents[3]
                     nameList[lineComponents[0]]?[lineComponents[2]]?["AMOUNT"] = "\(((lineComponents[3] as NSString).integerValue * weight))"
                     nameList[lineComponents[0]]?[lineComponents[2]]?["UNIT"] = lineComponents[5]
-
                 }
             }
         }
