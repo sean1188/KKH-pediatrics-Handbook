@@ -6,18 +6,23 @@
 	<dict>
 		<key>Pods-KKH app.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-KKH appUITests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>RATreeView.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -27,12 +32,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>952304FABD78081B878A1F55CA742392</key>
+		<key>837EEFF6C56C310605A2FB8854323F4D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EDA059CAA9580812430D7890DF2618F4</key>
+		<key>D553A6DB497F7A839E98C3230BE68A59</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF58A18E17860F757213DB99EF2A55AC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

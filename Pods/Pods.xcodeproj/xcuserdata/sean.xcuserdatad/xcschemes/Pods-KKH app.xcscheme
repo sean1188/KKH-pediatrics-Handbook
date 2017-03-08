@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "952304FABD78081B878A1F55CA742392"
+               BlueprintIdentifier = "D553A6DB497F7A839E98C3230BE68A59"
                BuildableName = "Pods_KKH_app.framework"
                BlueprintName = "Pods-KKH app"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "952304FABD78081B878A1F55CA742392"
+            BlueprintIdentifier = "D553A6DB497F7A839E98C3230BE68A59"
             BuildableName = "Pods_KKH_app.framework"
             BlueprintName = "Pods-KKH app"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "952304FABD78081B878A1F55CA742392"
-            BuildableName = "Pods_KKH_app.framework"
-            BlueprintName = "Pods-KKH app"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

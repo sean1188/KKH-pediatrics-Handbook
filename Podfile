@@ -7,6 +7,7 @@ target 'KKH app' do
 
   # Pods for KKH app
   pod "RATreeView", "~> 2.1.2"
+    pod 'SwiftyJSON'
   target 'KKH appUITests' do
     inherit! :search_paths
     # Pods for testing

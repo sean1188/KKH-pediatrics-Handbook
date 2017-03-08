@@ -27,21 +27,21 @@
 bool firstE;
 -(void)viewWillAppear:(BOOL)animated{
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"willSeeSpecificDrugs"] != YES) {
-    if (firstE == YES) {
-        _resView.layer.cornerRadius = 15.0f;
-        [_resView setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]]];
-        _resView.frame = CGRectMake(_resView.frame.origin.x + _resView.frame.size.width + 10, _resView.frame.origin.y, _resView.frame.size.width, _resView.frame.size.height);
-        _resView.translatesAutoresizingMaskIntoConstraints = YES;
-        _textField.backgroundColor =[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]];
-        firstE = NO;
-    }
-    else{
-        _resView.translatesAutoresizingMaskIntoConstraints =YES;
-        _resView.frame = CGRectMake(_resView.frame.origin.x, _resView.frame.origin.y + 1000 , _resView.frame.size.width, _resView.frame.size.height);
-        _webView.alpha = 0;
-        _drugimg.alpha = 1;
-        _nextB.alpha = 1;
-    }
+        if (firstE == YES) {
+            _resView.layer.cornerRadius = 15.0f;
+            [_resView setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]]];
+            _resView.frame = CGRectMake(_resView.frame.origin.x + _resView.frame.size.width + 10, _resView.frame.origin.y, _resView.frame.size.width, _resView.frame.size.height);
+            _resView.translatesAutoresizingMaskIntoConstraints = YES;
+            _textField.backgroundColor =[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]];
+            firstE = NO;
+        }
+        else{
+            _resView.translatesAutoresizingMaskIntoConstraints =YES;
+            _resView.frame = CGRectMake(_resView.frame.origin.x, _resView.frame.origin.y + 1000 , _resView.frame.size.width, _resView.frame.size.height);
+            _webView.alpha = 0;
+            _drugimg.alpha = 1;
+            _nextB.alpha = 1;
+        }
     }else{
         [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"willSeeSpecificDrugs"];
     }
@@ -57,7 +57,7 @@ CGRect webViewInit;
             case UIDeviceOrientationPortrait:{
                 [UIView animateWithDuration:0.4 animations:^{
                     _nextB.alpha = 1;
-
+                    
                     _webView.transform = CGAffineTransformIdentity;
                     _webView.translatesAutoresizingMaskIntoConstraints = YES;
                     _webView.frame = webViewInit;
@@ -65,10 +65,10 @@ CGRect webViewInit;
                 }];
             }break;
             case UIDeviceOrientationLandscapeLeft:{
-
+                
                 [UIView animateWithDuration:0.4 animations:^{
                     _nextB.alpha = 0;
-
+                    
                     _webView.transform = CGAffineTransformMakeRotation((M_PI * 90) / 180);
                     _webView.frame = self.view.frame; _webView.translatesAutoresizingMaskIntoConstraints = YES;
                     
@@ -77,7 +77,7 @@ CGRect webViewInit;
             case UIDeviceOrientationLandscapeRight:{
                 [UIView animateWithDuration:0.3 animations:^{
                     _nextB.alpha = 0;
-
+                    
                     _webView.transform = CGAffineTransformMakeRotation((M_PI * -90) / 180);
                     _webView.frame = self.view.frame; _webView.translatesAutoresizingMaskIntoConstraints = YES;
                     
@@ -134,9 +134,9 @@ CGRect buttonFrame;
         _nextB.frame = buttonFrame;
         _drugimg.transform = CGAffineTransformMakeScale(1.0, 1.0);
         _drugimg.translatesAutoresizingMaskIntoConstraints = NO;
-_drugimg.frame = CGRectMake(_drugimg.frame.origin.x, _drugimg.frame.origin.y - 50, _drugimg.frame.size.width, _drugimg.frame.size.height);
+        _drugimg.frame = CGRectMake(_drugimg.frame.origin.x, _drugimg.frame.origin.y - 50, _drugimg.frame.size.width, _drugimg.frame.size.height);
     }];
-
+    
 }
 
 - (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -187,9 +187,10 @@ int counttt;
         
     }
     else if (counttt == 1){
-        counttt ++;
         //init resView
         if ([_pickerDrug selectedRowInComponent:0] == 0) {
+            counttt++;
+
             [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"drugListType"];
             //drug cal
             _mannager = [DrugCalculationsManager alloc];
@@ -211,9 +212,10 @@ int counttt;
                 }];
                 
             }];
-
+            
         }
         else if ([_pickerDrug selectedRowInComponent:0] == 1){
+            counttt++;
             [[NSUserDefaults standardUserDefaults] setInteger:1 forKey:@"drugListType"];
             //cardiac
             _Cardiacmannager = [CardiacDrugCalculationsManager alloc];
@@ -235,9 +237,10 @@ int counttt;
                 }];
                 
             }];
-
+            
         }
         else if ([_pickerDrug selectedRowInComponent:0] == 2){
+            counttt++;
             [[NSUserDefaults standardUserDefaults] setInteger:2 forKey:@"drugListType"];
             //cardiac
             _scoliosismanager = [ScoliosisDrugCalculationsManager alloc];
@@ -261,18 +264,15 @@ int counttt;
             }];
             
         }
-
+        
         else if ([_pickerDrug selectedRowInComponent:0] == 3){
             //common drugs
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"willSeeSpecificDrugs"];
             [self performSegueWithIdentifier:@"commonDrug" sender:self];
             
         }
         
-        
-        
-        
-        
-            }
+    }
     else if ([_textField.text isEqualToString:@""]){
         
     }
@@ -288,10 +288,10 @@ int counttt;
         }completion:^(BOOL s ){
         }];
     }
-    else{
+    else if ([[NSUserDefaults standardUserDefaults]objectForKey:@"willSeeSpecificDrugs"] == NO ){
         [self dismissViewControllerAnimated:YES completion:nil];
     }
-
+    
 }
 CGRect initFrameWeb;
 bool didViewPdf;
@@ -316,11 +316,11 @@ bool didViewPdf;
             break;
         case 1:
             [[_Cardiacmannager initWithWeight:_textField.text.intValue] sendEmail:self];
-
+            
             break;
         case 2:
             [[_scoliosismanager initWithWeight:_textField.text.intValue] sendEmail:self];
-
+            
             break;
             
         default:

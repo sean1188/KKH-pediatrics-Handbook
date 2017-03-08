@@ -14,7 +14,7 @@
 
 
 @interface commmonDrugsVC ()<RATreeViewDelegate, RATreeViewDataSource>{
-    DrugCalculationsManager *manager;
+    CommonDrugCalculationsManager *manager;
 }
 
 @property (weak, nonatomic) IBOutlet UIView *placeholder;
@@ -34,29 +34,40 @@ RATreeView *treeView;
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSMutableDictionary *drugArray = [[NSMutableDictionary alloc] init];
-
+    
     int weight = [[NSUserDefaults standardUserDefaults] integerForKey:@"DCweight"];
-    drugArray = [[[DrugCalculationsManager alloc] initWithWeight:weight] getDrugList];
+    drugArray = [CommonDrugCalculationsManager loadDataWithWeight:weight];
     NSLog(@"%@", drugArray);
     
-
+    
     NSMutableArray *Drugs = [[NSMutableArray alloc] init];
-
-   
+    
+    
     for (NSString *drug in drugArray) {
         NSMutableArray *paths = [[NSMutableArray alloc] init];
         for (NSString *path  in [drugArray objectForKey:drug]) {
+            NSMutableArray *methods     = [[NSMutableArray alloc] init];
             
-            RADataObject *amount = [RADataObject dataObjectWithName:[NSString stringWithFormat:@"Amount: %@",[[[drugArray objectForKey:drug] objectForKey:path] objectForKey:@"AMOUNT"]]  children:nil];
-            RADataObject *Dosekg = [RADataObject dataObjectWithName:[NSString stringWithFormat:@"Dose/KG: %@",[[[drugArray objectForKey:drug] objectForKey:path] objectForKey:@"DOSE/KG"]] children:nil];
-            RADataObject *unit = [RADataObject dataObjectWithName: [NSString stringWithFormat:@"Unit: %@", [[[drugArray objectForKey:drug] objectForKey:path] objectForKey:@"UNIT"] ]children:nil];
-            NSLog(@"%@, %@, %@",[[[drugArray objectForKey:drug] objectForKey:path] objectForKey:@"AMOUNT"],[[[drugArray objectForKey:drug] objectForKey:path] objectForKey:@"DOSE/KG"], [[[drugArray objectForKey:drug] objectForKey:path] objectForKey:@"UNIT"]);
-            RADataObject *pathOBJ = [RADataObject dataObjectWithName:path children:@[amount,Dosekg,unit]];
-            [paths addObject:pathOBJ];
-            
-             
+            for (NSString *method in [[drugArray objectForKey:drug] objectForKey:path]) {
+                
+                float doseInt           = [[[[[drugArray objectForKey:drug] objectForKey:path] objectForKey:method] objectForKey:@"dose"] integerValue] * weight;
+                RADataObject *dose      = [RADataObject dataObjectWithName:[NSString stringWithFormat:@"Dose: %0.1f",doseInt]  children:nil];
+                
+                RADataObject *content;
+                if ([[[[drugArray objectForKey:drug] objectForKey:path] objectForKey:@"remarks"] isEqualToString:@""]) {
+                    content             = [RADataObject dataObjectWithName:[[[[drugArray objectForKey:drug] objectForKey:path] objectForKey:method]objectForKey:@"content"] children:nil];
+                }else{
+                    content             = [RADataObject dataObjectWithName:[[[[drugArray objectForKey:drug] objectForKey:path] objectForKey:method]objectForKey:@"remarks"] children:nil];
+                }
+                
+                RADataObject *unit      = [RADataObject dataObjectWithName: [NSString stringWithFormat:@"Unit: %@", [[[[drugArray objectForKey:drug] objectForKey:path] objectForKey:method]objectForKey:@"unit"] ]children:nil];
+                RADataObject *methodObj = [RADataObject dataObjectWithName:method children:@[dose,content,unit]];
+                [methods addObject:methodObj];
+            }
+            RADataObject *pathObj       = [RADataObject dataObjectWithName:path children:methods];
+            [paths addObject:pathObj];
         }
-        RADataObject *drugObject = [RADataObject dataObjectWithName:drug children:paths];
+        RADataObject *drugObject        = [RADataObject dataObjectWithName:drug children:paths];
         [Drugs addObject:drugObject];
     }
     
@@ -81,7 +92,7 @@ RATreeView *treeView;
     }
     
     RADataObject *data = item;
-    NSLog(@"%i",[data.children count]);
+    NSLog(@"%lu",(unsigned long)[data.children count]);
     return [data.children count];
 }
 
@@ -99,22 +110,33 @@ RATreeView *treeView;
             cell.leftMargin.constant = 5;
             [cell.morelabel setText:@"+"];
             [cell.morelabel setFont:[UIFont fontWithName:cell.morelabel.font.fontName size:23]];
-             [cell.title setFont:[UIFont fontWithName:cell.title.font.fontName size:23]];
+            [cell.title setFont:[UIFont fontWithName:cell.title.font.fontName size:23]];
             
             break;
         case 1:
             cell.leftMargin.constant = 20;
-            [cell.morelabel setText:@"Tap for details"];
-            [cell.morelabel setFont:[UIFont fontWithName:cell.morelabel.font.fontName size:14]];
+            [cell.morelabel setText:@"-"];
+            [cell.morelabel setFont:[UIFont fontWithName:cell.morelabel.font.fontName size:23]];
+            [cell setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]]];
+            
             [cell.title setFont:[UIFont fontWithName:cell.title.font.fontName size:19]];
             break;
         case 2:
             cell.leftMargin.constant = 30;
-            [cell.morelabel setText:@""];
+            [cell.morelabel setText:@"Tap for details"];
+            [cell.morelabel setFont:[UIFont fontWithName:cell.morelabel.font.fontName size:11]];
             [cell.title setFont:[UIFont fontWithName:cell.title.font.fontName size:17]];
-
+            [cell setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]]];
+            
             break;
-
+        case 3:
+            cell.leftMargin.constant = 40;
+            [cell.morelabel setText:@""];
+            [cell setBackgroundColor:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"secondaryColor"]]];
+            [cell.title setFont:[UIFont fontWithName:cell.title.font.fontName size:15]];
+            
+            break;
+            
         default:
             break;
     }
@@ -124,6 +146,11 @@ RATreeView *treeView;
         cell.alpha = 1;
     }];
     return cell;
+}
+
+-(UITableViewCellEditingStyle)treeView:(RATreeView *)treeView editingStyleForRowForItem:(id)item{
+    return UITableViewCellEditingStyleNone;
+    
 }
 
 - (id)treeView:(RATreeView *)treeView child:(NSInteger)index ofItem:(id)item
