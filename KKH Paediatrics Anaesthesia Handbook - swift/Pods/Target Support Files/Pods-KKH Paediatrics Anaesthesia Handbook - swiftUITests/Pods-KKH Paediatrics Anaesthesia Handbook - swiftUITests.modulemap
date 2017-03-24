@@ -1,0 +1,6 @@
+framework module Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests {
+  umbrella header "Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
