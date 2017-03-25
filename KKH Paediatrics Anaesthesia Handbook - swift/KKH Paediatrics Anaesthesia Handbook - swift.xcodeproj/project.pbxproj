@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		543480871E864ABC004D837F /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543480861E864ABC004D837F /* extensions.swift */; };
 		54C40F541E858F3B000E0CF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C40F531E858F3B000E0CF8 /* AppDelegate.swift */; };
 		54C40F561E858F3B000E0CF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C40F551E858F3B000E0CF8 /* ViewController.swift */; };
 		54C40F591E858F3B000E0CF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C40F571E858F3B000E0CF8 /* Main.storyboard */; };
@@ -38,7 +39,8 @@
 
 /* Begin PBXFileReference section */
 		0B5581379DAC5BA194847E62 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKH Paediatrics Anaesthesia Handbook - swift/Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig"; sourceTree = "<group>"; };
-		2D2D53006FBC7597CC52C2CF /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2D53006FBC7597CC52C2CF /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		543480861E864ABC004D837F /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		54C40F501E858F3B000E0CF8 /* KKH Paediatrics Anaesthesia Handbook - swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KKH Paediatrics Anaesthesia Handbook - swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C40F531E858F3B000E0CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54C40F551E858F3B000E0CF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,13 +49,13 @@
 		54C40F5D1E858F3B000E0CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54C40F5F1E858F3B000E0CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54C40F641E858F3C000E0CF8 /* KKH Paediatrics Anaesthesia Handbook - swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KKH Paediatrics Anaesthesia Handbook - swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		54C40F681E858F3C000E0CF8 /* KKH_Paediatrics_Anaesthesia_Handbook___swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKH_Paediatrics_Anaesthesia_Handbook___swiftTests.swift; sourceTree = "<group>"; };
+		54C40F681E858F3C000E0CF8 /* KKH_Paediatrics_Anaesthesia_Handbook___swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KKH_Paediatrics_Anaesthesia_Handbook___swiftTests.swift"; sourceTree = "<group>"; };
 		54C40F6A1E858F3C000E0CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54C40F6F1E858F3C000E0CF8 /* KKH Paediatrics Anaesthesia Handbook - swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KKH Paediatrics Anaesthesia Handbook - swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		54C40F731E858F3C000E0CF8 /* KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.swift; sourceTree = "<group>"; };
+		54C40F731E858F3C000E0CF8 /* KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.swift"; sourceTree = "<group>"; };
 		54C40F751E858F3C000E0CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57AFA780F3FB74AFC900CFCF /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D5F7514846036D2A22E892A /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57AFA780F3FB74AFC900CFCF /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5F7514846036D2A22E892A /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9200EFF5538AEC0E458313D /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests/Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B35BF42A82E89A34A6A2DAE2 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests/Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DD2C05B77962373FE72784AB /* Pods-KKH Paediatrics Anaesthesia Handbook - swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKH Paediatrics Anaesthesia Handbook - swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKH Paediatrics Anaesthesia Handbook - swift/Pods-KKH Paediatrics Anaesthesia Handbook - swift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				54C40F5A1E858F3B000E0CF8 /* Assets.xcassets */,
 				54C40F5C1E858F3B000E0CF8 /* LaunchScreen.storyboard */,
 				54C40F5F1E858F3B000E0CF8 /* Info.plist */,
+				543480861E864ABC004D837F /* extensions.swift */,
 			);
 			path = "KKH Paediatrics Anaesthesia Handbook - swift";
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 			files = (
 				54C40F561E858F3B000E0CF8 /* ViewController.swift in Sources */,
 				54C40F541E858F3B000E0CF8 /* AppDelegate.swift in Sources */,
+				543480871E864ABC004D837F /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,6 +709,7 @@
 				54C40F7A1E858F3C000E0CF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54C40F7B1E858F3C000E0CF8 /* Build configuration list for PBXNativeTarget "KKH Paediatrics Anaesthesia Handbook - swiftTests" */ = {
 			isa = XCConfigurationList;
@@ -713,6 +718,7 @@
 				54C40F7D1E858F3C000E0CF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54C40F7E1E858F3C000E0CF8 /* Build configuration list for PBXNativeTarget "KKH Paediatrics Anaesthesia Handbook - swiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -721,6 +727,7 @@
 				54C40F801E858F3C000E0CF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
