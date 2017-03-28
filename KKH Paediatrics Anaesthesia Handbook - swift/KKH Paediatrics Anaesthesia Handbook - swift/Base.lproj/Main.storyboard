@@ -321,6 +321,10 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="YfM-FN-BVq" id="f3B-v9-NyJ"/>
+                                    <outlet property="delegate" destination="YfM-FN-BVq" id="IpM-yr-gyM"/>
+                                </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="avW-Ld-KAJ">
                                 <rect key="frame" x="0.0" y="580" width="375" height="85"/>

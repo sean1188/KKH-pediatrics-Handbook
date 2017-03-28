@@ -33,19 +33,23 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
 //MARK: - collectionvie delegate/datasource
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        <#code#>
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        return 20
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HandbookCollectionViewCell
+        cell.layer.cornerRadius = 10.0
+        cell.backgroundColor = UIColor.init().secondaryColor()
+        cell.indexLabel.textColor = UIColor.init().primaryColor()
+        return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        <#code#>
+        
     }
    
 
