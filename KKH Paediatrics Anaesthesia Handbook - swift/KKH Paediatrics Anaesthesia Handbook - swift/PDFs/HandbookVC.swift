@@ -8,9 +8,12 @@
 
 import UIKit
 
-class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate {
+    
+    var manager = PDFManager.init()
     
     @IBOutlet weak var collectionView: UICollectionView!
+    var dispArray = [String]()
     @IBOutlet weak var topbar: UIView!
     
     @IBOutlet weak var searchButton: UIButton!
@@ -22,8 +25,8 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.init().primaryColor()
-        initHandbooks()
         SearchBarExpanded = false
+        dispArray = manager.chapters_NAME
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -33,19 +36,33 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         search_inital_frame = search_backdrop.frame
     }
     
-    func initHandbooks (){
-        
-    }
     
     @IBAction func searchButtonPressed(_ sender: Any) {
+        print("did tap =")
         if SearchBarExpanded {
             collapseSearchBar()
+            updatecollectionViewDisplaywithArray(replacement: manager.chapters_NAME)
         }
         else{
             expandSearchBar()
         }
     }
     
+//MARK: - searching 
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        updatecollectionViewDisplaywithArray(replacement: search(query: textField.text!))
+        return true
+    }
+    
+    func search (query: String) -> [String]{
+        var array = [String]()
+        manager.filePaths.forEach { (file) in
+            if file.lowercased().contains(query.lowercased()){
+                array.append(file)
+            }
+        }
+        return array
+    }
 
 //MARK: - collectionview delegate/datasource
     
@@ -54,7 +71,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return dispArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -62,6 +79,8 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         cell.layer.cornerRadius = 10.0
         cell.backgroundColor = UIColor.init().secondaryColor()
         cell.indexLabel.textColor = UIColor.init().primaryColor()
+        cell.indexLabel.text = String(indexPath.row + 1)
+        cell.titleLabel.text = dispArray[indexPath.row]
         return cell
     }
 
@@ -70,12 +89,17 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }
    
 //MARK: - reusables
+    func updatecollectionViewDisplaywithArray (replacement : [String]){
+        dispArray = replacement
+        collectionView.reloadData()
+    }
+    
     func expandSearchBar (){
         searchButton.setTitle("X", for: .normal)
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
             self.search_backdrop.frame = CGRect.init(x: 10, y: Int(self.search_backdrop.frame.origin.y), width: Int(self.view.frame.size.width - 20), height: Int(self.search_backdrop.frame.size.height))
         }, completion: { (s) in
-            self.searchField.frame.size = CGSize.init(width: self.search_backdrop.frame.size.width - self.searchButton.frame.size.width - 20, height: self.search_backdrop.frame.size.height)
+            self.searchField.frame.size = CGSize.init(width: self.search_backdrop.frame.size.width - self.searchButton.frame.size.width - 40, height: self.search_backdrop.frame.size.height)
             self.searchField.center = self.search_backdrop.center
             self.view.addSubview(self.searchField)
             self.searchField.becomeFirstResponder()
