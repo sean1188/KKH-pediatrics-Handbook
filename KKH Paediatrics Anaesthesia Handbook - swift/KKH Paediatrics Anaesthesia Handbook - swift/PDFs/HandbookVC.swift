@@ -16,13 +16,14 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var search_backdrop: UIView!
     var search_inital_frame :CGRect = CGRect()
-    var SearchBarCollapsed :Bool = Bool()
+    var SearchBarExpanded :Bool = Bool()
+    @IBOutlet var searchField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.init().primaryColor()
         initHandbooks()
-        SearchBarCollapsed = false
+        SearchBarExpanded = false
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -37,7 +38,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }
     
     @IBAction func searchButtonPressed(_ sender: Any) {
-        if SearchBarCollapsed {
+        if SearchBarExpanded {
             collapseSearchBar()
         }
         else{
@@ -45,20 +46,8 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         }
     }
     
-    func expandSearchBar (){
-        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
-            self.search_backdrop.frame = CGRect.init(x: 10, y: Int(self.search_backdrop.frame.origin.y), width: Int(self.view.frame.size.width - 20), height: Int(self.search_backdrop.frame.size.height))
-        }, completion: nil)
-        SearchBarCollapsed = true
-    }
-    
-    func collapseSearchBar (){
-        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
-            self.search_backdrop.frame = self.search_inital_frame
-        }, completion: nil)
-        SearchBarCollapsed = false
-    }
-//MARK: - collectionvie delegate/datasource
+
+//MARK: - collectionview delegate/datasource
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -80,5 +69,30 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         
     }
    
+//MARK: - reusables
+    func expandSearchBar (){
+        searchButton.setTitle("X", for: .normal)
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
+            self.search_backdrop.frame = CGRect.init(x: 10, y: Int(self.search_backdrop.frame.origin.y), width: Int(self.view.frame.size.width - 20), height: Int(self.search_backdrop.frame.size.height))
+        }, completion: { (s) in
+            self.searchField.frame.size = CGSize.init(width: self.search_backdrop.frame.size.width - self.searchButton.frame.size.width - 20, height: self.search_backdrop.frame.size.height)
+            self.searchField.center = self.search_backdrop.center
+            self.view.addSubview(self.searchField)
+            self.searchField.becomeFirstResponder()
+        })
+        SearchBarExpanded = true
+    }
+    
+    func collapseSearchBar (){
+        self.view.endEditing(true)
+        searchField.text = ""
+        searchField.removeFromSuperview()
+        searchButton.setTitle("", for: .normal)
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
+            self.search_backdrop.frame = self.search_inital_frame
+        }, completion: nil)
+        SearchBarExpanded = false
+    }
+
 
 }
