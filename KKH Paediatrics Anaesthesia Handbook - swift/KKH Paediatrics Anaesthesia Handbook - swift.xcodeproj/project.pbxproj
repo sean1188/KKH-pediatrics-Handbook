@@ -8,8 +8,59 @@
 
 /* Begin PBXBuildFile section */
 		543480871E864ABC004D837F /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543480861E864ABC004D837F /* extensions.swift */; };
+		5450DE2C1E87D69D00EBBF55 /* A-01-Training_Programmes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DDFD1E87D69D00EBBF55 /* A-01-Training_Programmes.pdf */; };
+		5450DE2D1E87D69D00EBBF55 /* B-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DDFE1E87D69D00EBBF55 /* B-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf */; };
+		5450DE2E1E87D69D00EBBF55 /* B-03-Preoperative_preparation_and_induction_techniques.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DDFF1E87D69D00EBBF55 /* B-03-Preoperative_preparation_and_induction_techniques.pdf */; };
+		5450DE2F1E87D69D00EBBF55 /* C-04-Preoperative_Evaluation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE001E87D69D00EBBF55 /* C-04-Preoperative_Evaluation.pdf */; };
+		5450DE301E87D69D00EBBF55 /* C-05-Premedication.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE011E87D69D00EBBF55 /* C-05-Premedication.pdf */; };
+		5450DE311E87D69D00EBBF55 /* C-06-Common_Medical_Conditions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE021E87D69D00EBBF55 /* C-06-Common_Medical_Conditions.pdf */; };
+		5450DE321E87D69D00EBBF55 /* C-07-Nausea_Vomitting.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE031E87D69D00EBBF55 /* C-07-Nausea_Vomitting.pdf */; };
+		5450DE331E87D69D00EBBF55 /* C-08-Emergence_delirium.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE041E87D69D00EBBF55 /* C-08-Emergence_delirium.pdf */; };
+		5450DE341E87D69D00EBBF55 /* C-09-Dental_Injury.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE051E87D69D00EBBF55 /* C-09-Dental_Injury.pdf */; };
+		5450DE351E87D69D00EBBF55 /* C-10-Equipment.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE061E87D69D00EBBF55 /* C-10-Equipment.pdf */; };
+		5450DE361E87D69D00EBBF55 /* D-11-Fluid_Guidelines_in_Children.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE071E87D69D00EBBF55 /* D-11-Fluid_Guidelines_in_Children.pdf */; };
+		5450DE371E87D69D00EBBF55 /* E-12-Neonatal_Anaesthesia_NICU.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE081E87D69D00EBBF55 /* E-12-Neonatal_Anaesthesia_NICU.pdf */; };
+		5450DE381E87D69D00EBBF55 /* F-13-Common_Cardiac_Conditions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE091E87D69D00EBBF55 /* F-13-Common_Cardiac_Conditions.pdf */; };
+		5450DE391E87D69D00EBBF55 /* F-14-Paediatric_Cardiac_Anaesthesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE0A1E87D69D00EBBF55 /* F-14-Paediatric_Cardiac_Anaesthesia.pdf */; };
+		5450DE3A1E87D69D00EBBF55 /* F-15-Cardiac_Catheterization.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE0B1E87D69D00EBBF55 /* F-15-Cardiac_Catheterization.pdf */; };
+		5450DE3B1E87D69D00EBBF55 /* F-16-ROTEM_Algorithm.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE0C1E87D69D00EBBF55 /* F-16-ROTEM_Algorithm.pdf */; };
+		5450DE3C1E87D69D00EBBF55 /* F-17-Prophylaxis_for_Infective_Endocarditis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE0D1E87D69D00EBBF55 /* F-17-Prophylaxis_for_Infective_Endocarditis.pdf */; };
+		5450DE3D1E87D69D00EBBF55 /* G-18-Diagnostic_Imaging.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE0E1E87D69D00EBBF55 /* G-18-Diagnostic_Imaging.pdf */; };
+		5450DE3E1E87D69D00EBBF55 /* H-19-Sedation_for_Oncology_Children.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE0F1E87D69D00EBBF55 /* H-19-Sedation_for_Oncology_Children.pdf */; };
+		5450DE3F1E87D69D00EBBF55 /* I-20-Regional_Anaesthesia_Workflow.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE101E87D69D00EBBF55 /* I-20-Regional_Anaesthesia_Workflow.pdf */; };
+		5450DE401E87D69D00EBBF55 /* I-21-Local_Anaesthetic_Toxicity.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE111E87D69D00EBBF55 /* I-21-Local_Anaesthetic_Toxicity.pdf */; };
+		5450DE411E87D69D00EBBF55 /* I-22-Peripheral_Nerve_Block.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE121E87D69D00EBBF55 /* I-22-Peripheral_Nerve_Block.pdf */; };
+		5450DE421E87D69D00EBBF55 /* I-23-Central_Neuraxial_Block.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE131E87D69D00EBBF55 /* I-23-Central_Neuraxial_Block.pdf */; };
+		5450DE431E87D69D00EBBF55 /* I-24-Ultrasound_Guided_Blocks.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE141E87D69D00EBBF55 /* I-24-Ultrasound_Guided_Blocks.pdf */; };
+		5450DE441E87D69D00EBBF55 /* I-25-Current_Trends.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE151E87D69D00EBBF55 /* I-25-Current_Trends.pdf */; };
+		5450DE451E87D69D00EBBF55 /* index.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE161E87D69D00EBBF55 /* index.txt */; };
+		5450DE461E87D69D00EBBF55 /* J-26-Patient_Transport.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE171E87D69D00EBBF55 /* J-26-Patient_Transport.pdf */; };
+		5450DE471E87D69D00EBBF55 /* K-27-Antibiotics.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE181E87D69D00EBBF55 /* K-27-Antibiotics.pdf */; };
+		5450DE481E87D69D00EBBF55 /* K-28-Miscellaneous_Drugs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE191E87D69D00EBBF55 /* K-28-Miscellaneous_Drugs.pdf */; };
+		5450DE491E87D69D00EBBF55 /* L-29-Transfusion_Guidelines.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE1A1E87D69D00EBBF55 /* L-29-Transfusion_Guidelines.pdf */; };
+		5450DE4A1E87D69D00EBBF55 /* L-30-Paediatric_Massive_Transfusion_Protocol.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE1B1E87D69D00EBBF55 /* L-30-Paediatric_Massive_Transfusion_Protocol.pdf */; };
+		5450DE4B1E87D69D00EBBF55 /* M-31-Laryngospasm.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE1C1E87D69D00EBBF55 /* M-31-Laryngospasm.pdf */; };
+		5450DE4C1E87D69D00EBBF55 /* M-32-Hypercyanotic_Tet_Spells.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE1D1E87D69D00EBBF55 /* M-32-Hypercyanotic_Tet_Spells.pdf */; };
+		5450DE4D1E87D69D00EBBF55 /* M-33-Post_Adenotonsillectomy_Bleeding.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE1E1E87D69D00EBBF55 /* M-33-Post_Adenotonsillectomy_Bleeding.pdf */; };
+		5450DE4E1E87D69D00EBBF55 /* M-34-Acute_Epiglottitis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE1F1E87D69D00EBBF55 /* M-34-Acute_Epiglottitis.pdf */; };
+		5450DE4F1E87D69D00EBBF55 /* M-35-Suspected_Anaphylaxis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE201E87D69D00EBBF55 /* M-35-Suspected_Anaphylaxis.pdf */; };
+		5450DE501E87D69D00EBBF55 /* M-36-Latex_Allergy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE211E87D69D00EBBF55 /* M-36-Latex_Allergy.pdf */; };
+		5450DE511E87D69D00EBBF55 /* M-37-Malignant_Hyperthermia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE221E87D69D00EBBF55 /* M-37-Malignant_Hyperthermia.pdf */; };
+		5450DE521E87D69D00EBBF55 /* M-38-Local_Anaesthetic_Toxicity.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE231E87D69D00EBBF55 /* M-38-Local_Anaesthetic_Toxicity.pdf */; };
+		5450DE531E87D69D00EBBF55 /* N-39-Advanced_Paediatric_Life_Support.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE241E87D69D00EBBF55 /* N-39-Advanced_Paediatric_Life_Support.pdf */; };
+		5450DE541E87D69D00EBBF55 /* O-40-Pain_in_Children.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE251E87D69D00EBBF55 /* O-40-Pain_in_Children.pdf */; };
+		5450DE551E87D69D00EBBF55 /* O-41-Children's_Pain_Service.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE261E87D69D00EBBF55 /* O-41-Children's_Pain_Service.pdf */; };
+		5450DE561E87D69D00EBBF55 /* O-42-Patient_Controlled_Analgesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE271E87D69D00EBBF55 /* O-42-Patient_Controlled_Analgesia.pdf */; };
+		5450DE571E87D69D00EBBF55 /* O-43-Epidurals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE281E87D69D00EBBF55 /* O-43-Epidurals.pdf */; };
+		5450DE581E87D69D00EBBF55 /* O-44-Alternative_Modes_of_Analgesia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE291E87D69D00EBBF55 /* O-44-Alternative_Modes_of_Analgesia.pdf */; };
+		5450DE591E87D69D00EBBF55 /* P-45-Chronic_Pain.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE2A1E87D69D00EBBF55 /* P-45-Chronic_Pain.pdf */; };
+		5450DE5A1E87D69D00EBBF55 /* Q-46-NORMAL_LABORATORY_DATA.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE2B1E87D69D00EBBF55 /* Q-46-NORMAL_LABORATORY_DATA.pdf */; };
+		5450DE5C1E87D86500EBBF55 /* tabControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5450DE5B1E87D86500EBBF55 /* tabControllerVC.swift */; };
+		5450DE631E87D9A200EBBF55 /* NavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5450DE621E87D9A200EBBF55 /* NavVC.swift */; };
+		5480E23B1E8A22B200B62203 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5480E2391E8A20C400B62203 /* fontawesome-webfont.ttf */; };
+		5480E23C1E8A22B200B62203 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5480E23A1E8A20C400B62203 /* FontAwesome.otf */; };
+		54B7BA971E891F05005F1075 /* HandbookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B7BA961E891F05005F1075 /* HandbookVC.swift */; };
 		54C40F541E858F3B000E0CF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C40F531E858F3B000E0CF8 /* AppDelegate.swift */; };
-		54C40F561E858F3B000E0CF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C40F551E858F3B000E0CF8 /* ViewController.swift */; };
 		54C40F591E858F3B000E0CF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C40F571E858F3B000E0CF8 /* Main.storyboard */; };
 		54C40F5B1E858F3B000E0CF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C40F5A1E858F3B000E0CF8 /* Assets.xcassets */; };
 		54C40F5E1E858F3B000E0CF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C40F5C1E858F3B000E0CF8 /* LaunchScreen.storyboard */; };
@@ -41,9 +92,60 @@
 		0B5581379DAC5BA194847E62 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKH Paediatrics Anaesthesia Handbook - swift/Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig"; sourceTree = "<group>"; };
 		2D2D53006FBC7597CC52C2CF /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		543480861E864ABC004D837F /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		5450DDFD1E87D69D00EBBF55 /* A-01-Training_Programmes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "A-01-Training_Programmes.pdf"; sourceTree = "<group>"; };
+		5450DDFE1E87D69D00EBBF55 /* B-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "B-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf"; sourceTree = "<group>"; };
+		5450DDFF1E87D69D00EBBF55 /* B-03-Preoperative_preparation_and_induction_techniques.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "B-03-Preoperative_preparation_and_induction_techniques.pdf"; sourceTree = "<group>"; };
+		5450DE001E87D69D00EBBF55 /* C-04-Preoperative_Evaluation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "C-04-Preoperative_Evaluation.pdf"; sourceTree = "<group>"; };
+		5450DE011E87D69D00EBBF55 /* C-05-Premedication.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "C-05-Premedication.pdf"; sourceTree = "<group>"; };
+		5450DE021E87D69D00EBBF55 /* C-06-Common_Medical_Conditions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "C-06-Common_Medical_Conditions.pdf"; sourceTree = "<group>"; };
+		5450DE031E87D69D00EBBF55 /* C-07-Nausea_Vomitting.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "C-07-Nausea_Vomitting.pdf"; sourceTree = "<group>"; };
+		5450DE041E87D69D00EBBF55 /* C-08-Emergence_delirium.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "C-08-Emergence_delirium.pdf"; sourceTree = "<group>"; };
+		5450DE051E87D69D00EBBF55 /* C-09-Dental_Injury.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "C-09-Dental_Injury.pdf"; sourceTree = "<group>"; };
+		5450DE061E87D69D00EBBF55 /* C-10-Equipment.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "C-10-Equipment.pdf"; sourceTree = "<group>"; };
+		5450DE071E87D69D00EBBF55 /* D-11-Fluid_Guidelines_in_Children.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "D-11-Fluid_Guidelines_in_Children.pdf"; sourceTree = "<group>"; };
+		5450DE081E87D69D00EBBF55 /* E-12-Neonatal_Anaesthesia_NICU.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "E-12-Neonatal_Anaesthesia_NICU.pdf"; sourceTree = "<group>"; };
+		5450DE091E87D69D00EBBF55 /* F-13-Common_Cardiac_Conditions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "F-13-Common_Cardiac_Conditions.pdf"; sourceTree = "<group>"; };
+		5450DE0A1E87D69D00EBBF55 /* F-14-Paediatric_Cardiac_Anaesthesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "F-14-Paediatric_Cardiac_Anaesthesia.pdf"; sourceTree = "<group>"; };
+		5450DE0B1E87D69D00EBBF55 /* F-15-Cardiac_Catheterization.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "F-15-Cardiac_Catheterization.pdf"; sourceTree = "<group>"; };
+		5450DE0C1E87D69D00EBBF55 /* F-16-ROTEM_Algorithm.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "F-16-ROTEM_Algorithm.pdf"; sourceTree = "<group>"; };
+		5450DE0D1E87D69D00EBBF55 /* F-17-Prophylaxis_for_Infective_Endocarditis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "F-17-Prophylaxis_for_Infective_Endocarditis.pdf"; sourceTree = "<group>"; };
+		5450DE0E1E87D69D00EBBF55 /* G-18-Diagnostic_Imaging.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "G-18-Diagnostic_Imaging.pdf"; sourceTree = "<group>"; };
+		5450DE0F1E87D69D00EBBF55 /* H-19-Sedation_for_Oncology_Children.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "H-19-Sedation_for_Oncology_Children.pdf"; sourceTree = "<group>"; };
+		5450DE101E87D69D00EBBF55 /* I-20-Regional_Anaesthesia_Workflow.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "I-20-Regional_Anaesthesia_Workflow.pdf"; sourceTree = "<group>"; };
+		5450DE111E87D69D00EBBF55 /* I-21-Local_Anaesthetic_Toxicity.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "I-21-Local_Anaesthetic_Toxicity.pdf"; sourceTree = "<group>"; };
+		5450DE121E87D69D00EBBF55 /* I-22-Peripheral_Nerve_Block.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "I-22-Peripheral_Nerve_Block.pdf"; sourceTree = "<group>"; };
+		5450DE131E87D69D00EBBF55 /* I-23-Central_Neuraxial_Block.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "I-23-Central_Neuraxial_Block.pdf"; sourceTree = "<group>"; };
+		5450DE141E87D69D00EBBF55 /* I-24-Ultrasound_Guided_Blocks.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "I-24-Ultrasound_Guided_Blocks.pdf"; sourceTree = "<group>"; };
+		5450DE151E87D69D00EBBF55 /* I-25-Current_Trends.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "I-25-Current_Trends.pdf"; sourceTree = "<group>"; };
+		5450DE161E87D69D00EBBF55 /* index.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.txt; sourceTree = "<group>"; };
+		5450DE171E87D69D00EBBF55 /* J-26-Patient_Transport.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "J-26-Patient_Transport.pdf"; sourceTree = "<group>"; };
+		5450DE181E87D69D00EBBF55 /* K-27-Antibiotics.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "K-27-Antibiotics.pdf"; sourceTree = "<group>"; };
+		5450DE191E87D69D00EBBF55 /* K-28-Miscellaneous_Drugs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "K-28-Miscellaneous_Drugs.pdf"; sourceTree = "<group>"; };
+		5450DE1A1E87D69D00EBBF55 /* L-29-Transfusion_Guidelines.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "L-29-Transfusion_Guidelines.pdf"; sourceTree = "<group>"; };
+		5450DE1B1E87D69D00EBBF55 /* L-30-Paediatric_Massive_Transfusion_Protocol.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "L-30-Paediatric_Massive_Transfusion_Protocol.pdf"; sourceTree = "<group>"; };
+		5450DE1C1E87D69D00EBBF55 /* M-31-Laryngospasm.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "M-31-Laryngospasm.pdf"; sourceTree = "<group>"; };
+		5450DE1D1E87D69D00EBBF55 /* M-32-Hypercyanotic_Tet_Spells.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "M-32-Hypercyanotic_Tet_Spells.pdf"; sourceTree = "<group>"; };
+		5450DE1E1E87D69D00EBBF55 /* M-33-Post_Adenotonsillectomy_Bleeding.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "M-33-Post_Adenotonsillectomy_Bleeding.pdf"; sourceTree = "<group>"; };
+		5450DE1F1E87D69D00EBBF55 /* M-34-Acute_Epiglottitis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "M-34-Acute_Epiglottitis.pdf"; sourceTree = "<group>"; };
+		5450DE201E87D69D00EBBF55 /* M-35-Suspected_Anaphylaxis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "M-35-Suspected_Anaphylaxis.pdf"; sourceTree = "<group>"; };
+		5450DE211E87D69D00EBBF55 /* M-36-Latex_Allergy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "M-36-Latex_Allergy.pdf"; sourceTree = "<group>"; };
+		5450DE221E87D69D00EBBF55 /* M-37-Malignant_Hyperthermia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "M-37-Malignant_Hyperthermia.pdf"; sourceTree = "<group>"; };
+		5450DE231E87D69D00EBBF55 /* M-38-Local_Anaesthetic_Toxicity.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "M-38-Local_Anaesthetic_Toxicity.pdf"; sourceTree = "<group>"; };
+		5450DE241E87D69D00EBBF55 /* N-39-Advanced_Paediatric_Life_Support.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "N-39-Advanced_Paediatric_Life_Support.pdf"; sourceTree = "<group>"; };
+		5450DE251E87D69D00EBBF55 /* O-40-Pain_in_Children.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "O-40-Pain_in_Children.pdf"; sourceTree = "<group>"; };
+		5450DE261E87D69D00EBBF55 /* O-41-Children's_Pain_Service.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "O-41-Children's_Pain_Service.pdf"; sourceTree = "<group>"; };
+		5450DE271E87D69D00EBBF55 /* O-42-Patient_Controlled_Analgesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "O-42-Patient_Controlled_Analgesia.pdf"; sourceTree = "<group>"; };
+		5450DE281E87D69D00EBBF55 /* O-43-Epidurals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "O-43-Epidurals.pdf"; sourceTree = "<group>"; };
+		5450DE291E87D69D00EBBF55 /* O-44-Alternative_Modes_of_Analgesia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "O-44-Alternative_Modes_of_Analgesia.pdf"; sourceTree = "<group>"; };
+		5450DE2A1E87D69D00EBBF55 /* P-45-Chronic_Pain.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "P-45-Chronic_Pain.pdf"; sourceTree = "<group>"; };
+		5450DE2B1E87D69D00EBBF55 /* Q-46-NORMAL_LABORATORY_DATA.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Q-46-NORMAL_LABORATORY_DATA.pdf"; sourceTree = "<group>"; };
+		5450DE5B1E87D86500EBBF55 /* tabControllerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabControllerVC.swift; sourceTree = "<group>"; };
+		5450DE621E87D9A200EBBF55 /* NavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavVC.swift; sourceTree = "<group>"; };
+		5480E2391E8A20C400B62203 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		5480E23A1E8A20C400B62203 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		54B7BA961E891F05005F1075 /* HandbookVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandbookVC.swift; sourceTree = "<group>"; };
 		54C40F501E858F3B000E0CF8 /* KKH Paediatrics Anaesthesia Handbook - swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KKH Paediatrics Anaesthesia Handbook - swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C40F531E858F3B000E0CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		54C40F551E858F3B000E0CF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54C40F581E858F3B000E0CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54C40F5A1E858F3B000E0CF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54C40F5D1E858F3B000E0CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,6 +193,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5450DDFC1E87D69D00EBBF55 /* PDFs */ = {
+			isa = PBXGroup;
+			children = (
+				5450DE161E87D69D00EBBF55 /* index.txt */,
+				5450DDFD1E87D69D00EBBF55 /* A-01-Training_Programmes.pdf */,
+				5450DDFE1E87D69D00EBBF55 /* B-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf */,
+				5450DDFF1E87D69D00EBBF55 /* B-03-Preoperative_preparation_and_induction_techniques.pdf */,
+				5450DE001E87D69D00EBBF55 /* C-04-Preoperative_Evaluation.pdf */,
+				5450DE011E87D69D00EBBF55 /* C-05-Premedication.pdf */,
+				5450DE021E87D69D00EBBF55 /* C-06-Common_Medical_Conditions.pdf */,
+				5450DE031E87D69D00EBBF55 /* C-07-Nausea_Vomitting.pdf */,
+				5450DE041E87D69D00EBBF55 /* C-08-Emergence_delirium.pdf */,
+				5450DE051E87D69D00EBBF55 /* C-09-Dental_Injury.pdf */,
+				5450DE061E87D69D00EBBF55 /* C-10-Equipment.pdf */,
+				5450DE071E87D69D00EBBF55 /* D-11-Fluid_Guidelines_in_Children.pdf */,
+				5450DE081E87D69D00EBBF55 /* E-12-Neonatal_Anaesthesia_NICU.pdf */,
+				5450DE091E87D69D00EBBF55 /* F-13-Common_Cardiac_Conditions.pdf */,
+				5450DE0A1E87D69D00EBBF55 /* F-14-Paediatric_Cardiac_Anaesthesia.pdf */,
+				5450DE0B1E87D69D00EBBF55 /* F-15-Cardiac_Catheterization.pdf */,
+				5450DE0C1E87D69D00EBBF55 /* F-16-ROTEM_Algorithm.pdf */,
+				5450DE0D1E87D69D00EBBF55 /* F-17-Prophylaxis_for_Infective_Endocarditis.pdf */,
+				5450DE0E1E87D69D00EBBF55 /* G-18-Diagnostic_Imaging.pdf */,
+				5450DE0F1E87D69D00EBBF55 /* H-19-Sedation_for_Oncology_Children.pdf */,
+				5450DE101E87D69D00EBBF55 /* I-20-Regional_Anaesthesia_Workflow.pdf */,
+				5450DE111E87D69D00EBBF55 /* I-21-Local_Anaesthetic_Toxicity.pdf */,
+				5450DE121E87D69D00EBBF55 /* I-22-Peripheral_Nerve_Block.pdf */,
+				5450DE131E87D69D00EBBF55 /* I-23-Central_Neuraxial_Block.pdf */,
+				5450DE141E87D69D00EBBF55 /* I-24-Ultrasound_Guided_Blocks.pdf */,
+				5450DE151E87D69D00EBBF55 /* I-25-Current_Trends.pdf */,
+				5450DE171E87D69D00EBBF55 /* J-26-Patient_Transport.pdf */,
+				5450DE181E87D69D00EBBF55 /* K-27-Antibiotics.pdf */,
+				5450DE191E87D69D00EBBF55 /* K-28-Miscellaneous_Drugs.pdf */,
+				5450DE1A1E87D69D00EBBF55 /* L-29-Transfusion_Guidelines.pdf */,
+				5450DE1B1E87D69D00EBBF55 /* L-30-Paediatric_Massive_Transfusion_Protocol.pdf */,
+				5450DE1C1E87D69D00EBBF55 /* M-31-Laryngospasm.pdf */,
+				5450DE1D1E87D69D00EBBF55 /* M-32-Hypercyanotic_Tet_Spells.pdf */,
+				5450DE1E1E87D69D00EBBF55 /* M-33-Post_Adenotonsillectomy_Bleeding.pdf */,
+				5450DE1F1E87D69D00EBBF55 /* M-34-Acute_Epiglottitis.pdf */,
+				5450DE201E87D69D00EBBF55 /* M-35-Suspected_Anaphylaxis.pdf */,
+				5450DE211E87D69D00EBBF55 /* M-36-Latex_Allergy.pdf */,
+				5450DE221E87D69D00EBBF55 /* M-37-Malignant_Hyperthermia.pdf */,
+				5450DE231E87D69D00EBBF55 /* M-38-Local_Anaesthetic_Toxicity.pdf */,
+				5450DE241E87D69D00EBBF55 /* N-39-Advanced_Paediatric_Life_Support.pdf */,
+				5450DE251E87D69D00EBBF55 /* O-40-Pain_in_Children.pdf */,
+				5450DE261E87D69D00EBBF55 /* O-41-Children's_Pain_Service.pdf */,
+				5450DE271E87D69D00EBBF55 /* O-42-Patient_Controlled_Analgesia.pdf */,
+				5450DE281E87D69D00EBBF55 /* O-43-Epidurals.pdf */,
+				5450DE291E87D69D00EBBF55 /* O-44-Alternative_Modes_of_Analgesia.pdf */,
+				5450DE2A1E87D69D00EBBF55 /* P-45-Chronic_Pain.pdf */,
+				5450DE2B1E87D69D00EBBF55 /* Q-46-NORMAL_LABORATORY_DATA.pdf */,
+				5450DE5B1E87D86500EBBF55 /* tabControllerVC.swift */,
+				5450DE621E87D9A200EBBF55 /* NavVC.swift */,
+				54B7BA961E891F05005F1075 /* HandbookVC.swift */,
+			);
+			path = PDFs;
+			sourceTree = "<group>";
+		};
 		54C40F471E858F3B000E0CF8 = {
 			isa = PBXGroup;
 			children = (
@@ -116,8 +275,10 @@
 		54C40F521E858F3B000E0CF8 /* KKH Paediatrics Anaesthesia Handbook - swift */ = {
 			isa = PBXGroup;
 			children = (
+				5480E2391E8A20C400B62203 /* fontawesome-webfont.ttf */,
+				5480E23A1E8A20C400B62203 /* FontAwesome.otf */,
+				5450DDFC1E87D69D00EBBF55 /* PDFs */,
 				54C40F531E858F3B000E0CF8 /* AppDelegate.swift */,
-				54C40F551E858F3B000E0CF8 /* ViewController.swift */,
 				54C40F571E858F3B000E0CF8 /* Main.storyboard */,
 				54C40F5A1E858F3B000E0CF8 /* Assets.xcassets */,
 				54C40F5C1E858F3B000E0CF8 /* LaunchScreen.storyboard */,
@@ -287,9 +448,58 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5480E23B1E8A22B200B62203 /* fontawesome-webfont.ttf in Resources */,
+				5480E23C1E8A22B200B62203 /* FontAwesome.otf in Resources */,
+				5450DE2C1E87D69D00EBBF55 /* A-01-Training_Programmes.pdf in Resources */,
+				5450DE3B1E87D69D00EBBF55 /* F-16-ROTEM_Algorithm.pdf in Resources */,
+				5450DE5A1E87D69D00EBBF55 /* Q-46-NORMAL_LABORATORY_DATA.pdf in Resources */,
+				5450DE4A1E87D69D00EBBF55 /* L-30-Paediatric_Massive_Transfusion_Protocol.pdf in Resources */,
+				5450DE2D1E87D69D00EBBF55 /* B-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf in Resources */,
+				5450DE491E87D69D00EBBF55 /* L-29-Transfusion_Guidelines.pdf in Resources */,
+				5450DE3E1E87D69D00EBBF55 /* H-19-Sedation_for_Oncology_Children.pdf in Resources */,
+				5450DE3A1E87D69D00EBBF55 /* F-15-Cardiac_Catheterization.pdf in Resources */,
 				54C40F5E1E858F3B000E0CF8 /* LaunchScreen.storyboard in Resources */,
+				5450DE541E87D69D00EBBF55 /* O-40-Pain_in_Children.pdf in Resources */,
+				5450DE4F1E87D69D00EBBF55 /* M-35-Suspected_Anaphylaxis.pdf in Resources */,
+				5450DE471E87D69D00EBBF55 /* K-27-Antibiotics.pdf in Resources */,
+				5450DE361E87D69D00EBBF55 /* D-11-Fluid_Guidelines_in_Children.pdf in Resources */,
+				5450DE441E87D69D00EBBF55 /* I-25-Current_Trends.pdf in Resources */,
 				54C40F5B1E858F3B000E0CF8 /* Assets.xcassets in Resources */,
+				5450DE581E87D69D00EBBF55 /* O-44-Alternative_Modes_of_Analgesia.pdf in Resources */,
+				5450DE531E87D69D00EBBF55 /* N-39-Advanced_Paediatric_Life_Support.pdf in Resources */,
+				5450DE401E87D69D00EBBF55 /* I-21-Local_Anaesthetic_Toxicity.pdf in Resources */,
+				5450DE481E87D69D00EBBF55 /* K-28-Miscellaneous_Drugs.pdf in Resources */,
+				5450DE341E87D69D00EBBF55 /* C-09-Dental_Injury.pdf in Resources */,
+				5450DE321E87D69D00EBBF55 /* C-07-Nausea_Vomitting.pdf in Resources */,
+				5450DE371E87D69D00EBBF55 /* E-12-Neonatal_Anaesthesia_NICU.pdf in Resources */,
+				5450DE571E87D69D00EBBF55 /* O-43-Epidurals.pdf in Resources */,
+				5450DE301E87D69D00EBBF55 /* C-05-Premedication.pdf in Resources */,
+				5450DE431E87D69D00EBBF55 /* I-24-Ultrasound_Guided_Blocks.pdf in Resources */,
+				5450DE311E87D69D00EBBF55 /* C-06-Common_Medical_Conditions.pdf in Resources */,
+				5450DE2F1E87D69D00EBBF55 /* C-04-Preoperative_Evaluation.pdf in Resources */,
+				5450DE331E87D69D00EBBF55 /* C-08-Emergence_delirium.pdf in Resources */,
+				5450DE391E87D69D00EBBF55 /* F-14-Paediatric_Cardiac_Anaesthesia.pdf in Resources */,
+				5450DE4E1E87D69D00EBBF55 /* M-34-Acute_Epiglottitis.pdf in Resources */,
 				54C40F591E858F3B000E0CF8 /* Main.storyboard in Resources */,
+				5450DE3F1E87D69D00EBBF55 /* I-20-Regional_Anaesthesia_Workflow.pdf in Resources */,
+				5450DE551E87D69D00EBBF55 /* O-41-Children's_Pain_Service.pdf in Resources */,
+				5450DE501E87D69D00EBBF55 /* M-36-Latex_Allergy.pdf in Resources */,
+				5450DE461E87D69D00EBBF55 /* J-26-Patient_Transport.pdf in Resources */,
+				5450DE4B1E87D69D00EBBF55 /* M-31-Laryngospasm.pdf in Resources */,
+				5450DE521E87D69D00EBBF55 /* M-38-Local_Anaesthetic_Toxicity.pdf in Resources */,
+				5450DE4D1E87D69D00EBBF55 /* M-33-Post_Adenotonsillectomy_Bleeding.pdf in Resources */,
+				5450DE3C1E87D69D00EBBF55 /* F-17-Prophylaxis_for_Infective_Endocarditis.pdf in Resources */,
+				5450DE421E87D69D00EBBF55 /* I-23-Central_Neuraxial_Block.pdf in Resources */,
+				5450DE2E1E87D69D00EBBF55 /* B-03-Preoperative_preparation_and_induction_techniques.pdf in Resources */,
+				5450DE381E87D69D00EBBF55 /* F-13-Common_Cardiac_Conditions.pdf in Resources */,
+				5450DE591E87D69D00EBBF55 /* P-45-Chronic_Pain.pdf in Resources */,
+				5450DE451E87D69D00EBBF55 /* index.txt in Resources */,
+				5450DE561E87D69D00EBBF55 /* O-42-Patient_Controlled_Analgesia.pdf in Resources */,
+				5450DE3D1E87D69D00EBBF55 /* G-18-Diagnostic_Imaging.pdf in Resources */,
+				5450DE411E87D69D00EBBF55 /* I-22-Peripheral_Nerve_Block.pdf in Resources */,
+				5450DE511E87D69D00EBBF55 /* M-37-Malignant_Hyperthermia.pdf in Resources */,
+				5450DE351E87D69D00EBBF55 /* C-10-Equipment.pdf in Resources */,
+				5450DE4C1E87D69D00EBBF55 /* M-32-Hypercyanotic_Tet_Spells.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,8 +662,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54C40F561E858F3B000E0CF8 /* ViewController.swift in Sources */,
+				5450DE631E87D9A200EBBF55 /* NavVC.swift in Sources */,
 				54C40F541E858F3B000E0CF8 /* AppDelegate.swift in Sources */,
+				5450DE5C1E87D86500EBBF55 /* tabControllerVC.swift in Sources */,
+				54B7BA971E891F05005F1075 /* HandbookVC.swift in Sources */,
 				543480871E864ABC004D837F /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
