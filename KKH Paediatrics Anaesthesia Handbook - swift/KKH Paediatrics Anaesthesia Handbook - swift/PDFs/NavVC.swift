@@ -62,7 +62,6 @@ class NavVC: UIViewController {
     func animateMarkerToIndex (index : Int){
         UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
             let view = self.navbar.viewWithTag(index)
-            print(view?.frame)
             self.marker.center = (view?.center)!
         }, completion: nil)
     }
