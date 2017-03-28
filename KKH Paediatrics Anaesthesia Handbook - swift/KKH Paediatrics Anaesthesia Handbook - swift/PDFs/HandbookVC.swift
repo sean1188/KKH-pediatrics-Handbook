@@ -8,7 +8,9 @@
 
 import UIKit
 
-class HandbookVC: UIViewController {
+class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var search_backdrop: UIView!
@@ -21,14 +23,30 @@ class HandbookVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         //styling
-        searchButton.titleLabel?.textColor = UIColor.init().secondaryColor()
         search_backdrop.layer.cornerRadius = search_backdrop.frame.size.width/2
     }
     
     func initHandbooks (){
         
     }
+    
+//MARK: - collectionvie delegate/datasource
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        <#code#>
+    }
    
 
 }

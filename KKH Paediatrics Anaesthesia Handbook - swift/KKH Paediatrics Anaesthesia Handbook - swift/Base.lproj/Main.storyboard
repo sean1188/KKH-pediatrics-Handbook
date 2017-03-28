@@ -280,14 +280,45 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NOc-Tx-n2N">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="NOc-Tx-n2N" customClass="HandbookCollectionViewCell" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target">
                                         <rect key="frame" x="9" y="0.0" width="325" height="79"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="325" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98w-cX-bwz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="79" height="79"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="79" id="rjt-5a-IdK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="42"/>
+                                                    <color key="textColor" red="0.31449732180000001" green="0.57211345430000005" blue="0.81978327039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gp8-pj-3Ex">
+                                                    <rect key="frame" x="92" y="8" width="225" height="61"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.96582657100000002" green="0.31157219409999998" blue="0.3067167401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.31449732180000001" green="0.57211345430000005" blue="0.81978327039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Gp8-pj-3Ex" firstAttribute="leading" secondItem="98w-cX-bwz" secondAttribute="trailing" constant="13" id="8n4-mH-iXF"/>
+                                            <constraint firstItem="98w-cX-bwz" firstAttribute="leading" secondItem="NOc-Tx-n2N" secondAttribute="leading" id="MPQ-NV-wKr"/>
+                                            <constraint firstAttribute="bottom" secondItem="98w-cX-bwz" secondAttribute="bottom" id="Rga-WD-UkU"/>
+                                            <constraint firstItem="Gp8-pj-3Ex" firstAttribute="top" secondItem="NOc-Tx-n2N" secondAttribute="topMargin" id="arY-Fq-MXs"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="Gp8-pj-3Ex" secondAttribute="bottom" constant="2" id="fGe-zT-MjF"/>
+                                            <constraint firstItem="98w-cX-bwz" firstAttribute="top" secondItem="NOc-Tx-n2N" secondAttribute="top" id="hSh-o4-gI4"/>
+                                            <constraint firstItem="Gp8-pj-3Ex" firstAttribute="trailing" secondItem="NOc-Tx-n2N" secondAttribute="trailingMargin" id="miB-8P-FdY"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="indexLabel" destination="98w-cX-bwz" id="lgc-Kr-cJC"/>
+                                            <outlet property="titleLabel" destination="Gp8-pj-3Ex" id="MYQ-NO-Q0g"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -337,7 +368,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="23"/>
                                 <state key="normal" title="">
-                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.31449732184410095" green="0.57211345434188843" blue="0.81978327035903931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                         </subviews>
@@ -366,13 +397,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="RUl-xU-kvE" id="kfR-iY-9Us"/>
                         <outlet property="searchButton" destination="dVp-Od-yvw" id="nEa-qp-fnb"/>
                         <outlet property="search_backdrop" destination="val-xZ-IdL" id="MZW-6e-PV0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iB4-ET-lAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-207" y="640"/>
+            <point key="canvasLocation" x="-207.19999999999999" y="639.13043478260875"/>
         </scene>
     </scenes>
     <resources>
