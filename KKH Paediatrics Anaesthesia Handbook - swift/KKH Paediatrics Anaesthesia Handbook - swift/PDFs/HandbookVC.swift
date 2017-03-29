@@ -12,21 +12,30 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
     var manager = PDFManager.init()
     
+    //collectionView
     @IBOutlet weak var collectionView: UICollectionView!
-    var dispArray = [String]()
+    var collectionView_dispArray = [String]()
     @IBOutlet weak var topbar: UIView!
     
+    //search
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var search_backdrop: UIView!
     var search_inital_frame :CGRect = CGRect()
     var SearchBarExpanded :Bool = Bool()
     @IBOutlet var searchField: UITextField!
+    
+    //tableview
+    @IBOutlet var filesView: UIView!
+    var tableview_dispArray = [String]()
+    @IBOutlet weak var tableView: UITableView!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.init().primaryColor()
         SearchBarExpanded = false
-        dispArray = manager.chapters_NAME
+        collectionView_dispArray = manager.chapters_NAME
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -70,7 +79,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dispArray.count
+        return collectionView_dispArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -79,7 +88,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         cell.backgroundColor = UIColor.init().secondaryColor()
         cell.indexLabel.textColor = UIColor.init().primaryColor()
         cell.indexLabel.text = String(indexPath.row + 1)
-        cell.titleLabel.text = dispArray[indexPath.row]
+        cell.titleLabel.text = collectionView_dispArray[indexPath.row]
         return cell
     }
 
@@ -90,11 +99,22 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
 //MARK: - tableview delegate/datasource
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tableview_dispArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+    }
     
    
 //MARK: - reusables
     func updatecollectionViewDisplaywithArray (replacement : [String]){
-        dispArray = replacement
+        collectionView_dispArray = replacement
         collectionView.reloadData()
     }
     

@@ -416,11 +416,15 @@
                             <constraint firstItem="ok7-2S-hj1" firstAttribute="top" secondItem="avW-Ld-KAJ" secondAttribute="bottom" id="j3h-zl-b7q"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="collectionView" destination="RUl-xU-kvE" id="kfR-iY-9Us"/>
+                        <outlet property="filesView" destination="Lxg-zM-5fB" id="X7A-LV-RUQ"/>
                         <outlet property="searchButton" destination="dVp-Od-yvw" id="nEa-qp-fnb"/>
                         <outlet property="searchField" destination="Ciw-yX-cia" id="RGf-Db-mCc"/>
                         <outlet property="search_backdrop" destination="val-xZ-IdL" id="MZW-6e-PV0"/>
+                        <outlet property="tableView" destination="aT7-Kr-TsE" id="UGk-0g-DXq"/>
                         <outlet property="topbar" destination="D0D-nf-ezn" id="d3c-Vd-ksD"/>
                     </connections>
                 </viewController>
@@ -436,8 +440,35 @@
                         <outlet property="delegate" destination="YfM-FN-BVq" id="ncq-le-xkj"/>
                     </connections>
                 </textField>
+                <view contentMode="scaleToFill" id="Lxg-zM-5fB" userLabel="filesView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aT7-Kr-TsE">
+                            <rect key="frame" x="16" y="20" width="343" height="236"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <prototypes>
+                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="2f9-YM-eGH" customClass="HandbookTableViewCell" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2f9-YM-eGH" id="UeF-qE-1lG">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </tableViewCellContentView>
+                                    <color key="backgroundColor" red="0.31449732180000001" green="0.57211345430000005" blue="0.81978327039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </tableViewCell>
+                            </prototypes>
+                            <connections>
+                                <outlet property="dataSource" destination="YfM-FN-BVq" id="8YD-Sx-qCF"/>
+                                <outlet property="delegate" destination="YfM-FN-BVq" id="YFv-9z-iPa"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.31372549020000001" green="0.57211345430000005" blue="0.81978327039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
             </objects>
-            <point key="canvasLocation" x="-207" y="734"/>
+            <point key="canvasLocation" x="-207" y="976"/>
         </scene>
     </scenes>
     <resources>
