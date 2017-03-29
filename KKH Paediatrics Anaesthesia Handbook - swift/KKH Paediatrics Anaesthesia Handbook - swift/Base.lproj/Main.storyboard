@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JU7-mh-0xZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JU7-mh-0xZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -302,7 +302,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVp-Od-yvw">
-                                        <rect key="frame" x="319.5" y="18.5" width="50.5" height="50.5"/>
+                                        <rect key="frame" x="300.5" y="18.5" width="50.5" height="50.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="dVp-Od-yvw" secondAttribute="height" multiplier="1:1" id="PUc-xG-Spb"/>
                                         </constraints>
@@ -327,7 +327,7 @@
                                     <constraint firstItem="Lze-Be-jPC" firstAttribute="leading" secondItem="3Dh-D3-U5y" secondAttribute="trailing" constant="8" symbolic="YES" id="fjU-XJ-aWU"/>
                                     <constraint firstItem="PIb-9c-n2h" firstAttribute="top" secondItem="Lze-Be-jPC" secondAttribute="bottom" constant="-9" id="gw3-WB-4HK"/>
                                     <constraint firstItem="dVp-Od-yvw" firstAttribute="centerY" secondItem="3Dh-D3-U5y" secondAttribute="centerY" constant="4.75" id="jez-7D-1Od"/>
-                                    <constraint firstItem="dVp-Od-yvw" firstAttribute="trailing" secondItem="D0D-nf-ezn" secondAttribute="trailingMargin" constant="3" id="kBd-j0-Ko1"/>
+                                    <constraint firstItem="dVp-Od-yvw" firstAttribute="trailing" secondItem="D0D-nf-ezn" secondAttribute="trailingMargin" constant="-16" id="kBd-j0-Ko1"/>
                                     <constraint firstItem="PIb-9c-n2h" firstAttribute="bottom" secondItem="dVp-Od-yvw" secondAttribute="bottom" constant="-5" id="lAh-4b-iTG"/>
                                     <constraint firstItem="3Dh-D3-U5y" firstAttribute="leading" secondItem="D0D-nf-ezn" secondAttribute="leading" constant="16" id="luB-7B-GPD"/>
                                     <constraint firstAttribute="bottom" secondItem="PIb-9c-n2h" secondAttribute="bottom" constant="16" id="t1B-C5-Xiw"/>
@@ -348,7 +348,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="NOc-Tx-n2N" customClass="HandbookCollectionViewCell" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target">
-                                        <rect key="frame" x="21" y="0.0" width="334" height="79"/>
+                                        <rect key="frame" x="20.5" y="0.0" width="334" height="79"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="334" height="79"/>

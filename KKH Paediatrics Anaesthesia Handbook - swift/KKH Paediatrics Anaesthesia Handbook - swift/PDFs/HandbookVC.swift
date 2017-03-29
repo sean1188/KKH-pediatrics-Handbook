@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate {
+class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
     
     var manager = PDFManager.init()
     
@@ -38,7 +38,6 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
     
     @IBAction func searchButtonPressed(_ sender: Any) {
-        print("did tap =")
         if SearchBarExpanded {
             collapseSearchBar()
             updatecollectionViewDisplaywithArray(replacement: manager.chapters_NAME)
@@ -85,8 +84,13 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //will display files in chapter
         
     }
+    
+//MARK: - tableview delegate/datasource
+    
+    
    
 //MARK: - reusables
     func updatecollectionViewDisplaywithArray (replacement : [String]){
