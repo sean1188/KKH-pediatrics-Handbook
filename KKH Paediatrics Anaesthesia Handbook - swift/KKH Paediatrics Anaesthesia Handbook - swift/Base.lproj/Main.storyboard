@@ -445,17 +445,17 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aT7-Kr-TsE">
-                            <rect key="frame" x="0.0" y="42" width="375" height="458"/>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aT7-Kr-TsE">
+                            <rect key="frame" x="15" y="42" width="345" height="458"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <color key="separatorColor" white="0.66666666666666663" alpha="0.42875107020547948" colorSpace="calibratedWhite"/>
                             <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             <prototypes>
                                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="2f9-YM-eGH" customClass="HandbookTableViewCell" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="28" width="345" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2f9-YM-eGH" id="UeF-qE-1lG">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhR-bd-Fa1">
@@ -469,7 +469,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkK-ii-sKs">
-                                                <rect key="frame" x="56" y="0.0" width="319" height="43"/>
+                                                <rect key="frame" x="56" y="0.0" width="289" height="43"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -514,8 +514,8 @@
                         <constraint firstAttribute="trailing" secondItem="f8z-NJ-vtu" secondAttribute="trailing" id="MFy-EZ-lUP"/>
                         <constraint firstItem="aT7-Kr-TsE" firstAttribute="top" secondItem="f8z-NJ-vtu" secondAttribute="bottom" constant="8" id="NHy-AX-qpc"/>
                         <constraint firstItem="f8z-NJ-vtu" firstAttribute="top" secondItem="Lxg-zM-5fB" secondAttribute="top" id="OUZ-sC-2ZO"/>
-                        <constraint firstItem="aT7-Kr-TsE" firstAttribute="leading" secondItem="Lxg-zM-5fB" secondAttribute="leading" id="UKR-BN-RGb"/>
-                        <constraint firstAttribute="trailing" secondItem="aT7-Kr-TsE" secondAttribute="trailing" id="ckJ-y2-EZo"/>
+                        <constraint firstItem="aT7-Kr-TsE" firstAttribute="leading" secondItem="Lxg-zM-5fB" secondAttribute="leading" constant="15" id="UKR-BN-RGb"/>
+                        <constraint firstAttribute="trailing" secondItem="aT7-Kr-TsE" secondAttribute="trailing" constant="15" id="ckJ-y2-EZo"/>
                         <constraint firstAttribute="bottom" secondItem="aT7-Kr-TsE" secondAttribute="bottom" id="lFM-FO-KGz"/>
                     </constraints>
                 </view>

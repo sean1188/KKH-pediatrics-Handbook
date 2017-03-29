@@ -116,17 +116,31 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
 //MARK: - tableview delegate/datasource
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return tableview_dispArray.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableview_dispArray.count
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = UIColor.clear
+        return view
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HandbookTableViewCell
-        cell.index.text = String(indexPath.row + 1)
-        cell.chapterName.text = tableview_dispArray[indexPath.row]
+        cell.index.text = String(indexPath.section + 1)
+        cell.chapterName.text = tableview_dispArray[indexPath.section]
         cell.backgroundColor = UIColor.init().secondaryColor()
         cell.index.textColor = UIColor.init().primaryColor()
         cell.layer.cornerRadius = 10.0
