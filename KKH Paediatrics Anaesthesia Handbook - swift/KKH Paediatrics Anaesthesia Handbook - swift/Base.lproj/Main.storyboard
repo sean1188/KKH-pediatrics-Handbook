@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JU7-mh-0xZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JOc-z6-eFK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,6 +17,22 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="LY8-s1-jKX">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="JOc-z6-eFK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Nnj-3j-iom">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JU7-mh-0xZ" kind="relationship" relationship="rootViewController" id="cGW-vl-UrS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHv-nT-8Ll" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1047" y="-54"/>
+        </scene>
         <!--Nav controller-->
         <scene sceneID="EpP-kX-8vL">
             <objects>
@@ -221,6 +237,7 @@
                             <constraint firstAttribute="trailing" secondItem="Aqb-se-YGU" secondAttribute="trailing" id="cXm-Y1-UDj"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Wr0-6a-bWT"/>
                     <connections>
                         <outlet property="bgView" destination="fDQ-IC-Eu7" id="nKx-0n-oh0"/>
                         <outlet property="marker" destination="VW7-Wc-fyk" id="TnM-Wu-lPE"/>

@@ -6,8 +6,8 @@ target 'KKH Paediatrics Anaesthesia Handbook - swift' do
   use_frameworks!
 
   # Pods for KKH Paediatrics Anaesthesia Handbook - swift
-  pod "RATreeView", "~> 2.1.2"
   pod 'PDFReader'
+  pod "RATreeView", "~> 2.1.2"
   pod 'SwiftyJSON'
   target 'KKH Paediatrics Anaesthesia Handbook - swiftTests' do
     inherit! :search_paths

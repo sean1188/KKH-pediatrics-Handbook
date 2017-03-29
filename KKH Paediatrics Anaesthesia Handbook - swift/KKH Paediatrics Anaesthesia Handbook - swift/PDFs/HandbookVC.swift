@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PDFReader
 
 class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
     
@@ -25,6 +26,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     @IBOutlet var searchField: UITextField!
     
     //tableview
+    var chapterIndex = 0
     @IBOutlet var filesView: UIView!
     var tableview_dispArray = [String]()
     @IBOutlet weak var tableView: UITableView!
@@ -44,13 +46,13 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
     override func viewDidAppear(_ animated: Bool) {
         //styling
-        search_backdrop.layer.cornerRadius = search_backdrop.frame.size.width/2
+        search_backdrop = search_backdrop.roundify_circle
         topbar.backgroundColor = UIColor.init().primaryColor()
-        search_inital_frame = search_backdrop.frame
     }
     
     
     @IBAction func searchButtonPressed(_ sender: Any) {
+        searchButton.isEnabled = false
         if isViewingChapter {
             //dismiss chapter files view
             isViewingChapter = false
@@ -61,6 +63,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         //search Operation
         if SearchBarExpanded {
             collapseSearchBar()
+            
         }
         else{
             expandSearchBar()
@@ -98,7 +101,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HandbookCollectionViewCell
         //styling
-        cell.layer.cornerRadius     = 10.0
+        _ = cell.roundify_slight
         cell.backgroundColor        = UIColor.init().secondaryColor()
         cell.indexLabel.textColor   = UIColor.init().primaryColor()
         
@@ -123,6 +126,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         isViewingChapter = true
         searchButton.setTitle("X", for: .normal)
         updateTableViewDisplaywithArray(replacement: manager.filesForChapteratIndex(indexPath.row).0)
+        chapterIndex = indexPath.row
         presentFilesViewwithTitile(title: manager.chapters_NAME[indexPath.row])
     }
     
@@ -156,8 +160,21 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         cell.chapterName.text = tableview_dispArray[indexPath.section]
         cell.backgroundColor = UIColor.init().secondaryColor()
         cell.index.textColor = UIColor.init().primaryColor()
-        cell.layer.cornerRadius = 10.0
+        _ = cell.roundify_slight
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if isViewingChapter {
+            let urlName = manager.filePaths[manager.filesForChapteratIndex(chapterIndex).1[indexPath.section]]
+            print(urlName)
+            openPDFwithpath(path: urlName)
+        }
+        else{
+            let cell = tableView.cellForRow(at: indexPath) as! HandbookTableViewCell
+            openPDFwithpath(path: cell.chapterName.text!)
+        }
+        
     }
     
    
@@ -169,12 +186,14 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }
     
     func expandSearchBar (){
+        search_inital_frame = search_backdrop.frame
         searchButton.setTitle("X", for: .normal)
         presentFilesViewwithTitile(title: "Enter Text to Search")
         UIView.animate(withDuration: 0.3, delay: 0
             , usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
             self.search_backdrop.frame = CGRect.init(x: 10, y: Int(self.search_backdrop.frame.origin.y), width: Int(self.view.frame.size.width - 20), height: Int(self.search_backdrop.frame.size.height))
         }, completion: { (s) in
+            self.searchButton.isEnabled = true
             self.searchField.frame.size = CGSize.init(width: self.search_backdrop.frame.size.width - self.searchButton.frame.size.width - 40, height: self.search_backdrop.frame.size.height)
             self.searchField.center = self.search_backdrop.center
             self.view.addSubview(self.searchField)
@@ -191,7 +210,9 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         dismissfilesView()
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
             self.search_backdrop.frame = self.search_inital_frame
-        }, completion: nil)
+        }, completion: {(s) in
+            self.searchButton.isEnabled = true
+        })
         SearchBarExpanded = false
     }
     
@@ -205,7 +226,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: { 
             self.filesView.frame = CGRect.init(x: 0, y: self.topbar.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.height - 85)
         }) { (z) in
-            
+            self.searchButton.isEnabled = true
         }
     }
     
@@ -215,7 +236,16 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
              self.filesView.frame = CGRect.init(x: 0, y: self.view.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.height - 100)
         }) { (z) in
              self.filesView.removeFromSuperview()
+            self.searchButton.isEnabled = true
         }
+    }
+    
+    func openPDFwithpath (path:String) {
+        let documentFileURL = Bundle.main.url(forResource: path.substring(to: path.index(path.endIndex, offsetBy: -4)), withExtension: "pdf")!
+        let document = PDFDocument(fileURL: documentFileURL)!
+        let readerController = PDFViewController.createNew(with: document)
+        readerController.backgroundColor = UIColor.init().primaryColor()
+        navigationController?.present(readerController, animated: true, completion: nil)
     }
 
 

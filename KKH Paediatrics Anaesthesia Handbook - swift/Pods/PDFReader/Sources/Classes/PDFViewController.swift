@@ -91,9 +91,19 @@ public final class PDFViewController: UIViewController {
         }
     }
     
+    public override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
+    
+    @IBOutlet weak var backB: UIButton!
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
-    
+        backB.layer.cornerRadius = self.backB.frame.size.height/2
+        backB.backgroundColor = UIColor(red:0.03, green:0.38, blue:0.59, alpha:1.0)
         collectionView.backgroundColor = backgroundColor
         collectionView.register(PDFPageCollectionViewCell.self, forCellWithReuseIdentifier: "page")
         

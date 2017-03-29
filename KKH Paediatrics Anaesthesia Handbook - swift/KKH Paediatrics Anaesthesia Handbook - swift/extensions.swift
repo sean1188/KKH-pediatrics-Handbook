@@ -19,3 +19,17 @@ public extension UIColor {
         return UIColor(red:0.31, green:0.57, blue:0.82, alpha:1.0)
     }
 }
+
+public extension UIView {
+    
+    var roundify_circle: UIView {
+        self.layer.cornerRadius = self.frame.height/2
+        return self
+    }
+    
+    var roundify_slight: UIView {
+        self.layer.cornerRadius = 10.0
+        return self
+    }
+    
+}
