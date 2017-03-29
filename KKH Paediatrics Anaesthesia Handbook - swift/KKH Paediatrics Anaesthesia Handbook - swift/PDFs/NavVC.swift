@@ -21,6 +21,8 @@ class NavVC: UIViewController {
     }
     
     var handbookViewController :UIViewController = HandbookVC()
+    var calcVC :UIViewController = CalcMainVC()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +38,12 @@ class NavVC: UIViewController {
             count = count + 1
         }
         //init tabviews
+        //add in opposite order
+        
+        calcVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "calcVC")
+        self.addChildViewController(calcVC)
+        self.bgView.addSubview(calcVC.view)
+        
         handbookViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "handbookVC")
         self.addChildViewController(handbookViewController)
         self.bgView.addSubview(handbookViewController.view)
@@ -45,10 +53,12 @@ class NavVC: UIViewController {
     
     @IBAction func ref(_ sender: Any) {
         animateMarkerToIndex(index: 1)
+        bgView.bringSubview(toFront: handbookViewController.view)
     }
     
     @IBAction func calc(_ sender: Any) {
         animateMarkerToIndex(index: 2)
+        bgView.bringSubview(toFront: calcVC.view)
     }
     
     @IBAction func crisis(_ sender: Any) {
