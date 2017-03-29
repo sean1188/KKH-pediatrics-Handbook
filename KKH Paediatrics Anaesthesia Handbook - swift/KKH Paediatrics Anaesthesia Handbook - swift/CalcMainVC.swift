@@ -12,11 +12,16 @@ class CalcMainVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.init().primaryColor()
     }
 
+    @IBAction func bmi(_ sender: Any) {
+        let bmicontroller = UIStoryboard.init(name: "calculators", bundle: nil).instantiateViewController(withIdentifier: "bmi")
+        navigationController?.present(bmicontroller, animated: true, completion: nil)
+    }
 
+    @IBAction func drug(_ sender: Any) {
+    }
 
 }

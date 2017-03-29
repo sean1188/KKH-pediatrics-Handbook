@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		542ED7BA1E8BB3060002FD43 /* CalcMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542ED7B91E8BB3060002FD43 /* CalcMainVC.swift */; };
+		542ED7BC1E8BB9360002FD43 /* BMIvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542ED7BB1E8BB9360002FD43 /* BMIvc.swift */; };
+		542ED7BE1E8BB9B00002FD43 /* calculators.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542ED7BD1E8BB9B00002FD43 /* calculators.storyboard */; };
 		543480871E864ABC004D837F /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543480861E864ABC004D837F /* extensions.swift */; };
 		5436971A1E8A4BA0001D80F4 /* HandbookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543697191E8A4BA0001D80F4 /* HandbookCollectionViewCell.swift */; };
 		543BAE211E8A66E3009CC8E5 /* PDFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543BAE201E8A66E3009CC8E5 /* PDFManager.swift */; };
@@ -96,6 +98,8 @@
 		0B5581379DAC5BA194847E62 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKH Paediatrics Anaesthesia Handbook - swift/Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig"; sourceTree = "<group>"; };
 		2D2D53006FBC7597CC52C2CF /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		542ED7B91E8BB3060002FD43 /* CalcMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcMainVC.swift; sourceTree = "<group>"; };
+		542ED7BB1E8BB9360002FD43 /* BMIvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIvc.swift; sourceTree = "<group>"; };
+		542ED7BD1E8BB9B00002FD43 /* calculators.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = calculators.storyboard; sourceTree = "<group>"; };
 		543480861E864ABC004D837F /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		543697191E8A4BA0001D80F4 /* HandbookCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandbookCollectionViewCell.swift; sourceTree = "<group>"; };
 		543BAE201E8A66E3009CC8E5 /* PDFManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFManager.swift; sourceTree = "<group>"; };
@@ -205,6 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				542ED7B91E8BB3060002FD43 /* CalcMainVC.swift */,
+				542ED7BB1E8BB9360002FD43 /* BMIvc.swift */,
+				542ED7BD1E8BB9B00002FD43 /* calculators.storyboard */,
 			);
 			name = calculators;
 			sourceTree = "<group>";
@@ -517,6 +523,7 @@
 				5450DE521E87D69D00EBBF55 /* M-38-Local_Anaesthetic_Toxicity.pdf in Resources */,
 				5450DE4D1E87D69D00EBBF55 /* M-33-Post_Adenotonsillectomy_Bleeding.pdf in Resources */,
 				5450DE3C1E87D69D00EBBF55 /* F-17-Prophylaxis_for_Infective_Endocarditis.pdf in Resources */,
+				542ED7BE1E8BB9B00002FD43 /* calculators.storyboard in Resources */,
 				5450DE421E87D69D00EBBF55 /* I-23-Central_Neuraxial_Block.pdf in Resources */,
 				5450DE2E1E87D69D00EBBF55 /* B-03-Preoperative_preparation_and_induction_techniques.pdf in Resources */,
 				5450DE381E87D69D00EBBF55 /* F-13-Common_Cardiac_Conditions.pdf in Resources */,
@@ -699,6 +706,7 @@
 				5436971A1E8A4BA0001D80F4 /* HandbookCollectionViewCell.swift in Sources */,
 				543480871E864ABC004D837F /* extensions.swift in Sources */,
 				5448347D1E8B8A1100CC1E09 /* HandbookTableViewCell.swift in Sources */,
+				542ED7BC1E8BB9360002FD43 /* BMIvc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

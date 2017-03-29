@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontAwesome.otf">
+            <string>FontAwesome</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--BMI-->
+        <scene sceneID="ErW-JX-Txk">
+            <objects>
+                <viewController storyboardIdentifier="bmi" title="BMI" id="Tnp-et-Yw6" customClass="BMIvc" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gyb-r2-qDE"/>
+                        <viewControllerLayoutGuide type="bottom" id="ueZ-sK-6Bw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZUk-ll-wZ1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI Calculator." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hT-G9-rrc">
+                                <rect key="frame" x="66" y="38" width="221" height="30"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lqm-OA-QbN">
+                                <rect key="frame" x="16" y="36.5" width="42" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="iSy-Uk-nXo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouQ-Dd-5h1">
+                                <rect key="frame" x="319" y="33" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ef6-xT-7UU"/>
+                                    <constraint firstAttribute="width" constant="40" id="zYD-t7-nyi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="Tnp-et-Yw6" eventType="touchUpInside" id="aHy-QG-gFd"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aGe-UT-jgU">
+                                <rect key="frame" x="83" y="127" width="209" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Male"/>
+                                    <segment title="Female"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9hT-G9-rrc" firstAttribute="centerY" secondItem="ouQ-Dd-5h1" secondAttribute="centerY" id="0Nu-X2-XpP"/>
+                            <constraint firstItem="Lqm-OA-QbN" firstAttribute="leading" secondItem="ZUk-ll-wZ1" secondAttribute="leadingMargin" id="1aw-ik-XCm"/>
+                            <constraint firstItem="9hT-G9-rrc" firstAttribute="leading" secondItem="Lqm-OA-QbN" secondAttribute="trailing" constant="8" symbolic="YES" id="7Al-Mr-FaV"/>
+                            <constraint firstItem="ouQ-Dd-5h1" firstAttribute="leading" secondItem="9hT-G9-rrc" secondAttribute="trailing" constant="32" id="HUd-w0-MGO"/>
+                            <constraint firstItem="ouQ-Dd-5h1" firstAttribute="trailing" secondItem="ZUk-ll-wZ1" secondAttribute="trailingMargin" id="HVg-dO-xYR"/>
+                            <constraint firstItem="Lqm-OA-QbN" firstAttribute="centerY" secondItem="9hT-G9-rrc" secondAttribute="centerY" id="INy-DG-ZoM"/>
+                            <constraint firstItem="9hT-G9-rrc" firstAttribute="top" secondItem="gyb-r2-qDE" secondAttribute="bottom" constant="18" id="JfD-6r-9BF"/>
+                            <constraint firstItem="ouQ-Dd-5h1" firstAttribute="top" secondItem="gyb-r2-qDE" secondAttribute="bottom" constant="13" id="TqO-2i-cxF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backB" destination="ouQ-Dd-5h1" id="uld-sH-02m"/>
+                        <outlet property="genderSegment" destination="aGe-UT-jgU" id="tly-LF-PBP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hs1-TF-t3M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.40000000000001" y="-188.45577211394306"/>
+        </scene>
+    </scenes>
+</document>
