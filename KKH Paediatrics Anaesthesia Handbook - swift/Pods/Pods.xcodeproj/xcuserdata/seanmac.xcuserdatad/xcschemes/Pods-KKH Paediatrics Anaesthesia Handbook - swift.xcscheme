@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CC6AFD6297FB67F1A6A3F70D16167EB1"
+               BlueprintIdentifier = "CE8F7D2A00903024077C82146E80207C"
                BuildableName = "Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift.framework"
                BlueprintName = "Pods-KKH Paediatrics Anaesthesia Handbook - swift"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CC6AFD6297FB67F1A6A3F70D16167EB1"
+            BlueprintIdentifier = "CE8F7D2A00903024077C82146E80207C"
             BuildableName = "Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift.framework"
             BlueprintName = "Pods-KKH Paediatrics Anaesthesia Handbook - swift"
             ReferencedContainer = "container:Pods.xcodeproj">

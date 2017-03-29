@@ -271,7 +271,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lze-Be-jPC">
-                                        <rect key="frame" x="66" y="18" width="143" height="41"/>
+                                        <rect key="frame" x="66" y="19" width="143" height="40"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="29"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -322,7 +322,7 @@
                                     <constraint firstItem="3Dh-D3-U5y" firstAttribute="leading" secondItem="D0D-nf-ezn" secondAttribute="leadingMargin" constant="8" id="D5G-VT-Ej6"/>
                                     <constraint firstItem="dVp-Od-yvw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PIb-9c-n2h" secondAttribute="trailing" constant="8" symbolic="YES" id="Lf6-tm-Wnx"/>
                                     <constraint firstItem="val-xZ-IdL" firstAttribute="centerX" secondItem="dVp-Od-yvw" secondAttribute="centerX" id="UWo-9M-af8"/>
-                                    <constraint firstItem="3Dh-D3-U5y" firstAttribute="top" secondItem="Lze-Be-jPC" secondAttribute="top" id="dSk-Ed-ISR"/>
+                                    <constraint firstItem="3Dh-D3-U5y" firstAttribute="top" secondItem="Lze-Be-jPC" secondAttribute="top" constant="-1" id="dSk-Ed-ISR"/>
                                     <constraint firstItem="dVp-Od-yvw" firstAttribute="width" secondItem="3Dh-D3-U5y" secondAttribute="width" multiplier="1.2" id="fJx-5f-MTF"/>
                                     <constraint firstItem="Lze-Be-jPC" firstAttribute="leading" secondItem="3Dh-D3-U5y" secondAttribute="trailing" constant="8" symbolic="YES" id="fjU-XJ-aWU"/>
                                     <constraint firstItem="PIb-9c-n2h" firstAttribute="top" secondItem="Lze-Be-jPC" secondAttribute="bottom" constant="-9" id="gw3-WB-4HK"/>

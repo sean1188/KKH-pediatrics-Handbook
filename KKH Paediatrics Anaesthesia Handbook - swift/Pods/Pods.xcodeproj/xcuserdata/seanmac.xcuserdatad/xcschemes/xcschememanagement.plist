@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>PDFReader.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-KKH Paediatrics Anaesthesia Handbook - swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,17 +37,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>11363079C8CFE12D5835AFDF3BC8D6A8</key>
+		<key>6599D447C61BD5FA8BEE8DD99A4BD628</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5B9F6C68DE68CBB2D85EFF9CCB3229A4</key>
+		<key>74D6F85A3F5ED239231351196DDF6028</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CC6AFD6297FB67F1A6A3F70D16167EB1</key>
+		<key>CE8F7D2A00903024077C82146E80207C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +58,11 @@
 			<true/>
 		</dict>
 		<key>EB24B369FEEB11155B325601123660FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F710BBECB76266FF75359E63DE720D2D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
