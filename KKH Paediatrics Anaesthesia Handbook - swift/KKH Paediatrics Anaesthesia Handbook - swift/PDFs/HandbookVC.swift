@@ -188,7 +188,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     func expandSearchBar (){
         search_inital_frame = search_backdrop.frame
         searchButton.setTitle("X", for: .normal)
-        presentFilesViewwithTitile(title: "Enter Text to Search")
+        presentFilesViewwithTitile(title: "Type to Search")
         UIView.animate(withDuration: 0.3, delay: 0
             , usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
             self.search_backdrop.frame = CGRect.init(x: 10, y: Int(self.search_backdrop.frame.origin.y), width: Int(self.view.frame.size.width - 20), height: Int(self.search_backdrop.frame.size.height))
