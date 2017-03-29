@@ -7,203 +7,260 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16680138697F204B25CF3CDCE88B4C5D /* RATreeNodeItem+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F531158B4A2389E21DAD940EDD7E198 /* RATreeNodeItem+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1A9243C292F64DDE818C638F4561ADCB /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 313635D9B3DAF2437ABF43A4FE191C8B /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-dummy.m */; };
-		1F3699CF61926A9D9DF4BB9BBB055590 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC35748F34422D435E36B103DCD6F7E3 /* SwiftyJSON.swift */; };
-		24E65817056D65794CDB47D595C244B1 /* RATreeView+TableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FBE0441926293A0B751E01473348FA3 /* RATreeView+TableViewDataSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		26F55088EBD6EEB7AFA316B457A81902 /* PDFReader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF88587DAAF9F1281BED37720F0A4D2E /* PDFReader.storyboard */; };
-		275C4471D3D39498ED4C6E6BB130A5FA /* RATreeView_ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = FA7571463A770AA697C886E0B4FEE10A /* RATreeView_ClassExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2ACD0B6914614B4CAE70AAF42262F7BB /* RATreeNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47F0D684AF0BC2F363FB125D56B4EC6 /* RATreeNodeController.m */; };
-		354C9C2FF3B323AEB1B33DBB4A613DAD /* PDFReader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C8DDFD94EBFCD182C00F678A8A442EE /* PDFReader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3763DFB4090BF4D3F5BE159AA91A4449 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E30958F71A81D9CAA8D011C56C534DE7 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38A136240E0B3891C6A1B30014242B1A /* RATreeNodeItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 4379ADE0BF4B111BC35001EE44A1551C /* RATreeNodeItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		396481B54B7E0E03AF26E328C6598231 /* RATreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 380887F22C6DFFFF940D577228A9F859 /* RATreeNode.m */; };
-		48C25B822947A0CBFB06B9F79060480E /* RATreeView+TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC7B3D2FBD0740A7865D202360DB520 /* RATreeView+TableViewDataSource.m */; };
-		4E2FB759E3AE4355F939699360A886DA /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D380EC3CDFA71761FD0B6BEA4FBA59 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		509D4CB583EE2D735FE5123BE1685199 /* RATreeNodeItem+ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = F34A18625B3058121E80E0E7A864DF74 /* RATreeNodeItem+ClassExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		51001C5B6BD051843B043B7C1F8C03A7 /* RATreeNodeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 529A9AB4B2E81BE728D8F4D94AF1A417 /* RATreeNodeItem.m */; };
+		041FB92258FCEFFF22B954AC915642C7 /* RATableView.h in Headers */ = {isa = PBXBuildFile; fileRef = CA3F263362B009DFC60DBAC5C45B2EA0 /* RATableView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		08F70BDD45F0B73F1AD27507808FEC3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		0B9FAA59E53F8381BAD75316E70145BE /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0565F9D22AC98D5E5101F9E6189BFE /* IQUIView+IQKeyboardToolbar.swift */; };
+		0CAC8827F129FD134E65F40C0B5C7AB2 /* RATreeNodeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D01D53D66755D2025D7FC0A131378 /* RATreeNodeItem.m */; };
+		0D2FA7B86DA7BC8DC4BD728EC042B434 /* RATreeNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D21923C3299BEE6D47DDA733FA827C38 /* RATreeNodeController.m */; };
+		123D28717B28730D7DDD56E56B646294 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC167FFF865B90E67EB1059AC7938A7 /* IQUITextFieldView+Additions.swift */; };
+		172639B132CDBE78B1CF23F12376104A /* RATreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 587C90FE16FC49C7A06FB049500B637F /* RATreeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C8F85A1033B5AE0FE8126CE2E937E9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */; };
+		1CE27BF793DD80A998A219A20BC784CC /* RATreeView+RATreeNodeCollectionControllerDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = D35D817F34DD603CE07DD819C4FE1CEA /* RATreeView+RATreeNodeCollectionControllerDataSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1D80C97A60B2AECBBBBC7569CF051885 /* RATreeView+TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89212F69FAA20DCE63ECF4A171D848C9 /* RATreeView+TableViewDelegate.m */; };
+		200A4AADB1D7887FE3C3E0C7E71D5B42 /* RATreeNodeItem+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FB4B77B6959495B0899C420B510B29D /* RATreeNodeItem+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		22BF5066806248FBD63CD64193B95AB6 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0C5CD0A7BA0D68325A8F6F93686E49 /* IQUIScrollView+Additions.swift */; };
+		2580A8A94A6A74A5C93D0EB98D2628F4 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B2F7C553CE74C86B327D57848976AB /* SwiftyJSON.swift */; };
+		26F55088EBD6EEB7AFA316B457A81902 /* PDFReader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E0C6402EE83ED974B8FCD104263ED8 /* PDFReader.storyboard */; };
+		2803BDEAFC524B1C1B119E6EF783790F /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 313635D9B3DAF2437ABF43A4FE191C8B /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-dummy.m */; };
+		2BC48BA9EC7B6F6F334FB9CF2758D461 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED659FC833BB6C7A793F5C49158AEB6 /* IQUIView+Hierarchy.swift */; };
+		2CD53E2EC088562078BAE8D69B8B8723 /* RATreeView+Enums.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF5FEE7DCA488BE2D8E638C571A1221 /* RATreeView+Enums.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2EBD7B6D6EEBAD72870AECB44D1E3AE2 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB0662FC9A41A8072344C61B2111C5 /* IQBarButtonItem.swift */; };
+		2F113905B7AE465E1B88E636B85FC68D /* RATreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 71ED5BC7B9F172EF9CCDA9663AD652CC /* RATreeNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		32D47B0AE0C145C1E9662CC2468FED0E /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8F33054474BFD36C9E62B6EDEA74FB /* IQTitleBarButtonItem.swift */; };
+		354C9C2FF3B323AEB1B33DBB4A613DAD /* PDFReader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74C42ADE2CD783E5263E57757869F5E3 /* PDFReader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		368FDB6FA35A644A209E12CAD24AAE1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		37BC6CE75069433DAF43CA52B6C21348 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D380EC3CDFA71761FD0B6BEA4FBA59 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48527ACD812EA8CE549D5034138CFB49 /* RATreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC7BFFC52782566FF244A78E044215C /* RATreeNode.m */; };
+		4AAD388B87429D2A01FD94C398E9D71F /* RATreeView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A4398D6B5EBE9EAA304E0C7BFFD448 /* RATreeView-dummy.m */; };
 		521D4E53131FBC1BD72CEC9B9695B6D4 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5996B410DA4764C457E1DEE6BE40EB1B /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57505DD3BB3E355DC439057285AF1770 /* PDFThumbnailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E27F0491F7530774E28EFDA25204A20 /* PDFThumbnailCollectionViewController.swift */; };
-		578A7FA3E5CC24D04C6C4016ABF43CEB /* RATreeNodeCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A63203584AFA267480597E8FD299C057 /* RATreeNodeCollectionController.m */; };
-		5CACE961A3E67B969AA4AB1220AF7141 /* PDFThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D18CFE6009E6C9366C651AFAA4CEFC /* PDFThumbnailCell.swift */; };
-		6E2AEC6419D4DEFFE04E75C375F56BB6 /* RATreeView+Enums.m in Sources */ = {isa = PBXBuildFile; fileRef = D722DF008082748B88DA489C51969BDC /* RATreeView+Enums.m */; };
-		77A27BD4A02B8BBCBE814EF5B842E5E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		7CEE7E3545F56F1D530A420F2EFA39E0 /* PDFReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D106BD57E82145B322B7EDF221039E /* PDFReader-dummy.m */; };
+		57505DD3BB3E355DC439057285AF1770 /* PDFThumbnailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB67A8118309607C08AAB9D3E83918D6 /* PDFThumbnailCollectionViewController.swift */; };
+		5B981698211292E1F92A21CC9F182675 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1F3BE510FB37AD528B54AE1ABD975 /* IQKeyboardManagerSwift-dummy.m */; };
+		5C1B7FB4706A09F7E95F26B02797BE19 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF887D2F626D059894DEFA364870F99A /* IQKeyboardReturnKeyHandler.swift */; };
+		5CACE961A3E67B969AA4AB1220AF7141 /* PDFThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18639CCEB56C1354AF5C00DD02911D54 /* PDFThumbnailCell.swift */; };
+		5F8B1DFEDB780E936489E56E7E8512DD /* RATreeView+TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 795326ADCFCD01D0E16E1240DC2B9EF5 /* RATreeView+TableViewDataSource.m */; };
+		5FE7CEFD685D426884C2A0A6F2766479 /* RATreeNodeItem+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE23F3BE72E1F985BD7EB4E42A1ACB /* RATreeNodeItem+Private.m */; };
+		636530597E89B7AF9AFE18BDF849A91A /* RATreeNodeCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59055D2DE7D4533A411547FABEFA4413 /* RATreeNodeCollectionController.m */; };
+		6AD61CB9876EB93D83F5AE61466189A2 /* RATreeNodeItem+ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E086FD5F3806367F84F5DE239A5F96A /* RATreeNodeItem+ClassExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6DF8E2F374FF33439C10B3325EE5F68D /* RATreeNodeController.h in Headers */ = {isa = PBXBuildFile; fileRef = D3194F3D159CD6322904EED86D126BA0 /* RATreeNodeController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6F300E86A0E3EF95CCF1E445B1BB5327 /* RABatchChanges.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B22C88CAF5E26E39EA3F9570420ADD /* RABatchChanges.m */; };
+		77A27BD4A02B8BBCBE814EF5B842E5E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		7CEE7E3545F56F1D530A420F2EFA39E0 /* PDFReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD70594E712D88F46E901E17A6D2121 /* PDFReader-dummy.m */; };
 		7E8900E69949E485FBA5E9FE4BC643B5 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E05DD98A872BCA20715DCAE1F5525F /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F7ADE571593E73F55D2E36353E7051D /* RABatchChanges.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C641E1E64F694D342435B6B2E6FD79E /* RABatchChanges.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7FBBAF9AD7C233D806309C50E100FC3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		870EB3470BBD7DC6064F446141686206 /* RABatchChangeEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D61F0270B1FEEC87FD25BD60DFE1F6 /* RABatchChangeEntity.m */; };
-		8889D8829E1003F3B790766D98406965 /* PDFPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A74DE6AB9F80947114EE749F00E09C /* PDFPageView.swift */; };
-		935E8E9E426BBAEE9D1DA7B3924EEBD8 /* RATreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 141FF2BF8B303917FD447E3006B76BD3 /* RATreeView.m */; };
-		944C273DC3C204DAC0091E19E8FBAD9C /* PDFPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC8A3670AFC5D8233A3CA2E9AE30AD7 /* PDFPageCollectionViewCell.swift */; };
-		96A7784EBA1D7CF1EAB44D9679F62D2E /* RATreeView+TableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B6171607443C0D0AE37E0EFEB062DC36 /* RATreeView+TableViewDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		99AA8B7A79F9A79C57E67B47AA0FAA08 /* RATreeView+RATreeNodeCollectionControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1486D6AC2CFA059B51811116A763B9 /* RATreeView+RATreeNodeCollectionControllerDataSource.m */; };
-		9D510400D1624CAC2C9C2368F689F22F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		7F1749034100949611AC43DB8261B4D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		7FBBAF9AD7C233D806309C50E100FC3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		81C70C413D26C03E37EF0D00800AF62F /* RATreeView+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9EB54B81CB853BDAA393BD406A437A /* RATreeView+Private.m */; };
+		84BCF77C9FA7F0F9BF0495C41C726EA5 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90FE962AD8C6BA9F589826BD72320D56 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		853C941C2F7516201E7F52354E6E9D29 /* RATreeView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F2A090ED2793B085FF2D8CA10F1E719 /* RATreeView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8889D8829E1003F3B790766D98406965 /* PDFPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CC110263F62B46F86F39411DDDCD90 /* PDFPageView.swift */; };
+		89959176E9E2C981CE0A235B706E8AA7 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE878D4834AA83C92744CFE57212F42 /* IQKeyboardManagerConstants.swift */; };
+		8FE36309C937AE207BB029E1109A3284 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		93AA0EC4CBA3B2EB6E38691BD90C7C42 /* RATreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E09F45D098BEA2BEFDC498FE76ABBC4 /* RATreeView.m */; };
+		944C273DC3C204DAC0091E19E8FBAD9C /* PDFPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9400EF424834AB8507183D7BFA6D90 /* PDFPageCollectionViewCell.swift */; };
+		9C18924747EF5B0AC6B901412A1CA242 /* RATreeNode_ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 93EA43324096F25B6E18BFC13BFCDC38 /* RATreeNode_ClassExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9D7957E5DEE51C89F5670E6EFACE0407 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CFCDDCF7C8755DA3B8870F0885F188 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-dummy.m */; };
-		9E808A45F571347A6722C8A94F730B23 /* RATreeNodeCollectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 213295F4E88B139F7A3CCD78C9944E5F /* RATreeNodeCollectionController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A2A4F592264BD0AF8AB11693269749BB /* PDFDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524032399796813CA6917A76A1FF1961 /* PDFDocument.swift */; };
-		A8E3B490A3089D97C0E54FD1F5C9856C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		ABFC6BB5460B3BF71CF7FB18115D4236 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		B0A6C56671209E87CE8440BEDB9ED942 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF87D4D16695FDB323EC4561B7B6439 /* PDFViewController.swift */; };
-		B101ECDB843B8C433FB4FB88F81FA3F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		9E90949B67FC8CEDBAD0BD64DF300812 /* RATreeNodeCollectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C17AA2999B60FD8054D84BF5A05BA1E /* RATreeNodeCollectionController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A2A4F592264BD0AF8AB11693269749BB /* PDFDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF96FC324EDE99E472378E786597580C /* PDFDocument.swift */; };
+		A3DDB7F34163834C669F4333A5CB27F1 /* RATreeView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 91BF1EAC1359AB3FBDDAD9D8A6A1A801 /* RATreeView+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A50218EC76648886FE767F1DCD9626DE /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3D5BD8C88956EA6427DF63B29FCF7 /* IQPreviousNextView.swift */; };
+		A88CFE3F9DCE30C3AA3A2F6086C6EE84 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2825E3E8C128A108E10037BA11CB0 /* IQKeyboardManager.swift */; };
+		A9F1A9CF01AF7F7A691A0A8C9E2D3A71 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC4B1FF0EA6BA61D3DDD3FC3F587F8 /* IQToolbar.swift */; };
+		ABFC6BB5460B3BF71CF7FB18115D4236 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		B00387B24D5227A4BE672A40A3E59035 /* RABatchChangeEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DA20CBDAC14E729CB4831E963EADB9F /* RABatchChangeEntity.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B0A6C56671209E87CE8440BEDB9ED942 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED97104CE5E92CDF21E7805A2E38AAB /* PDFViewController.swift */; };
+		B0E679FF770EE8E7073391580C373D92 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AC4719AEE9BF47059ECAD4973CA639 /* IQTextView.swift */; };
+		B49E26DF5871F564A7C9528173CE2D5F /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F50A3AF63A3EE06BB5A8B1426B5BC7E6 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B67B884920A009720420EBDBB742DBD0 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32584E5F49C9C3025AEEE86ED7CAFF5E /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests-dummy.m */; };
-		B75F6766E580209A46A2E18584A54D69 /* RATableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7680D3155FA92390657972401E70A1C2 /* RATableView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B938B13E418994B223E246161C91F63C /* RATreeNodeItem+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 112AFC131899A7B18C666A9A6C81C5F5 /* RATreeNodeItem+Private.m */; };
-		BF3274EAC67BA3F331D67AAF18BBD624 /* TiledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA1CEEC669A9031550E6993D0CF8F2E /* TiledView.swift */; };
-		C7BF7D62B983B8BDBED17DE3D143904B /* RATreeView+TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7044D866973FCDDAF66D882D49D7AA /* RATreeView+TableViewDelegate.m */; };
-		CC0F978D1BE215602F36CD72E999660C /* RATreeView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533BD2A7C55B89E21DD050DA43718DD /* RATreeView-dummy.m */; };
-		D20DAD0C39D19909CB1A39D4409D19A1 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341D7D01CDB3D1DC0C8AC4FDC9B96E7 /* SwiftyJSON-dummy.m */; };
-		D46C64F81A06C454FBFC9787BE0176F3 /* RABatchChangeEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 4758D28980492737B3AF7D238BAF5A90 /* RABatchChangeEntity.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D7DF30446562DBE12CA2667778A4017B /* RATreeView+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 7268C524262A1B6E5576D5F7CDA06E91 /* RATreeView+Private.m */; };
-		DDF2D0276986B478BD650B18A70FF9A8 /* RATreeView+RATreeNodeCollectionControllerDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5EFA17D541FCDD71DB29556F14CC13 /* RATreeView+RATreeNodeCollectionControllerDataSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EB52E02951F7394CB04B047CC16B9EDB /* RATreeNodeController.h in Headers */ = {isa = PBXBuildFile; fileRef = 56F67DB6AFA1753B94AE3F5EAE292204 /* RATreeNodeController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F0C6947DBB3DC50E1EAD489BC1660F97 /* RABatchChanges.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E72F77A7759C8F1C15BB691CC155C23 /* RABatchChanges.m */; };
-		F2657FC69DB8F08EA3B4CC65D8FFF6CF /* RATreeView+Enums.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F7D325064B119BA5C73282A34B7EB99 /* RATreeView+Enums.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F2CE594C83F50BF91151FE0031A1CE0A /* RATreeView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 266C6E5906DC0525A8E6AA1D4D181C58 /* RATreeView+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F3890A8054B28BD9B0D77E0DCF7B01BC /* RATreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A5037AE3C65F8EBDD61870C440DCC8 /* RATreeNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F436E835A70C2C0F530D8FD2D53E6E88 /* RATreeNode_ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A5FB1F97B87FB946913D798D4FF60CC /* RATreeNode_ClassExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F64EDC9B5EF6D448690B28D66C34E5CE /* RATreeView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EFAD6862950901FF9D4C83D20BAE591 /* RATreeView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7265B6D5B0292ED9969A5CC13A573CD /* RATableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2CE3DCD44F7E03BD344C81F178ED8 /* RATableView.m */; };
-		FDB81EDFD60FEB13EE20215FBD23B02F /* RATreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CBD31C7E16158D5B8D7B1ECC993D885 /* RATreeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7D47016CE4BC38BB914AACD7369F1CC /* RABatchChanges.h in Headers */ = {isa = PBXBuildFile; fileRef = 044F6FBD6969AE519B537A2B76C43222 /* RABatchChanges.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B9557585483AD395045D19F792D8BDE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */; };
+		BCD6B3BA5E1132F0FD49AC39F2BF4D62 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE99BC32232A05158627BD15AF1F4C3 /* IQKeyboardManagerConstantsInternal.swift */; };
+		BDC523617E9FC501B35F68C7940E1138 /* RABatchChangeEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E9807D6433452E4EE5F384460A577A /* RABatchChangeEntity.m */; };
+		BF3274EAC67BA3F331D67AAF18BBD624 /* TiledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31BC09A9F2F737DA93A622AA9B6D36 /* TiledView.swift */; };
+		C759ACB2C97ED8A9EC91C2DF79C95F1D /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC31980396A7FE513F033C807393194 /* IQUIWindow+Hierarchy.swift */; };
+		C92BC0B8E4CBCFD16762838B30654F29 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85653B9E2B67DA8DBD9AE760AD489FDB /* IQUIViewController+Additions.swift */; };
+		CD72BBB031E2FA5877F22616182C8F6E /* RATreeNodeItem.h in Headers */ = {isa = PBXBuildFile; fileRef = FDB9D2625482F95E81C4FDCFC37D8D6B /* RATreeNodeItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D3C412CBA3D205CDBBDE9A5B5976ACC3 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C3184D798EE7CE1674C0ED726C4D93 /* SwiftyJSON-dummy.m */; };
+		D65B8481AFF5531FC2E4382CBA63C057 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 980D0AED378AF243FB77DFA22F4F244E /* IQKeyboardManager.bundle */; };
+		DBE474693745AF02214E41A820066777 /* RATableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B75B55BE78008B6A4A5623A14886306 /* RATableView.m */; };
+		E8BBDB7788B0EA0BD4FC3D94ACD266CA /* RATreeView+Enums.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A6B9558B5112520ED72E956F3F5117 /* RATreeView+Enums.m */; };
+		E9AD3D7B3B4B82CD4D9B817109239F55 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA56C29D6B987340C2E2B124AC3D4D3 /* IQNSArray+Sort.swift */; };
+		EFE3406CF931F4861C535A3CC2290A95 /* RATreeView_ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD06138233DF6D7AF296F33B53CF6DC /* RATreeView_ClassExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F88743FC5E0CDCF2713277C4991D72F7 /* RATreeView+RATreeNodeCollectionControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA4360D7DFEF3E07591384E9688828E /* RATreeView+RATreeNodeCollectionControllerDataSource.m */; };
+		F8A2EFB61EF83D3C576D0D18CD89EBC3 /* RATreeView+TableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B657871E37924D354694E44D34D74EE1 /* RATreeView+TableViewDataSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FD18449F1676B64267FF6A9EB2CA3286 /* RATreeView+TableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A739263B71DC04FE9F2EE0B36E7662E9 /* RATreeView+TableViewDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3E2AA4CED0B7781A9FDB0C66B654C5B3 /* PBXContainerItemProxy */ = {
+		6785F5A1462D3781872B07A8E6DED648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02EC045254187DE666D75B8ED7AD73BD;
+			remoteInfo = SwiftyJSON;
+		};
+		82261512ACF846EED20998ECCF92640B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F710BBECB76266FF75359E63DE720D2D;
 			remoteInfo = PDFReader;
 		};
-		54FFBAF6EB7D489C384E9048BF967A5A /* PBXContainerItemProxy */ = {
+		99E86B6D9924E7A0AB4C2B2DA2AE166A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6599D447C61BD5FA8BEE8DD99A4BD628;
-			remoteInfo = RATreeView;
+			remoteGlobalIDString = 4DC059E04CBA98AEDDB5C34E02D551E9;
+			remoteInfo = IQKeyboardManagerSwift;
 		};
-		F006CCDC61919B8ECC5B3FBB484E6FCF /* PBXContainerItemProxy */ = {
+		B1687E0AEFA22572EEF9DABE0F0C90EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 74D6F85A3F5ED239231351196DDF6028;
-			remoteInfo = SwiftyJSON;
+			remoteGlobalIDString = DB34944273F8BA7D5DB44BE86B0217A8;
+			remoteInfo = RATreeView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0341D7D01CDB3D1DC0C8AC4FDC9B96E7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		04B091C2540EC805EF2941A742BB7B4C /* RATreeView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RATreeView.framework; path = RATreeView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A779FFD0A18FE13F73F621AE1F856A3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0BC7B3D2FBD0740A7865D202360DB520 /* RATreeView+TableViewDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RATreeView+TableViewDataSource.m"; path = "RATreeView/RATreeView/Private Files/RATreeView+TableViewDataSource.m"; sourceTree = "<group>"; };
-		0C8DDFD94EBFCD182C00F678A8A442EE /* PDFReader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDFReader-umbrella.h"; sourceTree = "<group>"; };
-		0CBD31C7E16158D5B8D7B1ECC993D885 /* RATreeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RATreeView.h; path = RATreeView/RATreeView/RATreeView.h; sourceTree = "<group>"; };
-		112AFC131899A7B18C666A9A6C81C5F5 /* RATreeNodeItem+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RATreeNodeItem+Private.m"; path = "RATreeView/RATreeView/Private Files/RATreeNodeItem+Private.m"; sourceTree = "<group>"; };
-		141FF2BF8B303917FD447E3006B76BD3 /* RATreeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RATreeView.m; path = RATreeView/RATreeView/RATreeView.m; sourceTree = "<group>"; };
-		1533BD2A7C55B89E21DD050DA43718DD /* RATreeView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RATreeView-dummy.m"; sourceTree = "<group>"; };
-		15D106BD57E82145B322B7EDF221039E /* PDFReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDFReader-dummy.m"; sourceTree = "<group>"; };
+		044F6FBD6969AE519B537A2B76C43222 /* RABatchChanges.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RABatchChanges.h; path = "RATreeView/RATreeView/Private Files/RABatchChanges.h"; sourceTree = "<group>"; };
+		0C0C5CD0A7BA0D68325A8F6F93686E49 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		0DA20CBDAC14E729CB4831E963EADB9F /* RABatchChangeEntity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RABatchChangeEntity.h; path = "RATreeView/RATreeView/Private Files/RABatchChangeEntity.h"; sourceTree = "<group>"; };
+		0ED659FC833BB6C7A793F5C49158AEB6 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		15A6B9558B5112520ED72E956F3F5117 /* RATreeView+Enums.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RATreeView+Enums.m"; path = "RATreeView/RATreeView/Private Files/RATreeView+Enums.m"; sourceTree = "<group>"; };
+		18639CCEB56C1354AF5C00DD02911D54 /* PDFThumbnailCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFThumbnailCell.swift; path = Sources/Classes/PDFThumbnailCell.swift; sourceTree = "<group>"; };
 		18D5611395A8B8E58D92F9E9CBE991DF /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		19AD70553B20E51F8F151C54D9C5AD01 /* RATreeView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RATreeView.xcconfig; sourceTree = "<group>"; };
-		213295F4E88B139F7A3CCD78C9944E5F /* RATreeNodeCollectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RATreeNodeCollectionController.h; path = "RATreeView/RATreeView/Private Files/RATreeNodeCollectionController.h"; sourceTree = "<group>"; };
-		22429F5535304B7311BAEB947A2C9101 /* PDFReader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PDFReader.modulemap; sourceTree = "<group>"; };
+		1CA4360D7DFEF3E07591384E9688828E /* RATreeView+RATreeNodeCollectionControllerDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RATreeView+RATreeNodeCollectionControllerDataSource.m"; path = "RATreeView/RATreeView/Private Files/RATreeView+RATreeNodeCollectionControllerDataSource.m"; sourceTree = "<group>"; };
+		1DDB0662FC9A41A8072344C61B2111C5 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
+		1F2C227BEE60825FC7051E95C3DBA230 /* PDFReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PDFReader.framework; path = PDFReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F31BC09A9F2F737DA93A622AA9B6D36 /* TiledView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TiledView.swift; path = Sources/Classes/TiledView.swift; sourceTree = "<group>"; };
 		2349DC24EB77F1A215E097D43BCB7801 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swift-acknowledgements.markdown"; sourceTree = "<group>"; };
-		266C6E5906DC0525A8E6AA1D4D181C58 /* RATreeView+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RATreeView+Private.h"; path = "RATreeView/RATreeView/Private Files/RATreeView+Private.h"; sourceTree = "<group>"; };
+		24B22C88CAF5E26E39EA3F9570420ADD /* RABatchChanges.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RABatchChanges.m; path = "RATreeView/RATreeView/Private Files/RABatchChanges.m"; sourceTree = "<group>"; };
+		24D3344F6DF4324A5F5F1A10E827F56F /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		28AB91C689A15B984F352E442DE30D64 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DD2CE3DCD44F7E03BD344C81F178ED8 /* RATableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RATableView.m; path = "RATreeView/RATreeView/Private Files/RATableView.m"; sourceTree = "<group>"; };
-		2DF87D4D16695FDB323EC4561B7B6439 /* PDFViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFViewController.swift; path = Sources/Classes/PDFViewController.swift; sourceTree = "<group>"; };
-		2EFAD6862950901FF9D4C83D20BAE591 /* RATreeView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RATreeView-umbrella.h"; sourceTree = "<group>"; };
+		2B0D01D53D66755D2025D7FC0A131378 /* RATreeNodeItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RATreeNodeItem.m; path = "RATreeView/RATreeView/Private Files/RATreeNodeItem.m"; sourceTree = "<group>"; };
+		2DE99BC32232A05158627BD15AF1F4C3 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		2FC167FFF865B90E67EB1059AC7938A7 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
 		30CFCDDCF7C8755DA3B8870F0885F188 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-dummy.m"; sourceTree = "<group>"; };
 		313635D9B3DAF2437ABF43A4FE191C8B /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swift-dummy.m"; sourceTree = "<group>"; };
 		32584E5F49C9C3025AEEE86ED7CAFF5E /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests-dummy.m"; sourceTree = "<group>"; };
-		35A5037AE3C65F8EBDD61870C440DCC8 /* RATreeNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RATreeNode.h; path = "RATreeView/RATreeView/Private Files/RATreeNode.h"; sourceTree = "<group>"; };
 		377AE2903C22926AFDA457137D85F691 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests.modulemap"; sourceTree = "<group>"; };
-		380887F22C6DFFFF940D577228A9F859 /* RATreeNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RATreeNode.m; path = "RATreeView/RATreeView/Private Files/RATreeNode.m"; sourceTree = "<group>"; };
-		3E21BAE4D0BBA75C23971C054FF9EED8 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		3EC8A3670AFC5D8233A3CA2E9AE30AD7 /* PDFPageCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPageCollectionViewCell.swift; path = Sources/Classes/PDFPageCollectionViewCell.swift; sourceTree = "<group>"; };
-		3F7D325064B119BA5C73282A34B7EB99 /* RATreeView+Enums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RATreeView+Enums.h"; path = "RATreeView/RATreeView/Private Files/RATreeView+Enums.h"; sourceTree = "<group>"; };
-		435A6868168F13E8F5C5223CF570711D /* RATreeView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RATreeView.modulemap; sourceTree = "<group>"; };
-		4379ADE0BF4B111BC35001EE44A1551C /* RATreeNodeItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RATreeNodeItem.h; path = "RATreeView/RATreeView/Private Files/RATreeNodeItem.h"; sourceTree = "<group>"; };
+		3DD2825E3E8C128A108E10037BA11CB0 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
+		3E9EB54B81CB853BDAA393BD406A437A /* RATreeView+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RATreeView+Private.m"; path = "RATreeView/RATreeView/Private Files/RATreeView+Private.m"; sourceTree = "<group>"; };
 		44FF1C528C10054F0523ABD3FFBBB1A6 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests.modulemap"; sourceTree = "<group>"; };
-		45F4885AC89355FA47B4E9629A9E2026 /* PDFReader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDFReader.xcconfig; sourceTree = "<group>"; };
 		47404D8C06CE7139F7AFDF5E376BB3C4 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-frameworks.sh"; sourceTree = "<group>"; };
-		4758D28980492737B3AF7D238BAF5A90 /* RABatchChangeEntity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RABatchChangeEntity.h; path = "RATreeView/RATreeView/Private Files/RABatchChangeEntity.h"; sourceTree = "<group>"; };
 		4970F12F9709BC807AF22FE5B6F15730 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swift-frameworks.sh"; sourceTree = "<group>"; };
 		4B89B50E4C94E7FAB30B160B992B4EF9 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4C68196FDE80D87F52857FC5EECD9E7B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F7044D866973FCDDAF66D882D49D7AA /* RATreeView+TableViewDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RATreeView+TableViewDelegate.m"; path = "RATreeView/RATreeView/Private Files/RATreeView+TableViewDelegate.m"; sourceTree = "<group>"; };
-		524032399796813CA6917A76A1FF1961 /* PDFDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFDocument.swift; path = Sources/Classes/PDFDocument.swift; sourceTree = "<group>"; };
-		529A9AB4B2E81BE728D8F4D94AF1A417 /* RATreeNodeItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RATreeNodeItem.m; path = "RATreeView/RATreeView/Private Files/RATreeNodeItem.m"; sourceTree = "<group>"; };
+		4B9400EF424834AB8507183D7BFA6D90 /* PDFPageCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPageCollectionViewCell.swift; path = Sources/Classes/PDFPageCollectionViewCell.swift; sourceTree = "<group>"; };
+		4CCE23F3BE72E1F985BD7EB4E42A1ACB /* RATreeNodeItem+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RATreeNodeItem+Private.m"; path = "RATreeView/RATreeView/Private Files/RATreeNodeItem+Private.m"; sourceTree = "<group>"; };
+		4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		4DBC4B1FF0EA6BA61D3DDD3FC3F587F8 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		4ED1F3BE510FB37AD528B54AE1ABD975 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		50831D7876C9C64FD00458A76BD1A2AB /* RATreeView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RATreeView.framework; path = RATreeView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		545CD906B598075BBE80506099FCFE36 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests.release.xcconfig"; sourceTree = "<group>"; };
-		5624F82CDB589BDE3CAF85BCE14A908A /* RATreeView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RATreeView-prefix.pch"; sourceTree = "<group>"; };
-		56F67DB6AFA1753B94AE3F5EAE292204 /* RATreeNodeController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RATreeNodeController.h; path = "RATreeView/RATreeView/Private Files/RATreeNodeController.h"; sourceTree = "<group>"; };
+		553D33D4984E292BBCED22A6973D5481 /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		587C90FE16FC49C7A06FB049500B637F /* RATreeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RATreeView.h; path = RATreeView/RATreeView/RATreeView.h; sourceTree = "<group>"; };
+		58B2F7C553CE74C86B327D57848976AB /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		58E05DD98A872BCA20715DCAE1F5525F /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests-umbrella.h"; sourceTree = "<group>"; };
+		59055D2DE7D4533A411547FABEFA4413 /* RATreeNodeCollectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RATreeNodeCollectionController.m; path = "RATreeView/RATreeView/Private Files/RATreeNodeCollectionController.m"; sourceTree = "<group>"; };
 		5996B410DA4764C457E1DEE6BE40EB1B /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-umbrella.h"; sourceTree = "<group>"; };
 		59D380EC3CDFA71761FD0B6BEA4FBA59 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swift-umbrella.h"; sourceTree = "<group>"; };
-		5E5EFA17D541FCDD71DB29556F14CC13 /* RATreeView+RATreeNodeCollectionControllerDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RATreeView+RATreeNodeCollectionControllerDataSource.h"; path = "RATreeView/RATreeView/Private Files/RATreeView+RATreeNodeCollectionControllerDataSource.h"; sourceTree = "<group>"; };
-		5F531158B4A2389E21DAD940EDD7E198 /* RATreeNodeItem+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RATreeNodeItem+Private.h"; path = "RATreeView/RATreeView/Private Files/RATreeNodeItem+Private.h"; sourceTree = "<group>"; };
-		63F6C9BB0185CBFFE708ED67ECA326EB /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		68A74DE6AB9F80947114EE749F00E09C /* PDFPageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPageView.swift; path = Sources/Classes/PDFPageView.swift; sourceTree = "<group>"; };
-		68D61F0270B1FEEC87FD25BD60DFE1F6 /* RABatchChangeEntity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RABatchChangeEntity.m; path = "RATreeView/RATreeView/Private Files/RABatchChangeEntity.m"; sourceTree = "<group>"; };
-		6A5FB1F97B87FB946913D798D4FF60CC /* RATreeNode_ClassExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RATreeNode_ClassExtension.h; path = "RATreeView/RATreeView/Private Files/RATreeNode_ClassExtension.h"; sourceTree = "<group>"; };
-		6BA1CEEC669A9031550E6993D0CF8F2E /* TiledView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TiledView.swift; path = Sources/Classes/TiledView.swift; sourceTree = "<group>"; };
-		6E72F77A7759C8F1C15BB691CC155C23 /* RABatchChanges.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RABatchChanges.m; path = "RATreeView/RATreeView/Private Files/RABatchChanges.m"; sourceTree = "<group>"; };
-		7268C524262A1B6E5576D5F7CDA06E91 /* RATreeView+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RATreeView+Private.m"; path = "RATreeView/RATreeView/Private Files/RATreeView+Private.m"; sourceTree = "<group>"; };
-		73DFE44EEC2A61ADCC05D3E616AD1AA7 /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7680D3155FA92390657972401E70A1C2 /* RATableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RATableView.h; path = "RATreeView/RATreeView/Private Files/RATableView.h"; sourceTree = "<group>"; };
+		5BD3F2EE941CBB51A43BE7808C22B67E /* RATreeView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RATreeView.modulemap; sourceTree = "<group>"; };
+		5E086FD5F3806367F84F5DE239A5F96A /* RATreeNodeItem+ClassExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RATreeNodeItem+ClassExtension.h"; path = "RATreeView/RATreeView/Private Files/RATreeNodeItem+ClassExtension.h"; sourceTree = "<group>"; };
+		5FB4B77B6959495B0899C420B510B29D /* RATreeNodeItem+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RATreeNodeItem+Private.h"; path = "RATreeView/RATreeView/Private Files/RATreeNodeItem+Private.h"; sourceTree = "<group>"; };
+		65A4398D6B5EBE9EAA304E0C7BFFD448 /* RATreeView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RATreeView-dummy.m"; sourceTree = "<group>"; };
+		65C3D5BD8C88956EA6427DF63B29FCF7 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
+		663D78C29D073F3740FD2D8942BED96A /* PDFReader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDFReader.xcconfig; sourceTree = "<group>"; };
+		68E9807D6433452E4EE5F384460A577A /* RABatchChangeEntity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RABatchChangeEntity.m; path = "RATreeView/RATreeView/Private Files/RABatchChangeEntity.m"; sourceTree = "<group>"; };
+		695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6E09F45D098BEA2BEFDC498FE76ABBC4 /* RATreeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RATreeView.m; path = RATreeView/RATreeView/RATreeView.m; sourceTree = "<group>"; };
+		6EA56C29D6B987340C2E2B124AC3D4D3 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		6F2A090ED2793B085FF2D8CA10F1E719 /* RATreeView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RATreeView-umbrella.h"; sourceTree = "<group>"; };
+		6FE878D4834AA83C92744CFE57212F42 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		717A02ED5452AF20E07DFB5C81A4D46E /* PDFReader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PDFReader.modulemap; sourceTree = "<group>"; };
+		71ED5BC7B9F172EF9CCDA9663AD652CC /* RATreeNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RATreeNode.h; path = "RATreeView/RATreeView/Private Files/RATreeNode.h"; sourceTree = "<group>"; };
+		74C42ADE2CD783E5263E57757869F5E3 /* PDFReader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDFReader-umbrella.h"; sourceTree = "<group>"; };
+		765263C6771C61CDC22C96153F10B871 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		76910818C0E62BA986462AC02F963FBE /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7C641E1E64F694D342435B6B2E6FD79E /* RABatchChanges.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RABatchChanges.h; path = "RATreeView/RATreeView/Private Files/RABatchChanges.h"; sourceTree = "<group>"; };
-		7D39B8B590E3D2C7A1D8DF0FA25297D5 /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift.framework; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E1486D6AC2CFA059B51811116A763B9 /* RATreeView+RATreeNodeCollectionControllerDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RATreeView+RATreeNodeCollectionControllerDataSource.m"; path = "RATreeView/RATreeView/Private Files/RATreeView+RATreeNodeCollectionControllerDataSource.m"; sourceTree = "<group>"; };
+		788DAB0DEF0C010FAA955239B732EC4B /* RATreeView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RATreeView-prefix.pch"; sourceTree = "<group>"; };
+		792165F2CA033667D6F57205316D40A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		795326ADCFCD01D0E16E1240DC2B9EF5 /* RATreeView+TableViewDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RATreeView+TableViewDataSource.m"; path = "RATreeView/RATreeView/Private Files/RATreeView+TableViewDataSource.m"; sourceTree = "<group>"; };
+		79C3184D798EE7CE1674C0ED726C4D93 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		7BC7BFFC52782566FF244A78E044215C /* RATreeNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RATreeNode.m; path = "RATreeView/RATreeView/Private Files/RATreeNode.m"; sourceTree = "<group>"; };
+		7ED97104CE5E92CDF21E7805A2E38AAB /* PDFViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFViewController.swift; path = Sources/Classes/PDFViewController.swift; sourceTree = "<group>"; };
 		7F7A2C7D52BB43CDB83C7F1CA9E8095C /* Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig"; sourceTree = "<group>"; };
-		7FBE0441926293A0B751E01473348FA3 /* RATreeView+TableViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RATreeView+TableViewDataSource.h"; path = "RATreeView/RATreeView/Private Files/RATreeView+TableViewDataSource.h"; sourceTree = "<group>"; };
+		85653B9E2B67DA8DBD9AE760AD489FDB /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		868AB84EA6C72C574913D596923CB94D /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		87AC4719AEE9BF47059ECAD4973CA639 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		89212F69FAA20DCE63ECF4A171D848C9 /* RATreeView+TableViewDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RATreeView+TableViewDelegate.m"; path = "RATreeView/RATreeView/Private Files/RATreeView+TableViewDelegate.m"; sourceTree = "<group>"; };
+		8B75B55BE78008B6A4A5623A14886306 /* RATableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RATableView.m; path = "RATreeView/RATreeView/Private Files/RATableView.m"; sourceTree = "<group>"; };
+		8BC31980396A7FE513F033C807393194 /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIWindow+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		8C17AA2999B60FD8054D84BF5A05BA1E /* RATreeNodeCollectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RATreeNodeCollectionController.h; path = "RATreeView/RATreeView/Private Files/RATreeNodeCollectionController.h"; sourceTree = "<group>"; };
+		8F0565F9D22AC98D5E5101F9E6189BFE /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		90FE962AD8C6BA9F589826BD72320D56 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		91BF1EAC1359AB3FBDDAD9D8A6A1A801 /* RATreeView+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RATreeView+Private.h"; path = "RATreeView/RATreeView/Private Files/RATreeView+Private.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93EA43324096F25B6E18BFC13BFCDC38 /* RATreeNode_ClassExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RATreeNode_ClassExtension.h; path = "RATreeView/RATreeView/Private Files/RATreeNode_ClassExtension.h"; sourceTree = "<group>"; };
 		969C0F39E7E0A313457D09FF3B4022E3 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swift-acknowledgements.plist"; sourceTree = "<group>"; };
+		980D0AED378AF243FB77DFA22F4F244E /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		9A1A53402298BD5937739B5D0C8476A1 /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift.framework; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B51A7A2C98DD193583FFD5E23B864A2 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests-frameworks.sh"; sourceTree = "<group>"; };
-		9E27F0491F7530774E28EFDA25204A20 /* PDFThumbnailCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFThumbnailCollectionViewController.swift; path = Sources/Classes/PDFThumbnailCollectionViewController.swift; sourceTree = "<group>"; };
+		9C99E50BA3C8818CC2F94402B837B183 /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftTests.framework; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F00CE8EBCE45CF56940D87DC7BA6552 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A305620ABA1DB7AAA80E813081330C5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A47F0D684AF0BC2F363FB125D56B4EC6 /* RATreeNodeController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RATreeNodeController.m; path = "RATreeView/RATreeView/Private Files/RATreeNodeController.m"; sourceTree = "<group>"; };
 		A5D79F6FE2F9DA14730D43B3E4C118E9 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests-resources.sh"; sourceTree = "<group>"; };
-		A63203584AFA267480597E8FD299C057 /* RATreeNodeCollectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RATreeNodeCollectionController.m; path = "RATreeView/RATreeView/Private Files/RATreeNodeCollectionController.m"; sourceTree = "<group>"; };
+		A6FE22828B45B2559E92F78FA5DF3A19 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A739263B71DC04FE9F2EE0B36E7662E9 /* RATreeView+TableViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RATreeView+TableViewDelegate.h"; path = "RATreeView/RATreeView/Private Files/RATreeView+TableViewDelegate.h"; sourceTree = "<group>"; };
 		A74FF770DAE96CD49945A7A010527CFB /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests-resources.sh"; sourceTree = "<group>"; };
+		A76A3A6503BA15F7B8E86FA19F2B775E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9076B4D7E23444C0DCCF432920F3F4C /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AA3CB21DFCF4868995D7040BCB0AE30E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA5024CFF2D891206EE1B9EC6CCEE3E7 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swift-resources.sh"; sourceTree = "<group>"; };
 		AD1CAA6ED08080C90F3BCAEB0765B300 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		AE678ED43C5E4995BCD8E778C245806D /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftTests.framework; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0BF3B13CEE819D3416131C82F19540D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3D18CFE6009E6C9366C651AFAA4CEFC /* PDFThumbnailCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFThumbnailCell.swift; path = Sources/Classes/PDFThumbnailCell.swift; sourceTree = "<group>"; };
 		B558B5ABE750BB0F4C403639F6DBBC5A /* Pods-KKH Paediatrics Anaesthesia Handbook - swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swift.debug.xcconfig"; sourceTree = "<group>"; };
-		B6171607443C0D0AE37E0EFEB062DC36 /* RATreeView+TableViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RATreeView+TableViewDelegate.h"; path = "RATreeView/RATreeView/Private Files/RATreeView+TableViewDelegate.h"; sourceTree = "<group>"; };
+		B657871E37924D354694E44D34D74EE1 /* RATreeView+TableViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RATreeView+TableViewDataSource.h"; path = "RATreeView/RATreeView/Private Files/RATreeView+TableViewDataSource.h"; sourceTree = "<group>"; };
 		B8DF55C2E949612B24244A59E90F2E3C /* Pods-KKH Paediatrics Anaesthesia Handbook - swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swift.modulemap"; sourceTree = "<group>"; };
+		BAD06138233DF6D7AF296F33B53CF6DC /* RATreeView_ClassExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RATreeView_ClassExtension.h; path = "RATreeView/RATreeView/Private Files/RATreeView_ClassExtension.h"; sourceTree = "<group>"; };
 		BB193673158C93ABE0241D9AC235A969 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C4B80223651C3B127017B501EF3E4ED9 /* PDFReader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDFReader-prefix.pch"; sourceTree = "<group>"; };
-		C5AAA20F1206BE311C4EFE5A3A2B963A /* PDFReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PDFReader.framework; path = PDFReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CF7A46EC8801BA1791456880E5FFCDE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D722DF008082748B88DA489C51969BDC /* RATreeView+Enums.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RATreeView+Enums.m"; path = "RATreeView/RATreeView/Private Files/RATreeView+Enums.m"; sourceTree = "<group>"; };
-		E30958F71A81D9CAA8D011C56C534DE7 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		EC35748F34422D435E36B103DCD6F7E3 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		F34A18625B3058121E80E0E7A864DF74 /* RATreeNodeItem+ClassExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RATreeNodeItem+ClassExtension.h"; path = "RATreeView/RATreeView/Private Files/RATreeNodeItem+ClassExtension.h"; sourceTree = "<group>"; };
+		BD6D66FCA0A3A9AA9F78A7D22FAAC225 /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
+		BF4A157652F1913AA1E7F8DE73F2F98C /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		BFF5FEE7DCA488BE2D8E638C571A1221 /* RATreeView+Enums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RATreeView+Enums.h"; path = "RATreeView/RATreeView/Private Files/RATreeView+Enums.h"; sourceTree = "<group>"; };
+		CA3F263362B009DFC60DBAC5C45B2EA0 /* RATableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RATableView.h; path = "RATreeView/RATreeView/Private Files/RATableView.h"; sourceTree = "<group>"; };
+		CCD70594E712D88F46E901E17A6D2121 /* PDFReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDFReader-dummy.m"; sourceTree = "<group>"; };
+		D21923C3299BEE6D47DDA733FA827C38 /* RATreeNodeController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RATreeNodeController.m; path = "RATreeView/RATreeView/Private Files/RATreeNodeController.m"; sourceTree = "<group>"; };
+		D3194F3D159CD6322904EED86D126BA0 /* RATreeNodeController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RATreeNodeController.h; path = "RATreeView/RATreeView/Private Files/RATreeNodeController.h"; sourceTree = "<group>"; };
+		D35D817F34DD603CE07DD819C4FE1CEA /* RATreeView+RATreeNodeCollectionControllerDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RATreeView+RATreeNodeCollectionControllerDataSource.h"; path = "RATreeView/RATreeView/Private Files/RATreeView+RATreeNodeCollectionControllerDataSource.h"; sourceTree = "<group>"; };
+		DC8F33054474BFD36C9E62B6EDEA74FB /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		DF887D2F626D059894DEFA364870F99A /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		E05127842ED0ACAAC0CC05073C0ECB04 /* PDFReader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDFReader-prefix.pch"; sourceTree = "<group>"; };
+		E110E54F371EE04B7B140E2B25A2E8CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3404CE641D79068743E8B629B7F3EE1 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7CC110263F62B46F86F39411DDDCD90 /* PDFPageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPageView.swift; path = Sources/Classes/PDFPageView.swift; sourceTree = "<group>"; };
+		EB67A8118309607C08AAB9D3E83918D6 /* PDFThumbnailCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFThumbnailCollectionViewController.swift; path = Sources/Classes/PDFThumbnailCollectionViewController.swift; sourceTree = "<group>"; };
+		F11D8887E25D7312AE6B06CCBDCE0A3B /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		F50A3AF63A3EE06BB5A8B1426B5BC7E6 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		F588295CE266A7464D61C2D643913487 /* RATreeView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RATreeView.xcconfig; sourceTree = "<group>"; };
+		F5E0C6402EE83ED974B8FCD104263ED8 /* PDFReader.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; name = PDFReader.storyboard; path = Sources/Assets/PDFReader.storyboard; sourceTree = "<group>"; };
 		F60044574806BB278A5364D89BDCEDA2 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F8DCE243A36625BF5809F8DB52A05660 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		FA7571463A770AA697C886E0B4FEE10A /* RATreeView_ClassExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RATreeView_ClassExtension.h; path = "RATreeView/RATreeView/Private Files/RATreeView_ClassExtension.h"; sourceTree = "<group>"; };
-		FF88587DAAF9F1281BED37720F0A4D2E /* PDFReader.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; name = PDFReader.storyboard; path = Sources/Assets/PDFReader.storyboard; sourceTree = "<group>"; };
+		FB92EED2D027A3C1B3D6703D47654EDE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB9D2625482F95E81C4FDCFC37D8D6B /* RATreeNodeItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RATreeNodeItem.h; path = "RATreeView/RATreeView/Private Files/RATreeNodeItem.h"; sourceTree = "<group>"; };
+		FF96FC324EDE99E472378E786597580C /* PDFDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFDocument.swift; path = Sources/Classes/PDFDocument.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A98A70B59ACE0404DF97B88AE9BF929 /* Frameworks */ = {
+		10062CC15DAEABE95D65862067E8682B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D510400D1624CAC2C9C2368F689F22F /* Foundation.framework in Frameworks */,
+				1C8F85A1033B5AE0FE8126CE2E937E9F /* CoreGraphics.framework in Frameworks */,
+				08F70BDD45F0B73F1AD27507808FEC3B /* Foundation.framework in Frameworks */,
+				B9557585483AD395045D19F792D8BDE7 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2BBDA41B96CFAADE333F7128065301C2 /* Frameworks */ = {
+		233D183146368EF13DB5C435F80FC849 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8E3B490A3089D97C0E54FD1F5C9856C /* Foundation.framework in Frameworks */,
+				8FE36309C937AE207BB029E1109A3284 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,11 +272,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		863E2784202FAF882ABA9994F356D569 /* Frameworks */ = {
+		8EEA46A84DA7ECAD6EFB0BF8601BC28A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B101ECDB843B8C433FB4FB88F81FA3F3 /* Foundation.framework in Frameworks */,
+				368FDB6FA35A644A209E12CAD24AAE1E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +285,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				77A27BD4A02B8BBCBE814EF5B842E5E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B58986C8E7619981600917D9101C99B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1749034100949611AC43DB8261B4D4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +307,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D185E38271E1279D6AC3E7A00CAF9BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15F26F94853E7E634D408B3AAEB36344 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				980D0AED378AF243FB77DFA22F4F244E /* IQKeyboardManager.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		199D8FCE79E9233E7B2F78760BC02884 /* RATreeView */ = {
+			isa = PBXGroup;
+			children = (
+				0DA20CBDAC14E729CB4831E963EADB9F /* RABatchChangeEntity.h */,
+				68E9807D6433452E4EE5F384460A577A /* RABatchChangeEntity.m */,
+				044F6FBD6969AE519B537A2B76C43222 /* RABatchChanges.h */,
+				24B22C88CAF5E26E39EA3F9570420ADD /* RABatchChanges.m */,
+				CA3F263362B009DFC60DBAC5C45B2EA0 /* RATableView.h */,
+				8B75B55BE78008B6A4A5623A14886306 /* RATableView.m */,
+				71ED5BC7B9F172EF9CCDA9663AD652CC /* RATreeNode.h */,
+				7BC7BFFC52782566FF244A78E044215C /* RATreeNode.m */,
+				93EA43324096F25B6E18BFC13BFCDC38 /* RATreeNode_ClassExtension.h */,
+				8C17AA2999B60FD8054D84BF5A05BA1E /* RATreeNodeCollectionController.h */,
+				59055D2DE7D4533A411547FABEFA4413 /* RATreeNodeCollectionController.m */,
+				D3194F3D159CD6322904EED86D126BA0 /* RATreeNodeController.h */,
+				D21923C3299BEE6D47DDA733FA827C38 /* RATreeNodeController.m */,
+				FDB9D2625482F95E81C4FDCFC37D8D6B /* RATreeNodeItem.h */,
+				2B0D01D53D66755D2025D7FC0A131378 /* RATreeNodeItem.m */,
+				5E086FD5F3806367F84F5DE239A5F96A /* RATreeNodeItem+ClassExtension.h */,
+				5FB4B77B6959495B0899C420B510B29D /* RATreeNodeItem+Private.h */,
+				4CCE23F3BE72E1F985BD7EB4E42A1ACB /* RATreeNodeItem+Private.m */,
+				587C90FE16FC49C7A06FB049500B637F /* RATreeView.h */,
+				6E09F45D098BEA2BEFDC498FE76ABBC4 /* RATreeView.m */,
+				BFF5FEE7DCA488BE2D8E638C571A1221 /* RATreeView+Enums.h */,
+				15A6B9558B5112520ED72E956F3F5117 /* RATreeView+Enums.m */,
+				91BF1EAC1359AB3FBDDAD9D8A6A1A801 /* RATreeView+Private.h */,
+				3E9EB54B81CB853BDAA393BD406A437A /* RATreeView+Private.m */,
+				D35D817F34DD603CE07DD819C4FE1CEA /* RATreeView+RATreeNodeCollectionControllerDataSource.h */,
+				1CA4360D7DFEF3E07591384E9688828E /* RATreeView+RATreeNodeCollectionControllerDataSource.m */,
+				B657871E37924D354694E44D34D74EE1 /* RATreeView+TableViewDataSource.h */,
+				795326ADCFCD01D0E16E1240DC2B9EF5 /* RATreeView+TableViewDataSource.m */,
+				A739263B71DC04FE9F2EE0B36E7662E9 /* RATreeView+TableViewDelegate.h */,
+				89212F69FAA20DCE63ECF4A171D848C9 /* RATreeView+TableViewDelegate.m */,
+				BAD06138233DF6D7AF296F33B53CF6DC /* RATreeView_ClassExtension.h */,
+				E3853A203D98A2C70C830E892CC8B1E6 /* Support Files */,
+			);
+			name = RATreeView;
+			path = RATreeView;
+			sourceTree = "<group>";
+		};
+		1AD979689A1EE9793FAC9BE2997BF57C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F00CE8EBCE45CF56940D87DC7BA6552 /* Info.plist */,
+				765263C6771C61CDC22C96153F10B871 /* SwiftyJSON.modulemap */,
+				F11D8887E25D7312AE6B06CCBDCE0A3B /* SwiftyJSON.xcconfig */,
+				79C3184D798EE7CE1674C0ED726C4D93 /* SwiftyJSON-dummy.m */,
+				24D3344F6DF4324A5F5F1A10E827F56F /* SwiftyJSON-prefix.pch */,
+				90FE962AD8C6BA9F589826BD72320D56 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
 		248258E84913A060874D7128A508DFBA /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,67 +395,64 @@
 			path = "Target Support Files/Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests";
 			sourceTree = "<group>";
 		};
-		2668C63A1C258A7AE39B0B9C8590F3AF /* Pods */ = {
+		27C36DA17101E43DC4036B308F37E711 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				89991D1190F2C333F4D3A84487DF5754 /* PDFReader */,
-				5E9E46B8D4AFB49CF718AA463867B17A /* RATreeView */,
-				B2DD7608587B9AE85570D63B732FB7B0 /* SwiftyJSON */,
+				A4B36FB1B01EDBC6F8CE3DD06A95C24B /* IQKeyboardManagerSwift */,
+				540C8917D8EF78E039022087DE2284A3 /* PDFReader */,
+				199D8FCE79E9233E7B2F78760BC02884 /* RATreeView */,
+				BD124EE6E8430F442D2B8081CCEE55F3 /* SwiftyJSON */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		29E90499E5845CB7771B7FA424B4046D /* Products */ = {
+		2D185E38271E1279D6AC3E7A00CAF9BA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C5AAA20F1206BE311C4EFE5A3A2B963A /* PDFReader.framework */,
-				7D39B8B590E3D2C7A1D8DF0FA25297D5 /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift.framework */,
-				AE678ED43C5E4995BCD8E778C245806D /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftTests.framework */,
-				73DFE44EEC2A61ADCC05D3E616AD1AA7 /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework */,
-				04B091C2540EC805EF2941A742BB7B4C /* RATreeView.framework */,
-				4C68196FDE80D87F52857FC5EECD9E7B /* SwiftyJSON.framework */,
+				4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */,
+				792165F2CA033667D6F57205316D40A1 /* Foundation.framework */,
+				695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4C1D4857E5DD8684E67BF7E2811F2E3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6FE22828B45B2559E92F78FA5DF3A19 /* IQKeyboardManagerSwift.framework */,
+				1F2C227BEE60825FC7051E95C3DBA230 /* PDFReader.framework */,
+				9A1A53402298BD5937739B5D0C8476A1 /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift.framework */,
+				9C99E50BA3C8818CC2F94402B837B183 /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftTests.framework */,
+				553D33D4984E292BBCED22A6973D5481 /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework */,
+				50831D7876C9C64FD00458A76BD1A2AB /* RATreeView.framework */,
+				E3404CE641D79068743E8B629B7F3EE1 /* SwiftyJSON.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5E9E46B8D4AFB49CF718AA463867B17A /* RATreeView */ = {
+		540C8917D8EF78E039022087DE2284A3 /* PDFReader */ = {
 			isa = PBXGroup;
 			children = (
-				4758D28980492737B3AF7D238BAF5A90 /* RABatchChangeEntity.h */,
-				68D61F0270B1FEEC87FD25BD60DFE1F6 /* RABatchChangeEntity.m */,
-				7C641E1E64F694D342435B6B2E6FD79E /* RABatchChanges.h */,
-				6E72F77A7759C8F1C15BB691CC155C23 /* RABatchChanges.m */,
-				7680D3155FA92390657972401E70A1C2 /* RATableView.h */,
-				2DD2CE3DCD44F7E03BD344C81F178ED8 /* RATableView.m */,
-				35A5037AE3C65F8EBDD61870C440DCC8 /* RATreeNode.h */,
-				380887F22C6DFFFF940D577228A9F859 /* RATreeNode.m */,
-				6A5FB1F97B87FB946913D798D4FF60CC /* RATreeNode_ClassExtension.h */,
-				213295F4E88B139F7A3CCD78C9944E5F /* RATreeNodeCollectionController.h */,
-				A63203584AFA267480597E8FD299C057 /* RATreeNodeCollectionController.m */,
-				56F67DB6AFA1753B94AE3F5EAE292204 /* RATreeNodeController.h */,
-				A47F0D684AF0BC2F363FB125D56B4EC6 /* RATreeNodeController.m */,
-				4379ADE0BF4B111BC35001EE44A1551C /* RATreeNodeItem.h */,
-				529A9AB4B2E81BE728D8F4D94AF1A417 /* RATreeNodeItem.m */,
-				F34A18625B3058121E80E0E7A864DF74 /* RATreeNodeItem+ClassExtension.h */,
-				5F531158B4A2389E21DAD940EDD7E198 /* RATreeNodeItem+Private.h */,
-				112AFC131899A7B18C666A9A6C81C5F5 /* RATreeNodeItem+Private.m */,
-				0CBD31C7E16158D5B8D7B1ECC993D885 /* RATreeView.h */,
-				141FF2BF8B303917FD447E3006B76BD3 /* RATreeView.m */,
-				3F7D325064B119BA5C73282A34B7EB99 /* RATreeView+Enums.h */,
-				D722DF008082748B88DA489C51969BDC /* RATreeView+Enums.m */,
-				266C6E5906DC0525A8E6AA1D4D181C58 /* RATreeView+Private.h */,
-				7268C524262A1B6E5576D5F7CDA06E91 /* RATreeView+Private.m */,
-				5E5EFA17D541FCDD71DB29556F14CC13 /* RATreeView+RATreeNodeCollectionControllerDataSource.h */,
-				7E1486D6AC2CFA059B51811116A763B9 /* RATreeView+RATreeNodeCollectionControllerDataSource.m */,
-				7FBE0441926293A0B751E01473348FA3 /* RATreeView+TableViewDataSource.h */,
-				0BC7B3D2FBD0740A7865D202360DB520 /* RATreeView+TableViewDataSource.m */,
-				B6171607443C0D0AE37E0EFEB062DC36 /* RATreeView+TableViewDelegate.h */,
-				4F7044D866973FCDDAF66D882D49D7AA /* RATreeView+TableViewDelegate.m */,
-				FA7571463A770AA697C886E0B4FEE10A /* RATreeView_ClassExtension.h */,
-				E92367A802101FA66692A1043AF595C3 /* Support Files */,
+				FF96FC324EDE99E472378E786597580C /* PDFDocument.swift */,
+				4B9400EF424834AB8507183D7BFA6D90 /* PDFPageCollectionViewCell.swift */,
+				E7CC110263F62B46F86F39411DDDCD90 /* PDFPageView.swift */,
+				18639CCEB56C1354AF5C00DD02911D54 /* PDFThumbnailCell.swift */,
+				EB67A8118309607C08AAB9D3E83918D6 /* PDFThumbnailCollectionViewController.swift */,
+				7ED97104CE5E92CDF21E7805A2E38AAB /* PDFViewController.swift */,
+				1F31BC09A9F2F737DA93A622AA9B6D36 /* TiledView.swift */,
+				5953AC968687E6574B6CE1D1E8F63C8A /* Resources */,
+				E873868FC87D4437225047317FFE6493 /* Support Files */,
 			);
-			name = RATreeView;
-			path = RATreeView;
+			name = PDFReader;
+			path = PDFReader;
+			sourceTree = "<group>";
+		};
+		5953AC968687E6574B6CE1D1E8F63C8A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5E0C6402EE83ED974B8FCD104263ED8 /* PDFReader.storyboard */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		63922ACC063A25406C35D47B61FCB7C7 /* Targets Support Files */ = {
@@ -331,14 +463,6 @@
 				7C5B02E37D4DC05D8251B06409689366 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		7C5B02E37D4DC05D8251B06409689366 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests */ = {
@@ -363,42 +487,37 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				2668C63A1C258A7AE39B0B9C8590F3AF /* Pods */,
-				29E90499E5845CB7771B7FA424B4046D /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				27C36DA17101E43DC4036B308F37E711 /* Pods */,
+				4C1D4857E5DD8684E67BF7E2811F2E3F /* Products */,
 				63922ACC063A25406C35D47B61FCB7C7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		891AB421E18936D1D4D9418BF1926BD3 /* Support Files */ = {
+		A4B36FB1B01EDBC6F8CE3DD06A95C24B /* IQKeyboardManagerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				B0BF3B13CEE819D3416131C82F19540D /* Info.plist */,
-				22429F5535304B7311BAEB947A2C9101 /* PDFReader.modulemap */,
-				45F4885AC89355FA47B4E9629A9E2026 /* PDFReader.xcconfig */,
-				15D106BD57E82145B322B7EDF221039E /* PDFReader-dummy.m */,
-				C4B80223651C3B127017B501EF3E4ED9 /* PDFReader-prefix.pch */,
-				0C8DDFD94EBFCD182C00F678A8A442EE /* PDFReader-umbrella.h */,
+				1DDB0662FC9A41A8072344C61B2111C5 /* IQBarButtonItem.swift */,
+				3DD2825E3E8C128A108E10037BA11CB0 /* IQKeyboardManager.swift */,
+				6FE878D4834AA83C92744CFE57212F42 /* IQKeyboardManagerConstants.swift */,
+				2DE99BC32232A05158627BD15AF1F4C3 /* IQKeyboardManagerConstantsInternal.swift */,
+				DF887D2F626D059894DEFA364870F99A /* IQKeyboardReturnKeyHandler.swift */,
+				6EA56C29D6B987340C2E2B124AC3D4D3 /* IQNSArray+Sort.swift */,
+				65C3D5BD8C88956EA6427DF63B29FCF7 /* IQPreviousNextView.swift */,
+				87AC4719AEE9BF47059ECAD4973CA639 /* IQTextView.swift */,
+				DC8F33054474BFD36C9E62B6EDEA74FB /* IQTitleBarButtonItem.swift */,
+				4DBC4B1FF0EA6BA61D3DDD3FC3F587F8 /* IQToolbar.swift */,
+				0C0C5CD0A7BA0D68325A8F6F93686E49 /* IQUIScrollView+Additions.swift */,
+				2FC167FFF865B90E67EB1059AC7938A7 /* IQUITextFieldView+Additions.swift */,
+				0ED659FC833BB6C7A793F5C49158AEB6 /* IQUIView+Hierarchy.swift */,
+				8F0565F9D22AC98D5E5101F9E6189BFE /* IQUIView+IQKeyboardToolbar.swift */,
+				85653B9E2B67DA8DBD9AE760AD489FDB /* IQUIViewController+Additions.swift */,
+				8BC31980396A7FE513F033C807393194 /* IQUIWindow+Hierarchy.swift */,
+				15F26F94853E7E634D408B3AAEB36344 /* Resources */,
+				C7D40FD8D2157D3DFBD780C8E60C84F2 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/PDFReader";
-			sourceTree = "<group>";
-		};
-		89991D1190F2C333F4D3A84487DF5754 /* PDFReader */ = {
-			isa = PBXGroup;
-			children = (
-				524032399796813CA6917A76A1FF1961 /* PDFDocument.swift */,
-				3EC8A3670AFC5D8233A3CA2E9AE30AD7 /* PDFPageCollectionViewCell.swift */,
-				68A74DE6AB9F80947114EE749F00E09C /* PDFPageView.swift */,
-				B3D18CFE6009E6C9366C651AFAA4CEFC /* PDFThumbnailCell.swift */,
-				9E27F0491F7530774E28EFDA25204A20 /* PDFThumbnailCollectionViewController.swift */,
-				2DF87D4D16695FDB323EC4561B7B6439 /* PDFViewController.swift */,
-				6BA1CEEC669A9031550E6993D0CF8F2E /* TiledView.swift */,
-				E3DFA8735648768A832E1B3E48B26D5E /* Resources */,
-				891AB421E18936D1D4D9418BF1926BD3 /* Support Files */,
-			);
-			name = PDFReader;
-			path = PDFReader;
+			name = IQKeyboardManagerSwift;
+			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
 		B04D938E1DE2E6F1B132C78268FF1826 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift */ = {
@@ -419,96 +538,61 @@
 			path = "Target Support Files/Pods-KKH Paediatrics Anaesthesia Handbook - swift";
 			sourceTree = "<group>";
 		};
-		B2DD7608587B9AE85570D63B732FB7B0 /* SwiftyJSON */ = {
+		BD124EE6E8430F442D2B8081CCEE55F3 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				EC35748F34422D435E36B103DCD6F7E3 /* SwiftyJSON.swift */,
-				D67F1BD6EEBF5F61CE4AE6141618DD79 /* Support Files */,
+				58B2F7C553CE74C86B327D57848976AB /* SwiftyJSON.swift */,
+				1AD979689A1EE9793FAC9BE2997BF57C /* Support Files */,
 			);
 			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		C7D40FD8D2157D3DFBD780C8E60C84F2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D67F1BD6EEBF5F61CE4AE6141618DD79 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CF7A46EC8801BA1791456880E5FFCDE8 /* Info.plist */,
-				63F6C9BB0185CBFFE708ED67ECA326EB /* SwiftyJSON.modulemap */,
-				F8DCE243A36625BF5809F8DB52A05660 /* SwiftyJSON.xcconfig */,
-				0341D7D01CDB3D1DC0C8AC4FDC9B96E7 /* SwiftyJSON-dummy.m */,
-				3E21BAE4D0BBA75C23971C054FF9EED8 /* SwiftyJSON-prefix.pch */,
-				E30958F71A81D9CAA8D011C56C534DE7 /* SwiftyJSON-umbrella.h */,
+				E110E54F371EE04B7B140E2B25A2E8CD /* Info.plist */,
+				868AB84EA6C72C574913D596923CB94D /* IQKeyboardManagerSwift.modulemap */,
+				BD6D66FCA0A3A9AA9F78A7D22FAAC225 /* IQKeyboardManagerSwift.xcconfig */,
+				4ED1F3BE510FB37AD528B54AE1ABD975 /* IQKeyboardManagerSwift-dummy.m */,
+				BF4A157652F1913AA1E7F8DE73F2F98C /* IQKeyboardManagerSwift-prefix.pch */,
+				F50A3AF63A3EE06BB5A8B1426B5BC7E6 /* IQKeyboardManagerSwift-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
+			path = "../Target Support Files/IQKeyboardManagerSwift";
 			sourceTree = "<group>";
 		};
-		E3DFA8735648768A832E1B3E48B26D5E /* Resources */ = {
+		E3853A203D98A2C70C830E892CC8B1E6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FF88587DAAF9F1281BED37720F0A4D2E /* PDFReader.storyboard */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		E92367A802101FA66692A1043AF595C3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0A779FFD0A18FE13F73F621AE1F856A3 /* Info.plist */,
-				435A6868168F13E8F5C5223CF570711D /* RATreeView.modulemap */,
-				19AD70553B20E51F8F151C54D9C5AD01 /* RATreeView.xcconfig */,
-				1533BD2A7C55B89E21DD050DA43718DD /* RATreeView-dummy.m */,
-				5624F82CDB589BDE3CAF85BCE14A908A /* RATreeView-prefix.pch */,
-				2EFAD6862950901FF9D4C83D20BAE591 /* RATreeView-umbrella.h */,
+				FB92EED2D027A3C1B3D6703D47654EDE /* Info.plist */,
+				5BD3F2EE941CBB51A43BE7808C22B67E /* RATreeView.modulemap */,
+				F588295CE266A7464D61C2D643913487 /* RATreeView.xcconfig */,
+				65A4398D6B5EBE9EAA304E0C7BFFD448 /* RATreeView-dummy.m */,
+				788DAB0DEF0C010FAA955239B732EC4B /* RATreeView-prefix.pch */,
+				6F2A090ED2793B085FF2D8CA10F1E719 /* RATreeView-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/RATreeView";
 			sourceTree = "<group>";
 		};
+		E873868FC87D4437225047317FFE6493 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A76A3A6503BA15F7B8E86FA19F2B775E /* Info.plist */,
+				717A02ED5452AF20E07DFB5C81A4D46E /* PDFReader.modulemap */,
+				663D78C29D073F3740FD2D8942BED96A /* PDFReader.xcconfig */,
+				CCD70594E712D88F46E901E17A6D2121 /* PDFReader-dummy.m */,
+				E05127842ED0ACAAC0CC05073C0ECB04 /* PDFReader-prefix.pch */,
+				74C42ADE2CD783E5263E57757869F5E3 /* PDFReader-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PDFReader";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1865D8ACD2CD946BD20DAAE11DF38A2B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D46C64F81A06C454FBFC9787BE0176F3 /* RABatchChangeEntity.h in Headers */,
-				7F7ADE571593E73F55D2E36353E7051D /* RABatchChanges.h in Headers */,
-				B75F6766E580209A46A2E18584A54D69 /* RATableView.h in Headers */,
-				F3890A8054B28BD9B0D77E0DCF7B01BC /* RATreeNode.h in Headers */,
-				F436E835A70C2C0F530D8FD2D53E6E88 /* RATreeNode_ClassExtension.h in Headers */,
-				9E808A45F571347A6722C8A94F730B23 /* RATreeNodeCollectionController.h in Headers */,
-				EB52E02951F7394CB04B047CC16B9EDB /* RATreeNodeController.h in Headers */,
-				509D4CB583EE2D735FE5123BE1685199 /* RATreeNodeItem+ClassExtension.h in Headers */,
-				16680138697F204B25CF3CDCE88B4C5D /* RATreeNodeItem+Private.h in Headers */,
-				38A136240E0B3891C6A1B30014242B1A /* RATreeNodeItem.h in Headers */,
-				F2657FC69DB8F08EA3B4CC65D8FFF6CF /* RATreeView+Enums.h in Headers */,
-				F2CE594C83F50BF91151FE0031A1CE0A /* RATreeView+Private.h in Headers */,
-				DDF2D0276986B478BD650B18A70FF9A8 /* RATreeView+RATreeNodeCollectionControllerDataSource.h in Headers */,
-				24E65817056D65794CDB47D595C244B1 /* RATreeView+TableViewDataSource.h in Headers */,
-				96A7784EBA1D7CF1EAB44D9679F62D2E /* RATreeView+TableViewDelegate.h in Headers */,
-				F64EDC9B5EF6D448690B28D66C34E5CE /* RATreeView-umbrella.h in Headers */,
-				FDB81EDFD60FEB13EE20215FBD23B02F /* RATreeView.h in Headers */,
-				275C4471D3D39498ED4C6E6BB130A5FA /* RATreeView_ClassExtension.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		439636E92BD8DF92046E97E26617EF9E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4E2FB759E3AE4355F939699360A886DA /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		95D7A49EB44A0D392E944EEC3CE20017 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -517,11 +601,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADA852728DE3EC3CFAFBA1CE02767CAA /* Headers */ = {
+		A16A3102FB4C5E2DAB4E894ED74030CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3763DFB4090BF4D3F5BE159AA91A4449 /* SwiftyJSON-umbrella.h in Headers */,
+				B00387B24D5227A4BE672A40A3E59035 /* RABatchChangeEntity.h in Headers */,
+				B7D47016CE4BC38BB914AACD7369F1CC /* RABatchChanges.h in Headers */,
+				041FB92258FCEFFF22B954AC915642C7 /* RATableView.h in Headers */,
+				2F113905B7AE465E1B88E636B85FC68D /* RATreeNode.h in Headers */,
+				9C18924747EF5B0AC6B901412A1CA242 /* RATreeNode_ClassExtension.h in Headers */,
+				9E90949B67FC8CEDBAD0BD64DF300812 /* RATreeNodeCollectionController.h in Headers */,
+				6DF8E2F374FF33439C10B3325EE5F68D /* RATreeNodeController.h in Headers */,
+				6AD61CB9876EB93D83F5AE61466189A2 /* RATreeNodeItem+ClassExtension.h in Headers */,
+				200A4AADB1D7887FE3C3E0C7E71D5B42 /* RATreeNodeItem+Private.h in Headers */,
+				CD72BBB031E2FA5877F22616182C8F6E /* RATreeNodeItem.h in Headers */,
+				2CD53E2EC088562078BAE8D69B8B8723 /* RATreeView+Enums.h in Headers */,
+				A3DDB7F34163834C669F4333A5CB27F1 /* RATreeView+Private.h in Headers */,
+				1CE27BF793DD80A998A219A20BC784CC /* RATreeView+RATreeNodeCollectionControllerDataSource.h in Headers */,
+				F8A2EFB61EF83D3C576D0D18CD89EBC3 /* RATreeView+TableViewDataSource.h in Headers */,
+				FD18449F1676B64267FF6A9EB2CA3286 /* RATreeView+TableViewDelegate.h in Headers */,
+				853C941C2F7516201E7F52354E6E9D29 /* RATreeView-umbrella.h in Headers */,
+				172639B132CDBE78B1CF23F12376104A /* RATreeView.h in Headers */,
+				EFE3406CF931F4861C535A3CC2290A95 /* RATreeView_ClassExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +634,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA0614C031A554666CEF5AC385399302 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37BC6CE75069433DAF43CA52B6C21348 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBAE63CF0BD240CB0AA528879913EDF2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BCF77C9FA7F0F9BF0495C41C726EA5 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC1730EBCE13147336AC0D00D34362AF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -541,33 +658,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E0594BC12C332F68CBA28F99391465D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49E26DF5871F564A7C9528173CE2D5F /* IQKeyboardManagerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6599D447C61BD5FA8BEE8DD99A4BD628 /* RATreeView */ = {
+		02EC045254187DE666D75B8ED7AD73BD /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B12E22433462BBD972F97EDA5170511 /* Build configuration list for PBXNativeTarget "RATreeView" */;
+			buildConfigurationList = 1A52D348759EB96E3D59507E7963AA3F /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				F2E22F9AC61CDBB0E10FBC9F08F187DA /* Sources */,
-				0A98A70B59ACE0404DF97B88AE9BF929 /* Frameworks */,
-				1865D8ACD2CD946BD20DAAE11DF38A2B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = RATreeView;
-			productName = RATreeView;
-			productReference = 04B091C2540EC805EF2941A742BB7B4C /* RATreeView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		74D6F85A3F5ED239231351196DDF6028 /* SwiftyJSON */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DEA585EB1B52123582E7C5026A112BA0 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
-			buildPhases = (
-				55A8A57BD39D370C575B6809A2B17A90 /* Sources */,
-				863E2784202FAF882ABA9994F356D569 /* Frameworks */,
-				ADA852728DE3EC3CFAFBA1CE02767CAA /* Headers */,
+				5A7FA9337E7629D1CC308FEDFE0FF538 /* Sources */,
+				233D183146368EF13DB5C435F80FC849 /* Frameworks */,
+				BBAE63CF0BD240CB0AA528879913EDF2 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -575,27 +683,63 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = 4C68196FDE80D87F52857FC5EECD9E7B /* SwiftyJSON.framework */;
+			productReference = E3404CE641D79068743E8B629B7F3EE1 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CE8F7D2A00903024077C82146E80207C /* Pods-KKH Paediatrics Anaesthesia Handbook - swift */ = {
+		4DC059E04CBA98AEDDB5C34E02D551E9 /* IQKeyboardManagerSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D535A78B7DDB579C20925B07E7B368C0 /* Build configuration list for PBXNativeTarget "Pods-KKH Paediatrics Anaesthesia Handbook - swift" */;
+			buildConfigurationList = 75B8C8837854098D8D911F8A3335DDAC /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */;
 			buildPhases = (
-				D35CD8717AB62BF2015CB25086EB2FCB /* Sources */,
-				2BBDA41B96CFAADE333F7128065301C2 /* Frameworks */,
-				439636E92BD8DF92046E97E26617EF9E /* Headers */,
+				AB0925B8AA80E6202908F358FE239182 /* Sources */,
+				10062CC15DAEABE95D65862067E8682B /* Frameworks */,
+				8913AFCA6CAEB5D9BF81A3A49E9CE1BE /* Resources */,
+				E0594BC12C332F68CBA28F99391465D9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4772E87AF6454DCC89A172F389CA8148 /* PBXTargetDependency */,
-				063D961E79BEF75B3116A945315C4D34 /* PBXTargetDependency */,
-				1611D9B510BE28EF95159F58D3B867F2 /* PBXTargetDependency */,
+			);
+			name = IQKeyboardManagerSwift;
+			productName = IQKeyboardManagerSwift;
+			productReference = A6FE22828B45B2559E92F78FA5DF3A19 /* IQKeyboardManagerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		879E1FBF27EBE2298AB3ACA898E39814 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4523C7E8530905533014F46BAA312A9 /* Build configuration list for PBXNativeTarget "Pods-KKH Paediatrics Anaesthesia Handbook - swift" */;
+			buildPhases = (
+				FEBAEA2C4BAFB300F21D82914AE50334 /* Sources */,
+				8EEA46A84DA7ECAD6EFB0BF8601BC28A /* Frameworks */,
+				BA0614C031A554666CEF5AC385399302 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D75120C1213EA7BD23C5E1D90CB302B /* PBXTargetDependency */,
+				645BA135AF531AE8D6AD43EDD84D47B6 /* PBXTargetDependency */,
+				AE315AF2F4D6C77FFDCC808C0750C88B /* PBXTargetDependency */,
+				1EB642E8A917602A5B0945441EA9967C /* PBXTargetDependency */,
 			);
 			name = "Pods-KKH Paediatrics Anaesthesia Handbook - swift";
 			productName = "Pods-KKH Paediatrics Anaesthesia Handbook - swift";
-			productReference = 7D39B8B590E3D2C7A1D8DF0FA25297D5 /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift.framework */;
+			productReference = 9A1A53402298BD5937739B5D0C8476A1 /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB34944273F8BA7D5DB44BE86B0217A8 /* RATreeView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D41CDB16EC0B55C9B5A87547E28DFB64 /* Build configuration list for PBXNativeTarget "RATreeView" */;
+			buildPhases = (
+				048EB36B8E14622234AFB62BC754B1C2 /* Sources */,
+				B58986C8E7619981600917D9101C99B1 /* Frameworks */,
+				A16A3102FB4C5E2DAB4E894ED74030CF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RATreeView;
+			productName = RATreeView;
+			productReference = 50831D7876C9C64FD00458A76BD1A2AB /* RATreeView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EA106642319A33847FE8722EA62F399B /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests */ = {
@@ -612,7 +756,7 @@
 			);
 			name = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests";
 			productName = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests";
-			productReference = 73DFE44EEC2A61ADCC05D3E616AD1AA7 /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework */;
+			productReference = 553D33D4984E292BBCED22A6973D5481 /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EB24B369FEEB11155B325601123660FE /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests */ = {
@@ -629,7 +773,7 @@
 			);
 			name = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests";
 			productName = "Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests";
-			productReference = AE678ED43C5E4995BCD8E778C245806D /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftTests.framework */;
+			productReference = 9C99E50BA3C8818CC2F94402B837B183 /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F710BBECB76266FF75359E63DE720D2D /* PDFReader */ = {
@@ -647,7 +791,7 @@
 			);
 			name = PDFReader;
 			productName = PDFReader;
-			productReference = C5AAA20F1206BE311C4EFE5A3A2B963A /* PDFReader.framework */;
+			productReference = 1F2C227BEE60825FC7051E95C3DBA230 /* PDFReader.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -667,21 +811,30 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 29E90499E5845CB7771B7FA424B4046D /* Products */;
+			productRefGroup = 4C1D4857E5DD8684E67BF7E2811F2E3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				4DC059E04CBA98AEDDB5C34E02D551E9 /* IQKeyboardManagerSwift */,
 				F710BBECB76266FF75359E63DE720D2D /* PDFReader */,
-				CE8F7D2A00903024077C82146E80207C /* Pods-KKH Paediatrics Anaesthesia Handbook - swift */,
+				879E1FBF27EBE2298AB3ACA898E39814 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift */,
 				EB24B369FEEB11155B325601123660FE /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests */,
 				EA106642319A33847FE8722EA62F399B /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests */,
-				6599D447C61BD5FA8BEE8DD99A4BD628 /* RATreeView */,
-				74D6F85A3F5ED239231351196DDF6028 /* SwiftyJSON */,
+				DB34944273F8BA7D5DB44BE86B0217A8 /* RATreeView */,
+				02EC045254187DE666D75B8ED7AD73BD /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8913AFCA6CAEB5D9BF81A3A49E9CE1BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65B8481AFF5531FC2E4382CBA63C057 /* IQKeyboardManager.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D997AB8292E073A95F741C33E0A8A8B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -693,6 +846,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		048EB36B8E14622234AFB62BC754B1C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC523617E9FC501B35F68C7940E1138 /* RABatchChangeEntity.m in Sources */,
+				6F300E86A0E3EF95CCF1E445B1BB5327 /* RABatchChanges.m in Sources */,
+				DBE474693745AF02214E41A820066777 /* RATableView.m in Sources */,
+				48527ACD812EA8CE549D5034138CFB49 /* RATreeNode.m in Sources */,
+				636530597E89B7AF9AFE18BDF849A91A /* RATreeNodeCollectionController.m in Sources */,
+				0D2FA7B86DA7BC8DC4BD728EC042B434 /* RATreeNodeController.m in Sources */,
+				5FE7CEFD685D426884C2A0A6F2766479 /* RATreeNodeItem+Private.m in Sources */,
+				0CAC8827F129FD134E65F40C0B5C7AB2 /* RATreeNodeItem.m in Sources */,
+				E8BBDB7788B0EA0BD4FC3D94ACD266CA /* RATreeView+Enums.m in Sources */,
+				81C70C413D26C03E37EF0D00800AF62F /* RATreeView+Private.m in Sources */,
+				F88743FC5E0CDCF2713277C4991D72F7 /* RATreeView+RATreeNodeCollectionControllerDataSource.m in Sources */,
+				5F8B1DFEDB780E936489E56E7E8512DD /* RATreeView+TableViewDataSource.m in Sources */,
+				1D80C97A60B2AECBBBBC7569CF051885 /* RATreeView+TableViewDelegate.m in Sources */,
+				4AAD388B87429D2A01FD94C398E9D71F /* RATreeView-dummy.m in Sources */,
+				93AA0EC4CBA3B2EB6E38691BD90C7C42 /* RATreeView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07831834FC0935C17440E37A1D5134C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -701,12 +876,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55A8A57BD39D370C575B6809A2B17A90 /* Sources */ = {
+		5A7FA9337E7629D1CC308FEDFE0FF538 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D20DAD0C39D19909CB1A39D4409D19A1 /* SwiftyJSON-dummy.m in Sources */,
-				1F3699CF61926A9D9DF4BB9BBB055590 /* SwiftyJSON.swift in Sources */,
+				D3C412CBA3D205CDBBDE9A5B5976ACC3 /* SwiftyJSON-dummy.m in Sources */,
+				2580A8A94A6A74A5C93D0EB98D2628F4 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0925B8AA80E6202908F358FE239182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EBD7B6D6EEBAD72870AECB44D1E3AE2 /* IQBarButtonItem.swift in Sources */,
+				A88CFE3F9DCE30C3AA3A2F6086C6EE84 /* IQKeyboardManager.swift in Sources */,
+				89959176E9E2C981CE0A235B706E8AA7 /* IQKeyboardManagerConstants.swift in Sources */,
+				BCD6B3BA5E1132F0FD49AC39F2BF4D62 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				5B981698211292E1F92A21CC9F182675 /* IQKeyboardManagerSwift-dummy.m in Sources */,
+				5C1B7FB4706A09F7E95F26B02797BE19 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				E9AD3D7B3B4B82CD4D9B817109239F55 /* IQNSArray+Sort.swift in Sources */,
+				A50218EC76648886FE767F1DCD9626DE /* IQPreviousNextView.swift in Sources */,
+				B0E679FF770EE8E7073391580C373D92 /* IQTextView.swift in Sources */,
+				32D47B0AE0C145C1E9662CC2468FED0E /* IQTitleBarButtonItem.swift in Sources */,
+				A9F1A9CF01AF7F7A691A0A8C9E2D3A71 /* IQToolbar.swift in Sources */,
+				22BF5066806248FBD63CD64193B95AB6 /* IQUIScrollView+Additions.swift in Sources */,
+				123D28717B28730D7DDD56E56B646294 /* IQUITextFieldView+Additions.swift in Sources */,
+				2BC48BA9EC7B6F6F334FB9CF2758D461 /* IQUIView+Hierarchy.swift in Sources */,
+				0B9FAA59E53F8381BAD75316E70145BE /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				C92BC0B8E4CBCFD16762838B30654F29 /* IQUIViewController+Additions.swift in Sources */,
+				C759ACB2C97ED8A9EC91C2DF79C95F1D /* IQUIWindow+Hierarchy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,60 +932,77 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D35CD8717AB62BF2015CB25086EB2FCB /* Sources */ = {
+		FEBAEA2C4BAFB300F21D82914AE50334 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A9243C292F64DDE818C638F4561ADCB /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2E22F9AC61CDBB0E10FBC9F08F187DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				870EB3470BBD7DC6064F446141686206 /* RABatchChangeEntity.m in Sources */,
-				F0C6947DBB3DC50E1EAD489BC1660F97 /* RABatchChanges.m in Sources */,
-				F7265B6D5B0292ED9969A5CC13A573CD /* RATableView.m in Sources */,
-				396481B54B7E0E03AF26E328C6598231 /* RATreeNode.m in Sources */,
-				578A7FA3E5CC24D04C6C4016ABF43CEB /* RATreeNodeCollectionController.m in Sources */,
-				2ACD0B6914614B4CAE70AAF42262F7BB /* RATreeNodeController.m in Sources */,
-				B938B13E418994B223E246161C91F63C /* RATreeNodeItem+Private.m in Sources */,
-				51001C5B6BD051843B043B7C1F8C03A7 /* RATreeNodeItem.m in Sources */,
-				6E2AEC6419D4DEFFE04E75C375F56BB6 /* RATreeView+Enums.m in Sources */,
-				D7DF30446562DBE12CA2667778A4017B /* RATreeView+Private.m in Sources */,
-				99AA8B7A79F9A79C57E67B47AA0FAA08 /* RATreeView+RATreeNodeCollectionControllerDataSource.m in Sources */,
-				48C25B822947A0CBFB06B9F79060480E /* RATreeView+TableViewDataSource.m in Sources */,
-				C7BF7D62B983B8BDBED17DE3D143904B /* RATreeView+TableViewDelegate.m in Sources */,
-				CC0F978D1BE215602F36CD72E999660C /* RATreeView-dummy.m in Sources */,
-				935E8E9E426BBAEE9D1DA7B3924EEBD8 /* RATreeView.m in Sources */,
+				2803BDEAFC524B1C1B119E6EF783790F /* Pods-KKH Paediatrics Anaesthesia Handbook - swift-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		063D961E79BEF75B3116A945315C4D34 /* PBXTargetDependency */ = {
+		0D75120C1213EA7BD23C5E1D90CB302B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = RATreeView;
-			target = 6599D447C61BD5FA8BEE8DD99A4BD628 /* RATreeView */;
-			targetProxy = 54FFBAF6EB7D489C384E9048BF967A5A /* PBXContainerItemProxy */;
+			name = IQKeyboardManagerSwift;
+			target = 4DC059E04CBA98AEDDB5C34E02D551E9 /* IQKeyboardManagerSwift */;
+			targetProxy = 99E86B6D9924E7A0AB4C2B2DA2AE166A /* PBXContainerItemProxy */;
 		};
-		1611D9B510BE28EF95159F58D3B867F2 /* PBXTargetDependency */ = {
+		1EB642E8A917602A5B0945441EA9967C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = 74D6F85A3F5ED239231351196DDF6028 /* SwiftyJSON */;
-			targetProxy = F006CCDC61919B8ECC5B3FBB484E6FCF /* PBXContainerItemProxy */;
+			target = 02EC045254187DE666D75B8ED7AD73BD /* SwiftyJSON */;
+			targetProxy = 6785F5A1462D3781872B07A8E6DED648 /* PBXContainerItemProxy */;
 		};
-		4772E87AF6454DCC89A172F389CA8148 /* PBXTargetDependency */ = {
+		645BA135AF531AE8D6AD43EDD84D47B6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PDFReader;
 			target = F710BBECB76266FF75359E63DE720D2D /* PDFReader */;
-			targetProxy = 3E2AA4CED0B7781A9FDB0C66B654C5B3 /* PBXContainerItemProxy */;
+			targetProxy = 82261512ACF846EED20998ECCF92640B /* PBXContainerItemProxy */;
+		};
+		AE315AF2F4D6C77FFDCC808C0750C88B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RATreeView;
+			target = DB34944273F8BA7D5DB44BE86B0217A8 /* RATreeView */;
+			targetProxy = B1687E0AEFA22572EEF9DABE0F0C90EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0456A7C8ABE34079F45D9E5DFB32981A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F11D8887E25D7312AE6B06CCBDCE0A3B /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		0515C47E2BA87636CB9BB117FCF65767 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AD1CAA6ED08080C90F3BCAEB0765B300 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests.debug.xcconfig */;
@@ -822,42 +1038,7 @@
 			};
 			name = Debug;
 		};
-		0B5CC1B7CDA1D62F8E3E4E9A48B71BC2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F7A2C7D52BB43CDB83C7F1CA9E8095C /* Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KKH Paediatrics Anaesthesia Handbook - swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KKH Paediatrics Anaesthesia Handbook - swift/Pods-KKH Paediatrics Anaesthesia Handbook - swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4B5B2C2413A7C0D095EDA9D1CAD3D634 /* Debug */ = {
+		23D6ECBFE0B768D9EFEE58C1951D4871 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B558B5ABE750BB0F4C403639F6DBBC5A /* Pods-KKH Paediatrics Anaesthesia Handbook - swift.debug.xcconfig */;
 			buildSettings = {
@@ -928,38 +1109,6 @@
 			};
 			name = Release;
 		};
-		4DFBCFFC716EA5F7109C16E5475D1865 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19AD70553B20E51F8F151C54D9C5AD01 /* RATreeView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RATreeView/RATreeView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RATreeView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RATreeView/RATreeView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = RATreeView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		56B45A4503E8948FD4204816C35AEF96 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB193673158C93ABE0241D9AC235A969 /* Pods-KKH Paediatrics Anaesthesia Handbook - swiftUITests.release.xcconfig */;
@@ -989,6 +1138,38 @@
 				PRODUCT_NAME = Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		620C1A818903DC9AD1436F858F536340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F11D8887E25D7312AE6B06CCBDCE0A3B /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1035,74 +1216,9 @@
 			};
 			name = Release;
 		};
-		6EBDCD202DAB45F7124865C1638690E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8DCE243A36625BF5809F8DB52A05660 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		72140968BBA4A97238568BC1BAD0CA93 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8DCE243A36625BF5809F8DB52A05660 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		87609A2DF852367EF8765C0F1238C23D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45F4885AC89355FA47B4E9629A9E2026 /* PDFReader.xcconfig */;
+			baseConfigurationReference = 663D78C29D073F3740FD2D8942BED96A /* PDFReader.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1167,9 +1283,141 @@
 			};
 			name = Debug;
 		};
+		8B057773120D53DBB692700549D84EAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD6D66FCA0A3A9AA9F78A7D22FAAC225 /* IQKeyboardManagerSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A2ED5D07909FC9971ABEC4BB630EC6C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD6D66FCA0A3A9AA9F78A7D22FAAC225 /* IQKeyboardManagerSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManagerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = IQKeyboardManagerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A74DB4582BBBACA1A42EF485535F324E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F7A2C7D52BB43CDB83C7F1CA9E8095C /* Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KKH Paediatrics Anaesthesia Handbook - swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KKH Paediatrics Anaesthesia Handbook - swift/Pods-KKH Paediatrics Anaesthesia Handbook - swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A90D9B5C0A849AC57903D91D475F2FCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F588295CE266A7464D61C2D643913487 /* RATreeView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RATreeView/RATreeView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RATreeView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RATreeView/RATreeView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RATreeView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		CC29401391D7133E74D7E6767E04E552 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45F4885AC89355FA47B4E9629A9E2026 /* PDFReader.xcconfig */;
+			baseConfigurationReference = 663D78C29D073F3740FD2D8942BED96A /* PDFReader.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1193,38 +1441,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E0A6FD0DE226CD8ED420A50BFB2E0DBD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19AD70553B20E51F8F151C54D9C5AD01 /* RATreeView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RATreeView/RATreeView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RATreeView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RATreeView/RATreeView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = RATreeView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1276,9 +1492,50 @@
 			};
 			name = Debug;
 		};
+		F469DDFE839E437552C94454E8E20BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F588295CE266A7464D61C2D643913487 /* RATreeView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RATreeView/RATreeView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RATreeView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RATreeView/RATreeView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RATreeView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1A52D348759EB96E3D59507E7963AA3F /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0456A7C8ABE34079F45D9E5DFB32981A /* Debug */,
+				620C1A818903DC9AD1436F858F536340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1FFF610BA4B5B2613486D05B80A4ADB5 /* Build configuration list for PBXNativeTarget "Pods-KKH Paediatrics Anaesthesia Handbook - swiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1297,20 +1554,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B12E22433462BBD972F97EDA5170511 /* Build configuration list for PBXNativeTarget "RATreeView" */ = {
+		75B8C8837854098D8D911F8A3335DDAC /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0A6FD0DE226CD8ED420A50BFB2E0DBD /* Debug */,
-				4DFBCFFC716EA5F7109C16E5475D1865 /* Release */,
+				A2ED5D07909FC9971ABEC4BB630EC6C8 /* Debug */,
+				8B057773120D53DBB692700549D84EAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D535A78B7DDB579C20925B07E7B368C0 /* Build configuration list for PBXNativeTarget "Pods-KKH Paediatrics Anaesthesia Handbook - swift" */ = {
+		D41CDB16EC0B55C9B5A87547E28DFB64 /* Build configuration list for PBXNativeTarget "RATreeView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4B5B2C2413A7C0D095EDA9D1CAD3D634 /* Debug */,
-				0B5CC1B7CDA1D62F8E3E4E9A48B71BC2 /* Release */,
+				A90D9B5C0A849AC57903D91D475F2FCA /* Debug */,
+				F469DDFE839E437552C94454E8E20BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4523C7E8530905533014F46BAA312A9 /* Build configuration list for PBXNativeTarget "Pods-KKH Paediatrics Anaesthesia Handbook - swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23D6ECBFE0B768D9EFEE58C1951D4871 /* Debug */,
+				A74DB4582BBBACA1A42EF485535F324E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1320,15 +1586,6 @@
 			buildConfigurations = (
 				CC29401391D7133E74D7E6767E04E552 /* Debug */,
 				87609A2DF852367EF8765C0F1238C23D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DEA585EB1B52123582E7C5026A112BA0 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6EBDCD202DAB45F7124865C1638690E8 /* Debug */,
-				72140968BBA4A97238568BC1BAD0CA93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

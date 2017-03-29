@@ -6,6 +6,7 @@ target 'KKH Paediatrics Anaesthesia Handbook - swift' do
   use_frameworks!
 
   # Pods for KKH Paediatrics Anaesthesia Handbook - swift
+  pod 'IQKeyboardManagerSwift'
   pod 'PDFReader'
   pod "RATreeView", "~> 2.1.2"
   pod 'SwiftyJSON'
