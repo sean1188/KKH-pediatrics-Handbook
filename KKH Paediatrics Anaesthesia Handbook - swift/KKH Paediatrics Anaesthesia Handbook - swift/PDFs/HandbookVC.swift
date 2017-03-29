@@ -97,11 +97,24 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HandbookCollectionViewCell
-        cell.layer.cornerRadius = 10.0
-        cell.backgroundColor = UIColor.init().secondaryColor()
-        cell.indexLabel.textColor = UIColor.init().primaryColor()
-        cell.indexLabel.text = String(indexPath.row + 1)
-        cell.titleLabel.text = collectionView_dispArray[indexPath.row]
+        //styling
+        cell.layer.cornerRadius     = 10.0
+        cell.backgroundColor        = UIColor.init().secondaryColor()
+        cell.indexLabel.textColor   = UIColor.init().primaryColor()
+        
+        //populate content
+        cell.indexLabel.text        = String(indexPath.row + 1)
+        cell.titleLabel.text        = collectionView_dispArray[indexPath.row]
+        
+        //animate cell
+        cell.alpha                  = 0;
+        let iniFrame                = cell.frame
+        cell.frame = CGRect.init(x: cell.frame.origin.x, y: cell.frame.origin.y + 50, width: cell.frame.size.width, height: cell.frame.size.height)
+        UIView.animate(withDuration: 0.4, delay: 0.4, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.6, options: .curveEaseInOut, animations: {
+            cell.frame = iniFrame
+            cell.alpha = 1
+        }, completion: nil)
+    
         return cell
     }
 
@@ -124,7 +137,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+        return 60 
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

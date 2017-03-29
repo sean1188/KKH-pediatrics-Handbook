@@ -44,7 +44,7 @@ class PDFManager: NSObject {
             }
         }
         
-        print(chapters_NAME)
+
     }
     
     func numberOfFiles() -> Int {
@@ -65,8 +65,7 @@ class PDFManager: NSObject {
         filePaths.forEach { (file) in
             if file.substring(to: file.index(file.startIndex, offsetBy: 1)) == character{
                 let name = file.substring(from: file.index(file.startIndex, offsetBy: 5)).substring(to: file.index(file.endIndex, offsetBy: -9 ))
-                print(name)
-                namearray.append(name)
+                namearray.append(name.replacingOccurrences(of: "_", with: " "))
                 idArray.append(id)
             }
             id = id + 1
