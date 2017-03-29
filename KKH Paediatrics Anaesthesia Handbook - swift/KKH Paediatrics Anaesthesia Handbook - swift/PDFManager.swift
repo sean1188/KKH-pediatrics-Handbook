@@ -57,22 +57,21 @@ class PDFManager: NSObject {
     
     
     
-    func filesForChapteratIndex (_ index : Int) -> [[String: Any]]{
+    func filesForChapteratIndex (_ index : Int) -> ([String], [Int]){
         let character = chapters_CHAR[index]
-        var dict = [[String: Any]]()
+        var idArray = [Int]()
+        var namearray = [String]()
         var id = 0
         filePaths.forEach { (file) in
             if file.substring(to: file.index(file.startIndex, offsetBy: 1)) == character{
                 let name = file.substring(from: file.index(file.startIndex, offsetBy: 5)).substring(to: file.index(file.endIndex, offsetBy: -9 ))
                 print(name)
-                dict.append([
-                    "id" : id,
-                    "name" : name
-                    ])
+                namearray.append(name)
+                idArray.append(id)
             }
             id = id + 1
         }
-        return dict
+        return (namearray, idArray)
     }
     
     func nameOfchapteratIndex (_ index : Int) -> String {

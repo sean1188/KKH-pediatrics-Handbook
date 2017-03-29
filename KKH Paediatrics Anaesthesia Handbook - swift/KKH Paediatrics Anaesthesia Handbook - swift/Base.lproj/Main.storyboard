@@ -424,6 +424,7 @@
                         <outlet property="searchButton" destination="dVp-Od-yvw" id="nEa-qp-fnb"/>
                         <outlet property="searchField" destination="Ciw-yX-cia" id="RGf-Db-mCc"/>
                         <outlet property="search_backdrop" destination="val-xZ-IdL" id="MZW-6e-PV0"/>
+                        <outlet property="section_title" destination="f8z-NJ-vtu" id="ayt-S8-3V1"/>
                         <outlet property="tableView" destination="aT7-Kr-TsE" id="UGk-0g-DXq"/>
                         <outlet property="topbar" destination="D0D-nf-ezn" id="d3c-Vd-ksD"/>
                     </connections>
@@ -445,7 +446,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aT7-Kr-TsE">
-                            <rect key="frame" x="0.0" y="42" width="375" height="403"/>
+                            <rect key="frame" x="0.0" y="42" width="375" height="458"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <color key="separatorColor" white="0.66666666666666663" alpha="0.42875107020547948" colorSpace="calibratedWhite"/>
                             <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -496,17 +497,6 @@
                                 <outlet property="delegate" destination="YfM-FN-BVq" id="YFv-9z-iPa"/>
                             </connections>
                         </tableView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBY-fw-hq6">
-                            <rect key="frame" x="164" y="453" width="46" height="41"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="41" id="0a8-hp-G1v"/>
-                                <constraint firstAttribute="width" constant="46" id="HM6-PI-XyL"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="26"/>
-                            <state key="normal" title="">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                        </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8z-NJ-vtu">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="34"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -521,14 +511,12 @@
                     <color key="backgroundColor" red="0.31372549020000001" green="0.57211345430000005" blue="0.81978327039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="f8z-NJ-vtu" firstAttribute="leading" secondItem="Lxg-zM-5fB" secondAttribute="leading" id="BsI-hr-qcm"/>
-                        <constraint firstItem="aT7-Kr-TsE" firstAttribute="centerX" secondItem="eBY-fw-hq6" secondAttribute="centerX" id="FSX-9b-cj8"/>
                         <constraint firstAttribute="trailing" secondItem="f8z-NJ-vtu" secondAttribute="trailing" id="MFy-EZ-lUP"/>
                         <constraint firstItem="aT7-Kr-TsE" firstAttribute="top" secondItem="f8z-NJ-vtu" secondAttribute="bottom" constant="8" id="NHy-AX-qpc"/>
                         <constraint firstItem="f8z-NJ-vtu" firstAttribute="top" secondItem="Lxg-zM-5fB" secondAttribute="top" id="OUZ-sC-2ZO"/>
-                        <constraint firstItem="eBY-fw-hq6" firstAttribute="top" secondItem="aT7-Kr-TsE" secondAttribute="bottom" constant="8" symbolic="YES" id="UIB-Wd-dHh"/>
                         <constraint firstItem="aT7-Kr-TsE" firstAttribute="leading" secondItem="Lxg-zM-5fB" secondAttribute="leading" id="UKR-BN-RGb"/>
                         <constraint firstAttribute="trailing" secondItem="aT7-Kr-TsE" secondAttribute="trailing" id="ckJ-y2-EZo"/>
-                        <constraint firstAttribute="bottom" secondItem="eBY-fw-hq6" secondAttribute="bottom" constant="6" id="tC1-Jd-mXS"/>
+                        <constraint firstAttribute="bottom" secondItem="aT7-Kr-TsE" secondAttribute="bottom" id="lFM-FO-KGz"/>
                     </constraints>
                 </view>
             </objects>

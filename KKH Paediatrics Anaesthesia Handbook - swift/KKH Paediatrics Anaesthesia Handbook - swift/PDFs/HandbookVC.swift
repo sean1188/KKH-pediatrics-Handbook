@@ -29,12 +29,16 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     var tableview_dispArray = [String]()
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var section_title: UILabel!
+    
+    var isViewingChapter :Bool!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.init().primaryColor()
         SearchBarExpanded = false
+        isViewingChapter = false
         collectionView_dispArray = manager.chapters_NAME
     }
     
@@ -47,11 +51,21 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
     
     @IBAction func searchButtonPressed(_ sender: Any) {
+        if isViewingChapter {
+            //dismiss chapter files view
+            isViewingChapter = false
+            searchButton.setTitle("", for: .normal)
+            dismissfilesView()
+        }
+        else{
+        //search Operation
         if SearchBarExpanded {
             collapseSearchBar()
         }
         else{
             expandSearchBar()
+            updateTableViewDisplaywithArray(replacement: [])
+        }
         }
     }
     
@@ -93,7 +107,10 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         //will display files in chapter
-        
+        isViewingChapter = true
+        searchButton.setTitle("X", for: .normal)
+        updateTableViewDisplaywithArray(replacement: manager.filesForChapteratIndex(indexPath.row).0)
+        presentFilesViewwithTitile(title: manager.chapters_NAME[indexPath.row])
     }
     
 //MARK: - tableview delegate/datasource
@@ -126,7 +143,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
     func expandSearchBar (){
         searchButton.setTitle("X", for: .normal)
-        presentFilesView()
+        presentFilesViewwithTitile(title: "Enter Text to Search")
         UIView.animate(withDuration: 0.3, delay: 0
             , usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
             self.search_backdrop.frame = CGRect.init(x: 10, y: Int(self.search_backdrop.frame.origin.y), width: Int(self.view.frame.size.width - 20), height: Int(self.search_backdrop.frame.size.height))
@@ -151,19 +168,22 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         SearchBarExpanded = false
     }
     
-    func presentFilesView (){
+    func presentFilesViewwithTitile (title: String){
         //init filesview
+        section_title.text = title
+        section_title.textColor = UIColor.init().secondaryColor()
         filesView.backgroundColor = UIColor.init().primaryColor()
         filesView.frame = CGRect.init(x: 0, y: self.view.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.height - 85)
         self.view.addSubview(filesView)
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: { 
-            self.filesView.frame = CGRect.init(x: 0, y: self.topbar.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.height)
+            self.filesView.frame = CGRect.init(x: 0, y: self.topbar.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.height - 85)
         }) { (z) in
             
         }
     }
     
     func dismissfilesView (){
+        section_title.text = ""
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
              self.filesView.frame = CGRect.init(x: 0, y: self.view.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.height - 100)
         }) { (z) in
