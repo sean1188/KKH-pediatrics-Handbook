@@ -49,7 +49,6 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     @IBAction func searchButtonPressed(_ sender: Any) {
         if SearchBarExpanded {
             collapseSearchBar()
-            updatecollectionViewDisplaywithArray(replacement: manager.chapters_NAME)
         }
         else{
             expandSearchBar()
@@ -58,7 +57,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
 //MARK: - searching 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        updatecollectionViewDisplaywithArray(replacement: search(query: textField.text!))
+        updateTableViewDisplaywithArray(replacement: search(query: textField.text!))
         return true
     }
     
@@ -109,7 +108,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HandbookTableViewCell
-        cell.index.text = String(indexPath.row)
+        cell.index.text = String(indexPath.row + 1)
         cell.chapterName.text = tableview_dispArray[indexPath.row]
         cell.backgroundColor = UIColor.init().secondaryColor()
         cell.index.textColor = UIColor.init().primaryColor()
@@ -119,14 +118,17 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
    
 //MARK: - reusables
-    func updatecollectionViewDisplaywithArray (replacement : [String]){
-        collectionView_dispArray = replacement
-        collectionView.reloadData()
+    func updateTableViewDisplaywithArray (replacement : [String]){
+        //update search field
+        tableview_dispArray = replacement
+        tableView.reloadData()
     }
     
     func expandSearchBar (){
         searchButton.setTitle("X", for: .normal)
-        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
+        presentFilesView()
+        UIView.animate(withDuration: 0.3, delay: 0
+            , usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
             self.search_backdrop.frame = CGRect.init(x: 10, y: Int(self.search_backdrop.frame.origin.y), width: Int(self.view.frame.size.width - 20), height: Int(self.search_backdrop.frame.size.height))
         }, completion: { (s) in
             self.searchField.frame.size = CGSize.init(width: self.search_backdrop.frame.size.width - self.searchButton.frame.size.width - 40, height: self.search_backdrop.frame.size.height)
@@ -142,10 +144,31 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         searchField.text = ""
         searchField.removeFromSuperview()
         searchButton.setTitle("", for: .normal)
+        dismissfilesView()
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
             self.search_backdrop.frame = self.search_inital_frame
         }, completion: nil)
         SearchBarExpanded = false
+    }
+    
+    func presentFilesView (){
+        //init filesview
+        filesView.backgroundColor = UIColor.init().primaryColor()
+        filesView.frame = CGRect.init(x: 0, y: self.view.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.height)
+        self.view.addSubview(filesView)
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: { 
+            self.filesView.frame = CGRect.init(x: 0, y: self.topbar.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.height)
+        }) { (z) in
+            
+        }
+    }
+    
+    func dismissfilesView (){
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
+             self.filesView.frame = CGRect.init(x: 0, y: self.view.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.height - 100)
+        }) { (z) in
+             self.filesView.removeFromSuperview()
+        }
     }
 
 

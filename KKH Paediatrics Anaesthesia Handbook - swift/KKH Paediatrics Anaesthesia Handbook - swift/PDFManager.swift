@@ -36,14 +36,15 @@ class PDFManager: NSObject {
         if let path = Bundle.main.path(forResource: "index", ofType: "txt") {
             do {
                 let data = try String(contentsOfFile: path, encoding: .utf8)
-                let chapterNames = data.components(separatedBy: .newlines)
+                var chapterNames = data.components(separatedBy: .newlines)
+                chapterNames.removeLast(1)
                 chapters_NAME = chapterNames
             } catch {
                 print(error)
             }
         }
         
-        print("found \(chapters_NAME.count) chapters")
+        print(chapters_NAME)
     }
     
     func numberOfFiles() -> Int {
@@ -68,7 +69,6 @@ class PDFManager: NSObject {
                     "id" : id,
                     "name" : name
                     ])
-                
             }
             id = id + 1
         }
