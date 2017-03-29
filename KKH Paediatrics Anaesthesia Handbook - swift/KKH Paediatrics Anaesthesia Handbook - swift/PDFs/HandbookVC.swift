@@ -108,7 +108,13 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HandbookTableViewCell
+        cell.index.text = String(indexPath.row)
+        cell.chapterName.text = tableview_dispArray[indexPath.row]
+        cell.backgroundColor = UIColor.init().secondaryColor()
+        cell.index.textColor = UIColor.init().primaryColor()
+        cell.layer.cornerRadius = 10.0
+        return cell
     }
     
    

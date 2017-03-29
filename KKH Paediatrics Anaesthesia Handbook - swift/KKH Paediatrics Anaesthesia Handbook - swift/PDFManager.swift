@@ -42,6 +42,8 @@ class PDFManager: NSObject {
                 print(error)
             }
         }
+        
+        print("found \(chapters_NAME.count) chapters")
     }
     
     func numberOfFiles() -> Int {

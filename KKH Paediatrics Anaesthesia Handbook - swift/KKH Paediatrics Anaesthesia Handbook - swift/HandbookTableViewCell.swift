@@ -10,6 +10,8 @@ import UIKit
 
 class HandbookTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var chapterName: UILabel!
+    @IBOutlet weak var index: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
