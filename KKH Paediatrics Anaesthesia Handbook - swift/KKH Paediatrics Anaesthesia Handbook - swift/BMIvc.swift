@@ -14,24 +14,32 @@ class BMIvc: UIViewController {
     @IBOutlet weak var genderSegment: UISegmentedControl!
     @IBOutlet var textfieldCollection: [UITextField]!
     
+    @IBOutlet weak var ageField: UITextField!
+    @IBOutlet weak var weightfield: UITextField!
+    @IBOutlet weak var heightField: UITextField!
+    
+    
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-       style()
+        style()
     }
     
    
+    @IBAction func proceed(_ sender: Any) {
+        textfieldCollection.forEach { (textfield) in
+            if (textfield.text?.isEmpty)! {
+                sendAlertController(title: "error", message: "Please fill up all fields")
+            }
+        }
+    }
 
+    
     @IBAction func back(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    
-    
-    
-    
     
 //MARK: - callables
     func style(){
@@ -43,6 +51,12 @@ class BMIvc: UIViewController {
             textfield.backgroundColor = UIColor.init().secondaryColor()
             textfield.textColor = UIColor.white
         }
+    }
+    
+    func sendAlertController (title : String, message : String){
+        let a = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
+        a.addAction(UIAlertAction.init(title: "Dismiss", style: .cancel, handler: nil))
+        self.present(a, animated: true, completion: nil)
     }
 
 }

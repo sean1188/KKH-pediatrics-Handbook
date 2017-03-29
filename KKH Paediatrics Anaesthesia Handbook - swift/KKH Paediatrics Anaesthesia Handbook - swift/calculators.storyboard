@@ -123,6 +123,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtS-oY-30N">
                                 <rect key="frame" x="63" y="571" width="248" height="76"/>
                                 <state key="normal" image="Group 37"/>
+                                <connections>
+                                    <action selector="proceed:" destination="Tnp-et-Yw6" eventType="touchUpInside" id="U66-Zq-AIS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -163,8 +166,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ageField" destination="UGO-pB-E5L" id="M1k-8f-bS0"/>
                         <outlet property="backB" destination="ouQ-Dd-5h1" id="uld-sH-02m"/>
                         <outlet property="genderSegment" destination="aGe-UT-jgU" id="tly-LF-PBP"/>
+                        <outlet property="heightField" destination="eHu-d7-iFW" id="UPw-ti-UDO"/>
+                        <outlet property="weightfield" destination="VHf-MA-eHW" id="DCv-F3-w0r"/>
                         <outletCollection property="textfieldCollection" destination="UGO-pB-E5L" collectionClass="NSMutableArray" id="pqO-6i-MWY"/>
                         <outletCollection property="textfieldCollection" destination="VHf-MA-eHW" collectionClass="NSMutableArray" id="Y8v-gN-Sck"/>
                         <outletCollection property="textfieldCollection" destination="eHu-d7-iFW" collectionClass="NSMutableArray" id="Id9-7x-DXc"/>
