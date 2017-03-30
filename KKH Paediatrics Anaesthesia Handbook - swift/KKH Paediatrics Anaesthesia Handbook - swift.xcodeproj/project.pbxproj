@@ -173,6 +173,7 @@
 		546DBB971E8CF0C000BAF26E /* CommonDrugs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CommonDrugs.json; sourceTree = "<group>"; };
 		546DBB9A1E8CF0CB00BAF26E /* DrugCalculationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugCalculationsManager.swift; sourceTree = "<group>"; };
 		546DBB9B1E8CF0CB00BAF26E /* DrugList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DrugList.csv; sourceTree = "<group>"; };
+		546DBBA11E8D06B700BAF26E /* KKH Paediatrics Anaesthesia Handbook - swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KKH Paediatrics Anaesthesia Handbook - swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		5480E2391E8A20C400B62203 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		5480E23A1E8A20C400B62203 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		54B7BA961E891F05005F1075 /* HandbookVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HandbookVC.swift; path = PDFs/HandbookVC.swift; sourceTree = "<group>"; };
@@ -238,6 +239,7 @@
 				542ED7B91E8BB3060002FD43 /* CalcMainVC.swift */,
 				542ED7BB1E8BB9360002FD43 /* BMIvc.swift */,
 				546DBB8C1E8CE22000BAF26E /* drugVC.swift */,
+				546DBBA11E8D06B700BAF26E /* KKH Paediatrics Anaesthesia Handbook - swift-Bridging-Header.h */,
 			);
 			name = calculators;
 			sourceTree = "<group>";
@@ -479,6 +481,7 @@
 					54C40F4F1E858F3B000E0CF8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7K6ZTDFM48;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					54C40F631E858F3C000E0CF8 = {
@@ -905,11 +908,15 @@
 			baseConfigurationReference = DD2C05B77962373FE72784AB /* Pods-KKH Paediatrics Anaesthesia Handbook - swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				INFOPLIST_FILE = "KKH Paediatrics Anaesthesia Handbook - swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.KKH-Paediatrics-Anaesthesia-Handbook---swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KKH Paediatrics Anaesthesia Handbook - swift/KKH Paediatrics Anaesthesia Handbook - swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -919,11 +926,14 @@
 			baseConfigurationReference = 0B5581379DAC5BA194847E62 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				INFOPLIST_FILE = "KKH Paediatrics Anaesthesia Handbook - swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.KKH-Paediatrics-Anaesthesia-Handbook---swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KKH Paediatrics Anaesthesia Handbook - swift/KKH Paediatrics Anaesthesia Handbook - swift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

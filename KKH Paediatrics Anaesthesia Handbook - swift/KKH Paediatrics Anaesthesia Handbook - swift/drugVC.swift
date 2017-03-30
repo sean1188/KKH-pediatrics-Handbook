@@ -100,11 +100,27 @@ class drugSendVC: UIViewController {
     }
     
     func openCSVwithData (data:Data) {
-            let webView = UIWebView.init(frame: CGRect.init(x: 0, y: self.backbutton.frame.size.height + self.backbutton.frame.origin.y + 30, width: self.view.frame.size.width, height: self.view.frame.size.height - (self.backbutton.frame.size.height + self.backbutton.frame.origin.y + 30)))
-        let url = URL.init(dataRepresentation: data, relativeTo: nil)
-        print("\(url) LOAD")
-        webView.loadRequest(URLRequest.init(url: url!))
-            self.view.addSubview(webView)
+        print (data)
+        let file = "file.csv" //this is the file. we will write to and read from it
+        
+        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+            
+            let path = dir.appendingPathComponent(file)
+            //writing
+            do {
+                try data.write(to: path, options: .atomic)
+            }
+            catch {/* error handling here */}
+            
+            //reading
+            do {
+                var webView = UIWebView.init(frame: CGRect.init(x: 0, y: self.backbutton.frame.size.height + self.backbutton.frame.origin.y + 30, width: self.view.frame.size.width, height: self.view.frame.size.height - (self.backbutton.frame.size.height + self.backbutton.frame.origin.y + 30)))
+                webView.loadRequest(URLRequest.init(url: path))
+                self.view.addSubview(webView)
+            }
+            catch {/* error handling here */}
+        }
+        
         
     }
     
