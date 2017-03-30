@@ -12,7 +12,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="FontAwesome.otf">
+        <array key="fontawesome-webfont.ttf">
             <string>FontAwesome</string>
         </array>
     </customFonts>
@@ -21,7 +21,7 @@
         <scene sceneID="LY8-s1-jKX">
             <objects>
                 <navigationController navigationBarHidden="YES" id="JOc-z6-eFK" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Nnj-3j-iom">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nnj-3j-iom">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -45,11 +45,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fDQ-IC-Eu7" userLabel="bgview">
+                            <scrollView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7x-4D-1sM">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aqb-se-YGU" userLabel="navBar">
                                 <rect key="frame" x="0.0" y="587" width="375" height="80"/>
                                 <subviews>
@@ -233,15 +231,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Aqb-se-YGU" firstAttribute="leading" secondItem="Zg6-D9-r70" secondAttribute="leading" id="1KJ-jm-lEg"/>
+                            <constraint firstItem="E7x-4D-1sM" firstAttribute="leading" secondItem="Zg6-D9-r70" secondAttribute="leading" id="2WY-sq-iAG"/>
                             <constraint firstItem="GNC-re-tpj" firstAttribute="top" secondItem="Aqb-se-YGU" secondAttribute="bottom" id="50N-1D-16S"/>
                             <constraint firstAttribute="trailing" secondItem="Aqb-se-YGU" secondAttribute="trailing" id="cXm-Y1-UDj"/>
+                            <constraint firstItem="E7x-4D-1sM" firstAttribute="centerY" secondItem="Zg6-D9-r70" secondAttribute="centerY" id="caT-CI-PiM"/>
+                            <constraint firstAttribute="trailing" secondItem="E7x-4D-1sM" secondAttribute="trailing" id="w74-0Z-Lav"/>
+                            <constraint firstItem="E7x-4D-1sM" firstAttribute="height" secondItem="Zg6-D9-r70" secondAttribute="height" id="zkW-ui-nre"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="Wr0-6a-bWT"/>
                     <connections>
-                        <outlet property="bgView" destination="fDQ-IC-Eu7" id="nKx-0n-oh0"/>
                         <outlet property="marker" destination="VW7-Wc-fyk" id="TnM-Wu-lPE"/>
                         <outlet property="navbar" destination="Aqb-se-YGU" id="uw9-N2-4pV"/>
+                        <outlet property="scrollView" destination="E7x-4D-1sM" id="cJv-Tp-RWo"/>
                         <outletCollection property="navBar_items" destination="q0W-de-KHZ" collectionClass="NSMutableArray" id="dg0-lH-mdF"/>
                         <outletCollection property="navBar_items" destination="iIX-3C-V20" collectionClass="NSMutableArray" id="3CS-8X-qEi"/>
                         <outletCollection property="navBar_items" destination="sgT-wM-aZb" collectionClass="NSMutableArray" id="wb9-bg-zuU"/>

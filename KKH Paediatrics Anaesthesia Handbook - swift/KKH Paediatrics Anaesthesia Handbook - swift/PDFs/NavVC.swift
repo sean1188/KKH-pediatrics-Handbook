@@ -10,7 +10,9 @@ import UIKit
 
 class NavVC: UIViewController {
     
-    @IBOutlet weak var bgView: UIView!
+//    @IBOutlet weak var bgView: UIView!
+    
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var navbar: UIView!
     @IBOutlet weak var marker: UIImageView!
     
@@ -38,28 +40,34 @@ class NavVC: UIViewController {
             count = count + 1
         }
         //init tabviews
-        //add in opposite order
-        
-        calcVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "calcVC")
-        self.addChildViewController(calcVC)
-        self.bgView.addSubview(calcVC.view)
         
         handbookViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "handbookVC")
         self.addChildViewController(handbookViewController)
-        self.bgView.addSubview(handbookViewController.view)
+        handbookViewController.view.center = self.view.center
+        self.scrollView.addSubview(handbookViewController.view)
+        
+        calcVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "calcVC")
+        calcVC.view.frame = CGRect.init(x: self.handbookViewController.view.frame.origin.x + self.view.frame.size.width , y: handbookViewController.view.frame.origin.y, width: self.view.frame.size.width, height: self.view.frame.size.height)
+        self.addChildViewController(calcVC)
+        self.scrollView.addSubview(calcVC.view)
+        
+        scrollView.contentSize = CGSize.init(width: self.view.frame.size.width * 2, height: self.view.frame.size.height)
+        
+        moveScrollViewtoIndex(index: 0)
     }
     
     //MARK: - NAV BAR
     
     @IBAction func ref(_ sender: Any) {
         animateMarkerToIndex(index: 1)
-        bgView.bringSubview(toFront: handbookViewController.view)
+        moveScrollViewtoIndex(index: 0)
+        
     }
     
     @IBAction func calc(_ sender: Any) {
         animateMarkerToIndex(index: 2)
-        bgView.bringSubview(toFront: calcVC.view)
-    }
+        moveScrollViewtoIndex(index: 1)
+}
     
     @IBAction func crisis(_ sender: Any) {
         animateMarkerToIndex(index: 3)
@@ -75,4 +83,9 @@ class NavVC: UIViewController {
             self.marker.center = (view?.center)!
         }, completion: nil)
     }
+    
+    func moveScrollViewtoIndex (index : Int){
+        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
+            self.scrollView.setContentOffset(CGPoint.init(x: index * Int(self.view.frame.size.width), y: 0), animated: true)
+        }, completion: nil)    }
 }
