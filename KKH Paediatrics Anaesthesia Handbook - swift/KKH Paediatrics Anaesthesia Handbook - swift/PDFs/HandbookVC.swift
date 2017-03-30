@@ -46,8 +46,8 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
     override func viewDidAppear(_ animated: Bool) {
         //styling
-        search_backdrop = search_backdrop.roundify_circle
         topbar.backgroundColor = UIColor.init().primaryColor()
+        _ = search_backdrop.roundify_circle
     }
     
     

@@ -27,12 +27,22 @@ class NavVC: UIViewController {
     
     var handbookViewController :UIViewController = HandbookVC()
     var calcVC :UIViewController = CalcMainVC()
+    
+    var load = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.backgroundColor = UIColor.init().primaryColor()
         navbar.backgroundColor = UIColor.init().secondaryColor()
-        initTabViews()
+        load = false
+    }
+    
+    //use fiew appear workaround to overcome autolayout error
+    override func viewDidAppear(_ animated: Bool) {
+        if !load {
+            initTabViews()
+            load = true
+        }
     }
     
     func initTabViews(){
@@ -48,7 +58,6 @@ class NavVC: UIViewController {
         calcVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "calcVC")
         self.addChildViewController(calcVC)
         calcVC.view.center = CGPoint.init(x: self.view.frame.size.width * 1.5, y: self.view.frame.height/2)
-        calcVC.viewWillLayoutSubviews()
         self.scrollView.addSubview(calcVC.view)
         
         //handbooks
