@@ -15,9 +15,11 @@ class drugVC: UIViewController {
     @IBOutlet weak var backb: UIButton!
     @IBOutlet weak var ddplaceholder: UIView!
     @IBOutlet weak var weightField: UITextField!
+    @IBOutlet weak var selectionlabel: UILabel!
     
     let ddMenu = DropDown()
     var isdown = false
+    var selected_drug: Int? = nil
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
@@ -30,15 +32,15 @@ class drugVC: UIViewController {
         
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-    }
-    
     @IBAction func back(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func dropdownMenu(_ sender: Any) {
         ddMenu.show()
+    }
+    
+    @IBAction func proceed(_ sender: Any) {
     }
     
 //MARK: - REUSE
@@ -55,7 +57,8 @@ class drugVC: UIViewController {
         ddMenu.selectionBackgroundColor = UIColor.init().primaryColor()
         ddMenu.textColor = UIColor.white
         ddMenu.selectionAction = { [unowned self] (index: Int, item: String) in
-            print("Selected item: \(item) at index: \(index)")
+            self.selectionlabel.text = item
+            self.selected_drug = index
         }
     }
 

@@ -86,7 +86,7 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ages 1 - 18" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UGO-pB-E5L">
                                 <rect key="frame" x="90" y="261" width="195" height="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
@@ -101,7 +101,7 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="In Kilograms" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VHf-MA-eHW">
                                 <rect key="frame" x="90" y="352" width="195" height="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
@@ -116,7 +116,7 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="In Metres" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eHu-d7-iFW">
                                 <rect key="frame" x="90" y="453" width="195" height="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
@@ -235,7 +235,7 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="In Kilograms" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pyW-Ce-nWb">
                                 <rect key="frame" x="113" y="189" width="150" height="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
@@ -243,6 +243,7 @@
                                 <rect key="frame" x="62" y="571" width="251" height="76"/>
                                 <state key="normal" image="Group 37"/>
                                 <connections>
+                                    <action selector="proceed:" destination="aZ6-jd-cvE" eventType="touchUpInside" id="bwF-8v-gdb"/>
                                     <action selector="proceed:" destination="Tnp-et-Yw6" eventType="touchUpInside" id="kQw-Iq-uMX"/>
                                 </connections>
                             </button>
@@ -321,6 +322,7 @@
                     <connections>
                         <outlet property="backb" destination="4DT-7x-udO" id="Z10-8B-0UH"/>
                         <outlet property="ddplaceholder" destination="BQw-6E-ctq" id="sNv-LW-uCv"/>
+                        <outlet property="selectionlabel" destination="a1v-AK-Ac0" id="S2i-vn-b9T"/>
                         <outlet property="weightField" destination="pyW-Ce-nWb" id="eHk-jg-00T"/>
                     </connections>
                 </viewController>
