@@ -245,7 +245,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         let document = PDFDocument(fileURL: documentFileURL)!
         let readerController = PDFViewController.createNew(with: document)
         readerController.backgroundColor = UIColor.init().primaryColor()
-        navigationController?.present(readerController, animated: true, completion: nil)
+        self.present(readerController, animated: true, completion: nil)
     }
 
 

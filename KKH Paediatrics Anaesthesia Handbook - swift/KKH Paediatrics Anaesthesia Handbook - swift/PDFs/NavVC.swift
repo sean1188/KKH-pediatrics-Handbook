@@ -18,6 +18,9 @@ class NavVC: UIViewController {
     
     @IBOutlet var navBar_items: [UIView]!
     
+    @IBOutlet var panGesture: UIPanGestureRecognizer!
+    var currentIndex = 0
+    
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
@@ -25,12 +28,10 @@ class NavVC: UIViewController {
     var handbookViewController :UIViewController = HandbookVC()
     var calcVC :UIViewController = CalcMainVC()
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        initTabViews()
         navbar.backgroundColor = UIColor.init().secondaryColor()
-        
+        initTabViews()
     }
     
     func initTabViews(){
@@ -40,20 +41,38 @@ class NavVC: UIViewController {
             count = count + 1
         }
         //init tabviews
+        scrollView.contentSize = CGSize.init(width: self.view.frame.size.width * 3, height: self.view.frame.size.height)
+        scrollView.isScrollEnabled = true
+        //calculator
+        calcVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "calcVC")
+        self.addChildViewController(calcVC)
+        calcVC.view.center = CGPoint.init(x: self.view.frame.size.width * 1.5, y: self.view.frame.height/2)
+        calcVC.viewWillLayoutSubviews()
+        self.scrollView.addSubview(calcVC.view)
         
+        //handbooks
         handbookViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "handbookVC")
         self.addChildViewController(handbookViewController)
         handbookViewController.view.center = self.view.center
         self.scrollView.addSubview(handbookViewController.view)
         
-        calcVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "calcVC")
-        calcVC.view.frame = CGRect.init(x: self.handbookViewController.view.frame.origin.x + self.view.frame.size.width , y: handbookViewController.view.frame.origin.y, width: self.view.frame.size.width, height: self.view.frame.size.height)
-        self.addChildViewController(calcVC)
-        self.scrollView.addSubview(calcVC.view)
-        
-        scrollView.contentSize = CGSize.init(width: self.view.frame.size.width * 2, height: self.view.frame.size.height)
-        
         moveScrollViewtoIndex(index: 0)
+        scrollView.isScrollEnabled = false
+    }
+    
+    @IBAction func swipedLeft(_ sender: Any) {
+        if currentIndex < 4{
+            moveScrollViewtoIndex(index: currentIndex + 1)
+            animateMarkerToIndex(index: currentIndex + 1)
+        }
+    }
+    
+    @IBAction func swipedRight(_ sender: Any) {
+        if currentIndex > 0{
+            moveScrollViewtoIndex(index: currentIndex - 1)
+            animateMarkerToIndex(index: currentIndex - 1)
+
+        }
     }
     
     //MARK: - NAV BAR
@@ -85,7 +104,7 @@ class NavVC: UIViewController {
     }
     
     func moveScrollViewtoIndex (index : Int){
-        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
             self.scrollView.setContentOffset(CGPoint.init(x: index * Int(self.view.frame.size.width), y: 0), animated: true)
-        }, completion: nil)    }
+        currentIndex = index
+}
 }
