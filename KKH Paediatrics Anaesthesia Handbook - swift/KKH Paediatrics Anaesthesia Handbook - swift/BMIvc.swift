@@ -9,7 +9,7 @@
 import UIKit
 
 class BMIvc: UIViewController {
-
+    
     @IBOutlet weak var backB: UIButton!
     @IBOutlet weak var genderSegment: UISegmentedControl!
     @IBOutlet var textfieldCollection: [UITextField]!
@@ -23,12 +23,17 @@ class BMIvc: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
     }
     
-   
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    var bmi : Float = 0
     @IBAction func proceed(_ sender: Any) {
         var res = 0
         textfieldCollection.forEach { (textfield) in
@@ -40,7 +45,7 @@ class BMIvc: UIViewController {
         case 0:
             //calculate
             let age = Int(ageField.text!)
-            let bmi: Float = Float(weightfield.text!)! / (Float(heightField.text!)! * Float(heightField.text!)!)
+             bmi = Float(weightfield.text!)! / (Float(heightField.text!)! * Float(heightField.text!)!)
             let ismale = (genderSegment.selectedSegmentIndex == 0) ? true : false
             let result = BMIGraphManager.init(age: age!, bmi: bmi, isMale: ismale).range()
             presentResult(result: result)
@@ -50,13 +55,13 @@ class BMIvc: UIViewController {
             break
         }
     }
-
+    
     
     @IBAction func back(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
-//MARK: - callables
+    //MARK: - callables
     func style(){
         self.view.backgroundColor = UIColor.init().primaryColor()
         _ = backB.roundify_circle
@@ -74,19 +79,19 @@ class BMIvc: UIViewController {
             sendAlertController(title: "Error", message: "Invalid input.")
             break
         case 1:
-            sendAlertController(title: "Status", message: "Severely Underweight.")
+            sendAlertController(title: "BMI: \(bmi)", message: "Severely Underweight.")
             break
         case 2:
-            sendAlertController(title: "Status", message: "Underweight.")
+            sendAlertController(title: "BMI  \(bmi)", message: "Underweight.")
             break
         case 3:
-            sendAlertController(title: "Status", message: "Acceptable.")
+            sendAlertController(title: "BMI: \(bmi)", message: "Acceptable.")
             break
         case 4:
-            sendAlertController(title: "Status", message: "Overweight.")
+            sendAlertController(title: "BMI: \(bmi)", message: "Overweight.")
             break
         case 5:
-            sendAlertController(title: "Status", message: "Severely Overweight.")
+            sendAlertController(title: "BMI: \(bmi)", message: "Severely Overweight.")
             break
             
         default:
@@ -100,5 +105,5 @@ class BMIvc: UIViewController {
         a.addAction(UIAlertAction.init(title: "Dismiss", style: .cancel, handler: nil))
         self.present(a, animated: true, completion: nil)
     }
-
+    
 }

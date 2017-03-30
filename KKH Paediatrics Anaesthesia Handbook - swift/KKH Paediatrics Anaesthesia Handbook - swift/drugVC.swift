@@ -11,6 +11,10 @@ import UIKit
 class drugVC: UIViewController {
 
     
+    @IBOutlet weak var backb: UIButton!
+    
+    
+    
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
@@ -18,11 +22,16 @@ class drugVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         styling()
-        
     }
     
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+//MARK: - REUSE
     func styling () {
         self.view.backgroundColor = UIColor.init().primaryColor()
+        _ = backb.roundify_circle
     }
 
 
