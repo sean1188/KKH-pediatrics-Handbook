@@ -63,14 +63,12 @@ class NavVC: UIViewController {
     @IBAction func swipedLeft(_ sender: Any) {
         if currentIndex < 4{
             moveScrollViewtoIndex(index: currentIndex + 1)
-            animateMarkerToIndex(index: currentIndex + 1)
         }
     }
     
     @IBAction func swipedRight(_ sender: Any) {
         if currentIndex > 0{
             moveScrollViewtoIndex(index: currentIndex - 1)
-            animateMarkerToIndex(index: currentIndex - 1)
 
         }
     }
@@ -78,25 +76,22 @@ class NavVC: UIViewController {
     //MARK: - NAV BAR
     
     @IBAction func ref(_ sender: Any) {
-        animateMarkerToIndex(index: 1)
         moveScrollViewtoIndex(index: 0)
         
     }
     
     @IBAction func calc(_ sender: Any) {
-        animateMarkerToIndex(index: 2)
         moveScrollViewtoIndex(index: 1)
 }
     
     @IBAction func crisis(_ sender: Any) {
-        animateMarkerToIndex(index: 3)
     }
     
     @IBAction func settings(_ sender: Any) {
-        animateMarkerToIndex(index: 4)
     }
     
     func animateMarkerToIndex (index : Int){
+        currentIndex = index
         UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
             let view = self.navbar.viewWithTag(index)
             self.marker.center = (view?.center)!
@@ -105,6 +100,7 @@ class NavVC: UIViewController {
     
     func moveScrollViewtoIndex (index : Int){
             self.scrollView.setContentOffset(CGPoint.init(x: index * Int(self.view.frame.size.width), y: 0), animated: true)
+        animateMarkerToIndex(index: index + 1)
         currentIndex = index
 }
 }
