@@ -221,7 +221,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         section_title.text = title
         section_title.textColor = UIColor.init().secondaryColor()
         filesView.backgroundColor = UIColor.init().primaryColor()
-        filesView.frame = CGRect.init(x: 0, y: self.view.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.height - 85)
+        filesView.frame = CGRect.init(x: 0, y: self.view.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.height - 80)
         self.view.addSubview(filesView)
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: { 
             self.filesView.frame = CGRect.init(x: 0, y: self.topbar.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.height - 85)
