@@ -30,6 +30,7 @@ class NavVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView.backgroundColor = UIColor.init().primaryColor()
         navbar.backgroundColor = UIColor.init().secondaryColor()
         initTabViews()
     }
