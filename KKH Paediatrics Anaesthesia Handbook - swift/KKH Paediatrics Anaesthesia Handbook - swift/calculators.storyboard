@@ -225,7 +225,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter Weight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDi-hq-qPK">
-                                <rect key="frame" x="126" y="191" width="121" height="26"/>
+                                <rect key="frame" x="126" y="148" width="121" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="A4x-aT-725"/>
                                 </constraints>
@@ -234,11 +234,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="In Kilograms" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pyW-Ce-nWb">
-                                <rect key="frame" x="90" y="225" width="195" height="30"/>
+                                <rect key="frame" x="90" y="182" width="195" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAj-Z5-Hii">
+                                <rect key="frame" x="62" y="571" width="248" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Group 37"/>
+                                <connections>
+                                    <action selector="proceed:" destination="Tnp-et-Yw6" eventType="touchUpInside" id="kQw-Iq-uMX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -251,6 +259,7 @@
                             <constraint firstItem="4DT-7x-udO" firstAttribute="leading" secondItem="J8i-Aa-Vgi" secondAttribute="trailing" constant="32" id="eJI-tt-nu5"/>
                             <constraint firstItem="bt3-EV-wI9" firstAttribute="centerY" secondItem="J8i-Aa-Vgi" secondAttribute="centerY" id="m4g-hU-A08"/>
                             <constraint firstItem="pyW-Ce-nWb" firstAttribute="top" secondItem="kDi-hq-qPK" secondAttribute="bottom" constant="8" symbolic="YES" id="p4y-5Q-EkX"/>
+                            <constraint firstItem="kDi-hq-qPK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="J8i-Aa-Vgi" secondAttribute="bottom" constant="50" id="ugV-t4-r9J"/>
                         </constraints>
                     </view>
                     <connections>

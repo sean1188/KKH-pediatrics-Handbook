@@ -79,19 +79,19 @@ class BMIvc: UIViewController {
             sendAlertController(title: "Error", message: "Invalid input.")
             break
         case 1:
-            sendAlertController(title: "BMI: \(bmi)", message: "Severely Underweight.")
+            sendAlertController(title: "BMI: \(bmi.roundTo(places: 2))", message: "Severely Underweight.")
             break
         case 2:
-            sendAlertController(title: "BMI  \(bmi)", message: "Underweight.")
+            sendAlertController(title: "BMI  \(bmi.roundTo(places: 2))", message: "Underweight.")
             break
         case 3:
-            sendAlertController(title: "BMI: \(bmi)", message: "Acceptable.")
+            sendAlertController(title: "BMI: \(bmi.roundTo(places: 2))", message: "Acceptable.")
             break
         case 4:
-            sendAlertController(title: "BMI: \(bmi)", message: "Overweight.")
+            sendAlertController(title: "BMI: \(bmi.roundTo(places: 2))", message: "Overweight.")
             break
         case 5:
-            sendAlertController(title: "BMI: \(bmi)", message: "Severely Overweight.")
+            sendAlertController(title: "BMI: \(bmi.roundTo(places: 2))", message: "Severely Overweight.")
             break
             
         default:

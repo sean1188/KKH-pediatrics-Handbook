@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DropDown.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,7 +47,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02EC045254187DE666D75B8ED7AD73BD</key>
+		<key>1272790671F30E83F8298B70A7296E69</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>466876F749FF67CDE66FC14A03233915</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,12 +62,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>879E1FBF27EBE2298AB3ACA898E39814</key>
+		<key>5168099F2EBFC99A707C03C9EADE01A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DB34944273F8BA7D5DB44BE86B0217A8</key>
+		<key>78A8644A8801837D3F0BA2BFFCB3403A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
