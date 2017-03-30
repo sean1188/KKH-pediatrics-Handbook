@@ -324,7 +324,7 @@
                         <outlet property="ddplaceholder" destination="BQw-6E-ctq" id="sNv-LW-uCv"/>
                         <outlet property="selectionlabel" destination="a1v-AK-Ac0" id="S2i-vn-b9T"/>
                         <outlet property="weightField" destination="pyW-Ce-nWb" id="eHk-jg-00T"/>
-                        <segue destination="thA-5b-n5P" kind="presentation" modalTransitionStyle="crossDissolve" id="6lF-BY-wpG"/>
+                        <segue destination="thA-5b-n5P" kind="presentation" identifier="send" modalTransitionStyle="crossDissolve" id="6lF-BY-wpG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeR-Ir-u4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -337,9 +337,49 @@
             <point key="canvasLocation" x="-146.40000000000001" y="500.59970014992507"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="D8X-h6-lQT">
+            <objects>
+                <viewController id="lLF-Kb-A4A" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EuE-1m-1N4"/>
+                        <viewControllerLayoutGuide type="bottom" id="pVb-np-Xbb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c9D-Id-aJ1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UW-H2-gV5">
+                                <rect key="frame" x="319" y="28" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="K1W-8a-htO"/>
+                                    <constraint firstAttribute="height" constant="40" id="t1D-vM-DtT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="Tnp-et-Yw6" eventType="touchUpInside" id="HgB-bf-X2p"/>
+                                    <action selector="back:" destination="aZ6-jd-cvE" eventType="touchUpInside" id="PxR-de-5Va"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6UW-H2-gV5" firstAttribute="top" secondItem="EuE-1m-1N4" secondAttribute="bottom" constant="8" id="gM8-0w-S37"/>
+                            <constraint firstItem="6UW-H2-gV5" firstAttribute="trailing" secondItem="c9D-Id-aJ1" secondAttribute="trailingMargin" id="lsd-xO-rqZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pm3-ex-NXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146" y="1196"/>
+        </scene>
+        <!--drug send-->
         <scene sceneID="cNZ-cH-BZ4">
             <objects>
-                <viewController id="thA-5b-n5P" sceneMemberID="viewController">
+                <viewController title="drug send" id="thA-5b-n5P" customClass="drugSendVC" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tp3-y5-Pu5"/>
                         <viewControllerLayoutGuide type="bottom" id="hqf-u6-uRE"/>
@@ -347,15 +387,73 @@
                     <view key="view" contentMode="scaleToFill" id="Dgu-CS-xfW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpO-tj-6RB">
+                                <rect key="frame" x="68" y="341" width="238" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Mfx-Ne-ynX"/>
+                                </constraints>
+                                <state key="normal" image="Group 36-1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxp-Qb-xvq">
+                                <rect key="frame" x="68" y="439" width="238" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="VoV-KT-0VQ"/>
+                                </constraints>
+                                <state key="normal" image="group-35"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xo-Qo-EOf">
+                                <rect key="frame" x="319" y="28" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="JaS-Zg-4dB"/>
+                                    <constraint firstAttribute="height" constant="40" id="Oc4-H7-NeD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="aZ6-jd-cvE" eventType="touchUpInside" id="83Z-RU-r9S"/>
+                                    <action selector="back:" destination="Tnp-et-Yw6" eventType="touchUpInside" id="dkn-ED-OwN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CSV file for patient of weight XX KG generated." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueW-oo-GTW">
+                                <rect key="frame" x="60" y="153" width="255" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="bIz-to-qW8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8xo-Qo-EOf" firstAttribute="trailing" secondItem="Dgu-CS-xfW" secondAttribute="trailingMargin" id="3Lf-Mr-22B"/>
+                            <constraint firstItem="ueW-oo-GTW" firstAttribute="top" secondItem="Tp3-y5-Pu5" secondAttribute="bottom" constant="133" id="Adi-oV-QDJ"/>
+                            <constraint firstItem="hqf-u6-uRE" firstAttribute="top" secondItem="Zxp-Qb-xvq" secondAttribute="bottom" constant="138" id="DhS-GV-2mI"/>
+                            <constraint firstItem="LpO-tj-6RB" firstAttribute="leading" secondItem="Zxp-Qb-xvq" secondAttribute="leading" id="Wec-gc-Cot"/>
+                            <constraint firstItem="Zxp-Qb-xvq" firstAttribute="top" secondItem="LpO-tj-6RB" secondAttribute="bottom" constant="8" symbolic="YES" id="ZaB-Sy-Lz5"/>
+                            <constraint firstItem="LpO-tj-6RB" firstAttribute="leading" secondItem="Dgu-CS-xfW" secondAttribute="leadingMargin" constant="52" id="hv8-tL-SEY"/>
+                            <constraint firstItem="ueW-oo-GTW" firstAttribute="centerX" secondItem="LpO-tj-6RB" secondAttribute="centerX" id="iUQ-8f-Pri"/>
+                            <constraint firstItem="LpO-tj-6RB" firstAttribute="centerX" secondItem="Dgu-CS-xfW" secondAttribute="centerX" id="ise-Wz-x7d"/>
+                            <constraint firstItem="8xo-Qo-EOf" firstAttribute="top" secondItem="Tp3-y5-Pu5" secondAttribute="bottom" constant="8" id="oQl-R5-vj6"/>
+                            <constraint firstItem="LpO-tj-6RB" firstAttribute="trailing" secondItem="Zxp-Qb-xvq" secondAttribute="trailing" id="w8j-Fx-6kc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backbutton" destination="8xo-Qo-EOf" id="eq1-aa-M6m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A8P-Lf-BeP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="686" y="501"/>
+            <point key="canvasLocation" x="685.60000000000002" y="500.59970014992507"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Group 36-1" width="227" height="84"/>
         <image name="Group 37" width="248" height="76"/>
+        <image name="group-35" width="227" height="84"/>
     </resources>
 </document>

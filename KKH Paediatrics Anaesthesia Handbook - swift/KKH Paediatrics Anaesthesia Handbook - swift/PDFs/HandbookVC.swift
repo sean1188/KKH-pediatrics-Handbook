@@ -113,7 +113,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         cell.alpha                  = 0;
         let iniFrame                = cell.frame
         cell.frame = CGRect.init(x: cell.frame.origin.x, y: cell.frame.origin.y + 50, width: cell.frame.size.width, height: cell.frame.size.height)
-        UIView.animate(withDuration: 0.4, delay: 0.4, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.6, options: .curveEaseInOut, animations: {
+        UIView.animate(withDuration: 0.4, delay: 0.3, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.6, options: .curveEaseInOut, animations: {
             cell.frame = iniFrame
             cell.alpha = 1
         }, completion: nil)

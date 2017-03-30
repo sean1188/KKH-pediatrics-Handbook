@@ -8,6 +8,10 @@
 
 import UIKit
 import DropDown
+import PDFReader
+
+var selected_drug: Int? = nil
+var patientWeight: Int? = nil
 
 class drugVC: UIViewController {
 
@@ -19,7 +23,6 @@ class drugVC: UIViewController {
     
     let ddMenu = DropDown()
     var isdown = false
-    var selected_drug: Int? = nil
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
@@ -41,6 +44,10 @@ class drugVC: UIViewController {
     }
     
     @IBAction func proceed(_ sender: Any) {
+        if weightField.text != nil{
+        patientWeight = Int(weightField.text!)
+        self.performSegue(withIdentifier: "send", sender: self)
+        }
     }
     
 //MARK: - REUSE
@@ -58,9 +65,48 @@ class drugVC: UIViewController {
         ddMenu.textColor = UIColor.white
         ddMenu.selectionAction = { [unowned self] (index: Int, item: String) in
             self.selectionlabel.text = item
-            self.selected_drug = index
+            selected_drug = index
         }
     }
 
 
+}
+
+
+//MARK: -
+//MARK: - DRUGS SENDING
+
+
+class drugSendVC: UIViewController {
+    
+    @IBOutlet weak var backbutton: UIButton!
+    
+    
+    let anaesthesia = DrugCalculationsManager.init(weight: patientWeight!)
+    let cardiac     = CardiacDrugCalculationsManager.init(weight: patientWeight!)
+    let scoliosis   = ScoliosisDrugCalculationsManager.init(weight: patientWeight!)
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        styling()
+        openCSVwithData(data: anaesthesia.getData()!)
+    }
+    
+    //MARK: - REUSE
+    func styling () {
+        self.view.backgroundColor = UIColor.init().primaryColor()
+        _ = backbutton.roundify_circle
+    }
+    
+    func openCSVwithData (data:Data) {
+            let webView = UIWebView.init(frame: CGRect.init(x: 0, y: self.backbutton.frame.size.height + self.backbutton.frame.origin.y + 30, width: self.view.frame.size.width, height: self.view.frame.size.height - (self.backbutton.frame.size.height + self.backbutton.frame.origin.y + 30)))
+        let url = URL.init(dataRepresentation: data, relativeTo: nil)
+        print("\(url) LOAD")
+        webView.loadRequest(URLRequest.init(url: url!))
+            self.view.addSubview(webView)
+        
+    }
+    
+    
 }

@@ -229,13 +229,10 @@
 			isa = PBXGroup;
 			children = (
 				546DBB9A1E8CF0CB00BAF26E /* DrugCalculationsManager.swift */,
-				546DBB9B1E8CF0CB00BAF26E /* DrugList.csv */,
+				546DBBA01E8CFA5900BAF26E /* no touch :( */,
 				546DBB961E8CF0C000BAF26E /* CommonDrugCalculationsManager.swift */,
-				546DBB971E8CF0C000BAF26E /* CommonDrugs.json */,
 				546DBB921E8CF0B900BAF26E /* CardiacDrugCalculationsManager.swift */,
-				546DBB931E8CF0B900BAF26E /* CardiacDrugList.csv */,
 				546DBB8E1E8CF0A900BAF26E /* ScoliosisDrugCalculationsManager.swift */,
-				546DBB8F1E8CF0A900BAF26E /* ScoliosisDrugList.csv */,
 				542ED7BD1E8BB9B00002FD43 /* calculators.storyboard */,
 				546DBB8A1E8CDC6D00BAF26E /* BMIGraphManager.swift */,
 				542ED7B91E8BB3060002FD43 /* CalcMainVC.swift */,
@@ -311,6 +308,17 @@
 				5450DE621E87D9A200EBBF55 /* NavVC.swift */,
 			);
 			path = PDFs;
+			sourceTree = "<group>";
+		};
+		546DBBA01E8CFA5900BAF26E /* no touch :( */ = {
+			isa = PBXGroup;
+			children = (
+				546DBB9B1E8CF0CB00BAF26E /* DrugList.csv */,
+				546DBB971E8CF0C000BAF26E /* CommonDrugs.json */,
+				546DBB931E8CF0B900BAF26E /* CardiacDrugList.csv */,
+				546DBB8F1E8CF0A900BAF26E /* ScoliosisDrugList.csv */,
+			);
+			name = "no touch :(";
 			sourceTree = "<group>";
 		};
 		54C40F471E858F3B000E0CF8 = {
