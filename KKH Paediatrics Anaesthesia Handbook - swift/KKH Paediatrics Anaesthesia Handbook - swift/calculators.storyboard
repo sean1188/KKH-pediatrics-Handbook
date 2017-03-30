@@ -180,6 +180,62 @@
             </objects>
             <point key="canvasLocation" x="-146.40000000000001" y="-188.45577211394306"/>
         </scene>
+        <!--DRUG-->
+        <scene sceneID="bKc-yV-sYa">
+            <objects>
+                <viewController storyboardIdentifier="drugvc" title="DRUG" id="aZ6-jd-cvE" customClass="drugVC" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zqN-EC-eCE"/>
+                        <viewControllerLayoutGuide type="bottom" id="yav-pB-wrN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iDH-0i-Q46">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Drug Calculators." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8i-Aa-Vgi">
+                                <rect key="frame" x="66" y="33" width="221" height="31"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bt3-EV-wI9">
+                                <rect key="frame" x="16" y="32" width="42" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="D2H-Ew-qft"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DT-7x-udO">
+                                <rect key="frame" x="319" y="28" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="0Gx-tz-NEV"/>
+                                    <constraint firstAttribute="height" constant="40" id="d7K-6c-lAo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="Tnp-et-Yw6" eventType="touchUpInside" id="qCn-Zj-w97"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="J8i-Aa-Vgi" firstAttribute="leading" secondItem="bt3-EV-wI9" secondAttribute="trailing" constant="8" symbolic="YES" id="TDY-E7-XYj"/>
+                            <constraint firstItem="J8i-Aa-Vgi" firstAttribute="centerY" secondItem="4DT-7x-udO" secondAttribute="centerY" id="bOS-f9-uoe"/>
+                            <constraint firstItem="4DT-7x-udO" firstAttribute="leading" secondItem="J8i-Aa-Vgi" secondAttribute="trailing" constant="32" id="eJI-tt-nu5"/>
+                            <constraint firstItem="bt3-EV-wI9" firstAttribute="centerY" secondItem="J8i-Aa-Vgi" secondAttribute="centerY" id="m4g-hU-A08"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UeR-Ir-u4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146" y="501"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Group 37" width="248" height="76"/>

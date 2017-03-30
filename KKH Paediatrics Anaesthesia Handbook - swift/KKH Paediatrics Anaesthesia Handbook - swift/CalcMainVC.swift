@@ -29,6 +29,8 @@ class CalcMainVC: UIViewController {
     }
 
     @IBAction func drug(_ sender: Any) {
+        let bmicontroller = UIStoryboard.init(name: "calculators", bundle: nil).instantiateViewController(withIdentifier: "drugvc")
+        self.present(bmicontroller, animated: true, completion: nil)
     }
     
     func styling(){
