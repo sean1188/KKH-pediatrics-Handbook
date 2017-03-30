@@ -19,6 +19,7 @@ class BMIvc: UIViewController {
     @IBOutlet weak var heightField: UITextField!
     
     
+    
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
@@ -29,10 +30,24 @@ class BMIvc: UIViewController {
     
    
     @IBAction func proceed(_ sender: Any) {
+        var res = 0
         textfieldCollection.forEach { (textfield) in
             if (textfield.text?.isEmpty)! {
-                sendAlertController(title: "error", message: "Please fill up all fields")
+                res = res + 1
             }
+        }
+        switch res {
+        case 0:
+            //calculate
+            let age = Int(ageField.text!)
+            let bmi: Float = Float(weightfield.text!)! / (Float(heightField.text!)! * Float(heightField.text!)!)
+            let ismale = (genderSegment.selectedSegmentIndex == 0) ? true : false
+            let result = BMIGraphManager.init(age: age!, bmi: bmi, isMale: ismale).range()
+            presentResult(result: result)
+            break
+        default:
+            sendAlertController(title: "Error", message: "Please check that you have filled up all fields.")
+            break
         }
     }
 
@@ -50,6 +65,33 @@ class BMIvc: UIViewController {
         textfieldCollection.forEach { (textfield) in
             textfield.backgroundColor = UIColor.init().secondaryColor()
             textfield.textColor = UIColor.white
+        }
+    }
+    
+    func presentResult (result: Int){
+        switch result {
+        case 0:
+            sendAlertController(title: "Error", message: "Invalid input.")
+            break
+        case 1:
+            sendAlertController(title: "Status", message: "Severely Underweight.")
+            break
+        case 2:
+            sendAlertController(title: "Status", message: "Underweight.")
+            break
+        case 3:
+            sendAlertController(title: "Status", message: "Acceptable.")
+            break
+        case 4:
+            sendAlertController(title: "Status", message: "Overweight.")
+            break
+        case 5:
+            sendAlertController(title: "Status", message: "Severely Overweight.")
+            break
+            
+        default:
+            sendAlertController(title: "Error", message: "Invalid input.")
+            break
         }
     }
     

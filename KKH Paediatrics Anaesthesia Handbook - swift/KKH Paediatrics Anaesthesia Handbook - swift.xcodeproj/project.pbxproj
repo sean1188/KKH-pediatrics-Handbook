@@ -63,6 +63,7 @@
 		5450DE5A1E87D69D00EBBF55 /* Q-46-NORMAL_LABORATORY_DATA.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DE2B1E87D69D00EBBF55 /* Q-46-NORMAL_LABORATORY_DATA.pdf */; };
 		5450DE5C1E87D86500EBBF55 /* tabControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5450DE5B1E87D86500EBBF55 /* tabControllerVC.swift */; };
 		5450DE631E87D9A200EBBF55 /* NavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5450DE621E87D9A200EBBF55 /* NavVC.swift */; };
+		546DBB8B1E8CDC6D00BAF26E /* BMIGraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546DBB8A1E8CDC6D00BAF26E /* BMIGraphManager.swift */; };
 		5480E23B1E8A22B200B62203 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5480E2391E8A20C400B62203 /* fontawesome-webfont.ttf */; };
 		5480E23C1E8A22B200B62203 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5480E23A1E8A20C400B62203 /* FontAwesome.otf */; };
 		54B7BA971E891F05005F1075 /* HandbookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B7BA961E891F05005F1075 /* HandbookVC.swift */; };
@@ -153,6 +154,7 @@
 		5450DE2B1E87D69D00EBBF55 /* Q-46-NORMAL_LABORATORY_DATA.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Q-46-NORMAL_LABORATORY_DATA.pdf"; sourceTree = "<group>"; };
 		5450DE5B1E87D86500EBBF55 /* tabControllerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabControllerVC.swift; sourceTree = "<group>"; };
 		5450DE621E87D9A200EBBF55 /* NavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavVC.swift; sourceTree = "<group>"; };
+		546DBB8A1E8CDC6D00BAF26E /* BMIGraphManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIGraphManager.swift; sourceTree = "<group>"; };
 		5480E2391E8A20C400B62203 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		5480E23A1E8A20C400B62203 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		54B7BA961E891F05005F1075 /* HandbookVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HandbookVC.swift; path = PDFs/HandbookVC.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 		542ED7B81E8BB2EA0002FD43 /* calculators */ = {
 			isa = PBXGroup;
 			children = (
+				546DBB8A1E8CDC6D00BAF26E /* BMIGraphManager.swift */,
 				542ED7B91E8BB3060002FD43 /* CalcMainVC.swift */,
 				542ED7BB1E8BB9360002FD43 /* BMIvc.swift */,
 				542ED7BD1E8BB9B00002FD43 /* calculators.storyboard */,
@@ -705,6 +708,7 @@
 				54B7BA971E891F05005F1075 /* HandbookVC.swift in Sources */,
 				5436971A1E8A4BA0001D80F4 /* HandbookCollectionViewCell.swift in Sources */,
 				543480871E864ABC004D837F /* extensions.swift in Sources */,
+				546DBB8B1E8CDC6D00BAF26E /* BMIGraphManager.swift in Sources */,
 				5448347D1E8B8A1100CC1E09 /* HandbookTableViewCell.swift in Sources */,
 				542ED7BC1E8BB9360002FD43 /* BMIvc.swift in Sources */,
 			);

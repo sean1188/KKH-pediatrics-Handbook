@@ -62,7 +62,7 @@ class NavVC: UIViewController {
     }
     
     @IBAction func swipedLeft(_ sender: Any) {
-        if currentIndex < 4{
+        if currentIndex < 3{
             moveScrollViewtoIndex(index: currentIndex + 1)
         }
     }
