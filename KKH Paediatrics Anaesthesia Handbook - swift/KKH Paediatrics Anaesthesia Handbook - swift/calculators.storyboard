@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lqm-OA-QbN">
-                                <rect key="frame" x="16" y="37.5" width="42" height="32"/>
+                                <rect key="frame" x="16" y="37" width="42" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="iSy-Uk-nXo"/>
                                 </constraints>
@@ -394,6 +393,9 @@
                                     <constraint firstAttribute="height" constant="90" id="Mfx-Ne-ynX"/>
                                 </constraints>
                                 <state key="normal" image="Group 36-1"/>
+                                <connections>
+                                    <action selector="share:" destination="thA-5b-n5P" eventType="touchUpInside" id="ytB-m5-Z9t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxp-Qb-xvq">
                                 <rect key="frame" x="68" y="439" width="238" height="90"/>
@@ -401,9 +403,12 @@
                                     <constraint firstAttribute="height" constant="90" id="VoV-KT-0VQ"/>
                                 </constraints>
                                 <state key="normal" image="group-35"/>
+                                <connections>
+                                    <action selector="view:" destination="thA-5b-n5P" eventType="touchUpInside" id="CC6-4O-b1M"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xo-Qo-EOf">
-                                <rect key="frame" x="319" y="28" width="40" height="40"/>
+                                <rect key="frame" x="319" y="40" width="40" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="JaS-Zg-4dB"/>
@@ -415,15 +420,16 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aZ6-jd-cvE" eventType="touchUpInside" id="83Z-RU-r9S"/>
+                                    <action selector="back:" destination="thA-5b-n5P" eventType="touchUpInside" id="MCf-sP-H5j"/>
                                     <action selector="back:" destination="Tnp-et-Yw6" eventType="touchUpInside" id="dkn-ED-OwN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CSV file for patient of weight XX KG generated." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueW-oo-GTW">
-                                <rect key="frame" x="60" y="153" width="255" height="81"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CSV file for patient of weight XX KG generated." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueW-oo-GTW">
+                                <rect key="frame" x="36" y="153" width="303" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="81" id="bIz-to-qW8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -431,6 +437,7 @@
                         <color key="backgroundColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="8xo-Qo-EOf" firstAttribute="trailing" secondItem="Dgu-CS-xfW" secondAttribute="trailingMargin" id="3Lf-Mr-22B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ueW-oo-GTW" secondAttribute="trailing" constant="20" id="AR5-z4-9At"/>
                             <constraint firstItem="ueW-oo-GTW" firstAttribute="top" secondItem="Tp3-y5-Pu5" secondAttribute="bottom" constant="133" id="Adi-oV-QDJ"/>
                             <constraint firstItem="hqf-u6-uRE" firstAttribute="top" secondItem="Zxp-Qb-xvq" secondAttribute="bottom" constant="138" id="DhS-GV-2mI"/>
                             <constraint firstItem="LpO-tj-6RB" firstAttribute="leading" secondItem="Zxp-Qb-xvq" secondAttribute="leading" id="Wec-gc-Cot"/>
@@ -438,12 +445,13 @@
                             <constraint firstItem="LpO-tj-6RB" firstAttribute="leading" secondItem="Dgu-CS-xfW" secondAttribute="leadingMargin" constant="52" id="hv8-tL-SEY"/>
                             <constraint firstItem="ueW-oo-GTW" firstAttribute="centerX" secondItem="LpO-tj-6RB" secondAttribute="centerX" id="iUQ-8f-Pri"/>
                             <constraint firstItem="LpO-tj-6RB" firstAttribute="centerX" secondItem="Dgu-CS-xfW" secondAttribute="centerX" id="ise-Wz-x7d"/>
-                            <constraint firstItem="8xo-Qo-EOf" firstAttribute="top" secondItem="Tp3-y5-Pu5" secondAttribute="bottom" constant="8" id="oQl-R5-vj6"/>
+                            <constraint firstItem="8xo-Qo-EOf" firstAttribute="top" secondItem="Tp3-y5-Pu5" secondAttribute="bottom" constant="20" id="oQl-R5-vj6"/>
                             <constraint firstItem="LpO-tj-6RB" firstAttribute="trailing" secondItem="Zxp-Qb-xvq" secondAttribute="trailing" id="w8j-Fx-6kc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backbutton" destination="8xo-Qo-EOf" id="eq1-aa-M6m"/>
+                        <outlet property="header" destination="ueW-oo-GTW" id="lhz-sN-KJB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A8P-Lf-BeP" userLabel="First Responder" sceneMemberID="firstResponder"/>
