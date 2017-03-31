@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541058ED1E8E38A60079A20A /* dataobjectt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541058EC1E8E38A60079A20A /* dataobjectt.swift */; };
+		541058EF1E8E399B0079A20A /* DataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541058EE1E8E399B0079A20A /* DataObject.swift */; };
+		541058F31E8E42E40079A20A /* CommonDrugsTablecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541058F11E8E42E40079A20A /* CommonDrugsTablecell.swift */; };
+		541058F41E8E42E40079A20A /* CommonDrugsTablecell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541058F21E8E42E40079A20A /* CommonDrugsTablecell.xib */; };
 		542ED7BA1E8BB3060002FD43 /* CalcMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542ED7B91E8BB3060002FD43 /* CalcMainVC.swift */; };
 		542ED7BC1E8BB9360002FD43 /* BMIvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542ED7BB1E8BB9360002FD43 /* BMIvc.swift */; };
 		542ED7BE1E8BB9B00002FD43 /* calculators.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542ED7BD1E8BB9B00002FD43 /* calculators.storyboard */; };
@@ -69,7 +73,6 @@
 		546DBB911E8CF0A900BAF26E /* ScoliosisDrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = 546DBB8F1E8CF0A900BAF26E /* ScoliosisDrugList.csv */; };
 		546DBB941E8CF0B900BAF26E /* CardiacDrugCalculationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546DBB921E8CF0B900BAF26E /* CardiacDrugCalculationsManager.swift */; };
 		546DBB951E8CF0B900BAF26E /* CardiacDrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = 546DBB931E8CF0B900BAF26E /* CardiacDrugList.csv */; };
-		546DBB981E8CF0C000BAF26E /* CommonDrugCalculationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546DBB961E8CF0C000BAF26E /* CommonDrugCalculationsManager.swift */; };
 		546DBB991E8CF0C000BAF26E /* CommonDrugs.json in Resources */ = {isa = PBXBuildFile; fileRef = 546DBB971E8CF0C000BAF26E /* CommonDrugs.json */; };
 		546DBB9C1E8CF0CB00BAF26E /* DrugCalculationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546DBB9A1E8CF0CB00BAF26E /* DrugCalculationsManager.swift */; };
 		546DBB9D1E8CF0CB00BAF26E /* DrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = 546DBB9B1E8CF0CB00BAF26E /* DrugList.csv */; };
@@ -107,6 +110,10 @@
 /* Begin PBXFileReference section */
 		0B5581379DAC5BA194847E62 /* Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKH Paediatrics Anaesthesia Handbook - swift/Pods-KKH Paediatrics Anaesthesia Handbook - swift.release.xcconfig"; sourceTree = "<group>"; };
 		2D2D53006FBC7597CC52C2CF /* Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_KKH_Paediatrics_Anaesthesia_Handbook___swiftUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		541058EC1E8E38A60079A20A /* dataobjectt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataobjectt.swift; sourceTree = "<group>"; };
+		541058EE1E8E399B0079A20A /* DataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataObject.swift; sourceTree = "<group>"; };
+		541058F11E8E42E40079A20A /* CommonDrugsTablecell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonDrugsTablecell.swift; sourceTree = "<group>"; };
+		541058F21E8E42E40079A20A /* CommonDrugsTablecell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonDrugsTablecell.xib; sourceTree = "<group>"; };
 		542ED7B91E8BB3060002FD43 /* CalcMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcMainVC.swift; sourceTree = "<group>"; };
 		542ED7BB1E8BB9360002FD43 /* BMIvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIvc.swift; sourceTree = "<group>"; };
 		542ED7BD1E8BB9B00002FD43 /* calculators.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = calculators.storyboard; sourceTree = "<group>"; };
@@ -169,7 +176,6 @@
 		546DBB8F1E8CF0A900BAF26E /* ScoliosisDrugList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ScoliosisDrugList.csv; sourceTree = "<group>"; };
 		546DBB921E8CF0B900BAF26E /* CardiacDrugCalculationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardiacDrugCalculationsManager.swift; sourceTree = "<group>"; };
 		546DBB931E8CF0B900BAF26E /* CardiacDrugList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CardiacDrugList.csv; sourceTree = "<group>"; };
-		546DBB961E8CF0C000BAF26E /* CommonDrugCalculationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonDrugCalculationsManager.swift; sourceTree = "<group>"; };
 		546DBB971E8CF0C000BAF26E /* CommonDrugs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CommonDrugs.json; sourceTree = "<group>"; };
 		546DBB9A1E8CF0CB00BAF26E /* DrugCalculationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugCalculationsManager.swift; sourceTree = "<group>"; };
 		546DBB9B1E8CF0CB00BAF26E /* DrugList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DrugList.csv; sourceTree = "<group>"; };
@@ -226,12 +232,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		541058F01E8E39CB0079A20A /* treeView data */ = {
+			isa = PBXGroup;
+			children = (
+				541058EC1E8E38A60079A20A /* dataobjectt.swift */,
+				541058EE1E8E399B0079A20A /* DataObject.swift */,
+				541058F11E8E42E40079A20A /* CommonDrugsTablecell.swift */,
+				541058F21E8E42E40079A20A /* CommonDrugsTablecell.xib */,
+			);
+			name = "treeView data";
+			sourceTree = "<group>";
+		};
 		542ED7B81E8BB2EA0002FD43 /* calculators */ = {
 			isa = PBXGroup;
 			children = (
 				546DBB9A1E8CF0CB00BAF26E /* DrugCalculationsManager.swift */,
 				546DBBA01E8CFA5900BAF26E /* no touch :( */,
-				546DBB961E8CF0C000BAF26E /* CommonDrugCalculationsManager.swift */,
 				546DBB921E8CF0B900BAF26E /* CardiacDrugCalculationsManager.swift */,
 				546DBB8E1E8CF0A900BAF26E /* ScoliosisDrugCalculationsManager.swift */,
 				542ED7BD1E8BB9B00002FD43 /* calculators.storyboard */,
@@ -240,6 +256,7 @@
 				542ED7BB1E8BB9360002FD43 /* BMIvc.swift */,
 				546DBB8C1E8CE22000BAF26E /* drugVC.swift */,
 				546DBBA11E8D06B700BAF26E /* KKH Paediatrics Anaesthesia Handbook - swift-Bridging-Header.h */,
+				541058F01E8E39CB0079A20A /* treeView data */,
 			);
 			name = calculators;
 			sourceTree = "<group>";
@@ -574,6 +591,7 @@
 				5450DE451E87D69D00EBBF55 /* index.txt in Resources */,
 				5450DE561E87D69D00EBBF55 /* O-42-Patient_Controlled_Analgesia.pdf in Resources */,
 				5450DE3D1E87D69D00EBBF55 /* G-18-Diagnostic_Imaging.pdf in Resources */,
+				541058F41E8E42E40079A20A /* CommonDrugsTablecell.xib in Resources */,
 				5450DE411E87D69D00EBBF55 /* I-22-Peripheral_Nerve_Block.pdf in Resources */,
 				5450DE511E87D69D00EBBF55 /* M-37-Malignant_Hyperthermia.pdf in Resources */,
 				5450DE351E87D69D00EBBF55 /* C-10-Equipment.pdf in Resources */,
@@ -746,17 +764,19 @@
 				542ED7BA1E8BB3060002FD43 /* CalcMainVC.swift in Sources */,
 				543BAE211E8A66E3009CC8E5 /* PDFManager.swift in Sources */,
 				546DBB941E8CF0B900BAF26E /* CardiacDrugCalculationsManager.swift in Sources */,
+				541058EF1E8E399B0079A20A /* DataObject.swift in Sources */,
 				54C40F541E858F3B000E0CF8 /* AppDelegate.swift in Sources */,
 				5450DE5C1E87D86500EBBF55 /* tabControllerVC.swift in Sources */,
 				54B7BA971E891F05005F1075 /* HandbookVC.swift in Sources */,
 				546DBB9C1E8CF0CB00BAF26E /* DrugCalculationsManager.swift in Sources */,
 				546DBB901E8CF0A900BAF26E /* ScoliosisDrugCalculationsManager.swift in Sources */,
+				541058F31E8E42E40079A20A /* CommonDrugsTablecell.swift in Sources */,
 				5436971A1E8A4BA0001D80F4 /* HandbookCollectionViewCell.swift in Sources */,
 				543480871E864ABC004D837F /* extensions.swift in Sources */,
 				546DBB8B1E8CDC6D00BAF26E /* BMIGraphManager.swift in Sources */,
-				546DBB981E8CF0C000BAF26E /* CommonDrugCalculationsManager.swift in Sources */,
 				5448347D1E8B8A1100CC1E09 /* HandbookTableViewCell.swift in Sources */,
 				546DBB8D1E8CE22000BAF26E /* drugVC.swift in Sources */,
+				541058ED1E8E38A60079A20A /* dataobjectt.swift in Sources */,
 				542ED7BC1E8BB9360002FD43 /* BMIvc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

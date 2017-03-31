@@ -10,6 +10,7 @@ import UIKit
 import DropDown
 import PDFReader
 import RATreeView
+import SwiftyJSON
 
 var selected_drug: Int? = nil
 var patientWeight: Int? = nil
@@ -226,13 +227,55 @@ class drugSendVC: UIViewController, UIWebViewDelegate {
 
 class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSource {
     
-    var dataTree : [String: Any]? = [:]
+    var dataTree : [dataobject]! = []
+    
+    
     
     override func viewDidLoad() {
-        
+        dump(loadData(weight: Float(patientWeight!)))
+        setupTreeView()
     }
     
+    func loadData(weight: Float) -> [String: [String: [String: Any]]]! {
+        // This will load shit from the file.
+        do {
+            var returnValue: [String: [String: [String: [String: Any]]]] = [:]
+            let content = try String(contentsOfFile: Bundle.main.path(forResource: "CommonDrugs", ofType: "json")!)
+            let json = JSON(data: content.data(using: String.Encoding.utf8)!)
+            for (key, jsonValue) in json {
+                returnValue[key] = [:]
+                for (key2, jsonValue2) in jsonValue {
+                    if key2 == "name" { continue }
+                    for (key3, jsonValue3) in jsonValue2 {
+                        returnValue[key]![key3] = [:]
+                        for (key4, jsonValue4) in jsonValue3 {
+                            if key4 == "name" { continue }
+                            for (key5, jsonValue5) in jsonValue4 {
+                                returnValue[key]![key3]![key5] = [:]
+                                for (key6, jsonValue6) in jsonValue5 {
+                                    if key6 == "name" { continue }
+                                    if let float = jsonValue6.float {
+                                        returnValue[key]![key3]![key5]![key6] = float
+                                    } else if let string = jsonValue6.string {
+                                        returnValue[key]![key3]![key5]![key6] = string
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return returnValue
+        } catch _ {}
+        return nil
+    }
+    
+    
 //MARK: - RATreeview memes
+    
+    func setupTreeView () {
+        
+    }
     
     func treeView(_ treeView: RATreeView, heightForRowForItem item: Any) -> CGFloat {
         return 70
@@ -245,25 +288,32 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
     
     
     func treeView(_ treeView: RATreeView, didCollapseRowForItem item: Any) {
-           }
+    }
     
     
     func treeView(_ treeView: RATreeView, numberOfChildrenOfItem item: Any?) -> Int {
-        if let item = item as? [String : Any] {
-            return item.children.count
-        } else {
-            return dataTree.count
+        if let item = item as? dataobject{
+            return item.data.count
         }
-        return 1
+        else{
+            return (dataTree?.count)!
+        }
     }
     
     
     func treeView(_ treeView: RATreeView, child index: Int, ofItem item: Any?) -> Any {
-
+        if let item = item as? dataobject{
+            return item.children[index]
+        }
+        else{
+            return dataTree[index]
+        }
     }
     
     
     func treeView(_ treeView: RATreeView, cellForItem item: Any?) -> UITableViewCell {
+        let cell = treeView.dequeueReusableCell(withIdentifier: String (describing : CommonDrugsTablecell.self )) as! CommonDrugsTablecell
+        return cell
     }
     
 }
