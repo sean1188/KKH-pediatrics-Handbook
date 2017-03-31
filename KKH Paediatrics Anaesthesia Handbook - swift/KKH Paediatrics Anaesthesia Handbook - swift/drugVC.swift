@@ -372,6 +372,7 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
         let level = treeView.levelForCell(forItem: item)
         let cell = treeView.dequeueReusableCell(withIdentifier: String (describing : CommonDrugsTablecell.self )) as! CommonDrugsTablecell
         cell.label.text = dataobejct.name
+        cell.label.textColor = UIColor.white
         cell.selectionStyle = .none
         cell.backgroundColor = UIColor.init().secondaryColor()
         //styling
