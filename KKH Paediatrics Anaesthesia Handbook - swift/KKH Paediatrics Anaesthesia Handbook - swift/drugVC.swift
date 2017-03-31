@@ -9,6 +9,7 @@
 import UIKit
 import DropDown
 import PDFReader
+import RATreeView
 
 var selected_drug: Int? = nil
 var patientWeight: Int? = nil
@@ -45,12 +46,18 @@ class drugVC: UIViewController {
     }
     
     @IBAction func proceed(_ sender: Any) {
-        if selected_drug != nil{
+        if selected_drug != 3{
         if weightField.text != ""{
             patientWeight = Int(weightField.text!)
             self.performSegue(withIdentifier: "send", sender: self)
         }
         else{            sendAlertController(title: "Error", message: "Invalid input, please check.", actionTitle: "Okay")
+            }
+        }
+        else if selected_drug == 3 {
+            if weightField.text != ""{
+                patientWeight = Int(weightField.text!)
+                self.performSegue(withIdentifier: "cd", sender: self)
             }
         }
         else{
@@ -214,7 +221,49 @@ class drugSendVC: UIViewController, UIWebViewDelegate {
         
     }
     
+}
+
+
+class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSource {
+    
+    var dataTree : [String: Any]? = [:]
+    
+    override func viewDidLoad() {
+        
+    }
+    
+//MARK: - RATreeview memes
+    
+    func treeView(_ treeView: RATreeView, heightForRowForItem item: Any) -> CGFloat {
+        return 70
+    }
     
     
+    func treeView(_ treeView: RATreeView, didSelectRowForItem item: Any) {
+        
+    }
+    
+    
+    func treeView(_ treeView: RATreeView, didCollapseRowForItem item: Any) {
+           }
+    
+    
+    func treeView(_ treeView: RATreeView, numberOfChildrenOfItem item: Any?) -> Int {
+        if let item = item as? [String : Any] {
+            return item.children.count
+        } else {
+            return dataTree.count
+        }
+        return 1
+    }
+    
+    
+    func treeView(_ treeView: RATreeView, child index: Int, ofItem item: Any?) -> Any {
+
+    }
+    
+    
+    func treeView(_ treeView: RATreeView, cellForItem item: Any?) -> UITableViewCell {
+    }
     
 }

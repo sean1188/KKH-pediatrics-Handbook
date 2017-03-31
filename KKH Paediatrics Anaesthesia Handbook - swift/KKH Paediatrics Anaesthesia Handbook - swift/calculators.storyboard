@@ -324,6 +324,7 @@
                         <outlet property="selectionlabel" destination="a1v-AK-Ac0" id="S2i-vn-b9T"/>
                         <outlet property="weightField" destination="pyW-Ce-nWb" id="eHk-jg-00T"/>
                         <segue destination="thA-5b-n5P" kind="presentation" identifier="send" modalTransitionStyle="crossDissolve" id="6lF-BY-wpG"/>
+                        <segue destination="lLF-Kb-A4A" kind="presentation" identifier="cd" id="gPs-l9-KMj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeR-Ir-u4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -335,10 +336,10 @@
             </objects>
             <point key="canvasLocation" x="-146.40000000000001" y="500.59970014992507"/>
         </scene>
-        <!--View Controller-->
+        <!--commonDrug-->
         <scene sceneID="D8X-h6-lQT">
             <objects>
-                <viewController id="lLF-Kb-A4A" sceneMemberID="viewController">
+                <viewController title="commonDrug" id="lLF-Kb-A4A" customClass="commonDrugtables" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EuE-1m-1N4"/>
                         <viewControllerLayoutGuide type="bottom" id="pVb-np-Xbb"/>
