@@ -328,7 +328,7 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
         treeView.dataSource = self
         treeView.delegate = self
         treeView.treeFooterView = UIView()
-        treeView.separatorColor = .red
+        treeView.separatorColor = .clear
         treeView.backgroundColor = .clear
         view.addSubview(treeView)
     }
@@ -369,8 +369,24 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
     
     func treeView(_ treeView: RATreeView, cellForItem item: Any?) -> UITableViewCell {
         let dataobejct = item as! dataobject
+        let level = treeView.levelForCell(forItem: item)
         let cell = treeView.dequeueReusableCell(withIdentifier: String (describing : CommonDrugsTablecell.self )) as! CommonDrugsTablecell
         cell.label.text = dataobejct.name
+        cell.selectionStyle = .none
+        cell.backgroundColor = UIColor.init().secondaryColor()
+        //styling
+        switch level {
+        case 1:
+            cell.leftMargin.constant = 15
+        case 2:
+            cell.leftMargin.constant = 30
+        case 3:
+            cell.leftMargin.constant = 45
+        default:
+            cell.leftMargin.constant = 0
+            cell.backgroundColor = UIColor.init().primaryColor()
+
+        }
         return cell
     }
     

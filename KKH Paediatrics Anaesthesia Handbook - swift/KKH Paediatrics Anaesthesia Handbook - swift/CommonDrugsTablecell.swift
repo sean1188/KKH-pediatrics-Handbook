@@ -11,6 +11,7 @@ import UIKit
 class CommonDrugsTablecell: UITableViewCell {
 
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var leftMargin: NSLayoutConstraint!
     
     
     override func awakeFromNib() {
