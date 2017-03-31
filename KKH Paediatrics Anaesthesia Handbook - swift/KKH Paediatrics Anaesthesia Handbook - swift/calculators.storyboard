@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="fontawesome-webfont.ttf">
+        <array key="FontAwesome.otf">
             <string>FontAwesome</string>
         </array>
     </customFonts>
@@ -33,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lqm-OA-QbN">
-                                <rect key="frame" x="16" y="37" width="42" height="32"/>
+                                <rect key="frame" x="16" y="37.5" width="42" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="iSy-Uk-nXo"/>
                                 </constraints>
@@ -371,6 +371,9 @@
                             <constraint firstItem="6UW-H2-gV5" firstAttribute="trailing" secondItem="c9D-Id-aJ1" secondAttribute="trailingMargin" id="lsd-xO-rqZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="6UW-H2-gV5" id="BwA-AH-vHy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pm3-ex-NXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

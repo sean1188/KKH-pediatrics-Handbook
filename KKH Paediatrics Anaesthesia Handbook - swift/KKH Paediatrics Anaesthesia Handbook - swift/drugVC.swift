@@ -229,11 +229,18 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
     
     var dataTree : [dataobject]! = []
     
+    @IBOutlet weak var backButton: UIButton!
     
     
     override func viewDidLoad() {
-        dump(loadData(weight: Float(patientWeight!)))
-        setupTreeView()
+        styling()
+        processData()
+    }
+    
+    func styling() {
+        _ = backButton.roundify_circle
+        backButton.titleLabel?.textColor = UIColor.init().secondaryColor()
+        self.view.backgroundColor = UIColor.init().primaryColor()
     }
     
     func loadData(weight: Float) -> [String: [String: [String: Any]]]! {
@@ -271,10 +278,59 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
     }
     
     
-//MARK: - RATreeview memes
-    
-    func setupTreeView () {
+    func processData (){
+//        dump(loadData(weight: Float(patientWeight!)))
+        let data = loadData(weight: Float(patientWeight!))
+        data?.forEach({ (drug) in
+            //new drug object
+            print("\(drug.key)--- *")
+            var newDrug : dataobject? = dataobject(name : drug.key)
+            drug.value.forEach({ (path) in
+                //new path object
+                print(path.key)
+                var newPath : dataobject? = dataobject(name: path.key)
+                path.value.forEach({ (method) in
+                    //new method object
+                    var newMethod : dataobject? = dataobject(name: method.key)
+                    print("methods:")
+                    for (key, value) in method.value as! [String: String]{
+                        if value != ""{
+                            if key == "dose" {
+                                let newvalue : dataobject = dataobject(name: "\(key):\n \(value) \((method.value as! [String: String])["unit"]!)")
+                                newMethod?.addChild(newvalue)
+                            }
+                            else{
+                            let newvalue : dataobject = dataobject(name: "\(key):\n \(value)")
+                                newMethod?.addChild(newvalue)
+                            }
+                    }
+                }
+                    newPath?.addChild(newMethod!)
+                    
+                })
+                newDrug?.addChild(newPath!)
+            })
+            dataTree.append(newDrug!)
+        })
         
+        setupTreeView()
+    
+    }
+    
+    
+    
+//MARK: - RATreeview memes
+    var treeView = RATreeView()
+    func setupTreeView () {
+        treeView = RATreeView(frame:CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
+        treeView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        treeView.register(UINib(nibName: String(describing: CommonDrugsTablecell.self), bundle: nil), forCellReuseIdentifier: String(describing: CommonDrugsTablecell.self))
+        treeView.dataSource = self
+        treeView.delegate = self
+        treeView.treeFooterView = UIView()
+        treeView.separatorColor = .red
+        treeView.backgroundColor = .clear
+        view.addSubview(treeView)
     }
     
     func treeView(_ treeView: RATreeView, heightForRowForItem item: Any) -> CGFloat {
@@ -293,7 +349,7 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
     
     func treeView(_ treeView: RATreeView, numberOfChildrenOfItem item: Any?) -> Int {
         if let item = item as? dataobject{
-            return item.data.count
+            return item.children.count
         }
         else{
             return (dataTree?.count)!
@@ -312,7 +368,9 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
     
     
     func treeView(_ treeView: RATreeView, cellForItem item: Any?) -> UITableViewCell {
+        let dataobejct = item as! dataobject
         let cell = treeView.dequeueReusableCell(withIdentifier: String (describing : CommonDrugsTablecell.self )) as! CommonDrugsTablecell
+        cell.label.text = dataobejct.name
         return cell
     }
     
