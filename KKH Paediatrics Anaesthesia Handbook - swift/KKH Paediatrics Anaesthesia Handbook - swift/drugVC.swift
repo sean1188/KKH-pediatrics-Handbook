@@ -209,6 +209,7 @@ class drugSendVC: UIViewController, UIWebViewDelegate {
     }
     
     func closeCSVViewer (){
+        userIsviewingSheet = false
         self.webView.removeFromSuperview()
         
     }
