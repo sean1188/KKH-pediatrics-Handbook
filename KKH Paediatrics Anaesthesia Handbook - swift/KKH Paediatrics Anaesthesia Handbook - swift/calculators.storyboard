@@ -33,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lqm-OA-QbN">
-                                <rect key="frame" x="16" y="37.5" width="42" height="32"/>
+                                <rect key="frame" x="16" y="37" width="42" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="iSy-Uk-nXo"/>
                                 </constraints>
@@ -348,6 +348,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSA-LC-QeW" userLabel="topbar">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Common drugs for patient weight: XX KG" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7K-gE-Tm5">
+                                        <rect key="frame" x="17" y="19" width="267" height="63"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="E7K-gE-Tm5" firstAttribute="top" secondItem="MSA-LC-QeW" secondAttribute="top" constant="19" id="Exa-He-5ab"/>
+                                    <constraint firstAttribute="trailing" secondItem="E7K-gE-Tm5" secondAttribute="trailing" constant="91" id="InK-bu-x7W"/>
+                                    <constraint firstItem="E7K-gE-Tm5" firstAttribute="leading" secondItem="MSA-LC-QeW" secondAttribute="leading" constant="17" id="ahr-RU-IoD"/>
+                                    <constraint firstAttribute="height" constant="90" id="baz-Ph-go5"/>
+                                    <constraint firstItem="E7K-gE-Tm5" firstAttribute="bottom" secondItem="MSA-LC-QeW" secondAttribute="bottomMargin" id="mRk-KW-z5Q"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UW-H2-gV5">
                                 <rect key="frame" x="319" y="28" width="40" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -360,24 +379,28 @@
                                     <color key="titleColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="back:" destination="Tnp-et-Yw6" eventType="touchUpInside" id="HgB-bf-X2p"/>
-                                    <action selector="back:" destination="aZ6-jd-cvE" eventType="touchUpInside" id="PxR-de-5Va"/>
+                                    <action selector="back:" destination="lLF-Kb-A4A" eventType="touchUpInside" id="lAW-eY-Qii"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MSA-LC-QeW" secondAttribute="trailing" id="0c9-WM-1bt"/>
+                            <constraint firstItem="MSA-LC-QeW" firstAttribute="top" secondItem="c9D-Id-aJ1" secondAttribute="top" id="UwP-lK-jFa"/>
                             <constraint firstItem="6UW-H2-gV5" firstAttribute="top" secondItem="EuE-1m-1N4" secondAttribute="bottom" constant="8" id="gM8-0w-S37"/>
                             <constraint firstItem="6UW-H2-gV5" firstAttribute="trailing" secondItem="c9D-Id-aJ1" secondAttribute="trailingMargin" id="lsd-xO-rqZ"/>
+                            <constraint firstItem="MSA-LC-QeW" firstAttribute="leading" secondItem="c9D-Id-aJ1" secondAttribute="leading" id="wIL-1X-bja"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="6UW-H2-gV5" id="BwA-AH-vHy"/>
+                        <outlet property="topbar" destination="MSA-LC-QeW" id="Qhs-u1-T3m"/>
+                        <outlet property="weightLabel" destination="E7K-gE-Tm5" id="aka-v3-CeR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pm3-ex-NXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-146" y="1196"/>
+            <point key="canvasLocation" x="-146.40000000000001" y="1195.0524737631185"/>
         </scene>
         <!--drug send-->
         <scene sceneID="cNZ-cH-BZ4">

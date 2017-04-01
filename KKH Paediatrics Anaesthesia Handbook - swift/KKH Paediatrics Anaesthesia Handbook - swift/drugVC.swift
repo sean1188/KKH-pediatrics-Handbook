@@ -230,11 +230,14 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
     var dataTree : [dataobject]! = []
     
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var topbar: UIView!
+    @IBOutlet weak var weightLabel: UILabel!
     
     
     override func viewDidLoad() {
         styling()
         processData()
+        weightLabel.text = "Common drugs for patient weight: \(patientWeight!) KG"
     }
     
     func styling() {
@@ -249,6 +252,7 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
             var returnValue: [String: [String: [String: [String: Any]]]] = [:]
             let content = try String(contentsOfFile: Bundle.main.path(forResource: "CommonDrugs", ofType: "json")!)
             let json = JSON(data: content.data(using: String.Encoding.utf8)!)
+            
             for (key, jsonValue) in json {
                 returnValue[key] = [:]
                 for (key2, jsonValue2) in jsonValue {
@@ -313,16 +317,20 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
             dataTree.append(newDrug!)
         })
         
+        dataTree.sort {$0.name < $1.name}
         setupTreeView()
     
     }
     
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     
 //MARK: - RATreeview memes
     var treeView = RATreeView()
     func setupTreeView () {
-        treeView = RATreeView(frame:CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
+        treeView = RATreeView(frame:CGRect.init(x: 0, y: self.topbar.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.size.height))
         treeView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         treeView.register(UINib(nibName: String(describing: CommonDrugsTablecell.self), bundle: nil), forCellReuseIdentifier: String(describing: CommonDrugsTablecell.self))
         treeView.dataSource = self
