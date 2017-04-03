@@ -72,6 +72,10 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         case 0:
             presentmodularContentVC(content: ContentManager.BasicLifeSupport)
             break
+        case 1:
+            let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "Ca")
+            self.present(a, animated: true, completion: nil)
+            break
         case 5:
             presentmodularContentVC(content: ContentManager.anaphylaxisContent(weight: 60) )
             break
@@ -123,3 +127,88 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
 
 }
+
+
+
+
+
+
+class CardiacArrestMenu: UIViewController {
+    
+    @IBOutlet weak var backb: UIButton!
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var nsButton: UIButton!
+    @IBOutlet weak var sButtin: UIButton!
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return.lightContent
+    }
+    
+    override func viewDidLoad() {
+        _ = backb.roundify_circle
+        _ = contentView.roundify_slight
+        contentView.backgroundColor = UIColor.init().secondaryColor()
+        contentView.layer.borderColor = UIColor.white.cgColor	
+        contentView.layer.borderWidth = 1
+        _ = nsButton.roundify_slight
+        _ = sButtin.roundify_slight
+    }
+    
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func Nonshockable(_ sender: Any) {
+        presentmodularContentVC(content: ContentManager.CardiacArrest_NONSHOCKcontent(weight!))
+    }
+    
+    @IBAction func shockable(_ sender: Any) {
+        presentmodularContentVC(content: ContentManager.CardiacArrest_SHOCKcontent(weight!))
+    }
+    
+    
+    func presentmodularContentVC (content : [[String : Any]]){
+        let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content") as! CrisisContentModularVC
+        a.content = content
+        self.present(a, animated: true, completion: nil)
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
