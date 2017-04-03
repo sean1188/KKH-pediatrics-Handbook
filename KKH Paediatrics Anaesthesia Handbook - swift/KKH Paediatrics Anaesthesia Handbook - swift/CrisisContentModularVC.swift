@@ -38,23 +38,35 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let type = (content[indexPath.section][content[indexPath.section].keys.first!] as! [String : Any])["type"] as! String
-        if type != "text" {
-            return 176
+        print (type)
+        if type == "text" {
+            return 250
+        }
+        else if type == "header" {
+            return 100
+        }
+        else if type == "checkList_anap1"{
+            return 600
+        }
+        else if type == "checkList_anap2"{
+            return 400
         }
         else{
-            return 250
+            return 176
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let type = (content[indexPath.section][content[indexPath.section].keys.first!] as! [String : Any])["type"] as! String
         let cell = tableView.dequeueReusableCell(withIdentifier: type) as! crisisContentCell
-        if type == "text" {
-            cell.title.text = content[indexPath.section].keys.first
-            cell.content.text = (content[indexPath.section][content[indexPath.section].keys.first!] as! [String : Any])["content"] as! String
-        }
+        cell.title?.text = content[indexPath.section].keys.first
+        cell.content?.text = (content[indexPath.section][content[indexPath.section].keys.first!] as! [String : Any])["content"] as! String
         cell.title.textColor = UIColor.init().secondaryColor()
-        cell.backgroundColor = UIColor.init().secondaryColor()
+        if type == "header" {
+            cell.backgroundColor = .clear
+        }
+        else{
+            cell.backgroundColor = UIColor.init().secondaryColor()}
         _ =  cell.roundify_slight
         return cell
     }

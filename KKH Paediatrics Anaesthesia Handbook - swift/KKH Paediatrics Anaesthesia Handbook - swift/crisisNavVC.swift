@@ -72,8 +72,8 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         case 0:
             presentmodularContentVC(content: ContentManager.BasicLifeSupport)
             break
-        case 1:
-            
+        case 5:
+            presentmodularContentVC(content: ContentManager.anaphylaxisContent(60) )
             break
         default:
             break
@@ -109,7 +109,6 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         backb.isEnabled = false
         backb.alpha = 0
     }
-    
     
     func sendAlertController (title : String, message : String, actionTitle : String){
         let a = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
