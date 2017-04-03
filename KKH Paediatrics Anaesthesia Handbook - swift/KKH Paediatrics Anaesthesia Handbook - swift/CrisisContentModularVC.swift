@@ -48,7 +48,7 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
             return 176
         }
         else{
-        return 300
+            return 250
         }
     }
     

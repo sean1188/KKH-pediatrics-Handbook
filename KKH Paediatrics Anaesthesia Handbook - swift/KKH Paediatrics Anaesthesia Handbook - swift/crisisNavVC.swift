@@ -68,8 +68,15 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content")
-        self.navigationController?.pushViewController(a, animated: true)
+        let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content") as! CrisisContentModularVC
+        switch indexPath.section {
+        case 0:
+            a.content = ContentManager.BasicLifeSupport
+            break
+        default:
+            break
+        }
+        self.present(a, animated: true, completion: nil)
     }
     
     func styling(){
