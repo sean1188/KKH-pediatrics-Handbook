@@ -73,7 +73,7 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             presentmodularContentVC(content: ContentManager.BasicLifeSupport)
             break
         case 5:
-            presentmodularContentVC(content: ContentManager.anaphylaxisContent(60) )
+            presentmodularContentVC(content: ContentManager.anaphylaxisContent(weight: 60) )
             break
         default:
             break

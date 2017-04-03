@@ -83,6 +83,16 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
     
 //MARK: -
     
+    @IBAction func checkBox(_ sender: UIButton) {
+        if sender.titleLabel?.text == "" {
+            sender.setTitle("", for: .normal)
+        }
+        else{
+            sender.setTitle("", for: .normal)
+        }
+    }
+    
+    
     @IBAction func back(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
