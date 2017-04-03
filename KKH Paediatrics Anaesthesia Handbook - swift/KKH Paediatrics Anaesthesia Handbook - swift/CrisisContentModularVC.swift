@@ -23,6 +23,7 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         styling()
+        
     }
     
     
@@ -38,7 +39,6 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let type = (content[indexPath.section][content[indexPath.section].keys.first!] as! [String : Any])["type"] as! String
-        print (type)
         if type == "text" {
             return 250
         }
