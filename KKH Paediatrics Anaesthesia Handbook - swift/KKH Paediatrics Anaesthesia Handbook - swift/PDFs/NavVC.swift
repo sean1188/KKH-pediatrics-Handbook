@@ -27,6 +27,7 @@ class NavVC: UIViewController {
     
     var handbookViewController :UIViewController = HandbookVC()
     var calcVC :UIViewController = CalcMainVC()
+    var crisisVC : UIViewController = crisisNavVC()
     
     var load = true
 
@@ -54,6 +55,7 @@ class NavVC: UIViewController {
         //init tabviews
         scrollView.contentSize = CGSize.init(width: self.view.frame.size.width * 3, height: self.view.frame.size.height)
         scrollView.isScrollEnabled = true
+        
         //calculator
         calcVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "calcVC")
         self.addChildViewController(calcVC)
@@ -66,6 +68,11 @@ class NavVC: UIViewController {
         handbookViewController.view.center = self.view.center
         self.scrollView.addSubview(handbookViewController.view)
         
+        //handbooks
+        crisisVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "crisis")
+        self.addChildViewController(crisisVC)
+        crisisVC.view.center = CGPoint.init(x: self.view.frame.size.width * 2.5, y: self.view.frame.height/2)
+        self.scrollView.addSubview(crisisVC.view)
         moveScrollViewtoIndex(index: 0)
         scrollView.isScrollEnabled = false
     }

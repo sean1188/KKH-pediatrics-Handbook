@@ -18,6 +18,8 @@
 		5436971A1E8A4BA0001D80F4 /* HandbookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543697191E8A4BA0001D80F4 /* HandbookCollectionViewCell.swift */; };
 		543BAE211E8A66E3009CC8E5 /* PDFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543BAE201E8A66E3009CC8E5 /* PDFManager.swift */; };
 		5448347D1E8B8A1100CC1E09 /* HandbookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448347C1E8B8A1100CC1E09 /* HandbookTableViewCell.swift */; };
+		544C1BD41E91F42A00891D1F /* crisis.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544C1BD31E91F42A00891D1F /* crisis.storyboard */; };
+		544C1BD61E91F73E00891D1F /* crisisNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C1BD51E91F73E00891D1F /* crisisNavVC.swift */; };
 		5450DE2C1E87D69D00EBBF55 /* A-01-Training_Programmes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DDFD1E87D69D00EBBF55 /* A-01-Training_Programmes.pdf */; };
 		5450DE2D1E87D69D00EBBF55 /* B-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DDFE1E87D69D00EBBF55 /* B-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf */; };
 		5450DE2E1E87D69D00EBBF55 /* B-03-Preoperative_preparation_and_induction_techniques.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5450DDFF1E87D69D00EBBF55 /* B-03-Preoperative_preparation_and_induction_techniques.pdf */; };
@@ -121,6 +123,8 @@
 		543697191E8A4BA0001D80F4 /* HandbookCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandbookCollectionViewCell.swift; sourceTree = "<group>"; };
 		543BAE201E8A66E3009CC8E5 /* PDFManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFManager.swift; sourceTree = "<group>"; };
 		5448347C1E8B8A1100CC1E09 /* HandbookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandbookTableViewCell.swift; sourceTree = "<group>"; };
+		544C1BD31E91F42A00891D1F /* crisis.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = crisis.storyboard; sourceTree = "<group>"; };
+		544C1BD51E91F73E00891D1F /* crisisNavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = crisisNavVC.swift; sourceTree = "<group>"; };
 		5450DDFD1E87D69D00EBBF55 /* A-01-Training_Programmes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "A-01-Training_Programmes.pdf"; sourceTree = "<group>"; };
 		5450DDFE1E87D69D00EBBF55 /* B-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "B-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf"; sourceTree = "<group>"; };
 		5450DDFF1E87D69D00EBBF55 /* B-03-Preoperative_preparation_and_induction_techniques.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "B-03-Preoperative_preparation_and_induction_techniques.pdf"; sourceTree = "<group>"; };
@@ -273,6 +277,15 @@
 			name = handbooks;
 			sourceTree = "<group>";
 		};
+		544C1BD21E91F41300891D1F /* Crisis */ = {
+			isa = PBXGroup;
+			children = (
+				544C1BD31E91F42A00891D1F /* crisis.storyboard */,
+				544C1BD51E91F73E00891D1F /* crisisNavVC.swift */,
+			);
+			name = Crisis;
+			sourceTree = "<group>";
+		};
 		5450DDFC1E87D69D00EBBF55 /* PDFs */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,6 +383,7 @@
 				54C40F531E858F3B000E0CF8 /* AppDelegate.swift */,
 				543697181E8A4B88001D80F4 /* handbooks */,
 				542ED7B81E8BB2EA0002FD43 /* calculators */,
+				544C1BD21E91F41300891D1F /* Crisis */,
 				54C40F571E858F3B000E0CF8 /* Main.storyboard */,
 				54C40F5A1E858F3B000E0CF8 /* Assets.xcassets */,
 				54C40F5C1E858F3B000E0CF8 /* LaunchScreen.storyboard */,
@@ -545,6 +559,7 @@
 				5450DE2C1E87D69D00EBBF55 /* A-01-Training_Programmes.pdf in Resources */,
 				5450DE3B1E87D69D00EBBF55 /* F-16-ROTEM_Algorithm.pdf in Resources */,
 				5450DE5A1E87D69D00EBBF55 /* Q-46-NORMAL_LABORATORY_DATA.pdf in Resources */,
+				544C1BD41E91F42A00891D1F /* crisis.storyboard in Resources */,
 				5450DE4A1E87D69D00EBBF55 /* L-30-Paediatric_Massive_Transfusion_Protocol.pdf in Resources */,
 				5450DE2D1E87D69D00EBBF55 /* B-02-Guidelines_for_the_Provision_of_Anaesthesia_for_Paediatric_patients.pdf in Resources */,
 				546DBB911E8CF0A900BAF26E /* ScoliosisDrugList.csv in Resources */,
@@ -764,6 +779,7 @@
 				542ED7BA1E8BB3060002FD43 /* CalcMainVC.swift in Sources */,
 				543BAE211E8A66E3009CC8E5 /* PDFManager.swift in Sources */,
 				546DBB941E8CF0B900BAF26E /* CardiacDrugCalculationsManager.swift in Sources */,
+				544C1BD61E91F73E00891D1F /* crisisNavVC.swift in Sources */,
 				541058EF1E8E399B0079A20A /* DataObject.swift in Sources */,
 				54C40F541E858F3B000E0CF8 /* AppDelegate.swift in Sources */,
 				5450DE5C1E87D86500EBBF55 /* tabControllerVC.swift in Sources */,
