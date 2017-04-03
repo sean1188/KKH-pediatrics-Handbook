@@ -67,6 +67,11 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content")
+        self.navigationController?.pushViewController(a, animated: true)
+    }
+    
     func styling(){
         titleLabel.textColor = UIColor.init().secondaryColor()
         topbar.backgroundColor = UIColor.init().primaryColor()

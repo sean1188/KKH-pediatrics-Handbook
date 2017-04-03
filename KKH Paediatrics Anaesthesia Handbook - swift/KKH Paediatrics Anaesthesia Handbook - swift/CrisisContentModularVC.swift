@@ -22,10 +22,10 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         styling()
-        
+        content = ContentManager.BasicLifeSupport
     }
     
     
@@ -39,10 +39,17 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
         return 1
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 300
+    }
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! crisisContentCell
-        cell.title.text = content[indexPath.section]
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: (content[indexPath.section][content[indexPath.section].keys.first!] as! [String : Any])["type"] as! String) as! crisisContentCell
+        cell.title.text = content[indexPath.section].keys.first
+        cell.content.text = (content[indexPath.section][content[indexPath.section].keys.first!] as! [String : Any])["content"] as! String
+        cell.backgroundColor = UIColor.init().secondaryColor()
+        _ =  cell.roundify_slight
         return cell
     }
     
@@ -65,31 +72,3 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
 
 }
 
-//MARK: - CHECK LIST
-
-class checListTableView : UITableViewController{
-    
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func numberOfRows(inSection section: Int) -> Int {
-        return checkListItems.count
-    }
-    
-    func cellForRow(at indexPath: IndexPath) -> UITableViewCell? {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! checkListcell
-        cell.title.text = checkListItems[indexPath.row]
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-}
-
-class checkListcell : UITableViewCell {
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var checkButtn: UIButton!
-    
-}

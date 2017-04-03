@@ -12,7 +12,6 @@ class crisisContentCell: UITableViewCell {
 
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var content: UILabel!
-    @IBOutlet weak var checklistTableView: checListTableView!
     
     
     override func awakeFromNib() {
