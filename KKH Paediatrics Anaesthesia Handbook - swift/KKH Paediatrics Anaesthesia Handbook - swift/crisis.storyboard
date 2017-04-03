@@ -1,7 +1,209 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <customFonts key="customFonts">
+        <array key="fontawesome-webfont.ttf">
+            <string>FontAwesome</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--CrisisContent-->
+        <scene sceneID="Cc2-0Z-jvd">
+            <objects>
+                <viewController storyboardIdentifier="crisis_content" title="CrisisContent" id="8p3-gh-fTe" customClass="CrisisContentModularVC" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EY7-iq-HJs"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wki-BC-hWe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U0C-gI-DHS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR5-ph-qfe">
+                                <rect key="frame" x="72" y="28" width="232" height="38"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xx kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aU1-wO-wj0">
+                                <rect key="frame" x="16" y="28" width="57" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="ccZ-ck-rhL"/>
+                                    <constraint firstAttribute="width" constant="57" id="dx0-d0-ZZa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPw-rU-CJs">
+                                <rect key="frame" x="309" y="21" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="23"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="167" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZV0-sA-m0V">
+                                <rect key="frame" x="10" y="82" width="355" height="585"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="text" rowHeight="167" id="DgN-zO-19Q" userLabel="text cell" customClass="crisisContentCell" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="355" height="167"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DgN-zO-19Q" id="52f-v9-BxS">
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="167"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RS-cL-EjI" userLabel="title">
+                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="34"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="bCk-HK-xxY"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KH-Wk-PDE" userLabel="content">
+                                                    <rect key="frame" x="8" y="42" width="339" height="117"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.96582657100000002" green="0.31157219409999998" blue="0.3067167401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="0RS-cL-EjI" secondAttribute="trailing" id="6oB-5g-ZVb"/>
+                                                <constraint firstItem="8KH-Wk-PDE" firstAttribute="bottom" secondItem="52f-v9-BxS" secondAttribute="bottomMargin" id="IqI-XV-kE9"/>
+                                                <constraint firstItem="8KH-Wk-PDE" firstAttribute="top" secondItem="0RS-cL-EjI" secondAttribute="bottom" constant="8" symbolic="YES" id="NgX-Ls-kR0"/>
+                                                <constraint firstItem="0RS-cL-EjI" firstAttribute="top" secondItem="52f-v9-BxS" secondAttribute="top" id="Uh0-ZM-pji"/>
+                                                <constraint firstItem="8KH-Wk-PDE" firstAttribute="leading" secondItem="52f-v9-BxS" secondAttribute="leadingMargin" id="tgn-gV-lN0"/>
+                                                <constraint firstItem="0RS-cL-EjI" firstAttribute="centerX" secondItem="8KH-Wk-PDE" secondAttribute="centerX" id="xx9-Mf-LOc"/>
+                                                <constraint firstItem="0RS-cL-EjI" firstAttribute="leading" secondItem="52f-v9-BxS" secondAttribute="leading" id="zWZ-R6-Ecj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="content" destination="8KH-Wk-PDE" id="0ix-x6-c1m"/>
+                                            <outlet property="title" destination="0RS-cL-EjI" id="agt-WT-L0l"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="checkList" rowHeight="167" id="dQZ-yZ-Qc4" userLabel="text cell" customClass="crisisContentCell" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="195" width="355" height="167"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dQZ-yZ-Qc4" id="Irf-Ok-LzV">
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="167"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uv2-sH-8x3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="34"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="dyw-SI-59B"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BmP-iF-q2Q" userLabel="check list" customClass="checListTableView" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target">
+                                                    <rect key="frame" x="4" y="42" width="347" height="117"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <prototypes>
+                                                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Jm6-Ag-5GZ" userLabel="check list item" customClass="checkListcell" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="28" width="347" height="44"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jm6-Ag-5GZ" id="NyM-eC-uog">
+                                                                <rect key="frame" x="0.0" y="0.0" width="347" height="43.5"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wl-mb-nwE">
+                                                                        <rect key="frame" x="8" y="11" width="296" height="21"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKT-sO-Q5z">
+                                                                        <rect key="frame" x="302" y="7" width="37" height="30"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="37" id="zdr-5w-WED"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="17"/>
+                                                                        <state key="normal" title=""/>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="9Wl-mb-nwE" firstAttribute="centerY" secondItem="dKT-sO-Q5z" secondAttribute="centerY" id="39j-5b-zxf"/>
+                                                                    <constraint firstItem="dKT-sO-Q5z" firstAttribute="top" secondItem="NyM-eC-uog" secondAttribute="topMargin" constant="-1" id="C0c-iD-hgb"/>
+                                                                    <constraint firstAttribute="trailingMargin" secondItem="9Wl-mb-nwE" secondAttribute="trailing" constant="35" id="HCI-sp-ZM3"/>
+                                                                    <constraint firstItem="9Wl-mb-nwE" firstAttribute="leading" secondItem="NyM-eC-uog" secondAttribute="leadingMargin" id="Qrs-fI-yrg"/>
+                                                                    <constraint firstItem="9Wl-mb-nwE" firstAttribute="centerY" secondItem="NyM-eC-uog" secondAttribute="centerY" id="kce-gw-sPL"/>
+                                                                    <constraint firstItem="dKT-sO-Q5z" firstAttribute="trailing" secondItem="NyM-eC-uog" secondAttribute="trailingMargin" id="wOV-Er-tVg"/>
+                                                                </constraints>
+                                                            </tableViewCellContentView>
+                                                            <connections>
+                                                                <outlet property="checkButtn" destination="dKT-sO-Q5z" id="cjY-Qt-zrz"/>
+                                                                <outlet property="title" destination="9Wl-mb-nwE" id="TBl-gd-Sfp"/>
+                                                            </connections>
+                                                        </tableViewCell>
+                                                    </prototypes>
+                                                </tableView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.96582657100000002" green="0.31157219409999998" blue="0.3067167401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Uv2-sH-8x3" secondAttribute="trailing" id="07k-I6-aKJ"/>
+                                                <constraint firstItem="BmP-iF-q2Q" firstAttribute="leading" secondItem="Irf-Ok-LzV" secondAttribute="leadingMargin" constant="-4" id="5II-cz-Rlt"/>
+                                                <constraint firstItem="BmP-iF-q2Q" firstAttribute="top" secondItem="Uv2-sH-8x3" secondAttribute="bottom" constant="8" symbolic="YES" id="ECC-1H-Hcn"/>
+                                                <constraint firstItem="Uv2-sH-8x3" firstAttribute="leading" secondItem="Irf-Ok-LzV" secondAttribute="leading" id="TX0-gy-356"/>
+                                                <constraint firstItem="BmP-iF-q2Q" firstAttribute="bottom" secondItem="Irf-Ok-LzV" secondAttribute="bottomMargin" id="fi4-7P-2kl"/>
+                                                <constraint firstItem="Uv2-sH-8x3" firstAttribute="top" secondItem="Irf-Ok-LzV" secondAttribute="top" id="qzk-FO-2J1"/>
+                                                <constraint firstItem="Uv2-sH-8x3" firstAttribute="centerX" secondItem="BmP-iF-q2Q" secondAttribute="centerX" id="xco-j5-dnA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="checklistTableView" destination="BmP-iF-q2Q" id="5ke-qw-JYM"/>
+                                            <outlet property="title" destination="Uv2-sH-8x3" id="nts-1N-Kx3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8p3-gh-fTe" id="svY-bc-imD"/>
+                                    <outlet property="delegate" destination="8p3-gh-fTe" id="uAR-OB-NSy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="AR5-ph-qfe" firstAttribute="centerX" secondItem="ZV0-sA-m0V" secondAttribute="centerX" id="27y-Ad-G3e"/>
+                            <constraint firstItem="aU1-wO-wj0" firstAttribute="top" secondItem="EY7-iq-HJs" secondAttribute="bottom" constant="8" symbolic="YES" id="609-O5-aiW"/>
+                            <constraint firstItem="aU1-wO-wj0" firstAttribute="leading" secondItem="U0C-gI-DHS" secondAttribute="leadingMargin" id="9El-7L-L0w"/>
+                            <constraint firstItem="AR5-ph-qfe" firstAttribute="leading" secondItem="U0C-gI-DHS" secondAttribute="leadingMargin" constant="56" id="BH8-Ot-dly"/>
+                            <constraint firstItem="Wki-BC-hWe" firstAttribute="top" secondItem="ZV0-sA-m0V" secondAttribute="bottom" id="Dtl-vs-hXh"/>
+                            <constraint firstItem="aU1-wO-wj0" firstAttribute="top" secondItem="AR5-ph-qfe" secondAttribute="top" id="FiC-05-dCr"/>
+                            <constraint firstItem="oPw-rU-CJs" firstAttribute="trailing" secondItem="U0C-gI-DHS" secondAttribute="trailingMargin" id="JuK-0x-IJr"/>
+                            <constraint firstItem="oPw-rU-CJs" firstAttribute="leading" secondItem="AR5-ph-qfe" secondAttribute="trailing" constant="5" id="hbA-NL-0Rs"/>
+                            <constraint firstItem="ZV0-sA-m0V" firstAttribute="top" secondItem="oPw-rU-CJs" secondAttribute="bottom" constant="11" id="iZY-7X-iK3"/>
+                            <constraint firstItem="ZV0-sA-m0V" firstAttribute="leading" secondItem="U0C-gI-DHS" secondAttribute="leading" constant="10" id="nMH-gU-jOW"/>
+                            <constraint firstItem="oPw-rU-CJs" firstAttribute="top" secondItem="EY7-iq-HJs" secondAttribute="bottom" constant="1" id="taI-tw-o6V"/>
+                            <constraint firstItem="aU1-wO-wj0" firstAttribute="centerY" secondItem="oPw-rU-CJs" secondAttribute="centerY" id="wXb-Vj-L5u"/>
+                            <constraint firstItem="ZV0-sA-m0V" firstAttribute="top" secondItem="AR5-ph-qfe" secondAttribute="bottom" constant="16" id="wq7-jX-xnc"/>
+                            <constraint firstAttribute="trailing" secondItem="ZV0-sA-m0V" secondAttribute="trailing" constant="10" id="y7m-AD-fQp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Headertitile" destination="AR5-ph-qfe" id="tL7-fs-3JT"/>
+                        <outlet property="backButton" destination="oPw-rU-CJs" id="pqk-uJ-TMq"/>
+                        <outlet property="weightLabel" destination="aU1-wO-wj0" id="Y4l-gU-Ae6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RiE-oS-ZOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-228" y="-265.81709145427288"/>
+        </scene>
+    </scenes>
 </document>

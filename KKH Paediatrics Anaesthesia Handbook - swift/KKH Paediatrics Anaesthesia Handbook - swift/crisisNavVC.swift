@@ -85,6 +85,10 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             self.view.addSubview(filesView)
             backb.isEnabled = true
             backb.alpha = 1
+            self.view.endEditing(true)
+        }
+        else{
+            sendAlertController(title: "Error", message: "Please enter valid weight", actionTitle: "Okay")
         }
     }
     @IBAction func back(_ sender: Any) {
@@ -92,4 +96,11 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         backb.isEnabled = false
         backb.alpha = 0
     }
+    
+    func sendAlertController (title : String, message : String, actionTitle : String){
+        let a = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
+        a.addAction(UIAlertAction.init(title: actionTitle, style: .cancel, handler: nil))
+        self.present(a, animated: true, completion: nil)
+    }
+
 }
