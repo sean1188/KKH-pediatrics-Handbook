@@ -11,9 +11,10 @@ import UIKit
 class ContentManager: NSObject {
     
     //store dictionaries that build content modularly
-//    ["Steps" : ["type" : "checkList",
-//    "content" : ["Open airway", "Check for spontaneous Breathing","Check pulse (fermoral & brachial preferable in children) for not more than 10 seconds"]]],
    static var BasicLifeSupport : [[String : Any]] = [
+    
+                                                ["Steps" : ["type" : "checkList_BLS"]],
+
                                                 
                                                 ["Pulse Present, Breathing absent" : ["type" : "text",
                                                                                       "content" : " 1 Breath every 3 seconds \n(Breathe a thousand, 2 a thousand, 3 a thousand then repeat cycle) \n\nRe-check pulse every 2 minutes"]],

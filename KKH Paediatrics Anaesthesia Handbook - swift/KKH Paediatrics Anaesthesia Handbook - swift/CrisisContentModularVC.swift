@@ -9,8 +9,6 @@
 import UIKit
 
 
-var checkListItems :[String] = []
-var content : [[String : Any]] = [[:]]
 
 
 class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -19,12 +17,17 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var Headertitile: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
     
-    
+    var content : [[String : Any]] = [[:]]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         styling()
+        handleContent()
+    }
+    
+    func handleContent() {
         content = ContentManager.BasicLifeSupport
     }
     
@@ -40,16 +43,24 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let type = (content[indexPath.section][content[indexPath.section].keys.first!] as! [String : Any])["type"] as! String
+        if type != "text" {
+            return 176
+        }
+        else{
         return 300
+        }
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: (content[indexPath.section][content[indexPath.section].keys.first!] as! [String : Any])["type"] as! String) as! crisisContentCell
-        cell.backgroundColor = UIColor.init().secondaryColor()
-        cell.title.text = content[indexPath.section].keys.first
+        let type = (content[indexPath.section][content[indexPath.section].keys.first!] as! [String : Any])["type"] as! String
+        let cell = tableView.dequeueReusableCell(withIdentifier: type) as! crisisContentCell
+        if type == "text" {
+            cell.title.text = content[indexPath.section].keys.first
+            cell.content.text = (content[indexPath.section][content[indexPath.section].keys.first!] as! [String : Any])["content"] as! String
+        }
         cell.title.textColor = UIColor.init().secondaryColor()
-        cell.content.text = (content[indexPath.section][content[indexPath.section].keys.first!] as! [String : Any])["content"] as! String
+        cell.backgroundColor = UIColor.init().secondaryColor()
         _ =  cell.roundify_slight
         return cell
     }
@@ -61,7 +72,7 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 10
+        return 20
     }
     
 //MARK: -
