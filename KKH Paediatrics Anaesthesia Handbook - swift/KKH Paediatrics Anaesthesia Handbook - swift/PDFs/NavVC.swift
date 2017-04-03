@@ -95,9 +95,13 @@ class NavVC: UIViewController {
 }
     
     @IBAction func crisis(_ sender: Any) {
+        moveScrollViewtoIndex(index: 2)
+
     }
     
     @IBAction func settings(_ sender: Any) {
+        moveScrollViewtoIndex(index: 3)
+
     }
     
     func animateMarkerToIndex (index : Int){
