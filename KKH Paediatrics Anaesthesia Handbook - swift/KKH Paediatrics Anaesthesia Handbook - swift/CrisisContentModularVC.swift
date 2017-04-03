@@ -18,7 +18,11 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var weightLabel: UILabel!
     
     var content : [[String : Any]] = [[:]]
-
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -40,7 +44,13 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let type = (content[indexPath.section][content[indexPath.section].keys.first!] as! [String : Any])["type"] as! String
         if type == "text" {
-            return 250
+            var label = UILabel()
+            label.font = UIFont.init(name: "", size: 20)
+            label.text = (content[indexPath.section][content[indexPath.section].keys.first!] as! [String : Any])["content"] as! String
+            label.numberOfLines = 0
+            label.lineBreakMode = .byWordWrapping
+            let size = label.sizeThatFits(CGSize.init(width: label.frame.size.width, height: CGFloat.greatestFiniteMagnitude ))
+            return size.height + 100
         }
         else if type == "header" {
             return 100
