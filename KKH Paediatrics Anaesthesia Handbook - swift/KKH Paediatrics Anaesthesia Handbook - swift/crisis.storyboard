@@ -78,7 +78,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.96582657100000002" green="0.31157219409999998" blue="0.3067167401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="0RS-cL-EjI" secondAttribute="trailing" id="6oB-5g-ZVb"/>
                                                 <constraint firstItem="8KH-Wk-PDE" firstAttribute="bottom" secondItem="52f-v9-BxS" secondAttribute="bottomMargin" id="IqI-XV-kE9"/>
@@ -89,6 +89,7 @@
                                                 <constraint firstItem="0RS-cL-EjI" firstAttribute="leading" secondItem="52f-v9-BxS" secondAttribute="leading" id="zWZ-R6-Ecj"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="content" destination="8KH-Wk-PDE" id="0ix-x6-c1m"/>
                                             <outlet property="title" destination="0RS-cL-EjI" id="agt-WT-L0l"/>
