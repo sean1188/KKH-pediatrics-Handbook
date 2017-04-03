@@ -9,9 +9,9 @@
 import UIKit
 
 class ContentManager: NSObject {
+    var weight : Float? = nil
     
-    //store dictionaries that build content modularly
-   static var BasicLifeSupport : [[String : Any]] = [
+    static var BasicLifeSupport : [[String : Any]] = [
     
                                                 ["Steps" : ["type" : "checkList_BLS"]],
 

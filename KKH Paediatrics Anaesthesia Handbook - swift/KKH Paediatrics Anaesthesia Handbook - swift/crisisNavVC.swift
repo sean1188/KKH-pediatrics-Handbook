@@ -68,15 +68,16 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content") as! CrisisContentModularVC
         switch indexPath.section {
         case 0:
-            a.content = ContentManager.BasicLifeSupport
+            presentmodularContentVC(content: ContentManager.BasicLifeSupport)
+            break
+        case 1:
+            
             break
         default:
             break
         }
-        self.present(a, animated: true, completion: nil)
     }
     
     func styling(){
@@ -109,9 +110,16 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         backb.alpha = 0
     }
     
+    
     func sendAlertController (title : String, message : String, actionTitle : String){
         let a = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
         a.addAction(UIAlertAction.init(title: actionTitle, style: .cancel, handler: nil))
+        self.present(a, animated: true, completion: nil)
+    }
+    
+    func presentmodularContentVC (content : [[String : Any]]){
+        let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content") as! CrisisContentModularVC
+        a.content = content
         self.present(a, animated: true, completion: nil)
     }
 

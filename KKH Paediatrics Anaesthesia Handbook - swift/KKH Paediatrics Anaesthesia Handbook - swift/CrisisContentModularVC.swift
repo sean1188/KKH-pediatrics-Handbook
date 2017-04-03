@@ -21,14 +21,8 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
         styling()
-        handleContent()
-    }
-    
-    func handleContent() {
-        content = ContentManager.BasicLifeSupport
     }
     
     
@@ -76,6 +70,10 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
     }
     
 //MARK: -
+    
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     func styling(){
         self.view.backgroundColor = UIColor.init().primaryColor()
