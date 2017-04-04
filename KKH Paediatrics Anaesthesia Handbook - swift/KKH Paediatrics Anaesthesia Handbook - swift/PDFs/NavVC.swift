@@ -28,6 +28,7 @@ class NavVC: UIViewController {
     var handbookViewController :UIViewController = HandbookVC()
     var calcVC :UIViewController = CalcMainVC()
     var crisisVC : UIViewController = crisisNavVC()
+	var settingVC : UIViewController = settingsVC()
     
     var load = true
 
@@ -68,11 +69,19 @@ class NavVC: UIViewController {
         handbookViewController.view.center = self.view.center
         self.scrollView.addSubview(handbookViewController.view)
         
-        //handbooks
+        //crisis
         crisisVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "crisis")
         self.addChildViewController(crisisVC)
         crisisVC.view.center = CGPoint.init(x: self.view.frame.size.width * 2.5, y: self.view.frame.height/2)
         self.scrollView.addSubview(crisisVC.view)
+		
+		//crisis
+		settingVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "settings")
+		self.addChildViewController(settingVC)
+		settingVC.view.center = CGPoint.init(x: self.view.frame.size.width * 3.5, y: self.view.frame.height/2)
+		self.scrollView.addSubview(settingVC.view)
+		
+		
         moveScrollViewtoIndex(index: 0)
         scrollView.isScrollEnabled = false
     }
@@ -124,4 +133,24 @@ class NavVC: UIViewController {
         animateMarkerToIndex(index: index + 1)
         currentIndex = index
 }
+}
+
+
+
+
+
+
+class settingsVC : UIViewController {
+	
+	@IBOutlet weak var body: UIView!
+	@IBOutlet weak var topview: UIView!
+	@IBOutlet weak var button_about: UIButton!
+	
+	override func viewDidLoad() {
+		topview.backgroundColor = UIColor.init().primaryColor()
+		self.view.backgroundColor = UIColor.init().primaryColor()
+		body.clipsToBounds = true
+		_ = body.roundify_slight
+		button_about.backgroundColor = UIColor.init().secondaryColor()
+	}
 }

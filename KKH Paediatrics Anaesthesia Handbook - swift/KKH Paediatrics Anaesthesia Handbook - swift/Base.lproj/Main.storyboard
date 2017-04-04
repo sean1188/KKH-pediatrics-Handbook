@@ -915,10 +915,10 @@
             </objects>
             <point key="canvasLocation" x="2140" y="-54.422788605697157"/>
         </scene>
-        <!--View Controller-->
+        <!--SettingsVC-->
         <scene sceneID="CkE-zx-zp2">
             <objects>
-                <viewController id="g3Z-eZ-qzH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settings" id="g3Z-eZ-qzH" customClass="settingsVC" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jN6-9x-hw6"/>
                         <viewControllerLayoutGuide type="bottom" id="KFh-LQ-mks"/>
@@ -978,17 +978,35 @@
                                     <constraint firstItem="isb-54-Ke4" firstAttribute="leading" secondItem="p9q-VN-XaR" secondAttribute="leading" constant="16" id="w1s-df-x4Y"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bla-PA-3RB">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bla-PA-3RB" userLabel="content">
                                 <rect key="frame" x="16" y="88" width="343" height="491"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQP-bb-bRw">
-                                        <rect key="frame" x="0.0" y="427" width="343" height="64"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KKH" translatesAutoresizingMaskIntoConstraints="NO" id="QCA-BR-wl1">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="419"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="ABOUT SST INC."/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQP-bb-bRw">
+                                        <rect key="frame" x="0.0" y="427" width="343" height="64"/>
+                                        <color key="backgroundColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="cnB-X0-UFV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="ABOUT SST INC.">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.066288889909999996" green="0.53878046879999997" blue="0.94251665610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="QCA-BR-wl1" firstAttribute="top" secondItem="bla-PA-3RB" secondAttribute="top" id="48D-tr-i0C"/>
+                                    <constraint firstItem="QCA-BR-wl1" firstAttribute="leading" secondItem="bla-PA-3RB" secondAttribute="leading" id="5V3-Yu-dj9"/>
+                                    <constraint firstAttribute="bottom" secondItem="aQP-bb-bRw" secondAttribute="bottom" id="9e1-Wz-hzZ"/>
+                                    <constraint firstItem="QCA-BR-wl1" firstAttribute="leading" secondItem="aQP-bb-bRw" secondAttribute="leading" id="AMH-HO-v7j"/>
+                                    <constraint firstAttribute="trailing" secondItem="QCA-BR-wl1" secondAttribute="trailing" id="J5x-Zd-1Z1"/>
+                                    <constraint firstItem="QCA-BR-wl1" firstAttribute="trailing" secondItem="aQP-bb-bRw" secondAttribute="trailing" id="n9q-58-lHu"/>
+                                    <constraint firstItem="aQP-bb-bRw" firstAttribute="top" secondItem="QCA-BR-wl1" secondAttribute="bottom" constant="8" symbolic="YES" id="pHq-WT-d0L"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1005,6 +1023,11 @@
                             <constraint firstAttribute="trailing" secondItem="DPF-Zo-P9J" secondAttribute="trailing" id="oPz-ai-H9G"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="body" destination="bla-PA-3RB" id="Vrl-eO-pdL"/>
+                        <outlet property="button_about" destination="aQP-bb-bRw" id="gid-wL-hRi"/>
+                        <outlet property="topview" destination="p9q-VN-XaR" id="o9j-ZT-hvD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lXU-Y6-UEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1014,6 +1037,7 @@
     <resources>
         <image name="Group 35-1" width="225" height="121"/>
         <image name="Group 36" width="228" height="122"/>
+        <image name="KKH" width="1240" height="1753"/>
         <image name="rectangle-20" width="128" height="127"/>
     </resources>
 </document>
