@@ -150,7 +150,7 @@ class settingsVC : UIViewController {
 		topview.backgroundColor = UIColor.init().primaryColor()
 		self.view.backgroundColor = UIColor.init().primaryColor()
 		body.clipsToBounds = true
-		_ = body.roundify_slight
+		body.roundify_slight()
 		button_about.backgroundColor = UIColor.init().secondaryColor()
 	}
 }

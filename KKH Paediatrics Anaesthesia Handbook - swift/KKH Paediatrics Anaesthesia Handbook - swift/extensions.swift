@@ -22,14 +22,12 @@ public extension UIColor {
 
 public extension UIView {
     
-    var roundify_circle: UIView {
+    func roundify_circle() {
         self.layer.cornerRadius = self.frame.height/2
-        return self
     }
     
-    var roundify_slight: UIView {
+    func roundify_slight() {
         self.layer.cornerRadius = 10.0
-        return self
     }
     
 }

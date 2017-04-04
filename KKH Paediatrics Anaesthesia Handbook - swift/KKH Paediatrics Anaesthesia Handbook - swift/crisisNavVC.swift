@@ -58,7 +58,7 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HandbookTableViewCell
-        _ = cell.roundify_slight
+         cell.roundify_slight()
         cell.backgroundColor = UIColor.init().secondaryColor()
         cell.index.textColor = UIColor.init().primaryColor()
         cell.index.text = String(indexPath.section + 1)
@@ -92,7 +92,7 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         titleLabel.textColor = UIColor.init().secondaryColor()
         topbar.backgroundColor = UIColor.init().primaryColor()
         self.view.backgroundColor = UIColor.init().primaryColor()
-        _ = nextButton.roundify_circle
+         nextButton.roundify_circle()
         nextButton.titleLabel?.textColor = UIColor.init().primaryColor()
         weightField.backgroundColor = UIColor.init().secondaryColor()
     }
@@ -149,13 +149,13 @@ class CardiacArrestMenu: UIViewController {
     }
     
     override func viewDidLoad() {
-        _ = backb.roundify_circle
-        _ = contentView.roundify_slight
+         backb.roundify_circle()
+         contentView.roundify_slight()
         contentView.backgroundColor = UIColor.init().secondaryColor()
         contentView.layer.borderColor = UIColor.white.cgColor	
         contentView.layer.borderWidth = 1
-        _ = nsButton.roundify_slight
-        _ = sButtin.roundify_slight
+         nsButton.roundify_slight()
+         sButtin.roundify_slight()
     }
     
     @IBAction func back(_ sender: Any) {
@@ -198,15 +198,15 @@ class LAMenu: UIViewController {
 	
 	func styling(){
 		self.view.backgroundColor = UIColor.init().primaryColor()
-		_ = backb.roundify_circle
+		 backb.roundify_circle()
 		buttoncollection.forEach { (button) in
-			_ = button.roundify_slight
+			 button.roundify_slight()
 			button.titleLabel?.textColor = UIColor.init().secondaryColor()
 		}
 		containerView.backgroundColor = UIColor.init().secondaryColor()
 		containerView.layer.borderWidth = 1
 		containerView.layer.borderColor = UIColor.white.cgColor
-		_ = containerView.roundify_slight
+		containerView.roundify_slight()
 	}
 	
 	@IBAction func recog(_ sender: Any) {

@@ -84,7 +84,7 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
         }
         else{
             cell.backgroundColor = UIColor.init().secondaryColor()}
-        _ =  cell.roundify_slight
+          cell.roundify_slight()
         return cell
     }
     

@@ -47,7 +47,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     override func viewDidAppear(_ animated: Bool) {
         //styling
         topbar.backgroundColor = UIColor.init().primaryColor()
-        _ = search_backdrop.roundify_circle
+		search_backdrop.roundify_circle()
     }
     
     
@@ -101,7 +101,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HandbookCollectionViewCell
         //styling
-        _ = cell.roundify_slight
+		cell.roundify_slight()
         cell.backgroundColor        = UIColor.init().secondaryColor()
         cell.indexLabel.textColor   = UIColor.init().primaryColor()
         
@@ -160,7 +160,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         cell.chapterName.text = tableview_dispArray[indexPath.section]
         cell.backgroundColor = UIColor.init().secondaryColor()
         cell.index.textColor = UIColor.init().primaryColor()
-        _ = cell.roundify_slight
+        cell.roundify_slight()
         return cell
     }
     

@@ -69,7 +69,7 @@ class drugVC: UIViewController {
     //MARK: - REUSE
     func styling () {
         self.view.backgroundColor = UIColor.init().primaryColor()
-        _ = backb.roundify_circle
+		backb.roundify_circle()
         ddplaceholder.backgroundColor = UIColor.init().secondaryColor()
         weightField.backgroundColor = UIColor.init().secondaryColor()
         
@@ -177,7 +177,7 @@ class drugSendVC: UIViewController, UIWebViewDelegate {
     //MARK: - REUSE
     func styling () {
         self.view.backgroundColor = UIColor.init().primaryColor()
-        _ = backbutton.roundify_circle
+		backbutton.roundify_circle()
         backbutton.backgroundColor = UIColor.init().secondaryColor()
         backbutton.titleLabel?.textColor = UIColor.white
     }
@@ -241,7 +241,7 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
     }
     
     func styling() {
-        _ = backButton.roundify_circle
+        backButton.roundify_circle()
         backButton.titleLabel?.textColor = UIColor.init().secondaryColor()
         self.view.backgroundColor = UIColor.init().primaryColor()
     }

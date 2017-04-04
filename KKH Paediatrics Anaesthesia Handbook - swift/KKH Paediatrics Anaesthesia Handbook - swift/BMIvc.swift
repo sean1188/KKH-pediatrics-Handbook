@@ -64,7 +64,7 @@ class BMIvc: UIViewController {
     //MARK: - callables
     func style(){
         self.view.backgroundColor = UIColor.init().primaryColor()
-        _ = backB.roundify_circle
+		backB.roundify_circle()
         backB.tintColor = UIColor.init().secondaryColor()
         genderSegment.tintColor = UIColor.init().secondaryColor()
         textfieldCollection.forEach { (textfield) in
