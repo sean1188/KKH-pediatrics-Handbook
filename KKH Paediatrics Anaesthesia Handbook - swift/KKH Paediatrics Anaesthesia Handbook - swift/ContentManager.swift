@@ -204,9 +204,12 @@ class ContentManager: NSObject {
 		                     "content": "Repeat bolus up to maximum of 2X (same dose)\n5 minutes apart \n(TOTAL 3 colus including initial dose!)"
 					]],
 		         
-		         ["" : ["type" : "text",
-		                                     "content": "Administer \(weight * 15) ML over 1 Hour"
+		         ["Double rate of infusion - 30ML/KG/H" : ["type" : "text",
+		                                     "content": "\(weight * 30) ML over 1 Hour"
 					]],
+		         ["Cumulative dosage limit for infusion - 30 ML/KG/H" : ["type" : "text",
+		                                                   "content": "\(weight * 12) ML"
+					]]
 			
 		]
 	}

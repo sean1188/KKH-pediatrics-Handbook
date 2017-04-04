@@ -76,6 +76,10 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "Ca")
             self.present(a, animated: true, completion: nil)
             break
+		case 2 :
+			let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "LA")
+			self.present(a, animated: true, completion: nil)
+			break
         case 5:
             presentmodularContentVC(content: ContentManager.anaphylaxisContent(weight: 60) )
             break
@@ -174,6 +178,64 @@ class CardiacArrestMenu: UIViewController {
     }
     
     
+}
+
+class LAMenu: UIViewController {
+	
+	@IBOutlet weak var backb: UIButton!
+	@IBOutlet var buttoncollection: [UIButton]!
+	@IBOutlet weak var containerView: UIView!
+	
+	
+	
+	override var preferredStatusBarStyle: UIStatusBarStyle{
+		return .lightContent
+	}
+	
+	override func viewDidLoad() {
+		styling()
+	}
+	
+	func styling(){
+		self.view.backgroundColor = UIColor.init().primaryColor()
+		_ = backb.roundify_circle
+		buttoncollection.forEach { (button) in
+			_ = button.roundify_slight
+			button.titleLabel?.textColor = UIColor.init().secondaryColor()
+		}
+		containerView.backgroundColor = UIColor.init().secondaryColor()
+		containerView.layer.borderWidth = 1
+		containerView.layer.borderColor = UIColor.white.cgColor
+		_ = containerView.roundify_slight
+	}
+	
+	@IBAction func recog(_ sender: Any) {
+		presentmodularContentVC(content: ContentManager.LA_Recognition(weight: weight!))
+	}
+	@IBAction func immediatem(_ sender: Any) {
+		presentmodularContentVC(content: ContentManager.LA_Management(weight: weight!))
+	}
+	@IBAction func treatN(_ sender: Any) {
+		presentmodularContentVC(content: ContentManager.LA_treatment_NeuroToxicity(weight: weight!))
+	}
+	
+	@IBAction func treata(_ sender: Any) {
+		presentmodularContentVC(content: ContentManager.LA_treatment_CardiotoxicityWithCA(weight: weight!))
+	}
+	
+	@IBAction func treata2(_ sender: Any) {
+		presentmodularContentVC(content: ContentManager.LA_treatment_CardiotoxicityWOCA(weight: weight!))
+	}
+	@IBAction func ITT(_ sender: Any) {
+		presentmodularContentVC(content: ContentManager.LA_treatment_Intralipid(weight: weight!))
+	}
+	
+	func presentmodularContentVC (content : [[String : Any]]){
+		let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content") as! CrisisContentModularVC
+		a.content = content
+		self.present(a, animated: true, completion: nil)
+	}
+	
 }
 
 
