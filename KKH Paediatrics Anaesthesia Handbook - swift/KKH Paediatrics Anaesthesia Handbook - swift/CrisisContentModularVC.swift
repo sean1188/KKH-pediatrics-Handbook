@@ -74,7 +74,6 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let type = (content[indexPath.section][content[indexPath.section].keys.first!] as! [String : Any])["type"] as! String
-        print(type)
         let cell = tableView.dequeueReusableCell(withIdentifier: type) as! crisisContentCell
         cell.title?.text = content[indexPath.section].keys.first
         cell.content?.text = (content[indexPath.section][content[indexPath.section].keys.first!] as! [String : Any])["content"] as! String
@@ -116,7 +115,7 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
     
     func styling(){
         self.view.backgroundColor = UIColor.init().primaryColor()
-        _ = backButton.roundify_circle
+		backButton.roundify_circle()
     }
 
 }

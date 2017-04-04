@@ -995,6 +995,9 @@
                                         <state key="normal" title="ABOUT SST INC.">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="aboutButtonPressed:" destination="g3Z-eZ-qzH" eventType="touchUpInside" id="9Tg-2n-nLB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

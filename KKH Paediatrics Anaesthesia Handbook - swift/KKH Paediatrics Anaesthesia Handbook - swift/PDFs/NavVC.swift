@@ -153,4 +153,9 @@ class settingsVC : UIViewController {
 		body.roundify_slight()
 		button_about.backgroundColor = UIColor.init().secondaryColor()
 	}
+	
+	@IBAction func aboutButtonPressed(_ sender: Any) {
+		UIApplication.shared.openURL(URL.init(string: "https://sstinc.org")!)
+	}
+	
 }
