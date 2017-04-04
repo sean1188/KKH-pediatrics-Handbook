@@ -53,7 +53,7 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
             return size.height + 100
         }
         else if type == "header" {
-            return 60
+            return 40
         }
         else if type == "checkList_anap1"{
             return 600
