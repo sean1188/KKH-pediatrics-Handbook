@@ -230,6 +230,10 @@ class LAMenu: UIViewController {
 		presentmodularContentVC(content: ContentManager.LA_treatment_Intralipid(weight: weight!))
 	}
 	
+	@IBAction func back(_ sender: Any) {
+		self.dismiss(animated: true, completion: nil)
+	}
+	
 	func presentmodularContentVC (content : [[String : Any]]){
 		let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content") as! CrisisContentModularVC
 		a.content = content

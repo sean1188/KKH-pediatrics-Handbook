@@ -64,6 +64,9 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
         else if type == "checkList_CA-NS"{
             return 400
         }
+		else if type == "LA_Management"{
+			return 400
+		}
         else{
             return 176
         }
