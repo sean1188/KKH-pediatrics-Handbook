@@ -252,7 +252,7 @@ class ContentManager: NSObject {
 			
 			["Initial Treatment" : ["type": "HyperK_Serum_3_1"]],
 			["Review: K+ not improving" : ["type" : "HyperK_Serum_3_2"]],
-			["Review: K+ improving" : ["type" : "HyperK_Serum_3_3"]]
+			["Review: K+ improving" : ["type" : "HyperK_Serum_2_3"]]
 		]
 	}
 	
