@@ -214,6 +214,69 @@ class ContentManager: NSObject {
 		]
 	}
 	
+	static func Hyperkalaemia_criteria (weight : Float) -> [[String : Any]]{
+		return [["Exclusion criteria": ["type": "text",
+		                                "content" : "Premature Neonates"
+			]],
+		        ["Inclusion Criterias" : ["type":"header"]],
+		        ["Term NEONATE (< 1 month age)": ["type": "text",
+		                                 "content" : "Serum K+ > 6 Mmol/L"
+					]],
+		         ["Children > 1 month age": ["type": "text",
+					"content" : "Serum K+ > 5.5 Mmol/L"
+					]]
+		]
+	}
 	
+	static func Hyperkalaemia_ManagementAlgorithms (weight: Float) -> [[String : Any]]{
+		return [["Things to take note of" : ["type": "HyperK_MA_1"]],
+		        ["Exclude:" : ["type" : "HyperK_MA_2"]]
+		]
+	}
+	
+	static func Hyperkalaemia_SerumDosage (weight: Float) -> [[String : Any]]{
+		return [
+			["For 5.5 - 6.0 mmol/L" : ["type":"header"]],
+			
+			["Initial Treatment" : ["type": "HyperK_Serum_1_1"]],
+			["Review: K+ not improving" : ["type" : "HyperK_Serum_1_2"]],
+			["Review: K+ improving" : ["type" : "HyperK_Serum_1_3"]],
+			
+			["For 6.1 - 6.9 mmol/L" : ["type":"header"]],
+			
+			["Initial Treatment" : ["type": "HyperK_Serum_2_1"]],
+			["Review: K+ not improving" : ["type" : "HyperK_Serum_2_2"]],
+			["Review: K+ improving" : ["type" : "HyperK_Serum_2_3"]],
+			
+			["For > 7.0 mmol/L" : ["type":"header"]],
+			
+			["Initial Treatment" : ["type": "HyperK_Serum_3_1"]],
+			["Review: K+ not improving" : ["type" : "HyperK_Serum_3_2"]],
+			["Review: K+ improving" : ["type" : "HyperK_Serum_3_3"]]
+		]
+	}
+	
+	static func Hyperkalaemia_Treatment (weight : Float) -> [[String : Any]]{
+		return [["Do" : ["type": "HyperK_treatment_1"]],
+		        ["Without delaying therapy, consider" : ["type" : "HyperK_treatment_2"]],
+		        ["Drugs" : ["type": "header"]],
+		        ["Salbutanol 0.5% Solution" : ["type":"text",
+		                                       "content": "Nebulise with 8L oxygen\n<25 KG: 2.5MG in 4ML of NS Q1-2H\n>25 KG: 5MG in 4ML of NS Q1-2H"]],
+		        ["Regular Insulin (Actrapid) via IV - 0.1 IU/KG" : ["type":"text",
+		                                       "content": "Administer \(weight * 0.1) IU\nOnset for 15-20 min\nDuration: 4-6 Hours\nRemarks:\n- Administer together with DEXTROSE\n- 1 IU to every 5g glucose\n- MAX: 10 IU per dose\n- Check H/C; may cause hypoglycemia\n- May be repeated"]],
+		        ["Dextrose 10% via IV - 5 ML /KG" : ["type":"text",
+		                                                            "content": "Administer \(weight * 5)ML\nRemarks:\nAdminister together with Insulin"]],
+		        ["Dextrose 50% via IV - 1 ML/KG" : ["type":"text",
+		                                                            "content": "Administer \(weight * 1) ML\nRemarks:\n- Administer via large bone peripheral IV or central venous access\n- Administer together with insulin"]],
+		        ["10% Calcium gluconate via IV - 0.5 ML/KG" : ["type":"text",
+		                                                            "content": "Administer \(weight * 0.5) ML\nOnset 5-10min\nDuration:30-60min\nremarks:\n- May cause hyper calcaemia & tissue necrosis\n- May be repeated"]],
+		        ["10% Calcium Chloride via IV - 0.2 ML/KG" : ["type":"text",
+		                                                            "content": "Administer \(weight * 0.2) ML"]],
+		        ["8.4% NaHCO3 via IV - 1 ML/KG" : ["type":"text",
+		                                                            "content": "Administer \(weight * 1) ML\nRemarks:\n- Give over 10 min\n- DO NOT mix with calcium\n- Max: 50 Mmol/dose"]]
+		        
+		]
+		
+	}
 	
 }
