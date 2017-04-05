@@ -2002,6 +2002,276 @@
                                             <outlet property="title" destination="BAV-xz-TM2" id="V3q-FA-tLk"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HyperK_treatment_1" rowHeight="258" id="pEy-iI-f62" customClass="crisisContentCell" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="3502" width="355" height="258"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pEy-iI-f62" id="e11-kN-hOm">
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="258"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgd-G3-fbL" userLabel="title">
+                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="34"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="Poa-ld-5AF"/>
+                                                        <constraint firstAttribute="height" constant="34" id="pyZ-3d-GPh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZW-CK-yzi">
+                                                    <rect key="frame" x="309" y="43" width="38" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="38" id="Hi0-Pq-Zd4"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
+                                                    <state key="normal" title="">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="checkBox:" destination="8p3-gh-fTe" eventType="touchUpInside" id="6HY-5f-hTv"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJv-QL-Ph3">
+                                                    <rect key="frame" x="309" y="84" width="38" height="33.5"/>
+                                                    <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
+                                                    <state key="normal" title="">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="checkBox:" destination="8p3-gh-fTe" eventType="touchUpInside" id="pI6-sL-8XW"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Declare emergency" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yaw-Tg-Rar">
+                                                    <rect key="frame" x="8" y="43" width="300" height="33"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call for help" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hWJ-Pq-Tno">
+                                                    <rect key="frame" x="8" y="84" width="300" height="33.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raC-T0-nmq">
+                                                    <rect key="frame" x="309" y="126" width="38" height="33"/>
+                                                    <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
+                                                    <state key="normal" title="">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="checkBox:" destination="8p3-gh-fTe" eventType="touchUpInside" id="r65-x4-Sw3"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discontinue all K+ containing infusions" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CI8-0C-4K2">
+                                                    <rect key="frame" x="8" y="126" width="300" height="33"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQT-S1-aV5">
+                                                    <rect key="frame" x="309" y="167" width="38" height="33.5"/>
+                                                    <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
+                                                    <state key="normal" title="">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="checkBox:" destination="8p3-gh-fTe" eventType="touchUpInside" id="fbz-Hw-EXg"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discontinue all blood products " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lV3-50-iAo">
+                                                    <rect key="frame" x="8" y="167" width="300" height="33.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyS-Ro-XIY">
+                                                    <rect key="frame" x="309" y="208.5" width="38" height="33"/>
+                                                    <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
+                                                    <state key="normal" title="">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="checkBox:" destination="8p3-gh-fTe" eventType="touchUpInside" id="L3W-6Z-C9G"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hyperventilate 100% oxygen" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fen-dx-8xf">
+                                                    <rect key="frame" x="8" y="208.5" width="300" height="33"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="lV3-50-iAo" firstAttribute="leading" secondItem="Fen-dx-8xf" secondAttribute="leading" id="3Mx-BP-DR2"/>
+                                                <constraint firstItem="Hgd-G3-fbL" firstAttribute="leading" secondItem="e11-kN-hOm" secondAttribute="leading" id="6zT-WC-39w"/>
+                                                <constraint firstItem="CI8-0C-4K2" firstAttribute="trailing" secondItem="lV3-50-iAo" secondAttribute="trailing" id="7Ol-ng-gld"/>
+                                                <constraint firstItem="yaw-Tg-Rar" firstAttribute="leading" secondItem="e11-kN-hOm" secondAttribute="leadingMargin" id="B5s-xE-URN"/>
+                                                <constraint firstItem="hWJ-Pq-Tno" firstAttribute="height" secondItem="yaw-Tg-Rar" secondAttribute="height" id="BFe-fn-bIf"/>
+                                                <constraint firstItem="lV3-50-iAo" firstAttribute="top" secondItem="dQT-S1-aV5" secondAttribute="top" id="Bs5-sA-EIT"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Fen-dx-8xf" secondAttribute="bottom" constant="8.5" id="EOG-TQ-8io"/>
+                                                <constraint firstItem="hWJ-Pq-Tno" firstAttribute="trailing" secondItem="CI8-0C-4K2" secondAttribute="trailing" id="FVz-v9-1eB"/>
+                                                <constraint firstItem="lV3-50-iAo" firstAttribute="top" secondItem="CI8-0C-4K2" secondAttribute="bottom" constant="8" symbolic="YES" id="J2h-qN-UvG"/>
+                                                <constraint firstItem="nJv-QL-Ph3" firstAttribute="top" secondItem="mZW-CK-yzi" secondAttribute="bottom" constant="8" symbolic="YES" id="Jwn-OA-EhK"/>
+                                                <constraint firstItem="raC-T0-nmq" firstAttribute="centerY" secondItem="CI8-0C-4K2" secondAttribute="centerY" id="KKO-EK-eoa"/>
+                                                <constraint firstItem="dQT-S1-aV5" firstAttribute="centerY" secondItem="lV3-50-iAo" secondAttribute="centerY" id="LFa-SX-lCR"/>
+                                                <constraint firstItem="cyS-Ro-XIY" firstAttribute="centerY" secondItem="Fen-dx-8xf" secondAttribute="centerY" id="La6-D8-rr5"/>
+                                                <constraint firstItem="CI8-0C-4K2" firstAttribute="top" secondItem="raC-T0-nmq" secondAttribute="top" id="OZv-6L-Ng2"/>
+                                                <constraint firstAttribute="trailing" secondItem="Hgd-G3-fbL" secondAttribute="trailing" id="Qxd-1u-F3t"/>
+                                                <constraint firstItem="CI8-0C-4K2" firstAttribute="top" secondItem="hWJ-Pq-Tno" secondAttribute="bottom" constant="8" symbolic="YES" id="TG8-XV-dsM"/>
+                                                <constraint firstItem="lV3-50-iAo" firstAttribute="height" secondItem="CI8-0C-4K2" secondAttribute="height" id="TPh-4L-zuk"/>
+                                                <constraint firstItem="dQT-S1-aV5" firstAttribute="top" secondItem="raC-T0-nmq" secondAttribute="bottom" constant="8" symbolic="YES" id="Um0-9t-za7"/>
+                                                <constraint firstItem="Fen-dx-8xf" firstAttribute="height" secondItem="lV3-50-iAo" secondAttribute="height" id="X9a-fz-m32"/>
+                                                <constraint firstItem="nJv-QL-Ph3" firstAttribute="leading" secondItem="raC-T0-nmq" secondAttribute="leading" id="XBi-gg-3Pf"/>
+                                                <constraint firstItem="dQT-S1-aV5" firstAttribute="leading" secondItem="cyS-Ro-XIY" secondAttribute="leading" id="Ym3-bt-Prk"/>
+                                                <constraint firstItem="raC-T0-nmq" firstAttribute="trailing" secondItem="dQT-S1-aV5" secondAttribute="trailing" id="bq0-DB-N8p"/>
+                                                <constraint firstItem="Fen-dx-8xf" firstAttribute="top" secondItem="cyS-Ro-XIY" secondAttribute="top" id="cX9-WN-I6K"/>
+                                                <constraint firstItem="yaw-Tg-Rar" firstAttribute="top" secondItem="mZW-CK-yzi" secondAttribute="top" id="du7-L5-3f3"/>
+                                                <constraint firstItem="mZW-CK-yzi" firstAttribute="leading" secondItem="yaw-Tg-Rar" secondAttribute="trailing" constant="1" id="eKc-O1-cdV"/>
+                                                <constraint firstItem="hWJ-Pq-Tno" firstAttribute="top" secondItem="yaw-Tg-Rar" secondAttribute="bottom" constant="8" symbolic="YES" id="giu-kN-aKy"/>
+                                                <constraint firstItem="mZW-CK-yzi" firstAttribute="trailing" secondItem="nJv-QL-Ph3" secondAttribute="trailing" id="gjv-MT-VBJ"/>
+                                                <constraint firstItem="hWJ-Pq-Tno" firstAttribute="top" secondItem="nJv-QL-Ph3" secondAttribute="top" id="hKg-Ob-m34"/>
+                                                <constraint firstItem="nJv-QL-Ph3" firstAttribute="centerY" secondItem="hWJ-Pq-Tno" secondAttribute="centerY" id="iCF-E6-Ign"/>
+                                                <constraint firstItem="raC-T0-nmq" firstAttribute="leading" secondItem="dQT-S1-aV5" secondAttribute="leading" id="ieG-HB-sho"/>
+                                                <constraint firstItem="CI8-0C-4K2" firstAttribute="leading" secondItem="lV3-50-iAo" secondAttribute="leading" id="jty-Jk-9pc"/>
+                                                <constraint firstItem="yaw-Tg-Rar" firstAttribute="leading" secondItem="hWJ-Pq-Tno" secondAttribute="leading" id="oAM-3h-v7v"/>
+                                                <constraint firstItem="nJv-QL-Ph3" firstAttribute="trailing" secondItem="raC-T0-nmq" secondAttribute="trailing" id="oMZ-Ry-Ovk"/>
+                                                <constraint firstItem="lV3-50-iAo" firstAttribute="trailing" secondItem="Fen-dx-8xf" secondAttribute="trailing" id="qrJ-4u-tLR"/>
+                                                <constraint firstItem="raC-T0-nmq" firstAttribute="top" secondItem="nJv-QL-Ph3" secondAttribute="bottom" constant="8" symbolic="YES" id="qxf-Is-m3C"/>
+                                                <constraint firstItem="Fen-dx-8xf" firstAttribute="top" secondItem="lV3-50-iAo" secondAttribute="bottom" constant="8" symbolic="YES" id="r4X-JK-L1B"/>
+                                                <constraint firstItem="dQT-S1-aV5" firstAttribute="trailing" secondItem="cyS-Ro-XIY" secondAttribute="trailing" id="rMm-89-xIl"/>
+                                                <constraint firstItem="mZW-CK-yzi" firstAttribute="centerY" secondItem="yaw-Tg-Rar" secondAttribute="centerY" id="rTW-Yo-EXK"/>
+                                                <constraint firstItem="mZW-CK-yzi" firstAttribute="trailing" secondItem="e11-kN-hOm" secondAttribute="trailingMargin" id="rai-0H-gSn"/>
+                                                <constraint firstItem="hWJ-Pq-Tno" firstAttribute="leading" secondItem="CI8-0C-4K2" secondAttribute="leading" id="rlb-Mf-Lfu"/>
+                                                <constraint firstItem="yaw-Tg-Rar" firstAttribute="top" secondItem="Hgd-G3-fbL" secondAttribute="bottom" constant="9" id="rub-vt-XBT"/>
+                                                <constraint firstItem="yaw-Tg-Rar" firstAttribute="trailing" secondItem="hWJ-Pq-Tno" secondAttribute="trailing" id="uRO-Cs-B32"/>
+                                                <constraint firstItem="cyS-Ro-XIY" firstAttribute="top" secondItem="dQT-S1-aV5" secondAttribute="bottom" constant="8" symbolic="YES" id="x6H-W0-3hM"/>
+                                                <constraint firstItem="mZW-CK-yzi" firstAttribute="leading" secondItem="nJv-QL-Ph3" secondAttribute="leading" id="xnP-Lg-peU"/>
+                                                <constraint firstItem="CI8-0C-4K2" firstAttribute="height" secondItem="hWJ-Pq-Tno" secondAttribute="height" id="xt1-d7-J6Y"/>
+                                                <constraint firstItem="Hgd-G3-fbL" firstAttribute="top" secondItem="e11-kN-hOm" secondAttribute="top" id="zuq-MK-6c7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="title" destination="Hgd-G3-fbL" id="drl-M0-saF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HyperK_treatment_2" rowHeight="176" id="gmJ-FV-Ct3" customClass="crisisContentCell" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="3760" width="355" height="176"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gmJ-FV-Ct3" id="GAN-5c-7MF">
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="176"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Without delaying therapy, consider" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8i-EO-MPf" userLabel="title">
+                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="34"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="iaX-pL-kKN"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fi-KR-yQ4">
+                                                    <rect key="frame" x="309" y="43" width="38" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="38" id="P0G-7a-Xou"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
+                                                    <state key="normal" title="">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="checkBox:" destination="8p3-gh-fTe" eventType="touchUpInside" id="EX9-ps-2RU"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5L-01-WuT">
+                                                    <rect key="frame" x="309" y="119" width="38" height="43"/>
+                                                    <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
+                                                    <state key="normal" title="">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="checkBox:" destination="8p3-gh-fTe" eventType="touchUpInside" id="Vvo-oY-lXI"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92L-PR-CNT">
+                                                    <rect key="frame" x="309" y="81" width="38" height="30"/>
+                                                    <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
+                                                    <state key="normal" title="">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="checkBox:" destination="8p3-gh-fTe" eventType="touchUpInside" id="Nq3-to-LQb"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send rpt K+ to lab" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eDN-c2-kNB">
+                                                    <rect key="frame" x="8" y="43" width="300" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="u4i-4d-L2x"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obtain ECG" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTA-bL-35X">
+                                                    <rect key="frame" x="8" y="81" width="300" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="ADL-jc-M5u"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start CPR if haemodynamically unstable" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cfQ-su-s3G">
+                                                    <rect key="frame" x="8" y="119" width="300" height="43"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="eDN-c2-kNB" firstAttribute="trailing" secondItem="eTA-bL-35X" secondAttribute="trailing" id="17A-1L-NKF"/>
+                                                <constraint firstItem="eDN-c2-kNB" firstAttribute="top" secondItem="D8i-EO-MPf" secondAttribute="bottom" constant="9" id="1Ct-Sp-JpA"/>
+                                                <constraint firstItem="cfQ-su-s3G" firstAttribute="centerY" secondItem="b5L-01-WuT" secondAttribute="centerY" id="1he-gE-zeZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="D8i-EO-MPf" secondAttribute="trailing" id="1oC-lP-Q6U"/>
+                                                <constraint firstItem="9Fi-KR-yQ4" firstAttribute="leading" secondItem="eDN-c2-kNB" secondAttribute="trailing" constant="1" id="31z-lY-Ddb"/>
+                                                <constraint firstItem="eTA-bL-35X" firstAttribute="top" secondItem="92L-PR-CNT" secondAttribute="top" id="6vw-RP-k0e"/>
+                                                <constraint firstItem="b5L-01-WuT" firstAttribute="top" secondItem="92L-PR-CNT" secondAttribute="bottom" constant="8" symbolic="YES" id="9tv-NX-qWX"/>
+                                                <constraint firstItem="92L-PR-CNT" firstAttribute="leading" secondItem="b5L-01-WuT" secondAttribute="leading" id="Aj0-vc-kzv"/>
+                                                <constraint firstItem="eTA-bL-35X" firstAttribute="centerY" secondItem="92L-PR-CNT" secondAttribute="centerY" id="D7j-PR-eyB"/>
+                                                <constraint firstItem="b5L-01-WuT" firstAttribute="centerX" secondItem="92L-PR-CNT" secondAttribute="centerX" id="Js0-Ah-ncG"/>
+                                                <constraint firstItem="cfQ-su-s3G" firstAttribute="top" secondItem="b5L-01-WuT" secondAttribute="top" id="JxW-LY-3H4"/>
+                                                <constraint firstItem="92L-PR-CNT" firstAttribute="top" secondItem="9Fi-KR-yQ4" secondAttribute="bottom" constant="8" symbolic="YES" id="Kcr-TC-uYf"/>
+                                                <constraint firstItem="92L-PR-CNT" firstAttribute="centerX" secondItem="9Fi-KR-yQ4" secondAttribute="centerX" id="NEQ-vJ-Hfv"/>
+                                                <constraint firstItem="D8i-EO-MPf" firstAttribute="top" secondItem="GAN-5c-7MF" secondAttribute="top" id="OFL-iN-oGF"/>
+                                                <constraint firstItem="cfQ-su-s3G" firstAttribute="top" secondItem="eTA-bL-35X" secondAttribute="bottom" constant="8" symbolic="YES" id="PFu-Oc-l7u"/>
+                                                <constraint firstItem="eDN-c2-kNB" firstAttribute="leading" secondItem="eTA-bL-35X" secondAttribute="leading" id="Qde-6J-611"/>
+                                                <constraint firstItem="eDN-c2-kNB" firstAttribute="centerY" secondItem="9Fi-KR-yQ4" secondAttribute="centerY" id="Sz6-5D-Fxh"/>
+                                                <constraint firstItem="9Fi-KR-yQ4" firstAttribute="leading" secondItem="92L-PR-CNT" secondAttribute="leading" id="UZe-QC-5PK"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="cfQ-su-s3G" secondAttribute="bottom" constant="6" id="V6s-iH-uag"/>
+                                                <constraint firstItem="eTA-bL-35X" firstAttribute="top" secondItem="eDN-c2-kNB" secondAttribute="bottom" constant="8" symbolic="YES" id="bQA-Z3-3pc"/>
+                                                <constraint firstItem="eDN-c2-kNB" firstAttribute="leading" secondItem="GAN-5c-7MF" secondAttribute="leadingMargin" id="ffd-QO-uau"/>
+                                                <constraint firstItem="eTA-bL-35X" firstAttribute="trailing" secondItem="cfQ-su-s3G" secondAttribute="trailing" id="hFW-OR-lEw"/>
+                                                <constraint firstItem="cfQ-su-s3G" firstAttribute="bottom" secondItem="b5L-01-WuT" secondAttribute="bottom" id="pPs-0y-0aN"/>
+                                                <constraint firstItem="eDN-c2-kNB" firstAttribute="top" secondItem="9Fi-KR-yQ4" secondAttribute="top" id="pxx-n9-qkP"/>
+                                                <constraint firstItem="9Fi-KR-yQ4" firstAttribute="trailing" secondItem="GAN-5c-7MF" secondAttribute="trailingMargin" id="qbF-jx-2it"/>
+                                                <constraint firstItem="92L-PR-CNT" firstAttribute="trailing" secondItem="b5L-01-WuT" secondAttribute="trailing" id="sKf-QA-mpl"/>
+                                                <constraint firstItem="eTA-bL-35X" firstAttribute="leading" secondItem="cfQ-su-s3G" secondAttribute="leading" id="sjZ-6F-OA9"/>
+                                                <constraint firstItem="9Fi-KR-yQ4" firstAttribute="trailing" secondItem="92L-PR-CNT" secondAttribute="trailing" id="xZf-5C-Zwn"/>
+                                                <constraint firstItem="D8i-EO-MPf" firstAttribute="leading" secondItem="GAN-5c-7MF" secondAttribute="leading" id="yAy-T2-8JS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="title" destination="D8i-EO-MPf" id="0Wt-cH-34r"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="8p3-gh-fTe" id="svY-bc-imD"/>
