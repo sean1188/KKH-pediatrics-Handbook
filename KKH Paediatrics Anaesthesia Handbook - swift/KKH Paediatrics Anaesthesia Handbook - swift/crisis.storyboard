@@ -1920,7 +1920,7 @@
                                             <outlet property="title" destination="A9o-ZG-cfr" id="POb-et-sc2"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HyperK_Serum_2_2" rowHeight="137" id="dii-cj-Yft" userLabel="HyperK_Serum_3_2" customClass="crisisContentCell" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HyperK_Serum_3_2" rowHeight="137" id="dii-cj-Yft" userLabel="HyperK_Serum_3_2" customClass="crisisContentCell" customModule="KKH_Paediatrics_Anaesthesia_Handbook___swift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="3365" width="355" height="137"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dii-cj-Yft" id="9J4-Jj-zJZ">
