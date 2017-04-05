@@ -8,7 +8,7 @@
 
 import UIKit
 
-var weight : Float? = nil
+public var weight : Float? = nil
 
 class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -78,6 +78,10 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             break
 		case 2 :
 			let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "LA")
+			self.present(a, animated: true, completion: nil)
+			break
+		case 3 :
+			let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "hyperK")
 			self.present(a, animated: true, completion: nil)
 			break
         case 5:
@@ -242,7 +246,50 @@ class LAMenu: UIViewController {
 	
 }
 
-
+class Hyperkmenu : UIViewController {
+	
+	@IBOutlet weak var backB: UIButton!
+	@IBOutlet var buttonCollection: [UIButton]!
+	@IBOutlet weak var contentView: UIView!
+	
+	override func viewDidLoad() {
+		self.view.backgroundColor = UIColor.init().primaryColor()
+		contentView.backgroundColor = UIColor.init().secondaryColor()
+		contentView.roundify_slight()
+		contentView.layer.borderColor = UIColor.white.cgColor
+		contentView.layer.borderWidth = 1
+		contentView.clipsToBounds = true
+		backB.roundify_circle()
+		buttonCollection.forEach { (button) in
+			button.roundify_slight()
+			button.titleLabel?.textColor = UIColor.init().secondaryColor()
+			
+		}
+	}
+	
+	@IBAction func button1(_ sender: Any) {
+		presentmodularContentVC(content: ContentManager.Hyperkalaemia_criteria(weight: weight!))
+	}
+	
+	@IBAction func button2(_ sender: Any){
+		presentmodularContentVC(content: ContentManager.Hyperkalaemia_ManagementAlgorithms(weight: weight!))
+	}
+	
+	@IBAction func button3(_ sender: Any){
+		presentmodularContentVC(content: ContentManager.Hyperkalaemia_Treatment(weight: weight!))
+	}
+	
+	@IBAction func button4(_ sender: Any){
+		presentmodularContentVC(content: ContentManager.Hyperkalaemia_SerumDosage(weight: weight!))
+	}
+	
+	func presentmodularContentVC (content : [[String : Any]]){
+		let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content") as! CrisisContentModularVC
+		a.content = content
+		self.present(a, animated: true, completion: nil)
+	}
+	
+}
 
 
 
