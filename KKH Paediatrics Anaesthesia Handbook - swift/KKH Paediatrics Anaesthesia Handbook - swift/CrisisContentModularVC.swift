@@ -58,17 +58,17 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
         else if type == "checkList_anap1"{
             return 600
         }
-        else if type == "checkList_anap2"{
-            return 400
-        }
-        else if type == "checkList_CA-NS"{
-            return 400
-        }
-		else if type == "LA_Management"{
+		else if type == "checkList_anap2"{
+			return 600
+		}
+		else if type == "HyperK_Serum_3_1"{
+			return 260
+		}
+		else if type == "checkList_CA-NS"{
 			return 400
 		}
-        else{
-            return 176
+        else {
+            return 200
         }
     }
     
