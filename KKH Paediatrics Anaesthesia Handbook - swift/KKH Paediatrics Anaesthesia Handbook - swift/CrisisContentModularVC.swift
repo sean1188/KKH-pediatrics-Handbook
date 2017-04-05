@@ -59,7 +59,10 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
             return 600
         }
 		else if type == "checkList_anap2"{
-			return 600
+			return 370
+		}
+		else if  type == "HyperK_MA_2"{
+		 return 360
 		}
 		else if type == "HyperK_Serum_3_1"{
 			return 260

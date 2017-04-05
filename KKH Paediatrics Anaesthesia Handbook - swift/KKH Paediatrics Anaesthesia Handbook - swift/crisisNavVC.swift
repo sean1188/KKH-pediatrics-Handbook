@@ -252,6 +252,10 @@ class Hyperkmenu : UIViewController {
 	@IBOutlet var buttonCollection: [UIButton]!
 	@IBOutlet weak var contentView: UIView!
 	
+	override var preferredStatusBarStyle: UIStatusBarStyle{
+		return .lightContent
+	}
+	
 	override func viewDidLoad() {
 		self.view.backgroundColor = UIColor.init().primaryColor()
 		contentView.backgroundColor = UIColor.init().secondaryColor()
@@ -281,6 +285,10 @@ class Hyperkmenu : UIViewController {
 	
 	@IBAction func button4(_ sender: Any){
 		presentmodularContentVC(content: ContentManager.Hyperkalaemia_SerumDosage(weight: weight!))
+	}
+	
+	@IBAction func back(_ sender: Any) {
+		self.dismiss(animated: true, completion: nil)
 	}
 	
 	func presentmodularContentVC (content : [[String : Any]]){
