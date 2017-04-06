@@ -27,7 +27,7 @@ class CrisisContentModularVC: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 		Headertitile.text = UserDefaults.standard.object(forKey: "title") as! String
-		weightLabel.text = "\(UserDefaults.standard.object(forKey: "weight") as! String) KG "
+		weightLabel.text = "\(String(describing: UserDefaults.standard.object(forKey: "weight"))) KG "
         styling()
         
     }
