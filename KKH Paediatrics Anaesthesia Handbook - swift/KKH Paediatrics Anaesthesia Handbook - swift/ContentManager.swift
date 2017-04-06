@@ -279,4 +279,56 @@ class ContentManager: NSObject {
 		
 	}
 	
+	static func MH_recognition (weight : Float) -> [[String : Any]]{
+		return [["Differential Diagnosis" : ["type": "text",
+		                                     "content" : "1. Inadequate anaesthesia or analgesia\n2. Inappropriate breathing circuit, fresh gas flow or ventilation\n3. Infection or sepsis\n4. Tourniquet ischaemia\n5. Anaphylaxis\n5. Pheochromocytoma\n6. Thyroid storm"]],
+		        ["Clinical Recognition" : ["type": "text",
+		                                     "content" : "1. Unexplained increase in ETCO2\n2. Unexplained Tachycardia\n3. Unexplained increase in Oxygen requirements\n4. Trunk or limb rigidity\n5. Masseter spasm (Trismus)\n6. Unstable or rising blood pressure\n7. Respiratory & Metabloic Acidosis\n8. Arrhythmias\n9. Temperature changes are a LATE sign"]],
+		        ["Biochemical Recognition" : ["type": "text",
+		                                      "content" : "1. increased PaCO2\n2. decreased PH\n3. increased serum K\n4. decreased PaO2\n5. increased creatine kinase\n6. myoglobinuria"]]
+		        
+		]
+	}
+	
+	static func MH_Management (weight : Float) -> [[String : Any]]{
+		return [["Immediate Management" : ["type": "text",
+		                                   "content" : "1. Call for help\n2. STOP all triggers (turn OFF VOLATILE anaesthetics)\n3. Get MH Box with Dantrolene\n4. Notify surgeon\n5. Install clean breathing circuit\n6. Hyperventilate with 100% oxygen\n7. Maintain anaesthesia with IV anaesthetics\n8. Muscle relaxation with Non-Depolarising neuromuscular blockers\n9. Finish/ abandon surgery ASAP"]],
+		        ["Monitor" : ["type": "text",
+		                      "content" : "1. Call for help\n2. STOP all triggers (turn OFF VOLATILE anaesthetics)\n3. Get MH Box with Dantrolene\n4. Notify surgeon\n5. Install clean breathing circuit\n6. Hyperventilate with 100% oxygen\n7. Maintain anaesthesia with IV anaesthetics\n8. Muscle relaxation with Non-Depolarising neuromuscular blockers\n9. Finish/ abandon surgery ASAP"]]
+		]
+	}
+	
+	static func MH_Treatment (weight : Float ) -> [[String : Any]]{
+		return [["Treat Arrhythmias" : ["type" : "text",
+		                                "content" : "**Avoid Calcium channel blockers\nCan use Amiodarone"
+			]],
+		        ["Treat METABOLIC ACIDOSIS" : ["type" : "text",
+		                                       "content" : "Hyperventilate\nNaHCO3"
+					]],
+		        ["Treat MYOGLOBINURIA" : ["type" : "text",
+		                                  "content" : "forced alkaline diuresis (mannitol/frusemide+NaHCO3) may require renal replacement therapy later)"
+					]],
+		        ["Treat METABOLIC ACIDOSIS" : ["type" : "text",
+		                                       "content" : "Hyperventilate\nNaHCO3"
+					]],
+		        ["Treat DIC (if present)" : ["type" : "text",
+		                                     "content" : "FFP, Cryoppt, Platelets"
+					]],
+		        ["COOL patient if temp > 39 degrees celsius" : ["type" : "text",
+		                                                        "content" : "Cold IV NS, ice saline lavage, surface ice packs\nStop cooling when temp 38 degrees celsius and falling"
+					]],
+		        ["Dantrolene" : ["type" : "header"]],
+		        ["Dantrolene" : ["type" : "text",
+		                         "content" : "each vial cobtains 20MILLIgrams of dantrolene\nDissolve 1 vial in 60 ML sterile water\ndantrolene potentiates neuromuscular blockers"
+					]],
+		        ["Application of Dantrolene - 2.5 MG/KG" : ["type" : "text",
+		                                       "content" : "Administer \(weight * 2.5) MG of Dantrolene intravenously and rapidly"
+					]],
+		        ["subsequent dantrolene boluses" : ["type" : "text",
+		                                            "content" : "\(weight * 1) MILLIgrams intravenously \n(1 MILLIgram/KG)\n(every 5 minutes til symptoms subside or up to total of 10 MILLIgrams/KG)"
+					]]
+		        
+		]
+	}
+	
 }
