@@ -59,6 +59,7 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HandbookTableViewCell
          cell.roundify_slight()
+		cell.selectionStyle = .none
         cell.backgroundColor = UIColor.init().secondaryColor()
         cell.index.textColor = UIColor.init().primaryColor()
         cell.index.text = String(indexPath.section + 1)

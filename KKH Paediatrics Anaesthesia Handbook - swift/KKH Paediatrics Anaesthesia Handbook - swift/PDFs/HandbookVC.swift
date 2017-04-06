@@ -160,6 +160,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         cell.chapterName.text = tableview_dispArray[indexPath.section]
         cell.backgroundColor = UIColor.init().secondaryColor()
         cell.index.textColor = UIColor.init().primaryColor()
+		cell.selectionStyle = .none
         cell.roundify_slight()
         return cell
     }
