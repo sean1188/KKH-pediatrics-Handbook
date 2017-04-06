@@ -17,6 +17,18 @@
 		543480871E864ABC004D837F /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543480861E864ABC004D837F /* extensions.swift */; };
 		5436971A1E8A4BA0001D80F4 /* HandbookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543697191E8A4BA0001D80F4 /* HandbookCollectionViewCell.swift */; };
 		543BAE211E8A66E3009CC8E5 /* PDFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543BAE201E8A66E3009CC8E5 /* PDFManager.swift */; };
+		5441624E1E9623E900003E0D /* Cabin-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 544162411E96231300003E0D /* Cabin-Bold.otf */; };
+		5441624F1E9623E900003E0D /* Cabin-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 544162421E96231300003E0D /* Cabin-BoldItalic.otf */; };
+		544162501E9623E900003E0D /* Cabin-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 544162431E96231300003E0D /* Cabin-Italic.otf */; };
+		544162511E9623E900003E0D /* Cabin-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 544162441E96231300003E0D /* Cabin-Medium.otf */; };
+		544162521E9623E900003E0D /* Cabin-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 544162451E96231300003E0D /* Cabin-MediumItalic.otf */; };
+		544162531E9623E900003E0D /* Cabin-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 544162461E96231300003E0D /* Cabin-Regular.otf */; };
+		544162541E9623E900003E0D /* Cabin-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 544162471E96231300003E0D /* Cabin-SemiBold.otf */; };
+		544162551E9623E900003E0D /* Cabin-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 544162481E96231300003E0D /* Cabin-SemiBoldItalic.otf */; };
+		544162561E9623E900003E0D /* CabinCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 544162491E96231300003E0D /* CabinCondensed-Bold.ttf */; };
+		544162571E9623E900003E0D /* CabinCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5441624A1E96231300003E0D /* CabinCondensed-Medium.ttf */; };
+		544162581E9623E900003E0D /* CabinCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5441624B1E96231300003E0D /* CabinCondensed-Regular.ttf */; };
+		544162591E9623E900003E0D /* CabinCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5441624C1E96231300003E0D /* CabinCondensed-SemiBold.ttf */; };
 		5448347D1E8B8A1100CC1E09 /* HandbookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448347C1E8B8A1100CC1E09 /* HandbookTableViewCell.swift */; };
 		544C1BD41E91F42A00891D1F /* crisis.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544C1BD31E91F42A00891D1F /* crisis.storyboard */; };
 		544C1BD61E91F73E00891D1F /* crisisNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C1BD51E91F73E00891D1F /* crisisNavVC.swift */; };
@@ -603,6 +615,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5441624E1E9623E900003E0D /* Cabin-Bold.otf in Resources */,
+				5441624F1E9623E900003E0D /* Cabin-BoldItalic.otf in Resources */,
+				544162501E9623E900003E0D /* Cabin-Italic.otf in Resources */,
+				544162511E9623E900003E0D /* Cabin-Medium.otf in Resources */,
+				544162521E9623E900003E0D /* Cabin-MediumItalic.otf in Resources */,
+				544162531E9623E900003E0D /* Cabin-Regular.otf in Resources */,
+				544162541E9623E900003E0D /* Cabin-SemiBold.otf in Resources */,
+				544162551E9623E900003E0D /* Cabin-SemiBoldItalic.otf in Resources */,
+				544162561E9623E900003E0D /* CabinCondensed-Bold.ttf in Resources */,
+				544162571E9623E900003E0D /* CabinCondensed-Medium.ttf in Resources */,
+				544162581E9623E900003E0D /* CabinCondensed-Regular.ttf in Resources */,
+				544162591E9623E900003E0D /* CabinCondensed-SemiBold.ttf in Resources */,
 				5480E23B1E8A22B200B62203 /* fontawesome-webfont.ttf in Resources */,
 				5480E23C1E8A22B200B62203 /* FontAwesome.otf in Resources */,
 				5450DE2C1E87D69D00EBBF55 /* A-01-Training_Programmes.pdf in Resources */,
