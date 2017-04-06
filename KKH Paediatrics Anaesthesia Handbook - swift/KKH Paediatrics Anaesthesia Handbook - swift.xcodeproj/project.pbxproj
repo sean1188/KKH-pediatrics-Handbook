@@ -125,6 +125,18 @@
 		543480861E864ABC004D837F /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		543697191E8A4BA0001D80F4 /* HandbookCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandbookCollectionViewCell.swift; sourceTree = "<group>"; };
 		543BAE201E8A66E3009CC8E5 /* PDFManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFManager.swift; sourceTree = "<group>"; };
+		544162411E96231300003E0D /* Cabin-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Bold.otf"; sourceTree = "<group>"; };
+		544162421E96231300003E0D /* Cabin-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-BoldItalic.otf"; sourceTree = "<group>"; };
+		544162431E96231300003E0D /* Cabin-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Italic.otf"; sourceTree = "<group>"; };
+		544162441E96231300003E0D /* Cabin-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Medium.otf"; sourceTree = "<group>"; };
+		544162451E96231300003E0D /* Cabin-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-MediumItalic.otf"; sourceTree = "<group>"; };
+		544162461E96231300003E0D /* Cabin-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Regular.otf"; sourceTree = "<group>"; };
+		544162471E96231300003E0D /* Cabin-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBold.otf"; sourceTree = "<group>"; };
+		544162481E96231300003E0D /* Cabin-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		544162491E96231300003E0D /* CabinCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		5441624A1E96231300003E0D /* CabinCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Medium.ttf"; sourceTree = "<group>"; };
+		5441624B1E96231300003E0D /* CabinCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		5441624C1E96231300003E0D /* CabinCondensed-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-SemiBold.ttf"; sourceTree = "<group>"; };
 		5448347C1E8B8A1100CC1E09 /* HandbookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandbookTableViewCell.swift; sourceTree = "<group>"; };
 		544C1BD31E91F42A00891D1F /* crisis.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = crisis.storyboard; sourceTree = "<group>"; };
 		544C1BD51E91F73E00891D1F /* crisisNavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = crisisNavVC.swift; sourceTree = "<group>"; };
@@ -283,6 +295,27 @@
 			name = handbooks;
 			sourceTree = "<group>";
 		};
+		5441624D1E96231900003E0D /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				5480E2391E8A20C400B62203 /* fontawesome-webfont.ttf */,
+				5480E23A1E8A20C400B62203 /* FontAwesome.otf */,
+				544162411E96231300003E0D /* Cabin-Bold.otf */,
+				544162421E96231300003E0D /* Cabin-BoldItalic.otf */,
+				544162431E96231300003E0D /* Cabin-Italic.otf */,
+				544162441E96231300003E0D /* Cabin-Medium.otf */,
+				544162451E96231300003E0D /* Cabin-MediumItalic.otf */,
+				544162461E96231300003E0D /* Cabin-Regular.otf */,
+				544162471E96231300003E0D /* Cabin-SemiBold.otf */,
+				544162481E96231300003E0D /* Cabin-SemiBoldItalic.otf */,
+				544162491E96231300003E0D /* CabinCondensed-Bold.ttf */,
+				5441624A1E96231300003E0D /* CabinCondensed-Medium.ttf */,
+				5441624B1E96231300003E0D /* CabinCondensed-Regular.ttf */,
+				5441624C1E96231300003E0D /* CabinCondensed-SemiBold.ttf */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
 		544C1BD21E91F41300891D1F /* Crisis */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,8 +428,7 @@
 		54C40F521E858F3B000E0CF8 /* KKH Paediatrics Anaesthesia Handbook - swift */ = {
 			isa = PBXGroup;
 			children = (
-				5480E2391E8A20C400B62203 /* fontawesome-webfont.ttf */,
-				5480E23A1E8A20C400B62203 /* FontAwesome.otf */,
+				5441624D1E96231900003E0D /* Font */,
 				54C40F531E858F3B000E0CF8 /* AppDelegate.swift */,
 				543697181E8A4B88001D80F4 /* handbooks */,
 				542ED7B81E8BB2EA0002FD43 /* calculators */,
@@ -528,7 +560,7 @@
 				TargetAttributes = {
 					54C40F4F1E858F3B000E0CF8 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = V434W54Y9J;
+						DevelopmentTeam = 7K6ZTDFM48;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -965,11 +997,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = V434W54Y9J;
+				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				INFOPLIST_FILE = "KKH Paediatrics Anaesthesia Handbook - swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.KKH-Paediatrics-Anaesthesia-Handbook---swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "KKH-APP-16";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "KKH Paediatrics Anaesthesia Handbook - swift/KKH Paediatrics Anaesthesia Handbook - swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -983,11 +1015,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = V434W54Y9J;
+				DEVELOPMENT_TEAM = 7K6ZTDFM48;
 				INFOPLIST_FILE = "KKH Paediatrics Anaesthesia Handbook - swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.KKH-Paediatrics-Anaesthesia-Handbook---swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "KKH-APP-16";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "KKH Paediatrics Anaesthesia Handbook - swift/KKH Paediatrics Anaesthesia Handbook - swift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
