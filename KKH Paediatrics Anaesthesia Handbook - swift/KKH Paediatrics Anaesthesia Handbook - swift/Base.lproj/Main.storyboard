@@ -1008,21 +1008,28 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKj-8g-Znq">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="88"/>
+                                        <connections>
+                                            <action selector="aboutus:" destination="g3Z-eZ-qzH" eventType="touchUpInside" id="r4j-Mp-W54"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.066288889909999996" green="0.53878046879999997" blue="0.94251665610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="bqW-ZM-gM1" firstAttribute="leading" secondItem="C3T-f9-4kU" secondAttribute="trailing" constant="98" id="6oX-DS-cwW"/>
+                                    <constraint firstAttribute="bottom" secondItem="PKj-8g-Znq" secondAttribute="bottom" id="Jhp-3b-o1G"/>
+                                    <constraint firstItem="PKj-8g-Znq" firstAttribute="top" secondItem="zgv-SY-s6M" secondAttribute="top" id="Nj6-62-MTg"/>
+                                    <constraint firstItem="PKj-8g-Znq" firstAttribute="leading" secondItem="zgv-SY-s6M" secondAttribute="leading" id="P5H-9W-8jL"/>
                                     <constraint firstItem="bqW-ZM-gM1" firstAttribute="top" secondItem="zgv-SY-s6M" secondAttribute="top" constant="16" id="UOE-NV-bzA"/>
                                     <constraint firstItem="C3T-f9-4kU" firstAttribute="leading" secondItem="zgv-SY-s6M" secondAttribute="leadingMargin" constant="10" id="YYi-ML-6vr"/>
                                     <constraint firstItem="bqW-ZM-gM1" firstAttribute="trailing" secondItem="zgv-SY-s6M" secondAttribute="trailingMargin" id="nSt-mW-9jC"/>
+                                    <constraint firstAttribute="trailing" secondItem="PKj-8g-Znq" secondAttribute="trailing" id="oZT-51-UCs"/>
                                     <constraint firstAttribute="bottom" secondItem="bqW-ZM-gM1" secondAttribute="bottom" constant="19" id="uET-O4-ltF"/>
                                     <constraint firstItem="C3T-f9-4kU" firstAttribute="centerY" secondItem="bqW-ZM-gM1" secondAttribute="centerY" id="uRh-m3-nba"/>
                                     <constraint firstItem="C3T-f9-4kU" firstAttribute="top" secondItem="zgv-SY-s6M" secondAttribute="top" constant="24" id="zmK-kj-ekO"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="hSJ-2x-JvO" appends="YES" id="5DL-bh-h8c"/>
-                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1045,11 +1052,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lXU-Y6-UEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="hSJ-2x-JvO">
-                    <connections>
-                        <action selector="aboutus:" destination="g3Z-eZ-qzH" id="II9-CM-cIl"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2920.8000000000002" y="-54.422788605697157"/>
         </scene>

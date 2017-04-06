@@ -45,9 +45,10 @@ class NavVC: UIViewController {
             initTabViews()
             load = true
         }
+		self.moveScrollViewtoIndex(index: currentIndex)
     }
 	
-    
+	
     func initTabViews(){
         var count = 1
         navBar_items.forEach { (view) in
@@ -76,7 +77,7 @@ class NavVC: UIViewController {
         crisisVC.view.center = CGPoint.init(x: self.view.frame.size.width * 2.5, y: self.view.frame.height/2)
         self.scrollView.addSubview(crisisVC.view)
 		
-		//crisis
+		//settings
 		settingVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "settings")
 		self.addChildViewController(settingVC)
 		settingVC.view.center = CGPoint.init(x: self.view.frame.size.width * 3.5, y: self.view.frame.height/2)
@@ -164,7 +165,7 @@ class settingsVC : UIViewController {
 		}
 	}
 	
-	@IBAction func aboutus(_ sender: Any) {
+	@IBAction func aboutus(_ sender: UIButton) {
 		let a = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "abtus")
 		self.present(a, animated: true, completion: nil)
 	}
