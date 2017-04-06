@@ -84,6 +84,10 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
 			let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "hyperK")
 			self.present(a, animated: true, completion: nil)
 			break
+		case 4 :
+			let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "MH")
+			self.present(a, animated: true, completion: nil)
+			break
         case 5:
             presentmodularContentVC(content: ContentManager.anaphylaxisContent(weight: 60) )
             break
@@ -310,6 +314,7 @@ class MHmenu : UIViewController{
 		super.viewDidLoad()
 		self.view.backgroundColor = UIColor.init().primaryColor()
 		backB.roundify_circle()
+		contrntView.backgroundColor = UIColor.init().secondaryColor()
 		contrntView.roundify_slight()
 		contrntView.layer.borderWidth = 1
 		contrntView.layer.borderColor = UIColor.white.cgColor
