@@ -1,5 +1,5 @@
 all:
 	git status
 	git add .
-	git commit -m "converting to swift"
+	git commit -m "build"
 	git push
