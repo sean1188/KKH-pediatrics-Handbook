@@ -244,7 +244,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="In Kilograms" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pyW-Ce-nWb">
-                                <rect key="frame" x="113" y="187" width="150" height="50"/>
+                                <rect key="frame" x="92" y="187" width="192" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="qwu-Zo-maF"/>
                                 </constraints>
@@ -317,21 +317,21 @@
                             <constraint firstItem="kDi-hq-qPK" firstAttribute="centerX" secondItem="pyW-Ce-nWb" secondAttribute="centerX" id="7hx-MJ-jcP"/>
                             <constraint firstItem="BQw-6E-ctq" firstAttribute="centerX" secondItem="cAj-Z5-Hii" secondAttribute="centerX" id="7t4-U9-T2V"/>
                             <constraint firstItem="4DT-7x-udO" firstAttribute="trailing" secondItem="iDH-0i-Q46" secondAttribute="trailingMargin" id="BB6-Ox-BI1"/>
-                            <constraint firstItem="pyW-Ce-nWb" firstAttribute="leading" secondItem="iDH-0i-Q46" secondAttribute="leadingMargin" constant="97" id="Jlv-DL-bEZ"/>
                             <constraint firstItem="Z40-gG-rJz" firstAttribute="centerX" secondItem="BQw-6E-ctq" secondAttribute="centerX" id="KKd-7A-oFK"/>
                             <constraint firstItem="BQw-6E-ctq" firstAttribute="top" secondItem="Z40-gG-rJz" secondAttribute="bottom" constant="8" symbolic="YES" id="N9K-k1-ZQJ"/>
                             <constraint firstItem="4DT-7x-udO" firstAttribute="top" secondItem="zqN-EC-eCE" secondAttribute="bottom" constant="8" id="So0-qL-t0i"/>
                             <constraint firstItem="J8i-Aa-Vgi" firstAttribute="leading" secondItem="bt3-EV-wI9" secondAttribute="trailing" constant="8" symbolic="YES" id="TDY-E7-XYj"/>
                             <constraint firstItem="yav-pB-wrN" firstAttribute="top" secondItem="cAj-Z5-Hii" secondAttribute="bottom" constant="20" id="Unh-ps-Oh4"/>
+                            <constraint firstItem="pyW-Ce-nWb" firstAttribute="width" secondItem="BQw-6E-ctq" secondAttribute="width" multiplier="0.8" id="XX5-Ti-ji8"/>
                             <constraint firstItem="Z40-gG-rJz" firstAttribute="top" secondItem="pyW-Ce-nWb" secondAttribute="bottom" constant="24" id="ZY2-Hw-MBX"/>
                             <constraint firstItem="J8i-Aa-Vgi" firstAttribute="centerY" secondItem="4DT-7x-udO" secondAttribute="centerY" id="bOS-f9-uoe"/>
                             <constraint firstItem="4DT-7x-udO" firstAttribute="leading" secondItem="J8i-Aa-Vgi" secondAttribute="trailing" constant="32" id="eJI-tt-nu5"/>
                             <constraint firstItem="BQw-6E-ctq" firstAttribute="leading" secondItem="iDH-0i-Q46" secondAttribute="leadingMargin" constant="52" id="eo7-dN-PA0"/>
-                            <constraint firstAttribute="bottom" secondItem="BQw-6E-ctq" secondAttribute="bottom" constant="320" id="fWP-CQ-dY3"/>
                             <constraint firstItem="cAj-Z5-Hii" firstAttribute="centerX" secondItem="iDH-0i-Q46" secondAttribute="centerX" id="fga-mV-QcK"/>
                             <constraint firstItem="cAj-Z5-Hii" firstAttribute="centerX" secondItem="iDH-0i-Q46" secondAttribute="centerX" id="iXC-Je-pNu"/>
                             <constraint firstItem="cAj-Z5-Hii" firstAttribute="leading" secondItem="iDH-0i-Q46" secondAttribute="leadingMargin" constant="46" id="jbE-fE-dHB"/>
                             <constraint firstItem="bt3-EV-wI9" firstAttribute="centerY" secondItem="J8i-Aa-Vgi" secondAttribute="centerY" id="m4g-hU-A08"/>
+                            <constraint firstItem="cAj-Z5-Hii" firstAttribute="top" relation="greaterThanOrEqual" secondItem="BQw-6E-ctq" secondAttribute="bottom" constant="30" id="qQx-qN-UyR"/>
                             <constraint firstItem="kDi-hq-qPK" firstAttribute="top" secondItem="J8i-Aa-Vgi" secondAttribute="bottom" constant="91" id="qyf-Cg-Rz0"/>
                             <constraint firstItem="pyW-Ce-nWb" firstAttribute="top" secondItem="kDi-hq-qPK" secondAttribute="bottom" constant="8" symbolic="YES" id="u8C-ze-fPy"/>
                         </constraints>
