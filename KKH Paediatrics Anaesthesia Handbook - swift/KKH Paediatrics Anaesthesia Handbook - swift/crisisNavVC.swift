@@ -70,6 +70,7 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.section {
         case 0:
+			self.setmodulaViewTitle(title: "Basic Life Support")
             presentmodularContentVC(content: ContentManager.BasicLifeSupport)
             break
         case 1:
@@ -89,6 +90,7 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
 			self.present(a, animated: true, completion: nil)
 			break
         case 5:
+			self.setmodulaViewTitle(title: "Anaphylaxis")
             presentmodularContentVC(content: ContentManager.anaphylaxisContent(weight: 60) )
             break
         default:
@@ -171,10 +173,12 @@ class CardiacArrestMenu: UIViewController {
     }
     
     @IBAction func Nonshockable(_ sender: Any) {
+		self.setmodulaViewTitle(title: "Non-Shockable")
         presentmodularContentVC(content: ContentManager.CardiacArrest_NONSHOCKcontent(weight!))
     }
     
     @IBAction func shockable(_ sender: Any) {
+		self.setmodulaViewTitle(title: "Shockable")
         presentmodularContentVC(content: ContentManager.CardiacArrest_SHOCKcontent(weight!))
     }
     
@@ -218,23 +222,29 @@ class LAMenu: UIViewController {
 	}
 	
 	@IBAction func recog(_ sender: Any) {
+		self.setmodulaViewTitle(title: "Recognition")
 		presentmodularContentVC(content: ContentManager.LA_Recognition(weight: weight!))
 	}
 	@IBAction func immediatem(_ sender: Any) {
+		self.setmodulaViewTitle(title: "Immediate Management")
 		presentmodularContentVC(content: ContentManager.LA_Management(weight: weight!))
 	}
 	@IBAction func treatN(_ sender: Any) {
+		self.setmodulaViewTitle(title: "Neurotoxicity")
 		presentmodularContentVC(content: ContentManager.LA_treatment_NeuroToxicity(weight: weight!))
 	}
 	
 	@IBAction func treata(_ sender: Any) {
+		self.setmodulaViewTitle(title: "Cardiotoxicity")
 		presentmodularContentVC(content: ContentManager.LA_treatment_CardiotoxicityWithCA(weight: weight!))
 	}
 	
 	@IBAction func treata2(_ sender: Any) {
+		self.setmodulaViewTitle(title: "Cardiotoxicity W/O Circulatory Arrest")
 		presentmodularContentVC(content: ContentManager.LA_treatment_CardiotoxicityWOCA(weight: weight!))
 	}
 	@IBAction func ITT(_ sender: Any) {
+		self.setmodulaViewTitle(title: "Intralipid Therapy")
 		presentmodularContentVC(content: ContentManager.LA_treatment_Intralipid(weight: weight!))
 	}
 	
@@ -276,18 +286,22 @@ class Hyperkmenu : UIViewController {
 	}
 	
 	@IBAction func button1(_ sender: Any) {
+		self.setmodulaViewTitle(title: "Exclusion and Inclusion Criterias")
 		presentmodularContentVC(content: ContentManager.Hyperkalaemia_criteria(weight: weight!))
 	}
 	
 	@IBAction func button2(_ sender: Any){
+		self.setmodulaViewTitle(title: "Management Algorithms")
 		presentmodularContentVC(content: ContentManager.Hyperkalaemia_ManagementAlgorithms(weight: weight!))
 	}
 	
 	@IBAction func button3(_ sender: Any){
+		self.setmodulaViewTitle(title: "Treatment")
 		presentmodularContentVC(content: ContentManager.Hyperkalaemia_Treatment(weight: weight!))
 	}
 	
 	@IBAction func button4(_ sender: Any){
+		self.setmodulaViewTitle(title: "Serum K+ Dosages")
 		presentmodularContentVC(content: ContentManager.Hyperkalaemia_SerumDosage(weight: weight!))
 	}
 	
@@ -326,14 +340,17 @@ class MHmenu : UIViewController{
 	}
 	
 	@IBAction func recognition(_ sender: Any) {
+		self.setmodulaViewTitle(title: "Recognition")
 		presentmodularContentVC(content: ContentManager.MH_recognition(weight: weight!))
 	}
 	
 	@IBAction func management(_ sender: Any) {
+		self.setmodulaViewTitle(title: "Management")
 		presentmodularContentVC(content: ContentManager.MH_Management(weight: weight!))
 	}
 	
 	@IBAction func treatment(_ sender: Any) {
+		self.setmodulaViewTitle(title: "Treatment")
 		presentmodularContentVC(content: ContentManager.MH_Treatment(weight: weight!))
 	}
 	
@@ -345,6 +362,13 @@ class MHmenu : UIViewController{
 		let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content") as! CrisisContentModularVC
 		a.content = content
 		self.present(a, animated: true, completion: nil)
+	}
+}
+
+extension UIViewController {
+	 func setmodulaViewTitle (title: String){
+		UserDefaults.standard.set(title, forKey: "title")
+		UserDefaults.standard.set(weight!, forKey: "weight")
 	}
 }
 
