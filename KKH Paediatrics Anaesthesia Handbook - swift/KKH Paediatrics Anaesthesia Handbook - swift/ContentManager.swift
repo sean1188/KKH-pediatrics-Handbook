@@ -294,7 +294,7 @@ class ContentManager: NSObject {
 		return [["Immediate Management" : ["type": "text",
 		                                   "content" : "1. Call for help\n2. STOP all triggers (turn OFF VOLATILE anaesthetics)\n3. Get MH Box with Dantrolene\n4. Notify surgeon\n5. Install clean breathing circuit\n6. Hyperventilate with 100% oxygen\n7. Maintain anaesthesia with IV anaesthetics\n8. Muscle relaxation with Non-Depolarising neuromuscular blockers\n9. Finish/ abandon surgery ASAP"]],
 		        ["Monitor" : ["type": "text",
-		                      "content" : "1. Call for help\n2. STOP all triggers (turn OFF VOLATILE anaesthetics)\n3. Get MH Box with Dantrolene\n4. Notify surgeon\n5. Install clean breathing circuit\n6. Hyperventilate with 100% oxygen\n7. Maintain anaesthesia with IV anaesthetics\n8. Muscle relaxation with Non-Depolarising neuromuscular blockers\n9. Finish/ abandon surgery ASAP"]]
+		                      "content" : "1. Core & Peripheral TEMPERATURE\n2. ECG\n3. Invasive BP\n4. CVP\n5. ETCO2/ PaCO2\n6. SpO2/ PaO2\n7. serum CREATINE KINASE\n8. serum K\n9. coagulation profile"]]
 		]
 	}
 	

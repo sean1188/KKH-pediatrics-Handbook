@@ -34,11 +34,17 @@ class NavVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+		
+		if !UserDefaults.standard.bool(forKey: "A") {
+			let a = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "dis")
+			self.present(a, animated: true, completion: nil)
+		}
+		
         scrollView.backgroundColor = UIColor.init().primaryColor()
         navbar.backgroundColor = UIColor.init().secondaryColor()
         load = false
     }
-    
+	
     //use fiew appear workaround to overcome autolayout error
     override func viewDidAppear(_ animated: Bool) {
         if !load {
@@ -183,6 +189,28 @@ class aboutUSVC : UIViewController {
 	
 	@IBAction func moreAbout(_ sender: Any) {
 		UIApplication.shared.openURL(URL.init(string: "https://sstinc.org/")!)
+	}
+	
+}
+
+class disclaimerVC : UIViewController {
+	
+	@IBOutlet weak var button: UIButton!
+	
+	override var preferredStatusBarStyle: UIStatusBarStyle{
+		return .lightContent
+	}
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		button.roundify_slight()
+		self.view.backgroundColor = UIColor.init().primaryColor()
+		
+	}
+	
+	@IBAction func agree(_ sender: Any) {
+		UserDefaults.standard.set(true, forKey: "A")
+		self.dismiss(animated: true, completion: nil)
 	}
 	
 }
