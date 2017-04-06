@@ -142,20 +142,62 @@ class NavVC: UIViewController {
 
 class settingsVC : UIViewController {
 	
-	@IBOutlet weak var body: UIView!
 	@IBOutlet weak var topview: UIView!
-	@IBOutlet weak var button_about: UIButton!
+	@IBOutlet var containers: [UIView]!
 	
+	var startupIndex: Int! = Int()
 	override func viewDidLoad() {
-		topview.backgroundColor = UIColor.init().primaryColor()
-		self.view.backgroundColor = UIColor.init().primaryColor()
-		body.clipsToBounds = true
-		body.roundify_slight()
-		button_about.backgroundColor = UIColor.init().secondaryColor()
+		super.viewDidLoad()
+		startupIndex = UserDefaults.standard.integer(forKey: "startup")
+		styling()
 	}
 	
-	@IBAction func aboutButtonPressed(_ sender: Any) {
-		UIApplication.shared.openURL(URL.init(string: "https://sstinc.org")!)
+	func styling () {
+		self.view.backgroundColor = UIColor.init().primaryColor()
+		topview.backgroundColor = UIColor.init().primaryColor()
+		containers.forEach { (container) in
+			container.roundify_slight()
+			container.layer.borderColor = UIColor.white.cgColor
+			container.layer.borderWidth = 1
+			container.backgroundColor = UIColor.init().secondaryColor()
+		}
+	}
+	
+	@IBAction func aboutus(_ sender: Any) {
+		self.performSegue(withIdentifier: "aboutUS", sender: self)
+
 	}
 	
 }
+
+class aboutUSVC : UIViewController {
+	override func viewDidLoad() {
+		super.viewDidLoad()
+	}
+	
+	@IBAction func back(_ sender: Any) {
+		self.dismiss(animated: true, completion: nil)
+	}
+	
+	@IBAction func moreAbout(_ sender: Any) {
+		UIApplication.shared.openURL(URL.init(string: "https://sstinc.org/"))
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

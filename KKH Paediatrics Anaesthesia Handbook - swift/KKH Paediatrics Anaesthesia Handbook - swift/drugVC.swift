@@ -47,6 +47,11 @@ class drugVC: UIViewController {
     }
     
     @IBAction func proceed(_ sender: Any) {
+		//lazy programming lmao
+		if selectionlabel.text == "Click to select..."{
+			sendAlertController(title: "Error", message: "Please select Option", actionTitle: "Okay")
+		}
+		else{
         if selected_drug != 3{
         if weightField.text != ""{
             patientWeight = Int(weightField.text!)
@@ -64,6 +69,7 @@ class drugVC: UIViewController {
         else{
             sendAlertController(title: "Error", message: "Invalid input, please check.", actionTitle: "Okay")
         }
+		}
     }
     
     //MARK: - REUSE
