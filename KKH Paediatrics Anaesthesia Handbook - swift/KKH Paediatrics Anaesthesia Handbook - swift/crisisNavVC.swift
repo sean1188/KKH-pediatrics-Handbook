@@ -300,6 +300,46 @@ class Hyperkmenu : UIViewController {
 }
 
 
+class MHmenu : UIViewController{
+	
+	@IBOutlet weak var backB: UIButton!
+	@IBOutlet var buttonCollection: [UIButton]!
+	@IBOutlet weak var contrntView: UIView!
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		self.view.backgroundColor = UIColor.init().primaryColor()
+		backB.roundify_circle()
+		contrntView.roundify_slight()
+		contrntView.layer.borderWidth = 1
+		contrntView.layer.borderColor = UIColor.white.cgColor
+		buttonCollection.forEach { (button) in
+			button.roundify_slight()
+			button.titleLabel?.textColor = UIColor.init().secondaryColor()
+		}
+		
+	}
+	
+	@IBAction func recognition(_ sender: Any) {
+	}
+	
+	@IBAction func management(_ sender: Any) {
+	}
+	
+	@IBAction func treatment(_ sender: Any) {
+	}
+	
+	@IBAction func back(_ sender: Any) {
+	}
+	
+	func presentmodularContentVC (content : [[String : Any]]){
+		let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content") as! CrisisContentModularVC
+		a.content = content
+		self.present(a, animated: true, completion: nil)
+	}
+}
+
+
 
 
 
