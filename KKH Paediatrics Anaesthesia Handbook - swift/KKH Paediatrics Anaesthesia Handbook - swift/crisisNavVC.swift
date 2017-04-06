@@ -321,15 +321,19 @@ class MHmenu : UIViewController{
 	}
 	
 	@IBAction func recognition(_ sender: Any) {
+		presentmodularContentVC(content: ContentManager.MH_recognition(weight: weight!))
 	}
 	
 	@IBAction func management(_ sender: Any) {
+		presentmodularContentVC(content: ContentManager.MH_Management(weight: weight!))
 	}
 	
 	@IBAction func treatment(_ sender: Any) {
+		presentmodularContentVC(content: ContentManager.MH_Treatment(weight: weight!))
 	}
 	
 	@IBAction func back(_ sender: Any) {
+		self.dismiss(animated: true, completion: nil)
 	}
 	
 	func presentmodularContentVC (content : [[String : Any]]){
