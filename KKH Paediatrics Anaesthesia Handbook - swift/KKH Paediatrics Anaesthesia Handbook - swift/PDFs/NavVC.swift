@@ -46,6 +46,7 @@ class NavVC: UIViewController {
             load = true
         }
     }
+	
     
     func initTabViews(){
         var count = 1
@@ -164,8 +165,8 @@ class settingsVC : UIViewController {
 	}
 	
 	@IBAction func aboutus(_ sender: Any) {
-		self.performSegue(withIdentifier: "aboutUS", sender: self)
-
+		let a = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "abtus")
+		self.present(a, animated: true, completion: nil)
 	}
 	
 }
@@ -180,7 +181,7 @@ class aboutUSVC : UIViewController {
 	}
 	
 	@IBAction func moreAbout(_ sender: Any) {
-		UIApplication.shared.openURL(URL.init(string: "https://sstinc.org/"))
+		UIApplication.shared.openURL(URL.init(string: "https://sstinc.org/")!)
 	}
 	
 }
