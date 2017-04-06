@@ -29,7 +29,7 @@
         <scene sceneID="LY8-s1-jKX">
             <objects>
                 <navigationController navigationBarHidden="YES" id="JOc-z6-eFK" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Nnj-3j-iom">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nnj-3j-iom">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1225,10 +1225,13 @@ The authors of each chapter have ensured that the information is current and cor
                                     <constraint firstItem="pZt-bV-8r3" firstAttribute="leading" secondItem="99R-LL-N8h" secondAttribute="leading" constant="10" id="kpX-SD-yss"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDY-0m-B1s">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDY-0m-B1s">
                                 <rect key="frame" x="75" y="592" width="225" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="IAG-Ac-sLv"/>
+                                    <constraint firstAttribute="width" constant="225" id="ehb-FU-cSG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
                                 <state key="normal" title="I Have Read the Notice">
                                     <color key="titleColor" red="0.38187795879999997" green="0.64310806990000002" blue="0.85290461780000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1242,7 +1245,9 @@ The authors of each chapter have ensured that the information is current and cor
                         <constraints>
                             <constraint firstItem="pZt-bV-8r3" firstAttribute="height" secondItem="b3b-m7-0W6" secondAttribute="height" multiplier="0.3" id="3gW-8l-tAe"/>
                             <constraint firstItem="99R-LL-N8h" firstAttribute="leading" secondItem="b3b-m7-0W6" secondAttribute="leading" id="80q-0q-hfA"/>
+                            <constraint firstItem="VDY-0m-B1s" firstAttribute="centerX" secondItem="b3b-m7-0W6" secondAttribute="centerX" id="8C0-Lf-ECT"/>
                             <constraint firstAttribute="trailing" secondItem="99R-LL-N8h" secondAttribute="trailing" id="WWI-bA-UgK"/>
+                            <constraint firstItem="Rwg-yv-mub" firstAttribute="top" secondItem="VDY-0m-B1s" secondAttribute="bottom" constant="20" id="idp-px-LGb"/>
                             <constraint firstItem="99R-LL-N8h" firstAttribute="centerY" secondItem="b3b-m7-0W6" secondAttribute="centerY" id="lhe-xH-5mN"/>
                             <constraint firstItem="99R-LL-N8h" firstAttribute="centerX" secondItem="b3b-m7-0W6" secondAttribute="centerX" id="twU-B3-aQP"/>
                         </constraints>
