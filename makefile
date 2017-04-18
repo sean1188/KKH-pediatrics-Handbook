@@ -1,5 +1,5 @@
 all:
 	git status
 	git add .
-	git commit -m "build"
+	git commit -m "Bug fixing"
 	git push

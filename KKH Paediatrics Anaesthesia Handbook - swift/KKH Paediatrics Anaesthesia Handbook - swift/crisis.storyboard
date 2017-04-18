@@ -20,7 +20,7 @@
         <array key="CabinCondensed-Regular.ttf">
             <string>CabinCondensed</string>
         </array>
-        <array key="fontawesome-webfont.ttf">
+        <array key="FontAwesome.otf">
             <string>FontAwesome</string>
         </array>
     </customFonts>
@@ -37,13 +37,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="5000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR5-ph-qfe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AR5-ph-qfe">
                                 <rect key="frame" x="72" y="28" width="232" height="38"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xx kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aU1-wO-wj0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xx kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aU1-wO-wj0">
                                 <rect key="frame" x="16" y="28" width="57" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="ccZ-ck-rhL"/>
@@ -2497,7 +2497,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MH Orange Box" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRh-gS-9Mq">
-                                        <rect key="frame" x="115.5" y="55.5" width="114.5" height="21"/>
+                                        <rect key="frame" x="115" y="55.5" width="114.5" height="21"/>
                                         <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -2515,7 +2515,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54n-iw-Xtv">
-                                        <rect key="frame" x="39" y="215.5" width="268" height="68"/>
+                                        <rect key="frame" x="39" y="215.5" width="266" height="68"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="17"/>
                                         <state key="normal" title="Recognition and Differential Diagnosis">
@@ -2526,7 +2526,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lts-9Z-bLe">
-                                        <rect key="frame" x="39" y="291.5" width="268" height="67.5"/>
+                                        <rect key="frame" x="39" y="291.5" width="266" height="67.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="CabinCondensed" family="Cabin Condensed" pointSize="17"/>
                                         <state key="normal" title="Immediate Management and monitoring">
@@ -2678,18 +2678,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Rhythm:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhF-39-nJK">
-                                        <rect key="frame" x="91" y="147.5" width="163" height="30.5"/>
+                                        <rect key="frame" x="90.5" y="147.5" width="163" height="30.5"/>
                                         <fontDescription key="fontDescription" name="Cabin-Bold" family="Cabin" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Des-Ll-YwE">
-                                        <rect key="frame" x="38" y="186" width="268" height="56"/>
+                                        <rect key="frame" x="38" y="188" width="268" height="75.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="56" id="HaP-uz-cPR"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="15"/>
                                         <state key="normal" title="NON-SHOCKABLE: Asystole/PEA">
                                             <color key="titleColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -2698,9 +2695,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYg-Yx-Rc7">
-                                        <rect key="frame" x="38" y="250" width="268" height="65"/>
+                                        <rect key="frame" x="38" y="271.5" width="268" height="75.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="15"/>
                                         <state key="normal" title="SHOCKABLE: VF / pulseless VT">
                                             <color key="titleColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -2712,16 +2709,18 @@
                                 <color key="backgroundColor" red="0.066288889909999996" green="0.53878046879999997" blue="0.94251665610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="d6V-96-PP8" firstAttribute="centerX" secondItem="cvM-PF-dKk" secondAttribute="centerX" id="0st-EX-19l"/>
-                                    <constraint firstAttribute="bottom" secondItem="PYg-Yx-Rc7" secondAttribute="bottom" constant="52" id="1nZ-Ls-lag"/>
                                     <constraint firstItem="jAC-dC-gMs" firstAttribute="centerX" secondItem="BhF-39-nJK" secondAttribute="centerX" id="HfB-9o-Vdx"/>
+                                    <constraint firstItem="Des-Ll-YwE" firstAttribute="height" secondItem="PYg-Yx-Rc7" secondAttribute="height" id="JiO-Qk-4Q3"/>
                                     <constraint firstItem="d6V-96-PP8" firstAttribute="top" secondItem="c4t-hS-aUQ" secondAttribute="top" constant="17" id="Lca-h8-lD8"/>
                                     <constraint firstItem="cvM-PF-dKk" firstAttribute="top" secondItem="d6V-96-PP8" secondAttribute="bottom" constant="8" symbolic="YES" id="Ovq-Zu-SnP"/>
                                     <constraint firstItem="Des-Ll-YwE" firstAttribute="leading" secondItem="PYg-Yx-Rc7" secondAttribute="leading" id="PEW-co-L7W"/>
                                     <constraint firstItem="BhF-39-nJK" firstAttribute="top" secondItem="jAC-dC-gMs" secondAttribute="bottom" constant="8" symbolic="YES" id="Rfg-9V-9KR"/>
                                     <constraint firstItem="cvM-PF-dKk" firstAttribute="centerX" secondItem="jAC-dC-gMs" secondAttribute="centerX" id="UMW-pn-OBq"/>
+                                    <constraint firstItem="PYg-Yx-Rc7" firstAttribute="centerX" secondItem="Des-Ll-YwE" secondAttribute="centerX" id="a23-Ve-Ini"/>
                                     <constraint firstItem="Des-Ll-YwE" firstAttribute="trailing" secondItem="PYg-Yx-Rc7" secondAttribute="trailing" id="aGi-qK-pSH"/>
+                                    <constraint firstAttribute="bottom" secondItem="PYg-Yx-Rc7" secondAttribute="bottom" constant="20" id="c6X-m2-rJ3"/>
                                     <constraint firstItem="BhF-39-nJK" firstAttribute="centerX" secondItem="Des-Ll-YwE" secondAttribute="centerX" id="cmC-uz-kbA"/>
-                                    <constraint firstItem="Des-Ll-YwE" firstAttribute="top" secondItem="BhF-39-nJK" secondAttribute="bottom" constant="8" symbolic="YES" id="eNY-fS-Eaa"/>
+                                    <constraint firstItem="Des-Ll-YwE" firstAttribute="top" secondItem="BhF-39-nJK" secondAttribute="bottom" constant="10" id="eNY-fS-Eaa"/>
                                     <constraint firstItem="PYg-Yx-Rc7" firstAttribute="top" secondItem="Des-Ll-YwE" secondAttribute="bottom" constant="8" symbolic="YES" id="eXD-sc-Cgf"/>
                                     <constraint firstItem="Des-Ll-YwE" firstAttribute="leading" secondItem="c4t-hS-aUQ" secondAttribute="leading" constant="38" id="jM3-li-EcM"/>
                                     <constraint firstItem="jAC-dC-gMs" firstAttribute="leading" secondItem="c4t-hS-aUQ" secondAttribute="leadingMargin" id="pqZ-1y-1Nc"/>
