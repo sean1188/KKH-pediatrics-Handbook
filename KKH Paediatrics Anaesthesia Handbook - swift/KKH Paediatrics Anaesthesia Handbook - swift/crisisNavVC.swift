@@ -11,7 +11,7 @@ import UIKit
 public var weight : Float? = nil
 
 class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var weightField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var topbar: UIView!
@@ -58,8 +58,8 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HandbookTableViewCell
-         cell.roundify_slight()
-		cell.selectionStyle = .none
+        cell.roundify_slight()
+        cell.selectionStyle = .none
         cell.backgroundColor = UIColor.init().secondaryColor()
         cell.index.textColor = UIColor.init().primaryColor()
         cell.index.text = String(indexPath.section + 1)
@@ -71,27 +71,27 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.section {
         case 0:
-			self.setmodulaViewTitle(title: "Basic Life Support")
+            self.setmodulaViewTitle(title: "Basic Life Support")
             presentmodularContentVC(content: ContentManager.BasicLifeSupport)
             break
         case 1:
             let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "Ca")
             self.present(a, animated: true, completion: nil)
             break
-		case 2 :
-			let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "LA")
-			self.present(a, animated: true, completion: nil)
-			break
-		case 3 :
-			let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "hyperK")
-			self.present(a, animated: true, completion: nil)
-			break
-		case 4 :
-			let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "MH")
-			self.present(a, animated: true, completion: nil)
-			break
+        case 2 :
+            let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "LA")
+            self.present(a, animated: true, completion: nil)
+            break
+        case 3 :
+            let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "hyperK")
+            self.present(a, animated: true, completion: nil)
+            break
+        case 4 :
+            let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "MH")
+            self.present(a, animated: true, completion: nil)
+            break
         case 5:
-			self.setmodulaViewTitle(title: "Anaphylaxis")
+            self.setmodulaViewTitle(title: "Anaphylaxis")
             presentmodularContentVC(content: ContentManager.anaphylaxisContent(weight: 60) )
             break
         default:
@@ -103,7 +103,7 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         titleLabel.textColor = UIColor.init().secondaryColor()
         topbar.backgroundColor = UIColor.init().primaryColor()
         self.view.backgroundColor = UIColor.init().primaryColor()
-         nextButton.roundify_circle()
+        nextButton.roundify_circle()
         nextButton.titleLabel?.textColor = UIColor.init().primaryColor()
         weightField.backgroundColor = UIColor.init().secondaryColor()
     }
@@ -140,7 +140,7 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         a.content = content
         self.present(a, animated: true, completion: nil)
     }
-
+    
 }
 
 
@@ -160,13 +160,14 @@ class CardiacArrestMenu: UIViewController {
     }
     
     override func viewDidLoad() {
-         backb.roundify_circle()
-         contentView.roundify_slight()
+        backb.roundify_circle()
+        contentView.roundify_slight()
         contentView.backgroundColor = UIColor.init().secondaryColor()
-        contentView.layer.borderColor = UIColor.white.cgColor	
+        contentView.layer.borderColor = UIColor.white.cgColor
         contentView.layer.borderWidth = 1
-         nsButton.roundify_slight()
-         sButtin.roundify_slight()
+        self.view.backgroundColor = UIColor.init().primaryColor()
+        nsButton.roundify_slight()
+        sButtin.roundify_slight()
     }
     
     @IBAction func back(_ sender: Any) {
@@ -174,12 +175,12 @@ class CardiacArrestMenu: UIViewController {
     }
     
     @IBAction func Nonshockable(_ sender: Any) {
-		self.setmodulaViewTitle(title: "Non-Shockable")
+        self.setmodulaViewTitle(title: "Non-Shockable")
         presentmodularContentVC(content: ContentManager.CardiacArrest_NONSHOCKcontent(weight!))
     }
     
     @IBAction func shockable(_ sender: Any) {
-		self.setmodulaViewTitle(title: "Shockable")
+        self.setmodulaViewTitle(title: "Shockable")
         presentmodularContentVC(content: ContentManager.CardiacArrest_SHOCKcontent(weight!))
     }
     
@@ -194,183 +195,183 @@ class CardiacArrestMenu: UIViewController {
 }
 
 class LAMenu: UIViewController {
-	
-	@IBOutlet weak var backb: UIButton!
-	@IBOutlet var buttoncollection: [UIButton]!
-	@IBOutlet weak var containerView: UIView!
-	
-	
-	
-	override var preferredStatusBarStyle: UIStatusBarStyle{
-		return .lightContent
-	}
-	
-	override func viewDidLoad() {
-		styling()
-	}
-	
-	func styling(){
-		self.view.backgroundColor = UIColor.init().primaryColor()
-		 backb.roundify_circle()
-		buttoncollection.forEach { (button) in
-			 button.roundify_slight()
-			button.titleLabel?.textColor = UIColor.init().secondaryColor()
-		}
-		containerView.backgroundColor = UIColor.init().secondaryColor()
-		containerView.layer.borderWidth = 1
-		containerView.layer.borderColor = UIColor.white.cgColor
-		containerView.roundify_slight()
-	}
-	
-	@IBAction func recog(_ sender: Any) {
-		self.setmodulaViewTitle(title: "Recognition")
-		presentmodularContentVC(content: ContentManager.LA_Recognition(weight: weight!))
-	}
-	@IBAction func immediatem(_ sender: Any) {
-		self.setmodulaViewTitle(title: "Immediate Management")
-		presentmodularContentVC(content: ContentManager.LA_Management(weight: weight!))
-	}
-	@IBAction func treatN(_ sender: Any) {
-		self.setmodulaViewTitle(title: "Neurotoxicity")
-		presentmodularContentVC(content: ContentManager.LA_treatment_NeuroToxicity(weight: weight!))
-	}
-	
-	@IBAction func treata(_ sender: Any) {
-		self.setmodulaViewTitle(title: "Cardiotoxicity")
-		presentmodularContentVC(content: ContentManager.LA_treatment_CardiotoxicityWithCA(weight: weight!))
-	}
-	
-	@IBAction func treata2(_ sender: Any) {
-		self.setmodulaViewTitle(title: "Cardiotoxicity W/O Circulatory Arrest")
-		presentmodularContentVC(content: ContentManager.LA_treatment_CardiotoxicityWOCA(weight: weight!))
-	}
-	@IBAction func ITT(_ sender: Any) {
-		self.setmodulaViewTitle(title: "Intralipid Therapy")
-		presentmodularContentVC(content: ContentManager.LA_treatment_Intralipid(weight: weight!))
-	}
-	
-	@IBAction func back(_ sender: Any) {
-		self.dismiss(animated: true, completion: nil)
-	}
-	
-	func presentmodularContentVC (content : [[String : Any]]){
-		let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content") as! CrisisContentModularVC
-		a.content = content
-		self.present(a, animated: true, completion: nil)
-	}
-	
+    
+    @IBOutlet weak var backb: UIButton!
+    @IBOutlet var buttoncollection: [UIButton]!
+    @IBOutlet weak var containerView: UIView!
+    
+    
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
+    
+    override func viewDidLoad() {
+        styling()
+    }
+    
+    func styling(){
+        self.view.backgroundColor = UIColor.init().primaryColor()
+        backb.roundify_circle()
+        buttoncollection.forEach { (button) in
+            button.roundify_slight()
+            button.titleLabel?.textColor = UIColor.init().secondaryColor()
+        }
+        containerView.backgroundColor = UIColor.init().secondaryColor()
+        containerView.layer.borderWidth = 1
+        containerView.layer.borderColor = UIColor.white.cgColor
+        containerView.roundify_slight()
+    }
+    
+    @IBAction func recog(_ sender: Any) {
+        self.setmodulaViewTitle(title: "Recognition")
+        presentmodularContentVC(content: ContentManager.LA_Recognition(weight: weight!))
+    }
+    @IBAction func immediatem(_ sender: Any) {
+        self.setmodulaViewTitle(title: "Immediate Management")
+        presentmodularContentVC(content: ContentManager.LA_Management(weight: weight!))
+    }
+    @IBAction func treatN(_ sender: Any) {
+        self.setmodulaViewTitle(title: "Neurotoxicity")
+        presentmodularContentVC(content: ContentManager.LA_treatment_NeuroToxicity(weight: weight!))
+    }
+    
+    @IBAction func treata(_ sender: Any) {
+        self.setmodulaViewTitle(title: "Cardiotoxicity")
+        presentmodularContentVC(content: ContentManager.LA_treatment_CardiotoxicityWithCA(weight: weight!))
+    }
+    
+    @IBAction func treata2(_ sender: Any) {
+        self.setmodulaViewTitle(title: "Cardiotoxicity W/O Circulatory Arrest")
+        presentmodularContentVC(content: ContentManager.LA_treatment_CardiotoxicityWOCA(weight: weight!))
+    }
+    @IBAction func ITT(_ sender: Any) {
+        self.setmodulaViewTitle(title: "Intralipid Therapy")
+        presentmodularContentVC(content: ContentManager.LA_treatment_Intralipid(weight: weight!))
+    }
+    
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func presentmodularContentVC (content : [[String : Any]]){
+        let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content") as! CrisisContentModularVC
+        a.content = content
+        self.present(a, animated: true, completion: nil)
+    }
+    
 }
 
 class Hyperkmenu : UIViewController {
-	
-	@IBOutlet weak var backB: UIButton!
-	@IBOutlet var buttonCollection: [UIButton]!
-	@IBOutlet weak var contentView: UIView!
-	
-	override var preferredStatusBarStyle: UIStatusBarStyle{
-		return .lightContent
-	}
-	
-	override func viewDidLoad() {
-		self.view.backgroundColor = UIColor.init().primaryColor()
-		contentView.backgroundColor = UIColor.init().secondaryColor()
-		contentView.roundify_slight()
-		contentView.layer.borderColor = UIColor.white.cgColor
-		contentView.layer.borderWidth = 1
-		contentView.clipsToBounds = true
-		backB.roundify_circle()
-		buttonCollection.forEach { (button) in
-			button.roundify_slight()
-			button.titleLabel?.textColor = UIColor.init().secondaryColor()
-			
-		}
-	}
-	
-	@IBAction func button1(_ sender: Any) {
-		self.setmodulaViewTitle(title: "Exclusion and Inclusion Criterias")
-		presentmodularContentVC(content: ContentManager.Hyperkalaemia_criteria(weight: weight!))
-	}
-	
-	@IBAction func button2(_ sender: Any){
-		self.setmodulaViewTitle(title: "Management Algorithms")
-		presentmodularContentVC(content: ContentManager.Hyperkalaemia_ManagementAlgorithms(weight: weight!))
-	}
-	
-	@IBAction func button3(_ sender: Any){
-		self.setmodulaViewTitle(title: "Treatment")
-		presentmodularContentVC(content: ContentManager.Hyperkalaemia_Treatment(weight: weight!))
-	}
-	
-	@IBAction func button4(_ sender: Any){
-		self.setmodulaViewTitle(title: "Serum K+ Dosages")
-		presentmodularContentVC(content: ContentManager.Hyperkalaemia_SerumDosage(weight: weight!))
-	}
-	
-	@IBAction func back(_ sender: Any) {
-		self.dismiss(animated: true, completion: nil)
-	}
-	
-	func presentmodularContentVC (content : [[String : Any]]){
-		let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content") as! CrisisContentModularVC
-		a.content = content
-		self.present(a, animated: true, completion: nil)
-	}
-	
+    
+    @IBOutlet weak var backB: UIButton!
+    @IBOutlet var buttonCollection: [UIButton]!
+    @IBOutlet weak var contentView: UIView!
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
+    
+    override func viewDidLoad() {
+        self.view.backgroundColor = UIColor.init().primaryColor()
+        contentView.backgroundColor = UIColor.init().secondaryColor()
+        contentView.roundify_slight()
+        contentView.layer.borderColor = UIColor.white.cgColor
+        contentView.layer.borderWidth = 1
+        contentView.clipsToBounds = true
+        backB.roundify_circle()
+        buttonCollection.forEach { (button) in
+            button.roundify_slight()
+            button.titleLabel?.textColor = UIColor.init().secondaryColor()
+            
+        }
+    }
+    
+    @IBAction func button1(_ sender: Any) {
+        self.setmodulaViewTitle(title: "Exclusion and Inclusion Criteria")
+        presentmodularContentVC(content: ContentManager.Hyperkalaemia_criteria(weight: weight!))
+    }
+    
+    @IBAction func button2(_ sender: Any){
+        self.setmodulaViewTitle(title: "Management Algorithms")
+        presentmodularContentVC(content: ContentManager.Hyperkalaemia_ManagementAlgorithms(weight: weight!))
+    }
+    
+    @IBAction func button3(_ sender: Any){
+        self.setmodulaViewTitle(title: "Treatment")
+        presentmodularContentVC(content: ContentManager.Hyperkalaemia_Treatment(weight: weight!))
+    }
+    
+    @IBAction func button4(_ sender: Any){
+        self.setmodulaViewTitle(title: "Serum K+ Dosages")
+        presentmodularContentVC(content: ContentManager.Hyperkalaemia_SerumDosage(weight: weight!))
+    }
+    
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func presentmodularContentVC (content : [[String : Any]]){
+        let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content") as! CrisisContentModularVC
+        a.content = content
+        self.present(a, animated: true, completion: nil)
+    }
+    
 }
 
 
 class MHmenu : UIViewController{
-	
-	@IBOutlet weak var backB: UIButton!
-	@IBOutlet var buttonCollection: [UIButton]!
-	@IBOutlet weak var contrntView: UIView!
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		self.view.backgroundColor = UIColor.init().primaryColor()
-		backB.roundify_circle()
-		contrntView.backgroundColor = UIColor.init().secondaryColor()
-		contrntView.roundify_slight()
-		contrntView.layer.borderWidth = 1
-		contrntView.layer.borderColor = UIColor.white.cgColor
-		buttonCollection.forEach { (button) in
-			button.roundify_slight()
-			button.titleLabel?.textColor = UIColor.init().secondaryColor()
-		}
-		
-	}
-	
-	@IBAction func recognition(_ sender: Any) {
-		self.setmodulaViewTitle(title: "Recognition")
-		presentmodularContentVC(content: ContentManager.MH_recognition(weight: weight!))
-	}
-	
-	@IBAction func management(_ sender: Any) {
-		self.setmodulaViewTitle(title: "Management")
-		presentmodularContentVC(content: ContentManager.MH_Management(weight: weight!))
-	}
-	
-	@IBAction func treatment(_ sender: Any) {
-		self.setmodulaViewTitle(title: "Treatment")
-		presentmodularContentVC(content: ContentManager.MH_Treatment(weight: weight!))
-	}
-	
-	@IBAction func back(_ sender: Any) {
-		self.dismiss(animated: true, completion: nil)
-	}
-	
-	func presentmodularContentVC (content : [[String : Any]]){
-		let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content") as! CrisisContentModularVC
-		a.content = content
-		self.present(a, animated: true, completion: nil)
-	}
+    
+    @IBOutlet weak var backB: UIButton!
+    @IBOutlet var buttonCollection: [UIButton]!
+    @IBOutlet weak var contrntView: UIView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = UIColor.init().primaryColor()
+        backB.roundify_circle()
+        contrntView.backgroundColor = UIColor.init().secondaryColor()
+        contrntView.roundify_slight()
+        contrntView.layer.borderWidth = 1
+        contrntView.layer.borderColor = UIColor.white.cgColor
+        buttonCollection.forEach { (button) in
+            button.roundify_slight()
+            button.titleLabel?.textColor = UIColor.init().secondaryColor()
+        }
+        
+    }
+    
+    @IBAction func recognition(_ sender: Any) {
+        self.setmodulaViewTitle(title: "Recognition")
+        presentmodularContentVC(content: ContentManager.MH_recognition(weight: weight!))
+    }
+    
+    @IBAction func management(_ sender: Any) {
+        self.setmodulaViewTitle(title: "Management")
+        presentmodularContentVC(content: ContentManager.MH_Management(weight: weight!))
+    }
+    
+    @IBAction func treatment(_ sender: Any) {
+        self.setmodulaViewTitle(title: "Treatment")
+        presentmodularContentVC(content: ContentManager.MH_Treatment(weight: weight!))
+    }
+    
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func presentmodularContentVC (content : [[String : Any]]){
+        let a = UIStoryboard.init(name: "crisis", bundle: nil).instantiateViewController(withIdentifier: "crisis_content") as! CrisisContentModularVC
+        a.content = content
+        self.present(a, animated: true, completion: nil)
+    }
 }
 
 extension UIViewController {
-	 func setmodulaViewTitle (title: String){
-		UserDefaults.standard.set(title, forKey: "title")
-		UserDefaults.standard.set(weight!, forKey: "weight")
-	}
+    func setmodulaViewTitle (title: String){
+        UserDefaults.standard.set(title, forKey: "title")
+        UserDefaults.standard.set(weight!, forKey: "weight")
+    }
 }
 
 
