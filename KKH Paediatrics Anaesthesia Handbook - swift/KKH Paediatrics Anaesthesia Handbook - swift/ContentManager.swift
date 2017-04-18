@@ -221,10 +221,10 @@ class ContentManager: NSObject {
 			]],
 		        ["Inclusion Criteria" : ["type":"header"]],
 		        ["Term NEONATE (< 1 month age)": ["type": "text",
-		                                 "content" : "Serum K+ > 6 Mmol/L"
+		                                 "content" : "Serum K+ > 6 mmol/L"
 					]],
 		         ["Children > 1 month age": ["type": "text",
-					"content" : "Serum K+ > 5.5 Mmol/L"
+					"content" : "Serum K+ > 5.5 mmol/L"
 					]]
 		]
 	}
@@ -274,7 +274,7 @@ class ContentManager: NSObject {
 		        ["10% Calcium Chloride via IV - 0.2 ML/KG" : ["type":"text",
 		                                                            "content": "Administer \(weight * 0.2) ML"]],
 		        ["8.4% NaHCO3 via IV - 1 ML/KG" : ["type":"text",
-		                                                            "content": "Administer \(weight * 1) ML\nRemarks:\n- Give over 10 min\n- DO NOT mix with calcium\n- Max: 50 Mmol/dose"]]
+		                                                            "content": "Administer \(weight * 1) ML\nRemarks:\n- Give over 10 min\n- DO NOT mix with calcium\n- Max: 50 mmol/dose"]]
 		        
 		]
 		
