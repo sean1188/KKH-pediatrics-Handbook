@@ -92,7 +92,7 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             break
         case 5:
             self.setmodulaViewTitle(title: "Anaphylaxis")
-            presentmodularContentVC(content: ContentManager.anaphylaxisContent(weight: 60) )
+            presentmodularContentVC(content: ContentManager.anaphylaxisContent(weight: weight!) )
             break
         default:
             break
@@ -325,6 +325,10 @@ class MHmenu : UIViewController{
     @IBOutlet weak var backB: UIButton!
     @IBOutlet var buttonCollection: [UIButton]!
     @IBOutlet weak var contrntView: UIView!
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
