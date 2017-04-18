@@ -2792,7 +2792,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhs-MZ-Q4K">
                                         <rect key="frame" x="34" y="24" width="275" height="63"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="11"/>
                                         <state key="normal" title="Recognition">
                                             <color key="titleColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -2803,7 +2803,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crn-o9-tk3">
                                         <rect key="frame" x="34" y="95" width="275" height="63.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="11"/>
                                         <state key="normal" title="Immediate Management">
                                             <color key="titleColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -2814,7 +2814,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUv-Fr-BAX">
                                         <rect key="frame" x="34" y="166.5" width="275" height="63"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="11"/>
                                         <state key="normal" title="Treating Neurotoxicity - Seizures">
                                             <color key="titleColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -2825,7 +2825,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axw-e8-Jz4">
                                         <rect key="frame" x="34" y="237.5" width="275" height="63"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="10"/>
+                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="11"/>
                                         <state key="normal" title="Treating Cardiotoxicity with Circulatory Arrest">
                                             <color key="titleColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -2836,7 +2836,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aO-5w-Uw6">
                                         <rect key="frame" x="34" y="308.5" width="275" height="63.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="10"/>
+                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="11"/>
                                         <state key="normal" title="Treating Cardiotoxicity without Circulatory Arrest">
                                             <color key="titleColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -2847,7 +2847,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9P-Is-TlF">
                                         <rect key="frame" x="34" y="380" width="275" height="63"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="11"/>
                                         <state key="normal" title="Intralipid Therapy (20% lipid emulsion)">
                                             <color key="titleColor" red="0.31372549020000001" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>

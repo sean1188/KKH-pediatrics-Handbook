@@ -141,7 +141,7 @@ class ContentManager: NSObject {
 	
 	static func LA_Recognition (weight :Float) -> [[String: Any]]{
 		return [["Sudden alteration in mental status" : ["type": "text",
-		                                                 "content" : "1.Severe agitation\n2.Loss of Consciousness."]
+		                                                 "content" : "1.Severe agitation\n2.Loss of consciousness."]
 			],
 		        ["Cardiovascular Collapse" : ["type": "text",
 		                                      "content" : "1.Sinus bradycardia\n2.Conduction block\n3.Ventricular Tachyarrhythmias\n4. Asystole\n\n Note:\nHypothension & Rhythm disturbance may be the only signs under GA"]
@@ -202,13 +202,13 @@ class ContentManager: NSObject {
 					]],
 		         ["After 5 Minutes (if cardiovascular stability isn't restored)" : ["type" : "header"]],
 		         ["BOLUS" : ["type" : "text",
-		                     "content": "Repeat bolus up to maximum of 2X (same dose)\n5 minutes apart \n(TOTAL 3 colus including initial dose!)"
+		                     "content": "Repeat bolus up to maximum of 2X (same dose)\n5 minutes apart \n(TOTAL 3 bolus including initial dose!)"
 					]],
 		         
 		         ["Double rate of infusion - 30ML/KG/H" : ["type" : "text",
 		                                     "content": "\(weight * 30) ML over 1 Hour"
 					]],
-		         ["Cumulative dosage limit for infusion - 30 ML/KG/H" : ["type" : "text",
+		         ["Do not exceed 30 ML/KG/H" : ["type" : "text",
 		                                                   "content": "\(weight * 12) ML"
 					]]
 			
