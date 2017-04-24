@@ -30,6 +30,7 @@ class ContentManager: NSObject {
 	
 	
 	static func anaphylaxisContent ( weight : Float) -> [[String : Any]] {
+        
 		return [["Signs" : ["type" : "text",
 		                    "content" :  "Erythema\nUrticaria\nAngioedema\nHypotension\nTachycardia\nDysrrhythmias\nCirculatory Collapse"]],
 		        ["Symptoms" :  ["type" : "text",
@@ -39,7 +40,7 @@ class ContentManager: NSObject {
 		        
 		        ["Immediate Treatment Drugs" : ["type" : "header"]],
 		        ["NS/RL IV BOLUS - 10ML/kg" :  ["type" : "text",
-		                                        "content" : "Administer \(weight * 10) ML"]],
+		                                        "content" : "Administer \((weight * 10).cleanUpper) ML"]],
 		        ["Epinephrine IM BOLUS" :  ["type" : "text",
 		                                    "content" : "\(weight * 10) Micrograms (10 Micrograms/kg) \nOR \n \(weight * 0.1) ML (0.1ML/kg)\n1:10 000 DILUTION\nMax: \(weight * 10)Micrograms" ]],
 		        ["Epinephrine IV/IO BOLUS" :  ["type" : "text",

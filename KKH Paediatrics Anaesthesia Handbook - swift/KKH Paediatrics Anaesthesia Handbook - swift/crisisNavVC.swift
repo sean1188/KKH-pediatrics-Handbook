@@ -32,7 +32,7 @@ class crisisNavVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         backb.isEnabled = false
         backb.alpha = 0
     }
-    
+        
     func numberOfSections(in tableView: UITableView) -> Int {
         return arr.count
     }

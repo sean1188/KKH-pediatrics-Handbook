@@ -38,4 +38,14 @@ extension Float {
         let divisor = pow(10.0, Float(places))
         return (self * divisor).rounded() / divisor
     }
+    
+    var cleanUpper:String {
+        if rint(self) == self {
+            return String(Int(self))
+        }
+        else{
+            return String(Float(self))
+        }
+    }
+    
 }
