@@ -42,21 +42,21 @@ class ContentManager: NSObject {
 		        ["NS/RL IV BOLUS - 10ML/kg" :  ["type" : "text",
 		                                        "content" : "Administer \((weight * 10).cleanUpper) ML"]],
 		        ["Epinephrine IM BOLUS" :  ["type" : "text",
-		                                    "content" : "\(weight * 10) Micrograms (10 Micrograms/kg) \nOR \n \(weight * 0.1) ML (0.1ML/kg)\n1:10 000 DILUTION\nMax: \(weight * 10)Micrograms" ]],
+		                                    "content" : "\((weight * 10).cleanUpper) Micrograms (10 Micrograms/kg) \nOR \n \((weight * 0.1).cleanUpper) ML (0.1ML/kg)\n1:10 000 DILUTION\nMax: \((weight * 10).cleanUpper)Micrograms" ]],
 		        ["Epinephrine IV/IO BOLUS" :  ["type" : "text",
-		                                       "content" : "\(weight) Micrograms (1 Micrograms/kg) \nOR \n \(weight * 0.1) ML (0.1ML/kg)\n1:100 000 DILUTION\nMax: 1000 Micrograms"]],
+		                                       "content" : "\(weight.cleanUpper) Micrograms (1 Micrograms/kg) \nOR \n \((weight * 0.1).cleanUpper) ML (0.1ML/kg)\n1:100 000 DILUTION\nMax: 1000 Micrograms"]],
 		        ["Epinephrine IV/IO Infusion" :  ["type" : "text",
 		                                          "content" : "0.02 - 0.2 MICROgram/kg/min"]],
 		        
 		        ["Secondary Treatment Drugs" : ["type" : "header"]],
 		        ["Anti-inflammatory" :  ["type" : "text",
-		                                 "content" : "Hydrocortisone IV/IO BOLUS (2 MG kg)\n\(weight*2) MG"]],
+		                                 "content" : "Hydrocortisone IV/IO BOLUS (2 MG kg)\n\((weight*2).cleanUpper) MG"]],
 		        
 		        ["Hypotension Persisting despite epinephrine?" : ["type" : "header"]],
 		        ["Phenylephrine IV/IO BOLUS - 10 Micrograms/kg" :  ["type" : "text",
-		                                                            "content" : "Administer \(weight * 10) Micrograms"]],
+		                                                            "content" : "Administer \((weight * 10).cleanUpper) Micrograms"]],
 		        ["Vasopressin IV/IO BOLUS - 0.03 units/kg" :  ["type" : "text",
-		                                                       "content" : "\(weight * 0.03) Units"]],
+		                                                       "content" : "\((weight * 0.03).cleanUpper) Units"]],
 		        ["NOREPINEPHRINE infusion" :  ["type" : "text",
 		                                       "content" : "0.01 - 0.20 MICROgram/kg/MIN"]],
 		        
@@ -64,14 +64,14 @@ class ContentManager: NSObject {
 		        ["Salbutamol Inhaler" :  ["type" : "text",
 		                                  "content" : " 4 - 10 puffs"]],
 		        ["Aminophylline IV/IO SLOW BOLUS (1 Hour)" :  ["type" : "text",
-		                                                       "content" : "\(weight * 10) MG \n(10 MG kg)"]],
+		                                                       "content" : "\((weight * 10).cleanUpper) MG \n(10 MG kg)"]],
 		        
 		        ["For Antihistamine" : ["type" : "header"]],
 		        ["Diphenhydramine IV/IO SLOW BOLUS" :  ["type" : "text",
-		                                                "content" : "\(weight) MG \n(1 MG/kg)"]],
+		                                                "content" : "\(weight.cleanUpper) MG \n(1 MG/kg)"]],
 		        ["For Antihistamine" : ["type" : "header"]],
 		        ["Diphenhydramine IV/IO SLOW BOLUS" :  ["type" : "text",
-		                                                "content" : "\(weight) MG \n(1 MG/kg)"]]
+		                                                "content" : "\(weight.cleanUpper) MG \n(1 MG/kg)"]]
 			
 		]
 		
@@ -80,7 +80,7 @@ class ContentManager: NSObject {
 	static func CardiacArrest_NONSHOCKcontent (_ weight : Float) -> [[String : Any]] {
 		return [["Steps" : ["type" : "checkList_CA-NS"]],
 		        ["Administering Adrenaline" : ["type" : "text",
-		                                       "content" : "IV/IO : Administer \n\(weight * 10) Micrograms \n \(weight * 0.1)ML 1:10 000\n\nETT: Administer\n\(weight * 100) Micrograms\n\(weight * 0.1)ML 1: 1000"]],
+		                                       "content" : "IV/IO : Administer \n\((weight * 10).cleanUpper) Micrograms \n \((weight * 0.1).cleanUpper)ML 1:10 000\n\nETT: Administer\n\((weight * 100).cleanUpper) Micrograms\n\((weight * 0.1).cleanUpper)ML 1: 1000"]],
 		        ["Exclude H's and T's" : ["type" : "text",
 		                                  "content" : "HypoVolaemia\n   Hypoxia\n   Hydrogen Ion (Acidosis)\n   Hypokalaemia\n   HypoGlycaemia\n   HypoThermia\n   Trauma\n   Toxins\n   Tamponade\n   Tension Pneumothorax\n   Thrombosis (Pulmonary or Coronary)"]]
 		]
@@ -93,42 +93,42 @@ class ContentManager: NSObject {
 		        ["Defillibration Algorithm" : ["type" : "header"]],
 		        
 		        ["1st Shock - 4J/kg" : ["type" : "text",
-		                                "content" : "Administer \(weight * 4) JOULES\n(Resume CPR immediately without checking rhythm)"]],
+		                                "content" : "Administer \((weight * 4).cleanUpper) JOULES\n(Resume CPR immediately without checking rhythm)"]],
 		        ["" : ["type" : "header"]],
 		        ["CPR: 1 - 2 minutes" : ["type" : "text",
 		                                 "content" : "(minimise time between shock and CPR) \n(Check rhythm & shock immediately after chest compression)"]],
 		        ["" : ["type" : "header"]],
 		        
 		        ["2nd Shock - 4J/kg" : ["type" : "text",
-		                                "content" : "Administer \(weight * 4) JOULES\n(Resume CPR immediately without checking rhythm)"]],
+		                                "content" : "Administer \((weight * 4).cleanUpper) JOULES\n(Resume CPR immediately without checking rhythm)"]],
 		        ["" : ["type" : "header"]],
 		        ["CPR: 1 - 2 minutes" : ["type" : "text",
 		                                 "content" : "(minimise time between shock and CPR) \n(Check rhythm & shock immediately after chest compression)"]],
 		        ["" : ["type" : "header"]],
 		        
 		        ["3rd Shock - 4J/kg" : ["type" : "text",
-		                                "content" : "Administer \(weight * 4) JOULES\n(Resume CPR immediately without checking rhythm)"]],
+		                                "content" : "Administer \((weight * 4).cleanUpper) JOULES\n(Resume CPR immediately without checking rhythm)"]],
 		        ["" : ["type" : "header"]],
 		        ["CPR: 1 - 2 minutes" : ["type" : "text",
 		                                 "content" : "(minimise time between shock and CPR) \n(Check rhythm & shock immediately after chest compression)"]],
 		        ["" : ["type" : "header"]],
 		        ["Adrenaline IV/IO: 10 Micrograms/kg" : ["type" : "text",
-		                                                 "content" : "\(weight * 10) Micrograms\n \(weight * 0.1)ML  1: 10 000 Dilution"]],
+		                                                 "content" : "\((weight * 10).cleanUpper) Micrograms\n \((weight * 0.1).cleanUpper)ML  1: 10 000 Dilution"]],
 		        ["" : ["type" : "header"]],
 		        ["Amiodarone: 5 MG kg" : ["type" : "text",
-		                                          "content" : "\(weight * 5) MG over 5 minutes"]],
+		                                          "content" : "\((weight * 5).cleanUpper) MG over 5 minutes"]],
 		        ["" : ["type" : "header"]],
 		        ["Shock - 4J/kg" : ["type" : "text",
-		                            "content" : "Administer \(weight * 4) JOULES\n(Resume CPR immediately without checking rhythm)\nGive Adrenaline every other shock (3 - 5 minutes)"]],
+		                            "content" : "Administer \((weight * 4).cleanUpper) JOULES\n(Resume CPR immediately without checking rhythm)\nGive Adrenaline every other shock (3 - 5 minutes)"]],
 		        ["" : ["type" : "header"]],
 		        ["Shock - 4J/kg" : ["type" : "text",
-		                            "content" : "Administer \(weight * 4) JOULES\n(Resume CPR immediately without checking rhythm)\nGive Adrenaline and Amiodarone"]],
+		                            "content" : "Administer \((weight * 4).cleanUpper) JOULES\n(Resume CPR immediately without checking rhythm)\nGive Adrenaline and Amiodarone"]],
 		        ["" : ["type" : "header"]],
 		        ["Shock - 4J/kg" : ["type" : "text",
-		                            "content" : "Administer \(weight * 4) JOULES\n(Resume CPR immediately without checking rhythm)\nGive Adrenaline every other shock (3 - 5 minutes)"]],
+		                            "content" : "Administer \((weight * 4).cleanUpper) JOULES\n(Resume CPR immediately without checking rhythm)\nGive Adrenaline every other shock (3 - 5 minutes)"]],
 		        ["" : ["type" : "header"]],
 		        ["Shock - 4J/kg" : ["type" : "text",
-		                            "content" : "Administer \(weight * 4) JOULES\n(Resume CPR immediately without checking rhythm)\nGive Adrenaline and Amiodarone (3rd and Last Dose!)"]],
+		                            "content" : "Administer \((weight * 4).cleanUpper) JOULES\n(Resume CPR immediately without checking rhythm)\nGive Adrenaline and Amiodarone (3rd and Last Dose!)"]],
 		        ["" : ["type" : "header"]],
 		        ["Continue till return of pulse" : ["type": "text",
 		                                            "content": "Post resus care \n(Assist ventilation is required)"
@@ -160,13 +160,13 @@ class ContentManager: NSObject {
 		                         "content": "Give benzodiazepine, thiopentone or propofol in small incremental doses"]
 			],
 		        ["Midazolam IV - 0.05 MG kg" : ["type" : "text",
-		                                        "content": "Give \(weight * 0.05) MG"]
+		                                        "content": "Give \((weight * 0.05).cleanUpper) MG"]
 			],
 		        ["Thiopentone IV - 4MG kg" : ["type" : "text",
-		                                      "content": "Give \(weight * 4 ) MG"]
+		                                      "content": "Give \((weight * 4).cleanUpper ) MG"]
 			],
 		        ["Propofol IV - 1MG kg" : ["type" : "text",
-		                                   "content": "Give \(weight * 1) MG"]
+		                                   "content": "Give \((weight * 1).cleanUpper) MG"]
 			]]
 	}
 	
@@ -185,7 +185,7 @@ class ContentManager: NSObject {
 		                                         "content" : "Hypotension\nBradycardia\nTachyarrhythmias"
 			]],
 		        ["Hypotension Epinephrine IV" : ["type": "text",
-		                                         "content": "\(weight * 1) Micrograms (1 MICROgram/kg)\nOR\n\(weight*0.1)ML (0.1ML/kg)\n1: 100 000 Dilution"]],
+		                                         "content": "\((weight * 1).cleanUpper) Micrograms (1 MICROgram/kg)\nOR\n\((weight*0.1).cleanUpper)ML (0.1ML/kg)\n1: 100 000 Dilution"]],
 		        ["Arrhythmia" : ["type": "text",
 		                         "content": "Avoid Calcium Channel Blockers\nAvoid Beta Blockers\n*Ligocaine should NOT be used as an antiarrhythmic therapy!\nConsider IV Lipid Emulsion Therapy"]
 					
@@ -195,11 +195,11 @@ class ContentManager: NSObject {
 	static func LA_treatment_Intralipid (weight :Float) -> [[String : Any]]{
 		return [ ["Immediate" : ["type" : "header"]],
 		         ["BOLUS IV - 1.5ML/kg" : ["type" : "text",
-		                                   "content": "Administer \(weight * 1.5) ML over 1 Min"
+		                                   "content": "Administer \((weight * 1.5).cleanUpper) ML over 1 Min"
 					]],
 		         
 		         ["INFUSION IV - 15ML/kg" : ["type" : "text",
-		                                     "content": "Administer \(weight * 15) ML over 1 Hour"
+		                                     "content": "Administer \((weight * 15).cleanUpper) ML over 1 Hour"
 					]],
 		         ["After 5 Minutes (if cardiovascular stability isn't restored)" : ["type" : "header"]],
 		         ["BOLUS" : ["type" : "text",
@@ -207,10 +207,10 @@ class ContentManager: NSObject {
 					]],
 		         
 		         ["Double rate of infusion - 30ML/kg/H" : ["type" : "text",
-		                                     "content": "\(weight * 30) ML over 1 Hour"
+		                                     "content": "\((weight * 30).cleanUpper) ML over 1 Hour"
 					]],
 		         ["Do not exceed 30 ML/kg/H" : ["type" : "text",
-		                                                   "content": "\(weight * 12) ML"
+		                                                   "content": "\((weight * 12).cleanUpper) ML"
 					]]
 			
 		]
@@ -265,17 +265,17 @@ class ContentManager: NSObject {
 		        ["Salbutamol  0.5% Solution" : ["type":"text",
 		                                       "content": "Nebulise with 8L oxygen\n<25 kg: 2.5MG in 4ML of NS Q1-2H\n>25 kg: 5MG in 4ML of NS Q1-2H"]],
 		        ["Regular Insulin (Actrapid) via IV - 0.1 IU/kg" : ["type":"text",
-		                                       "content": "Administer \(weight * 0.1) IU\nOnset for 15-20 min\nDuration: 4-6 Hours\nRemarks:\n- Administer together with DEXTROSE\n- 1 IU to every 5g glucose\n- MAX: 10 IU per dose\n- Check H/C; may cause hypoglycemia\n- May be repeated"]],
+		                                       "content": "Administer \((weight * 0.1).cleanUpper) IU\nOnset for 15-20 min\nDuration: 4-6 Hours\nRemarks:\n- Administer together with DEXTROSE\n- 1 IU to every 5g glucose\n- MAX: 10 IU per dose\n- Check H/C; may cause hypoglycemia\n- May be repeated"]],
 		        ["Dextrose 10% via IV - 5 ML /kg" : ["type":"text",
-		                                                            "content": "Administer \(weight * 5)ML\nRemarks:\nAdminister together with Insulin"]],
+		                                                            "content": "Administer \((weight * 5).cleanUpper)ML\nRemarks:\nAdminister together with Insulin"]],
 		        ["Dextrose 50% via IV - 1 ML/kg" : ["type":"text",
-		                                                            "content": "Administer \(weight * 1) ML\nRemarks:\n- Administer via large bone peripheral IV or central venous access\n- Administer together with insulin"]],
+		                                                            "content": "Administer \((weight * 1).cleanUpper) ML\nRemarks:\n- Administer via large bone peripheral IV or central venous access\n- Administer together with insulin"]],
 		        ["10% Calcium gluconate via IV - 0.5 ML/kg" : ["type":"text",
-		                                                            "content": "Administer \(weight * 0.5) ML\nOnset 5-10min\nDuration:30-60min\nremarks:\n- May cause hyper calcaemia & tissue necrosis\n- May be repeated"]],
+		                                                            "content": "Administer \((weight * 0.5).cleanUpper) ML\nOnset 5-10min\nDuration:30-60min\nremarks:\n- May cause hyper calcaemia & tissue necrosis\n- May be repeated"]],
 		        ["10% Calcium Chloride via IV - 0.2 ML/kg" : ["type":"text",
-		                                                            "content": "Administer \(weight * 0.2) ML"]],
+		                                                            "content": "Administer \((weight * 0.2).cleanUpper) ML"]],
 		        ["8.4% NaHCO3 via IV - 1 ML/kg" : ["type":"text",
-		                                                            "content": "Administer \(weight * 1) ML\nRemarks:\n- Give over 10 min\n- DO NOT mix with calcium\n- Max: 50 mmol/dose"]]
+		                                                            "content": "Administer \((weight * 1).cleanUpper) ML\nRemarks:\n- Give over 10 min\n- DO NOT mix with calcium\n- Max: 50 mmol/dose"]]
 		        
 		]
 		
@@ -322,10 +322,10 @@ class ContentManager: NSObject {
 		                         "content" : "each vial contains 20MG of dantrolene\nDissolve 1 vial in 60 ML sterile water\ndantrolene potentiates neuromuscular blockers"
 					]],
 		        ["Application of Dantrolene - 2.5 MG kg" : ["type" : "text",
-		                                       "content" : "Administer \(weight * 2.5) MG of Dantrolene intravenously and rapidly"
+		                                       "content" : "Administer \((weight * 2.5).cleanUpper) MG of Dantrolene intravenously and rapidly"
 					]],
 		        ["subsequent dantrolene boluses" : ["type" : "text",
-		                                            "content" : "\(weight * 1) MG intravenously \n(1 MG/kg)\n(every 5 minutes til symptoms subside or up to total of 10 MG kg)"
+		                                            "content" : "\((weight * 1).cleanUpper) MG intravenously \n(1 MG/kg)\n(every 5 minutes til symptoms subside or up to total of 10 MG kg)"
 					]]
 		        
 		]
