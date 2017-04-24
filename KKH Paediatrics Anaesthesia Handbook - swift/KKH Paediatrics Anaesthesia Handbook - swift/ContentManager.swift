@@ -82,7 +82,7 @@ class ContentManager: NSObject {
 		        ["Administering Adrenaline" : ["type" : "text",
 		                                       "content" : "IV/IO : Administer \n\((weight * 10).cleanUpper) Micrograms \n \((weight * 0.1).cleanUpper)ML 1:10 000\n\nETT: Administer\n\((weight * 100).cleanUpper) Micrograms\n\((weight * 0.1).cleanUpper)ML 1: 1000"]],
 		        ["Exclude H's and T's" : ["type" : "text",
-		                                  "content" : "HypoVolaemia\n   Hypoxia\n   Hydrogen Ion (Acidosis)\n   Hypokalaemia\n   HypoGlycaemia\n   HypoThermia\n   Trauma\n   Toxins\n   Tamponade\n   Tension Pneumothorax\n   Thrombosis (Pulmonary or Coronary)"]]
+		                                  "content" : "  - HypoVolaemia\n  - Hypoxia\n  - Hydrogen Ion (Acidosis)\n  - Hypokalaemia\n  - HypoGlycaemia\n  - HypoThermia\n  - Trauma\n  - Toxins\n  - Tamponade\n  - Tension Pneumothorax\n  - Thrombosis (Pulmonary or Coronary)"]]
 		]
 	}
 	
