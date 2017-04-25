@@ -336,8 +336,8 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        var resArray =  dataTree.map{$0.name}
-        print (resArray)
+        let resArray =  dataTree.filter{$0.name.lowercased().contains(textField.text!.lowercased())}
+        print (resArray.map{$0.name})
         
         return true
     }
