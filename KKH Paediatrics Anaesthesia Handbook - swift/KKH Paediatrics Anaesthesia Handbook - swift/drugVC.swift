@@ -235,6 +235,8 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
     
     var dataTree : [dataobject]! = []
     
+    var dispArray : [dataobject]! = []
+    
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var topbar: UIView!
     @IBOutlet weak var weightLabel: UILabel!
@@ -324,6 +326,7 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
         })
         
         dataTree.sort {$0.name < $1.name}
+        dispArray = dataTree
         setupTreeView()
     
     }
@@ -335,11 +338,16 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
 //MARK: - Textfield as searchfield
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
         let resArray =  dataTree.filter{$0.name.lowercased().contains(textField.text!.lowercased())}
         print (resArray.map{$0.name})
-        
+        dispArray = resArray
+        treeView.reloadData()
         return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        dispArray = dataTree
+        treeView.reloadData()
     }
     
 //MARK: - RATreeview memes
@@ -376,7 +384,7 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
             return item.children.count
         }
         else{
-            return (dataTree?.count)!
+            return (dispArray?.count)!
         }
     }
     
@@ -386,7 +394,7 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
             return item.children[index]
         }
         else{
-            return dataTree[index]
+            return dispArray[index]
         }
     }
     
