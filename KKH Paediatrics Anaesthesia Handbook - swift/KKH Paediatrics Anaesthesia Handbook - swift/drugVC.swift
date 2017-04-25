@@ -231,7 +231,7 @@ class drugSendVC: UIViewController, UIWebViewDelegate {
 }
 
 
-class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSource {
+class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSource, UITextFieldDelegate {
     
     var dataTree : [dataobject]! = []
     
@@ -332,11 +332,20 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
         self.dismiss(animated: true, completion: nil)
     }
     
+//MARK: - Textfield as searchfield
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        var resArray =  dataTree.map{$0.name}
+        print (resArray)
+        
+        return true
+    }
     
 //MARK: - RATreeview memes
     var treeView = RATreeView()
     func setupTreeView () {
-        treeView = RATreeView(frame:CGRect.init(x: 0, y: self.topbar.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.size.height))
+        treeView = RATreeView(frame:CGRect.init(x: 0, y: 1.4 * self.topbar.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.size.height))
         treeView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         treeView.register(UINib(nibName: String(describing: CommonDrugsTablecell.self), bundle: nil), forCellReuseIdentifier: String(describing: CommonDrugsTablecell.self))
         treeView.dataSource = self
@@ -345,6 +354,7 @@ class commonDrugtables: UIViewController, RATreeViewDelegate, RATreeViewDataSour
         treeView.separatorColor = .clear
         treeView.backgroundColor = .clear
         view.addSubview(treeView)
+        view.sendSubview(toBack: treeView)
     }
     
     func treeView(_ treeView: RATreeView, heightForRowForItem item: Any) -> CGFloat {
