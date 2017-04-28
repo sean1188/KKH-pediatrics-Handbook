@@ -131,7 +131,7 @@ class DrugCalculationsManager: NSObject, MFMailComposeViewControllerDelegate {
                 dataLines[2] = dataLines[2].replacingOccurrences(of: "XX", with: "\(weight)")
                 for i in 3 ..< dataLines.count {
                     if multipliers[i + 1] != nil {
-                        dataLines[i] = dataLines[i].replacingOccurrences(of: "XX", with: "\(Double(weight) * multipliers[i + 1]!)")
+                        dataLines[i] = dataLines[i].replacingOccurrences(of: "XX", with: truncateIfWhole(Double(weight) * multipliers[i + 1]!))
                     }
                 }
                 

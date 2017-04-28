@@ -46,7 +46,7 @@ class ContentManager: NSObject {
 		        ["Epinephrine IV/IO BOLUS" :  ["type" : "text",
 		                                       "content" : "\(weight.cleanUpper) Micrograms (1 Micrograms/kg) \nOR \n \((weight * 0.1).cleanUpper) ML (0.1ML/kg)\n1:100 000 DILUTION\nMax: 1000 Micrograms"]],
 		        ["Epinephrine IV/IO Infusion" :  ["type" : "text",
-		                                          "content" : "0.02 - 0.2 MICROgram/kg/min"]],
+		                                          "content" : "0.02 - 0.2 Microgram/kg/min"]],
 		        
 		        ["Secondary Treatment Drugs" : ["type" : "header"]],
 		        ["Anti-inflammatory" :  ["type" : "text",
@@ -58,7 +58,7 @@ class ContentManager: NSObject {
 		        ["Vasopressin IV/IO BOLUS - 0.03 units/kg" :  ["type" : "text",
 		                                                       "content" : "\((weight * 0.03).cleanUpper) Units"]],
 		        ["NOREPINEPHRINE infusion" :  ["type" : "text",
-		                                       "content" : "0.01 - 0.20 MICROgram/kg/MIN"]],
+		                                       "content" : "0.01 - 0.20 Microgram/kg/MIN"]],
 		        
 		        ["For Bronchospasm" : ["type" : "header"]],
 		        ["Salbutamol Inhaler" :  ["type" : "text",
@@ -185,7 +185,7 @@ class ContentManager: NSObject {
 		                                         "content" : "Hypotension\nBradycardia\nTachyarrhythmias"
 			]],
 		        ["Hypotension Epinephrine IV" : ["type": "text",
-		                                         "content": "\((weight * 1).cleanUpper) Micrograms (1 MICROgram/kg)\nOR\n\((weight*0.1).cleanUpper)ML (0.1ML/kg)\n1: 100 000 Dilution"]],
+		                                         "content": "\((weight * 1).cleanUpper) Micrograms (1 Microgram/kg)\nOR\n\((weight*0.1).cleanUpper)ML (0.1ML/kg)\n1: 100 000 Dilution"]],
 		        ["Arrhythmia" : ["type": "text",
 		                         "content": "Avoid Calcium Channel Blockers\nAvoid Beta Blockers\n*Ligocaine should NOT be used as an antiarrhythmic therapy!\nConsider IV Lipid Emulsion Therapy"]
 					

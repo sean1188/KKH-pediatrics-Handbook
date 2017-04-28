@@ -7,7 +7,7 @@
                 "methods": {
                     "DEFAULT": {
                         "name": "DEFAULT",
-                        "remarks": "for SVT: Child < 50 kg BW: 0.1mg/kg first push (rapid IV bolus over 1 second) then 0.2 mg/kg second push; Child > 50 kg BW: 6 mg first push then 12 mg second push. \nGive through IV access closest to heart.",
+                        "remarks": "for SVT: Child < 50 kg BW: 0.1mg/kg first push (rapid IV bolus over 1 second) then 0.2 mg/kg second push; Child > 50 irst push then 12 mg second push. \nGive through IV access closest to heart.",
                         "dose": "0.1",
                         "unit": "MG"
                     }
@@ -23,9 +23,9 @@
                 "methods": {
                     "BOLUS": {
                         "name": "BOLUS",
-                        "remarks": "equivalent to 0.1 ml/ kg 1:10 000 (10 MICROgram/kg) for Cardiac Arrest;  \nGive 0.1 ml/ kg 1:100 000 (1 MICROgram/kg) for Anaphylaxis",
+                        "remarks": "equivalent to 0.1 ml/ kg 1:10 000 (10 Microgram/kg) for Cardiac Arrest;  \nGive 0.1 ml/ kg 1:100 000 (1 Microgram/kg) for Anaphylaxis",
                         "dose": "10",
-                        "unit": "MICROgram"
+                        "unit": "Microgram"
                     }
                 }
             },
@@ -47,7 +47,7 @@
                         "name": "DEFAULT",
                         "remarks": "equivalent to 1.0 ml/ kg 1:10 000 (10X  IV dose)",
                         "dose": "100",
-                        "unit": "MICROgram"
+                        "unit": "Microgram"
                     }
                 }
             }
@@ -128,7 +128,7 @@
                 "methods": {
                     "BOLUS (INTUBATION)": {
                         "name": "BOLUS (INTUBATION)",
-                        "remarks": "then IV 0.1- 0.2 MG/ KG when required or IN INFUSION at 5- 10 MICROgram/ kg/ min",
+                        "remarks": "then IV 0.1- 0.2 MG/ KG when required or IN INFUSION at 5- 10 Microgram/ kg/ min",
                         "dose": "0.5",
                         "unit": "MG"
                     }
@@ -332,7 +332,7 @@
                         "name": "BOLUS",
                         "remarks": "given over 20 minutes",
                         "dose": "1",
-                        "unit": "MICROgram"
+                        "unit": "Microgram"
                     },
                     "INFUSION": {
                         "name": "INFUSION",
@@ -348,7 +348,7 @@
                         "name": "DEFAULT",
                         "remarks": "for sedation/premedication; can be given up to 2 mcg/kg BW; onset time 15-30 minutes",
                         "dose": "1",
-                        "unit": "MICROgram"
+                        "unit": "Microgram"
                     }
                 }
             }
@@ -443,19 +443,19 @@
                         "name": "BOLUS",
                         "remarks": "can be given up to 3 mcg/kg BW q30 min",
                         "dose": "1",
-                        "unit": "MICROgram"
+                        "unit": "Microgram"
                     },
                     "INFUSION     (<10 kg BW)": {
                         "name": "INFUSION     (<10 kg BW)",
                         "remarks": "To run at 1- 2 ml/ H (2- 4 mcg/kg/H)",
                         "dose": "100 mcg/kg in 50 ml",
-                        "unit": "MICROgram/ 50 ML"
+                        "unit": "Microgram/ 50 ML"
                     },
                     "INFUSION      (>10 kg BW)": {
                         "name": "INFUSION      (>10 kg BW)",
                         "remarks": "To run at 0.04- 0.08 ml/ H (2- 4 mcg/kg/H)",
                         "dose": "50 mcg/ ml",
-                        "unit": "MICROgram/ML"
+                        "unit": "Microgram/ML"
                     }
                 }
             }
@@ -469,9 +469,9 @@
                 "methods": {
                     "BOLUS": {
                         "name": "BOLUS",
-                        "remarks": "reverse effects of benzodiazepines; 5 MICROgram/kg repeated every 60 seconds to max total 40 MICROgram/ kg",
+                        "remarks": "reverse effects of benzodiazepines; 5 Microgram/kg repeated every 60 seconds to max total 40 Microgram/ kg",
                         "dose": "5",
-                        "unit": "MICROgram"
+                        "unit": "Microgram"
                     },
                     "INFUSION": {
                         "name": "INFUSION",
@@ -923,7 +923,7 @@
                         "name": "BOLUS",
                         "remarks": "",
                         "dose": "5",
-                        "unit": "MICROgram"
+                        "unit": "Microgram"
                     }
                 }
             }
@@ -939,7 +939,7 @@
                         "name": "BOLUS",
                         "remarks": "purpose: Alpha Block (↓ BP); can be given up to 100 mcg/kg;",
                         "dose": "50",
-                        "unit": "MICROgram"
+                        "unit": "Microgram"
                     }
                 }
             }

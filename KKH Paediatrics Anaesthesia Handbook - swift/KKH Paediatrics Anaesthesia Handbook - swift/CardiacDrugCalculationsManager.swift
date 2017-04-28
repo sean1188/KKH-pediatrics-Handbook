@@ -43,24 +43,24 @@ class CardiacDrugCalculationsManager: NSObject, MFMailComposeViewControllerDeleg
         
         26: 0.3,
         27: 3,
-        28: 50,
+        
         29: 30,
         30: 15,
         31: 1,
         32: 3,
-        33: 50,
+        
         34: 15,
         
         36: 50,
-        37: 2000,
+        
         
         39: 1,
-        40: 50,
+        
         41: 10,
 
         43: 3,
         44: 250,
-        45: 25,
+        45: 25
     ]
     var dataLines: [String]!
     
@@ -80,8 +80,10 @@ class CardiacDrugCalculationsManager: NSObject, MFMailComposeViewControllerDeleg
                 }
                 dataLines[1] = dataLines[1].replacingOccurrences(of: "XX", with: "\(weight)")
                 for i in 3 ..< dataLines.count {
+                    print(dataLines[i])
                     if multipliers[i + 1] != nil {
-                        dataLines[i] = dataLines[i].replacingOccurrences(of: "XX", with: "\(Double(weight) * multipliers[i + 1]!)")
+                        print(dataLines[i])
+                        dataLines[i] = dataLines[i].replacingOccurrences(of: "XX", with: truncateIfWhole(Double(weight) * multipliers[i + 1]!))
                     }
                 }
                 
@@ -149,4 +151,11 @@ class CardiacDrugCalculationsManager: NSObject, MFMailComposeViewControllerDeleg
             print(array[i])
         }
     }
+}
+
+func truncateIfWhole(_ x: Double) -> String {
+    if Double(Int(x)) == x {
+        return "\(Int(x))"
+    }
+    return "\(x)"
 }

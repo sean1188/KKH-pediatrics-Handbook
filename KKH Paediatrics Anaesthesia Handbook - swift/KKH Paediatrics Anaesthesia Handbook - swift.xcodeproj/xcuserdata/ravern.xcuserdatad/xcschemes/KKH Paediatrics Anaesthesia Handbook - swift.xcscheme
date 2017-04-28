@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0830"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "54C40F4F1E858F3B000E0CF8"
+               BuildableName = "KKH Paediatrics Anaesthesia Handbook - swift.app"
+               BlueprintName = "KKH Paediatrics Anaesthesia Handbook - swift"
+               ReferencedContainer = "container:KKH Paediatrics Anaesthesia Handbook - swift.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "54C40F631E858F3C000E0CF8"
+               BuildableName = "KKH Paediatrics Anaesthesia Handbook - swiftTests.xctest"
+               BlueprintName = "KKH Paediatrics Anaesthesia Handbook - swiftTests"
+               ReferencedContainer = "container:KKH Paediatrics Anaesthesia Handbook - swift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "54C40F6E1E858F3C000E0CF8"
+               BuildableName = "KKH Paediatrics Anaesthesia Handbook - swiftUITests.xctest"
+               BlueprintName = "KKH Paediatrics Anaesthesia Handbook - swiftUITests"
+               ReferencedContainer = "container:KKH Paediatrics Anaesthesia Handbook - swift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "54C40F4F1E858F3B000E0CF8"
+            BuildableName = "KKH Paediatrics Anaesthesia Handbook - swift.app"
+            BlueprintName = "KKH Paediatrics Anaesthesia Handbook - swift"
+            ReferencedContainer = "container:KKH Paediatrics Anaesthesia Handbook - swift.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "54C40F4F1E858F3B000E0CF8"
+            BuildableName = "KKH Paediatrics Anaesthesia Handbook - swift.app"
+            BlueprintName = "KKH Paediatrics Anaesthesia Handbook - swift"
+            ReferencedContainer = "container:KKH Paediatrics Anaesthesia Handbook - swift.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "54C40F4F1E858F3B000E0CF8"
+            BuildableName = "KKH Paediatrics Anaesthesia Handbook - swift.app"
+            BlueprintName = "KKH Paediatrics Anaesthesia Handbook - swift"
+            ReferencedContainer = "container:KKH Paediatrics Anaesthesia Handbook - swift.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

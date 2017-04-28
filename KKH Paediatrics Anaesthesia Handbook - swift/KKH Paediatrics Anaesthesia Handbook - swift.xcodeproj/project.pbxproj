@@ -280,8 +280,8 @@
 		542ED7B81E8BB2EA0002FD43 /* calculators */ = {
 			isa = PBXGroup;
 			children = (
-				546DBB9A1E8CF0CB00BAF26E /* DrugCalculationsManager.swift */,
 				546DBBA01E8CFA5900BAF26E /* no touch :( */,
+				546DBB9A1E8CF0CB00BAF26E /* DrugCalculationsManager.swift */,
 				546DBB921E8CF0B900BAF26E /* CardiacDrugCalculationsManager.swift */,
 				546DBB8E1E8CF0A900BAF26E /* ScoliosisDrugCalculationsManager.swift */,
 				542ED7BD1E8BB9B00002FD43 /* calculators.storyboard */,
