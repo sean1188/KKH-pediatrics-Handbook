@@ -21,6 +21,7 @@ function processRow(data) {
         console.log('ERROR: DUPLICATE METHOD FOUND');
         process.exit(2849687294);
       } else {
+        if (data.METHOD === "") data.METHOD = "BOLUS";
         // Since it doesn't exist, create the route and add method to it.
         drugs[data.DRUG].routes[data.ROUTE].methods[data.METHOD] = {
           name: data.METHOD
@@ -54,6 +55,7 @@ function addRoute(data, drug) {
 }
 
 function addMethod(data, route) {
+  if (data.METHOD === "") data.METHOD = "BOLUS";
   drugs[data.DRUG].routes[data.ROUTE].methods[data.METHOD] = {
     name: data.METHOD
   };
@@ -63,7 +65,7 @@ function addMethod(data, route) {
 function addData(data, method) {
   method.remarks = data.REMARKS;
 
-  if (isNaN(method.DOSE)) {
+  if (isNaN(data.DOSEPERKG)) {
     method.content = data.DOSEPERKG;
   } else {
     method.unit = data.UNIT;
