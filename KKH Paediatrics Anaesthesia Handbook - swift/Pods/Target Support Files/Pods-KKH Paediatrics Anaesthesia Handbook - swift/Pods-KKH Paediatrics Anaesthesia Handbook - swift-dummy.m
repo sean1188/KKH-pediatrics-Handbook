@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift : NSObject
-@end
-@implementation PodsDummy_Pods_KKH_Paediatrics_Anaesthesia_Handbook___swift
-@end

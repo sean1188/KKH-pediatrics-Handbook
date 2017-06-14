@@ -17,7 +17,7 @@
         <array key="Cabin-Regular.otf">
             <string>Cabin-Regular</string>
         </array>
-        <array key="fontawesome-webfont.ttf">
+        <array key="FontAwesome.otf">
             <string>FontAwesome</string>
         </array>
     </customFonts>
@@ -41,7 +41,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lqm-OA-QbN">
-                                <rect key="frame" x="16" y="37" width="42" height="32"/>
+                                <rect key="frame" x="16" y="37.5" width="42" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="iSy-Uk-nXo"/>
                                 </constraints>
@@ -235,7 +235,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Weight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDi-hq-qPK">
-                                <rect key="frame" x="141" y="153" width="95.5" height="26"/>
+                                <rect key="frame" x="140.5" y="153" width="95.5" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="ewR-RY-ogS"/>
                                 </constraints>
@@ -299,7 +299,7 @@
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z40-gG-rJz">
-                                <rect key="frame" x="131" y="261" width="115.5" height="26"/>
+                                <rect key="frame" x="130.5" y="261" width="115.5" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="XyF-ph-aok"/>
                                 </constraints>
