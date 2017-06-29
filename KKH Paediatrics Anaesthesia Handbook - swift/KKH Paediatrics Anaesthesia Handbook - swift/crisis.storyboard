@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -20,7 +20,7 @@
         <array key="CabinCondensed-Regular.ttf">
             <string>CabinCondensed</string>
         </array>
-        <array key="fontawesome-webfont.ttf">
+        <array key="FontAwesome.otf">
             <string>FontAwesome</string>
         </array>
     </customFonts>
@@ -270,7 +270,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vo8-S3-jZt">
-                                                    <rect key="frame" x="309" y="43" width="38" height="33"/>
+                                                    <rect key="frame" x="309" y="43" width="38" height="37"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="38" id="keW-Dx-dQ1"/>
                                                     </constraints>
@@ -283,7 +283,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wxo-2b-e1S">
-                                                    <rect key="frame" x="309" y="169.5" width="38" height="32.5"/>
+                                                    <rect key="frame" x="309" y="181.5" width="38" height="36.5"/>
                                                     <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
                                                     <state key="normal" title="">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -293,7 +293,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RH3-L5-veI">
-                                                    <rect key="frame" x="309" y="84" width="38" height="32.5"/>
+                                                    <rect key="frame" x="309" y="88" width="38" height="36.5"/>
                                                     <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
                                                     <state key="normal" title="">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -303,19 +303,19 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Declare an emergency" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1j-dz-2xN">
-                                                    <rect key="frame" x="8" y="43" width="300" height="33"/>
+                                                    <rect key="frame" x="8" y="43" width="300" height="37"/>
                                                     <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call for help " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XWf-hm-dxf">
-                                                    <rect key="frame" x="8" y="84" width="300" height="32.5"/>
+                                                    <rect key="frame" x="8" y="88" width="300" height="36.5"/>
                                                     <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sh7-eC-fs1">
-                                                    <rect key="frame" x="309" y="124.5" width="38" height="33"/>
+                                                    <rect key="frame" x="309" y="132.5" width="38" height="37"/>
                                                     <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
                                                     <state key="normal" title="">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -325,13 +325,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Increase FiO2 to 100%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jED-qD-dbJ">
-                                                    <rect key="frame" x="8" y="124.5" width="300" height="33"/>
+                                                    <rect key="frame" x="8" y="132.5" width="300" height="37"/>
                                                     <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WR2-Bd-PDt">
-                                                    <rect key="frame" x="309" y="210" width="38" height="30.5"/>
+                                                    <rect key="frame" x="309" y="226" width="38" height="27.5"/>
                                                     <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
                                                     <state key="normal" title="">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -341,13 +341,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intubate if necessary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cCH-NU-hg2">
-                                                    <rect key="frame" x="8" y="210" width="300" height="30.5"/>
+                                                    <rect key="frame" x="8" y="226" width="300" height="27.5"/>
                                                     <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huN-z7-lFH">
-                                                    <rect key="frame" x="309" y="248.5" width="38" height="30.5"/>
+                                                    <rect key="frame" x="309" y="261.5" width="38" height="27"/>
                                                     <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
                                                     <state key="normal" title="">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -357,19 +357,19 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obtain IV/IO access" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z9N-uy-YnV">
-                                                    <rect key="frame" x="8" y="248.5" width="300" height="30.5"/>
+                                                    <rect key="frame" x="8" y="261.5" width="300" height="27"/>
                                                     <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assess AIRWAY, BREATHING, CIRCULATION (ABCs)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jrb-bJ-r7X">
-                                                    <rect key="frame" x="8" y="169.5" width="300" height="32.5"/>
+                                                    <rect key="frame" x="8" y="181.5" width="300" height="36.5"/>
                                                     <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xN3-69-UnB">
-                                                    <rect key="frame" x="309" y="287" width="38" height="30"/>
+                                                    <rect key="frame" x="309" y="296.5" width="38" height="27"/>
                                                     <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
                                                     <state key="normal" title="">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -379,13 +379,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn OFF anaesthetic agents" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZtN-go-hJH">
-                                                    <rect key="frame" x="8" y="287" width="300" height="30"/>
+                                                    <rect key="frame" x="8" y="296.5" width="300" height="27"/>
                                                     <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTz-O4-EPa">
-                                                    <rect key="frame" x="309" y="325" width="38" height="30.5"/>
+                                                    <rect key="frame" x="309" y="331.5" width="38" height="27"/>
                                                     <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
                                                     <state key="normal" title="">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -395,13 +395,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elevate Legs if there is hypotension" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I0c-u8-jqC">
-                                                    <rect key="frame" x="8" y="325" width="300" height="30.5"/>
+                                                    <rect key="frame" x="8" y="331.5" width="300" height="27"/>
                                                     <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5b-w2-csi">
-                                                    <rect key="frame" x="309" y="363.5" width="38" height="30.5"/>
+                                                    <rect key="frame" x="309" y="366.5" width="38" height="27.5"/>
                                                     <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="21"/>
                                                     <state key="normal" title="">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -411,7 +411,7 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start CPR if neccessary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vZH-nN-ggI">
-                                                    <rect key="frame" x="8" y="363.5" width="300" height="30.5"/>
+                                                    <rect key="frame" x="8" y="366.5" width="300" height="27.5"/>
                                                     <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -2649,27 +2649,17 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4t-hS-aUQ">
                                 <rect key="frame" x="16" y="93" width="343" height="367"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6V-96-PP8">
-                                        <rect key="frame" x="125" y="17" width="94" height="30.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start BLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6V-96-PP8">
+                                        <rect key="frame" x="96.5" y="17" width="150" height="31"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="94" id="Wf1-Ff-9XD"/>
+                                            <constraint firstAttribute="width" constant="150" id="Wf1-Ff-9XD"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Cabin-Bold" family="Cabin" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start BLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvM-PF-dKk">
-                                        <rect key="frame" x="136" y="55.5" width="73" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="7ts-p1-12d"/>
-                                            <constraint firstAttribute="width" constant="73" id="OMs-xy-o2C"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give 100% Oxygen: Turn off all anesthesics" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAC-dC-gMs">
-                                        <rect key="frame" x="8" y="84.5" width="328" height="55"/>
+                                        <rect key="frame" x="8" y="68" width="310" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="6Qf-aI-tqW"/>
                                         </constraints>
@@ -2678,13 +2668,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Rhythm:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhF-39-nJK">
-                                        <rect key="frame" x="91" y="147.5" width="163" height="30.5"/>
+                                        <rect key="frame" x="82" y="131" width="163" height="30.5"/>
                                         <fontDescription key="fontDescription" name="Cabin-Bold" family="Cabin" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Des-Ll-YwE">
-                                        <rect key="frame" x="38" y="188" width="268" height="75.5"/>
+                                        <rect key="frame" x="38" y="171.5" width="250" height="84"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="15"/>
                                         <state key="normal" title="NON-SHOCKABLE: Asystole/PEA">
@@ -2695,7 +2685,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYg-Yx-Rc7">
-                                        <rect key="frame" x="38" y="271.5" width="268" height="75.5"/>
+                                        <rect key="frame" x="38" y="263.5" width="250" height="83.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Cabin-Regular" family="Cabin" pointSize="15"/>
                                         <state key="normal" title="SHOCKABLE: VF / pulseless VT">
@@ -2708,24 +2698,21 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.066288889909999996" green="0.53878046879999997" blue="0.94251665610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="d6V-96-PP8" firstAttribute="centerX" secondItem="cvM-PF-dKk" secondAttribute="centerX" id="0st-EX-19l"/>
                                     <constraint firstItem="jAC-dC-gMs" firstAttribute="centerX" secondItem="BhF-39-nJK" secondAttribute="centerX" id="HfB-9o-Vdx"/>
                                     <constraint firstItem="Des-Ll-YwE" firstAttribute="height" secondItem="PYg-Yx-Rc7" secondAttribute="height" id="JiO-Qk-4Q3"/>
                                     <constraint firstItem="d6V-96-PP8" firstAttribute="top" secondItem="c4t-hS-aUQ" secondAttribute="top" constant="17" id="Lca-h8-lD8"/>
-                                    <constraint firstItem="cvM-PF-dKk" firstAttribute="top" secondItem="d6V-96-PP8" secondAttribute="bottom" constant="8" symbolic="YES" id="Ovq-Zu-SnP"/>
                                     <constraint firstItem="Des-Ll-YwE" firstAttribute="leading" secondItem="PYg-Yx-Rc7" secondAttribute="leading" id="PEW-co-L7W"/>
                                     <constraint firstItem="BhF-39-nJK" firstAttribute="top" secondItem="jAC-dC-gMs" secondAttribute="bottom" constant="8" symbolic="YES" id="Rfg-9V-9KR"/>
-                                    <constraint firstItem="cvM-PF-dKk" firstAttribute="centerX" secondItem="jAC-dC-gMs" secondAttribute="centerX" id="UMW-pn-OBq"/>
                                     <constraint firstItem="PYg-Yx-Rc7" firstAttribute="centerX" secondItem="Des-Ll-YwE" secondAttribute="centerX" id="a23-Ve-Ini"/>
                                     <constraint firstItem="Des-Ll-YwE" firstAttribute="trailing" secondItem="PYg-Yx-Rc7" secondAttribute="trailing" id="aGi-qK-pSH"/>
                                     <constraint firstAttribute="bottom" secondItem="PYg-Yx-Rc7" secondAttribute="bottom" constant="20" id="c6X-m2-rJ3"/>
                                     <constraint firstItem="BhF-39-nJK" firstAttribute="centerX" secondItem="Des-Ll-YwE" secondAttribute="centerX" id="cmC-uz-kbA"/>
                                     <constraint firstItem="Des-Ll-YwE" firstAttribute="top" secondItem="BhF-39-nJK" secondAttribute="bottom" constant="10" id="eNY-fS-Eaa"/>
                                     <constraint firstItem="PYg-Yx-Rc7" firstAttribute="top" secondItem="Des-Ll-YwE" secondAttribute="bottom" constant="8" symbolic="YES" id="eXD-sc-Cgf"/>
+                                    <constraint firstItem="jAC-dC-gMs" firstAttribute="top" secondItem="d6V-96-PP8" secondAttribute="bottom" constant="20" id="hLl-uy-6wP"/>
                                     <constraint firstItem="Des-Ll-YwE" firstAttribute="leading" secondItem="c4t-hS-aUQ" secondAttribute="leading" constant="38" id="jM3-li-EcM"/>
                                     <constraint firstItem="jAC-dC-gMs" firstAttribute="leading" secondItem="c4t-hS-aUQ" secondAttribute="leadingMargin" id="pqZ-1y-1Nc"/>
                                     <constraint firstItem="d6V-96-PP8" firstAttribute="centerX" secondItem="c4t-hS-aUQ" secondAttribute="centerX" id="sgV-Zq-MVG"/>
-                                    <constraint firstItem="jAC-dC-gMs" firstAttribute="top" secondItem="cvM-PF-dKk" secondAttribute="bottom" constant="8" symbolic="YES" id="uRI-ef-m86"/>
                                 </constraints>
                             </view>
                         </subviews>

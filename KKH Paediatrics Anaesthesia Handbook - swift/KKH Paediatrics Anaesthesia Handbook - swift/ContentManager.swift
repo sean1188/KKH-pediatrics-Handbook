@@ -50,7 +50,7 @@ class ContentManager: NSObject {
 		        
 		        ["Secondary Treatment Drugs" : ["type" : "header"]],
 		        ["Anti-inflammatory" :  ["type" : "text",
-		                                 "content" : "Hydrocortisone IV/IO BOLUS (2 MG kg)\n\((weight*2).cleanUpper) MG"]],
+		                                 "content" : "Hydrocortisone IV/IO BOLUS (2 MG/kg)\n\((weight*2).cleanUpper) MG"]],
 		        
 		        ["Hypotension Persisting despite epinephrine?" : ["type" : "header"]],
 		        ["Phenylephrine IV/IO BOLUS - 10 Micrograms/kg" :  ["type" : "text",
@@ -64,7 +64,7 @@ class ContentManager: NSObject {
 		        ["Salbutamol Inhaler" :  ["type" : "text",
 		                                  "content" : " 4 - 10 puffs"]],
 		        ["Aminophylline IV/IO SLOW BOLUS (1 Hour)" :  ["type" : "text",
-		                                                       "content" : "\((weight * 10).cleanUpper) MG \n(10 MG kg)"]],
+		                                                       "content" : "\((weight * 10).cleanUpper) MG \n(10 MG/kg)"]],
 		        
 		        ["For Antihistamine" : ["type" : "header"]],
 		        ["Diphenhydramine IV/IO SLOW BOLUS" :  ["type" : "text",
@@ -115,7 +115,7 @@ class ContentManager: NSObject {
 		        ["Adrenaline IV/IO: 10 Micrograms/kg" : ["type" : "text",
 		                                                 "content" : "\((weight * 10).cleanUpper) Micrograms\n \((weight * 0.1).cleanUpper)ML  1: 10 000 Dilution"]],
 		        ["" : ["type" : "header"]],
-		        ["Amiodarone: 5 MG kg" : ["type" : "text",
+		        ["Amiodarone: 5 MG/kg" : ["type" : "text",
 		                                          "content" : "\((weight * 5).cleanUpper) MG over 5 minutes"]],
 		        ["" : ["type" : "header"]],
 		        ["Shock - 4J/kg" : ["type" : "text",
@@ -209,7 +209,7 @@ class ContentManager: NSObject {
 		         ["Double rate of infusion - 30ML/kg/H" : ["type" : "text",
 		                                     "content": "\((weight * 30).cleanUpper) ML over 1 Hour"
 					]],
-		         ["Do not exceed 30 ML/kg/H" : ["type" : "text",
+		         ["Do not exceed 12 ML/kg" : ["type" : "text",
 		                                                   "content": "\((weight * 12).cleanUpper) ML"
 					]]
 			

@@ -128,7 +128,7 @@
           "BOLUS (INTUBATION)": {
             "name": "BOLUS (INTUBATION)",
             "remarks": "then IV 0.1- 0.2 MG/kg when required or IV INFUSION at 5- 10 MICROgram/kg/min",
-            "unit": "MG",
+            "unit": "MG/kg",
             "dose": "0.5"
           }
         }
@@ -175,7 +175,7 @@
           "BOLUS": {
             "name": "BOLUS",
             "remarks": "",
-            "unit": "ML",
+            "unit": "ML/kg",
             "dose": "0.2"
           }
         }
