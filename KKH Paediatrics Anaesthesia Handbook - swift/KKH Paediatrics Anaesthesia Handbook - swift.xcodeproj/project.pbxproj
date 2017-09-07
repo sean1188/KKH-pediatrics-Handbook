@@ -11,8 +11,8 @@
 		541058EF1E8E399B0079A20A /* DataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541058EE1E8E399B0079A20A /* DataObject.swift */; };
 		541058F31E8E42E40079A20A /* CommonDrugsTablecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541058F11E8E42E40079A20A /* CommonDrugsTablecell.swift */; };
 		541058F41E8E42E40079A20A /* CommonDrugsTablecell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541058F21E8E42E40079A20A /* CommonDrugsTablecell.xib */; };
-		542ED7BA1E8BB3060002FD43 /* CalcMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542ED7B91E8BB3060002FD43 /* CalcMainVC.swift */; };
-		542ED7BC1E8BB9360002FD43 /* BMIvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542ED7BB1E8BB9360002FD43 /* BMIvc.swift */; };
+		542ED7BA1E8BB3060002FD43 /* Calc Main View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542ED7B91E8BB3060002FD43 /* Calc Main View Controller.swift */; };
+		542ED7BC1E8BB9360002FD43 /* BMI View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542ED7BB1E8BB9360002FD43 /* BMI View Controller.swift */; };
 		542ED7BE1E8BB9B00002FD43 /* calculators.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542ED7BD1E8BB9B00002FD43 /* calculators.storyboard */; };
 		543480871E864ABC004D837F /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543480861E864ABC004D837F /* extensions.swift */; };
 		5436971A1E8A4BA0001D80F4 /* HandbookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543697191E8A4BA0001D80F4 /* HandbookCollectionViewCell.swift */; };
@@ -85,7 +85,7 @@
 		5450DE5C1E87D86500EBBF55 /* tabControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5450DE5B1E87D86500EBBF55 /* tabControllerVC.swift */; };
 		5450DE631E87D9A200EBBF55 /* NavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5450DE621E87D9A200EBBF55 /* NavVC.swift */; };
 		546DBB8B1E8CDC6D00BAF26E /* BMIGraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546DBB8A1E8CDC6D00BAF26E /* BMIGraphManager.swift */; };
-		546DBB8D1E8CE22000BAF26E /* drugVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546DBB8C1E8CE22000BAF26E /* drugVC.swift */; };
+		546DBB8D1E8CE22000BAF26E /* Drug View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546DBB8C1E8CE22000BAF26E /* Drug View Controller.swift */; };
 		546DBB901E8CF0A900BAF26E /* ScoliosisDrugCalculationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546DBB8E1E8CF0A900BAF26E /* ScoliosisDrugCalculationsManager.swift */; };
 		546DBB911E8CF0A900BAF26E /* ScoliosisDrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = 546DBB8F1E8CF0A900BAF26E /* ScoliosisDrugList.csv */; };
 		546DBB941E8CF0B900BAF26E /* CardiacDrugCalculationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546DBB921E8CF0B900BAF26E /* CardiacDrugCalculationsManager.swift */; };
@@ -95,7 +95,7 @@
 		546DBB9D1E8CF0CB00BAF26E /* DrugList.csv in Resources */ = {isa = PBXBuildFile; fileRef = 546DBB9B1E8CF0CB00BAF26E /* DrugList.csv */; };
 		5480E23B1E8A22B200B62203 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5480E2391E8A20C400B62203 /* fontawesome-webfont.ttf */; };
 		5480E23C1E8A22B200B62203 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5480E23A1E8A20C400B62203 /* FontAwesome.otf */; };
-		54B7BA971E891F05005F1075 /* HandbookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B7BA961E891F05005F1075 /* HandbookVC.swift */; };
+		54B7BA971E891F05005F1075 /* Handbook View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B7BA961E891F05005F1075 /* Handbook View Controller.swift */; };
 		54C40F541E858F3B000E0CF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C40F531E858F3B000E0CF8 /* AppDelegate.swift */; };
 		54C40F591E858F3B000E0CF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C40F571E858F3B000E0CF8 /* Main.storyboard */; };
 		54C40F5B1E858F3B000E0CF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C40F5A1E858F3B000E0CF8 /* Assets.xcassets */; };
@@ -131,8 +131,8 @@
 		541058EE1E8E399B0079A20A /* DataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataObject.swift; sourceTree = "<group>"; };
 		541058F11E8E42E40079A20A /* CommonDrugsTablecell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonDrugsTablecell.swift; sourceTree = "<group>"; };
 		541058F21E8E42E40079A20A /* CommonDrugsTablecell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonDrugsTablecell.xib; sourceTree = "<group>"; };
-		542ED7B91E8BB3060002FD43 /* CalcMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcMainVC.swift; sourceTree = "<group>"; };
-		542ED7BB1E8BB9360002FD43 /* BMIvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIvc.swift; sourceTree = "<group>"; };
+		542ED7B91E8BB3060002FD43 /* Calc Main View Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calc Main View Controller.swift"; sourceTree = "<group>"; };
+		542ED7BB1E8BB9360002FD43 /* BMI View Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BMI View Controller.swift"; sourceTree = "<group>"; };
 		542ED7BD1E8BB9B00002FD43 /* calculators.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = calculators.storyboard; sourceTree = "<group>"; };
 		543480861E864ABC004D837F /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		543697191E8A4BA0001D80F4 /* HandbookCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandbookCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -205,7 +205,7 @@
 		5450DE5B1E87D86500EBBF55 /* tabControllerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabControllerVC.swift; sourceTree = "<group>"; };
 		5450DE621E87D9A200EBBF55 /* NavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavVC.swift; sourceTree = "<group>"; };
 		546DBB8A1E8CDC6D00BAF26E /* BMIGraphManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIGraphManager.swift; sourceTree = "<group>"; };
-		546DBB8C1E8CE22000BAF26E /* drugVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drugVC.swift; sourceTree = "<group>"; };
+		546DBB8C1E8CE22000BAF26E /* Drug View Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Drug View Controller.swift"; sourceTree = "<group>"; };
 		546DBB8E1E8CF0A900BAF26E /* ScoliosisDrugCalculationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoliosisDrugCalculationsManager.swift; sourceTree = "<group>"; };
 		546DBB8F1E8CF0A900BAF26E /* ScoliosisDrugList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ScoliosisDrugList.csv; sourceTree = "<group>"; };
 		546DBB921E8CF0B900BAF26E /* CardiacDrugCalculationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardiacDrugCalculationsManager.swift; sourceTree = "<group>"; };
@@ -216,7 +216,7 @@
 		546DBBA11E8D06B700BAF26E /* KKH Paediatrics Anaesthesia Handbook - swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KKH Paediatrics Anaesthesia Handbook - swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		5480E2391E8A20C400B62203 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		5480E23A1E8A20C400B62203 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
-		54B7BA961E891F05005F1075 /* HandbookVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HandbookVC.swift; path = PDFs/HandbookVC.swift; sourceTree = "<group>"; };
+		54B7BA961E891F05005F1075 /* Handbook View Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Handbook View Controller.swift"; path = "PDFs/Handbook View Controller.swift"; sourceTree = "<group>"; };
 		54C40F501E858F3B000E0CF8 /* KKH Paediatrics Anaesthesia Handbook - swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KKH Paediatrics Anaesthesia Handbook - swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C40F531E858F3B000E0CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54C40F581E858F3B000E0CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -286,9 +286,9 @@
 				546DBB8E1E8CF0A900BAF26E /* ScoliosisDrugCalculationsManager.swift */,
 				542ED7BD1E8BB9B00002FD43 /* calculators.storyboard */,
 				546DBB8A1E8CDC6D00BAF26E /* BMIGraphManager.swift */,
-				542ED7B91E8BB3060002FD43 /* CalcMainVC.swift */,
-				542ED7BB1E8BB9360002FD43 /* BMIvc.swift */,
-				546DBB8C1E8CE22000BAF26E /* drugVC.swift */,
+				542ED7B91E8BB3060002FD43 /* Calc Main View Controller.swift */,
+				542ED7BB1E8BB9360002FD43 /* BMI View Controller.swift */,
+				546DBB8C1E8CE22000BAF26E /* Drug View Controller.swift */,
 				546DBBA11E8D06B700BAF26E /* KKH Paediatrics Anaesthesia Handbook - swift-Bridging-Header.h */,
 				541058F01E8E39CB0079A20A /* treeView data */,
 			);
@@ -300,7 +300,7 @@
 			children = (
 				5450DDFC1E87D69D00EBBF55 /* PDFs */,
 				543BAE201E8A66E3009CC8E5 /* PDFManager.swift */,
-				54B7BA961E891F05005F1075 /* HandbookVC.swift */,
+				54B7BA961E891F05005F1075 /* Handbook View Controller.swift */,
 				543697191E8A4BA0001D80F4 /* HandbookCollectionViewCell.swift */,
 				5448347C1E8B8A1100CC1E09 /* HandbookTableViewCell.swift */,
 			);
@@ -850,7 +850,7 @@
 			files = (
 				5450DE631E87D9A200EBBF55 /* NavVC.swift in Sources */,
 				544C1BD81E92031300891D1F /* ContentManager.swift in Sources */,
-				542ED7BA1E8BB3060002FD43 /* CalcMainVC.swift in Sources */,
+				542ED7BA1E8BB3060002FD43 /* Calc Main View Controller.swift in Sources */,
 				543BAE211E8A66E3009CC8E5 /* PDFManager.swift in Sources */,
 				546DBB941E8CF0B900BAF26E /* CardiacDrugCalculationsManager.swift in Sources */,
 				544C1BD61E91F73E00891D1F /* crisisNavVC.swift in Sources */,
@@ -859,7 +859,7 @@
 				544C1BDD1E92069200891D1F /* crisisContentCell.swift in Sources */,
 				54C40F541E858F3B000E0CF8 /* AppDelegate.swift in Sources */,
 				5450DE5C1E87D86500EBBF55 /* tabControllerVC.swift in Sources */,
-				54B7BA971E891F05005F1075 /* HandbookVC.swift in Sources */,
+				54B7BA971E891F05005F1075 /* Handbook View Controller.swift in Sources */,
 				546DBB9C1E8CF0CB00BAF26E /* DrugCalculationsManager.swift in Sources */,
 				546DBB901E8CF0A900BAF26E /* ScoliosisDrugCalculationsManager.swift in Sources */,
 				541058F31E8E42E40079A20A /* CommonDrugsTablecell.swift in Sources */,
@@ -867,9 +867,9 @@
 				543480871E864ABC004D837F /* extensions.swift in Sources */,
 				546DBB8B1E8CDC6D00BAF26E /* BMIGraphManager.swift in Sources */,
 				5448347D1E8B8A1100CC1E09 /* HandbookTableViewCell.swift in Sources */,
-				546DBB8D1E8CE22000BAF26E /* drugVC.swift in Sources */,
+				546DBB8D1E8CE22000BAF26E /* Drug View Controller.swift in Sources */,
 				541058ED1E8E38A60079A20A /* dataobjectt.swift in Sources */,
-				542ED7BC1E8BB9360002FD43 /* BMIvc.swift in Sources */,
+				542ED7BC1E8BB9360002FD43 /* BMI View Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

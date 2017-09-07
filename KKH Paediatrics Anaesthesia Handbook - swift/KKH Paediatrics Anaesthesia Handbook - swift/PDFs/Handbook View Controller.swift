@@ -45,11 +45,16 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        //styling
-        topbar.backgroundColor = UIColor.init().primaryColor()
-		search_backdrop.roundify_circle()
+      //styling
+      topbar.backgroundColor = UIColor.init().primaryColor()
+      search_backdrop.roundify_circle()
+      UIView.animate(withDuration: 0.3, delay: 0.0, options: [], animations: {
+        self.navigationController!.isNavigationBarHidden = true
+      }, completion: { _ in
+      })
+
     }
-    
+  
     
     @IBAction func searchButtonPressed(_ sender: Any) {
         searchButton.isEnabled = false
@@ -127,7 +132,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         searchButton.setTitle("X", for: .normal)
         updateTableViewDisplaywithArray(replacement: manager.filesForChapteratIndex(indexPath.row).0)
         chapterIndex = indexPath.row
-        presentFilesViewwithTitile(title: manager.chapters_NAME[indexPath.row])
+        presentPDFViewerWithTitle(title: manager.chapters_NAME[indexPath.row])
     }
     
 //MARK: - tableview delegate/datasource
@@ -189,7 +194,7 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     func expandSearchBar (){
         search_inital_frame = search_backdrop.frame
         searchButton.setTitle("X", for: .normal)
-        presentFilesViewwithTitile(title: "Type to Search")
+        presentPDFViewerWithTitle(title: "Type to Search")
         UIView.animate(withDuration: 0.3, delay: 0
             , usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
             self.search_backdrop.frame = CGRect.init(x: 10, y: Int(self.search_backdrop.frame.origin.y), width: Int(self.view.frame.size.width - 20), height: Int(self.search_backdrop.frame.size.height))
@@ -217,14 +222,14 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         SearchBarExpanded = false
     }
     
-    func presentFilesViewwithTitile (title: String){
+    func presentPDFViewerWithTitle (title: String){
         //init filesview
         section_title.text = title
         section_title.textColor = UIColor.init().secondaryColor()
         filesView.backgroundColor = UIColor.init().primaryColor()
         filesView.frame = CGRect.init(x: 0, y: self.view.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.height - 70)
         self.view.addSubview(filesView)
-        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: { 
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: .curveEaseInOut, animations: {
             self.filesView.frame = CGRect.init(x: 0, y: self.topbar.frame.size.height, width: self.view.frame.size.width, height: self.view.frame.size.height - self.topbar.frame.height - 70)
         }) { (z) in
             self.searchButton.isEnabled = true
@@ -245,8 +250,13 @@ class HandbookVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         let documentFileURL = Bundle.main.url(forResource: path.substring(to: path.index(path.endIndex, offsetBy: -4)), withExtension: "pdf")!
         let document = PDFDocument(fileURL: documentFileURL)!
         let readerController = PDFViewController.createNew(with: document)
-        readerController.backgroundColor = UIColor.init().primaryColor()
-        self.present(readerController, animated: true, completion: nil)
+      readerController.backgroundColor = UIColor.init().primaryColor()
+      //        self.present(readerController, animated: true, completion: nil)
+      UIView.animate(withDuration: 0.3, delay: 0.0, options: [], animations: {
+        self.navigationController!.isNavigationBarHidden = false
+      }, completion: { _ in
+      })
+      self.navigationController!.pushViewController(readerController, animated: true)
     }
 
 
