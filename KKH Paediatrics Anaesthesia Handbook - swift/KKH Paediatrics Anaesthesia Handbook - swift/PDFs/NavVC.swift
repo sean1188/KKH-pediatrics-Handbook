@@ -28,7 +28,7 @@ class NavVC: UIViewController {
     var handbookViewController :UIViewController = HandbookVC()
     var calcVC :UIViewController = CalcMainVC()
     var crisisVC : UIViewController = crisisNavVC()
-	var settingVC : UIViewController = settingsVC()
+    var settingVC : UIViewController = settingsVC()
     
     var load = true
 
